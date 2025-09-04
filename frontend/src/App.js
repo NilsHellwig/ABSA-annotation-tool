@@ -50,10 +50,13 @@ function App() {
     setShowPhrasePopup(true);
     setSelectedStartChar(null);
     setSelectedEndChar(null);
-    setIsImplicitAspect(false);
+    // Check if current value is "NULL" to set implicit checkbox correctly
+    setIsImplicitAspect(newAspect[fieldType] === "NULL");
   };
 
-  const openPhrasePopupForEdit = (currentValue) => {
+  const openPhrasePopupForEdit = (fieldType, index, currentValue) => {
+    setCurrentEditingField(fieldType);
+    setCurrentEditingIndex(index);
     setShowPhrasePopup(true);
     setSelectedStartChar(null);
     setSelectedEndChar(null);
@@ -521,9 +524,7 @@ function App() {
                         <div
                           className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
                           onClick={() => {
-                            setCurrentEditingField("aspect_term");
-                            setCurrentEditingIndex(index);
-                            openPhrasePopupForEdit(aspect.aspect_term);
+                            openPhrasePopupForEdit("aspect_term", index, aspect.aspect_term);
                           }}
                         >
                           <span className="truncate">{truncateText(aspect.aspect_term) || "Select phrase"}</span>
@@ -567,9 +568,7 @@ function App() {
                         <div
                           className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
                           onClick={() => {
-                            setCurrentEditingField("opinion_term");
-                            setCurrentEditingIndex(index);
-                            openPhrasePopupForEdit(aspect.opinion_term);
+                            openPhrasePopupForEdit("opinion_term", index, aspect.opinion_term);
                           }}
                         >
                           <span className="truncate">{truncateText(aspect.opinion_term) || "Select phrase"}</span>
