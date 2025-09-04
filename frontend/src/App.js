@@ -3,6 +3,7 @@ import React, { useState } from "react";
 function App() {
 
   const [displayedText, setDisplayedText] = useState("Die Pizza war lecker, aber der Service war schrecklich.");
+  const [consideredSentimentElements, setConsideredSentimentElements] = useState(["aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]);
   const [newAspect, setNewAspect] = useState({
     "aspect_term": "",
     "aspect_category": "",
@@ -52,53 +53,58 @@ function App() {
           {/* Annotation Form */}
           <div className="bg-white rounded-xl shadow-sm border p-6">
             <h2 className="text-lg font-semibold text-gray-900 mb-4">Add Annotation</h2>
-
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Aspect Term</label>
-                <input
-                  type="text"
-                  value={newAspect.aspect_term}
-                  className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
+              {consideredSentimentElements.includes("aspect_term") && (
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Aspect Term</label>
+                  <input
+                    type="text"
+                    value={newAspect.aspect_term}
+                    className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>)}
+              {consideredSentimentElements.includes("aspect_category") && (
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Aspect Category</label>
+                  <select
+                    value={newAspect.aspect_category}
+                    onChange={(e) => setNewAspect({ ...newAspect, aspect_category: e.target.value })}
+                    className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  >
+                    <option value="">Select aspect...</option>
+                    {validAspectCategories.map(aspect => (
+                      <option key={aspect} value={aspect}>{aspect}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Aspect Category</label>
-                <select
-                  value={newAspect.aspect_category}
-                  onChange={(e) => setNewAspect({ ...newAspect, aspect_category: e.target.value })}
-                  className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                >
-                  <option value="">Select aspect...</option>
-                  {validAspectCategories.map(aspect => (
-                    <option key={aspect} value={aspect}>{aspect}</option>
-                  ))}
-                </select>
-              </div>
+              {consideredSentimentElements.includes("sentiment_polarity") && (
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Sentiment Polarity</label>
+                  <select
+                    value={newAspect.sentiment_polarity}
+                    onChange={(e) => setNewAspect({ ...newAspect, sentiment_polarity: e.target.value })}
+                    className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  >
+                    <option value="">Select sentiment...</option>
+                    {validSentimentPolarities.map(sentiment => (
+                      <option key={sentiment} value={sentiment}>{sentiment}</option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Sentiment Polarity</label>
-                <select
-                  value={newAspect.sentiment_polarity}
-                  onChange={(e) => setNewAspect({ ...newAspect, sentiment_polarity: e.target.value })}
-                  className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                >
-                  <option value="">Select sentiment...</option>
-                  {validSentimentPolarities.map(sentiment => (
-                    <option key={sentiment} value={sentiment}>{sentiment}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Opinion Term</label>
-                <input
-                  type="text"
-                  value={newAspect.opinion_term}
-                  className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
+              {consideredSentimentElements.includes("opinion_term") && (
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Opinion Term</label>
+                  <input
+                    type="text"
+                    value={newAspect.opinion_term}
+                    className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+              )}
             </div>
 
             <button
