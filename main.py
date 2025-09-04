@@ -85,7 +85,7 @@ def save_data(data):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React App
+    allow_origins=["*"],  # Allow all origins for flexibility with different IPs/ports
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

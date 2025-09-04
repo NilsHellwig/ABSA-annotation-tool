@@ -93,6 +93,9 @@ The `absa-annotator` CLI tool configures and runs your annotation environment:
 # Start with custom ports for both servers
 ./absa-annotator annotations.json --start --backend-port 8080 --frontend-port 3001
 
+# Start with custom IPs and ports (useful for network environments)
+./absa-annotator annotations.csv --start --backend-ip 192.168.1.100 --backend-port 8080 --frontend-ip 0.0.0.0 --frontend-port 3001
+
 # Configure elements, save config, and start
 ./absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config example_config.json --start
 
@@ -137,7 +140,9 @@ You can save and reuse configurations with JSON files:
 | `--start` | **Start both backend and frontend** | - |
 | `--backend` | Start only backend server | - |
 | `--backend-port` | Port for the backend server | `8000` |
+| `--backend-ip` | IP address for the backend server | `localhost` |
 | `--frontend-port` | Port for the frontend server | `3000` |
+| `--frontend-ip` | IP address for the frontend server | `localhost` |
 | `--port` | Backend server port (deprecated, use --backend-port) | `8000` |
 | `--elements` | Sentiment elements to annotate | `aspect_term, aspect_category, sentiment_polarity, opinion_term` |
 | `--polarities` | Available sentiment polarities | `positive, negative, neutral` |
@@ -159,7 +164,9 @@ You can save and reuse configurations with JSON files:
   --categories "food quality" "service speed" "price level" "ambience decor" \
   --implicit-aspect \
   --no-implicit-opinion \
+  --backend-ip 192.168.1.100 \
   --backend-port 8080 \
+  --frontend-ip 0.0.0.0 \
   --frontend-port 3001 \
   --save-config example_config.json \
   --start

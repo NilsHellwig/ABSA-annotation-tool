@@ -110,10 +110,10 @@ class ABSAAnnotatorConfig:
         print(f"💭 Implicit Opinion Terms: {'✅' if self.config['implicit_opinion_term_allowed'] else '❌'}")
 
 
-def start_backend(port: int = 8000, data_path: str = None, config: ABSAAnnotatorConfig = None):
+def start_backend(port: int = 8000, host: str = "localhost", data_path: str = None, config: ABSAAnnotatorConfig = None):
     """Start the FastAPI backend server."""
     try:
-        print(f"🚀 Starting backend server on port {port}...")
+        print(f"🚀 Starting backend server on {host}:{port}...")
         if data_path:
             os.environ['ABSA_DATA_PATH'] = data_path
         if config:
@@ -123,7 +123,7 @@ def start_backend(port: int = 8000, data_path: str = None, config: ABSAAnnotator
             os.environ['ABSA_CONFIG_PATH'] = config_file
         subprocess.run([
             sys.executable, "-m", "uvicorn", 
-            "main:app", "--reload", f"--port={port}"
+            "main:app", "--reload", f"--port={port}", f"--host={host}"
         ], check=True)
     except subprocess.CalledProcessError as e:
         print(f"❌ Failed to start backend server: {e}")
@@ -132,7 +132,7 @@ def start_backend(port: int = 8000, data_path: str = None, config: ABSAAnnotator
         print("\n🛑 Backend server stopped by user")
 
 
-def start_frontend(port: int = 3000, backend_port: int = 8000):
+def start_frontend(port: int = 3000, host: str = "localhost", backend_host: str = "localhost", backend_port: int = 8000):
     """Start the React frontend development server."""
     frontend_path = os.path.join(os.getcwd(), "frontend")
     if not os.path.exists(frontend_path):
@@ -140,13 +140,14 @@ def start_frontend(port: int = 3000, backend_port: int = 8000):
         return False
     
     try:
-        print(f"🌐 Starting frontend development server on port {port}...")
+        print(f"🌐 Starting frontend development server on {host}:{port}...")
         os.chdir(frontend_path)
         
         # Set environment variables for React
         env = os.environ.copy()
         env["PORT"] = str(port)
-        env["REACT_APP_BACKEND_URL"] = f"http://localhost:{backend_port}"
+        env["HOST"] = host
+        env["REACT_APP_BACKEND_URL"] = f"http://{backend_host}:{backend_port}"
         
         subprocess.run(["npm", "start"], check=True, env=env)
     except subprocess.CalledProcessError as e:
@@ -160,13 +161,13 @@ def start_frontend(port: int = 3000, backend_port: int = 8000):
         return False
 
 
-def start_full_app(backend_port: int = 8000, frontend_port: int = 3000, data_path: str = None, config: ABSAAnnotatorConfig = None):
+def start_full_app(backend_port: int = 8000, backend_host: str = "localhost", frontend_port: int = 3000, frontend_host: str = "localhost", data_path: str = None, config: ABSAAnnotatorConfig = None):
     """Start both backend and frontend servers."""
     print("🚀 Starting ABSA Annotation Tool...")
     print("=" * 50)
     
     # Start backend in a separate thread
-    backend_thread = threading.Thread(target=start_backend, args=(backend_port, data_path, config))
+    backend_thread = threading.Thread(target=start_backend, args=(backend_port, backend_host, data_path, config))
     backend_thread.daemon = True
     backend_thread.start()
     
@@ -176,7 +177,7 @@ def start_full_app(backend_port: int = 8000, frontend_port: int = 3000, data_pat
     
     # Start frontend (this will block until stopped)
     try:
-        start_frontend(frontend_port, backend_port)
+        start_frontend(frontend_port, frontend_host, backend_host, backend_port)
     except KeyboardInterrupt:
         print("\n🛑 Shutting down ABSA Annotation Tool...")
         sys.exit(0)
@@ -309,10 +310,22 @@ Examples:
     )
     
     parser.add_argument(
+        "--backend-ip",
+        default="localhost",
+        help="IP address for the backend server (default: localhost)"
+    )
+    
+    parser.add_argument(
         "--frontend-port",
         type=int,
         default=3000,
         help="Port for the frontend server (default: 3000)"
+    )
+    
+    parser.add_argument(
+        "--frontend-ip",
+        default="localhost",
+        help="IP address for the frontend server (default: localhost)"
     )
     
     # Keep --port for backward compatibility
@@ -379,14 +392,16 @@ Examples:
         config.save_config(args.save_config)
     
     # Start servers if requested
-    # Use new port arguments if provided, otherwise fall back to --port for backward compatibility
+    # Use new arguments if provided, otherwise fall back to defaults for backward compatibility
     backend_port = args.backend_port if args.backend_port != 8000 else args.port
+    backend_host = args.backend_ip
     frontend_port = args.frontend_port
+    frontend_host = args.frontend_ip
     
     if args.start:
-        start_full_app(backend_port, frontend_port, args.data_path, config)
+        start_full_app(backend_port, backend_host, frontend_port, frontend_host, args.data_path, config)
     elif args.backend:
-        start_backend(backend_port, args.data_path, config)
+        start_backend(backend_port, backend_host, args.data_path, config)
     else:
         print("🚀 Ready to start annotation!")
         print("💡 Use --start to launch both servers, or --backend for backend only")
