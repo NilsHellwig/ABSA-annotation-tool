@@ -1,0 +1,22 @@
+{
+  "csv_path": "annotations.csv",
+  "sentiment_elements": [
+    "aspect_term",
+    "aspect_category",
+    "sentiment_polarity",
+    "opinion_term"
+  ],
+  "sentiment_polarity_options": [
+    "positive",
+    "negative",
+    "neutral"
+  ],
+  "aspect_categories": [
+    "food quality",
+    "service speed",
+    "price level",
+    "ambience decor"
+  ],
+  "implicit_aspect_term_allowed": true,
+  "implicit_opinion_term_allowed": false
+}

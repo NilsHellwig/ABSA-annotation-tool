@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """
 ABSA Annotation Tool CLI
-A command-line interface for configuring the ABSA annotation tool.
+A command-line interface for configuring and running the ABSA annotation tool.
 """
 
 import argparse
 import json
 import sys
 import os
+import subprocess
+import threading
+import time
 from typing import List, Dict, Any
 
 class ABSAAnnotatorConfig:
@@ -65,6 +68,29 @@ class ABSAAnnotatorConfig:
             json.dump(self.config, f, indent=2, ensure_ascii=False)
         print(f"✅ Configuration saved to {output_path}")
     
+    def load_config(self, config_path: str) -> None:
+        """Load configuration from JSON file."""
+        try:
+            with open(config_path, 'r', encoding='utf-8') as f:
+                loaded_config = json.load(f)
+            
+            # Update configuration with loaded values
+            for key, value in loaded_config.items():
+                if key in self.config:
+                    self.config[key] = value
+            
+            print(f"✅ Configuration loaded from {config_path}")
+            
+        except FileNotFoundError:
+            print(f"❌ Configuration file '{config_path}' not found!")
+            sys.exit(1)
+        except json.JSONDecodeError as e:
+            print(f"❌ Invalid JSON in configuration file: {e}")
+            sys.exit(1)
+        except Exception as e:
+            print(f"❌ Error loading configuration: {e}")
+            sys.exit(1)
+    
     def print_config(self) -> None:
         """Print the current configuration in a formatted way."""
         print("🎯 ABSA Annotator Configuration")
@@ -77,30 +103,90 @@ class ABSAAnnotatorConfig:
         print(f"💭 Implicit Opinion Terms: {'✅' if self.config['implicit_opinion_term_allowed'] else '❌'}")
 
 
+def start_backend(port: int = 8000):
+    """Start the FastAPI backend server."""
+    try:
+        print(f"🚀 Starting backend server on port {port}...")
+        subprocess.run([
+            sys.executable, "-m", "uvicorn", 
+            "main:app", "--reload", f"--port={port}"
+        ], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Failed to start backend server: {e}")
+        sys.exit(1)
+    except KeyboardInterrupt:
+        print("\n🛑 Backend server stopped by user")
+
+
+def start_frontend():
+    """Start the React frontend development server."""
+    frontend_path = os.path.join(os.getcwd(), "frontend")
+    if not os.path.exists(frontend_path):
+        print("❌ Frontend directory not found! Make sure you're in the project root.")
+        return False
+    
+    try:
+        print("🌐 Starting frontend development server...")
+        os.chdir(frontend_path)
+        subprocess.run(["npm", "start"], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Failed to start frontend server: {e}")
+        return False
+    except KeyboardInterrupt:
+        print("\n🛑 Frontend server stopped by user")
+        return True
+    except FileNotFoundError:
+        print("❌ npm not found! Please install Node.js and npm.")
+        return False
+
+
+def start_full_app(backend_port: int = 8000):
+    """Start both backend and frontend servers."""
+    print("🚀 Starting ABSA Annotation Tool...")
+    print("=" * 50)
+    
+    # Start backend in a separate thread
+    backend_thread = threading.Thread(target=start_backend, args=(backend_port,))
+    backend_thread.daemon = True
+    backend_thread.start()
+    
+    # Wait a moment for backend to start
+    print("⏳ Waiting for backend to initialize...")
+    time.sleep(3)
+    
+    # Start frontend (this will block until stopped)
+    try:
+        start_frontend()
+    except KeyboardInterrupt:
+        print("\n🛑 Shutting down ABSA Annotation Tool...")
+        sys.exit(0)
+
+
 def main():
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
-        description="🎯 ABSA Annotation Tool - Configure your annotation settings",
+        prog="absa-annotator",
+        description="🎯 ABSA Annotation Tool - Configure and run your annotation environment",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   # Basic usage with CSV path
-  python cli.py /path/to/annotations.csv
+  absa-annotator /path/to/annotations.csv
   
-  # Configure all sentiment elements  
-  python cli.py data.csv --elements aspect_term aspect_category sentiment_polarity opinion_term
+  # Load configuration from file and start
+  absa-annotator /path/to/annotations.csv --load-config my_project.json --start
   
-  # Custom polarities
-  python cli.py data.csv --polarities positive negative neutral excited disappointed
+  # Start the full application (backend + frontend)
+  absa-annotator /path/to/annotations.csv --start
   
-  # Custom categories for tech domain
-  python cli.py data.csv --categories "tech performance" "tech design" "tech price" "tech support"
+  # Start only backend server
+  absa-annotator /path/to/annotations.csv --backend --port 8001
   
-  # Configure implicit terms
-  python cli.py data.csv --no-implicit-aspect --implicit-opinion
+  # Configure elements and save to config file
+  absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config quick_config.json
   
-  # Show and save configuration
-  python cli.py data.csv --show-config --save-config project_config.json
+  # Load config, override some settings, and start
+  absa-annotator data.csv --load-config base_config.json --polarities positive negative --start
         """
     )
     
@@ -163,9 +249,35 @@ Examples:
     )
     
     parser.add_argument(
+        "--load-config",
+        metavar="PATH",
+        help="Load configuration from JSON file"
+    )
+    
+    parser.add_argument(
         "--show-config",
         action="store_true",
         help="Display the current configuration"
+    )
+    
+    # Server control arguments
+    parser.add_argument(
+        "--start",
+        action="store_true",
+        help="Start both backend and frontend servers"
+    )
+    
+    parser.add_argument(
+        "--backend",
+        action="store_true", 
+        help="Start only the backend server"
+    )
+    
+    parser.add_argument(
+        "--port",
+        type=int,
+        default=8000,
+        help="Port for the backend server (default: 8000)"
     )
     
     args = parser.parse_args()
@@ -178,7 +290,11 @@ Examples:
     # Initialize configuration
     config = ABSAAnnotatorConfig(args.csv_path)
     
-    # Apply command line arguments
+    # Load configuration from file if specified (before applying command line overrides)
+    if args.load_config:
+        config.load_config(args.load_config)
+    
+    # Apply command line arguments (these override loaded config)
     if args.elements:
         config.set_sentiment_elements(args.elements)
     
@@ -206,7 +322,15 @@ Examples:
     if args.save_config:
         config.save_config(args.save_config)
     
-    print("🚀 Ready to start annotation! Run 'python main.py' to start the server.")
+    # Start servers if requested
+    if args.start:
+        start_full_app(args.port)
+    elif args.backend:
+        start_backend(args.port)
+    else:
+        print("🚀 Ready to start annotation!")
+        print("💡 Use --start to launch both servers, or --backend for backend only")
+        print(f"   Example: absa-annotator {args.csv_path} --start")
 
 
 if __name__ == "__main__":
