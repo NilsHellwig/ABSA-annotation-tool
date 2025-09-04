@@ -19,32 +19,11 @@
   },
   {
     "text": "The atmosphere in the restaurant was cozy, but the food arrived cold.",
-    "translation": "Die Atmosphäre im Restaurant war gemütlich, aber das Essen kam kalt an.",
-    "label": [
-      {
-        "aspect_term": "atmosphere",
-        "aspect_category": "ambience general",
-        "sentiment_polarity": "positive",
-        "opinion_term": "cozy"
-      },
-      {
-        "aspect_term": "food",
-        "aspect_category": "food quality",
-        "sentiment_polarity": "negative",
-        "opinion_term": "cold"
-      },
-      {
-        "aspect_term": "NULL",
-        "aspect_category": "food quality",
-        "sentiment_polarity": "negative",
-        "opinion_term": "restaurant"
-      }
-    ]
+    "translation": "Die Atmosphäre im Restaurant war gemütlich, aber das Essen kam kalt an."
   },
   {
     "text": "Bad service and overpriced - never again!",
-    "translation": "Schlechter Service und überteuert - nie wieder!",
-    "label": []
+    "translation": "Schlechter Service und überteuert - nie wieder!"
   },
   {
     "text": "Great ambience and delicious food, I can only recommend it."

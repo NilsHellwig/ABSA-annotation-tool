@@ -81,20 +81,23 @@ The `absa-annotator` CLI tool configures and runs your annotation environment:
 ./absa-annotator /path/to/data.json --show-config
 
 # Load configuration from file and start
-./absa-annotator annotations.json --load-config my_project.json --start
+./absa-annotator annotations.json --load-config example_config.json --start
 
 # Start the complete application (auto-detects file format)
 ./absa-annotator annotations.csv --start  # CSV with UTF-8
 ./absa-annotator annotations.json --start # JSON format
 
 # Start only backend server
-./absa-annotator annotations.csv --backend --port 8001
+./absa-annotator annotations.csv --backend --backend-port 8001
+
+# Start with custom ports for both servers
+./absa-annotator annotations.json --start --backend-port 8080 --frontend-port 3001
 
 # Configure elements, save config, and start
-./absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config quick_setup.json --start
+./absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config example_config.json --start
 
 # Load base config, override some settings, and start
-./absa-annotator data.csv --load-config base_config.json --polarities positive negative excited --start
+./absa-annotator data.csv --load-config example_config.json --polarities positive negative excited --start
 ```
 
 ### Configuration Files
@@ -103,13 +106,13 @@ You can save and reuse configurations with JSON files:
 
 ```bash
 # Save current configuration
-./absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config restaurant_config.json
+./absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config example_config.json
 
 # Load and use saved configuration  
-./absa-annotator data.csv --load-config restaurant_config.json --start
+./absa-annotator data.csv --load-config example_config.json --start
 
 # Load config and override specific settings
-./absa-annotator data.csv --load-config restaurant_config.json --polarities positive negative neutral
+./absa-annotator data.csv --load-config example_config.json --polarities positive negative neutral
 ```
 
 **Example configuration file** (`example_config.json`):
@@ -133,7 +136,9 @@ You can save and reuse configurations with JSON files:
 | `--load-config` | **Load configuration from JSON file** | - |
 | `--start` | **Start both backend and frontend** | - |
 | `--backend` | Start only backend server | - |
-| `--port` | Backend server port | `8000` |
+| `--backend-port` | Port for the backend server | `8000` |
+| `--frontend-port` | Port for the frontend server | `3000` |
+| `--port` | Backend server port (deprecated, use --backend-port) | `8000` |
 | `--elements` | Sentiment elements to annotate | `aspect_term, aspect_category, sentiment_polarity, opinion_term` |
 | `--polarities` | Available sentiment polarities | `positive, negative, neutral` |
 | `--categories` | Available aspect categories | Restaurant domain (18 categories) |
@@ -154,7 +159,9 @@ You can save and reuse configurations with JSON files:
   --categories "food quality" "service speed" "price level" "ambience decor" \
   --implicit-aspect \
   --no-implicit-opinion \
-  --save-config restaurant_config.json \
+  --backend-port 8080 \
+  --frontend-port 3001 \
+  --save-config example_config.json \
   --start
 ```
 

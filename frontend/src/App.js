@@ -33,6 +33,9 @@ function App() {
   const [inputIndex, setInputIndex] = useState("");
   const [sessionId, setSessionId] = useState(null);
 
+  // Get backend URL from environment or use default
+  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+
   // Helper functions
   const truncateText = (text, maxLength = 32) => {
     if (!text) return text;
@@ -151,7 +154,7 @@ function App() {
   // Backend API functions
   const fetchSettings = async () => {
     try {
-      const response = await fetch('http://localhost:8000/settings');
+      const response = await fetch(`${backendUrl}/settings`);
       const settings = await response.json();
 
       setConsideredSentimentElements(settings["sentiment elements"]);
@@ -172,7 +175,7 @@ function App() {
 
   const fetchData = async (index) => {
     try {
-      const response = await fetch(`http://localhost:8000/data/${index}`);
+      const response = await fetch(`${backendUrl}/data/${index}`);
       const data = await response.json();
 
       setDisplayedText(data.text || "");
@@ -207,7 +210,7 @@ function App() {
     }
   };  const saveAnnotations = async (annotations) => {
     try {
-      const response = await fetch(`http://localhost:8000/annotations/${currentIndex}`, {
+      const response = await fetch(`${backendUrl}/annotations/${currentIndex}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
