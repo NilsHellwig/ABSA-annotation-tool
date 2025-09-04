@@ -27,8 +27,11 @@ pip install fastapi uvicorn pandas
 # Install frontend dependencies  
 cd frontend && npm install && cd ..
 
-# Start the complete application
+# Start with CSV file (UTF-8 encoded)
 ./absa-annotator annotations.csv --start
+
+# Start with JSON file
+./absa-annotator annotations.json --start
 ```
 
 ### Option 2: Manual Setup
@@ -65,14 +68,16 @@ The app will open at `http://localhost:3000`
 The `absa-annotator` CLI tool configures and runs your annotation environment:
 
 ```bash
-# Basic usage - configure and show settings
-./absa-annotator /path/to/your/annotations.csv --show-config
+# Basic usage - works with CSV or JSON files
+./absa-annotator /path/to/data.csv --show-config
+./absa-annotator /path/to/data.json --show-config
 
 # Load configuration from file and start
-./absa-annotator annotations.csv --load-config my_project.json --start
+./absa-annotator annotations.json --load-config my_project.json --start
 
-# Start the complete application (backend + frontend)
-./absa-annotator annotations.csv --start
+# Start the complete application (auto-detects file format)
+./absa-annotator annotations.csv --start  # CSV with UTF-8
+./absa-annotator annotations.json --start # JSON format
 
 # Start only backend server
 ./absa-annotator annotations.csv --backend --port 8001
@@ -115,7 +120,7 @@ You can save and reuse configurations with JSON files:
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `csv_path` | **Path to CSV file** (required) | - |
+| `data_path` | **Path to CSV or JSON file** (required) | - |
 | `--load-config` | **Load configuration from JSON file** | - |
 | `--start` | **Start both backend and frontend** | - |
 | `--backend` | Start only backend server | - |
@@ -147,19 +152,75 @@ You can save and reuse configurations with JSON files:
 
 ## 📊 Data Format
 
+The tool supports both **CSV** and **JSON** formats with UTF-8 encoding:
+
+### CSV Format
 Your CSV file should contain at least these columns:
 
 | Column | Type | Description |
 |--------|------|-------------|
 | `text` | string | Text to be annotated |
 | `label` | string | JSON array of annotations (auto-generated) |
+| `translation` | string | **Optional:** Translation of the text |
 
-**Example:**
+**Example CSV** (with UTF-8 encoding):
 ```csv
-text,label
-"The food was amazing but service was slow.",""
-"Great atmosphere and reasonable prices!",""
+text,translation,label
+"The food was amazing but service was slow.","Das Essen war fantastisch, aber der Service war langsam.",""
+"Schönes Ambiente und günstiger Preis!","Nice atmosphere and affordable price!",""
+"El servicio fue excelente 👍","The service was excellent 👍",""
 ```
+
+### JSON Format
+Alternative JSON structure for more flexibility:
+
+**Example JSON** (`annotations.json`):
+```json
+[
+  {
+    "text": "The food was amazing but service was slow.",
+    "translation": "Das Essen war fantastisch, aber der Service war langsam.",
+    "label": [
+      {
+        "aspect_term": "food",
+        "aspect_category": "food quality", 
+        "sentiment_polarity": "positive",
+        "opinion_term": "amazing"
+      },
+      {
+        "aspect_term": "service",
+        "aspect_category": "service general",
+        "sentiment_polarity": "negative", 
+        "opinion_term": "slow"
+      }
+    ]
+  },
+  {
+    "text": "Great atmosphere and reasonable prices!",
+    "translation": "Tolles Ambiente und vernünftige Preise!",
+    "label": []
+  },
+  {
+    "text": "This sentence has not been annotated yet."
+  }
+]
+```
+
+**Key States:**
+- **Not annotated**: No `label` key present
+- **No aspects found**: `label` is an empty array `[]`  
+- **Aspects found**: `label` contains annotation objects
+
+**Important**: Both CSV and JSON files must be saved with UTF-8 encoding to support international characters and emojis.
+
+### Translation Support
+
+The tool supports **optional translations** to help annotators understand text in foreign languages:
+
+- **CSV**: Add a `translation` column
+- **JSON**: Add a `translation` key to each object
+
+When available, translations are displayed below the original text in a blue-tinted box. This feature is especially useful for multilingual datasets or when annotating text in languages the annotator may not fully understand.
 
 ---
 
@@ -180,12 +241,13 @@ Food, Service, Price, Ambience, Location, Restaurant
 
 1. **One-command start (easiest):**
    ```bash
-   ./absa-annotator /path/to/reviews.csv --start
+   ./absa-annotator /path/to/reviews.csv --start      # CSV format
+   ./absa-annotator /path/to/reviews.json --start     # JSON format
    ```
 
 2. **Use saved configuration:**
    ```bash
-   ./absa-annotator /path/to/reviews.csv --load-config restaurant_project.json --start
+   ./absa-annotator /path/to/reviews.json --load-config restaurant_project.json --start
    ```
 
 3. **Create and save configuration:**
@@ -195,7 +257,7 @@ Food, Service, Price, Ambience, Location, Restaurant
 
 4. **Advanced: Load config and override settings:**
    ```bash
-   ./absa-annotator reviews.csv --load-config base.json --polarities positive negative excited --start
+   ./absa-annotator reviews.json --load-config base.json --polarities positive negative excited --start
    ```
 
 5. **Open browser** at `http://localhost:3000` and start annotating!

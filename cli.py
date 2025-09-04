@@ -20,6 +20,7 @@ class ABSAAnnotatorConfig:
         self.csv_path = csv_path
         self.config = {
             "csv_path": csv_path,
+            "session_id": None,
             "sentiment_elements": ["aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"],
             "sentiment_polarity_options": ["positive", "negative", "neutral"],
             "aspect_categories": [
@@ -58,6 +59,10 @@ class ABSAAnnotatorConfig:
         """Set whether implicit opinion terms are allowed."""
         self.config["implicit_opinion_term_allowed"] = allowed
     
+    def set_session_id(self, session_id: str) -> None:
+        """Set the session ID for this annotation session."""
+        self.config["session_id"] = session_id
+    
     def get_config(self) -> Dict[str, Any]:
         """Get the current configuration."""
         return self.config.copy()
@@ -95,7 +100,9 @@ class ABSAAnnotatorConfig:
         """Print the current configuration in a formatted way."""
         print("🎯 ABSA Annotator Configuration")
         print("=" * 40)
-        print(f"📄 CSV Path: {self.config['csv_path']}")
+        print(f"📄 Data Path: {self.config['csv_path']}")
+        if self.config.get('session_id'):
+            print(f"🔖 Session ID: {self.config['session_id']}")
         print(f"🏷️  Sentiment Elements: {', '.join(self.config['sentiment_elements'])}")
         print(f"😊 Sentiment Polarities: {', '.join(self.config['sentiment_polarity_options'])}")
         print(f"📝 Aspect Categories: {len(self.config['aspect_categories'])} categories")
@@ -103,10 +110,17 @@ class ABSAAnnotatorConfig:
         print(f"💭 Implicit Opinion Terms: {'✅' if self.config['implicit_opinion_term_allowed'] else '❌'}")
 
 
-def start_backend(port: int = 8000):
+def start_backend(port: int = 8000, data_path: str = None, config: ABSAAnnotatorConfig = None):
     """Start the FastAPI backend server."""
     try:
         print(f"🚀 Starting backend server on port {port}...")
+        if data_path:
+            os.environ['ABSA_DATA_PATH'] = data_path
+        if config:
+            # Save config to temporary file for backend to read
+            config_file = "temp_absa_config.json"
+            config.save_config(config_file)
+            os.environ['ABSA_CONFIG_PATH'] = config_file
         subprocess.run([
             sys.executable, "-m", "uvicorn", 
             "main:app", "--reload", f"--port={port}"
@@ -140,13 +154,13 @@ def start_frontend():
         return False
 
 
-def start_full_app(backend_port: int = 8000):
+def start_full_app(backend_port: int = 8000, data_path: str = None, config: ABSAAnnotatorConfig = None):
     """Start both backend and frontend servers."""
     print("🚀 Starting ABSA Annotation Tool...")
     print("=" * 50)
     
     # Start backend in a separate thread
-    backend_thread = threading.Thread(target=start_backend, args=(backend_port,))
+    backend_thread = threading.Thread(target=start_backend, args=(backend_port, data_path, config))
     backend_thread.daemon = True
     backend_thread.start()
     
@@ -176,14 +190,17 @@ Examples:
   # Load configuration from file and start
   absa-annotator /path/to/annotations.csv --load-config my_project.json --start
   
+  # Start with a session ID
+  absa-annotator /path/to/annotations.csv --session-id "user123_session1" --start
+  
   # Start the full application (backend + frontend)
   absa-annotator /path/to/annotations.csv --start
   
   # Start only backend server
   absa-annotator /path/to/annotations.csv --backend --port 8001
   
-  # Configure elements and save to config file
-  absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config quick_config.json
+  # Configure elements and save to config file with session ID
+  absa-annotator data.csv --elements aspect_term sentiment_polarity --session-id "exp_2024" --save-config quick_config.json
   
   # Load config, override some settings, and start
   absa-annotator data.csv --load-config base_config.json --polarities positive negative --start
@@ -191,8 +208,13 @@ Examples:
     )
     
     parser.add_argument(
-        "csv_path",
-        help="Path to the CSV file containing the data to annotate"
+        "data_path",
+        help="Path to the CSV or JSON file containing the data to annotate"
+    )
+    
+    parser.add_argument(
+        "--session-id",
+        help="Optional session ID to identify this annotation session"
     )
     
     parser.add_argument(
@@ -282,13 +304,23 @@ Examples:
     
     args = parser.parse_args()
     
-    # Check if CSV file exists
-    if not os.path.exists(args.csv_path):
-        print(f"❌ Error: CSV file '{args.csv_path}' not found!")
+    # Check if data file exists
+    if not os.path.exists(args.data_path):
+        print(f"❌ Error: Data file '{args.data_path}' not found!")
         sys.exit(1)
     
+    # Check file format
+    file_extension = os.path.splitext(args.data_path)[1].lower()
+    if file_extension not in ['.csv', '.json']:
+        print(f"❌ Error: Unsupported file format '{file_extension}'. Use .csv or .json files.")
+        sys.exit(1)
+    
+    print(f"📂 Using {file_extension[1:].upper()} file: {args.data_path}")
+    if file_extension == '.csv':
+        print("💡 Note: CSV file will be read/written with UTF-8 encoding")
+    
     # Initialize configuration
-    config = ABSAAnnotatorConfig(args.csv_path)
+    config = ABSAAnnotatorConfig(args.data_path)
     
     # Load configuration from file if specified (before applying command line overrides)
     if args.load_config:
@@ -314,6 +346,9 @@ Examples:
     elif args.no_implicit_opinion:
         config.set_implicit_opinion_allowed(False)
     
+    if args.session_id:
+        config.set_session_id(args.session_id)
+    
     # Show configuration if requested
     if args.show_config:
         config.print_config()
@@ -324,13 +359,13 @@ Examples:
     
     # Start servers if requested
     if args.start:
-        start_full_app(args.port)
+        start_full_app(args.port, args.data_path, config)
     elif args.backend:
-        start_backend(args.port)
+        start_backend(args.port, args.data_path, config)
     else:
         print("🚀 Ready to start annotation!")
         print("💡 Use --start to launch both servers, or --backend for backend only")
-        print(f"   Example: absa-annotator {args.csv_path} --start")
+        print(f"   Example: absa-annotator {args.data_path} --start")
 
 
 if __name__ == "__main__":

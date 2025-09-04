@@ -1,5 +1,6 @@
 {
-  "csv_path": "annotations.csv",
+  "csv_path": "annotations.json",
+  "session_id": "ab123",
   "sentiment_elements": [
     "aspect_term",
     "aspect_category",

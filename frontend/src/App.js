@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 function App() {
 
   const [displayedText, setDisplayedText] = useState("");
+  const [displayedTranslation, setDisplayedTranslation] = useState("");
   const [consideredSentimentElements, setConsideredSentimentElements] = useState([]);
   const [newAspect, setNewAspect] = useState({
     "aspect_term": "",
@@ -30,6 +31,7 @@ function App() {
   const [maxIndex, setMaxIndex] = useState(0);
   const [totalCount, setTotalCount] = useState(0);
   const [inputIndex, setInputIndex] = useState("");
+  const [sessionId, setSessionId] = useState(null);
 
   // Helper functions
   const truncateText = (text, maxLength = 32) => {
@@ -160,6 +162,7 @@ function App() {
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);
+      setSessionId(settings["session_id"] || null);
 
       return settings["current_index"];
     } catch (error) {
@@ -173,6 +176,7 @@ function App() {
       const data = await response.json();
 
       setDisplayedText(data.text || "");
+      setDisplayedTranslation(data.translation || "");
 
       // Load existing annotations if they exist
       let existingAnnotations = [];
@@ -306,6 +310,11 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <h1 className="text-2xl font-bold text-gray-900">ABSA Annotation Tool</h1>
+              {sessionId && (
+                <span className="ml-4 px-2 py-1 bg-blue-100 text-blue-800 text-sm rounded-md">
+                  Session: {sessionId}
+                </span>
+              )}
             </div>
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
@@ -388,6 +397,16 @@ function App() {
           <div className="bg-white rounded-xl shadow-sm border p-6">
             <h2 className="text-lg font-semibold text-gray-900 mb-4">Text to annotate</h2>
             <div className="text-xl text-center bg-gray-100 p-4 rounded-xl">{displayedText}</div>
+            
+            {/* Translation section */}
+            {displayedTranslation && (
+              <div className="mt-4">
+                <h3 className="text-sm font-medium text-gray-600 mb-2">Translation</h3>
+                <div className="text-lg text-center bg-blue-50 p-4 rounded-xl text-gray-700 italic">
+                  {displayedTranslation}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Annotation Form */}
