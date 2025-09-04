@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function App() {
 
-  const [displayedText, setDisplayedText] = useState("Die Pizza war lecker, aber wir wurden schlecht bedient.");
-  const [consideredSentimentElements, setConsideredSentimentElements] = useState(["aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]);
+  const [displayedText, setDisplayedText] = useState("");
+  const [consideredSentimentElements, setConsideredSentimentElements] = useState([]);
   const [newAspect, setNewAspect] = useState({
     "aspect_term": "",
     "aspect_category": "",
@@ -19,10 +19,17 @@ function App() {
   const [isImplicitAspect, setIsImplicitAspect] = useState(false);
   const [currentEditingIndex, setCurrentEditingIndex] = useState(null); // For editing existing items
 
-  const [validAspectCategories, setValidAspectCategories] = useState(["food general", "service general", "price general", "ambience general"]);
-  const [validSentimentPolarities, setValidSentimentPolarities] = useState(["positive", "neutral", "negative"]);
-  const [allowImplicitAspectTerm, setAllowImplicitAspectTerm] = useState(true);
+  const [validAspectCategories, setValidAspectCategories] = useState([]);
+  const [validSentimentPolarities, setValidSentimentPolarities] = useState([]);
+  const [allowImplicitAspectTerm, setAllowImplicitAspectTerm] = useState(false);
   const [allowImplicitOpinionTerm, setAllowImplicitOpinionTerm] = useState(false);
+
+  // Backend states
+  const [currentIndex, setCurrentIndex] = useState(0); // Currently displayed index in UI
+  const [settingsCurrentIndex, setSettingsCurrentIndex] = useState(0); // Current index from backend settings
+  const [maxIndex, setMaxIndex] = useState(0);
+  const [totalCount, setTotalCount] = useState(0);
+  const [inputIndex, setInputIndex] = useState("");
 
   // Helper functions
   const truncateText = (text, maxLength = 32) => {
@@ -84,7 +91,7 @@ function App() {
       // Adding new annotation
       setNewAspect({ ...newAspect, [currentEditingField]: selectedPhrase });
     }
-    
+
     closePhrasePopup();
   };
 
@@ -105,6 +112,15 @@ function App() {
     setAspectList(updatedList);
   };
 
+  const clearAllAnnotations = () => {
+    setAspectList([]);
+  };
+
+  const isFieldValid = (fieldName) => {
+    const value = newAspect[fieldName];
+    return value && value.trim() !== "";
+  };
+
   const addAnnotation = () => {
     // Check if all considered elements are filled
     const isValid = consideredSentimentElements.every(element => {
@@ -120,7 +136,7 @@ function App() {
       });
 
       setAspectList([...aspectList, newAnnotation]);
-      
+
       // Reset the form
       const resetAspect = {};
       consideredSentimentElements.forEach(element => {
@@ -130,20 +146,157 @@ function App() {
     }
   };
 
-  const [aspectList, setAspectList] = useState([
-    {
-      "aspect_term": "Pizza",
-      "aspect_category": "food general",
-      "sentiment_polarity": "positive",
-      "opinion_term": "lecker"
-    },
-    {
-      "aspect_term": "NULL",
-      "aspect_category": "service general",
-      "sentiment_polarity": "negative",
-      "opinion_term": "schrecklich"
+  // Backend API functions
+  const fetchSettings = async () => {
+    try {
+      const response = await fetch('http://localhost:8000/settings');
+      const settings = await response.json();
+
+      setConsideredSentimentElements(settings["sentiment elements"]);
+      setValidAspectCategories(settings["aspect_categories"]);
+      setValidSentimentPolarities(settings["sentiment_polarity options"]);
+      setAllowImplicitAspectTerm(settings["implicit_aspect_term_allowed"]);
+      setAllowImplicitOpinionTerm(settings["implicit_opinion_term_allowed"]);
+      setSettingsCurrentIndex(settings["current_index"]);
+      setMaxIndex(settings["max_number_of_idxs"]);
+      setTotalCount(settings["total_count"]);
+
+      return settings["current_index"];
+    } catch (error) {
+      console.error('Error fetching settings:', error);
     }
-  ]);
+  };
+
+  const fetchData = async (index) => {
+    try {
+      const response = await fetch(`http://localhost:8000/data/${index}`);
+      const data = await response.json();
+
+      setDisplayedText(data.text || "");
+
+      // Load existing annotations if they exist
+      let existingAnnotations = [];
+      if (data.label && data.label !== "") {
+        try {
+          existingAnnotations = JSON.parse(data.label);
+          if (!Array.isArray(existingAnnotations)) {
+            existingAnnotations = [];
+          }
+        } catch (e) {
+          console.log('Could not parse existing annotations:', e);
+          existingAnnotations = [];
+        }
+      }
+      setAspectList(existingAnnotations);
+
+      // Reset form - use current consideredSentimentElements or wait for it to be loaded
+      const resetAspect = {};
+      if (consideredSentimentElements.length > 0) {
+        consideredSentimentElements.forEach(element => {
+          resetAspect[element] = "";
+        });
+        setNewAspect(resetAspect);
+      }
+
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };  const saveAnnotations = async (annotations) => {
+    try {
+      const response = await fetch(`http://localhost:8000/annotations/${currentIndex}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: "annotations",
+          value: annotations
+        }),
+      });
+      
+      if (response.ok) {
+        console.log('Annotations saved successfully');
+        return true;
+      }
+    } catch (error) {
+      console.error('Error saving annotations:', error);
+    }
+    return false;
+  };
+
+  const goToNext = async () => {
+    if (aspectList.length === 0) return;
+
+    const success = await saveAnnotations(aspectList);
+    if (success) {
+      // Fetch updated settings to get new current_index
+      await fetchSettings();
+      const nextIndex = currentIndex + 1;
+      if (nextIndex < maxIndex) {
+        setCurrentIndex(nextIndex);
+        await fetchData(nextIndex);
+      }
+    }
+  };
+
+  const annotateEmpty = async () => {
+    const success = await saveAnnotations([]);
+    if (success) {
+      // Fetch updated settings to get new current_index
+      await fetchSettings();
+      const nextIndex = currentIndex + 1;
+      if (nextIndex < maxIndex) {
+        setCurrentIndex(nextIndex);
+        await fetchData(nextIndex);
+      }
+    }
+  };
+
+  const goToIndex = async () => {
+    // Fetch fresh settings first
+    await fetchSettings();
+    
+    const targetIndexUI = parseInt(inputIndex); // 1-based from UI
+    const targetIndex = targetIndexUI - 1; // Convert to 0-based for backend
+    
+    // Can navigate up to settingsCurrentIndex + 1 (1-based)
+    const maxAllowedUI = settingsCurrentIndex + 1; // settingsCurrentIndex is 0-based, so +1 for 1-based UI
+    
+    if (isNaN(targetIndexUI) || targetIndexUI < 1 || targetIndexUI > maxAllowedUI) {
+      alert(`Index must be between 1 and ${maxAllowedUI}`);
+      return;
+    }
+
+    setCurrentIndex(targetIndex);
+    await fetchData(targetIndex);
+    setInputIndex("");
+  };
+
+  // Load initial data
+  useEffect(() => {
+    const loadInitialData = async () => {
+      const currentIdx = await fetchSettings();
+      if (currentIdx !== undefined) {
+        setCurrentIndex(currentIdx); // Set currentIndex to match settingsCurrentIndex initially
+        await fetchData(currentIdx);
+      }
+    };
+
+    loadInitialData();
+  }, []);
+
+  // Initialize form when consideredSentimentElements changes
+  useEffect(() => {
+    if (consideredSentimentElements.length > 0) {
+      const resetAspect = {};
+      consideredSentimentElements.forEach(element => {
+        resetAspect[element] = "";
+      });
+      setNewAspect(resetAspect);
+    }
+  }, [consideredSentimentElements]);
+
+  const [aspectList, setAspectList] = useState([]);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -155,7 +308,72 @@ function App() {
               <h1 className="text-2xl font-bold text-gray-900">ABSA Annotation Tool</h1>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="text-sm text-gray-500"> 4 / 574 Annotations</span>
+              <div className="flex items-center space-x-2">
+                <input
+                  type="number"
+                  value={inputIndex}
+                  onChange={(e) => setInputIndex(e.target.value)}
+                  placeholder="Index..."
+                  className="w-20 px-2 py-1 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  min="1"
+                  max={settingsCurrentIndex + 1}
+                />
+                <button
+                  onClick={goToIndex}
+                  disabled={!inputIndex || parseInt(inputIndex) < 1 || parseInt(inputIndex) > settingsCurrentIndex + 1}
+                  className="px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white rounded"
+                >
+                  Go to
+                </button>
+              </div>
+              <div className="flex items-center space-x-4">
+                <span className="text-sm text-gray-600">
+                  {settingsCurrentIndex} annotations completed
+                </span>
+                <div className="flex items-center space-x-2">
+                  <button
+                    onClick={async () => {
+                      const prevIndex = currentIndex - 1;
+                      setCurrentIndex(prevIndex);
+                      await fetchData(prevIndex);
+                      await fetchSettings(); // Update settings after navigation
+                    }}
+                    disabled={currentIndex <= 0}
+                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 text-gray-600"
+                    title="Previous annotation"
+                  >
+                    ←
+                  </button>
+                  <span className="text-sm text-gray-500">
+                    {currentIndex + 1} / {totalCount} Annotations
+                  </span>
+                  <button
+                    onClick={async () => {
+                      const nextIndex = currentIndex + 1;
+                      setCurrentIndex(nextIndex);
+                      await fetchData(nextIndex);
+                      await fetchSettings(); // Update settings after navigation
+                    }}
+                    disabled={currentIndex + 1 >= settingsCurrentIndex + 1}
+                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 text-gray-600"
+                    title="Next annotation"
+                  >
+                    →
+                  </button>
+                  <button
+                    onClick={async () => {
+                      setCurrentIndex(settingsCurrentIndex);
+                      await fetchData(settingsCurrentIndex);
+                      await fetchSettings(); // Update settings after navigation
+                    }}
+                    disabled={currentIndex === settingsCurrentIndex}
+                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 text-gray-600"
+                    title="Jump to current working position"
+                  >
+                    ⇒
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -174,21 +392,27 @@ function App() {
 
           {/* Annotation Form */}
           <div className="bg-white rounded-xl shadow-sm border p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Add Annotation</h2>
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Add aspect</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
               {consideredSentimentElements.includes("aspect_term") && (
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-2">Aspect Term</label>
-                  <div 
+                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                    Aspect Term
+                    {isFieldValid("aspect_term") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                  </label>
+                  <div
                     className="w-full p-3 border border-gray-200 rounded-lg bg-gray-50 cursor-pointer hover:bg-gray-100"
                     onClick={() => openPhrasePopup("aspect_term")}
                   >
-                    {truncateText(newAspect.aspect_term) || "Phrase auswählen"}
+                    {truncateText(newAspect.aspect_term) || "Select phrase"}
                   </div>
                 </div>)}
               {consideredSentimentElements.includes("aspect_category") && (
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-2">Aspect Category</label>
+                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                    Aspect Category
+                    {isFieldValid("aspect_category") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                  </label>
                   <select
                     value={newAspect.aspect_category}
                     onChange={(e) => setNewAspect({ ...newAspect, aspect_category: e.target.value })}
@@ -204,7 +428,10 @@ function App() {
 
               {consideredSentimentElements.includes("sentiment_polarity") && (
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-2">Sentiment Polarity</label>
+                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                    Sentiment Polarity
+                    {isFieldValid("sentiment_polarity") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                  </label>
                   <select
                     value={newAspect.sentiment_polarity}
                     onChange={(e) => setNewAspect({ ...newAspect, sentiment_polarity: e.target.value })}
@@ -220,33 +447,48 @@ function App() {
 
               {consideredSentimentElements.includes("opinion_term") && (
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-2">Opinion Term</label>
-                  <div 
+                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                    Opinion Term
+                    {isFieldValid("opinion_term") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                  </label>
+                  <div
                     className="w-full p-3 border border-gray-200 rounded-lg bg-gray-50 cursor-pointer hover:bg-gray-100"
                     onClick={() => openPhrasePopup("opinion_term")}
                   >
-                    {truncateText(newAspect.opinion_term) || "Phrase auswählen"}
+                    {truncateText(newAspect.opinion_term) || "Select phrase"}
                   </div>
                 </div>
               )}
             </div>
 
-            <button
-              onClick={addAnnotation}
-              disabled={!consideredSentimentElements.every(element => {
-                const value = newAspect[element];
-                return value && value.trim() !== "";
-              })}
-              className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-2 py-1 rounded-lg font-medium transition-colors"
-            >
-              Add annotation
-            </button>
+            <div className="flex justify-end">
+              <button
+                onClick={addAnnotation}
+                disabled={!consideredSentimentElements.every(element => {
+                  const value = newAspect[element];
+                  return value && value.trim() !== "";
+                })}
+                className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                Add aspect
+              </button>
+            </div>
           </div>
           <div className="bg-white rounded-xl shadow-sm border p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Added annotations</h2>
-            
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-lg font-semibold text-gray-900">Added annotations ({aspectList.length})</h2>
+              {aspectList.length > 0 && (
+                <button
+                  onClick={clearAllAnnotations}
+                  className="px-3 py-1 text-sm bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors"
+                >
+                  Clear all
+                </button>
+              )}
+            </div>
+
             {aspectList.length === 0 ? (
-              <p className="text-gray-500 text-center py-8">Keine Annotationen vorhanden</p>
+              <p className="text-gray-500 text-center py-8">No annotations available</p>
             ) : (
               <div className="space-y-3">
                 {aspectList.map((aspect, index) => (
@@ -254,7 +496,7 @@ function App() {
                     {consideredSentimentElements.includes("aspect_term") && (
                       <div className="flex items-center gap-2 flex-1">
                         <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">AT:</span>
-                        <div 
+                        <div
                           className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
                           onClick={() => {
                             setCurrentEditingField("aspect_term");
@@ -262,7 +504,7 @@ function App() {
                             openPhrasePopupForEdit(aspect.aspect_term);
                           }}
                         >
-                          <span className="truncate">{truncateText(aspect.aspect_term) || "Phrase auswählen"}</span>
+                          <span className="truncate">{truncateText(aspect.aspect_term) || "Select phrase"}</span>
                         </div>
                       </div>
                     )}
@@ -300,7 +542,7 @@ function App() {
                     {consideredSentimentElements.includes("opinion_term") && (
                       <div className="flex items-center gap-2 flex-1">
                         <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">OT:</span>
-                        <div 
+                        <div
                           className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
                           onClick={() => {
                             setCurrentEditingField("opinion_term");
@@ -308,7 +550,7 @@ function App() {
                             openPhrasePopupForEdit(aspect.opinion_term);
                           }}
                         >
-                          <span className="truncate">{truncateText(aspect.opinion_term) || "Phrase auswählen"}</span>
+                          <span className="truncate">{truncateText(aspect.opinion_term) || "Select phrase"}</span>
                         </div>
                       </div>
                     )}
@@ -316,13 +558,33 @@ function App() {
                     <button
                       onClick={() => deleteAspectItem(index)}
                       className="w-8 h-8 bg-red-50 hover:bg-red-100 text-red-600 hover:text-red-700 rounded flex-shrink-0 border border-red-200"
-                      title="Löschen"
+                      title="Delete"
                     >
                       🗑️
                     </button>
                   </div>
                 ))}
               </div>
+            )}
+          </div>
+          {/* Navigation Buttons */}
+          <div className="mt-6 flex gap-3 justify-end">
+            {aspectList.length > 0 ? (
+              <button
+                onClick={goToNext}
+                disabled={currentIndex >= maxIndex - 1}
+                className="bg-green-600 hover:bg-green-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium transition-colors"
+              >
+                Next annotation →
+              </button>
+            ) : (
+              <button
+                onClick={annotateEmpty}
+                disabled={currentIndex >= maxIndex - 1}
+                className="bg-yellow-600 hover:bg-yellow-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium transition-colors"
+              >
+                Annotate empty list
+              </button>
             )}
           </div>
         </div>
@@ -332,44 +594,43 @@ function App() {
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white rounded-xl shadow-xl p-6 max-w-2xl w-full mx-4" onKeyDown={handleKeyDown} tabIndex={-1}>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Phrase auswählen für {currentEditingField === "aspect_term" ? "Aspect Term" : "Opinion Term"}
+                Select phrase for {currentEditingField === "aspect_term" ? "Aspect Term" : "Opinion Term"}
               </h3>
-              
-              {((currentEditingField === "aspect_term" && allowImplicitAspectTerm) || 
+
+              {((currentEditingField === "aspect_term" && allowImplicitAspectTerm) ||
                 (currentEditingField === "opinion_term" && allowImplicitOpinionTerm)) && (
-                <div className="mb-4">
-                  <label className="flex items-center space-x-2 mb-4">
-                    <input
-                      type="checkbox"
-                      checked={isImplicitAspect}
-                      onChange={(e) => setIsImplicitAspect(e.target.checked)}
-                      className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                    />
-                    <span className="text-sm text-gray-700">Impliziter Aspekt</span>
-                  </label>
-                </div>
-              )}
+                  <div className="mb-4">
+                    <label className="flex items-center space-x-2 mb-4">
+                      <input
+                        type="checkbox"
+                        checked={isImplicitAspect}
+                        onChange={(e) => setIsImplicitAspect(e.target.checked)}
+                        className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                      />
+                      <span className="text-sm text-gray-700">Implicit aspect</span>
+                    </label>
+                  </div>
+                )}
 
               {!isImplicitAspect && (
                 <div className="mb-6">
                   <p className="text-sm text-gray-600 mb-3">
-                    Klicken Sie auf den Startcharakter und dann auf den Endcharakter der Phrase:
+                    Click on the start character and then on the end character of the phrase:
                   </p>
                   <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
                     {displayedText.split('').map((char, index) => (
                       <span
                         key={index}
                         onClick={() => handleCharClick(index)}
-                        className={`cursor-pointer hover:bg-blue-200 ${
-                          selectedStartChar !== null && selectedEndChar !== null &&
-                          index >= selectedStartChar && index <= selectedEndChar
+                        className={`cursor-pointer hover:bg-blue-200 ${selectedStartChar !== null && selectedEndChar !== null &&
+                            index >= selectedStartChar && index <= selectedEndChar
                             ? 'bg-blue-300'
                             : selectedStartChar === index
-                            ? 'bg-green-300'
-                            : selectedEndChar === index
-                            ? 'bg-red-300'
-                            : ''
-                        }`}
+                              ? 'bg-green-300'
+                              : selectedEndChar === index
+                                ? 'bg-red-300'
+                                : ''
+                          }`}
                       >
                         {char}
                       </span>
@@ -377,7 +638,7 @@ function App() {
                   </div>
                   {selectedStartChar !== null && selectedEndChar !== null && (
                     <div className="mt-3">
-                      <strong>Ausgewählte Phrase:</strong> "{displayedText.substring(selectedStartChar, selectedEndChar + 1).trim()}"
+                      <strong>Selected phrase:</strong> "{displayedText.substring(selectedStartChar, selectedEndChar + 1).trim()}"
                     </div>
                   )}
                 </div>
@@ -388,14 +649,14 @@ function App() {
                   onClick={closePhrasePopup}
                   className="px-4 py-2 text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50"
                 >
-                  Abbrechen
+                  Cancel
                 </button>
                 <button
                   onClick={savePhraseSelection}
                   disabled={!isImplicitAspect && (selectedStartChar === null || selectedEndChar === null)}
                   className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed"
                 >
-                  Fertig
+                  Done
                 </button>
               </div>
             </div>
