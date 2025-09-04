@@ -1,9 +1,11 @@
 {
-  "csv_path": "annotations.csv",
+  "csv_path": "annotations.json",
+  "session_id": "ab123",
   "sentiment_elements": [
     "aspect_term",
-    "aspect_category", 
-    "sentiment_polarity"
+    "aspect_category",
+    "sentiment_polarity",
+    "opinion_term"
   ],
   "sentiment_polarity_options": [
     "positive",
@@ -11,11 +13,9 @@
     "neutral"
   ],
   "aspect_categories": [
-    "food general",
-    "food quality", 
+    "food quality",
     "service general",
-    "service attitude",
-    "price general",
+    "food price",
     "ambience general"
   ],
   "implicit_aspect_term_allowed": true,

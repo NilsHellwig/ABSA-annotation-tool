@@ -6,12 +6,16 @@
 [![Made with FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)](https://python.org)
 
+![ABSA Annotation Tool Interface](docs/user-interface.png)
+
 ## ✨ Features
 
 - **Intuitive UI** - Clean, modern interface for efficient annotation
 - **Phrase Selection** - Click-to-select text spans with visual feedback  
 - **Progress Tracking** - Real-time annotation progress and navigation
 - **Flexible Configuration** - Customizable sentiment elements and categories
+- **Translation Support** - Optional translations displayed below original text
+- **Session Management** - Optional session IDs for tracking annotation sessions
 - **CLI Tool** - Command-line configuration for different domains
 
 ---
@@ -121,6 +125,7 @@ You can save and reuse configurations with JSON files:
 | Option | Description | Default |
 |--------|-------------|---------|
 | `data_path` | **Path to CSV or JSON file** (required) | - |
+| `--session-id` | **Optional session ID for tracking** | - |
 | `--load-config` | **Load configuration from JSON file** | - |
 | `--start` | **Start both backend and frontend** | - |
 | `--backend` | Start only backend server | - |
@@ -139,6 +144,7 @@ You can save and reuse configurations with JSON files:
 
 ```bash
 ./absa-annotator /home/user/reviews.csv \
+  --session-id "user123_restaurant_study" \
   --elements aspect_term aspect_category sentiment_polarity opinion_term \
   --polarities positive negative neutral \
   --categories "food quality" "service speed" "price level" "ambience decor" \
