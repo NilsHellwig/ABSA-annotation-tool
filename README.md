@@ -103,7 +103,16 @@ The `absa-annotator` CLI tool configures and runs your annotation environment:
 ./absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config example_config.json --start
 
 # Load base config, override some settings, and start
-./absa-annotator data.csv --load-config example_config.json --polarities positive negative excited --start
+./absa-annotator data.csv --load-config example_config.json --polarities positive negative --start
+
+# Advanced configuration with phrase cleaning and position saving
+./absa-annotator reviews.json --session-id "study_2024" --no-clean-phrases --save-config study_config.json --start
+
+# Multi-language annotation with disabled position saving for faster processing
+./absa-annotator multilingual_reviews.csv --no-save-positions --start
+
+# Research setup with all position and cleaning features enabled
+./absa-annotator research_data.json --session-id "research_phase1" --implicit-aspect --start
 ```
 
 ### Configuration Files
@@ -134,19 +143,20 @@ You can save and reuse configurations with JSON files:
 }
 ```
 
+## 🔧 Configuration
+
 ### CLI Options
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `data_path` | **Path to CSV or JSON file** (required) | - |
-| `--session-id` | **Optional session ID for tracking** | - |
-| `--load-config` | **Load configuration from JSON file** | - |
-| `--start` | **Start both backend and frontend** | - |
-| `--backend` | Start only backend server | - |
-| `--backend-port` | Port for the backend server | `8000` |
-| `--backend-ip` | IP address for the backend server | `localhost` |
-| `--frontend-port` | Port for the frontend server | `3000` |
-| `--frontend-ip` | IP address for the frontend server | `localhost` |
+| `--start` | **Auto-launch both servers** (backend + frontend) | - |
+| `--backend` | **Start only backend server** | - |
+| `--frontend` | **Start only frontend** (requires backend running) | - |
+| `--backend-port` | Backend server port | `8000` |
+| `--frontend-port` | Frontend server port | `3000` |  
+| `--backend-ip` | Backend server IP address | `127.0.0.1` |
+| `--frontend-ip` | Frontend server IP address | `127.0.0.1` |
+| `--session-id` | **Session identifier** for annotation tracking | `None` |
 | `--port` | Backend server port (deprecated, use --backend-port) | `8000` |
 | `--elements` | Sentiment elements to annotate | `aspect_term, aspect_category, sentiment_polarity, opinion_term` |
 | `--polarities` | Available sentiment polarities | `positive, negative, neutral` |
@@ -156,27 +166,35 @@ You can save and reuse configurations with JSON files:
 | `--implicit-opinion` | Allow implicit opinion terms | `False` |
 | `--no-implicit-opinion` | Disable implicit opinion terms | `True` (default) |
 | `--no-clean-phrases` | **Disable automatic punctuation cleaning** | - |
+| `--no-save-positions` | **Disable saving phrase positions** (at_start, at_end, ot_start, ot_end) | - |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 
-### Full Configuration Example
+### Real-World Example
+
+For a restaurant review annotation project with multilingual support and position tracking:
 
 ```bash
-./absa-annotator /home/user/reviews.csv \
-  --session-id "user123_restaurant_study" \
+./absa-annotator restaurant_reviews.json \
+  --session-id "restaurant_study_2024" \
   --elements aspect_term aspect_category sentiment_polarity opinion_term \
-  --polarities positive negative neutral \
-  --categories "food quality" "service speed" "price level" "ambience decor" \
+  --categories "food quality" "service speed" "price level" "ambience general" "location access" \
+  --polarities positive negative neutral mixed \
   --implicit-aspect \
-  --no-implicit-opinion \
-  --no-clean-phrases \
-  --backend-ip 192.168.1.100 \
+  --backend-ip 0.0.0.0 \
   --backend-port 8080 \
-  --frontend-ip 0.0.0.0 \
   --frontend-port 3001 \
-  --save-config example_config.json \
+  --save-config restaurant_config.json \
   --start
 ```
+
+This configuration:
+- Tracks all annotation sessions with ID `restaurant_study_2024`
+- Enables position saving for phrase analysis (default)
+- Allows implicit aspects (useful for general sentiment)
+- Uses custom categories relevant to restaurant reviews
+- Saves the configuration for future use
+- Enables network access with custom ports
 
 ---
 
@@ -215,13 +233,21 @@ Alternative JSON structure for more flexibility:
         "aspect_term": "food",
         "aspect_category": "food quality", 
         "sentiment_polarity": "positive",
-        "opinion_term": "amazing"
+        "opinion_term": "amazing",
+        "at_start": 4,
+        "at_end": 7,
+        "ot_start": 13,
+        "ot_end": 19
       },
       {
         "aspect_term": "service",
         "aspect_category": "service general",
         "sentiment_polarity": "negative", 
-        "opinion_term": "slow"
+        "opinion_term": "slow",
+        "at_start": 25,
+        "at_end": 31,
+        "ot_start": 37,
+        "ot_end": 40
       }
     ]
   },
@@ -240,6 +266,19 @@ Alternative JSON structure for more flexibility:
 - **Not annotated**: No `label` key present
 - **No aspects found**: `label` is an empty array `[]`  
 - **Aspects found**: `label` contains annotation objects
+
+### Position Data (Optional)
+
+When phrase position saving is enabled (default), the tool automatically adds character position information:
+
+| Field | Description |
+|-------|-------------|
+| `at_start` | Start character position of aspect term in text |
+| `at_end` | End character position of aspect term in text |  
+| `ot_start` | Start character position of opinion term in text |
+| `ot_end` | End character position of opinion term in text |
+
+Position indices are 0-based and inclusive. This data is useful for downstream processing and analysis. To disable position saving, use the `--no-save-positions` CLI option.
 
 **Important**: Both CSV and JSON files must be saved with UTF-8 encoding to support international characters and emojis.
 

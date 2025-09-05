@@ -34,6 +34,7 @@ class ABSAAnnotatorConfig:
             "implicit_aspect_term_allowed": True,
             "implicit_opinion_term_allowed": False,
             "auto_clean_phrases": True,
+            "save_phrase_positions": True,
         }
     
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -63,6 +64,10 @@ class ABSAAnnotatorConfig:
     def set_auto_clean_phrases(self, enabled: bool) -> None:
         """Set whether automatic phrase cleaning is enabled."""
         self.config["auto_clean_phrases"] = enabled
+    
+    def set_save_phrase_positions(self, enabled: bool) -> None:
+        """Set whether phrase start/end positions are saved (at_start, at_end, ot_start, ot_end)."""
+        self.config["save_phrase_positions"] = enabled
     
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
@@ -281,6 +286,12 @@ Examples:
     )
     
     parser.add_argument(
+        "--no-save-positions",
+        action="store_true",
+        help="Disable saving of phrase start/end positions (at_start, at_end, ot_start, ot_end)"
+    )
+    
+    parser.add_argument(
         "--save-config",
         metavar="PATH",
         nargs="?",
@@ -393,6 +404,9 @@ Examples:
     
     if args.no_clean_phrases:
         config.set_auto_clean_phrases(False)
+    
+    if args.no_save_positions:
+        config.set_save_phrase_positions(False)
     
     if args.session_id:
         config.set_session_id(args.session_id)

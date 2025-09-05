@@ -30,6 +30,7 @@ function App() {
   const [allowImplicitAspectTerm, setAllowImplicitAspectTerm] = useState(false);
   const [allowImplicitOpinionTerm, setAllowImplicitOpinionTerm] = useState(false);
   const [autoCleanPhrases, setAutoCleanPhrases] = useState(true);
+  const [savePhrasePositions, setSavePhrasePositions] = useState(true);
 
   // Backend states
   const [currentIndex, setCurrentIndex] = useState(0); // Currently displayed index in UI
@@ -61,46 +62,280 @@ function App() {
     return cleaned.trim();
   };
 
+  const getCleanedPhrasePositions = (originalStart, originalEnd, originalText) => {
+    if (!autoCleanPhrases || originalStart === null || originalEnd === null) {
+      return { start: originalStart, end: originalEnd };
+    }
+    
+    const originalPhrase = originalText.substring(originalStart, originalEnd + 1);
+    const cleanedPhrase = cleanPhrase(originalPhrase);
+    
+    // If cleaning didn't change anything, return original positions
+    if (cleanedPhrase === originalPhrase) {
+      return { start: originalStart, end: originalEnd };
+    }
+    
+    // Find where the cleaned phrase starts and ends within the original phrase
+    const cleanedIndex = originalPhrase.indexOf(cleanedPhrase);
+    if (cleanedIndex === -1) {
+      // Fallback: if cleaned phrase not found, return original positions
+      return { start: originalStart, end: originalEnd };
+    }
+    
+    return {
+      start: originalStart + cleanedIndex,
+      end: originalStart + cleanedIndex + cleanedPhrase.length - 1
+    };
+  };
+
+  const getAspectCharClass = (index) => {
+    let classes = 'cursor-pointer hover:bg-blue-200';
+    
+    // Check if we have a selection and phrase cleaning is enabled
+    if (aspectStartChar !== null && aspectEndChar !== null && autoCleanPhrases) {
+      const cleanedPositions = getCleanedPhrasePositions(aspectStartChar, aspectEndChar, displayedText);
+      // If cleaned phrase is different, only show the cleaned version
+      if (cleanedPositions.start !== aspectStartChar || cleanedPositions.end !== aspectEndChar) {
+        if (index >= cleanedPositions.start && index <= cleanedPositions.end) {
+          classes += ' bg-blue-300';
+        }
+        return classes; // Return early, don't show original selection or markers
+      }
+    }
+    
+    // Fallback: show original selection with markers (when cleaning disabled or no difference)
+    if (aspectStartChar !== null && aspectEndChar !== null &&
+        index >= aspectStartChar && index <= aspectEndChar) {
+      classes += ' bg-blue-300';
+    }
+    
+    // Start/end markers (only when not in cleaned mode or no cleaning difference)
+    if (!(aspectStartChar !== null && aspectEndChar !== null && autoCleanPhrases)) {
+      if (aspectStartChar === index) {
+        classes += ' bg-green-300';
+      } else if (aspectEndChar === index) {
+        classes += ' bg-red-300';
+      }
+    }
+    
+    return classes;
+  };
+
+  const getOpinionCharClass = (index) => {
+    let classes = 'cursor-pointer hover:bg-blue-200';
+    
+    // Check if we have a selection and phrase cleaning is enabled
+    if (opinionStartChar !== null && opinionEndChar !== null && autoCleanPhrases) {
+      const cleanedPositions = getCleanedPhrasePositions(opinionStartChar, opinionEndChar, displayedText);
+      // If cleaned phrase is different, only show the cleaned version
+      if (cleanedPositions.start !== opinionStartChar || cleanedPositions.end !== opinionEndChar) {
+        if (index >= cleanedPositions.start && index <= cleanedPositions.end) {
+          classes += ' bg-blue-300';
+        }
+        return classes; // Return early, don't show original selection or markers
+      }
+    }
+    
+    // Fallback: show original selection with markers (when cleaning disabled or no difference)  
+    if (opinionStartChar !== null && opinionEndChar !== null &&
+        index >= opinionStartChar && index <= opinionEndChar) {
+      classes += ' bg-blue-300';
+    }
+    
+    // Start/end markers (only when not in cleaned mode or no cleaning difference)
+    if (!(opinionStartChar !== null && opinionEndChar !== null && autoCleanPhrases)) {
+      if (opinionStartChar === index) {
+        classes += ' bg-green-300';
+      } else if (opinionEndChar === index) {
+        classes += ' bg-red-300';
+      }
+    }
+    
+    return classes;
+  };
+
+  const getSingleFieldCharClass = (index) => {
+    let classes = 'cursor-pointer hover:bg-blue-200';
+    
+    // Check if we have a selection and phrase cleaning is enabled
+    if (selectedStartChar !== null && selectedEndChar !== null && autoCleanPhrases) {
+      const cleanedPositions = getCleanedPhrasePositions(selectedStartChar, selectedEndChar, displayedText);
+      // If cleaned phrase is different, only show the cleaned version
+      if (cleanedPositions.start !== selectedStartChar || cleanedPositions.end !== selectedEndChar) {
+        if (index >= cleanedPositions.start && index <= cleanedPositions.end) {
+          classes += ' bg-blue-300';
+        }
+        return classes; // Return early, don't show original selection or markers
+      }
+    }
+    
+    // Fallback: show original selection with markers (when cleaning disabled or no difference)
+    if (selectedStartChar !== null && selectedEndChar !== null &&
+        index >= selectedStartChar && index <= selectedEndChar) {
+      classes += ' bg-blue-300';
+    }
+    
+    // Start/end markers (only when not in cleaned mode or no cleaning difference)
+    if (!(selectedStartChar !== null && selectedEndChar !== null && autoCleanPhrases)) {
+      if (selectedStartChar === index) {
+        classes += ' bg-green-300';
+      } else if (selectedEndChar === index) {
+        classes += ' bg-red-300';
+      }
+    }
+    
+    return classes;
+  };
+
+  const findTextInDisplayed = (searchText) => {
+    if (!searchText || searchText === "NULL" || !displayedText) {
+      return { startChar: null, endChar: null };
+    }
+    
+    const index = displayedText.indexOf(searchText);
+    if (index !== -1) {
+      return {
+        startChar: index,
+        endChar: index + searchText.length - 1
+      };
+    }
+    return { startChar: null, endChar: null };
+  };
+
   const openPhrasePopup = (fieldType) => {
     setCurrentEditingField(fieldType);
     setCurrentEditingIndex(null); // Reset for new annotation
     setShowPhrasePopup(true);
-    setSelectedStartChar(null);
-    setSelectedEndChar(null);
-    setAspectStartChar(null);
-    setAspectEndChar(null);
-    setOpinionStartChar(null);
-    setOpinionEndChar(null);
-    // Set initial implicit states based on current values
-    setIsImplicitAspect(newAspect.aspect_term === "NULL");
-    setIsImplicitOpinion(newAspect.opinion_term === "NULL");
+    
+    // Check if we're in combined mode
+    const showCombined = consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term");
+    
+    if (showCombined) {
+      // For combined popup, pre-select current values if they exist
+      const aspectValue = newAspect.aspect_term || "";
+      const opinionValue = newAspect.opinion_term || "";
+      
+      // Set implicit states
+      setIsImplicitAspect(aspectValue === "NULL");
+      setIsImplicitOpinion(opinionValue === "NULL");
+      
+      // Find and set aspect term selection if not implicit and exists
+      if (aspectValue && aspectValue !== "NULL") {
+        const aspectPos = findTextInDisplayed(aspectValue);
+        setAspectStartChar(aspectPos.startChar);
+        setAspectEndChar(aspectPos.endChar);
+      } else {
+        setAspectStartChar(null);
+        setAspectEndChar(null);
+      }
+      
+      // Find and set opinion term selection if not implicit and exists
+      if (opinionValue && opinionValue !== "NULL") {
+        const opinionPos = findTextInDisplayed(opinionValue);
+        setOpinionStartChar(opinionPos.startChar);
+        setOpinionEndChar(opinionPos.endChar);
+      } else {
+        setOpinionStartChar(null);
+        setOpinionEndChar(null);
+      }
+      
+      // Clear single selection states
+      setSelectedStartChar(null);
+      setSelectedEndChar(null);
+      
+    } else {
+      // Single field mode, pre-select current value if it exists
+      const currentValue = newAspect[fieldType] || "";
+      
+      if (fieldType === "aspect_term") {
+        setIsImplicitAspect(currentValue === "NULL");
+      } else if (fieldType === "opinion_term") {
+        setIsImplicitOpinion(currentValue === "NULL");
+      }
+      
+      // Find and set current value selection if not implicit and exists
+      if (currentValue && currentValue !== "NULL") {
+        const textPos = findTextInDisplayed(currentValue);
+        setSelectedStartChar(textPos.startChar);
+        setSelectedEndChar(textPos.endChar);
+      } else {
+        setSelectedStartChar(null);
+        setSelectedEndChar(null);
+      }
+      
+      // Clear combined selection states
+      setAspectStartChar(null);
+      setAspectEndChar(null);
+      setOpinionStartChar(null);
+      setOpinionEndChar(null);
+    }
   };
 
   const openPhrasePopupForEdit = (fieldType, index, currentValue) => {
     setCurrentEditingField(fieldType);
     setCurrentEditingIndex(index);
     setShowPhrasePopup(true);
-    setSelectedStartChar(null);
-    setSelectedEndChar(null);
-    setAspectStartChar(null);
-    setAspectEndChar(null);
-    setOpinionStartChar(null);
-    setOpinionEndChar(null);
-    // For editing mode, set implicit states based on the current aspect being edited
-    if (fieldType === "aspect_term") {
-      setIsImplicitAspect(currentValue === "NULL");
-      // For combined editing, also check opinion term
+    
+    // Check if we're in combined mode
+    const showCombined = consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term");
+    
+    if (showCombined) {
+      // For combined editing, get both current values
       const currentAspectList = [...aspectList];
-      if (currentAspectList[index] && currentAspectList[index].opinion_term !== undefined) {
-        setIsImplicitOpinion(currentAspectList[index].opinion_term === "NULL");
+      const aspectValue = currentAspectList[index]?.aspect_term || "";
+      const opinionValue = currentAspectList[index]?.opinion_term || "";
+      
+      // Set implicit states
+      setIsImplicitAspect(aspectValue === "NULL");
+      setIsImplicitOpinion(opinionValue === "NULL");
+      
+      // Find and set aspect term selection if not implicit
+      if (aspectValue && aspectValue !== "NULL") {
+        const aspectPos = findTextInDisplayed(aspectValue);
+        setAspectStartChar(aspectPos.startChar);
+        setAspectEndChar(aspectPos.endChar);
+      } else {
+        setAspectStartChar(null);
+        setAspectEndChar(null);
       }
-    } else if (fieldType === "opinion_term") {
-      setIsImplicitOpinion(currentValue === "NULL");
-      // For combined editing, also check aspect term
-      const currentAspectList = [...aspectList];
-      if (currentAspectList[index] && currentAspectList[index].aspect_term !== undefined) {
-        setIsImplicitAspect(currentAspectList[index].aspect_term === "NULL");
+      
+      // Find and set opinion term selection if not implicit
+      if (opinionValue && opinionValue !== "NULL") {
+        const opinionPos = findTextInDisplayed(opinionValue);
+        setOpinionStartChar(opinionPos.startChar);
+        setOpinionEndChar(opinionPos.endChar);
+      } else {
+        setOpinionStartChar(null);
+        setOpinionEndChar(null);
       }
+      
+      // Clear single selection states
+      setSelectedStartChar(null);
+      setSelectedEndChar(null);
+      
+    } else {
+      // Single field editing
+      if (fieldType === "aspect_term") {
+        setIsImplicitAspect(currentValue === "NULL");
+      } else if (fieldType === "opinion_term") {
+        setIsImplicitOpinion(currentValue === "NULL");
+      }
+      
+      // Find and set current value selection if not implicit
+      if (currentValue && currentValue !== "NULL") {
+        const textPos = findTextInDisplayed(currentValue);
+        setSelectedStartChar(textPos.startChar);
+        setSelectedEndChar(textPos.endChar);
+      } else {
+        setSelectedStartChar(null);
+        setSelectedEndChar(null);
+      }
+      
+      // Clear combined selection states
+      setAspectStartChar(null);
+      setAspectEndChar(null);
+      setOpinionStartChar(null);
+      setOpinionEndChar(null);
     }
   };
 
@@ -181,19 +416,41 @@ function App() {
       if (currentEditingIndex !== null) {
         // Editing existing annotation
         if (aspectPhrase !== undefined) {
-          updateAspectItem(currentEditingIndex, "aspect_term", aspectPhrase);
+          let aspectStart = null, aspectEnd = null;
+          if (!isImplicitAspect && aspectStartChar !== null && aspectEndChar !== null) {
+            const cleanedPositions = getCleanedPhrasePositions(aspectStartChar, aspectEndChar, displayedText);
+            aspectStart = cleanedPositions.start;
+            aspectEnd = cleanedPositions.end;
+          }
+          updateAspectItem(currentEditingIndex, "aspect_term", aspectPhrase, aspectStart, aspectEnd);
         }
         if (opinionPhrase !== undefined) {
-          updateAspectItem(currentEditingIndex, "opinion_term", opinionPhrase);
+          let opinionStart = null, opinionEnd = null;
+          if (!isImplicitOpinion && opinionStartChar !== null && opinionEndChar !== null) {
+            const cleanedPositions = getCleanedPhrasePositions(opinionStartChar, opinionEndChar, displayedText);
+            opinionStart = cleanedPositions.start;
+            opinionEnd = cleanedPositions.end;
+          }
+          updateAspectItem(currentEditingIndex, "opinion_term", opinionPhrase, opinionStart, opinionEnd);
         }
       } else {
         // Adding new annotation
         const updates = {};
         if (aspectPhrase !== undefined) {
           updates.aspect_term = aspectPhrase;
+          if (savePhrasePositions && !isImplicitAspect && aspectStartChar !== null && aspectEndChar !== null) {
+            const cleanedPositions = getCleanedPhrasePositions(aspectStartChar, aspectEndChar, displayedText);
+            updates.at_start = cleanedPositions.start;
+            updates.at_end = cleanedPositions.end;
+          }
         }
         if (opinionPhrase !== undefined) {
           updates.opinion_term = opinionPhrase;
+          if (savePhrasePositions && !isImplicitOpinion && opinionStartChar !== null && opinionEndChar !== null) {
+            const cleanedPositions = getCleanedPhrasePositions(opinionStartChar, opinionEndChar, displayedText);
+            updates.ot_start = cleanedPositions.start;
+            updates.ot_end = cleanedPositions.end;
+          }
         }
         setNewAspect({ ...newAspect, ...updates });
       }
@@ -209,10 +466,33 @@ function App() {
 
       if (currentEditingIndex !== null) {
         // Editing existing annotation
-        updateAspectItem(currentEditingIndex, currentEditingField, selectedPhrase);
+        const isImplicit = (currentEditingField === "aspect_term" && isImplicitAspect) || 
+                          (currentEditingField === "opinion_term" && isImplicitOpinion);
+        let startPos = null, endPos = null;
+        if (!isImplicit && selectedStartChar !== null && selectedEndChar !== null) {
+          const cleanedPositions = getCleanedPhrasePositions(selectedStartChar, selectedEndChar, displayedText);
+          startPos = cleanedPositions.start;
+          endPos = cleanedPositions.end;
+        }
+        updateAspectItem(currentEditingIndex, currentEditingField, selectedPhrase, startPos, endPos);
       } else {
         // Adding new annotation
-        setNewAspect({ ...newAspect, [currentEditingField]: selectedPhrase });
+        const updates = { [currentEditingField]: selectedPhrase };
+        if (savePhrasePositions && selectedStartChar !== null && selectedEndChar !== null) {
+          const isImplicit = (currentEditingField === "aspect_term" && isImplicitAspect) || 
+                            (currentEditingField === "opinion_term" && isImplicitOpinion);
+          if (!isImplicit) {
+            const cleanedPositions = getCleanedPhrasePositions(selectedStartChar, selectedEndChar, displayedText);
+            if (currentEditingField === "aspect_term") {
+              updates.at_start = cleanedPositions.start;
+              updates.at_end = cleanedPositions.end;
+            } else if (currentEditingField === "opinion_term") {
+              updates.ot_start = cleanedPositions.start;
+              updates.ot_end = cleanedPositions.end;
+            }
+          }
+        }
+        setNewAspect({ ...newAspect, ...updates });
       }
     }
 
@@ -225,9 +505,21 @@ function App() {
     }
   };
 
-  const updateAspectItem = (index, field, value) => {
+  const updateAspectItem = (index, field, value, startPos = null, endPos = null) => {
     const updatedList = [...aspectList];
     updatedList[index][field] = value;
+    
+    // Save positions if enabled and provided
+    if (savePhrasePositions && startPos !== null && endPos !== null) {
+      if (field === "aspect_term") {
+        updatedList[index]["at_start"] = startPos;
+        updatedList[index]["at_end"] = endPos;
+      } else if (field === "opinion_term") {
+        updatedList[index]["ot_start"] = startPos;
+        updatedList[index]["ot_end"] = endPos;
+      }
+    }
+    
     setAspectList(updatedList);
   };
 
@@ -259,6 +551,14 @@ function App() {
         newAnnotation[element] = newAspect[element];
       });
 
+      // Add position data if enabled and available
+      if (savePhrasePositions) {
+        if (newAspect.at_start !== undefined) newAnnotation.at_start = newAspect.at_start;
+        if (newAspect.at_end !== undefined) newAnnotation.at_end = newAspect.at_end;
+        if (newAspect.ot_start !== undefined) newAnnotation.ot_start = newAspect.ot_start;
+        if (newAspect.ot_end !== undefined) newAnnotation.ot_end = newAspect.ot_end;
+      }
+
       setAspectList([...aspectList, newAnnotation]);
 
       // Reset the form
@@ -266,6 +566,11 @@ function App() {
       consideredSentimentElements.forEach(element => {
         resetAspect[element] = "";
       });
+      // Also reset position data
+      resetAspect.at_start = undefined;
+      resetAspect.at_end = undefined;
+      resetAspect.ot_start = undefined;
+      resetAspect.ot_end = undefined;
       setNewAspect(resetAspect);
     }
   };
@@ -282,6 +587,7 @@ function App() {
       setAllowImplicitAspectTerm(settings["implicit_aspect_term_allowed"]);
       setAllowImplicitOpinionTerm(settings["implicit_opinion_term_allowed"]);
       setAutoCleanPhrases(settings["auto_clean_phrases"] !== false); // Default to true
+      setSavePhrasePositions(settings["save_phrase_positions"] !== false); // Default to true
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);
@@ -546,7 +852,17 @@ function App() {
                     className="w-full p-3 border border-gray-200 rounded-lg bg-gray-50 cursor-pointer hover:bg-gray-100"
                     onClick={() => openPhrasePopup("aspect_term")}
                   >
-                    {truncateText(newAspect.aspect_term) || "Select phrase"}
+                    <div>
+                      {truncateText(newAspect.aspect_term) || "Select phrase"}
+                    </div>
+                    {newAspect.aspect_term && newAspect.aspect_term !== "NULL" && (() => {
+                      const cleanedPhrase = cleanPhrase(newAspect.aspect_term);
+                      return cleanedPhrase !== newAspect.aspect_term && (
+                        <div className="text-xs text-green-600 mt-1">
+                          Cleaned: "{truncateText(cleanedPhrase)}"
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>)}
               
@@ -560,7 +876,17 @@ function App() {
                     className="w-full p-3 border border-gray-200 rounded-lg bg-gray-50 cursor-pointer hover:bg-gray-100"
                     onClick={() => openPhrasePopup("opinion_term")}
                   >
-                    {truncateText(newAspect.opinion_term) || "Select phrase"}
+                    <div>
+                      {truncateText(newAspect.opinion_term) || "Select phrase"}
+                    </div>
+                    {newAspect.opinion_term && newAspect.opinion_term !== "NULL" && (() => {
+                      const cleanedPhrase = cleanPhrase(newAspect.opinion_term);
+                      return cleanedPhrase !== newAspect.opinion_term && (
+                        <div className="text-xs text-green-600 mt-1">
+                          Cleaned: "{truncateText(cleanedPhrase)}"
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
               )}
@@ -762,20 +1088,17 @@ function App() {
                           <p className="text-sm text-gray-600 mb-3">
                             Click on the start and end characters for the aspect term:
                           </p>
+                          {autoCleanPhrases && (
+                            <div className="text-xs text-gray-500 mb-2">
+                              <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                            </div>
+                          )}
                           <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
                             {displayedText.split('').map((char, index) => (
                               <span
                                 key={`aspect-${index}`}
                                 onClick={() => handleAspectCharClick(index)}
-                                className={`cursor-pointer hover:bg-blue-200 ${aspectStartChar !== null && aspectEndChar !== null &&
-                                    index >= aspectStartChar && index <= aspectEndChar
-                                    ? 'bg-blue-300'
-                                    : aspectStartChar === index
-                                      ? 'bg-green-300'
-                                      : aspectEndChar === index
-                                        ? 'bg-red-300'
-                                        : ''
-                                  }`}
+                                className={getAspectCharClass(index)}
                               >
                                 {char}
                               </span>
@@ -789,11 +1112,28 @@ function App() {
                               {(() => {
                                 const originalText = displayedText.substring(aspectStartChar, aspectEndChar + 1);
                                 const cleanedText = cleanPhrase(originalText);
-                                return originalText !== cleanedText && (
-                                  <div>
-                                    <strong>Cleaned aspect phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
-                                  </div>
-                                );
+                                if (originalText !== cleanedText) {
+                                  const cleanedPositions = getCleanedPhrasePositions(aspectStartChar, aspectEndChar, displayedText);
+                                  return (
+                                    <>
+                                      <div>
+                                        <strong>Cleaned aspect phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                      </div>
+                                      {savePhrasePositions && (
+                                        <div className="text-sm text-gray-600">
+                                          Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
+                                        </div>
+                                      )}
+                                    </>
+                                  );
+                                } else if (savePhrasePositions) {
+                                  return (
+                                    <div className="text-sm text-gray-600">
+                                      Saved positions: {aspectStartChar} - {aspectEndChar}
+                                    </div>
+                                  );
+                                }
+                                return null;
                               })()}
                             </div>
                           )}
@@ -823,20 +1163,17 @@ function App() {
                           <p className="text-sm text-gray-600 mb-3">
                             Click on the start and end characters for the opinion term:
                           </p>
+                          {autoCleanPhrases && (
+                            <div className="text-xs text-gray-500 mb-2">
+                              <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                            </div>
+                          )}
                           <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
                             {displayedText.split('').map((char, index) => (
                               <span
                                 key={`opinion-${index}`}
                                 onClick={() => handleOpinionCharClick(index)}
-                                className={`cursor-pointer hover:bg-blue-200 ${opinionStartChar !== null && opinionEndChar !== null &&
-                                    index >= opinionStartChar && index <= opinionEndChar
-                                    ? 'bg-blue-300'
-                                    : opinionStartChar === index
-                                      ? 'bg-green-300'
-                                      : opinionEndChar === index
-                                        ? 'bg-red-300'
-                                        : ''
-                                  }`}
+                                className={getOpinionCharClass(index)}
                               >
                                 {char}
                               </span>
@@ -850,11 +1187,28 @@ function App() {
                               {(() => {
                                 const originalText = displayedText.substring(opinionStartChar, opinionEndChar + 1);
                                 const cleanedText = cleanPhrase(originalText);
-                                return originalText !== cleanedText && (
-                                  <div>
-                                    <strong>Cleaned opinion phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
-                                  </div>
-                                );
+                                if (originalText !== cleanedText) {
+                                  const cleanedPositions = getCleanedPhrasePositions(opinionStartChar, opinionEndChar, displayedText);
+                                  return (
+                                    <>
+                                      <div>
+                                        <strong>Cleaned opinion phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                      </div>
+                                      {savePhrasePositions && (
+                                        <div className="text-sm text-gray-600">
+                                          Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
+                                        </div>
+                                      )}
+                                    </>
+                                  );
+                                } else if (savePhrasePositions) {
+                                  return (
+                                    <div className="text-sm text-gray-600">
+                                      Saved positions: {opinionStartChar} - {opinionEndChar}
+                                    </div>
+                                  );
+                                }
+                                return null;
                               })()}
                             </div>
                           )}
@@ -898,20 +1252,17 @@ function App() {
                       <p className="text-sm text-gray-600 mb-3">
                         Click on the start character and then on the end character of the phrase:
                       </p>
+                      {autoCleanPhrases && (
+                        <div className="text-xs text-gray-500 mb-2">
+                          <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                        </div>
+                      )}
                       <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
                         {displayedText.split('').map((char, index) => (
                           <span
                             key={index}
                             onClick={() => handleCharClick(index)}
-                            className={`cursor-pointer hover:bg-blue-200 ${selectedStartChar !== null && selectedEndChar !== null &&
-                                index >= selectedStartChar && index <= selectedEndChar
-                                ? 'bg-blue-300'
-                                : selectedStartChar === index
-                                  ? 'bg-green-300'
-                                  : selectedEndChar === index
-                                    ? 'bg-red-300'
-                                    : ''
-                              }`}
+                            className={getSingleFieldCharClass(index)}
                           >
                             {char}
                           </span>
@@ -925,11 +1276,28 @@ function App() {
                           {(() => {
                             const originalText = displayedText.substring(selectedStartChar, selectedEndChar + 1);
                             const cleanedText = cleanPhrase(originalText);
-                            return originalText !== cleanedText && (
-                              <div>
-                                <strong>Cleaned phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
-                              </div>
-                            );
+                            if (originalText !== cleanedText) {
+                              const cleanedPositions = getCleanedPhrasePositions(selectedStartChar, selectedEndChar, displayedText);
+                              return (
+                                <>
+                                  <div>
+                                    <strong>Cleaned phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                  </div>
+                                  {savePhrasePositions && (
+                                    <div className="text-sm text-gray-600">
+                                      Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
+                                    </div>
+                                  )}
+                                </>
+                              );
+                            } else if (savePhrasePositions) {
+                              return (
+                                <div className="text-sm text-gray-600">
+                                  Saved positions: {selectedStartChar} - {selectedEndChar}
+                                </div>
+                              );
+                            }
+                            return null;
                           })()}
                         </div>
                       )}
