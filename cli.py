@@ -11,6 +11,7 @@ import os
 import subprocess
 import threading
 import time
+import socket
 from typing import List, Dict, Any
 
 class ABSAAnnotatorConfig:
@@ -123,6 +124,12 @@ class ABSAAnnotatorConfig:
 def start_backend(port: int = 8000, host: str = "localhost", data_path: str = None, config: ABSAAnnotatorConfig = None):
     """Start the FastAPI backend server."""
     try:
+        # Check if port is already in use
+        if is_port_in_use(host, port):
+            print(f"⚠️  Port {port} is already in use on {host}")
+            print(f"💡 Backend might already be running on http://{host}:{port}")
+            return
+        
         print(f"🚀 Starting backend server on {host}:{port}...")
         if data_path:
             os.environ['ABSA_DATA_PATH'] = data_path
@@ -153,13 +160,14 @@ def start_frontend(port: int = 3000, host: str = "localhost", backend_host: str 
         print(f"🌐 Starting frontend development server on {host}:{port}...")
         os.chdir(frontend_path)
         
-        # Set environment variables for React
+        # Set environment variables for Vite
         env = os.environ.copy()
-        env["PORT"] = str(port)
-        env["HOST"] = host
-        env["REACT_APP_BACKEND_URL"] = f"http://{backend_host}:{backend_port}"
+        env["VITE_BACKEND_URL"] = f"http://{backend_host}:{backend_port}"
         
-        subprocess.run(["npm", "start"], check=True, env=env)
+        # Update vite.config.js to use the specified port
+        update_vite_port_config(port, host)
+        
+        subprocess.run(["npm", "run", "dev"], check=True, env=env)
     except subprocess.CalledProcessError as e:
         print(f"❌ Failed to start frontend server: {e}")
         return False
@@ -191,6 +199,41 @@ def start_full_app(backend_port: int = 8000, backend_host: str = "localhost", fr
     except KeyboardInterrupt:
         print("\n🛑 Shutting down ABSA Annotation Tool...")
         sys.exit(0)
+
+
+def update_vite_port_config(port: int, host: str):
+    """Update vite.config.js with the specified port and host."""
+    vite_config_path = "vite.config.js"
+    if not os.path.exists(vite_config_path):
+        return
+    
+    # Read current config
+    with open(vite_config_path, 'r') as f:
+        content = f.read()
+    
+    # Replace the server configuration
+    import re
+    pattern = r'server:\s*\{[^}]*\}'
+    replacement = f'''server: {{
+    port: {port},
+    host: '{host}',
+    open: true
+  }}'''
+    
+    if re.search(pattern, content):
+        content = re.sub(pattern, replacement, content)
+        with open(vite_config_path, 'w') as f:
+            f.write(content)
+
+
+def is_port_in_use(host: str, port: int) -> bool:
+    """Check if a port is already in use."""
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        try:
+            s.bind((host, port))
+            return False
+        except OSError:
+            return True
 
 
 def main():

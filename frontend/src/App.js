@@ -42,7 +42,7 @@ function App() {
   const [sessionId, setSessionId] = useState(null);
 
   // Get backend URL from environment or use default
-  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
 
   // Function to mix colors mathematically
   // Helper functions
@@ -1038,18 +1038,18 @@ function App() {
             {aspectList.length > 0 ? (
               <button
                 onClick={goToNext}
-                disabled={currentIndex >= maxIndex - 1}
-                className="bg-green-600 hover:bg-green-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium transition-colors"
+                disabled={false}
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                Save & Next annotation →
+                {currentIndex + 1 >= maxIndex ? "Save & Finish" : "Save & Next annotation →"}
               </button>
             ) : (
               <button
                 onClick={annotateEmpty}
-                disabled={currentIndex >= maxIndex - 1}
-                className="bg-yellow-600 hover:bg-yellow-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium transition-colors"
+                disabled={false}
+                className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                Save & Annotate empty list
+                {currentIndex + 1 >= maxIndex ? "Save & Finish" : "Save & Annotate empty list"}
               </button>
             )}
           </div>
@@ -1336,6 +1336,21 @@ function App() {
           </div>
         )}
       </div>
+
+      {/* Footer with Contact Info */}
+      <footer className="bg-gray-50 border-t border-gray-200 py-4 px-6">
+        <div className="max-w-4xl mx-auto text-center text-sm text-gray-600">
+          <div className="flex items-center justify-center gap-2">
+            <span>Built with ❤️ for the NLP community by</span>
+            <a 
+              href="mailto:Nils-Constantin.Hellwig@ur.de"
+              className="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+            >
+              Nils-Constantin.Hellwig@ur.de
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

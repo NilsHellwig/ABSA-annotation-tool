@@ -3,6 +3,7 @@
 > *A modern, intuitive web interface for Aspect-Based Sentiment Analysis annotation*
 
 [![Made with React](https://img.shields.io/badge/Frontend-React-61dafb?style=flat-square&logo=react)](https://reactjs.org/)
+[![Made with Vite](https://img.shields.io/badge/Built_with-Vite-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
 [![Made with FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)](https://python.org)
 
@@ -82,8 +83,8 @@ cd frontend
 # Install dependencies
 npm install
 
-# Start development server
-npm start
+# Start development server (Vite)
+npm run dev
 ```
 
 The app will open at `http://localhost:3000`
@@ -380,6 +381,13 @@ Food, Service, Price, Ambience, Location, Restaurant
 ## 🤝 Contributing
 
 Feel free to open issues or submit pull requests to improve the tool!
+
+## 📧 Contact
+
+For questions, suggestions, or support, please reach out:
+
+**Nils-Constantin Hellwig**  
+📧 [Nils-Constantin.Hellwig@ur.de](mailto:Nils-Constantin.Hellwig@ur.de)
 
 ---
 
