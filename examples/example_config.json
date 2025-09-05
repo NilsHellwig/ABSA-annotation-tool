@@ -1,6 +1,6 @@
 {
   "csv_path": "restaurant_reviews.json",
-  "session_id": "ab123",
+  "session_id": "restaurant_study_2024",
   "sentiment_elements": [
     "aspect_term",
     "aspect_category",

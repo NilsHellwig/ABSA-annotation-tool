@@ -1076,7 +1076,7 @@ function App() {
                   onClick={clearAllAnnotations}
                   className="px-3 py-1 text-sm bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors"
                 >
-                  Delete all {aspectList.length} annotations 🗑️
+                  Delete all annotations ({aspectList.length}) 🗑️
                 </button>
               )}
             </div>

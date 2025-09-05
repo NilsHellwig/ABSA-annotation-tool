@@ -1,18 +1,18 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-
-app = FastAPI()
-
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import pandas as pd
 import json
 import os
 from fastapi import HTTPException
 
+app = FastAPI()
+
 # Global variable to store the data file path and type
 DATA_FILE_PATH = os.environ.get('ABSA_DATA_PATH', "annotations.csv")  # Default
 DATA_FILE_TYPE = "json" if DATA_FILE_PATH.endswith('.json') else "csv"
 CONFIG_PATH = os.environ.get('ABSA_CONFIG_PATH', None)  # Path to config file
+AUTO_POSITIONS = os.environ.get('ABSA_AUTO_POSITIONS', 'False').lower() == 'true'  # Auto-add positions flag (default: disabled)
 CONFIG_DATA = {}  # Store configuration data including session_id
 
 # Load configuration if provided
@@ -250,3 +250,182 @@ def post_annotations(data_idx: int, annotation_data: AnnotationData):
         raise HTTPException(status_code=404, detail=f"{DATA_FILE_PATH} not found")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+def find_phrase_positions(text: str, phrase: str):
+    """
+    Find start and end positions of a phrase in text.
+    Returns tuple (start, end) or (None, None) if not found.
+    """
+    if not phrase or phrase == "NULL" or not text:
+        return None, None
+    
+    # Try exact match first
+    index = text.find(phrase)
+    if index != -1:
+        return index, index + len(phrase) - 1
+    
+    # If exact match fails, try case-insensitive match
+    index = text.lower().find(phrase.lower())
+    if index != -1:
+        return index, index + len(phrase) - 1
+    
+    return None, None
+
+def auto_add_missing_positions():
+    """Automatically add missing position data for existing phrases."""
+    if not AUTO_POSITIONS:
+        print("ℹ️  Auto position filling disabled (use --auto-positions to enable)")
+        return
+    
+    print("🔍 Scanning for missing position data...")
+    
+    try:
+        data = load_data()
+        data_changed = False
+        updated_count = 0
+        
+        if DATA_FILE_TYPE == "json":
+            # Handle JSON format
+            for item in data:
+                if 'text' not in item:
+                    continue
+                    
+                text = item['text']
+                label_data = item.get('label', [])
+                
+                # Handle both string and array formats
+                if isinstance(label_data, str):
+                    if not label_data or label_data == '':
+                        continue
+                    try:
+                        annotations = json.loads(label_data)
+                    except (json.JSONDecodeError, TypeError):
+                        continue
+                else:
+                    # Already an array
+                    annotations = label_data
+                
+                if not isinstance(annotations, list):
+                    continue
+                    
+                annotations_updated = False
+                
+                for annotation in annotations:
+                    # Check aspect_term positions
+                    if ('aspect_term' in annotation and 
+                        annotation['aspect_term'] and 
+                        annotation['aspect_term'] != 'NULL' and
+                        ('at_start' not in annotation or 'at_end' not in annotation)):
+                        
+                        phrase = annotation['aspect_term']
+                        start_pos = text.find(phrase)
+                        if start_pos != -1:
+                            annotation['at_start'] = start_pos
+                            annotation['at_end'] = start_pos + len(phrase) - 1
+                            annotations_updated = True
+                            updated_count += 1
+                    
+                    # Check opinion_term positions  
+                    if ('opinion_term' in annotation and 
+                        annotation['opinion_term'] and 
+                        annotation['opinion_term'] != 'NULL' and
+                        ('ot_start' not in annotation or 'ot_end' not in annotation)):
+                        
+                        phrase = annotation['opinion_term']
+                        start_pos = text.find(phrase)
+                        if start_pos != -1:
+                            annotation['ot_start'] = start_pos
+                            annotation['ot_end'] = start_pos + len(phrase) - 1
+                            annotations_updated = True
+                            updated_count += 1
+                
+                if annotations_updated:
+                    # Store as array, not as JSON string
+                    item['label'] = annotations
+                    data_changed = True
+        
+        else:
+            # Handle CSV format
+            for idx, row in data.iterrows():
+                if pd.isna(row.get('text')):
+                    continue
+                    
+                text = row['text']
+                label_str = row.get('label', '')
+                
+                if not label_str or pd.isna(label_str) or label_str == '':
+                    continue
+                    
+                try:
+                    annotations = json.loads(label_str)
+                    if not isinstance(annotations, list):
+                        continue
+                        
+                    annotations_updated = False
+                    
+                    for annotation in annotations:
+                        # Check aspect_term positions
+                        if ('aspect_term' in annotation and 
+                            annotation['aspect_term'] and 
+                            annotation['aspect_term'] != 'NULL' and
+                            ('at_start' not in annotation or 'at_end' not in annotation)):
+                            
+                            phrase = annotation['aspect_term']
+                            start_pos = text.find(phrase)
+                            if start_pos != -1:
+                                annotation['at_start'] = start_pos
+                                annotation['at_end'] = start_pos + len(phrase) - 1
+                                annotations_updated = True
+                                updated_count += 1
+                        
+                        # Check opinion_term positions  
+                        if ('opinion_term' in annotation and 
+                            annotation['opinion_term'] and 
+                            annotation['opinion_term'] != 'NULL' and
+                            ('ot_start' not in annotation or 'ot_end' not in annotation)):
+                            
+                            phrase = annotation['opinion_term']
+                            start_pos = text.find(phrase)
+                            if start_pos != -1:
+                                annotation['ot_start'] = start_pos
+                                annotation['ot_end'] = start_pos + len(phrase) - 1
+                                annotations_updated = True
+                                updated_count += 1
+                    
+                    if annotations_updated:
+                        data.at[idx, 'label'] = json.dumps(annotations, ensure_ascii=False)
+                        data_changed = True
+                        
+                except (json.JSONDecodeError, TypeError):
+                    continue
+        
+        if data_changed:
+            save_data(data)
+            print(f"✅ Auto-added {updated_count} missing position entries and saved to {DATA_FILE_PATH}")
+        else:
+            print("ℹ️  No missing positions found")
+            
+    except Exception as e:
+        print(f"❌ Error during auto position filling: {e}")
+
+# POST Endpoint to manually trigger position data addition
+@app.post("/auto-add-positions")
+def manual_auto_add_positions():
+    """Manually trigger the auto-addition of missing position data."""
+    try:
+        auto_add_missing_positions()
+        return {"message": "Position data auto-addition completed successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error adding position data: {str(e)}")
+
+@app.on_event("startup")
+async def startup_event():
+    """Run startup tasks including auto-adding missing position data."""
+    print(f"🚀 Starting ABSA Annotation Tool Backend...")
+    print(f"📄 Data file: {DATA_FILE_PATH} (type: {DATA_FILE_TYPE})")
+    if CONFIG_PATH:
+        print(f"⚙️  Config file: {CONFIG_PATH}")
+    
+    # Auto-add missing position data when server starts
+    auto_add_missing_positions()
+    print("✨ Backend ready!")

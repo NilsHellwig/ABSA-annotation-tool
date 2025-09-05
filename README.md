@@ -26,6 +26,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Intelligent Color Mixing** - Overlapping phrases show mixed colors to visualize annotation overlaps
 - **Automatic Phrase Cleaning** - Removes punctuation from start/end of selected phrases (configurable)
 - **Click-on-Token Selection** - Smart token-based text selection that snaps to word boundaries (configurable)
+- **Automatic Position Filling** - Automatically adds missing character positions for existing phrases on startup
 - **Combined Annotation Popup** - When both aspect and opinion terms are configured, annotate both in a single, unified dialog
 - **Separate Text Selection** - Independent phrase selection for aspect terms and opinion terms
 - **Progress Tracking** - Real-time annotation progress and navigation
@@ -186,6 +187,7 @@ The `examples/` folder contains sample data to get you started:
 | `--no-clean-phrases` | **Disable automatic punctuation cleaning** from phrase start/end | Enabled by default |
 | `--no-save-positions` | **Disable saving phrase positions** (at_start, at_end, ot_start, ot_end) for faster processing | Enabled by default |
 | `--no-click-on-token` | **Disable click-on-token feature** (precise character clicking instead of token snapping) | Enabled by default |
+| `--auto-positions` | **Enable automatic position filling** on startup for existing phrases without positions | Disabled by default |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 
@@ -213,6 +215,15 @@ This configuration:
 - Uses custom categories relevant to restaurant reviews
 - Saves the configuration for future use
 - Enables network access with custom ports
+
+### Working with Imported Data
+
+If you're importing existing annotation data that may have inconsistent or missing position information, you can enable automatic preprocessing:
+
+```bash
+# Enable automatic position filling (slower startup but adds missing positions)
+./absa-annotator imported_annotations.csv --auto-positions
+```
 
 ---
 
@@ -296,7 +307,50 @@ When phrase position saving is enabled (default), the tool automatically adds ch
 | `ot_start` | Start character position of opinion term in text |
 | `ot_end` | End character position of opinion term in text |
 
-Position indices are 0-based and inclusive. This data is useful for downstream processing and analysis. 
+Position indices are 0-based and inclusive. This data is useful for downstream processing and analysis.
+
+#### Automatic Position Filling
+
+**Optional Feature**: When enabled with `--auto-positions`, the tool automatically scans existing annotations and fills missing position data for phrases that have values but no position information. This is useful when:
+
+- Importing existing annotation data from other tools
+- Working with datasets that lack position information
+- Migrating between different annotation formats
+
+**Example**: If your data contains annotations like this:
+```json
+{
+  "text": "The pasta was excellent",
+  "label": [
+    {
+      "aspect_term": "pasta",
+      "opinion_term": "excellent"
+    }
+  ]
+}
+```
+
+The tool will automatically add position data on startup:
+```json
+{
+  "text": "The pasta was excellent", 
+  "label": [
+    {
+      "aspect_term": "pasta",
+      "opinion_term": "excellent",
+      "at_start": 4,
+      "at_end": 8,
+      "ot_start": 14,
+      "ot_end": 22
+    }
+  ]
+}
+```
+
+**Usage:**
+- **Default**: Auto-position filling is disabled
+- **Enable**: Use `--auto-positions` flag to enable this preprocessing step
+- **Algorithm**: Uses first occurrence of each phrase in the text 
 
 **Important**: Position data is only saved when the corresponding term has an actual value (not NULL or empty). This ensures data consistency and prevents storing meaningless position information for implicit aspects/opinions.
 
