@@ -1162,62 +1162,67 @@ function App() {
                         )}
                       </div>
 
-                      {!isImplicitAspect && (
-                        <div>
+                      <div>
+                        {!isImplicitAspect ? (
                           <p className="text-sm text-gray-600 mb-3">
                             Click on the start and end characters for the aspect term:
                           </p>
-                          {autoCleanPhrases && (
-                            <div className="text-xs text-gray-500 mb-2">
-                              <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
-                            </div>
-                          )}
-                          <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
-                            {displayedText.split('').map((char, index) => (
-                              <span
-                                key={`aspect-${index}`}
-                                onClick={() => handleAspectCharClick(index)}
-                                className={getAspectCharClass(index)}
-                              >
-                                {char}
-                              </span>
-                            ))}
+                        ) : (
+                          <p className="text-sm text-gray-600 mb-3 italic">
+                            Text display (selection disabled for implicit aspect):
+                          </p>
+                        )}
+                        {autoCleanPhrases && !isImplicitAspect && (
+                          <div className="text-xs text-gray-500 mb-2">
+                            <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
                           </div>
-                          {aspectStartChar !== null && aspectEndChar !== null && (
-                            <div className="mt-3 space-y-2">
-                              <div>
-                                <strong>Selected text:</strong> "{displayedText.substring(aspectStartChar, aspectEndChar + 1)}"
-                              </div>
-                              {(() => {
-                                const originalText = displayedText.substring(aspectStartChar, aspectEndChar + 1);
-                                const cleanedText = cleanPhrase(originalText);
-                                if (originalText !== cleanedText) {
-                                  const cleanedPositions = getCleanedPhrasePositions(aspectStartChar, aspectEndChar, displayedText);
-                                  return (
-                                    <>
-                                      <div>
-                                        <strong>Cleaned aspect phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
-                                      </div>
-                                      {savePhrasePositions && (
-                                        <div className="text-sm text-gray-600">
-                                          Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
-                                        </div>
-                                      )}
-                                    </>
-                                  );
-                                } else if (savePhrasePositions) {
-                                  return (
-                                    <div className="text-sm text-gray-600">
-                                      Saved positions: {aspectStartChar} - {aspectEndChar}
-                                    </div>
-                                  );
-                                }
-                                return null;
-                              })()}
-                            </div>
-                          )}
+                        )}
+                        <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                          {displayedText.split('').map((char, index) => (
+                            <span
+                              key={`aspect-${index}`}
+                              onClick={!isImplicitAspect ? () => handleAspectCharClick(index) : undefined}
+                              className={!isImplicitAspect ? getAspectCharClass(index) : ""}
+                              style={isImplicitAspect ? {cursor: 'default'} : {}}
+                            >
+                              {char}
+                            </span>
+                          ))}
                         </div>
-                      )}
+                        {!isImplicitAspect && aspectStartChar !== null && aspectEndChar !== null && (
+                          <div className="mt-3 space-y-2">
+                            <div>
+                              <strong>Selected text:</strong> "{displayedText.substring(aspectStartChar, aspectEndChar + 1)}"
+                            </div>
+                            {(() => {
+                              const originalText = displayedText.substring(aspectStartChar, aspectEndChar + 1);
+                              const cleanedText = cleanPhrase(originalText);
+                              if (originalText !== cleanedText) {
+                                const cleanedPositions = getCleanedPhrasePositions(aspectStartChar, aspectEndChar, displayedText);
+                                return (
+                                  <>
+                                    <div>
+                                      <strong>Cleaned aspect phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                    </div>
+                                    {savePhrasePositions && (
+                                      <div className="text-sm text-gray-600">
+                                        Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
+                                      </div>
+                                    )}
+                                  </>
+                                );
+                              } else if (savePhrasePositions) {
+                                return (
+                                  <div className="text-sm text-gray-600">
+                                    Saved positions: {aspectStartChar} - {aspectEndChar}
+                                  </div>
+                                );
+                              }
+                              return null;
+                            })()}
+                          </div>
+                        )}
+                      </div>
                     </div>
 
                     {/* Opinion Term Section */}
@@ -1237,62 +1242,67 @@ function App() {
                         )}
                       </div>
 
-                      {!isImplicitOpinion && (
-                        <div>
+                      <div>
+                        {!isImplicitOpinion ? (
                           <p className="text-sm text-gray-600 mb-3">
                             Click on the start and end characters for the opinion term:
                           </p>
-                          {autoCleanPhrases && (
-                            <div className="text-xs text-gray-500 mb-2">
-                              <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
-                            </div>
-                          )}
-                          <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
-                            {displayedText.split('').map((char, index) => (
-                              <span
-                                key={`opinion-${index}`}
-                                onClick={() => handleOpinionCharClick(index)}
-                                className={getOpinionCharClass(index)}
-                              >
-                                {char}
-                              </span>
-                            ))}
+                        ) : (
+                          <p className="text-sm text-gray-600 mb-3 italic">
+                            Text display (selection disabled for implicit opinion):
+                          </p>
+                        )}
+                        {autoCleanPhrases && !isImplicitOpinion && (
+                          <div className="text-xs text-gray-500 mb-2">
+                            <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
                           </div>
-                          {opinionStartChar !== null && opinionEndChar !== null && (
-                            <div className="mt-3 space-y-2">
-                              <div>
-                                <strong>Selected text:</strong> "{displayedText.substring(opinionStartChar, opinionEndChar + 1)}"
-                              </div>
-                              {(() => {
-                                const originalText = displayedText.substring(opinionStartChar, opinionEndChar + 1);
-                                const cleanedText = cleanPhrase(originalText);
-                                if (originalText !== cleanedText) {
-                                  const cleanedPositions = getCleanedPhrasePositions(opinionStartChar, opinionEndChar, displayedText);
-                                  return (
-                                    <>
-                                      <div>
-                                        <strong>Cleaned opinion phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
-                                      </div>
-                                      {savePhrasePositions && (
-                                        <div className="text-sm text-gray-600">
-                                          Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
-                                        </div>
-                                      )}
-                                    </>
-                                  );
-                                } else if (savePhrasePositions) {
-                                  return (
-                                    <div className="text-sm text-gray-600">
-                                      Saved positions: {opinionStartChar} - {opinionEndChar}
-                                    </div>
-                                  );
-                                }
-                                return null;
-                              })()}
-                            </div>
-                          )}
+                        )}
+                        <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                          {displayedText.split('').map((char, index) => (
+                            <span
+                              key={`opinion-${index}`}
+                              onClick={!isImplicitOpinion ? () => handleOpinionCharClick(index) : undefined}
+                              className={!isImplicitOpinion ? getOpinionCharClass(index) : ""}
+                              style={isImplicitOpinion ? {cursor: 'default'} : {}}
+                            >
+                              {char}
+                            </span>
+                          ))}
                         </div>
-                      )}
+                        {!isImplicitOpinion && opinionStartChar !== null && opinionEndChar !== null && (
+                          <div className="mt-3 space-y-2">
+                            <div>
+                              <strong>Selected text:</strong> "{displayedText.substring(opinionStartChar, opinionEndChar + 1)}"
+                            </div>
+                            {(() => {
+                              const originalText = displayedText.substring(opinionStartChar, opinionEndChar + 1);
+                              const cleanedText = cleanPhrase(originalText);
+                              if (originalText !== cleanedText) {
+                                const cleanedPositions = getCleanedPhrasePositions(opinionStartChar, opinionEndChar, displayedText);
+                                return (
+                                  <>
+                                    <div>
+                                      <strong>Cleaned opinion phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                    </div>
+                                    {savePhrasePositions && (
+                                      <div className="text-sm text-gray-600">
+                                        Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
+                                      </div>
+                                    )}
+                                  </>
+                                );
+                              } else if (savePhrasePositions) {
+                                return (
+                                  <div className="text-sm text-gray-600">
+                                    Saved positions: {opinionStartChar} - {opinionEndChar}
+                                  </div>
+                                );
+                              }
+                              return null;
+                            })()}
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </>
@@ -1325,29 +1335,44 @@ function App() {
                       </div>
                     )}
 
-                  {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
-                      (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
-                    <div className="mb-6">
+                  <div className="mb-6">
+                    {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                        (currentEditingField === "opinion_term" && isImplicitOpinion)) ? (
                       <p className="text-sm text-gray-600 mb-3">
                         Click on the start character and then on the end character of the phrase:
                       </p>
-                      {autoCleanPhrases && (
-                        <div className="text-xs text-gray-500 mb-2">
-                          <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
-                        </div>
-                      )}
-                      <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
-                        {displayedText.split('').map((char, index) => (
-                          <span
-                            key={index}
-                            onClick={() => handleCharClick(index)}
-                            className={getSingleFieldCharClass(index)}
-                          >
-                            {char}
-                          </span>
-                        ))}
+                    ) : (
+                      <p className="text-sm text-gray-600 mb-3 italic">
+                        Text display (selection disabled for implicit {currentEditingField === "aspect_term" ? "aspect" : "opinion"}):
+                      </p>
+                    )}
+                    {autoCleanPhrases && !((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                        (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
+                      <div className="text-xs text-gray-500 mb-2">
+                        <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
                       </div>
-                      {selectedStartChar !== null && selectedEndChar !== null && (
+                    )}
+                    <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                      {displayedText.split('').map((char, index) => (
+                        <span
+                          key={index}
+                          onClick={!((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                                    (currentEditingField === "opinion_term" && isImplicitOpinion)) ? 
+                                  () => handleCharClick(index) : undefined}
+                          className={!((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                                      (currentEditingField === "opinion_term" && isImplicitOpinion)) ? 
+                                    getSingleFieldCharClass(index) : ""}
+                          style={((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                                 (currentEditingField === "opinion_term" && isImplicitOpinion)) ? 
+                                {cursor: 'default'} : {}}
+                        >
+                          {char}
+                        </span>
+                      ))}
+                    </div>
+                    {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                        (currentEditingField === "opinion_term" && isImplicitOpinion)) && 
+                     selectedStartChar !== null && selectedEndChar !== null && (
                         <div className="mt-3 space-y-2">
                           <div>
                             <strong>Selected text:</strong> "{displayedText.substring(selectedStartChar, selectedEndChar + 1)}"
@@ -1381,7 +1406,6 @@ function App() {
                         </div>
                       )}
                     </div>
-                  )}
                 </>
               )}
 
