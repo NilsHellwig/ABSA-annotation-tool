@@ -1216,7 +1216,7 @@ function App() {
                         )}
                         {autoCleanPhrases && !isImplicitAspect && (
                           <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                            <span className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black dark:text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                            <span className="bg-blue-600 px-2 py-1 mr-1 rounded text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
                           </div>
                         )}
                         <div className="text-lg leading-relaxed p-4 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100">
@@ -1297,7 +1297,7 @@ function App() {
                         )}
                         {autoCleanPhrases && !isImplicitOpinion && (
                           <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                            <span className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black dark:text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                            <span className="bg-blue-600 px-2 py-1 mr-1 rounded text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
                           </div>
                         )}
                         <div className="text-lg leading-relaxed p-4 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100">
