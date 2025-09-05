@@ -1135,8 +1135,16 @@ function App() {
 
         {/* Phrase Selection Popup */}
         {showPhrasePopup && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white rounded-xl shadow-xl p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto" onKeyDown={handleKeyDown} tabIndex={-1}>
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            onClick={closePhrasePopup}
+          >
+            <div 
+              className="bg-white rounded-xl shadow-xl p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto" 
+              onKeyDown={handleKeyDown} 
+              tabIndex={-1}
+              onClick={(e) => e.stopPropagation()}
+            >
               {/* Check if we should show combined popup */}
               {consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term") ? (
                 <>
@@ -1189,12 +1197,12 @@ function App() {
                             </span>
                           ))}
                         </div>
-                        {!isImplicitAspect && aspectStartChar !== null && aspectEndChar !== null && (
+                        {!isImplicitAspect && (
                           <div className="mt-3 space-y-2">
                             <div>
-                              <strong>Selected text:</strong> "{displayedText.substring(aspectStartChar, aspectEndChar + 1)}"
+                              <strong>Selected text:</strong> {aspectStartChar !== null && aspectEndChar !== null ? `"${displayedText.substring(aspectStartChar, aspectEndChar + 1)}"` : ""}
                             </div>
-                            {(() => {
+                            {aspectStartChar !== null && aspectEndChar !== null && (() => {
                               const originalText = displayedText.substring(aspectStartChar, aspectEndChar + 1);
                               const cleanedText = cleanPhrase(originalText);
                               if (originalText !== cleanedText) {
@@ -1220,6 +1228,11 @@ function App() {
                               }
                               return null;
                             })()}
+                            {savePhrasePositions && (aspectStartChar === null || aspectEndChar === null) && (
+                              <div className="text-sm text-gray-600">
+                                Saved positions: 
+                              </div>
+                            )}
                           </div>
                         )}
                       </div>
@@ -1269,12 +1282,12 @@ function App() {
                             </span>
                           ))}
                         </div>
-                        {!isImplicitOpinion && opinionStartChar !== null && opinionEndChar !== null && (
+                        {!isImplicitOpinion && (
                           <div className="mt-3 space-y-2">
                             <div>
-                              <strong>Selected text:</strong> "{displayedText.substring(opinionStartChar, opinionEndChar + 1)}"
+                              <strong>Selected text:</strong> {opinionStartChar !== null && opinionEndChar !== null ? `"${displayedText.substring(opinionStartChar, opinionEndChar + 1)}"` : ""}
                             </div>
-                            {(() => {
+                            {opinionStartChar !== null && opinionEndChar !== null && (() => {
                               const originalText = displayedText.substring(opinionStartChar, opinionEndChar + 1);
                               const cleanedText = cleanPhrase(originalText);
                               if (originalText !== cleanedText) {
@@ -1300,6 +1313,11 @@ function App() {
                               }
                               return null;
                             })()}
+                            {savePhrasePositions && (opinionStartChar === null || opinionEndChar === null) && (
+                              <div className="text-sm text-gray-600">
+                                Saved positions: 
+                              </div>
+                            )}
                           </div>
                         )}
                       </div>
@@ -1371,13 +1389,12 @@ function App() {
                       ))}
                     </div>
                     {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
-                        (currentEditingField === "opinion_term" && isImplicitOpinion)) && 
-                     selectedStartChar !== null && selectedEndChar !== null && (
+                        (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
                         <div className="mt-3 space-y-2">
                           <div>
-                            <strong>Selected text:</strong> "{displayedText.substring(selectedStartChar, selectedEndChar + 1)}"
+                            <strong>Selected text:</strong> {selectedStartChar !== null && selectedEndChar !== null ? `"${displayedText.substring(selectedStartChar, selectedEndChar + 1)}"` : ""}
                           </div>
-                          {(() => {
+                          {selectedStartChar !== null && selectedEndChar !== null && (() => {
                             const originalText = displayedText.substring(selectedStartChar, selectedEndChar + 1);
                             const cleanedText = cleanPhrase(originalText);
                             if (originalText !== cleanedText) {
@@ -1403,6 +1420,11 @@ function App() {
                             }
                             return null;
                           })()}
+                          {savePhrasePositions && (selectedStartChar === null || selectedEndChar === null) && (
+                            <div className="text-sm text-gray-600">
+                              Saved positions: 
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>
