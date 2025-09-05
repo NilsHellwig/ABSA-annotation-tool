@@ -4,6 +4,7 @@
 
 [![Made with React](https://img.shields.io/badge/Frontend-React-61dafb?style=flat-square&logo=react)](https://reactjs.org/)
 [![Made with Vite](https://img.shields.io/badge/Built_with-Vite-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![Styled with Tailwind CSS](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Made with FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)](https://python.org)
 
@@ -56,11 +57,14 @@ pip install fastapi uvicorn pandas
 # Install frontend dependencies  
 cd frontend && npm install && cd ..
 
-# Start with CSV file (UTF-8 encoded)
-./absa-annotator annotations.csv --start
+# Start with example CSV file (UTF-8 encoded)
+./absa-annotator examples/restaurant_reviews.csv
 
-# Start with JSON file
-./absa-annotator annotations.json --start
+# Start with example JSON file
+./absa-annotator examples/restaurant_reviews.json
+
+# Or use the example configuration
+./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
 ```
 
 ### Option 2: Manual Setup
@@ -97,40 +101,18 @@ The app will open at `http://localhost:3000`
 The `absa-annotator` CLI tool configures and runs your annotation environment:
 
 ```bash
-# Basic usage - works with CSV or JSON files
-./absa-annotator /path/to/data.csv --show-config
-./absa-annotator /path/to/data.json --show-config
+# Basic usage - starts frontend and backend by default
+./absa-annotator examples/restaurant_reviews.csv
+./absa-annotator examples/restaurant_reviews.json
 
-# Load configuration from file and start
-./absa-annotator annotations.json --load-config example_config.json --start
-
-# Start the complete application (auto-detects file format)
-./absa-annotator annotations.csv --start  # CSV with UTF-8
-./absa-annotator annotations.json --start # JSON format
+# Load configuration from file
+./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
 
 # Start only backend server
-./absa-annotator annotations.csv --backend --backend-port 8001
+./absa-annotator examples/restaurant_reviews.csv --backend
 
-# Start with custom ports for both servers
-./absa-annotator annotations.json --start --backend-port 8080 --frontend-port 3001
-
-# Start with custom IPs and ports (useful for network environments)
-./absa-annotator annotations.csv --start --backend-ip 192.168.1.100 --backend-port 8080 --frontend-ip 0.0.0.0 --frontend-port 3001
-
-# Configure elements, save config, and start
-./absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config example_config.json --start
-
-# Load base config, override some settings, and start
-./absa-annotator data.csv --load-config example_config.json --polarities positive negative --start
-
-# Advanced configuration with phrase cleaning and position saving
-./absa-annotator reviews.json --session-id "study_2024" --no-clean-phrases --save-config study_config.json --start
-
-# Multi-language annotation with disabled position saving for faster processing
-./absa-annotator multilingual_reviews.csv --no-save-positions --start
-
-# Research setup with all position and cleaning features enabled
-./absa-annotator research_data.json --session-id "research_phase1" --implicit-aspect --start
+# Custom ports and session
+./absa-annotator examples/restaurant_reviews.json --backend-port 8080 --frontend-port 3001 --session-id "study_2024"
 ```
 
 ### Configuration Files
@@ -139,27 +121,36 @@ You can save and reuse configurations with JSON files:
 
 ```bash
 # Save current configuration
-./absa-annotator data.csv --elements aspect_term sentiment_polarity --save-config example_config.json
+./absa-annotator examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --save-config examples/my_config.json
 
 # Load and use saved configuration  
-./absa-annotator data.csv --load-config example_config.json --start
+./absa-annotator examples/restaurant_reviews.csv --load-config examples/example_config.json
 
 # Load config and override specific settings
-./absa-annotator data.csv --load-config example_config.json --polarities positive negative neutral
+./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json --session-id "new_session"
 ```
 
-**Example configuration file** (`example_config.json`):
-```json
-{
-  "csv_path": "annotations.csv",
-  "sentiment_elements": ["aspect_term", "aspect_category", "sentiment_polarity"],
-  "sentiment_polarity_options": ["positive", "negative", "neutral"],
-  "aspect_categories": ["food general", "service general", "price general"],
-  "implicit_aspect_term_allowed": true,
-  "implicit_opinion_term_allowed": false,
-  "auto_clean_phrases": true
-}
+## 📁 Example Data
+
+The `examples/` folder contains sample data to get you started:
+
+| File | Format | Description |
+|------|--------|-------------|
+| `restaurant_reviews.csv` | CSV | 10 restaurant reviews in CSV format with English text and German translations |
+| `restaurant_reviews.json` | JSON | Same reviews in JSON format with additional metadata (restaurant names, dates) |
+| `example_config.json` | JSON | Example configuration file with restaurant domain settings |
+
+### Getting Started with Examples
+
+```bash
+# Quick start with CSV examples  
+./absa-annotator examples/restaurant_reviews.csv
+
+# Start with JSON and configuration
+./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
 ```
+
+---
 
 ## 🔧 Configuration
 
@@ -167,7 +158,6 @@ You can save and reuse configurations with JSON files:
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `--start` | **Auto-launch both servers** (backend + frontend) | - |
 | `--backend` | **Start only backend server** | - |
 | `--frontend` | **Start only frontend** (requires backend running) | - |
 | `--backend-port` | Backend server port | `8000` |
@@ -194,7 +184,7 @@ You can save and reuse configurations with JSON files:
 For a restaurant review annotation project with multilingual support and position tracking:
 
 ```bash
-./absa-annotator restaurant_reviews.json \
+./absa-annotator examples/restaurant_reviews.json \
   --session-id "restaurant_study_2024" \
   --elements aspect_term aspect_category sentiment_polarity opinion_term \
   --categories "food quality" "service speed" "price level" "ambience general" "location access" \
@@ -203,8 +193,7 @@ For a restaurant review annotation project with multilingual support and positio
   --backend-ip 0.0.0.0 \
   --backend-port 8080 \
   --frontend-port 3001 \
-  --save-config restaurant_config.json \
-  --start
+  --save-config restaurant_config.json
 ```
 
 This configuration:
@@ -241,7 +230,7 @@ text,translation,label
 ### JSON Format
 Alternative JSON structure for more flexibility:
 
-**Example JSON** (`annotations.json`):
+**Example JSON** (`examples/restaurant_reviews.json`):
 ```json
 [
   {
@@ -357,23 +346,23 @@ Food, Service, Price, Ambience, Location, Restaurant
 
 1. **One-command start (easiest):**
    ```bash
-   ./absa-annotator /path/to/reviews.csv --start      # CSV format
-   ./absa-annotator /path/to/reviews.json --start     # JSON format
+   ./absa-annotator examples/restaurant_reviews.csv      # CSV format
+   ./absa-annotator examples/restaurant_reviews.json     # JSON format
    ```
 
 2. **Use saved configuration:**
    ```bash
-   ./absa-annotator /path/to/reviews.json --load-config restaurant_project.json --start
+   ./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
    ```
 
 3. **Create and save configuration:**
    ```bash
-   ./absa-annotator /path/to/reviews.csv --elements aspect_term sentiment_polarity --save-config --start
+   ./absa-annotator examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --save-config examples/my_config.json
    ```
 
 4. **Advanced: Load config and override settings:**
    ```bash
-   ./absa-annotator reviews.json --load-config base.json --polarities positive negative excited --start
+   ./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json --polarities positive negative excited
    ```
 
 5. **Open browser** at `http://localhost:3000` and start annotating!

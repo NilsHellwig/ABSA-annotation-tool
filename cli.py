@@ -298,25 +298,22 @@ def main():
         epilog="""
 Examples:
   # Basic usage with CSV path
-  absa-annotator /path/to/annotations.csv
+  absa-annotator examples/restaurant_reviews.csv
   
-  # Load configuration from file and start
-  absa-annotator /path/to/annotations.csv --load-config my_project.json --start
+  # Load configuration from file
+  absa-annotator examples/restaurant_reviews.csv --load-config examples/example_config.json
   
   # Start with a session ID
-  absa-annotator /path/to/annotations.csv --session-id "user123_session1" --start
-  
-  # Start the full application (backend + frontend)
-  absa-annotator /path/to/annotations.csv --start
+  absa-annotator examples/restaurant_reviews.csv --session-id "user123_session1"
   
   # Start only backend server
-  absa-annotator /path/to/annotations.csv --backend --port 8001
+  absa-annotator examples/restaurant_reviews.csv --backend --backend-port 8001
   
   # Configure elements and save to config file with session ID
-  absa-annotator data.csv --elements aspect_term sentiment_polarity --session-id "exp_2024" --save-config quick_config.json
+  absa-annotator examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --session-id "exp_2024" --save-config examples/quick_config.json
   
-  # Load config, override some settings, and start
-  absa-annotator data.csv --load-config base_config.json --polarities positive negative --start
+  # Load config and override some settings
+  absa-annotator examples/restaurant_reviews.csv --load-config examples/example_config.json --polarities positive negative
         """
     )
     
@@ -415,12 +412,6 @@ Examples:
     
     # Server control arguments
     parser.add_argument(
-        "--start",
-        action="store_true",
-        help="Start both backend and frontend servers"
-    )
-    
-    parser.add_argument(
         "--backend",
         action="store_true", 
         help="Start only the backend server"
@@ -450,14 +441,6 @@ Examples:
         "--frontend-ip",
         default="localhost",
         help="IP address for the frontend server (default: localhost)"
-    )
-    
-    # Keep --port for backward compatibility
-    parser.add_argument(
-        "--port",
-        type=int,
-        default=8000,
-        help="Port for the backend server (deprecated, use --backend-port)"
     )
     
     args = parser.parse_args()
@@ -525,20 +508,16 @@ Examples:
         config.save_config(args.save_config)
     
     # Start servers if requested
-    # Use new arguments if provided, otherwise fall back to defaults for backward compatibility
-    backend_port = args.backend_port if args.backend_port != 8000 else args.port
+    backend_port = args.backend_port
     backend_host = args.backend_ip
     frontend_port = args.frontend_port
     frontend_host = args.frontend_ip
     
-    if args.start:
-        start_full_app(backend_port, backend_host, frontend_port, frontend_host, args.data_path, config)
-    elif args.backend:
+    if args.backend:
         start_backend(backend_port, backend_host, args.data_path, config)
     else:
-        print("🚀 Ready to start annotation!")
-        print("💡 Use --start to launch both servers, or --backend for backend only")
-        print(f"   Example: absa-annotator {args.data_path} --start")
+        # Default behavior: start both servers
+        start_full_app(backend_port, backend_host, frontend_port, frontend_host, args.data_path, config)
 
 
 if __name__ == "__main__":

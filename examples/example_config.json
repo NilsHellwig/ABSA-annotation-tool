@@ -1,5 +1,5 @@
 {
-  "csv_path": "annotations.json",
+  "csv_path": "restaurant_reviews.json",
   "session_id": "ab123",
   "sentiment_elements": [
     "aspect_term",
@@ -13,10 +13,12 @@
     "neutral"
   ],
   "aspect_categories": [
-    "food quality",
-    "service general",
-    "food price",
-    "ambience general"
+    "food general", "food quality", "food style options", "food healthy",
+    "service general", "service attitude", "service speed",
+    "price general", "price level",
+    "ambience general", "ambience decor", "ambience style",
+    "location general", "location parking", "location access",
+    "restaurant general", "restaurant variety", "restaurant specialty"
   ],
   "implicit_aspect_term_allowed": true,
   "implicit_opinion_term_allowed": false,

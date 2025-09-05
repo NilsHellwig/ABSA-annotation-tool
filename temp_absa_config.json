@@ -1,0 +1,40 @@
+{
+  "csv_path": "examples/restaurant_reviews.json",
+  "session_id": null,
+  "sentiment_elements": [
+    "aspect_term",
+    "aspect_category",
+    "sentiment_polarity",
+    "opinion_term"
+  ],
+  "sentiment_polarity_options": [
+    "positive",
+    "negative",
+    "neutral"
+  ],
+  "aspect_categories": [
+    "food general",
+    "food quality",
+    "food style options",
+    "food healthy",
+    "service general",
+    "service attitude",
+    "service speed",
+    "price general",
+    "price level",
+    "ambience general",
+    "ambience decor",
+    "ambience style",
+    "location general",
+    "location parking",
+    "location access",
+    "restaurant general",
+    "restaurant variety",
+    "restaurant specialty"
+  ],
+  "implicit_aspect_term_allowed": true,
+  "implicit_opinion_term_allowed": false,
+  "auto_clean_phrases": true,
+  "save_phrase_positions": true,
+  "click_on_token": true
+}
