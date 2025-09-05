@@ -68,20 +68,20 @@ pip install fastapi uvicorn pandas
 # Install frontend dependencies  
 cd frontend && npm install && cd ..
 
-# Start with example CSV file (UTF-8 encoded)
+# Start with example data
 ./absa-annotator examples/restaurant_reviews.csv
-
-# Start with example JSON file
 ./absa-annotator examples/restaurant_reviews.json
 
 # Or use the example configuration
 ./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
+
+# Enable automatic position filling for imported data
+./absa-annotator imported_annotations.csv --auto-positions
 ```
 
 ### Option 2: Manual Setup
 
 #### Backend Setup
-
 ```bash
 # Install dependencies
 pip install fastapi uvicorn pandas
@@ -91,7 +91,6 @@ uvicorn main:app --reload --port 8000
 ```
 
 #### Frontend Setup
-
 ```bash
 # Navigate to frontend directory
 cd frontend
@@ -107,7 +106,21 @@ The app will open at `http://localhost:3000`
 
 ---
 
-## 🛠️ CLI Configuration
+## 📁 Example Data
+
+The `examples/` folder contains sample data to get you started:
+
+| File | Format | Description |
+|------|--------|-------------|
+| `restaurant_reviews.csv` | CSV | 10 restaurant reviews in CSV format with English text and German translations |
+| `restaurant_reviews.json` | JSON | Same reviews in JSON format with additional metadata (restaurant names, dates) |
+| `example_config.json` | JSON | Example configuration file with restaurant domain settings |
+
+---
+
+---
+
+## �️ CLI Configuration
 
 The `absa-annotator` CLI tool configures and runs your annotation environment:
 
@@ -141,42 +154,16 @@ You can save and reuse configurations with JSON files:
 ./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json --session-id "new_session"
 ```
 
-## 📁 Example Data
-
-The `examples/` folder contains sample data to get you started:
-
-| File | Format | Description |
-|------|--------|-------------|
-| `restaurant_reviews.csv` | CSV | 10 restaurant reviews in CSV format with English text and German translations |
-| `restaurant_reviews.json` | JSON | Same reviews in JSON format with additional metadata (restaurant names, dates) |
-| `example_config.json` | JSON | Example configuration file with restaurant domain settings |
-
-### Getting Started with Examples
-
-```bash
-# Quick start with CSV examples  
-./absa-annotator examples/restaurant_reviews.csv
-
-# Start with JSON and configuration
-./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
-```
-
----
-
-## 🔧 Configuration
-
 ### CLI Options
 
 | Option | Description | Default |
 |--------|-------------|---------|
 | `--backend` | **Start only backend server** | - |
-| `--frontend` | **Start only frontend** (requires backend running) | - |
 | `--backend-port` | Backend server port | `8000` |
 | `--frontend-port` | Frontend server port | `3000` |  
 | `--backend-ip` | Backend server IP address | `127.0.0.1` |
 | `--frontend-ip` | Frontend server IP address | `127.0.0.1` |
 | `--session-id` | **Session identifier** for annotation tracking | `None` |
-| `--port` | Backend server port (deprecated, use --backend-port) | `8000` |
 | `--elements` | Sentiment elements to annotate | `aspect_term, aspect_category, sentiment_polarity, opinion_term` |
 | `--polarities` | Available sentiment polarities | `positive, negative, neutral` |
 | `--categories` | Available aspect categories | Restaurant domain (18 categories) |
