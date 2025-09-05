@@ -1049,7 +1049,7 @@ function App() {
                 disabled={false}
                 className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                {currentIndex + 1 >= maxIndex ? "Save & Finish" : "Save & Annotate empty list"}
+                {currentIndex + 1 >= maxIndex ? "Save empty list & Finish" : "Save & Annotate empty list"}
               </button>
             )}
           </div>
