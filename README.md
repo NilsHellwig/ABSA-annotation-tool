@@ -21,6 +21,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Color-Coded Annotations** - Each annotation gets a unique color with visual indicators in the annotation list
 - **Intelligent Color Mixing** - Overlapping phrases show mixed colors to visualize annotation overlaps
 - **Automatic Phrase Cleaning** - Removes punctuation from start/end of selected phrases (configurable)
+- **Click-on-Token Selection** - Smart token-based text selection that snaps to word boundaries (configurable)
 - **Combined Annotation Popup** - When both aspect and opinion terms are configured, annotate both in a single, unified dialog
 - **Separate Text Selection** - Independent phrase selection for aspect terms and opinion terms
 - **Progress Tracking** - Real-time annotation progress and navigation
@@ -184,6 +185,7 @@ You can save and reuse configurations with JSON files:
 | `--no-implicit-opinion` | Disable implicit opinion terms | `True` (default) |
 | `--no-clean-phrases` | **Disable automatic punctuation cleaning** from phrase start/end | Enabled by default |
 | `--no-save-positions` | **Disable saving phrase positions** (at_start, at_end, ot_start, ot_end) for faster processing | Enabled by default |
+| `--no-click-on-token` | **Disable click-on-token feature** (precise character clicking instead of token snapping) | Enabled by default |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 

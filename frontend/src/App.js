@@ -32,6 +32,7 @@ function App() {
   const [allowImplicitOpinionTerm, setAllowImplicitOpinionTerm] = useState(false);
   const [autoCleanPhrases, setAutoCleanPhrases] = useState(true);
   const [savePhrasePositions, setSavePhrasePositions] = useState(true);
+  const [clickOnToken, setClickOnToken] = useState(true);
 
   // Backend states
   const [currentIndex, setCurrentIndex] = useState(0); // Currently displayed index in UI
@@ -53,6 +54,28 @@ function App() {
     const trimmedText = text.trim();
     if (trimmedText.length <= maxLength) return trimmedText;
     return trimmedText.substring(0, maxLength) + "...";
+  };
+
+  const getTokenBounds = (text, charIndex) => {
+    if (!text || charIndex < 0 || charIndex >= text.length) return { start: charIndex, end: charIndex };
+    
+    // Define token boundaries (whitespace and punctuation)
+    const isTokenBoundary = (char) => /[\s.,;:!?¡¿"'`´''""„«»()[\]{}]+/.test(char);
+    
+    let start = charIndex;
+    let end = charIndex;
+    
+    // Find start of token (go backwards until boundary or start of text)
+    while (start > 0 && !isTokenBoundary(text[start - 1])) {
+      start--;
+    }
+    
+    // Find end of token (go forwards until boundary or end of text)
+    while (end < text.length - 1 && !isTokenBoundary(text[end + 1])) {
+      end++;
+    }
+    
+    return { start, end };
   };
 
   const cleanPhrase = (phrase) => {
@@ -358,37 +381,91 @@ function App() {
   };
 
   const handleCharClick = (charIndex) => {
+    let startChar = charIndex;
+    let endChar = charIndex;
+    
+    // Apply token snapping if enabled
+    if (clickOnToken) {
+      const tokenBounds = getTokenBounds(displayedText, charIndex);
+      if (selectedStartChar === null) {
+        // First click - snap to start of token
+        startChar = tokenBounds.start;
+      } else if (selectedEndChar === null && charIndex >= selectedStartChar) {
+        // Second click - snap to end of token
+        endChar = tokenBounds.end;
+      } else {
+        // Reset - snap to start of token
+        startChar = tokenBounds.start;
+      }
+    }
+    
     if (selectedStartChar === null) {
-      setSelectedStartChar(charIndex);
-    } else if (selectedEndChar === null && charIndex >= selectedStartChar) {
-      setSelectedEndChar(charIndex);
+      setSelectedStartChar(startChar);
+    } else if (selectedEndChar === null && (clickOnToken ? endChar : charIndex) >= selectedStartChar) {
+      setSelectedEndChar(clickOnToken ? endChar : charIndex);
     } else {
       // Reset selection
-      setSelectedStartChar(charIndex);
+      setSelectedStartChar(startChar);
       setSelectedEndChar(null);
     }
   };
 
   const handleAspectCharClick = (charIndex) => {
+    let startChar = charIndex;
+    let endChar = charIndex;
+    
+    // Apply token snapping if enabled
+    if (clickOnToken) {
+      const tokenBounds = getTokenBounds(displayedText, charIndex);
+      if (aspectStartChar === null) {
+        // First click - snap to start of token
+        startChar = tokenBounds.start;
+      } else if (aspectEndChar === null && charIndex >= aspectStartChar) {
+        // Second click - snap to end of token
+        endChar = tokenBounds.end;
+      } else {
+        // Reset - snap to start of token
+        startChar = tokenBounds.start;
+      }
+    }
+    
     if (aspectStartChar === null) {
-      setAspectStartChar(charIndex);
-    } else if (aspectEndChar === null && charIndex >= aspectStartChar) {
-      setAspectEndChar(charIndex);
+      setAspectStartChar(startChar);
+    } else if (aspectEndChar === null && (clickOnToken ? endChar : charIndex) >= aspectStartChar) {
+      setAspectEndChar(clickOnToken ? endChar : charIndex);
     } else {
       // Reset selection
-      setAspectStartChar(charIndex);
+      setAspectStartChar(startChar);
       setAspectEndChar(null);
     }
   };
 
   const handleOpinionCharClick = (charIndex) => {
+    let startChar = charIndex;
+    let endChar = charIndex;
+    
+    // Apply token snapping if enabled
+    if (clickOnToken) {
+      const tokenBounds = getTokenBounds(displayedText, charIndex);
+      if (opinionStartChar === null) {
+        // First click - snap to start of token
+        startChar = tokenBounds.start;
+      } else if (opinionEndChar === null && charIndex >= opinionStartChar) {
+        // Second click - snap to end of token
+        endChar = tokenBounds.end;
+      } else {
+        // Reset - snap to start of token
+        startChar = tokenBounds.start;
+      }
+    }
+    
     if (opinionStartChar === null) {
-      setOpinionStartChar(charIndex);
-    } else if (opinionEndChar === null && charIndex >= opinionStartChar) {
-      setOpinionEndChar(charIndex);
+      setOpinionStartChar(startChar);
+    } else if (opinionEndChar === null && (clickOnToken ? endChar : charIndex) >= opinionStartChar) {
+      setOpinionEndChar(clickOnToken ? endChar : charIndex);
     } else {
       // Reset selection
-      setOpinionStartChar(charIndex);
+      setOpinionStartChar(startChar);
       setOpinionEndChar(null);
     }
   };
@@ -592,6 +669,7 @@ function App() {
       setAllowImplicitOpinionTerm(settings["implicit_opinion_term_allowed"]);
       setAutoCleanPhrases(settings["auto_clean_phrases"] !== false); // Default to true
       setSavePhrasePositions(settings["save_phrase_positions"] !== false); // Default to true
+      setClickOnToken(settings["click_on_token"] !== false); // Default to true
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);

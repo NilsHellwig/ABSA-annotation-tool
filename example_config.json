@@ -21,5 +21,6 @@
   "implicit_aspect_term_allowed": true,
   "implicit_opinion_term_allowed": false,
   "auto_clean_phrases": true,
-  "save_phrase_positions": true
+  "save_phrase_positions": true,
+  "click_on_token": true
 }

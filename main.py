@@ -56,7 +56,8 @@ def load_config():
         "implicit_aspect_term_allowed": True,
         "implicit_opinion_term_allowed": False,
         "auto_clean_phrases": True,
-        "save_phrase_positions": True
+        "save_phrase_positions": True,
+        "click_on_token": True
     }
 
 def set_config(config_dict: dict):
@@ -116,6 +117,7 @@ def get_settings():
         "implicit_opinion_term_allowed": CONFIG_DATA.get("implicit_opinion_term_allowed", False),
         "auto_clean_phrases": CONFIG_DATA.get("auto_clean_phrases", True),
         "save_phrase_positions": CONFIG_DATA.get("save_phrase_positions", True),
+        "click_on_token": CONFIG_DATA.get("click_on_token", True),
         "current_index": get_current_index(),
         "max_number_of_idxs": max_number_of_idxs()
     }

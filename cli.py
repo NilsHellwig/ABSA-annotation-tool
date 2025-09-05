@@ -12,7 +12,35 @@ import subprocess
 import threading
 import time
 import socket
+import signal
+import atexit
 from typing import List, Dict, Any
+
+# Global variable to track backend process
+backend_process = None
+shutdown_flag = threading.Event()
+
+def cleanup_backend():
+    """Clean up backend process on exit."""
+    global backend_process
+    if backend_process and backend_process.poll() is None:
+        print("\n🧹 Cleaning up backend process...")
+        backend_process.terminate()
+        try:
+            backend_process.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            backend_process.kill()
+
+def signal_handler(signum, frame):
+    """Handle interrupt signals."""
+    print("\n🛑 Received interrupt signal. Shutting down...")
+    shutdown_flag.set()
+    cleanup_backend()
+
+# Register cleanup functions
+atexit.register(cleanup_backend)
+signal.signal(signal.SIGINT, signal_handler)
+signal.signal(signal.SIGTERM, signal_handler)
 
 class ABSAAnnotatorConfig:
     """Configuration manager for ABSA annotation tool."""
@@ -36,6 +64,7 @@ class ABSAAnnotatorConfig:
             "implicit_opinion_term_allowed": False,
             "auto_clean_phrases": True,
             "save_phrase_positions": True,
+            "click_on_token": True,
         }
     
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -69,6 +98,10 @@ class ABSAAnnotatorConfig:
     def set_save_phrase_positions(self, enabled: bool) -> None:
         """Set whether phrase start/end positions are saved (at_start, at_end, ot_start, ot_end)."""
         self.config["save_phrase_positions"] = enabled
+    
+    def set_click_on_token(self, enabled: bool) -> None:
+        """Set whether click-on-token feature is enabled (snap to token boundaries)."""
+        self.config["click_on_token"] = enabled
     
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
@@ -123,6 +156,7 @@ class ABSAAnnotatorConfig:
 
 def start_backend(port: int = 8000, host: str = "localhost", data_path: str = None, config: ABSAAnnotatorConfig = None):
     """Start the FastAPI backend server."""
+    global backend_process
     try:
         # Check if port is already in use
         if is_port_in_use(host, port):
@@ -138,15 +172,26 @@ def start_backend(port: int = 8000, host: str = "localhost", data_path: str = No
             config_file = "temp_absa_config.json"
             config.save_config(config_file)
             os.environ['ABSA_CONFIG_PATH'] = config_file
-        subprocess.run([
+        
+        backend_process = subprocess.Popen([
             sys.executable, "-m", "uvicorn", 
             "main:app", "--reload", f"--port={port}", f"--host={host}"
-        ], check=True)
+        ])
+        
+        # Wait for process to finish or shutdown signal
+        while backend_process.poll() is None and not shutdown_flag.is_set():
+            time.sleep(0.1)
+        
+        if shutdown_flag.is_set():
+            cleanup_backend()
+        
     except subprocess.CalledProcessError as e:
         print(f"❌ Failed to start backend server: {e}")
-        sys.exit(1)
+        if not shutdown_flag.is_set():
+            sys.exit(1)
     except KeyboardInterrupt:
         print("\n🛑 Backend server stopped by user")
+        cleanup_backend()
 
 
 def start_frontend(port: int = 3000, host: str = "localhost", backend_host: str = "localhost", backend_port: int = 8000):
@@ -186,7 +231,7 @@ def start_full_app(backend_port: int = 8000, backend_host: str = "localhost", fr
     
     # Start backend in a separate thread
     backend_thread = threading.Thread(target=start_backend, args=(backend_port, backend_host, data_path, config))
-    backend_thread.daemon = True
+    backend_thread.daemon = False  # Don't make it daemon so we can properly clean up
     backend_thread.start()
     
     # Wait a moment for backend to start
@@ -198,6 +243,14 @@ def start_full_app(backend_port: int = 8000, backend_host: str = "localhost", fr
         start_frontend(frontend_port, frontend_host, backend_host, backend_port)
     except KeyboardInterrupt:
         print("\n🛑 Shutting down ABSA Annotation Tool...")
+        shutdown_flag.set()
+        cleanup_backend()
+        # Wait for backend thread to finish
+        if backend_thread.is_alive():
+            backend_thread.join(timeout=5)
+    
+    # Check if shutdown was triggered
+    if shutdown_flag.is_set():
         sys.exit(0)
 
 
@@ -335,6 +388,12 @@ Examples:
     )
     
     parser.add_argument(
+        "--no-click-on-token",
+        action="store_true", 
+        help="Disable click-on-token feature (precise character clicking instead of token snapping)"
+    )
+    
+    parser.add_argument(
         "--save-config",
         metavar="PATH",
         nargs="?",
@@ -450,6 +509,9 @@ Examples:
     
     if args.no_save_positions:
         config.set_save_phrase_positions(False)
+    
+    if args.no_click_on_token:
+        config.set_click_on_token(False)
     
     if args.session_id:
         config.set_session_id(args.session_id)
