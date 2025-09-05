@@ -18,7 +18,8 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 ## ✨ Features
 
 - **Modern TypeScript Frontend** - Built with React, TypeScript, and Vite for fast development and type safety
-- **Intuitive UI** - Clean, modern interface for efficient annotation
+- **Dark Mode Support** - Toggle between light and dark themes with persistent localStorage settings
+- **Intuitive UI** - Clean, modern interface for efficient annotation with smooth transitions
 - **Smart Phrase Selection** - Click-to-select text spans with visual feedback
 - **Visual Phrase Highlighting** - Annotated phrases are highlighted directly in the text with unique colors
 - **Color-Coded Annotations** - Each annotation gets a unique color with visual indicators in the annotation list
@@ -34,6 +35,13 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **CLI Tool** - Command-line configuration for different domains
 
 ## 🎨 Visual Features
+
+### Dark Mode
+- **Theme Toggle** - Switch between light and dark modes with a single click
+- **Persistent Settings** - Theme preference saved in browser localStorage
+- **System Preference** - Automatically detects and respects system dark mode setting
+- **Smooth Transitions** - Elegant transitions between light and dark themes
+- **Complete Coverage** - All UI elements optimized for both themes
 
 ### Phrase Highlighting
 - **Color-coded text**: Each annotation gets its own unique color in the text
@@ -372,6 +380,8 @@ Food, Service, Price, Ambience, Location, Restaurant
    ```
 
 5. **Open browser** at `http://localhost:3000` and start annotating!
+   - **Dark Mode**: Click the 🌙/☀️ toggle in the top-right corner to switch themes
+   - **Theme Persistence**: Your preferred theme is automatically saved and restored
 
 ---
 

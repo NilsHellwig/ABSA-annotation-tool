@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { getAnnotationColorClasses, createTextHighlights, renderHighlightedText } from "./phraseColoring";
 import { AspectItem, NewAspect, FieldType, TextPosition, Settings } from "./types";
+import { useDarkMode } from "./hooks/useDarkMode";
+import { DarkModeToggle } from "./components/DarkModeToggle";
+import { CustomCheckbox } from "./components/CustomCheckbox";
 
 function App() {
+  const { theme, toggleTheme, isDark } = useDarkMode();
 
   const [displayedText, setDisplayedText] = useState<string>("");
   const [displayedTranslation, setDisplayedTranslation] = useState<string>("");
@@ -51,7 +55,7 @@ function App() {
   // Helper functions
 
   // Helper functions
-  const truncateText = (text: string, maxLength: number = 32): string => {
+  const truncateText = (text: string, maxLength: number = 20): string => {
     if (!text) return text;
     const trimmedText = text.trim();
     if (trimmedText.length <= maxLength) return trimmedText;
@@ -119,7 +123,7 @@ function App() {
 
   // Helper functions for character highlighting in popup
   const getAspectCharClass = (index: number): string => {
-    let classes = 'cursor-pointer hover:bg-blue-200';
+    let classes = 'cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 text-gray-900 dark:text-gray-100';
     
     // Check if we have a selection and phrase cleaning is enabled
     if (aspectStartChar !== null && aspectEndChar !== null && autoCleanPhrases) {
@@ -127,7 +131,7 @@ function App() {
       // If cleaned phrase is different, only show the cleaned version
       if (cleanedPositions.start !== aspectStartChar || cleanedPositions.end !== aspectEndChar) {
         if (index >= cleanedPositions.start && index <= cleanedPositions.end) {
-          classes += ' bg-blue-300';
+          classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
         }
         return classes; // Return early, don't show original selection or markers
       }
@@ -136,7 +140,7 @@ function App() {
     // Fallback: show original selection with markers (when cleaning disabled or no difference)
     if (aspectStartChar !== null && aspectEndChar !== null &&
         index >= aspectStartChar && index <= aspectEndChar) {
-      classes += ' bg-blue-300';
+      classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
     }
     
     // Start/end markers (only when not in cleaned mode or no cleaning difference)
@@ -152,7 +156,7 @@ function App() {
   };
 
   const getOpinionCharClass = (index: number): string => {
-    let classes = 'cursor-pointer hover:bg-blue-200';
+    let classes = 'cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 text-gray-900 dark:text-gray-100';
     
     // Check if we have a selection and phrase cleaning is enabled
     if (opinionStartChar !== null && opinionEndChar !== null && autoCleanPhrases) {
@@ -160,7 +164,7 @@ function App() {
       // If cleaned phrase is different, only show the cleaned version
       if (cleanedPositions.start !== opinionStartChar || cleanedPositions.end !== opinionEndChar) {
         if (index >= cleanedPositions.start && index <= cleanedPositions.end) {
-          classes += ' bg-blue-300';
+          classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
         }
         return classes; // Return early, don't show original selection or markers
       }
@@ -169,7 +173,7 @@ function App() {
     // Fallback: show original selection with markers (when cleaning disabled or no difference)  
     if (opinionStartChar !== null && opinionEndChar !== null &&
         index >= opinionStartChar && index <= opinionEndChar) {
-      classes += ' bg-blue-300';
+      classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
     }
     
     // Start/end markers (only when not in cleaned mode or no cleaning difference)
@@ -185,7 +189,7 @@ function App() {
   };
 
   const getSingleFieldCharClass = (index: number): string => {
-    let classes = 'cursor-pointer hover:bg-blue-200';
+    let classes = 'cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 text-gray-900 dark:text-gray-100';
     
     // Check if we have a selection and phrase cleaning is enabled
     if (selectedStartChar !== null && selectedEndChar !== null && autoCleanPhrases) {
@@ -193,7 +197,7 @@ function App() {
       // If cleaned phrase is different, only show the cleaned version
       if (cleanedPositions.start !== selectedStartChar || cleanedPositions.end !== selectedEndChar) {
         if (index >= cleanedPositions.start && index <= cleanedPositions.end) {
-          classes += ' bg-blue-300';
+          classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
         }
         return classes; // Return early, don't show original selection or markers
       }
@@ -202,7 +206,7 @@ function App() {
     // Fallback: show original selection with markers (when cleaning disabled or no difference)
     if (selectedStartChar !== null && selectedEndChar !== null &&
         index >= selectedStartChar && index <= selectedEndChar) {
-      classes += ' bg-blue-300';
+      classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
     }
     
     // Start/end markers (only when not in cleaned mode or no cleaning difference)
@@ -848,40 +852,41 @@ function App() {
   }, [consideredSentimentElements]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-white dark:bg-gray-800 shadow-sm border-b dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900">ABSA Annotation Tool</h1>
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">ABSA Annotation Tool</h1>
               {sessionId && (
-                <span className="ml-4 px-2 py-1 bg-blue-100 text-blue-800 text-sm rounded-md">
+                <span className="ml-4 px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-md">
                   Session: {sessionId}
                 </span>
               )}
             </div>
             <div className="flex items-center space-x-4">
+              <DarkModeToggle isDark={isDark} onToggle={toggleTheme} />
               <div className="flex items-center space-x-2">
                 <input
                   type="number"
                   value={inputIndex}
                   onChange={(e) => setInputIndex(e.target.value)}
                   placeholder="Index..."
-                  className="w-20 px-2 py-1 text-sm border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-20 px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   min="1"
                   max={settingsCurrentIndex + 1}
                 />
                 <button
                   onClick={goToIndex}
                   disabled={!inputIndex || parseInt(inputIndex) < 1 || parseInt(inputIndex) > settingsCurrentIndex + 1}
-                  className="px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white rounded"
+                  className="px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 text-white rounded"
                 >
                   Go to
                 </button>
               </div>
               <div className="flex items-center space-x-4">
-                <span className="text-sm text-gray-600">
+                <span className="text-sm text-gray-600 dark:text-gray-400">
                   {settingsCurrentIndex} annotations completed
                 </span>
                 <div className="flex items-center space-x-2">
@@ -893,12 +898,12 @@ function App() {
                       await fetchSettings(); // Update settings after navigation
                     }}
                     disabled={currentIndex <= 0}
-                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 text-gray-600"
+                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Previous annotation"
                   >
                     ←
                   </button>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
                     {currentIndex + 1} / {totalCount} Annotations
                   </span>
                   <button
@@ -909,7 +914,7 @@ function App() {
                       await fetchSettings(); // Update settings after navigation
                     }}
                     disabled={currentIndex + 1 >= settingsCurrentIndex + 1}
-                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 text-gray-600"
+                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Next annotation"
                   >
                     →
@@ -921,7 +926,7 @@ function App() {
                       await fetchSettings(); // Update settings after navigation
                     }}
                     disabled={currentIndex === settingsCurrentIndex}
-                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 text-gray-600"
+                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Jump to current working position"
                   >
                     ⇒
@@ -939,19 +944,19 @@ function App() {
         <div className="lg:col-span-2 space-y-6">
 
 
-          <div className="bg-white rounded-xl shadow-sm border p-6">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border dark:border-gray-700 p-6">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-lg font-semibold text-gray-900">Text to annotate</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Text to annotate</h2>
             </div>
-            <div className="text-xl text-center bg-gray-100 p-4 rounded-xl leading-relaxed">
+            <div className="text-xl text-center bg-gray-100 dark:bg-gray-700 p-4 rounded-xl leading-relaxed text-gray-900 dark:text-gray-100">
               {renderHighlightedText(displayedText, createTextHighlights(displayedText, aspectList, getAnnotationColorClasses))}
             </div>
             
             {/* Translation section */}
             {displayedTranslation && (
               <div className="mt-4">
-                <h3 className="text-sm font-medium text-gray-600 mb-2">Translation</h3>
-                <div className="text-lg text-center bg-blue-50 p-4 rounded-xl text-gray-700 italic">
+                <h3 className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Translation</h3>
+                <div className="text-lg text-center bg-blue-50 dark:bg-blue-900/30 p-4 rounded-xl text-gray-700 dark:text-gray-300 italic">
                   {displayedTranslation}
                 </div>
               </div>
@@ -959,17 +964,17 @@ function App() {
           </div>
 
           {/* Annotation Form */}
-          <div className="bg-white rounded-xl shadow-sm border p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Add aspect</h2>
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border dark:border-gray-700 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Add aspect</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
               {consideredSentimentElements.includes("aspect_term") && (
                 <div>
-                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                  <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Aspect Term
-                    {isFieldValid("aspect_term") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                    {isFieldValid("aspect_term") && <span className="text-blue-500 bg-blue-50 dark:bg-blue-900/50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
                   </label>
                   <div
-                    className="w-full p-3 border border-gray-200 rounded-lg bg-gray-50 cursor-pointer hover:bg-gray-100"
+                    className="w-full p-3 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100"
                     onClick={() => openPhrasePopup("aspect_term")}
                   >
                     <div>
@@ -978,7 +983,7 @@ function App() {
                     {newAspect.aspect_term && newAspect.aspect_term !== "NULL" && (() => {
                       const cleanedPhrase = cleanPhrase(newAspect.aspect_term);
                       return cleanedPhrase !== newAspect.aspect_term && (
-                        <div className="text-xs text-green-600 mt-1">
+                        <div className="text-xs text-green-600 dark:text-green-400 mt-1">
                           Cleaned: "{truncateText(cleanedPhrase)}"
                         </div>
                       );
@@ -988,12 +993,12 @@ function App() {
               
               {consideredSentimentElements.includes("opinion_term") && (
                 <div>
-                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                  <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Opinion Term
-                    {isFieldValid("opinion_term") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                    {isFieldValid("opinion_term") && <span className="text-blue-500 bg-blue-50 dark:bg-blue-900/50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
                   </label>
                   <div
-                    className="w-full p-3 border border-gray-200 rounded-lg bg-gray-50 cursor-pointer hover:bg-gray-100"
+                    className="w-full p-3 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100"
                     onClick={() => openPhrasePopup("opinion_term")}
                   >
                     <div>
@@ -1002,7 +1007,7 @@ function App() {
                     {newAspect.opinion_term && newAspect.opinion_term !== "NULL" && (() => {
                       const cleanedPhrase = cleanPhrase(newAspect.opinion_term);
                       return cleanedPhrase !== newAspect.opinion_term && (
-                        <div className="text-xs text-green-600 mt-1">
+                        <div className="text-xs text-green-600 dark:text-green-400 mt-1">
                           Cleaned: "{truncateText(cleanedPhrase)}"
                         </div>
                       );
@@ -1013,14 +1018,14 @@ function App() {
               
               {consideredSentimentElements.includes("aspect_category") && (
                 <div>
-                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                  <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Aspect Category
-                    {isFieldValid("aspect_category") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                    {isFieldValid("aspect_category") && <span className="text-blue-500 bg-blue-50 dark:bg-blue-900/50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
                   </label>
                   <select
                     value={newAspect.aspect_category}
                     onChange={(e) => setNewAspect({ ...newAspect, aspect_category: e.target.value })}
-                    className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full p-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 cursor-pointer"
                   >
                     <option value="">Select aspect...</option>
                     {validAspectCategories.map(aspect => (
@@ -1032,14 +1037,14 @@ function App() {
 
               {consideredSentimentElements.includes("sentiment_polarity") && (
                 <div>
-                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                  <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Sentiment Polarity
-                    {isFieldValid("sentiment_polarity") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                    {isFieldValid("sentiment_polarity") && <span className="text-blue-500 bg-blue-50 dark:bg-blue-900/50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
                   </label>
                   <select
                     value={newAspect.sentiment_polarity}
                     onChange={(e) => setNewAspect({ ...newAspect, sentiment_polarity: e.target.value })}
-                    className="w-full p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full p-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 cursor-pointer"
                   >
                     <option value="">Select sentiment...</option>
                     {validSentimentPolarities.map(sentiment => (
@@ -1057,39 +1062,39 @@ function App() {
                   const value = newAspect[element];
                   return value && value.trim() !== "";
                 })}
-                className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-4 py-2 rounded-lg font-medium transition-colors"
+                className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 disabled:cursor-not-allowed text-white px-4 py-2 rounded-lg font-medium transition-colors"
               >
                 Add aspect
               </button>
             </div>
           </div>
-          <div className="bg-white rounded-xl shadow-sm border p-6">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border dark:border-gray-700 p-6">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-lg font-semibold text-gray-900">Added annotations ({aspectList.length})</h2>
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Added annotations ({aspectList.length})</h2>
               {aspectList.length > 0 && (
                 <button
                   onClick={clearAllAnnotations}
                   className="px-3 py-1 text-sm bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors"
                 >
-                  Clear all
+                  Delete all {aspectList.length} annotations 🗑️
                 </button>
               )}
             </div>
 
             {aspectList.length === 0 ? (
-              <p className="text-gray-500 text-center py-8">No annotations available</p>
+              <p className="text-gray-500 dark:text-gray-400 text-center py-8">No annotations available</p>
             ) : (
               <div className="space-y-3">
                 {aspectList.map((aspect, index) => {
                   const colorClasses = getAnnotationColorClasses(index);
                   return (
-                    <div key={index} className="border border-gray-200 rounded-lg p-3 bg-gray-50 flex items-center gap-3">
+                    <div key={index} className="border border-gray-200 dark:border-gray-600 rounded-lg p-3 bg-gray-50 dark:bg-gray-700 flex items-center gap-3">
                     {/* Color indicator */}
                     <div className={`w-4 h-4 rounded-full ${colorClasses.bg300} flex-shrink-0`}></div>
                     
                     {consideredSentimentElements.includes("aspect_term") && (
                       <div
-                        className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
+                        className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded bg-white dark:bg-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-600 text-sm text-gray-900 dark:text-gray-100"
                         onClick={() => {
                           openPhrasePopupForEdit("aspect_term", index, aspect.aspect_term);
                         }}
@@ -1098,7 +1103,7 @@ function App() {
                       </div>
                     )}                      {consideredSentimentElements.includes("opinion_term") && (
                         <div
-                          className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
+                          className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded bg-white dark:bg-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-600 text-sm text-gray-900 dark:text-gray-100"
                           onClick={() => {
                             openPhrasePopupForEdit("opinion_term", index, aspect.opinion_term);
                           }}
@@ -1111,7 +1116,7 @@ function App() {
                       <select
                         value={aspect.aspect_category}
                         onChange={(e) => updateAspectItem(index, "aspect_category", e.target.value)}
-                        className="flex-1 p-2 border border-gray-200 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                        className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 cursor-pointer"
                       >
                         {validAspectCategories.map(cat => (
                           <option key={cat} value={cat}>{cat}</option>
@@ -1123,7 +1128,7 @@ function App() {
                       <select
                         value={aspect.sentiment_polarity}
                         onChange={(e) => updateAspectItem(index, "sentiment_polarity", e.target.value)}
-                        className="flex-1 p-2 border border-gray-200 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                        className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 cursor-pointer"
                       >
                         {validSentimentPolarities.map(sentiment => (
                           <option key={sentiment} value={sentiment}>{sentiment}</option>
@@ -1133,7 +1138,7 @@ function App() {
 
                     <button
                       onClick={() => deleteAspectItem(index)}
-                      className="w-8 h-8 bg-red-50 hover:bg-red-100 text-red-600 hover:text-red-700 rounded flex-shrink-0 border border-red-200"
+                      className="w-8 h-8 bg-red-50 dark:bg-red-900/30 hover:bg-red-100 dark:hover:bg-red-900/50 text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 rounded flex-shrink-0 border border-red-200 dark:border-red-800"
                       title="Delete"
                     >
                       🗑️
@@ -1173,7 +1178,7 @@ function App() {
             onClick={closePhrasePopup}
           >
             <div 
-              className="bg-white rounded-xl shadow-xl p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto" 
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto" 
               onKeyDown={handleKeyDown} 
               tabIndex={-1}
               onClick={(e) => e.stopPropagation()}
@@ -1181,44 +1186,40 @@ function App() {
               {/* Check if we should show combined popup */}
               {consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term") ? (
                 <>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-6">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">
                     Select phrases for Aspect Term and Opinion Term
                   </h3>
 
                   <div className="space-y-6">
                     {/* Aspect Term Section */}
-                    <div className="border rounded-lg p-4">
+                    <div className="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
                       <div className="flex justify-between items-center mb-4">
-                        <h4 className="font-medium text-gray-700">Aspect Term</h4>
+                        <h4 className="font-medium text-gray-700 dark:text-gray-300">Aspect Term</h4>
                         {allowImplicitAspectTerm && (
-                          <label className="flex items-center space-x-2">
-                            <input
-                              type="checkbox"
-                              checked={isImplicitAspect}
-                              onChange={(e) => setIsImplicitAspect(e.target.checked)}
-                              className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                            />
-                            <span className="text-sm text-gray-700">Implicit aspect</span>
-                          </label>
+                          <CustomCheckbox
+                            checked={isImplicitAspect}
+                            onChange={setIsImplicitAspect}
+                            label="Implicit aspect"
+                          />
                         )}
                       </div>
 
                       <div>
                         {!isImplicitAspect ? (
-                          <p className="text-sm text-gray-600 mb-3">
+                          <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                             Click on the start and end characters for the aspect term:
                           </p>
                         ) : (
-                          <p className="text-sm text-gray-600 mb-3 italic">
+                          <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 italic">
                             Text display (selection disabled for implicit aspect):
                           </p>
                         )}
                         {autoCleanPhrases && !isImplicitAspect && (
-                          <div className="text-xs text-gray-500 mb-2">
-                            <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                          <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                            <span className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black dark:text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
                           </div>
                         )}
-                        <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                        <div className="text-lg leading-relaxed p-4 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100">
                           {displayedText.split('').map((char, index) => (
                             <span
                               key={`aspect-${index}`}
@@ -1231,7 +1232,7 @@ function App() {
                           ))}
                         </div>
                         {!isImplicitAspect && (
-                          <div className="mt-3 space-y-2">
+                          <div className="mt-3 space-y-2 text-gray-900 dark:text-gray-100">
                             <div>
                               <strong>Selected text:</strong> {aspectStartChar !== null && aspectEndChar !== null ? `"${displayedText.substring(aspectStartChar, aspectEndChar + 1)}"` : ""}
                             </div>
@@ -1243,10 +1244,10 @@ function App() {
                                 return (
                                   <>
                                     <div>
-                                      <strong>Cleaned aspect phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                      <strong>Cleaned aspect phrase:</strong> "<span className="text-green-600 dark:text-green-400">{cleanedText}</span>"
                                     </div>
                                     {savePhrasePositions && (
-                                      <div className="text-sm text-gray-600">
+                                      <div className="text-sm text-gray-600 dark:text-gray-400">
                                         Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
                                       </div>
                                     )}
@@ -1254,7 +1255,7 @@ function App() {
                                 );
                               } else if (savePhrasePositions) {
                                 return (
-                                  <div className="text-sm text-gray-600">
+                                  <div className="text-sm text-gray-600 dark:text-gray-400">
                                     Saved positions: {aspectStartChar} - {aspectEndChar}
                                   </div>
                                 );
@@ -1262,7 +1263,7 @@ function App() {
                               return null;
                             })()}
                             {savePhrasePositions && (aspectStartChar === null || aspectEndChar === null) && (
-                              <div className="text-sm text-gray-600">
+                              <div className="text-sm text-gray-600 dark:text-gray-400">
                                 Saved positions: 
                               </div>
                             )}
@@ -1272,38 +1273,34 @@ function App() {
                     </div>
 
                     {/* Opinion Term Section */}
-                    <div className="border rounded-lg p-4">
+                    <div className="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
                       <div className="flex justify-between items-center mb-4">
-                        <h4 className="font-medium text-gray-700">Opinion Term</h4>
+                        <h4 className="font-medium text-gray-700 dark:text-gray-300">Opinion Term</h4>
                         {allowImplicitOpinionTerm && (
-                          <label className="flex items-center space-x-2">
-                            <input
-                              type="checkbox"
-                              checked={isImplicitOpinion}
-                              onChange={(e) => setIsImplicitOpinion(e.target.checked)}
-                              className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                            />
-                            <span className="text-sm text-gray-700">Implicit opinion</span>
-                          </label>
+                          <CustomCheckbox
+                            checked={isImplicitOpinion}
+                            onChange={setIsImplicitOpinion}
+                            label="Implicit opinion"
+                          />
                         )}
                       </div>
 
                       <div>
                         {!isImplicitOpinion ? (
-                          <p className="text-sm text-gray-600 mb-3">
+                          <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                             Click on the start and end characters for the opinion term:
                           </p>
                         ) : (
-                          <p className="text-sm text-gray-600 mb-3 italic">
+                          <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 italic">
                             Text display (selection disabled for implicit opinion):
                           </p>
                         )}
                         {autoCleanPhrases && !isImplicitOpinion && (
-                          <div className="text-xs text-gray-500 mb-2">
-                            <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                          <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                            <span className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black dark:text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
                           </div>
                         )}
-                        <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                        <div className="text-lg leading-relaxed p-4 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100">
                           {displayedText.split('').map((char, index) => (
                             <span
                               key={`opinion-${index}`}
@@ -1316,7 +1313,7 @@ function App() {
                           ))}
                         </div>
                         {!isImplicitOpinion && (
-                          <div className="mt-3 space-y-2">
+                          <div className="mt-3 space-y-2 text-gray-900 dark:text-gray-100">
                             <div>
                               <strong>Selected text:</strong> {opinionStartChar !== null && opinionEndChar !== null ? `"${displayedText.substring(opinionStartChar, opinionEndChar + 1)}"` : ""}
                             </div>
@@ -1328,10 +1325,10 @@ function App() {
                                 return (
                                   <>
                                     <div>
-                                      <strong>Cleaned opinion phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                      <strong>Cleaned opinion phrase:</strong> "<span className="text-green-600 dark:text-green-400">{cleanedText}</span>"
                                     </div>
                                     {savePhrasePositions && (
-                                      <div className="text-sm text-gray-600">
+                                      <div className="text-sm text-gray-600 dark:text-gray-400">
                                         Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
                                       </div>
                                     )}
@@ -1339,7 +1336,7 @@ function App() {
                                 );
                               } else if (savePhrasePositions) {
                                 return (
-                                  <div className="text-sm text-gray-600">
+                                  <div className="text-sm text-gray-600 dark:text-gray-400">
                                     Saved positions: {opinionStartChar} - {opinionEndChar}
                                   </div>
                                 );
@@ -1347,7 +1344,7 @@ function App() {
                               return null;
                             })()}
                             {savePhrasePositions && (opinionStartChar === null || opinionEndChar === null) && (
-                              <div className="text-sm text-gray-600">
+                              <div className="text-sm text-gray-600 dark:text-gray-400">
                                 Saved positions: 
                               </div>
                             )}
@@ -1359,51 +1356,46 @@ function App() {
                 </>
               ) : (
                 <>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                     Select phrase for {currentEditingField === "aspect_term" ? "Aspect Term" : "Opinion Term"}
                   </h3>
 
                   {((currentEditingField === "aspect_term" && allowImplicitAspectTerm) ||
                     (currentEditingField === "opinion_term" && allowImplicitOpinionTerm)) && (
                       <div className="mb-4">
-                        <label className="flex items-center space-x-2 mb-4">
-                          <input
-                            type="checkbox"
-                            checked={currentEditingField === "aspect_term" ? isImplicitAspect : isImplicitOpinion}
-                            onChange={(e) => {
-                              if (currentEditingField === "aspect_term") {
-                                setIsImplicitAspect(e.target.checked);
-                              } else {
-                                setIsImplicitOpinion(e.target.checked);
-                              }
-                            }}
-                            className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                          />
-                          <span className="text-sm text-gray-700">
-                            {currentEditingField === "aspect_term" ? "Implicit aspect" : "Implicit opinion"}
-                          </span>
-                        </label>
+                        <CustomCheckbox
+                          checked={currentEditingField === "aspect_term" ? isImplicitAspect : isImplicitOpinion}
+                          onChange={(checked) => {
+                            if (currentEditingField === "aspect_term") {
+                              setIsImplicitAspect(checked);
+                            } else {
+                              setIsImplicitOpinion(checked);
+                            }
+                          }}
+                          label={currentEditingField === "aspect_term" ? "Implicit aspect" : "Implicit opinion"}
+                          className="mb-4"
+                        />
                       </div>
                     )}
 
                   <div className="mb-6">
                     {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
                         (currentEditingField === "opinion_term" && isImplicitOpinion)) ? (
-                      <p className="text-sm text-gray-600 mb-3">
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                         Click on the start character and then on the end character of the phrase:
                       </p>
                     ) : (
-                      <p className="text-sm text-gray-600 mb-3 italic">
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 italic">
                         Text display (selection disabled for implicit {currentEditingField === "aspect_term" ? "aspect" : "opinion"}):
                       </p>
                     )}
                     {autoCleanPhrases && !((currentEditingField === "aspect_term" && isImplicitAspect) || 
                         (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
-                      <div className="text-xs text-gray-500 mb-2">
-                        <span className="bg-blue-300 px-1 rounded">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                      <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                        <span className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black dark:text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
                       </div>
                     )}
-                    <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                    <div className="text-lg leading-relaxed p-4 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100">
                       {displayedText.split('').map((char, index) => (
                         <span
                           key={index}
@@ -1423,7 +1415,7 @@ function App() {
                     </div>
                     {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
                         (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
-                        <div className="mt-3 space-y-2">
+                        <div className="mt-3 space-y-2 text-gray-900 dark:text-gray-100">
                           <div>
                             <strong>Selected text:</strong> {selectedStartChar !== null && selectedEndChar !== null ? `"${displayedText.substring(selectedStartChar, selectedEndChar + 1)}"` : ""}
                           </div>
@@ -1435,10 +1427,10 @@ function App() {
                               return (
                                 <>
                                   <div>
-                                    <strong>Cleaned phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                    <strong>Cleaned phrase:</strong> "<span className="text-green-600 dark:text-green-400">{cleanedText}</span>"
                                   </div>
                                   {savePhrasePositions && (
-                                    <div className="text-sm text-gray-600">
+                                    <div className="text-sm text-gray-600 dark:text-gray-400">
                                       Saved positions: {cleanedPositions.start} - {cleanedPositions.end}
                                     </div>
                                   )}
@@ -1446,7 +1438,7 @@ function App() {
                               );
                             } else if (savePhrasePositions) {
                               return (
-                                <div className="text-sm text-gray-600">
+                                <div className="text-sm text-gray-600 dark:text-gray-400">
                                   Saved positions: {selectedStartChar} - {selectedEndChar}
                                 </div>
                               );
@@ -1454,7 +1446,7 @@ function App() {
                             return null;
                           })()}
                           {savePhrasePositions && (selectedStartChar === null || selectedEndChar === null) && (
-                            <div className="text-sm text-gray-600">
+                            <div className="text-sm text-gray-600 dark:text-gray-400">
                               Saved positions: 
                             </div>
                           )}
@@ -1467,7 +1459,7 @@ function App() {
               <div className="flex justify-end space-x-3 pt-4">
                 <button
                   onClick={closePhrasePopup}
-                  className="px-4 py-2 text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50"
+                  className="px-4 py-2 text-gray-600 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
                 >
                   Cancel
                 </button>
@@ -1484,7 +1476,7 @@ function App() {
                         (currentEditingField === "opinion_term" && isImplicitOpinion)) &&
                       (selectedStartChar === null || selectedEndChar === null)
                   }
-                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 disabled:cursor-not-allowed"
                 >
                   Done
                 </button>
@@ -1495,13 +1487,13 @@ function App() {
       </div>
 
       {/* Footer with Contact Info */}
-      <footer className="bg-gray-50 border-t border-gray-200 py-4 px-6">
-        <div className="max-w-4xl mx-auto text-center text-sm text-gray-600">
+      <footer className="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-4 px-6">
+        <div className="max-w-4xl mx-auto text-center text-sm text-gray-600 dark:text-gray-400">
           <div className="flex items-center justify-center gap-2">
             <span>Built with ❤️ for the NLP community by</span>
             <a 
               href="mailto:Nils-Constantin.Hellwig@ur.de"
-              className="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+              className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium transition-colors duration-200"
             >
               Nils-Constantin.Hellwig@ur.de
             </a>
