@@ -54,7 +54,8 @@ def load_config():
             "restaurant general", "restaurant variety", "restaurant specialty"
         ],
         "implicit_aspect_term_allowed": True,
-        "implicit_opinion_term_allowed": False
+        "implicit_opinion_term_allowed": False,
+        "auto_clean_phrases": True
     }
 
 def set_config(config_dict: dict):
@@ -112,6 +113,7 @@ def get_settings():
         "aspect_categories": CONFIG_DATA.get("aspect_categories", ["food general", "food quality", "food style options", "food healthy", "service general", "service attitude", "service speed", "price general", "price level", "ambience general", "ambience decor", "ambience style", "location general", "location parking", "location access", "restaurant general", "restaurant variety", "restaurant specialty"]),
         "implicit_aspect_term_allowed": CONFIG_DATA.get("implicit_aspect_term_allowed", True),
         "implicit_opinion_term_allowed": CONFIG_DATA.get("implicit_opinion_term_allowed", False),
+        "auto_clean_phrases": CONFIG_DATA.get("auto_clean_phrases", True),
         "current_index": get_current_index(),
         "max_number_of_idxs": max_number_of_idxs()
     }

@@ -33,6 +33,7 @@ class ABSAAnnotatorConfig:
             ],
             "implicit_aspect_term_allowed": True,
             "implicit_opinion_term_allowed": False,
+            "auto_clean_phrases": True,
         }
     
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -58,6 +59,10 @@ class ABSAAnnotatorConfig:
     def set_implicit_opinion_allowed(self, allowed: bool) -> None:
         """Set whether implicit opinion terms are allowed."""
         self.config["implicit_opinion_term_allowed"] = allowed
+    
+    def set_auto_clean_phrases(self, enabled: bool) -> None:
+        """Set whether automatic phrase cleaning is enabled."""
+        self.config["auto_clean_phrases"] = enabled
     
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
@@ -270,6 +275,12 @@ Examples:
     )
     
     parser.add_argument(
+        "--no-clean-phrases",
+        action="store_true",
+        help="Disable automatic cleaning of punctuation from selected phrases"
+    )
+    
+    parser.add_argument(
         "--save-config",
         metavar="PATH",
         nargs="?",
@@ -379,6 +390,9 @@ Examples:
         config.set_implicit_opinion_allowed(True)
     elif args.no_implicit_opinion:
         config.set_implicit_opinion_allowed(False)
+    
+    if args.no_clean_phrases:
+        config.set_auto_clean_phrases(False)
     
     if args.session_id:
         config.set_session_id(args.session_id)

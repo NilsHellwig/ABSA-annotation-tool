@@ -16,6 +16,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 
 - **Intuitive UI** - Clean, modern interface for efficient annotation
 - **Smart Phrase Selection** - Click-to-select text spans with visual feedback
+- **Automatic Phrase Cleaning** - Removes punctuation from start/end of selected phrases (configurable)
 - **Combined Annotation Popup** - When both aspect and opinion terms are configured, annotate both in a single, unified dialog
 - **Separate Text Selection** - Independent phrase selection for aspect terms and opinion terms
 - **Progress Tracking** - Real-time annotation progress and navigation
@@ -128,7 +129,8 @@ You can save and reuse configurations with JSON files:
   "sentiment_polarity_options": ["positive", "negative", "neutral"],
   "aspect_categories": ["food general", "service general", "price general"],
   "implicit_aspect_term_allowed": true,
-  "implicit_opinion_term_allowed": false
+  "implicit_opinion_term_allowed": false,
+  "auto_clean_phrases": true
 }
 ```
 
@@ -153,6 +155,7 @@ You can save and reuse configurations with JSON files:
 | `--no-implicit-aspect` | Disable implicit aspect terms | - |
 | `--implicit-opinion` | Allow implicit opinion terms | `False` |
 | `--no-implicit-opinion` | Disable implicit opinion terms | `True` (default) |
+| `--no-clean-phrases` | **Disable automatic punctuation cleaning** | - |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 
@@ -166,6 +169,7 @@ You can save and reuse configurations with JSON files:
   --categories "food quality" "service speed" "price level" "ambience decor" \
   --implicit-aspect \
   --no-implicit-opinion \
+  --no-clean-phrases \
   --backend-ip 192.168.1.100 \
   --backend-port 8080 \
   --frontend-ip 0.0.0.0 \

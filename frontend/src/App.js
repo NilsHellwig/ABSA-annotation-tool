@@ -29,6 +29,7 @@ function App() {
   const [validSentimentPolarities, setValidSentimentPolarities] = useState([]);
   const [allowImplicitAspectTerm, setAllowImplicitAspectTerm] = useState(false);
   const [allowImplicitOpinionTerm, setAllowImplicitOpinionTerm] = useState(false);
+  const [autoCleanPhrases, setAutoCleanPhrases] = useState(true);
 
   // Backend states
   const [currentIndex, setCurrentIndex] = useState(0); // Currently displayed index in UI
@@ -47,6 +48,17 @@ function App() {
     const trimmedText = text.trim();
     if (trimmedText.length <= maxLength) return trimmedText;
     return trimmedText.substring(0, maxLength) + "...";
+  };
+
+  const cleanPhrase = (phrase) => {
+    if (!phrase || !autoCleanPhrases) return phrase.trim ? phrase.trim() : phrase;
+    // First trim whitespace
+    let cleaned = phrase.trim();
+    // Then remove common punctuation from start and end
+    const punctuation = /^[.,;:!?¡¿"'`´''""„«»()[\]{}]+|[.,;:!?¡¿"'`´''""„«»()[\]{}]+$/g;
+    cleaned = cleaned.replace(punctuation, '');
+    // Trim again in case there were spaces after punctuation
+    return cleaned.trim();
   };
 
   const openPhrasePopup = (fieldType) => {
@@ -153,7 +165,7 @@ function App() {
       if (isImplicitAspect) {
         aspectPhrase = "NULL";
       } else if (aspectStartChar !== null && aspectEndChar !== null) {
-        aspectPhrase = displayedText.substring(aspectStartChar, aspectEndChar + 1).trim();
+        aspectPhrase = cleanPhrase(displayedText.substring(aspectStartChar, aspectEndChar + 1));
       } else {
         aspectPhrase = undefined; // Don't update if no selection and not implicit
       }
@@ -161,7 +173,7 @@ function App() {
       if (isImplicitOpinion) {
         opinionPhrase = "NULL";
       } else if (opinionStartChar !== null && opinionEndChar !== null) {
-        opinionPhrase = displayedText.substring(opinionStartChar, opinionEndChar + 1).trim();
+        opinionPhrase = cleanPhrase(displayedText.substring(opinionStartChar, opinionEndChar + 1));
       } else {
         opinionPhrase = undefined; // Don't update if no selection and not implicit
       }
@@ -192,7 +204,7 @@ function App() {
           (currentEditingField === "opinion_term" && isImplicitOpinion)) {
         selectedPhrase = "NULL";
       } else if (selectedStartChar !== null && selectedEndChar !== null) {
-        selectedPhrase = displayedText.substring(selectedStartChar, selectedEndChar + 1).trim();
+        selectedPhrase = cleanPhrase(displayedText.substring(selectedStartChar, selectedEndChar + 1));
       }
 
       if (currentEditingIndex !== null) {
@@ -269,6 +281,7 @@ function App() {
       setValidSentimentPolarities(settings["sentiment_polarity options"]);
       setAllowImplicitAspectTerm(settings["implicit_aspect_term_allowed"]);
       setAllowImplicitOpinionTerm(settings["implicit_opinion_term_allowed"]);
+      setAutoCleanPhrases(settings["auto_clean_phrases"] !== false); // Default to true
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);
@@ -769,8 +782,19 @@ function App() {
                             ))}
                           </div>
                           {aspectStartChar !== null && aspectEndChar !== null && (
-                            <div className="mt-3">
-                              <strong>Selected aspect phrase:</strong> "{displayedText.substring(aspectStartChar, aspectEndChar + 1).trim()}"
+                            <div className="mt-3 space-y-2">
+                              <div>
+                                <strong>Selected text:</strong> "{displayedText.substring(aspectStartChar, aspectEndChar + 1)}"
+                              </div>
+                              {(() => {
+                                const originalText = displayedText.substring(aspectStartChar, aspectEndChar + 1);
+                                const cleanedText = cleanPhrase(originalText);
+                                return originalText !== cleanedText && (
+                                  <div>
+                                    <strong>Cleaned aspect phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                  </div>
+                                );
+                              })()}
                             </div>
                           )}
                         </div>
@@ -819,8 +843,19 @@ function App() {
                             ))}
                           </div>
                           {opinionStartChar !== null && opinionEndChar !== null && (
-                            <div className="mt-3">
-                              <strong>Selected opinion phrase:</strong> "{displayedText.substring(opinionStartChar, opinionEndChar + 1).trim()}"
+                            <div className="mt-3 space-y-2">
+                              <div>
+                                <strong>Selected text:</strong> "{displayedText.substring(opinionStartChar, opinionEndChar + 1)}"
+                              </div>
+                              {(() => {
+                                const originalText = displayedText.substring(opinionStartChar, opinionEndChar + 1);
+                                const cleanedText = cleanPhrase(originalText);
+                                return originalText !== cleanedText && (
+                                  <div>
+                                    <strong>Cleaned opinion phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                                  </div>
+                                );
+                              })()}
                             </div>
                           )}
                         </div>
@@ -883,8 +918,19 @@ function App() {
                         ))}
                       </div>
                       {selectedStartChar !== null && selectedEndChar !== null && (
-                        <div className="mt-3">
-                          <strong>Selected phrase:</strong> "{displayedText.substring(selectedStartChar, selectedEndChar + 1).trim()}"
+                        <div className="mt-3 space-y-2">
+                          <div>
+                            <strong>Selected text:</strong> "{displayedText.substring(selectedStartChar, selectedEndChar + 1)}"
+                          </div>
+                          {(() => {
+                            const originalText = displayedText.substring(selectedStartChar, selectedEndChar + 1);
+                            const cleanedText = cleanPhrase(originalText);
+                            return originalText !== cleanedText && (
+                              <div>
+                                <strong>Cleaned phrase:</strong> "<span className="text-green-600">{cleanedText}</span>"
+                              </div>
+                            );
+                          })()}
                         </div>
                       )}
                     </div>
