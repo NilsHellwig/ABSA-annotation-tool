@@ -16,6 +16,9 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 
 - **Intuitive UI** - Clean, modern interface for efficient annotation
 - **Smart Phrase Selection** - Click-to-select text spans with visual feedback
+- **Visual Phrase Highlighting** - Annotated phrases are highlighted directly in the text with unique colors
+- **Color-Coded Annotations** - Each annotation gets a unique color with visual indicators in the annotation list
+- **Intelligent Color Mixing** - Overlapping phrases show mixed colors to visualize annotation overlaps
 - **Automatic Phrase Cleaning** - Removes punctuation from start/end of selected phrases (configurable)
 - **Combined Annotation Popup** - When both aspect and opinion terms are configured, annotate both in a single, unified dialog
 - **Separate Text Selection** - Independent phrase selection for aspect terms and opinion terms
@@ -24,6 +27,19 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Translation Support** - Optional translations displayed below original text
 - **Session Management** - Optional session IDs for tracking annotation sessions
 - **CLI Tool** - Command-line configuration for different domains
+
+## 🎨 Visual Features
+
+### Phrase Highlighting
+- **Color-coded text**: Each annotation gets its own unique color in the text
+- **Overlap visualization**: When phrases overlap, colors mix to show intersections
+- **Clear distinction**: Aspect terms appear stronger, opinion terms more subtle
+
+### Clean Interface  
+- **Colored indicators**: Each annotation shows a matching colored circle
+- **No label clutter**: Clean list without "AT:", "OT:" prefixes
+- **25 vibrant colors**: Purple, Emerald, Orange, Pink, Cyan, and more
+- **Color cycling**: After 25 annotations, colors repeat from the beginning
 
 ---
 
@@ -165,8 +181,8 @@ You can save and reuse configurations with JSON files:
 | `--no-implicit-aspect` | Disable implicit aspect terms | - |
 | `--implicit-opinion` | Allow implicit opinion terms | `False` |
 | `--no-implicit-opinion` | Disable implicit opinion terms | `True` (default) |
-| `--no-clean-phrases` | **Disable automatic punctuation cleaning** | - |
-| `--no-save-positions` | **Disable saving phrase positions** (at_start, at_end, ot_start, ot_end) | - |
+| `--no-clean-phrases` | **Disable automatic punctuation cleaning** from phrase start/end | Enabled by default |
+| `--no-save-positions` | **Disable saving phrase positions** (at_start, at_end, ot_start, ot_end) for faster processing | Enabled by default |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 
@@ -279,6 +295,20 @@ When phrase position saving is enabled (default), the tool automatically adds ch
 | `ot_end` | End character position of opinion term in text |
 
 Position indices are 0-based and inclusive. This data is useful for downstream processing and analysis. To disable position saving, use the `--no-save-positions` CLI option.
+
+### Automatic Phrase Cleaning
+
+By default, the tool automatically cleans selected phrases by:
+- Trimming whitespace from start and end
+- Removing common punctuation marks: `. , ; : ! ? ¡ ¿ " ' ` ´ ' ' " " „ « » ( ) [ ] { }`
+- Adjusting saved positions to match the cleaned phrase
+
+**Examples:**
+- `"amazing!"` → `amazing` (exclamation mark removed)
+- ` , great,  ` → `great` (whitespace and commas removed)
+- `(excellent)` → `excellent` (parentheses removed)
+
+This ensures consistent annotation quality and removes common annotation errors. To disable phrase cleaning, use the `--no-clean-phrases` CLI option.
 
 **Important**: Both CSV and JSON files must be saved with UTF-8 encoding to support international characters and emojis.
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { getAnnotationColorClasses, createTextHighlights, renderHighlightedText } from "./phraseColoring";
 
 function App() {
 
@@ -42,6 +43,9 @@ function App() {
 
   // Get backend URL from environment or use default
   const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+
+  // Function to mix colors mathematically
+  // Helper functions
 
   // Helper functions
   const truncateText = (text, maxLength = 32) => {
@@ -716,6 +720,7 @@ function App() {
     };
 
     loadInitialData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Initialize form when consideredSentimentElements changes
@@ -824,8 +829,12 @@ function App() {
 
 
           <div className="bg-white rounded-xl shadow-sm border p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Text to annotate</h2>
-            <div className="text-xl text-center bg-gray-100 p-4 rounded-xl">{displayedText}</div>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-lg font-semibold text-gray-900">Text to annotate</h2>
+            </div>
+            <div className="text-xl text-center bg-gray-100 p-4 rounded-xl leading-relaxed">
+              {renderHighlightedText(displayedText, createTextHighlights(displayedText, aspectList, getAnnotationColorClasses))}
+            </div>
             
             {/* Translation section */}
             {displayedTranslation && (
@@ -960,25 +969,23 @@ function App() {
               <p className="text-gray-500 text-center py-8">No annotations available</p>
             ) : (
               <div className="space-y-3">
-                {aspectList.map((aspect, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg p-3 bg-gray-50 flex items-center gap-3">
+                {aspectList.map((aspect, index) => {
+                  const colorClasses = getAnnotationColorClasses(index);
+                  return (
+                    <div key={index} className="border border-gray-200 rounded-lg p-3 bg-gray-50 flex items-center gap-3">
+                    {/* Color indicator */}
+                    <div className={`w-4 h-4 rounded-full ${colorClasses.bg300} flex-shrink-0`}></div>
+                    
                     {consideredSentimentElements.includes("aspect_term") && (
-                      <div className="flex items-center gap-2 flex-1">
-                        <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">AT:</span>
-                        <div
-                          className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
-                          onClick={() => {
-                            openPhrasePopupForEdit("aspect_term", index, aspect.aspect_term);
-                          }}
-                        >
-                          <span className="truncate">{truncateText(aspect.aspect_term) || "Select phrase"}</span>
-                        </div>
+                      <div
+                        className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
+                        onClick={() => {
+                          openPhrasePopupForEdit("aspect_term", index, aspect.aspect_term);
+                        }}
+                      >
+                        <span className="truncate">{truncateText(aspect.aspect_term) || "Select phrase"}</span>
                       </div>
-                    )}
-
-                    {consideredSentimentElements.includes("opinion_term") && (
-                      <div className="flex items-center gap-2 flex-1">
-                        <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">OT:</span>
+                    )}                      {consideredSentimentElements.includes("opinion_term") && (
                         <div
                           className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
                           onClick={() => {
@@ -987,37 +994,30 @@ function App() {
                         >
                           <span className="truncate">{truncateText(aspect.opinion_term) || "Select phrase"}</span>
                         </div>
-                      </div>
-                    )}
+                      )}
 
                     {consideredSentimentElements.includes("aspect_category") && (
-                      <div className="flex items-center gap-2 flex-1">
-                        <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">AC:</span>
-                        <select
-                          value={aspect.aspect_category}
-                          onChange={(e) => updateAspectItem(index, "aspect_category", e.target.value)}
-                          className="flex-1 p-2 border border-gray-200 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
-                        >
-                          {validAspectCategories.map(cat => (
-                            <option key={cat} value={cat}>{cat}</option>
-                          ))}
-                        </select>
-                      </div>
+                      <select
+                        value={aspect.aspect_category}
+                        onChange={(e) => updateAspectItem(index, "aspect_category", e.target.value)}
+                        className="flex-1 p-2 border border-gray-200 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                      >
+                        {validAspectCategories.map(cat => (
+                          <option key={cat} value={cat}>{cat}</option>
+                        ))}
+                      </select>
                     )}
 
                     {consideredSentimentElements.includes("sentiment_polarity") && (
-                      <div className="flex items-center gap-2 flex-1">
-                        <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">SP:</span>
-                        <select
-                          value={aspect.sentiment_polarity}
-                          onChange={(e) => updateAspectItem(index, "sentiment_polarity", e.target.value)}
-                          className="flex-1 p-2 border border-gray-200 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
-                        >
-                          {validSentimentPolarities.map(sentiment => (
-                            <option key={sentiment} value={sentiment}>{sentiment}</option>
-                          ))}
-                        </select>
-                      </div>
+                      <select
+                        value={aspect.sentiment_polarity}
+                        onChange={(e) => updateAspectItem(index, "sentiment_polarity", e.target.value)}
+                        className="flex-1 p-2 border border-gray-200 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                      >
+                        {validSentimentPolarities.map(sentiment => (
+                          <option key={sentiment} value={sentiment}>{sentiment}</option>
+                        ))}
+                      </select>
                     )}
 
                     <button
@@ -1027,8 +1027,9 @@ function App() {
                     >
                       🗑️
                     </button>
-                  </div>
-                ))}
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
@@ -1040,7 +1041,7 @@ function App() {
                 disabled={currentIndex >= maxIndex - 1}
                 className="bg-green-600 hover:bg-green-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                Next annotation →
+                Save & Next annotation →
               </button>
             ) : (
               <button
@@ -1048,7 +1049,7 @@ function App() {
                 disabled={currentIndex >= maxIndex - 1}
                 className="bg-yellow-600 hover:bg-yellow-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                Annotate empty list
+                Save & Annotate empty list
               </button>
             )}
           </div>
