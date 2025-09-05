@@ -65,6 +65,7 @@ class ABSAAnnotatorConfig:
             "auto_clean_phrases": True,
             "save_phrase_positions": True,
             "click_on_token": True,
+            "auto_positions": False,
         }
     
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -102,6 +103,10 @@ class ABSAAnnotatorConfig:
     def set_click_on_token(self, enabled: bool) -> None:
         """Set whether click-on-token feature is enabled (snap to token boundaries)."""
         self.config["click_on_token"] = enabled
+    
+    def set_auto_positions(self, enabled: bool) -> None:
+        """Set whether automatic position data filling is enabled for existing phrases on startup."""
+        self.config["auto_positions"] = enabled
     
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
@@ -152,6 +157,7 @@ class ABSAAnnotatorConfig:
         print(f"📝 Aspect Categories: {len(self.config['aspect_categories'])} categories")
         print(f"🔍 Implicit Aspect Terms: {'✅' if self.config['implicit_aspect_term_allowed'] else '❌'}")
         print(f"💭 Implicit Opinion Terms: {'✅' if self.config['implicit_opinion_term_allowed'] else '❌'}")
+        print(f"🔧 Auto-add Positions: {'✅' if self.config['auto_positions'] else '❌'}")
 
 
 def start_backend(port: int = 8000, host: str = "localhost", data_path: str = None, config: ABSAAnnotatorConfig = None):
@@ -391,6 +397,12 @@ Examples:
     )
     
     parser.add_argument(
+        "--auto-positions",
+        action="store_true",
+        help="Automatically add missing position data (at_start, at_end, ot_start, ot_end) for existing phrases on server start"
+    )
+    
+    parser.add_argument(
         "--save-config",
         metavar="PATH",
         nargs="?",
@@ -495,6 +507,9 @@ Examples:
     
     if args.no_click_on_token:
         config.set_click_on_token(False)
+    
+    if args.auto_positions:
+        config.set_auto_positions(True)
     
     if args.session_id:
         config.set_session_id(args.session_id)

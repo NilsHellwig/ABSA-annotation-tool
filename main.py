@@ -12,7 +12,6 @@ app = FastAPI()
 DATA_FILE_PATH = os.environ.get('ABSA_DATA_PATH', "annotations.csv")  # Default
 DATA_FILE_TYPE = "json" if DATA_FILE_PATH.endswith('.json') else "csv"
 CONFIG_PATH = os.environ.get('ABSA_CONFIG_PATH', None)  # Path to config file
-AUTO_POSITIONS = os.environ.get('ABSA_AUTO_POSITIONS', 'False').lower() == 'true'  # Auto-add positions flag (default: disabled)
 CONFIG_DATA = {}  # Store configuration data including session_id
 
 # Load configuration if provided
@@ -23,6 +22,9 @@ if CONFIG_PATH and os.path.exists(CONFIG_PATH):
             CONFIG_DATA = json.load(f)
     except Exception as e:
         print(f"Warning: Could not load config from {CONFIG_PATH}: {e}")
+
+# Get auto_positions flag from loaded configuration
+AUTO_POSITIONS = CONFIG_DATA.get('auto_positions', False)
 
 def set_data_file(file_path: str):
     """Set the data file path and determine file type."""
@@ -426,6 +428,11 @@ async def startup_event():
     if CONFIG_PATH:
         print(f"⚙️  Config file: {CONFIG_PATH}")
     
-    # Auto-add missing position data when server starts
-    auto_add_missing_positions()
+    # Auto-add missing position data when server starts (only if enabled)
+    if AUTO_POSITIONS:
+        print("🔧 Auto-positions feature enabled - scanning for missing position data...")
+        auto_add_missing_positions()
+    else:
+        print("ℹ️  Auto-positions feature disabled (use --auto-positions to enable)")
+    
     print("✨ Backend ready!")
