@@ -17,7 +17,12 @@ function App() {
   const [currentEditingField, setCurrentEditingField] = useState(null);
   const [selectedStartChar, setSelectedStartChar] = useState(null);
   const [selectedEndChar, setSelectedEndChar] = useState(null);
+  const [aspectStartChar, setAspectStartChar] = useState(null);
+  const [aspectEndChar, setAspectEndChar] = useState(null);
+  const [opinionStartChar, setOpinionStartChar] = useState(null);
+  const [opinionEndChar, setOpinionEndChar] = useState(null);
   const [isImplicitAspect, setIsImplicitAspect] = useState(false);
+  const [isImplicitOpinion, setIsImplicitOpinion] = useState(false);
   const [currentEditingIndex, setCurrentEditingIndex] = useState(null); // For editing existing items
 
   const [validAspectCategories, setValidAspectCategories] = useState([]);
@@ -50,8 +55,13 @@ function App() {
     setShowPhrasePopup(true);
     setSelectedStartChar(null);
     setSelectedEndChar(null);
-    // Check if current value is "NULL" to set implicit checkbox correctly
-    setIsImplicitAspect(newAspect[fieldType] === "NULL");
+    setAspectStartChar(null);
+    setAspectEndChar(null);
+    setOpinionStartChar(null);
+    setOpinionEndChar(null);
+    // Set initial implicit states based on current values
+    setIsImplicitAspect(newAspect.aspect_term === "NULL");
+    setIsImplicitOpinion(newAspect.opinion_term === "NULL");
   };
 
   const openPhrasePopupForEdit = (fieldType, index, currentValue) => {
@@ -60,7 +70,26 @@ function App() {
     setShowPhrasePopup(true);
     setSelectedStartChar(null);
     setSelectedEndChar(null);
-    setIsImplicitAspect(currentValue === "NULL");
+    setAspectStartChar(null);
+    setAspectEndChar(null);
+    setOpinionStartChar(null);
+    setOpinionEndChar(null);
+    // For editing mode, set implicit states based on the current aspect being edited
+    if (fieldType === "aspect_term") {
+      setIsImplicitAspect(currentValue === "NULL");
+      // For combined editing, also check opinion term
+      const currentAspectList = [...aspectList];
+      if (currentAspectList[index] && currentAspectList[index].opinion_term !== undefined) {
+        setIsImplicitOpinion(currentAspectList[index].opinion_term === "NULL");
+      }
+    } else if (fieldType === "opinion_term") {
+      setIsImplicitOpinion(currentValue === "NULL");
+      // For combined editing, also check aspect term
+      const currentAspectList = [...aspectList];
+      if (currentAspectList[index] && currentAspectList[index].aspect_term !== undefined) {
+        setIsImplicitAspect(currentAspectList[index].aspect_term === "NULL");
+      }
+    }
   };
 
   const closePhrasePopup = () => {
@@ -69,7 +98,12 @@ function App() {
     setCurrentEditingIndex(null);
     setSelectedStartChar(null);
     setSelectedEndChar(null);
+    setAspectStartChar(null);
+    setAspectEndChar(null);
+    setOpinionStartChar(null);
+    setOpinionEndChar(null);
     setIsImplicitAspect(false);
+    setIsImplicitOpinion(false);
   };
 
   const handleCharClick = (charIndex) => {
@@ -84,20 +118,90 @@ function App() {
     }
   };
 
-  const savePhraseSelection = () => {
-    let selectedPhrase;
-    if (isImplicitAspect) {
-      selectedPhrase = "NULL";
-    } else if (selectedStartChar !== null && selectedEndChar !== null) {
-      selectedPhrase = displayedText.substring(selectedStartChar, selectedEndChar + 1).trim();
-    }
-
-    if (currentEditingIndex !== null) {
-      // Editing existing annotation
-      updateAspectItem(currentEditingIndex, currentEditingField, selectedPhrase);
+  const handleAspectCharClick = (charIndex) => {
+    if (aspectStartChar === null) {
+      setAspectStartChar(charIndex);
+    } else if (aspectEndChar === null && charIndex >= aspectStartChar) {
+      setAspectEndChar(charIndex);
     } else {
-      // Adding new annotation
-      setNewAspect({ ...newAspect, [currentEditingField]: selectedPhrase });
+      // Reset selection
+      setAspectStartChar(charIndex);
+      setAspectEndChar(null);
+    }
+  };
+
+  const handleOpinionCharClick = (charIndex) => {
+    if (opinionStartChar === null) {
+      setOpinionStartChar(charIndex);
+    } else if (opinionEndChar === null && charIndex >= opinionStartChar) {
+      setOpinionEndChar(charIndex);
+    } else {
+      // Reset selection
+      setOpinionStartChar(charIndex);
+      setOpinionEndChar(null);
+    }
+  };
+
+  const savePhraseSelection = () => {
+    // Check if we're showing both fields (combined mode)
+    const showCombined = consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term");
+    
+    if (showCombined) {
+      // Handle both aspect term and opinion term
+      let aspectPhrase, opinionPhrase;
+      
+      if (isImplicitAspect) {
+        aspectPhrase = "NULL";
+      } else if (aspectStartChar !== null && aspectEndChar !== null) {
+        aspectPhrase = displayedText.substring(aspectStartChar, aspectEndChar + 1).trim();
+      } else {
+        aspectPhrase = undefined; // Don't update if no selection and not implicit
+      }
+      
+      if (isImplicitOpinion) {
+        opinionPhrase = "NULL";
+      } else if (opinionStartChar !== null && opinionEndChar !== null) {
+        opinionPhrase = displayedText.substring(opinionStartChar, opinionEndChar + 1).trim();
+      } else {
+        opinionPhrase = undefined; // Don't update if no selection and not implicit
+      }
+
+      if (currentEditingIndex !== null) {
+        // Editing existing annotation
+        if (aspectPhrase !== undefined) {
+          updateAspectItem(currentEditingIndex, "aspect_term", aspectPhrase);
+        }
+        if (opinionPhrase !== undefined) {
+          updateAspectItem(currentEditingIndex, "opinion_term", opinionPhrase);
+        }
+      } else {
+        // Adding new annotation
+        const updates = {};
+        if (aspectPhrase !== undefined) {
+          updates.aspect_term = aspectPhrase;
+        }
+        if (opinionPhrase !== undefined) {
+          updates.opinion_term = opinionPhrase;
+        }
+        setNewAspect({ ...newAspect, ...updates });
+      }
+    } else {
+      // Handle single field (original behavior)
+      let selectedPhrase;
+      if ((currentEditingField === "aspect_term" && isImplicitAspect) || 
+          (currentEditingField === "opinion_term" && isImplicitOpinion)) {
+        selectedPhrase = "NULL";
+      } else if (selectedStartChar !== null && selectedEndChar !== null) {
+        selectedPhrase = displayedText.substring(selectedStartChar, selectedEndChar + 1).trim();
+      }
+
+      if (currentEditingIndex !== null) {
+        // Editing existing annotation
+        updateAspectItem(currentEditingIndex, currentEditingField, selectedPhrase);
+      } else {
+        // Adding new annotation
+        setNewAspect({ ...newAspect, [currentEditingField]: selectedPhrase });
+      }
     }
 
     closePhrasePopup();
@@ -432,6 +536,22 @@ function App() {
                     {truncateText(newAspect.aspect_term) || "Select phrase"}
                   </div>
                 </div>)}
+              
+              {consideredSentimentElements.includes("opinion_term") && (
+                <div>
+                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
+                    Opinion Term
+                    {isFieldValid("opinion_term") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
+                  </label>
+                  <div
+                    className="w-full p-3 border border-gray-200 rounded-lg bg-gray-50 cursor-pointer hover:bg-gray-100"
+                    onClick={() => openPhrasePopup("opinion_term")}
+                  >
+                    {truncateText(newAspect.opinion_term) || "Select phrase"}
+                  </div>
+                </div>
+              )}
+              
               {consideredSentimentElements.includes("aspect_category") && (
                 <div>
                   <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
@@ -467,21 +587,6 @@ function App() {
                       <option key={sentiment} value={sentiment}>{sentiment}</option>
                     ))}
                   </select>
-                </div>
-              )}
-
-              {consideredSentimentElements.includes("opinion_term") && (
-                <div>
-                  <label className="flex items-center text-xs font-medium text-gray-700 mb-2">
-                    Opinion Term
-                    {isFieldValid("opinion_term") && <span className="text-blue-500 bg-blue-50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
-                  </label>
-                  <div
-                    className="w-full p-3 border border-gray-200 rounded-lg bg-gray-50 cursor-pointer hover:bg-gray-100"
-                    onClick={() => openPhrasePopup("opinion_term")}
-                  >
-                    {truncateText(newAspect.opinion_term) || "Select phrase"}
-                  </div>
                 </div>
               )}
             </div>
@@ -532,6 +637,20 @@ function App() {
                       </div>
                     )}
 
+                    {consideredSentimentElements.includes("opinion_term") && (
+                      <div className="flex items-center gap-2 flex-1">
+                        <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">OT:</span>
+                        <div
+                          className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
+                          onClick={() => {
+                            openPhrasePopupForEdit("opinion_term", index, aspect.opinion_term);
+                          }}
+                        >
+                          <span className="truncate">{truncateText(aspect.opinion_term) || "Select phrase"}</span>
+                        </div>
+                      </div>
+                    )}
+
                     {consideredSentimentElements.includes("aspect_category") && (
                       <div className="flex items-center gap-2 flex-1">
                         <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">AC:</span>
@@ -559,20 +678,6 @@ function App() {
                             <option key={sentiment} value={sentiment}>{sentiment}</option>
                           ))}
                         </select>
-                      </div>
-                    )}
-
-                    {consideredSentimentElements.includes("opinion_term") && (
-                      <div className="flex items-center gap-2 flex-1">
-                        <span className="text-sm font-medium text-gray-700 w-8 flex-shrink-0">OT:</span>
-                        <div
-                          className="flex-1 p-2 border border-gray-200 rounded bg-white cursor-pointer hover:bg-gray-50 text-sm"
-                          onClick={() => {
-                            openPhrasePopupForEdit("opinion_term", index, aspect.opinion_term);
-                          }}
-                        >
-                          <span className="truncate">{truncateText(aspect.opinion_term) || "Select phrase"}</span>
-                        </div>
                       </div>
                     )}
 
@@ -613,59 +718,181 @@ function App() {
         {/* Phrase Selection Popup */}
         {showPhrasePopup && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white rounded-xl shadow-xl p-6 max-w-2xl w-full mx-4" onKeyDown={handleKeyDown} tabIndex={-1}>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Select phrase for {currentEditingField === "aspect_term" ? "Aspect Term" : "Opinion Term"}
-              </h3>
+            <div className="bg-white rounded-xl shadow-xl p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto" onKeyDown={handleKeyDown} tabIndex={-1}>
+              {/* Check if we should show combined popup */}
+              {consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term") ? (
+                <>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-6">
+                    Select phrases for Aspect Term and Opinion Term
+                  </h3>
 
-              {((currentEditingField === "aspect_term" && allowImplicitAspectTerm) ||
-                (currentEditingField === "opinion_term" && allowImplicitOpinionTerm)) && (
-                  <div className="mb-4">
-                    <label className="flex items-center space-x-2 mb-4">
-                      <input
-                        type="checkbox"
-                        checked={isImplicitAspect}
-                        onChange={(e) => setIsImplicitAspect(e.target.checked)}
-                        className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                      />
-                      <span className="text-sm text-gray-700">Implicit aspect</span>
-                    </label>
-                  </div>
-                )}
+                  <div className="space-y-6">
+                    {/* Aspect Term Section */}
+                    <div className="border rounded-lg p-4">
+                      <div className="flex justify-between items-center mb-4">
+                        <h4 className="font-medium text-gray-700">Aspect Term</h4>
+                        {allowImplicitAspectTerm && (
+                          <label className="flex items-center space-x-2">
+                            <input
+                              type="checkbox"
+                              checked={isImplicitAspect}
+                              onChange={(e) => setIsImplicitAspect(e.target.checked)}
+                              className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                            />
+                            <span className="text-sm text-gray-700">Implicit aspect</span>
+                          </label>
+                        )}
+                      </div>
 
-              {!isImplicitAspect && (
-                <div className="mb-6">
-                  <p className="text-sm text-gray-600 mb-3">
-                    Click on the start character and then on the end character of the phrase:
-                  </p>
-                  <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
-                    {displayedText.split('').map((char, index) => (
-                      <span
-                        key={index}
-                        onClick={() => handleCharClick(index)}
-                        className={`cursor-pointer hover:bg-blue-200 ${selectedStartChar !== null && selectedEndChar !== null &&
-                            index >= selectedStartChar && index <= selectedEndChar
-                            ? 'bg-blue-300'
-                            : selectedStartChar === index
-                              ? 'bg-green-300'
-                              : selectedEndChar === index
-                                ? 'bg-red-300'
-                                : ''
-                          }`}
-                      >
-                        {char}
-                      </span>
-                    ))}
+                      {!isImplicitAspect && (
+                        <div>
+                          <p className="text-sm text-gray-600 mb-3">
+                            Click on the start and end characters for the aspect term:
+                          </p>
+                          <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                            {displayedText.split('').map((char, index) => (
+                              <span
+                                key={`aspect-${index}`}
+                                onClick={() => handleAspectCharClick(index)}
+                                className={`cursor-pointer hover:bg-blue-200 ${aspectStartChar !== null && aspectEndChar !== null &&
+                                    index >= aspectStartChar && index <= aspectEndChar
+                                    ? 'bg-blue-300'
+                                    : aspectStartChar === index
+                                      ? 'bg-green-300'
+                                      : aspectEndChar === index
+                                        ? 'bg-red-300'
+                                        : ''
+                                  }`}
+                              >
+                                {char}
+                              </span>
+                            ))}
+                          </div>
+                          {aspectStartChar !== null && aspectEndChar !== null && (
+                            <div className="mt-3">
+                              <strong>Selected aspect phrase:</strong> "{displayedText.substring(aspectStartChar, aspectEndChar + 1).trim()}"
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Opinion Term Section */}
+                    <div className="border rounded-lg p-4">
+                      <div className="flex justify-between items-center mb-4">
+                        <h4 className="font-medium text-gray-700">Opinion Term</h4>
+                        {allowImplicitOpinionTerm && (
+                          <label className="flex items-center space-x-2">
+                            <input
+                              type="checkbox"
+                              checked={isImplicitOpinion}
+                              onChange={(e) => setIsImplicitOpinion(e.target.checked)}
+                              className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                            />
+                            <span className="text-sm text-gray-700">Implicit opinion</span>
+                          </label>
+                        )}
+                      </div>
+
+                      {!isImplicitOpinion && (
+                        <div>
+                          <p className="text-sm text-gray-600 mb-3">
+                            Click on the start and end characters for the opinion term:
+                          </p>
+                          <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                            {displayedText.split('').map((char, index) => (
+                              <span
+                                key={`opinion-${index}`}
+                                onClick={() => handleOpinionCharClick(index)}
+                                className={`cursor-pointer hover:bg-blue-200 ${opinionStartChar !== null && opinionEndChar !== null &&
+                                    index >= opinionStartChar && index <= opinionEndChar
+                                    ? 'bg-blue-300'
+                                    : opinionStartChar === index
+                                      ? 'bg-green-300'
+                                      : opinionEndChar === index
+                                        ? 'bg-red-300'
+                                        : ''
+                                  }`}
+                              >
+                                {char}
+                              </span>
+                            ))}
+                          </div>
+                          {opinionStartChar !== null && opinionEndChar !== null && (
+                            <div className="mt-3">
+                              <strong>Selected opinion phrase:</strong> "{displayedText.substring(opinionStartChar, opinionEndChar + 1).trim()}"
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  {selectedStartChar !== null && selectedEndChar !== null && (
-                    <div className="mt-3">
-                      <strong>Selected phrase:</strong> "{displayedText.substring(selectedStartChar, selectedEndChar + 1).trim()}"
+                </>
+              ) : (
+                <>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                    Select phrase for {currentEditingField === "aspect_term" ? "Aspect Term" : "Opinion Term"}
+                  </h3>
+
+                  {((currentEditingField === "aspect_term" && allowImplicitAspectTerm) ||
+                    (currentEditingField === "opinion_term" && allowImplicitOpinionTerm)) && (
+                      <div className="mb-4">
+                        <label className="flex items-center space-x-2 mb-4">
+                          <input
+                            type="checkbox"
+                            checked={currentEditingField === "aspect_term" ? isImplicitAspect : isImplicitOpinion}
+                            onChange={(e) => {
+                              if (currentEditingField === "aspect_term") {
+                                setIsImplicitAspect(e.target.checked);
+                              } else {
+                                setIsImplicitOpinion(e.target.checked);
+                              }
+                            }}
+                            className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                          />
+                          <span className="text-sm text-gray-700">
+                            {currentEditingField === "aspect_term" ? "Implicit aspect" : "Implicit opinion"}
+                          </span>
+                        </label>
+                      </div>
+                    )}
+
+                  {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                      (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
+                    <div className="mb-6">
+                      <p className="text-sm text-gray-600 mb-3">
+                        Click on the start character and then on the end character of the phrase:
+                      </p>
+                      <div className="text-lg leading-relaxed p-4 border rounded-lg bg-gray-50">
+                        {displayedText.split('').map((char, index) => (
+                          <span
+                            key={index}
+                            onClick={() => handleCharClick(index)}
+                            className={`cursor-pointer hover:bg-blue-200 ${selectedStartChar !== null && selectedEndChar !== null &&
+                                index >= selectedStartChar && index <= selectedEndChar
+                                ? 'bg-blue-300'
+                                : selectedStartChar === index
+                                  ? 'bg-green-300'
+                                  : selectedEndChar === index
+                                    ? 'bg-red-300'
+                                    : ''
+                              }`}
+                          >
+                            {char}
+                          </span>
+                        ))}
+                      </div>
+                      {selectedStartChar !== null && selectedEndChar !== null && (
+                        <div className="mt-3">
+                          <strong>Selected phrase:</strong> "{displayedText.substring(selectedStartChar, selectedEndChar + 1).trim()}"
+                        </div>
+                      )}
                     </div>
                   )}
-                </div>
+                </>
               )}
 
-              <div className="flex justify-end space-x-3">
+              <div className="flex justify-end space-x-3 pt-4">
                 <button
                   onClick={closePhrasePopup}
                   className="px-4 py-2 text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50"
@@ -674,7 +901,17 @@ function App() {
                 </button>
                 <button
                   onClick={savePhraseSelection}
-                  disabled={!isImplicitAspect && (selectedStartChar === null || selectedEndChar === null)}
+                  disabled={
+                    consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term") ?
+                      // Combined mode: BOTH fields must be valid
+                      !(isImplicitAspect || (aspectStartChar !== null && aspectEndChar !== null)) ||
+                      !(isImplicitOpinion || (opinionStartChar !== null && opinionEndChar !== null))
+                      :
+                      // Single mode: current field must be valid
+                      !((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                        (currentEditingField === "opinion_term" && isImplicitOpinion)) &&
+                      (selectedStartChar === null || selectedEndChar === null)
+                  }
                   className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed"
                 >
                   Done

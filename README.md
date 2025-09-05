@@ -15,7 +15,9 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 ## ✨ Features
 
 - **Intuitive UI** - Clean, modern interface for efficient annotation
-- **Phrase Selection** - Click-to-select text spans with visual feedback  
+- **Smart Phrase Selection** - Click-to-select text spans with visual feedback
+- **Combined Annotation Popup** - When both aspect and opinion terms are configured, annotate both in a single, unified dialog
+- **Separate Text Selection** - Independent phrase selection for aspect terms and opinion terms
 - **Progress Tracking** - Real-time annotation progress and navigation
 - **Flexible Configuration** - Customizable sentiment elements and categories
 - **Translation Support** - Optional translations displayed below original text
@@ -255,6 +257,20 @@ When available, translations are displayed below the original text in a blue-tin
 - **`aspect_category`** - General aspect category  
 - **`sentiment_polarity`** - Sentiment towards aspect
 - **`opinion_term`** - Opinion expression about aspect
+
+### UI Layout
+The annotation interface displays fields in this order for optimal workflow:
+1. **Aspect Term** (phrase selection)
+2. **Opinion Term** (phrase selection) - displayed next to aspect term
+3. **Aspect Category** (dropdown)
+4. **Sentiment Polarity** (dropdown)
+
+### Combined Annotation Mode
+When both **Aspect Term** and **Opinion Term** are configured:
+- Clicking "Select phrase" on either field opens a combined popup
+- The popup shows two separate text areas for independent phrase selection
+- Both fields must be completed (either by phrase selection or marking as implicit) before proceeding
+- Each field has its own "Implicit" checkbox when implicit terms are allowed
 
 ### Default Categories (Restaurant Domain)
 Food, Service, Price, Ambience, Location, Restaurant
