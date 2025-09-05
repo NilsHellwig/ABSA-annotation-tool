@@ -3,6 +3,7 @@
 > *A modern, intuitive web interface for Aspect-Based Sentiment Analysis annotation*
 
 [![Made with React](https://img.shields.io/badge/Frontend-React-61dafb?style=flat-square&logo=react)](https://reactjs.org/)
+[![Built with TypeScript](https://img.shields.io/badge/Built_with-TypeScript-3178C6?style=flat-square&logo=typescript)](https://typescriptlang.org/)
 [![Made with Vite](https://img.shields.io/badge/Built_with-Vite-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
 [![Styled with Tailwind CSS](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Made with FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -10,12 +11,13 @@
 
 ## 📖 What is this?
 
-This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (ABSA)** through a modern web interface. You can select text phrases by clicking, assign sentiment labels (positive, negative, neutral) to specific aspects, and categorize them into predefined or custom categories. The tool supports configuring any number of sentiment elements - choose from the standard aspect_term, aspect_category, sentiment_polarity, and opinion_term, or define your own elements. It handles both **CSV files** (UTF-8 encoded with `text,label,translation` structure) and **JSON files** (flexible object structure), supports multilingual data with optional translation display, and provides progress tracking through navigation, session IDs, and real-time annotation status.
+This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (ABSA)** through a modern web interface built with **React**, **TypeScript**, and **Vite**. You can select text phrases by clicking, assign sentiment labels (positive, negative, neutral) to specific aspects, and categorize them into predefined or custom categories. The tool supports configuring any number of sentiment elements - choose from the standard aspect_term, aspect_category, sentiment_polarity, and opinion_term, or define your own elements. It handles both **CSV files** (UTF-8 encoded with `text,label,translation` structure) and **JSON files** (flexible object structure), supports multilingual data with optional translation display, and provides progress tracking through navigation, session IDs, and real-time annotation status.
 
 ![ABSA Annotation Tool Interface](docs/user-interface.png)
 
 ## ✨ Features
 
+- **Modern TypeScript Frontend** - Built with React, TypeScript, and Vite for fast development and type safety
 - **Intuitive UI** - Clean, modern interface for efficient annotation
 - **Smart Phrase Selection** - Click-to-select text spans with visual feedback
 - **Visual Phrase Highlighting** - Annotated phrases are highlighted directly in the text with unique colors
@@ -286,7 +288,11 @@ When phrase position saving is enabled (default), the tool automatically adds ch
 | `ot_start` | Start character position of opinion term in text |
 | `ot_end` | End character position of opinion term in text |
 
-Position indices are 0-based and inclusive. This data is useful for downstream processing and analysis. To disable position saving, use the `--no-save-positions` CLI option.
+Position indices are 0-based and inclusive. This data is useful for downstream processing and analysis. 
+
+**Important**: Position data is only saved when the corresponding term has an actual value (not NULL or empty). This ensures data consistency and prevents storing meaningless position information for implicit aspects/opinions.
+
+To disable position saving entirely, use the `--no-save-positions` CLI option.
 
 ### Automatic Phrase Cleaning
 

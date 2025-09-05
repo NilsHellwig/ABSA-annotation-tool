@@ -1,66 +1,68 @@
 import React, { useState, useEffect } from "react";
 import { getAnnotationColorClasses, createTextHighlights, renderHighlightedText } from "./phraseColoring";
+import { AspectItem, NewAspect, FieldType, TextPosition, Settings } from "./types";
 
 function App() {
 
-  const [displayedText, setDisplayedText] = useState("");
-  const [displayedTranslation, setDisplayedTranslation] = useState("");
-  const [consideredSentimentElements, setConsideredSentimentElements] = useState([]);
-  const [newAspect, setNewAspect] = useState({
+  const [displayedText, setDisplayedText] = useState<string>("");
+  const [displayedTranslation, setDisplayedTranslation] = useState<string>("");
+  const [consideredSentimentElements, setConsideredSentimentElements] = useState<string[]>([]);
+  const [newAspect, setNewAspect] = useState<NewAspect>({
     "aspect_term": "",
     "aspect_category": "",
     "sentiment_polarity": "",
     "opinion_term": ""
   });
+  const [aspectList, setAspectList] = useState<AspectItem[]>([]);
 
   // Popup states
-  const [showPhrasePopup, setShowPhrasePopup] = useState(false);
-  const [currentEditingField, setCurrentEditingField] = useState(null);
-  const [selectedStartChar, setSelectedStartChar] = useState(null);
-  const [selectedEndChar, setSelectedEndChar] = useState(null);
-  const [aspectStartChar, setAspectStartChar] = useState(null);
-  const [aspectEndChar, setAspectEndChar] = useState(null);
-  const [opinionStartChar, setOpinionStartChar] = useState(null);
-  const [opinionEndChar, setOpinionEndChar] = useState(null);
-  const [isImplicitAspect, setIsImplicitAspect] = useState(false);
-  const [isImplicitOpinion, setIsImplicitOpinion] = useState(false);
-  const [currentEditingIndex, setCurrentEditingIndex] = useState(null); // For editing existing items
+  const [showPhrasePopup, setShowPhrasePopup] = useState<boolean>(false);
+  const [currentEditingField, setCurrentEditingField] = useState<FieldType | null>(null);
+  const [selectedStartChar, setSelectedStartChar] = useState<number | null>(null);
+  const [selectedEndChar, setSelectedEndChar] = useState<number | null>(null);
+  const [aspectStartChar, setAspectStartChar] = useState<number | null>(null);
+  const [aspectEndChar, setAspectEndChar] = useState<number | null>(null);
+  const [opinionStartChar, setOpinionStartChar] = useState<number | null>(null);
+  const [opinionEndChar, setOpinionEndChar] = useState<number | null>(null);
+  const [isImplicitAspect, setIsImplicitAspect] = useState<boolean>(false);
+  const [isImplicitOpinion, setIsImplicitOpinion] = useState<boolean>(false);
+  const [currentEditingIndex, setCurrentEditingIndex] = useState<number | null>(null); // For editing existing items
 
-  const [validAspectCategories, setValidAspectCategories] = useState([]);
-  const [validSentimentPolarities, setValidSentimentPolarities] = useState([]);
-  const [allowImplicitAspectTerm, setAllowImplicitAspectTerm] = useState(false);
-  const [allowImplicitOpinionTerm, setAllowImplicitOpinionTerm] = useState(false);
-  const [autoCleanPhrases, setAutoCleanPhrases] = useState(true);
-  const [savePhrasePositions, setSavePhrasePositions] = useState(true);
-  const [clickOnToken, setClickOnToken] = useState(true);
+  const [validAspectCategories, setValidAspectCategories] = useState<string[]>([]);
+  const [validSentimentPolarities, setValidSentimentPolarities] = useState<string[]>([]);
+  const [allowImplicitAspectTerm, setAllowImplicitAspectTerm] = useState<boolean>(false);
+  const [allowImplicitOpinionTerm, setAllowImplicitOpinionTerm] = useState<boolean>(false);
+  const [autoCleanPhrases, setAutoCleanPhrases] = useState<boolean>(true);
+  const [savePhrasePositions, setSavePhrasePositions] = useState<boolean>(true);
+  const [clickOnToken, setClickOnToken] = useState<boolean>(true);
 
   // Backend states
-  const [currentIndex, setCurrentIndex] = useState(0); // Currently displayed index in UI
-  const [settingsCurrentIndex, setSettingsCurrentIndex] = useState(0); // Current index from backend settings
-  const [maxIndex, setMaxIndex] = useState(0);
-  const [totalCount, setTotalCount] = useState(0);
-  const [inputIndex, setInputIndex] = useState("");
-  const [sessionId, setSessionId] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState<number>(0); // Currently displayed index in UI
+  const [settingsCurrentIndex, setSettingsCurrentIndex] = useState<number>(0); // Current index from backend settings
+  const [maxIndex, setMaxIndex] = useState<number>(0);
+  const [totalCount, setTotalCount] = useState<number>(0);
+  const [inputIndex, setInputIndex] = useState<string>("");
+  const [sessionId, setSessionId] = useState<string | null>(null);
 
   // Get backend URL from environment or use default
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+  const backendUrl = (import.meta as any).env?.VITE_BACKEND_URL || 'http://localhost:8000';
 
   // Function to mix colors mathematically
   // Helper functions
 
   // Helper functions
-  const truncateText = (text, maxLength = 32) => {
+  const truncateText = (text: string, maxLength: number = 32): string => {
     if (!text) return text;
     const trimmedText = text.trim();
     if (trimmedText.length <= maxLength) return trimmedText;
     return trimmedText.substring(0, maxLength) + "...";
   };
 
-  const getTokenBounds = (text, charIndex) => {
+  const getTokenBounds = (text: string, charIndex: number): { start: number; end: number } => {
     if (!text || charIndex < 0 || charIndex >= text.length) return { start: charIndex, end: charIndex };
     
     // Define token boundaries (whitespace and punctuation)
-    const isTokenBoundary = (char) => /[\s.,;:!?¡¿"'`´''""„«»()[\]{}]+/.test(char);
+    const isTokenBoundary = (char: string): boolean => /[\s.,;:!?¡¿"'`´''""„«»()[\]{}]+/.test(char);
     
     let start = charIndex;
     let end = charIndex;
@@ -78,7 +80,7 @@ function App() {
     return { start, end };
   };
 
-  const cleanPhrase = (phrase) => {
+  const cleanPhrase = (phrase: string): string => {
     if (!phrase || !autoCleanPhrases) return phrase.trim ? phrase.trim() : phrase;
     // First trim whitespace
     let cleaned = phrase.trim();
@@ -89,7 +91,7 @@ function App() {
     return cleaned.trim();
   };
 
-  const getCleanedPhrasePositions = (originalStart, originalEnd, originalText) => {
+  const getCleanedPhrasePositions = (originalStart: number, originalEnd: number, originalText: string): { start: number; end: number } => {
     if (!autoCleanPhrases || originalStart === null || originalEnd === null) {
       return { start: originalStart, end: originalEnd };
     }
@@ -115,7 +117,8 @@ function App() {
     };
   };
 
-  const getAspectCharClass = (index) => {
+  // Helper functions for character highlighting in popup
+  const getAspectCharClass = (index: number): string => {
     let classes = 'cursor-pointer hover:bg-blue-200';
     
     // Check if we have a selection and phrase cleaning is enabled
@@ -148,7 +151,7 @@ function App() {
     return classes;
   };
 
-  const getOpinionCharClass = (index) => {
+  const getOpinionCharClass = (index: number): string => {
     let classes = 'cursor-pointer hover:bg-blue-200';
     
     // Check if we have a selection and phrase cleaning is enabled
@@ -181,7 +184,7 @@ function App() {
     return classes;
   };
 
-  const getSingleFieldCharClass = (index) => {
+  const getSingleFieldCharClass = (index: number): string => {
     let classes = 'cursor-pointer hover:bg-blue-200';
     
     // Check if we have a selection and phrase cleaning is enabled
@@ -214,7 +217,7 @@ function App() {
     return classes;
   };
 
-  const findTextInDisplayed = (searchText) => {
+  const findTextInDisplayed = (searchText: string): TextPosition | null => {
     if (!searchText || searchText === "NULL" || !displayedText) {
       return { startChar: null, endChar: null };
     }
@@ -229,7 +232,7 @@ function App() {
     return { startChar: null, endChar: null };
   };
 
-  const openPhrasePopup = (fieldType) => {
+  const openPhrasePopup = (fieldType: FieldType): void => {
     setCurrentEditingField(fieldType);
     setCurrentEditingIndex(null); // Reset for new annotation
     setShowPhrasePopup(true);
@@ -298,7 +301,7 @@ function App() {
     }
   };
 
-  const openPhrasePopupForEdit = (fieldType, index, currentValue) => {
+  const openPhrasePopupForEdit = (fieldType: FieldType, index: number, currentValue: string): void => {
     setCurrentEditingField(fieldType);
     setCurrentEditingIndex(index);
     setShowPhrasePopup(true);
@@ -380,7 +383,7 @@ function App() {
     setIsImplicitOpinion(false);
   };
 
-  const handleCharClick = (charIndex) => {
+  const handleCharClick = (charIndex: number): void => {
     let startChar = charIndex;
     let endChar = charIndex;
     
@@ -410,7 +413,7 @@ function App() {
     }
   };
 
-  const handleAspectCharClick = (charIndex) => {
+  const handleAspectCharClick = (charIndex: number): void => {
     let startChar = charIndex;
     let endChar = charIndex;
     
@@ -440,7 +443,7 @@ function App() {
     }
   };
 
-  const handleOpinionCharClick = (charIndex) => {
+  const handleOpinionCharClick = (charIndex: number): void => {
     let startChar = charIndex;
     let endChar = charIndex;
     
@@ -516,7 +519,7 @@ function App() {
         }
       } else {
         // Adding new annotation
-        const updates = {};
+        const updates: Partial<NewAspect> = {};
         if (aspectPhrase !== undefined) {
           updates.aspect_term = aspectPhrase;
           if (savePhrasePositions && !isImplicitAspect && aspectStartChar !== null && aspectEndChar !== null) {
@@ -558,7 +561,7 @@ function App() {
         updateAspectItem(currentEditingIndex, currentEditingField, selectedPhrase, startPos, endPos);
       } else {
         // Adding new annotation
-        const updates = { [currentEditingField]: selectedPhrase };
+        const updates: any = { [currentEditingField!]: selectedPhrase };
         if (savePhrasePositions && selectedStartChar !== null && selectedEndChar !== null) {
           const isImplicit = (currentEditingField === "aspect_term" && isImplicitAspect) || 
                             (currentEditingField === "opinion_term" && isImplicitOpinion);
@@ -580,70 +583,101 @@ function App() {
     closePhrasePopup();
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent): void => {
     if (e.key === 'Enter') {
       savePhraseSelection();
     }
   };
 
-  const updateAspectItem = (index, field, value, startPos = null, endPos = null) => {
+  const updateAspectItem = (index: number | null, field: keyof AspectItem, value: string | number, startPos: number | null = null, endPos: number | null = null): void => {
     const updatedList = [...aspectList];
     updatedList[index][field] = value;
     
-    // Save positions if enabled and provided
-    if (savePhrasePositions && startPos !== null && endPos !== null) {
+    if (savePhrasePositions) {
       if (field === "aspect_term") {
-        updatedList[index]["at_start"] = startPos;
-        updatedList[index]["at_end"] = endPos;
+        if (value === "NULL" || value === "" || startPos === null || endPos === null) {
+          // Remove position data if aspect term is NULL/empty or positions not provided
+          delete updatedList[index]["at_start"];
+          delete updatedList[index]["at_end"];
+        } else {
+          // Set position data if aspect term has valid value and positions
+          updatedList[index]["at_start"] = startPos;
+          updatedList[index]["at_end"] = endPos;
+        }
       } else if (field === "opinion_term") {
-        updatedList[index]["ot_start"] = startPos;
-        updatedList[index]["ot_end"] = endPos;
+        if (value === "NULL" || value === "" || startPos === null || endPos === null) {
+          // Remove position data if opinion term is NULL/empty or positions not provided
+          delete updatedList[index]["ot_start"];
+          delete updatedList[index]["ot_end"];
+        } else {
+          // Set position data if opinion term has valid value and positions
+          updatedList[index]["ot_start"] = startPos;
+          updatedList[index]["ot_end"] = endPos;
+        }
       }
     }
     
     setAspectList(updatedList);
   };
 
-  const deleteAspectItem = (index) => {
+  const deleteAspectItem = (index: number): void => {
     const updatedList = aspectList.filter((_, i) => i !== index);
     setAspectList(updatedList);
   };
 
-  const clearAllAnnotations = () => {
+  const clearAllAnnotations = (): void => {
     setAspectList([]);
   };
 
-  const isFieldValid = (fieldName) => {
+  const isFieldValid = (fieldName: keyof NewAspect): boolean => {
     const value = newAspect[fieldName];
-    return value && value.trim() !== "";
+    if (typeof value === 'string') {
+      return value && value.trim() !== "";
+    }
+    return false;
   };
 
-  const addAnnotation = () => {
+  const addAnnotation = (): void => {
     // Check if all considered elements are filled
     const isValid = consideredSentimentElements.every(element => {
-      const value = newAspect[element];
-      return value && value.trim() !== "";
+      const value = (newAspect as any)[element];
+      return value && typeof value === 'string' && value.trim() !== "";
     });
 
     if (isValid) {
       // Create new annotation with only the considered elements
-      const newAnnotation = {};
+      const newAnnotation: any = {};
       consideredSentimentElements.forEach(element => {
-        newAnnotation[element] = newAspect[element];
+        newAnnotation[element] = (newAspect as any)[element];
       });
-
-      // Add position data if enabled and available
+      
+      // Add position data if enabled, available, and the corresponding term is not NULL
       if (savePhrasePositions) {
-        if (newAspect.at_start !== undefined) newAnnotation.at_start = newAspect.at_start;
-        if (newAspect.at_end !== undefined) newAnnotation.at_end = newAspect.at_end;
-        if (newAspect.ot_start !== undefined) newAnnotation.ot_start = newAspect.ot_start;
-        if (newAspect.ot_end !== undefined) newAnnotation.ot_end = newAspect.ot_end;
+        // Only add aspect position data if aspect_term exists and is not NULL or empty
+        if (newAspect.aspect_term && 
+            newAspect.aspect_term !== "NULL" && 
+            newAspect.aspect_term.trim() !== "" &&
+            newAspect.at_start !== undefined && 
+            newAspect.at_end !== undefined) {
+          newAnnotation.at_start = newAspect.at_start;
+          newAnnotation.at_end = newAspect.at_end;
+        }
+        
+        // Only add opinion position data if opinion_term exists and is not NULL or empty
+        if (newAspect.opinion_term && 
+            newAspect.opinion_term !== "NULL" && 
+            newAspect.opinion_term.trim() !== "" &&
+            newAspect.ot_start !== undefined && 
+            newAspect.ot_end !== undefined) {
+          newAnnotation.ot_start = newAspect.ot_start;
+          newAnnotation.ot_end = newAspect.ot_end;
+        }
       }
 
       setAspectList([...aspectList, newAnnotation]);
 
       // Reset the form
-      const resetAspect = {};
+      const resetAspect: any = {};
       consideredSentimentElements.forEach(element => {
         resetAspect[element] = "";
       });
@@ -657,7 +691,7 @@ function App() {
   };
 
   // Backend API functions
-  const fetchSettings = async () => {
+  const fetchSettings = async (): Promise<number | undefined> => {
     try {
       const response = await fetch(`${backendUrl}/settings`);
       const settings = await response.json();
@@ -678,10 +712,11 @@ function App() {
       return settings["current_index"];
     } catch (error) {
       console.error('Error fetching settings:', error);
+      return undefined;
     }
   };
 
-  const fetchData = async (index) => {
+  const fetchData = async (index: number): Promise<void> => {
     try {
       const response = await fetch(`${backendUrl}/data/${index}`);
       const data = await response.json();
@@ -716,7 +751,7 @@ function App() {
     } catch (error) {
       console.error('Error fetching data:', error);
     }
-  };  const saveAnnotations = async (annotations) => {
+  };  const saveAnnotations = async (annotations: AspectItem[]): Promise<boolean> => {
     try {
       const response = await fetch(`${backendUrl}/annotations/${currentIndex}`, {
         method: 'POST',
@@ -811,8 +846,6 @@ function App() {
       setNewAspect(resetAspect);
     }
   }, [consideredSentimentElements]);
-
-  const [aspectList, setAspectList] = useState([]);
 
   return (
     <div className="min-h-screen bg-gray-50">

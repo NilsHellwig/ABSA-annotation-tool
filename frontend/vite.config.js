@@ -18,14 +18,15 @@ export default defineConfig({
     outDir: 'build'
   },
   esbuild: {
-    loader: 'jsx',
     include: /src\/.*\.[jt]sx?$/,
     exclude: []
   },
   optimizeDeps: {
     esbuildOptions: {
       loader: {
-        '.js': 'jsx'
+        '.js': 'jsx',
+        '.ts': 'ts',
+        '.tsx': 'tsx'
       }
     }
   }

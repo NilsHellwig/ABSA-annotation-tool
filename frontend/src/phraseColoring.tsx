@@ -1,5 +1,30 @@
+import React from 'react';
+import { AspectItem, ColorClasses } from './types';
+
+// Type definition for color entries
+interface ColorEntry {
+  bg300: string;
+  bg200: string;
+  aspectBg: string;
+  opinionBg: string;
+  aspectRgb: [number, number, number];
+  opinionRgb: [number, number, number];
+  name: string;
+}
+
+// Type definition for text highlights
+interface TextHighlight {
+  start: number;
+  end: number;
+  type: 'aspect' | 'opinion';
+  colorClasses: ColorEntry;
+  index: number;
+  text?: string;
+  annotationIndex?: number;
+}
+
 // Predefined colors with RGB values for mathematical mixing
-export const tailwindColorClasses = [
+export const tailwindColorClasses: ColorEntry[] = [
   { bg300: 'bg-purple-400', bg200: 'bg-purple-200', aspectBg: 'bg-purple-400/70', opinionBg: 'bg-purple-200/50', 
     aspectRgb: [196, 141, 255], opinionRgb: [233, 213, 255], name: 'purple' },
   { bg300: 'bg-emerald-400', bg200: 'bg-emerald-200', aspectBg: 'bg-emerald-400/70', opinionBg: 'bg-emerald-200/50', 
@@ -54,12 +79,12 @@ export const tailwindColorClasses = [
 ];
 
 // Get color classes for annotation by index
-export const getAnnotationColorClasses = (index) => {
+export const getAnnotationColorClasses = (index: number): ColorEntry => {
   return tailwindColorClasses[index % tailwindColorClasses.length];
 };
 
 // Function to mix colors mathematically
-export const mixColors = (aspectRgb, opinionRgb, aspectOpacity = 0.7, opinionOpacity = 0.5) => {
+export const mixColors = (aspectRgb: [number, number, number], opinionRgb: [number, number, number], aspectOpacity = 0.7, opinionOpacity = 0.5): string => {
   // Simple additive color mixing with opacity weighting
   const weight1 = aspectOpacity;
   const weight2 = opinionOpacity;
@@ -73,10 +98,10 @@ export const mixColors = (aspectRgb, opinionRgb, aspectOpacity = 0.7, opinionOpa
 };
 
 // Create highlighting information for the displayed text
-export const createTextHighlights = (displayedText, aspectList, getAnnotationColorClasses) => {
+export const createTextHighlights = (displayedText: string, aspectList: AspectItem[], getAnnotationColorClasses: (index: number) => ColorEntry): TextHighlight[] => {
   if (!displayedText || aspectList.length === 0) return [];
-  
-  const highlights = [];
+
+  const highlights: TextHighlight[] = [];
   
   aspectList.forEach((annotation, index) => {
     const colorClasses = getAnnotationColorClasses(index);
@@ -85,11 +110,12 @@ export const createTextHighlights = (displayedText, aspectList, getAnnotationCol
     if (annotation.aspect_term && annotation.aspect_term !== "NULL" && 
         annotation.at_start !== undefined && annotation.at_end !== undefined) {
       highlights.push({
-        start: annotation.at_start,
-        end: annotation.at_end,
+        start: annotation.at_start!,
+        end: annotation.at_end!,
         type: 'aspect',
         colorClasses: colorClasses,
         text: annotation.aspect_term,
+        index: highlights.length,
         annotationIndex: index
       });
     }
@@ -98,11 +124,12 @@ export const createTextHighlights = (displayedText, aspectList, getAnnotationCol
     if (annotation.opinion_term && annotation.opinion_term !== "NULL" &&
         annotation.ot_start !== undefined && annotation.ot_end !== undefined) {
       highlights.push({
-        start: annotation.ot_start,
-        end: annotation.ot_end,
+        start: annotation.ot_start!,
+        end: annotation.ot_end!,
         type: 'opinion',
         colorClasses: colorClasses,
         text: annotation.opinion_term,
+        index: highlights.length,
         annotationIndex: index
       });
     }
@@ -113,17 +140,17 @@ export const createTextHighlights = (displayedText, aspectList, getAnnotationCol
 };
 
 // Render highlighted text with color mixing for overlaps
-export const renderHighlightedText = (displayedText, highlights) => {
+export const renderHighlightedText = (displayedText: string, highlights: TextHighlight[]): any => {
   if (!displayedText) return displayedText;
   
   if (highlights.length === 0) return displayedText;
   
-  const result = [];
+  const result: any[] = [];
   
   // Create character-level highlight map
-  const charHighlights = new Array(displayedText.length).fill(null).map(() => []);
+  const charHighlights: TextHighlight[][] = new Array(displayedText.length).fill(null).map(() => []);
   
-  highlights.forEach(highlight => {
+  highlights.forEach((highlight: TextHighlight) => {
     for (let i = highlight.start; i <= highlight.end; i++) {
       if (i >= 0 && i < displayedText.length) {
         charHighlights[i].push(highlight);
