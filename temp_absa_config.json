@@ -1,5 +1,5 @@
 {
-  "csv_path": "./examples/restaurant_reviews.csv",
+  "csv_path": "./examples/restaurant_reviews.json",
   "session_id": null,
   "sentiment_elements": [
     "aspect_term",

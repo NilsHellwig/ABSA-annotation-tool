@@ -254,6 +254,7 @@ def post_annotations(data_idx: int, annotation_data: AnnotationData):
         
         annotation_data = annotation_data.value
 
+
         if DATA_FILE_TYPE == "json":
             # Update JSON format - set "label" key with annotation data
             data[data_idx]['label'] = annotation_data
@@ -548,6 +549,8 @@ def predict_llm(text, considered_sentiment_elements, examples, aspect_categories
     response = generate(
         prompt=prompt,
         model=llm_model,
+        raw=True,
+        options={"temperature": 0.0, "max_tokens": 1024},
         format=Aspects.model_json_schema()
     )
 
@@ -685,7 +688,7 @@ def get_ai_prediction(data_idx: int):
         predictions = predictions["aspects"]
         
         # if position saving is enabled, add positions to predictions
-        if config.get('save_phrase_positions', True):
+        if config.get('save_phrase_positions', True) and not config.get("no-save-positions", False):
             for aspect in predictions:
                 if 'aspect_term' in aspect and aspect['aspect_term'] != 'NULL':
                     start, end = find_phrase_positions(text, aspect['aspect_term'])
