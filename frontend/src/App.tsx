@@ -39,6 +39,8 @@ function App() {
   const [autoCleanPhrases, setAutoCleanPhrases] = useState<boolean>(true);
   const [savePhrasePositions, setSavePhrasePositions] = useState<boolean>(true);
   const [clickOnToken, setClickOnToken] = useState<boolean>(true);
+  const [enablePrePrediction, setEnablePrePrediction] = useState<boolean>(false);
+  const [isAIPredicting, setIsAIPredicting] = useState<boolean>(false);
 
   // Backend states
   const [currentIndex, setCurrentIndex] = useState<number>(0); // Currently displayed index in UI
@@ -100,23 +102,23 @@ function App() {
 
   const getTokenBounds = (text: string, charIndex: number): { start: number; end: number } => {
     if (!text || charIndex < 0 || charIndex >= text.length) return { start: charIndex, end: charIndex };
-    
+
     // Define token boundaries (whitespace and punctuation)
     const isTokenBoundary = (char: string): boolean => /[\s.,;:!?¡¿"'`´''""„«»()[\]{}]+/.test(char);
-    
+
     let start = charIndex;
     let end = charIndex;
-    
+
     // Find start of token (go backwards until boundary or start of text)
     while (start > 0 && !isTokenBoundary(text[start - 1])) {
       start--;
     }
-    
+
     // Find end of token (go forwards until boundary or end of text)
     while (end < text.length - 1 && !isTokenBoundary(text[end + 1])) {
       end++;
     }
-    
+
     return { start, end };
   };
 
@@ -135,22 +137,22 @@ function App() {
     if (!autoCleanPhrases || originalStart === null || originalEnd === null) {
       return { start: originalStart, end: originalEnd };
     }
-    
+
     const originalPhrase = originalText.substring(originalStart, originalEnd + 1);
     const cleanedPhrase = cleanPhrase(originalPhrase);
-    
+
     // If cleaning didn't change anything, return original positions
     if (cleanedPhrase === originalPhrase) {
       return { start: originalStart, end: originalEnd };
     }
-    
+
     // Find where the cleaned phrase starts and ends within the original phrase
     const cleanedIndex = originalPhrase.indexOf(cleanedPhrase);
     if (cleanedIndex === -1) {
       // Fallback: if cleaned phrase not found, return original positions
       return { start: originalStart, end: originalEnd };
     }
-    
+
     return {
       start: originalStart + cleanedIndex,
       end: originalStart + cleanedIndex + cleanedPhrase.length - 1
@@ -160,7 +162,7 @@ function App() {
   // Helper functions for character highlighting in popup
   const getAspectCharClass = (index: number): string => {
     let classes = 'cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 text-gray-900 dark:text-gray-100';
-    
+
     // Check if we have a selection and phrase cleaning is enabled
     if (aspectStartChar !== null && aspectEndChar !== null && autoCleanPhrases) {
       const cleanedPositions = getCleanedPhrasePositions(aspectStartChar, aspectEndChar, displayedText);
@@ -172,13 +174,13 @@ function App() {
         return classes; // Return early, don't show original selection or markers
       }
     }
-    
+
     // Fallback: show original selection with markers (when cleaning disabled or no difference)
     if (aspectStartChar !== null && aspectEndChar !== null &&
-        index >= aspectStartChar && index <= aspectEndChar) {
+      index >= aspectStartChar && index <= aspectEndChar) {
       classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
     }
-    
+
     // Start/end markers (only when not in cleaned mode or no cleaning difference)
     if (!(aspectStartChar !== null && aspectEndChar !== null && autoCleanPhrases)) {
       if (aspectStartChar === index) {
@@ -187,13 +189,13 @@ function App() {
         classes += ' bg-red-300';
       }
     }
-    
+
     return classes;
   };
 
   const getOpinionCharClass = (index: number): string => {
     let classes = 'cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 text-gray-900 dark:text-gray-100';
-    
+
     // Check if we have a selection and phrase cleaning is enabled
     if (opinionStartChar !== null && opinionEndChar !== null && autoCleanPhrases) {
       const cleanedPositions = getCleanedPhrasePositions(opinionStartChar, opinionEndChar, displayedText);
@@ -205,13 +207,13 @@ function App() {
         return classes; // Return early, don't show original selection or markers
       }
     }
-    
+
     // Fallback: show original selection with markers (when cleaning disabled or no difference)  
     if (opinionStartChar !== null && opinionEndChar !== null &&
-        index >= opinionStartChar && index <= opinionEndChar) {
+      index >= opinionStartChar && index <= opinionEndChar) {
       classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
     }
-    
+
     // Start/end markers (only when not in cleaned mode or no cleaning difference)
     if (!(opinionStartChar !== null && opinionEndChar !== null && autoCleanPhrases)) {
       if (opinionStartChar === index) {
@@ -220,13 +222,13 @@ function App() {
         classes += ' bg-red-300';
       }
     }
-    
+
     return classes;
   };
 
   const getSingleFieldCharClass = (index: number): string => {
     let classes = 'cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-700 text-gray-900 dark:text-gray-100';
-    
+
     // Check if we have a selection and phrase cleaning is enabled
     if (selectedStartChar !== null && selectedEndChar !== null && autoCleanPhrases) {
       const cleanedPositions = getCleanedPhrasePositions(selectedStartChar, selectedEndChar, displayedText);
@@ -238,13 +240,13 @@ function App() {
         return classes; // Return early, don't show original selection or markers
       }
     }
-    
+
     // Fallback: show original selection with markers (when cleaning disabled or no difference)
     if (selectedStartChar !== null && selectedEndChar !== null &&
-        index >= selectedStartChar && index <= selectedEndChar) {
+      index >= selectedStartChar && index <= selectedEndChar) {
       classes += ' bg-blue-300 dark:bg-blue-600 text-black dark:text-white';
     }
-    
+
     // Start/end markers (only when not in cleaned mode or no cleaning difference)
     if (!(selectedStartChar !== null && selectedEndChar !== null && autoCleanPhrases)) {
       if (selectedStartChar === index) {
@@ -253,7 +255,7 @@ function App() {
         classes += ' bg-red-300';
       }
     }
-    
+
     return classes;
   };
 
@@ -261,7 +263,7 @@ function App() {
     if (!searchText || searchText === "NULL" || !displayedText) {
       return { startChar: null, endChar: null };
     }
-    
+
     const index = displayedText.indexOf(searchText);
     if (index !== -1) {
       return {
@@ -276,19 +278,19 @@ function App() {
     setCurrentEditingField(fieldType);
     setCurrentEditingIndex(null); // Reset for new annotation
     setShowPhrasePopup(true);
-    
+
     // Check if we're in combined mode
     const showCombined = consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term");
-    
+
     if (showCombined) {
       // For combined popup, pre-select current values if they exist
       const aspectValue = newAspect.aspect_term || "";
       const opinionValue = newAspect.opinion_term || "";
-      
+
       // Set implicit states
       setIsImplicitAspect(aspectValue === "NULL");
       setIsImplicitOpinion(opinionValue === "NULL");
-      
+
       // Find and set aspect term selection if not implicit and exists
       if (aspectValue && aspectValue !== "NULL") {
         const aspectPos = findTextInDisplayed(aspectValue);
@@ -298,7 +300,7 @@ function App() {
         setAspectStartChar(null);
         setAspectEndChar(null);
       }
-      
+
       // Find and set opinion term selection if not implicit and exists
       if (opinionValue && opinionValue !== "NULL") {
         const opinionPos = findTextInDisplayed(opinionValue);
@@ -308,21 +310,21 @@ function App() {
         setOpinionStartChar(null);
         setOpinionEndChar(null);
       }
-      
+
       // Clear single selection states
       setSelectedStartChar(null);
       setSelectedEndChar(null);
-      
+
     } else {
       // Single field mode, pre-select current value if it exists
       const currentValue = newAspect[fieldType] || "";
-      
+
       if (fieldType === "aspect_term") {
         setIsImplicitAspect(currentValue === "NULL");
       } else if (fieldType === "opinion_term") {
         setIsImplicitOpinion(currentValue === "NULL");
       }
-      
+
       // Find and set current value selection if not implicit and exists
       if (currentValue && currentValue !== "NULL") {
         const textPos = findTextInDisplayed(currentValue);
@@ -332,7 +334,7 @@ function App() {
         setSelectedStartChar(null);
         setSelectedEndChar(null);
       }
-      
+
       // Clear combined selection states
       setAspectStartChar(null);
       setAspectEndChar(null);
@@ -345,20 +347,20 @@ function App() {
     setCurrentEditingField(fieldType);
     setCurrentEditingIndex(index);
     setShowPhrasePopup(true);
-    
+
     // Check if we're in combined mode
     const showCombined = consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term");
-    
+
     if (showCombined) {
       // For combined editing, get both current values
       const currentAspectList = [...aspectList];
       const aspectValue = currentAspectList[index]?.aspect_term || "";
       const opinionValue = currentAspectList[index]?.opinion_term || "";
-      
+
       // Set implicit states
       setIsImplicitAspect(aspectValue === "NULL");
       setIsImplicitOpinion(opinionValue === "NULL");
-      
+
       // Find and set aspect term selection if not implicit
       if (aspectValue && aspectValue !== "NULL") {
         const aspectPos = findTextInDisplayed(aspectValue);
@@ -368,7 +370,7 @@ function App() {
         setAspectStartChar(null);
         setAspectEndChar(null);
       }
-      
+
       // Find and set opinion term selection if not implicit
       if (opinionValue && opinionValue !== "NULL") {
         const opinionPos = findTextInDisplayed(opinionValue);
@@ -378,11 +380,11 @@ function App() {
         setOpinionStartChar(null);
         setOpinionEndChar(null);
       }
-      
+
       // Clear single selection states
       setSelectedStartChar(null);
       setSelectedEndChar(null);
-      
+
     } else {
       // Single field editing
       if (fieldType === "aspect_term") {
@@ -390,7 +392,7 @@ function App() {
       } else if (fieldType === "opinion_term") {
         setIsImplicitOpinion(currentValue === "NULL");
       }
-      
+
       // Find and set current value selection if not implicit
       if (currentValue && currentValue !== "NULL") {
         const textPos = findTextInDisplayed(currentValue);
@@ -400,7 +402,7 @@ function App() {
         setSelectedStartChar(null);
         setSelectedEndChar(null);
       }
-      
+
       // Clear combined selection states
       setAspectStartChar(null);
       setAspectEndChar(null);
@@ -426,7 +428,7 @@ function App() {
   const handleCharClick = (charIndex: number): void => {
     let startChar = charIndex;
     let endChar = charIndex;
-    
+
     // Apply token snapping if enabled
     if (clickOnToken) {
       const tokenBounds = getTokenBounds(displayedText, charIndex);
@@ -441,7 +443,7 @@ function App() {
         startChar = tokenBounds.start;
       }
     }
-    
+
     if (selectedStartChar === null) {
       setSelectedStartChar(startChar);
     } else if (selectedEndChar === null && (clickOnToken ? endChar : charIndex) >= selectedStartChar) {
@@ -456,7 +458,7 @@ function App() {
   const handleAspectCharClick = (charIndex: number): void => {
     let startChar = charIndex;
     let endChar = charIndex;
-    
+
     // Apply token snapping if enabled
     if (clickOnToken) {
       const tokenBounds = getTokenBounds(displayedText, charIndex);
@@ -471,7 +473,7 @@ function App() {
         startChar = tokenBounds.start;
       }
     }
-    
+
     if (aspectStartChar === null) {
       setAspectStartChar(startChar);
     } else if (aspectEndChar === null && (clickOnToken ? endChar : charIndex) >= aspectStartChar) {
@@ -486,7 +488,7 @@ function App() {
   const handleOpinionCharClick = (charIndex: number): void => {
     let startChar = charIndex;
     let endChar = charIndex;
-    
+
     // Apply token snapping if enabled
     if (clickOnToken) {
       const tokenBounds = getTokenBounds(displayedText, charIndex);
@@ -501,7 +503,7 @@ function App() {
         startChar = tokenBounds.start;
       }
     }
-    
+
     if (opinionStartChar === null) {
       setOpinionStartChar(startChar);
     } else if (opinionEndChar === null && (clickOnToken ? endChar : charIndex) >= opinionStartChar) {
@@ -516,11 +518,11 @@ function App() {
   const savePhraseSelection = () => {
     // Check if we're showing both fields (combined mode)
     const showCombined = consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term");
-    
+
     if (showCombined) {
       // Handle both aspect term and opinion term
       let aspectPhrase, opinionPhrase;
-      
+
       if (isImplicitAspect) {
         aspectPhrase = "NULL";
       } else if (aspectStartChar !== null && aspectEndChar !== null) {
@@ -528,7 +530,7 @@ function App() {
       } else {
         aspectPhrase = undefined; // Don't update if no selection and not implicit
       }
-      
+
       if (isImplicitOpinion) {
         opinionPhrase = "NULL";
       } else if (opinionStartChar !== null && opinionEndChar !== null) {
@@ -581,8 +583,8 @@ function App() {
     } else {
       // Handle single field (original behavior)
       let selectedPhrase;
-      if ((currentEditingField === "aspect_term" && isImplicitAspect) || 
-          (currentEditingField === "opinion_term" && isImplicitOpinion)) {
+      if ((currentEditingField === "aspect_term" && isImplicitAspect) ||
+        (currentEditingField === "opinion_term" && isImplicitOpinion)) {
         selectedPhrase = "NULL";
       } else if (selectedStartChar !== null && selectedEndChar !== null) {
         selectedPhrase = cleanPhrase(displayedText.substring(selectedStartChar, selectedEndChar + 1));
@@ -590,8 +592,8 @@ function App() {
 
       if (currentEditingIndex !== null) {
         // Editing existing annotation
-        const isImplicit = (currentEditingField === "aspect_term" && isImplicitAspect) || 
-                          (currentEditingField === "opinion_term" && isImplicitOpinion);
+        const isImplicit = (currentEditingField === "aspect_term" && isImplicitAspect) ||
+          (currentEditingField === "opinion_term" && isImplicitOpinion);
         let startPos = null, endPos = null;
         if (!isImplicit && selectedStartChar !== null && selectedEndChar !== null) {
           const cleanedPositions = getCleanedPhrasePositions(selectedStartChar, selectedEndChar, displayedText);
@@ -603,8 +605,8 @@ function App() {
         // Adding new annotation
         const updates: any = { [currentEditingField!]: selectedPhrase };
         if (savePhrasePositions && selectedStartChar !== null && selectedEndChar !== null) {
-          const isImplicit = (currentEditingField === "aspect_term" && isImplicitAspect) || 
-                            (currentEditingField === "opinion_term" && isImplicitOpinion);
+          const isImplicit = (currentEditingField === "aspect_term" && isImplicitAspect) ||
+            (currentEditingField === "opinion_term" && isImplicitOpinion);
           if (!isImplicit) {
             const cleanedPositions = getCleanedPhrasePositions(selectedStartChar, selectedEndChar, displayedText);
             if (currentEditingField === "aspect_term") {
@@ -632,7 +634,7 @@ function App() {
   const updateAspectItem = (index: number | null, field: keyof AspectItem, value: string | number, startPos: number | null = null, endPos: number | null = null): void => {
     const updatedList = [...aspectList];
     updatedList[index][field] = value;
-    
+
     if (savePhrasePositions) {
       if (field === "aspect_term") {
         if (value === "NULL" || value === "" || startPos === null || endPos === null) {
@@ -656,7 +658,7 @@ function App() {
         }
       }
     }
-    
+
     setAspectList(updatedList);
   };
 
@@ -690,25 +692,25 @@ function App() {
       consideredSentimentElements.forEach(element => {
         newAnnotation[element] = (newAspect as any)[element];
       });
-      
+
       // Add position data if enabled, available, and the corresponding term is not NULL
       if (savePhrasePositions) {
         // Only add aspect position data if aspect_term exists and is not NULL or empty
-        if (newAspect.aspect_term && 
-            newAspect.aspect_term !== "NULL" && 
-            newAspect.aspect_term.trim() !== "" &&
-            newAspect.at_start !== undefined && 
-            newAspect.at_end !== undefined) {
+        if (newAspect.aspect_term &&
+          newAspect.aspect_term !== "NULL" &&
+          newAspect.aspect_term.trim() !== "" &&
+          newAspect.at_start !== undefined &&
+          newAspect.at_end !== undefined) {
           newAnnotation.at_start = newAspect.at_start;
           newAnnotation.at_end = newAspect.at_end;
         }
-        
+
         // Only add opinion position data if opinion_term exists and is not NULL or empty
-        if (newAspect.opinion_term && 
-            newAspect.opinion_term !== "NULL" && 
-            newAspect.opinion_term.trim() !== "" &&
-            newAspect.ot_start !== undefined && 
-            newAspect.ot_end !== undefined) {
+        if (newAspect.opinion_term &&
+          newAspect.opinion_term !== "NULL" &&
+          newAspect.opinion_term.trim() !== "" &&
+          newAspect.ot_start !== undefined &&
+          newAspect.ot_end !== undefined) {
           newAnnotation.ot_start = newAspect.ot_start;
           newAnnotation.ot_end = newAspect.ot_end;
         }
@@ -745,6 +747,7 @@ function App() {
       setClickOnToken(settings["click_on_token"] !== false); // Default to true
       setStoreTime(settings["store_time"] === true); // Default to false
       setShowAvgAnnotationTime(settings["show_avg_annotation_time"] === true); // Default to false
+      setEnablePrePrediction(settings["enable_pre_prediction"] === true); // Default to false
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);
@@ -797,7 +800,7 @@ function App() {
       }
       setAspectList(existingAnnotations);
       setLastLoadedAnnotations(existingAnnotations);
-      
+
       // Timer resetten beim Laden neuer Daten
       resetTimer();
       // Reset form - use current consideredSentimentElements or wait for it to be loaded
@@ -814,6 +817,49 @@ function App() {
     }
   };
 
+  const fetchAIPrediction = async (): Promise<void> => {
+    try {
+      setIsAIPredicting(true);
+      const response = await fetch(`${backendUrl}/ai_prediction/${currentIndex}`);
+      const predictions = await response.json();
+
+      if (predictions && predictions.length > 0) {
+        // Convert predictions to aspectList format
+        console.log(predictions);
+        const aiAnnotations: AspectItem[] = predictions.map((aspect: any) => {
+          const annotation: any = {
+            aspect_term: aspect.aspect_term || "",
+            aspect_category: aspect.aspect_category || "",
+            sentiment_polarity: aspect.sentiment_polarity || "",
+            opinion_term: aspect.opinion_term || ""
+          };
+          
+          if (aspect.at_start !== undefined && aspect.at_start !== null) {
+            annotation.at_start = aspect.at_start;
+          }
+          if (aspect.at_end !== undefined && aspect.at_end !== null) {
+            annotation.at_end = aspect.at_end;
+          }
+          if (aspect.ot_start !== undefined && aspect.ot_start !== null) {
+            annotation.ot_start = aspect.ot_start;
+          }
+          if (aspect.ot_end !== undefined && aspect.ot_end !== null) {
+            annotation.ot_end = aspect.ot_end;
+          }
+          
+          return annotation;
+        });
+
+        // Add AI predictions to existing annotations
+        setAspectList(prev => [...prev, ...aiAnnotations]);
+      }
+    } catch (error) {
+      console.error('Error fetching AI prediction:', error);
+    } finally {
+      setIsAIPredicting(false);
+    }
+  };
+
   const saveAnnotations = async (annotations: AspectItem[], skipTiming: boolean = false): Promise<boolean> => {
     // Timing: Duration berechnen und Änderung prüfen (nur wenn nicht übersprungen)
     if (!skipTiming) {
@@ -821,7 +867,7 @@ function App() {
       const change = annotationsChanged(lastLoadedAnnotations, annotations);
       await saveTiming(duration, change);
     }
-    
+
     try {
       const response = await fetch(`${backendUrl}/annotations/${currentIndex}`, {
         method: 'POST',
@@ -833,7 +879,7 @@ function App() {
           value: annotations
         }),
       });
-      
+
       if (response.ok) {
         return true;
       }
@@ -863,7 +909,7 @@ function App() {
     const duration = getCurrentDuration();
     const change = annotationsChanged(lastLoadedAnnotations, []);
     await saveTiming(duration, change);
-    
+
     // saveAnnotations ohne Timing aufrufen (skipTiming = true)
     const success = await saveAnnotations([], true);
     if (success) {
@@ -879,16 +925,16 @@ function App() {
   const goToIndex = async () => {
     // Timer resetten bei Navigation
     resetTimer();
-    
+
     // Fetch fresh settings first
     await fetchSettings();
-    
+
     const targetIndexUI = parseInt(inputIndex); // 1-based from UI
     const targetIndex = targetIndexUI - 1; // Convert to 0-based for backend
-    
+
     // Can navigate up to settingsCurrentIndex + 1 (1-based)
     const maxAllowedUI = settingsCurrentIndex + 1; // settingsCurrentIndex is 0-based, so +1 for 1-based UI
-    
+
     if (isNaN(targetIndexUI) || targetIndexUI < 1 || targetIndexUI > maxAllowedUI) {
       alert(`Index must be between 1 and ${maxAllowedUI}`);
       return;
@@ -929,18 +975,18 @@ function App() {
     // Prüfen ob beide aspect_term und opinion_term konfiguriert sind
     const hasAspectTerm = consideredSentimentElements.includes("aspect_term");
     const hasOpinionTerm = consideredSentimentElements.includes("opinion_term");
-    
+
     if (!hasAspectTerm && !hasOpinionTerm) {
       return; // Keine relevanten Elemente konfiguriert
     }
-    
+
     if (hasAspectTerm && hasOpinionTerm) {
       // Beide aktiviert: Combined Popup öffnen - versuche Character-Position zu finden
       try {
         const range = document.caretRangeFromPoint(event.clientX, event.clientY);
         if (range && range.startContainer.nodeType === Node.TEXT_NODE) {
           let charIndex = range.startOffset;
-          
+
           // Finde die tatsächliche Position im ursprünglichen Text
           let currentNode = range.startContainer;
           while (currentNode.previousSibling) {
@@ -949,7 +995,7 @@ function App() {
               charIndex += currentNode.textContent?.length || 0;
             }
           }
-          
+
           const tokenBounds = getTokenBounds(displayedText, charIndex);
           setSelectedStartChar(tokenBounds.start);
           setSelectedEndChar(tokenBounds.end);
@@ -960,7 +1006,7 @@ function App() {
       } catch (error) {
         // Fallback: einfach das Combined Popup öffnen ohne Selektion
       }
-      
+
       // Fallback: Combined Popup ohne spezifische Selektion
       setSelectedStartChar(null);
       setSelectedEndChar(null);
@@ -1084,6 +1130,25 @@ function App() {
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border dark:border-gray-700 p-6">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Text to annotate</h2>
+              {enablePrePrediction && (
+                <button
+                  onClick={fetchAIPrediction}
+                  disabled={isAIPredicting}
+                  className="px-3 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium transition-colors duration-200 border border-gray-300 dark:border-gray-600 disabled:opacity-50 disabled:cursor-not-allowed"
+                  title="Get AI predictions"
+                >
+                  {isAIPredicting ? (
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
+                      <span className="text-sm">AI thinking...</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm">✨ AI</span>
+                    </div>
+                  )}
+                </button>
+              )}
             </div>
             <div className="text-xl text-center bg-gray-100 dark:bg-gray-700 p-4 rounded-xl leading-relaxed text-gray-900 dark:text-gray-100 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
               onClick={handleTextClick}
@@ -1091,7 +1156,7 @@ function App() {
             >
               {renderHighlightedText(displayedText, createTextHighlights(displayedText, aspectList, getAnnotationColorClasses))}
             </div>
-            
+
             {/* Translation section */}
             {displayedTranslation && (
               <div className="mt-4">
@@ -1130,7 +1195,7 @@ function App() {
                     })()}
                   </div>
                 </div>)}
-              
+
               {consideredSentimentElements.includes("opinion_term") && (
                 <div>
                   <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -1155,7 +1220,7 @@ function App() {
                   </div>
                 </div>
               )}
-              
+
               {consideredSentimentElements.includes("aspect_category") && (
                 <div>
                   <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -1229,19 +1294,19 @@ function App() {
                   const colorClasses = getAnnotationColorClasses(index);
                   return (
                     <div key={index} className="border border-gray-200 dark:border-gray-600 rounded-lg p-3 bg-gray-50 dark:bg-gray-700 flex items-center gap-3">
-                    {/* Color indicator */}
-                    <div className={`w-4 h-4 rounded-full ${colorClasses.bg300} flex-shrink-0`}></div>
-                    
-                    {consideredSentimentElements.includes("aspect_term") && (
-                      <div
-                        className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded bg-white dark:bg-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-600 text-sm text-gray-900 dark:text-gray-100"
-                        onClick={() => {
-                          openPhrasePopupForEdit("aspect_term", index, aspect.aspect_term);
-                        }}
-                      >
-                        <span className="truncate">{truncateText(aspect.aspect_term) || "Select phrase"}</span>
-                      </div>
-                    )}                      {consideredSentimentElements.includes("opinion_term") && (
+                      {/* Color indicator */}
+                      <div className={`w-4 h-4 rounded-full ${colorClasses.bg300} flex-shrink-0`}></div>
+
+                      {consideredSentimentElements.includes("aspect_term") && (
+                        <div
+                          className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded bg-white dark:bg-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-600 text-sm text-gray-900 dark:text-gray-100"
+                          onClick={() => {
+                            openPhrasePopupForEdit("aspect_term", index, aspect.aspect_term);
+                          }}
+                        >
+                          <span className="truncate">{truncateText(aspect.aspect_term) || "Select phrase"}</span>
+                        </div>
+                      )}                      {consideredSentimentElements.includes("opinion_term") && (
                         <div
                           className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded bg-white dark:bg-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-600 text-sm text-gray-900 dark:text-gray-100"
                           onClick={() => {
@@ -1252,37 +1317,37 @@ function App() {
                         </div>
                       )}
 
-                    {consideredSentimentElements.includes("aspect_category") && (
-                      <select
-                        value={aspect.aspect_category}
-                        onChange={(e) => updateAspectItem(index, "aspect_category", e.target.value)}
-                        className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 cursor-pointer"
-                      >
-                        {validAspectCategories.map(cat => (
-                          <option key={cat} value={cat}>{cat}</option>
-                        ))}
-                      </select>
-                    )}
+                      {consideredSentimentElements.includes("aspect_category") && (
+                        <select
+                          value={aspect.aspect_category}
+                          onChange={(e) => updateAspectItem(index, "aspect_category", e.target.value)}
+                          className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 cursor-pointer"
+                        >
+                          {validAspectCategories.map(cat => (
+                            <option key={cat} value={cat}>{cat}</option>
+                          ))}
+                        </select>
+                      )}
 
-                    {consideredSentimentElements.includes("sentiment_polarity") && (
-                      <select
-                        value={aspect.sentiment_polarity}
-                        onChange={(e) => updateAspectItem(index, "sentiment_polarity", e.target.value)}
-                        className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 cursor-pointer"
-                      >
-                        {validSentimentPolarities.map(sentiment => (
-                          <option key={sentiment} value={sentiment}>{sentiment}</option>
-                        ))}
-                      </select>
-                    )}
+                      {consideredSentimentElements.includes("sentiment_polarity") && (
+                        <select
+                          value={aspect.sentiment_polarity}
+                          onChange={(e) => updateAspectItem(index, "sentiment_polarity", e.target.value)}
+                          className="flex-1 p-2 border border-gray-200 dark:border-gray-600 rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 cursor-pointer"
+                        >
+                          {validSentimentPolarities.map(sentiment => (
+                            <option key={sentiment} value={sentiment}>{sentiment}</option>
+                          ))}
+                        </select>
+                      )}
 
-                    <button
-                      onClick={() => deleteAspectItem(index)}
-                      className="w-8 h-8 bg-red-50 dark:bg-red-900/30 hover:bg-red-100 dark:hover:bg-red-900/50 text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 rounded flex-shrink-0 border border-red-200 dark:border-red-800"
-                      title="Delete"
-                    >
-                      🗑️
-                    </button>
+                      <button
+                        onClick={() => deleteAspectItem(index)}
+                        className="w-8 h-8 bg-red-50 dark:bg-red-900/30 hover:bg-red-100 dark:hover:bg-red-900/50 text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 rounded flex-shrink-0 border border-red-200 dark:border-red-800"
+                        title="Delete"
+                      >
+                        🗑️
+                      </button>
                     </div>
                   );
                 })}
@@ -1313,13 +1378,13 @@ function App() {
 
         {/* Phrase Selection Popup */}
         {showPhrasePopup && (
-          <div 
+          <div
             className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
             onClick={closePhrasePopup}
           >
-            <div 
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto" 
-              onKeyDown={handleKeyDown} 
+            <div
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto"
+              onKeyDown={handleKeyDown}
               tabIndex={-1}
               onClick={(e) => e.stopPropagation()}
             >
@@ -1365,7 +1430,7 @@ function App() {
                               key={`aspect-${index}`}
                               onClick={!isImplicitAspect ? () => handleAspectCharClick(index) : undefined}
                               className={!isImplicitAspect ? getAspectCharClass(index) : ""}
-                              style={isImplicitAspect ? {cursor: 'default'} : {}}
+                              style={isImplicitAspect ? { cursor: 'default' } : {}}
                             >
                               {char}
                             </span>
@@ -1404,7 +1469,7 @@ function App() {
                             })()}
                             {savePhrasePositions && (aspectStartChar === null || aspectEndChar === null) && (
                               <div className="text-sm text-gray-600 dark:text-gray-400">
-                                Saved positions: 
+                                Saved positions:
                               </div>
                             )}
                           </div>
@@ -1446,7 +1511,7 @@ function App() {
                               key={`opinion-${index}`}
                               onClick={!isImplicitOpinion ? () => handleOpinionCharClick(index) : undefined}
                               className={!isImplicitOpinion ? getOpinionCharClass(index) : ""}
-                              style={isImplicitOpinion ? {cursor: 'default'} : {}}
+                              style={isImplicitOpinion ? { cursor: 'default' } : {}}
                             >
                               {char}
                             </span>
@@ -1485,7 +1550,7 @@ function App() {
                             })()}
                             {savePhrasePositions && (opinionStartChar === null || opinionEndChar === null) && (
                               <div className="text-sm text-gray-600 dark:text-gray-400">
-                                Saved positions: 
+                                Saved positions:
                               </div>
                             )}
                           </div>
@@ -1519,8 +1584,8 @@ function App() {
                     )}
 
                   <div className="mb-6">
-                    {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
-                        (currentEditingField === "opinion_term" && isImplicitOpinion)) ? (
+                    {!((currentEditingField === "aspect_term" && isImplicitAspect) ||
+                      (currentEditingField === "opinion_term" && isImplicitOpinion)) ? (
                       <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                         Click on the start character and then on the end character of the phrase:
                       </p>
@@ -1529,32 +1594,32 @@ function App() {
                         Text display (selection disabled for implicit {currentEditingField === "aspect_term" ? "aspect" : "opinion"}):
                       </p>
                     )}
-                    {autoCleanPhrases && !((currentEditingField === "aspect_term" && isImplicitAspect) || 
-                        (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
-                      <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                        <span className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black dark:text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
-                      </div>
-                    )}
+                    {autoCleanPhrases && !((currentEditingField === "aspect_term" && isImplicitAspect) ||
+                      (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
+                        <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                          <span className="bg-blue-300 dark:bg-blue-600 px-1 rounded text-black dark:text-white">Blue highlight</span>: Selected phrase (cleaned automatically if needed)
+                        </div>
+                      )}
                     <div className="text-lg leading-relaxed p-4 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100">
                       {displayedText.split('').map((char, index) => (
                         <span
                           key={index}
-                          onClick={!((currentEditingField === "aspect_term" && isImplicitAspect) || 
-                                    (currentEditingField === "opinion_term" && isImplicitOpinion)) ? 
-                                  () => handleCharClick(index) : undefined}
-                          className={!((currentEditingField === "aspect_term" && isImplicitAspect) || 
-                                      (currentEditingField === "opinion_term" && isImplicitOpinion)) ? 
-                                    getSingleFieldCharClass(index) : ""}
-                          style={((currentEditingField === "aspect_term" && isImplicitAspect) || 
-                                 (currentEditingField === "opinion_term" && isImplicitOpinion)) ? 
-                                {cursor: 'default'} : {}}
+                          onClick={!((currentEditingField === "aspect_term" && isImplicitAspect) ||
+                            (currentEditingField === "opinion_term" && isImplicitOpinion)) ?
+                            () => handleCharClick(index) : undefined}
+                          className={!((currentEditingField === "aspect_term" && isImplicitAspect) ||
+                            (currentEditingField === "opinion_term" && isImplicitOpinion)) ?
+                            getSingleFieldCharClass(index) : ""}
+                          style={((currentEditingField === "aspect_term" && isImplicitAspect) ||
+                            (currentEditingField === "opinion_term" && isImplicitOpinion)) ?
+                            { cursor: 'default' } : {}}
                         >
                           {char}
                         </span>
                       ))}
                     </div>
-                    {!((currentEditingField === "aspect_term" && isImplicitAspect) || 
-                        (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
+                    {!((currentEditingField === "aspect_term" && isImplicitAspect) ||
+                      (currentEditingField === "opinion_term" && isImplicitOpinion)) && (
                         <div className="mt-3 space-y-2 text-gray-900 dark:text-gray-100">
                           <div>
                             <strong>Selected text:</strong> {selectedStartChar !== null && selectedEndChar !== null ? `"${displayedText.substring(selectedStartChar, selectedEndChar + 1)}"` : ""}
@@ -1587,12 +1652,12 @@ function App() {
                           })()}
                           {savePhrasePositions && (selectedStartChar === null || selectedEndChar === null) && (
                             <div className="text-sm text-gray-600 dark:text-gray-400">
-                              Saved positions: 
+                              Saved positions:
                             </div>
                           )}
                         </div>
                       )}
-                    </div>
+                  </div>
                 </>
               )}
 
@@ -1612,7 +1677,7 @@ function App() {
                       !(isImplicitOpinion || (opinionStartChar !== null && opinionEndChar !== null))
                       :
                       // Single mode: current field must be valid
-                      !((currentEditingField === "aspect_term" && isImplicitAspect) || 
+                      !((currentEditingField === "aspect_term" && isImplicitAspect) ||
                         (currentEditingField === "opinion_term" && isImplicitOpinion)) &&
                       (selectedStartChar === null || selectedEndChar === null)
                   }
@@ -1631,7 +1696,7 @@ function App() {
         <div className="max-w-4xl mx-auto text-center text-sm text-gray-600 dark:text-gray-400">
           <div className="flex items-center justify-center gap-2">
             <span>Built with ❤️ for the NLP community by</span>
-            <a 
+            <a
               href="mailto:Nils-Constantin.Hellwig@ur.de"
               className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium transition-colors duration-200"
             >

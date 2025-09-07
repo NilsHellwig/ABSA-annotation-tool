@@ -39,5 +39,6 @@
   "click_on_token": true,
   "auto_positions": false,
   "store_time": true,
-  "show_avg_annotation_time": true
+  "show_avg_annotation_time": true,
+  "enable_pre_prediction": true
 }

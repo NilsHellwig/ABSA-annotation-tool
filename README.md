@@ -36,6 +36,8 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Timing Analytics** - Optional timing data collection for annotation behavior analysis
 - **CLI Tool** - Command-line configuration for different domains
 - **Per-example aspect categories** — support for `aspect_category_list` in `/data/{index}` to render sample-specific categories (falls back to defaults).
+- **AI-Powered Predictions** - Optional AI assistance with `--enable-preprediction` flag for automated annotation suggestions based on your previous annotations
+- **LLM Integration** - Uses Gemma 3:4B model (default) for intelligent aspect and sentiment prediction
 
 ## 📊 Analytics Features
 
@@ -46,6 +48,14 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Per-example data** - Maintains a list of timing entries for each text example, supporting multiple annotation attempts
 - **JSON storage** - Timing data saved as `[{"duration": <seconds>, "change": true/false}, ...]` per example
 - **Privacy-focused** - Timing collection is disabled by default and must be explicitly enabled
+
+## 🤖 AI-Powered Predictions with Ollama
+
+The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). All processing happens locally on your machine via the Ollama API, ensuring data privacy. You can enable this feature with the `--enable-preprediction` CLI flag. The only prerequisite is having [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
+
+### How It Works
+3. **UI Integration** - Click the ✨ AI button next to "Text to annotate" to get suggestions
+1. **Few-Shot Learning** - The AI analyzes existing annotations in your dataset
 
 ---
 
@@ -169,6 +179,8 @@ You can save and reuse configurations with JSON files:
 | `--auto-positions` | **Enable automatic position filling** on startup for existing phrases without positions | Disabled by default |
 | `--store-time` | **Store timing data** for annotation sessions (duration and change detection) | Disabled by default |
 | `--show-avg-annotation-time` | **Display average annotation time** in the interface (requires timing data) | Disabled by default |
+| `--enable-preprediction` | **Enable AI-powered prediction** for automated annotation suggestions using LLM | Disabled by default |
+| `--llm-model` | **Language model for predictions** (e.g., Gemma 3:4B) | `gemma-3:4b` |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 

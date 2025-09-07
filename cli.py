@@ -67,7 +67,8 @@ class ABSAAnnotatorConfig:
             "click_on_token": True,
             "auto_positions": False,
             "store_time": False,
-            "show_avg_annotation_time": False
+            "show_avg_annotation_time": False,
+            "enable_pre_prediction": False
         }
     
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -117,6 +118,10 @@ class ABSAAnnotatorConfig:
     def set_show_avg_annotation_time(self, enabled: bool) -> None:
         """Set whether average annotation time should be displayed."""
         self.config["show_avg_annotation_time"] = enabled
+    
+    def set_enable_pre_prediction(self, enabled: bool) -> None:
+        """Set whether AI pre-prediction is enabled."""
+        self.config["enable_pre_prediction"] = enabled
     
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
@@ -425,6 +430,13 @@ Examples:
     )
     
     parser.add_argument(
+        "--enable-preprediction",
+        dest="enable_pre_prediction",
+        action="store_true",
+        help="Enable AI pre-prediction feature (default: disabled)"
+    )
+    
+    parser.add_argument(
         "--save-config",
         metavar="PATH",
         nargs="?",
@@ -538,6 +550,9 @@ Examples:
     
     if args.show_avg_annotation_time:
         config.set_show_avg_annotation_time(True)
+    
+    if args.enable_pre_prediction:
+        config.set_enable_pre_prediction(True)
     
     # Show configuration if requested
     if args.show_config:

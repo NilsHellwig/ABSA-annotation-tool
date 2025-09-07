@@ -61,7 +61,8 @@ def load_config():
         "save_phrase_positions": True,
         "click_on_token": True,
         "store_time": False,
-        "show_avg_annotation_time": False
+        "show_avg_annotation_time": False,
+        "enable_pre_prediction": False
     }
 
 def set_config(config_dict: dict):
@@ -124,6 +125,7 @@ def get_settings():
         "click_on_token": CONFIG_DATA.get("click_on_token", True),
         "store_time": CONFIG_DATA.get("store_time", False),
         "show_avg_annotation_time": CONFIG_DATA.get("show_avg_annotation_time", False),
+        "enable_pre_prediction": CONFIG_DATA.get("enable_pre_prediction", CONFIG_DATA.get("enable_preprediction", False)),
         "current_index": get_current_index(),
         "max_number_of_idxs": max_number_of_idxs()
     }
@@ -678,6 +680,7 @@ def get_ai_prediction(data_idx: int):
             n_few_shot=10,
             llm_model="gemma3:4b"
         )
+        predictions = predictions["aspects"]
         
         # if position saving is enabled, add positions to predictions
         if config.get('save_phrase_positions', True):
