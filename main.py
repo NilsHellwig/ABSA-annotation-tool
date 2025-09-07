@@ -663,7 +663,10 @@ def get_ai_prediction(data_idx: int):
             # Determine aspect categories per example
             raw_aspects = row.get('aspect_category_list', None)
             aspect_categories = raw_aspects if raw_aspects else default_aspects
-            
+        
+        # filter examples that are identical to the requested text
+        examples = [ex for ex in examples if ex['text'] != text] 
+        
         predictions = predict_llm(
             text,
             config.get('sentiment_elements', ["aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]),
@@ -675,7 +678,21 @@ def get_ai_prediction(data_idx: int):
             n_few_shot=10,
             llm_model="gemma3:4b"
         )
-        print(predictions)
+        
+        # if position saving is enabled, add positions to predictions
+        if config.get('save_phrase_positions', True):
+            for pred in predictions:
+                if 'aspects' in pred:
+                    for aspect in pred['aspects']:
+                        if 'aspect_term' in aspect and aspect['aspect_term'] != 'NULL':
+                            start, end = find_phrase_positions(text, aspect['aspect_term'])
+                            aspect['at_start'] = start
+                            aspect['at_end'] = end
+                        if 'opinion_term' in aspect and aspect['opinion_term'] != 'NULL':
+                            start, end = find_phrase_positions(text, aspect['opinion_term'])
+                            aspect['ot_start'] = start
+                            aspect['ot_end'] = end
+        
         return predictions
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error loading prediction: {str(e)}")
