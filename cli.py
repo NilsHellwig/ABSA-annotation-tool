@@ -66,6 +66,8 @@ class ABSAAnnotatorConfig:
             "save_phrase_positions": True,
             "click_on_token": True,
             "auto_positions": False,
+            "store_time": False,
+            "show_avg_annotation_time": False
         }
     
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -111,6 +113,10 @@ class ABSAAnnotatorConfig:
     def set_store_time(self, enabled: bool) -> None:
         """Set whether timing data should be stored (duration and change status for each annotation session)."""
         self.config["store_time"] = enabled
+    
+    def set_show_avg_annotation_time(self, enabled: bool) -> None:
+        """Set whether average annotation time should be displayed."""
+        self.config["show_avg_annotation_time"] = enabled
     
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
@@ -413,6 +419,12 @@ Examples:
     )
     
     parser.add_argument(
+        "--show-avg-annotation-time",
+        action="store_true",
+        help="Zeige die durchschnittliche Zeit pro Annotation an (in Sekunden)"
+    )
+    
+    parser.add_argument(
         "--save-config",
         metavar="PATH",
         nargs="?",
@@ -523,6 +535,9 @@ Examples:
     
     if args.store_time:
         config.set_store_time(True)
+    
+    if args.show_avg_annotation_time:
+        config.set_show_avg_annotation_time(True)
     
     # Show configuration if requested
     if args.show_config:

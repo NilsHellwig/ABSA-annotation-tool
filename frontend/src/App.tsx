@@ -52,6 +52,8 @@ function App() {
   const [startTime, setStartTime] = useState<number>(Date.now());
   const [lastLoadedAnnotations, setLastLoadedAnnotations] = useState<any>(null);
   const [storeTime, setStoreTime] = useState<boolean>(false);
+  const [showAvgAnnotationTime, setShowAvgAnnotationTime] = useState<boolean>(false);
+  const [avgAnnotationTime, setAvgAnnotationTime] = useState<number>(0);
 
   // Get backend URL from environment or use default
   const backendUrl = (import.meta as any).env?.VITE_BACKEND_URL || 'http://localhost:8000';
@@ -743,15 +745,32 @@ function App() {
       setSavePhrasePositions(settings["save_phrase_positions"] !== false); // Default to true
       setClickOnToken(settings["click_on_token"] !== false); // Default to true
       setStoreTime(settings["store_time"] === true); // Default to false
+      setShowAvgAnnotationTime(settings["show_avg_annotation_time"] === true); // Default to false
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);
       setSessionId(settings["session_id"] || null);
 
+      // Load average annotation time if enabled
+      if (settings["show_avg_annotation_time"] === true) {
+        await fetchAvgAnnotationTime();
+      }
+
       return settings["current_index"];
     } catch (error) {
       console.error('Error fetching settings:', error);
       return undefined;
+    }
+  };
+
+  const fetchAvgAnnotationTime = async (): Promise<void> => {
+    try {
+      const response = await fetch(`${backendUrl}/avg-annotation-time`);
+      const data = await response.json();
+      setAvgAnnotationTime(data.avg_annotation_time || 0);
+    } catch (error) {
+      console.error('Error fetching average annotation time:', error);
+      setAvgAnnotationTime(0);
     }
   };
 
@@ -969,6 +988,13 @@ function App() {
             </div>
             <div className="flex items-center space-x-4">
               <DarkModeToggle isDark={isDark} onToggle={toggleTheme} />
+              {showAvgAnnotationTime && avgAnnotationTime > 0 && (
+                <div className="flex items-center space-x-2">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    Ø {avgAnnotationTime}s per annotation
+                  </span>
+                </div>
+              )}
               <div className="flex items-center space-x-2">
                 <input
                   type="number"

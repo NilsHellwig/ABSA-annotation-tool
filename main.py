@@ -59,7 +59,9 @@ def load_config():
         "implicit_opinion_term_allowed": False,
         "auto_clean_phrases": True,
         "save_phrase_positions": True,
-        "click_on_token": True
+        "click_on_token": True,
+        "store_time": False,
+        "show_avg_annotation_time": False
     }
 
 def set_config(config_dict: dict):
@@ -121,6 +123,7 @@ def get_settings():
         "save_phrase_positions": CONFIG_DATA.get("save_phrase_positions", True),
         "click_on_token": CONFIG_DATA.get("click_on_token", True),
         "store_time": CONFIG_DATA.get("store_time", False),
+        "show_avg_annotation_time": CONFIG_DATA.get("show_avg_annotation_time", False),
         "current_index": get_current_index(),
         "max_number_of_idxs": max_number_of_idxs()
     }
@@ -451,6 +454,44 @@ def manual_auto_add_positions():
         return {"message": "Position data auto-addition completed successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error adding position data: {str(e)}")
+
+@app.get("/avg-annotation-time")
+def get_avg_annotation_time():
+    """Calculate and return the average annotation time across all examples with timing data."""
+    try:
+        data = load_data()
+        total_duration = 0.0
+        total_entries = 0
+        
+        for idx, item in enumerate(data):
+            if DATA_FILE_TYPE == "json":
+                timings = item.get("timings", []) if isinstance(item.get("timings"), list) else []
+            else:
+                # CSV: timings stored as JSON string in 'timings' column
+                timings_str = item.get("timings") if hasattr(item, 'get') and callable(item.get) else (
+                    data.iloc[idx]["timings"] if "timings" in data.columns and idx < len(data) else None
+                )
+                try:
+                    timings = json.loads(timings_str) if timings_str and timings_str != '' else []
+                except Exception:
+                    timings = []
+            
+            # Sum all duration values for this example
+            for timing_entry in timings:
+                if isinstance(timing_entry, dict) and "duration" in timing_entry:
+                    total_duration += timing_entry["duration"]
+                    total_entries += 1
+        
+        avg_time = total_duration / total_entries if total_entries > 0 else 0.0
+        
+        return {
+            "avg_annotation_time": round(avg_time, 2),
+            "total_entries": total_entries,
+            "total_duration": round(total_duration, 2)
+        }
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error calculating average annotation time: {str(e)}")
 
 @app.on_event("startup")
 async def startup_event():

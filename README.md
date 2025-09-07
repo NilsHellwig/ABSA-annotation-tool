@@ -167,6 +167,7 @@ You can save and reuse configurations with JSON files:
 | `--no-click-on-token` | **Disable click-on-token feature** (precise character clicking instead of token snapping) | Enabled by default |
 | `--auto-positions` | **Enable automatic position filling** on startup for existing phrases without positions | Disabled by default |
 | `--store-time` | **Store timing data** for annotation sessions (duration and change detection) | Disabled by default |
+| `--show-avg-annotation-time` | **Display average annotation time** in the interface (requires timing data) | Disabled by default |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 
@@ -295,6 +296,22 @@ When timing data collection is enabled with `--store-time`, the tool adds timing
 - **duration**: Time spent in seconds from viewing the text to saving annotations
 - **change**: Whether the annotation was modified (`true`) or left unchanged (`false`)
 - **Multiple entries**: Each annotation session appends a new timing entry, supporting re-annotation analysis
+
+### Average Annotation Time Display
+
+When both timing data collection and average time display are enabled, the interface shows annotation performance metrics:
+
+```bash
+# Enable timing collection and average time display
+./absa-annotator examples/restaurant_reviews.csv --store-time --show-avg-annotation-time
+```
+
+This displays the average annotation time between the dark mode toggle and index input field. The statistic is calculated by:
+1. Collecting all `duration` values from all examples that have timing data
+2. Computing the average across all annotation sessions
+3. Displaying the result as "Ø {time}s per annotation" in the interface
+
+The average time helps researchers understand annotation efficiency and can guide training or process improvements.
 
 ### Position Data (Optional)
 
