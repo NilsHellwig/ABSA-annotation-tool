@@ -108,6 +108,10 @@ class ABSAAnnotatorConfig:
         """Set whether automatic position data filling is enabled for existing phrases on startup."""
         self.config["auto_positions"] = enabled
     
+    def set_store_time(self, enabled: bool) -> None:
+        """Set whether timing data should be stored (duration and change status for each annotation session)."""
+        self.config["store_time"] = enabled
+    
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
         self.config["session_id"] = session_id
@@ -403,6 +407,12 @@ Examples:
     )
     
     parser.add_argument(
+        "--store-time",
+        action="store_true",
+        help="Speichere die Dauer und ob sich die Annotation geändert hat (zwischen Öffnen und Speichern) für jeden Index."
+    )
+    
+    parser.add_argument(
         "--save-config",
         metavar="PATH",
         nargs="?",
@@ -511,8 +521,8 @@ Examples:
     if args.auto_positions:
         config.set_auto_positions(True)
     
-    if args.session_id:
-        config.set_session_id(args.session_id)
+    if args.store_time:
+        config.set_store_time(True)
     
     # Show configuration if requested
     if args.show_config:

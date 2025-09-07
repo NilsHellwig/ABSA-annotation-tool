@@ -120,6 +120,7 @@ def get_settings():
         "auto_clean_phrases": CONFIG_DATA.get("auto_clean_phrases", True),
         "save_phrase_positions": CONFIG_DATA.get("save_phrase_positions", True),
         "click_on_token": CONFIG_DATA.get("click_on_token", True),
+        "store_time": CONFIG_DATA.get("store_time", False),
         "current_index": get_current_index(),
         "max_number_of_idxs": max_number_of_idxs()
     }
@@ -248,6 +249,37 @@ def post_annotations(data_idx: int, annotation_data: AnnotationData):
             save_data(df)
             
         return {"message": "Annotations saved successfully"}
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail=f"{DATA_FILE_PATH} not found")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# Timing-Logik: Speichere pro Beispiel eine Liste von {duration, change}
+@app.post("/timing/{data_idx}")
+def post_timing(data_idx: int, timing: dict):
+    """Speichere Timing-Informationen für ein Beispiel (append an Liste)."""
+    try:
+        data = load_data()
+        if data_idx >= len(data) or data_idx < 0:
+            raise HTTPException(status_code=404, detail="Index out of range")
+        timing_entry = {"duration": timing.get("duration", 0), "change": timing.get("change", False)}
+        if DATA_FILE_TYPE == "json":
+            item = data[data_idx]
+            if "timings" not in item or not isinstance(item["timings"], list):
+                item["timings"] = []
+            item["timings"].append(timing_entry)
+            save_data(data)
+        else:
+            df = data
+            timings_col = df.at[data_idx, "timings"] if "timings" in df.columns else None
+            try:
+                timings = json.loads(timings_col) if timings_col else []
+            except Exception:
+                timings = []
+            timings.append(timing_entry)
+            df.at[data_idx, "timings"] = json.dumps(timings, ensure_ascii=False)
+            save_data(df)
+        return {"message": "Timing gespeichert"}
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail=f"{DATA_FILE_PATH} not found")
     except Exception as e:

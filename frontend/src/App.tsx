@@ -48,11 +48,45 @@ function App() {
   const [inputIndex, setInputIndex] = useState<string>("");
   const [sessionId, setSessionId] = useState<string | null>(null);
 
+  // Timing-Feature: Einfache Zeitmessung
+  const [startTime, setStartTime] = useState<number>(Date.now());
+  const [lastLoadedAnnotations, setLastLoadedAnnotations] = useState<any>(null);
+  const [storeTime, setStoreTime] = useState<boolean>(false);
+
   // Get backend URL from environment or use default
   const backendUrl = (import.meta as any).env?.VITE_BACKEND_URL || 'http://localhost:8000';
 
   // Function to mix colors mathematically
   // Helper functions
+
+  // Reset timer (bei Navigation)
+  const resetTimer = () => {
+    setStartTime(Date.now());
+  };
+
+  // Duration berechnen
+  const getCurrentDuration = (): number => {
+    return (Date.now() - startTime) / 1000;
+  };
+
+  // Timing speichern
+  const saveTiming = async (duration: number, change: boolean) => {
+    if (!storeTime) return;
+    try {
+      await fetch(`${backendUrl}/timing/${currentIndex}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ duration, change }),
+      });
+    } catch (e) {
+      // Fehler ignorieren
+    }
+  };
+
+  // Hilfsfunktion: Deep-Compare für Annotationen
+  const annotationsChanged = (oldAnn: any, newAnn: any): boolean => {
+    return JSON.stringify(oldAnn || []) !== JSON.stringify(newAnn || []);
+  };
 
   // Helper functions
   const truncateText = (text: string, maxLength: number = 20): string => {
@@ -708,6 +742,7 @@ function App() {
       setAutoCleanPhrases(settings["auto_clean_phrases"] !== false); // Default to true
       setSavePhrasePositions(settings["save_phrase_positions"] !== false); // Default to true
       setClickOnToken(settings["click_on_token"] !== false); // Default to true
+      setStoreTime(settings["store_time"] === true); // Default to false
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);
@@ -720,15 +755,13 @@ function App() {
     }
   };
 
+  // fetchData: Zeitmessung starten und letzte Annotation merken
   const fetchData = async (index: number): Promise<void> => {
     try {
       const response = await fetch(`${backendUrl}/data/${index}`);
       const data = await response.json();
-
       setDisplayedText(data.text || "");
       setDisplayedTranslation(data.translation || "");
-
-      // Load existing annotations if they exist
       let existingAnnotations = [];
       if (data.label && data.label !== "") {
         try {
@@ -737,12 +770,14 @@ function App() {
             existingAnnotations = [];
           }
         } catch (e) {
-          console.log('Could not parse existing annotations:', e);
           existingAnnotations = [];
         }
       }
       setAspectList(existingAnnotations);
-
+      setLastLoadedAnnotations(existingAnnotations);
+      
+      // Timer resetten beim Laden neuer Daten
+      resetTimer();
       // Reset form - use current consideredSentimentElements or wait for it to be loaded
       const resetAspect = {};
       if (consideredSentimentElements.length > 0) {
@@ -755,7 +790,16 @@ function App() {
     } catch (error) {
       console.error('Error fetching data:', error);
     }
-  };  const saveAnnotations = async (annotations: AspectItem[]): Promise<boolean> => {
+  };
+
+  const saveAnnotations = async (annotations: AspectItem[], skipTiming: boolean = false): Promise<boolean> => {
+    // Timing: Duration berechnen und Änderung prüfen (nur wenn nicht übersprungen)
+    if (!skipTiming) {
+      const duration = getCurrentDuration();
+      const change = annotationsChanged(lastLoadedAnnotations, annotations);
+      await saveTiming(duration, change);
+    }
+    
     try {
       const response = await fetch(`${backendUrl}/annotations/${currentIndex}`, {
         method: 'POST',
@@ -769,7 +813,6 @@ function App() {
       });
       
       if (response.ok) {
-        console.log('Annotations saved successfully');
         return true;
       }
     } catch (error) {
@@ -794,9 +837,14 @@ function App() {
   };
 
   const annotateEmpty = async () => {
-    const success = await saveAnnotations([]);
+    // Timing: Duration berechnen und Änderung prüfen
+    const duration = getCurrentDuration();
+    const change = annotationsChanged(lastLoadedAnnotations, []);
+    await saveTiming(duration, change);
+    
+    // saveAnnotations ohne Timing aufrufen (skipTiming = true)
+    const success = await saveAnnotations([], true);
     if (success) {
-      // Fetch updated settings to get new current_index
       await fetchSettings();
       const nextIndex = currentIndex + 1;
       if (nextIndex < maxIndex) {
@@ -807,6 +855,9 @@ function App() {
   };
 
   const goToIndex = async () => {
+    // Timer resetten bei Navigation
+    resetTimer();
+    
     // Fetch fresh settings first
     await fetchSettings();
     
@@ -892,6 +943,8 @@ function App() {
                 <div className="flex items-center space-x-2">
                   <button
                     onClick={async () => {
+                      // Timer resetten bei Navigation
+                      resetTimer();
                       const prevIndex = currentIndex - 1;
                       setCurrentIndex(prevIndex);
                       await fetchData(prevIndex);
@@ -908,6 +961,8 @@ function App() {
                   </span>
                   <button
                     onClick={async () => {
+                      // Timer resetten bei Navigation
+                      resetTimer();
                       const nextIndex = currentIndex + 1;
                       setCurrentIndex(nextIndex);
                       await fetchData(nextIndex);
@@ -921,6 +976,8 @@ function App() {
                   </button>
                   <button
                     onClick={async () => {
+                      // Timer resetten bei Navigation
+                      resetTimer();
                       setCurrentIndex(settingsCurrentIndex);
                       await fetchData(settingsCurrentIndex);
                       await fetchSettings(); // Update settings after navigation

@@ -33,27 +33,18 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Flexible Configuration** - Customizable sentiment elements and categories
 - **Translation Support** - Optional translations displayed below original text
 - **Session Management** - Optional session IDs for tracking annotation sessions
+- **Timing Analytics** - Optional timing data collection for annotation behavior analysis
 - **CLI Tool** - Command-line configuration for different domains
 
-## 🎨 Visual Features
+## 📊 Analytics Features
 
-### Dark Mode
-- **Theme Toggle** - Switch between light and dark modes with a single click
-- **Persistent Settings** - Theme preference saved in browser localStorage
-- **System Preference** - Automatically detects and respects system dark mode setting
-- **Smooth Transitions** - Elegant transitions between light and dark themes
-- **Complete Coverage** - All UI elements optimized for both themes
-
-### Phrase Highlighting
-- **Color-coded text**: Each annotation gets its own unique color in the text
-- **Overlap visualization**: When phrases overlap, colors mix to show intersections
-- **Clear distinction**: Aspect terms appear stronger, opinion terms more subtle
-
-### Clean Interface  
-- **Colored indicators**: Each annotation shows a matching colored circle
-- **No label clutter**: Clean list without "AT:", "OT:" prefixes
-- **25 vibrant colors**: Purple, Emerald, Orange, Pink, Cyan, and more
-- **Color cycling**: After 25 annotations, colors repeat from the beginning
+### Timing Data Collection
+- **Optional timing tracking** - Enable with `--store-time` flag to collect annotation performance metrics
+- **Duration measurement** - Records time spent on each annotation from viewing to saving
+- **Change detection** - Tracks whether annotations were modified during the session
+- **Per-example data** - Maintains a list of timing entries for each text example, supporting multiple annotation attempts
+- **JSON storage** - Timing data saved as `[{"duration": <seconds>, "change": true/false}, ...]` per example
+- **Privacy-focused** - Timing collection is disabled by default and must be explicitly enabled
 
 ---
 
@@ -175,6 +166,7 @@ You can save and reuse configurations with JSON files:
 | `--no-save-positions` | **Disable saving phrase positions** (at_start, at_end, ot_start, ot_end) for faster processing | Enabled by default |
 | `--no-click-on-token` | **Disable click-on-token feature** (precise character clicking instead of token snapping) | Enabled by default |
 | `--auto-positions` | **Enable automatic position filling** on startup for existing phrases without positions | Disabled by default |
+| `--store-time` | **Store timing data** for annotation sessions (duration and change detection) | Disabled by default |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 
@@ -282,6 +274,27 @@ Alternative JSON structure for more flexibility:
 - **Not annotated**: No `label` key present
 - **No aspects found**: `label` is an empty array `[]`  
 - **Aspects found**: `label` contains annotation objects
+
+### Timing Data (Optional)
+
+When timing data collection is enabled with `--store-time`, the tool adds timing analytics:
+
+```json
+{
+  "text": "The food was amazing but service was slow.",
+  "label": [...],
+  "timings": [
+    {"duration": 15.2, "change": true},
+    {"duration": 3.8, "change": false},
+    {"duration": 22.1, "change": true}
+  ]
+}
+```
+
+**Timing Fields:**
+- **duration**: Time spent in seconds from viewing the text to saving annotations
+- **change**: Whether the annotation was modified (`true`) or left unchanged (`false`)
+- **Multiple entries**: Each annotation session appends a new timing entry, supporting re-annotation analysis
 
 ### Position Data (Optional)
 
