@@ -464,6 +464,221 @@ def manual_auto_add_positions():
         return {"message": "Position data auto-addition completed successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error adding position data: {str(e)}")
+    
+
+def predict_llm(text, considered_sentiment_elements, examples, aspect_categories, polarities, allow_implicit_aspect_terms=False, allow_implicit_opinion_terms=False, n_few_shot=10, llm_model="gemma3:4b"):
+    from ollama import generate
+    from pydantic import BaseModel, create_model
+
+    prompt_head = "According to the following sentiment elements definition: \n\n"
+
+
+    if "aspect_term" in considered_sentiment_elements:
+        prompt_head += "- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. "
+        if allow_implicit_aspect_terms:
+            prompt_head += "The aspect term might be 'NULL' for implicit aspect."
+        prompt_head += "\n"
+    if "aspect_category" in considered_sentiment_elements:
+        prompt_head += f"- The 'aspect category' refers to the category that aspect belongs to, and the available categories includes: {', '.join(aspect_categories)}.\n"
+    if "sentiment_polarity" in considered_sentiment_elements:
+        prompt_head += f"- The 'sentiment polarity' refers to the degree of positivity, negativity or neutrality expressed in the opinion towards a particular aspect or feature of a product or service, and the available polarities include: {', '.join(polarities)}.\n"
+    if "opinion_term" in considered_sentiment_elements:
+        prompt_head += "- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. "
+        if allow_implicit_opinion_terms:
+            prompt_head += "The opinion term might be 'NULL' for implicit opinion."
+        prompt_head += "\n"
+
+    prompt_head += "\nRecognize all sentiment elements with their corresponding "
+    for element in considered_sentiment_elements:
+        prompt_head += element.replace("_", " ") + "s, "
+    prompt_head = prompt_head[:-2]  # remove last comma and space
+    prompt_head += " in the following text with the format of [("
+    for element in considered_sentiment_elements:
+        prompt_head += f"'{element.replace('_', ' ')}', "
+    prompt_head = prompt_head[:-2]  # remove last comma and space
+    prompt_head += "), ...].\n\n"
+    
+    few_shot_examples = get_most_similar_examples(text, examples, n=n_few_shot)
+    
+    prompt = prompt_head + "Here are some examples:\n"
+    for ex in few_shot_examples:
+        prompt += f"Text: {ex['text']}\n"
+        prompt += "Sentiment elements: ["
+        for label in ex['label']:
+            prompt += "("
+            for element in considered_sentiment_elements:
+                prompt += f"'{element.replace('_', ' ')}': '{label[element]}', "
+            prompt = prompt[:-2]  # remove last comma and space
+            prompt += "), "
+        prompt = prompt[:-2]  # remove last comma and space
+        prompt += "]\n"
+    prompt += f"Text: {text}\nSentiment elements: "
+    
+    from enum import Enum
+    allowed_phrases = find_valid_phrases_list(text, max_tokens_in_phrase=5)
+    allowed_aspect_terms = allowed_phrases + ["NULL"] if allow_implicit_aspect_terms else allowed_phrases
+    allowed_opinion_terms = allowed_phrases + ["NULL"] if allow_implicit_opinion_terms else allowed_phrases
+
+    AspectEnum = Enum("AspectEnum", {p: p for p in allowed_aspect_terms})
+    OpinionEnum = Enum("OpinionEnum", {p: p for p in allowed_opinion_terms})
+    PolarityEnum = Enum("PolarityEnum", {p: p for p in polarities})
+    CategoryEnum = Enum("CategoryEnum", {c: c for c in aspect_categories})
+
+    # Mapping von Namen -> Typen
+    field_types = {
+       "aspect_term": (AspectEnum, ...),
+        "aspect_category": (CategoryEnum, ...),
+        "opinion_term": (OpinionEnum, ...),
+        "sentiment_polarity": (PolarityEnum, ...)
+    }
+
+    # dynamisch Modell bauen
+    SentimentElement = create_model(
+        "SentimentElement",
+        **{name: field_types[name] for name in considered_sentiment_elements}
+    )
+
+    class Aspects(BaseModel):
+        aspects: list[SentimentElement]
+
+    response = generate(
+        prompt=prompt,
+        model=llm_model,
+        format=Aspects.model_json_schema()
+    )
+
+    # response.message.content is a JSON string
+    aspects = Aspects.model_validate_json(response.response)
+    
+    if not aspects.aspects:
+        return []
+    else:
+        return json.loads(response.response)
+        
+# ermittel die n Beispiele die am ähnlichsten zum input text sind
+import numpy as np
+import json, re
+
+def get_most_similar_examples(input_text, examples, n):
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity
+    """Return up to n most similar example annotations based on input_text"""
+    
+    # If no examples available, return empty list
+    if not examples:
+        return []
+    
+    # Limit n to available examples
+    n = min(n, len(examples))
+    
+    # Convert input_text to string if it's a tuple
+    if isinstance(input_text, tuple):
+        input_text_str = input_text[0]  # Assume first element is the text
+    else:
+        input_text_str = str(input_text)
+    
+    # Extract text from examples and convert to strings
+    texts = []
+    for ex in examples:
+        if isinstance(ex, dict) and 'text' in ex:
+            texts.append(str(ex['text']))
+        elif isinstance(ex, tuple):
+            texts.append(str(ex[0]))  # Assume first element is the text
+        else:
+            texts.append(str(ex))
+    
+    texts.append(input_text_str)  # add the input text to the list
+
+    vectorizer = TfidfVectorizer()
+    tfidf_matrix = vectorizer.fit_transform(texts)
+
+    cosine_similarities = cosine_similarity(tfidf_matrix[-1], tfidf_matrix[:-1])  # compare input text with all examples
+    similar_indices = np.argsort(cosine_similarities[0])[-n:][::-1]  # get indices of n most similar examples
+    
+    # reverse the order of similar_indices to have most similar first
+    similar_indices = similar_indices[::-1]
+
+    return [examples[i] for i in similar_indices]
+
+def find_valid_phrases_list(text, max_tokens_in_phrase):
+    phrases = []
+    # identify split positions based on punctuation and spaces
+    split_positions = [0]
+    for match in re.finditer(r'(?<=\w)(?=[,\.\!\?\;\:])|[\s]+', text):
+        split_positions.append(match.end())
+    
+    # print all phrases between split positions 
+    for i in range(len(split_positions)):
+        for j in range(i+1, len(split_positions)):
+            phrase = text[split_positions[i]:split_positions[j]].strip()
+            if phrase:
+                num_tokens = len(phrase.split())
+                if num_tokens <= max_tokens_in_phrase:
+                    phrases.append(phrase)
+    
+    # remove phrases with special characters at the beginning or end
+    phrases = [p for p in phrases if re.match(r'^[\w].*[\w]$', p)]                
+    
+    return phrases
+
+@app.get("/ai_prediction/{data_idx}")
+def get_ai_prediction(data_idx: int):
+    try:
+        data = load_data()
+        config = load_config()
+        default_aspects = config.get('aspect_categories', [])
+        examples = []
+        # Branch by file type
+        if DATA_FILE_TYPE == "json":
+            # JSON data is a list of dicts
+            if data_idx < 0 or data_idx >= len(data):
+                raise HTTPException(status_code=404, detail="Index out of range")
+            item = data[data_idx]
+            text = item.get('text', '')
+            # Collect examples with non-empty labels
+            for entry in data:
+                lbl = entry.get('label', [])
+                if isinstance(lbl, list) and lbl:
+                    examples.append({'text': entry.get('text', ''), 'label': lbl})
+            aspect_categories = item.get('aspect_category_list', default_aspects)
+        else:
+            # CSV data is a DataFrame
+            df = data
+            if data_idx < 0 or data_idx >= len(df):
+                raise HTTPException(status_code=404, detail="Index out of range")
+            # Current row
+            row = df.iloc[data_idx].to_dict()
+            text = row.get('text', '')
+            # Collect examples with non-empty label field
+            for _, r in df.iterrows():
+                lbl_str = r.get('label', '')
+                if pd.isna(lbl_str) or lbl_str == '':
+                    continue
+                try:
+                    lbl = json.loads(lbl_str)
+                    if isinstance(lbl, list) and lbl:
+                        examples.append({'text': r.get('text', ''), 'label': lbl})
+                except Exception:
+                    continue
+            # Determine aspect categories per example
+            raw_aspects = row.get('aspect_category_list', None)
+            aspect_categories = raw_aspects if raw_aspects else default_aspects
+            
+        predictions = predict_llm(
+            text,
+            config.get('sentiment_elements', ["aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]),
+            examples,
+            aspect_categories,
+            config.get('sentiment_polarity_options', ["positive", "negative", "neutral"]),
+            allow_implicit_aspect_terms=config.get('implicit_aspect_term_allowed', True),
+            allow_implicit_opinion_terms=config.get('implicit_opinion_term_allowed', False),
+            n_few_shot=10,
+            llm_model="gemma3:4b"
+        )
+        print(predictions)
+        return predictions
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error loading prediction: {str(e)}")
 
 @app.get("/avg-annotation-time")
 def get_avg_annotation_time():

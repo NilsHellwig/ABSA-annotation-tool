@@ -1,5 +1,5 @@
 {
-  "csv_path": "examples/restaurant_reviews.json",
+  "csv_path": "./examples/restaurant_reviews.csv",
   "session_id": null,
   "sentiment_elements": [
     "aspect_term",
@@ -36,5 +36,8 @@
   "implicit_opinion_term_allowed": false,
   "auto_clean_phrases": true,
   "save_phrase_positions": true,
-  "click_on_token": true
+  "click_on_token": true,
+  "auto_positions": false,
+  "store_time": true,
+  "show_avg_annotation_time": true
 }

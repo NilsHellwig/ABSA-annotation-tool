@@ -6,13 +6,13 @@
                 "aspect_term": "pasta",
                 "aspect_category": "food quality",
                 "opinion_term": "excellent",
-                "sentiment": "positive"
+                "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "service",
                 "aspect_category": "service general",
                 "opinion_term": "very attentive",
-                "sentiment": "positive"
+                "sentiment_polarity": "positive"
             }
         ]
     },
@@ -23,13 +23,13 @@
                 "aspect_term": "atmosphere",
                 "aspect_category": "ambience general",
                 "opinion_term": "romantic",
-                "sentiment": "positive"
+                "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "food",
                 "aspect_category": "food quality",
                 "opinion_term": "disappointing",
-                "sentiment": "negative"
+                "sentiment_polarity": "negative"
             }
         ]
     },
