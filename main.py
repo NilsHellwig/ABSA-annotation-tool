@@ -140,7 +140,9 @@ def get_data(data_idx: int):
         data = load_data()
         if data_idx >= len(data) or data_idx < 0:
             raise HTTPException(status_code=404, detail="Index out of range")
-        
+
+        default_aspects = CONFIG_DATA.get("aspect_categories", ["food general", "food quality", "food style options", "food healthy", "service general", "service attitude", "service speed", "price general", "price level", "ambience general", "ambience decor", "ambience style", "location general", "location parking", "location access", "restaurant general", "restaurant variety", "restaurant specialty"])
+         
         if DATA_FILE_TYPE == "json":
             item = data[data_idx]
             # Check if item has been annotated
@@ -151,10 +153,13 @@ def get_data(data_idx: int):
                 # Item has not been annotated yet
                 label_value = ""
             
+            # Determine aspect categories for this example
+            aspects = item.get('aspect_category_list', default_aspects)
             return {
                 "text": item.get('text', ''),
                 "label": label_value,
-                "translation": item.get('translation', '')
+                "translation": item.get('translation', ''),
+                "aspect_category_list": aspects
             }
         else:
             # CSV handling
@@ -165,13 +170,18 @@ def get_data(data_idx: int):
             for key, value in row_dict.items():
                 if pd.isna(value) or (isinstance(value, float) and (value == float('inf') or value == float('-inf'))):
                     row_dict[key] = ""
-            
             # Ensure translation field exists
             if 'translation' not in row_dict:
                 row_dict['translation'] = ""
-                
+            # Determine aspect categories for this example (CSV column or default)
+            raw_aspects = row_dict.get('aspect_category_list', None)
+            if raw_aspects:
+                aspects = raw_aspects
+            else:
+                aspects = default_aspects
+            row_dict['aspect_category_list'] = aspects
             return row_dict
-            
+           
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail=f"{DATA_FILE_PATH} not found")
     except Exception as e:

@@ -737,7 +737,6 @@ function App() {
       const settings = await response.json();
 
       setConsideredSentimentElements(settings["sentiment elements"]);
-      setValidAspectCategories(settings["aspect_categories"]);
       setValidSentimentPolarities(settings["sentiment_polarity options"]);
       setAllowImplicitAspectTerm(settings["implicit_aspect_term_allowed"]);
       setAllowImplicitOpinionTerm(settings["implicit_opinion_term_allowed"]);
@@ -779,6 +778,10 @@ function App() {
     try {
       const response = await fetch(`${backendUrl}/data/${index}`);
       const data = await response.json();
+      // Update aspect category options based on example-specific list
+      if (data.aspect_category_list) {
+        setValidAspectCategories(data.aspect_category_list);
+      }
       setDisplayedText(data.text || "");
       setDisplayedTranslation(data.translation || "");
       let existingAnnotations = [];

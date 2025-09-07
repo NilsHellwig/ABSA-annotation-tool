@@ -35,6 +35,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Session Management** - Optional session IDs for tracking annotation sessions
 - **Timing Analytics** - Optional timing data collection for annotation behavior analysis
 - **CLI Tool** - Command-line configuration for different domains
+- **Per-example aspect categories** — support for `aspect_category_list` in `/data/{index}` to render sample-specific categories (falls back to defaults).
 
 ## 📊 Analytics Features
 
