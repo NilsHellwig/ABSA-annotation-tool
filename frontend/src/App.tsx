@@ -902,6 +902,57 @@ function App() {
     }
   }, [consideredSentimentElements]);
 
+  // Click-Handler für Text: Öffnet Popup je nach konfigurierten Elementen
+  const handleTextClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    // Prüfen ob beide aspect_term und opinion_term konfiguriert sind
+    const hasAspectTerm = consideredSentimentElements.includes("aspect_term");
+    const hasOpinionTerm = consideredSentimentElements.includes("opinion_term");
+    
+    if (!hasAspectTerm && !hasOpinionTerm) {
+      return; // Keine relevanten Elemente konfiguriert
+    }
+    
+    if (hasAspectTerm && hasOpinionTerm) {
+      // Beide aktiviert: Combined Popup öffnen - versuche Character-Position zu finden
+      try {
+        const range = document.caretRangeFromPoint(event.clientX, event.clientY);
+        if (range && range.startContainer.nodeType === Node.TEXT_NODE) {
+          let charIndex = range.startOffset;
+          
+          // Finde die tatsächliche Position im ursprünglichen Text
+          let currentNode = range.startContainer;
+          while (currentNode.previousSibling) {
+            currentNode = currentNode.previousSibling;
+            if (currentNode.nodeType === Node.TEXT_NODE) {
+              charIndex += currentNode.textContent?.length || 0;
+            }
+          }
+          
+          const tokenBounds = getTokenBounds(displayedText, charIndex);
+          setSelectedStartChar(tokenBounds.start);
+          setSelectedEndChar(tokenBounds.end);
+          setCurrentEditingField(null);
+          setShowPhrasePopup(true);
+          return;
+        }
+      } catch (error) {
+        // Fallback: einfach das Combined Popup öffnen ohne Selektion
+      }
+      
+      // Fallback: Combined Popup ohne spezifische Selektion
+      setSelectedStartChar(null);
+      setSelectedEndChar(null);
+      setCurrentEditingField(null);
+      setShowPhrasePopup(true);
+    } else if (hasAspectTerm) {
+      // Nur aspect_term: Aspect Term Popup öffnen
+      openPhrasePopup("aspect_term");
+    } else if (hasOpinionTerm) {
+      // Nur opinion_term: Opinion Term Popup öffnen
+      openPhrasePopup("opinion_term");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       {/* Header */}
@@ -1005,7 +1056,10 @@ function App() {
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Text to annotate</h2>
             </div>
-            <div className="text-xl text-center bg-gray-100 dark:bg-gray-700 p-4 rounded-xl leading-relaxed text-gray-900 dark:text-gray-100">
+            <div className="text-xl text-center bg-gray-100 dark:bg-gray-700 p-4 rounded-xl leading-relaxed text-gray-900 dark:text-gray-100 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+              onClick={handleTextClick}
+              title="Click to add annotation"
+            >
               {renderHighlightedText(displayedText, createTextHighlights(displayedText, aspectList, getAnnotationColorClasses))}
             </div>
             
