@@ -825,7 +825,6 @@ function App() {
 
       if (predictions && predictions.length > 0) {
         // Convert predictions to aspectList format
-        console.log(predictions);
         const aiAnnotations: AspectItem[] = predictions.map((aspect: any) => {
           const annotation: any = {
             aspect_term: aspect.aspect_term || "",
@@ -851,7 +850,7 @@ function App() {
         });
 
         // Add AI predictions to existing annotations
-        setAspectList(prev => [...prev, ...aiAnnotations]);
+        setAspectList(aiAnnotations);
       }
     } catch (error) {
       console.error('Error fetching AI prediction:', error);

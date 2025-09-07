@@ -252,14 +252,16 @@ def post_annotations(data_idx: int, annotation_data: AnnotationData):
         if data_idx >= len(data) or data_idx < 0:
             raise HTTPException(status_code=404, detail="Index out of range")
         
+        annotation_data = annotation_data.value
+
         if DATA_FILE_TYPE == "json":
             # Update JSON format - set "label" key with annotation data
-            data[data_idx]['label'] = annotation_data.value
+            data[data_idx]['label'] = annotation_data
             save_data(data)
         else:
             # Update CSV format  
             df = data
-            annotations_json = json.dumps(annotation_data.value)
+            annotations_json = json.dumps(annotation_data)
             df.at[data_idx, 'label'] = annotations_json
             save_data(df)
             
@@ -684,17 +686,15 @@ def get_ai_prediction(data_idx: int):
         
         # if position saving is enabled, add positions to predictions
         if config.get('save_phrase_positions', True):
-            for pred in predictions:
-                if 'aspects' in pred:
-                    for aspect in pred['aspects']:
-                        if 'aspect_term' in aspect and aspect['aspect_term'] != 'NULL':
-                            start, end = find_phrase_positions(text, aspect['aspect_term'])
-                            aspect['at_start'] = start
-                            aspect['at_end'] = end
-                        if 'opinion_term' in aspect and aspect['opinion_term'] != 'NULL':
-                            start, end = find_phrase_positions(text, aspect['opinion_term'])
-                            aspect['ot_start'] = start
-                            aspect['ot_end'] = end
+            for aspect in predictions:
+                if 'aspect_term' in aspect and aspect['aspect_term'] != 'NULL':
+                    start, end = find_phrase_positions(text, aspect['aspect_term'])
+                    aspect['at_start'] = start
+                    aspect['at_end'] = end
+                if 'opinion_term' in aspect and aspect['opinion_term'] != 'NULL':
+                    start, end = find_phrase_positions(text, aspect['opinion_term'])
+                    aspect['ot_start'] = start
+                    aspect['ot_end'] = end
         
         return predictions
     except Exception as e:
