@@ -969,6 +969,20 @@ function App() {
     }
   }, [consideredSentimentElements]);
 
+  // Auto-trigger AI prediction when navigating to next item
+  useEffect(() => {
+    const shouldTriggerAIPrediction = 
+      enablePrePrediction && 
+      currentIndex === settingsCurrentIndex && 
+      !isAIPredicting && 
+      aspectList.length === 0; // Only if no annotations exist yet
+
+    if (shouldTriggerAIPrediction) {
+      console.log('Auto-triggering AI prediction for last item');
+      fetchAIPrediction();
+    }
+  }, [currentIndex, maxIndex, enablePrePrediction, isAIPredicting, aspectList.length]);
+
   // Click-Handler für Text: Öffnet Popup je nach konfigurierten Elementen
   const handleTextClick = (event: React.MouseEvent<HTMLDivElement>) => {
     // Prüfen ob beide aspect_term und opinion_term konfiguriert sind
