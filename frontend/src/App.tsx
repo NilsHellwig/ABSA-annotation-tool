@@ -778,6 +778,9 @@ function App() {
 
   // fetchData: Zeitmessung starten und letzte Annotation merken
   const fetchData = async (index: number): Promise<void> => {
+    // Abort any ongoing AI prediction when changing index
+    abortAIPrediction();
+    
     try {
       const response = await fetch(`${backendUrl}/data/${index}`);
       const data = await response.json();
@@ -818,9 +821,17 @@ function App() {
   };
 
   const fetchAIPrediction = async (): Promise<void> => {
+    // Abort any existing AI prediction
+    abortAIPrediction();
+    
+    const controller = new AbortController();
+    setAiAbortController(controller);
+    
     try {
       setIsAIPredicting(true);
-      const response = await fetch(`${backendUrl}/ai_prediction/${currentIndex}`);
+      const response = await fetch(`${backendUrl}/ai_prediction/${currentIndex}`, {
+        signal: controller.signal
+      });
       const predictions = await response.json();
 
       if (predictions && predictions.length > 0) {
@@ -853,13 +864,32 @@ function App() {
         setAspectList(aiAnnotations);
       }
     } catch (error) {
-      console.error('Error fetching AI prediction:', error);
+      if (error instanceof Error && error.name === 'AbortError') {
+        console.log('AI prediction was aborted');
+      } else {
+        console.error('Error fetching AI prediction:', error);
+      }
     } finally {
+      setIsAIPredicting(false);
+      setAiAbortController(null);
+    }
+  };
+
+  // AI prediction abort controller
+  const [aiAbortController, setAiAbortController] = useState<AbortController | null>(null);
+
+  const abortAIPrediction = () => {
+    if (aiAbortController) {
+      aiAbortController.abort();
+      setAiAbortController(null);
       setIsAIPredicting(false);
     }
   };
 
   const saveAnnotations = async (annotations: AspectItem[], skipTiming: boolean = false): Promise<boolean> => {
+    // Abort any ongoing AI prediction when saving
+    abortAIPrediction();
+    
     // Timing: Duration berechnen und Änderung prüfen (nur wenn nicht übersprungen)
     if (!skipTiming) {
       const duration = getCurrentDuration();
