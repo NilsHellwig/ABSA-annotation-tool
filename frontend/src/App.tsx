@@ -59,7 +59,7 @@ function App() {
 
   // Get backend URL from environment or use default
   const backendUrl = (import.meta as any).env?.VITE_BACKEND_URL || 'http://localhost:8000';
-
+  
   // Function to mix colors mathematically
   // Helper functions
 
@@ -926,7 +926,7 @@ function App() {
       // Fetch updated settings to get new current_index
       await fetchSettings();
       const nextIndex = currentIndex + 1;
-      if (nextIndex < maxIndex) {
+      if (nextIndex <= maxIndex) {
         setCurrentIndex(nextIndex);
         await fetchData(nextIndex);
       }
@@ -944,7 +944,7 @@ function App() {
     if (success) {
       await fetchSettings();
       const nextIndex = currentIndex + 1;
-      if (nextIndex < maxIndex) {
+      if (nextIndex <= maxIndex) {
         setCurrentIndex(nextIndex);
         await fetchData(nextIndex);
       }
@@ -979,14 +979,16 @@ function App() {
     const loadInitialData = async () => {
       const currentIdx = await fetchSettings();
       if (currentIdx !== undefined) {
-        setCurrentIndex(currentIdx); // Set currentIndex to match settingsCurrentIndex initially
-        await fetchData(currentIdx);
+        // If currentIndex equals maxIndex, go back one step
+        const adjustedIdx = currentIdx >= maxIndex && maxIndex > 0 ? currentIdx - 1 : currentIdx;
+        setCurrentIndex(adjustedIdx);
+        await fetchData(adjustedIdx);
       }
     };
 
     loadInitialData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [maxIndex]);
 
   // Initialize form when consideredSentimentElements changes
   useEffect(() => {
@@ -1095,11 +1097,11 @@ function App() {
                   placeholder="Index..."
                   className="w-20 px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   min="1"
-                  max={settingsCurrentIndex + 1}
+                  max={maxIndex}
                 />
                 <button
                   onClick={goToIndex}
-                  disabled={!inputIndex || parseInt(inputIndex) < 1 || parseInt(inputIndex) > settingsCurrentIndex + 1}
+                  disabled={!inputIndex || parseInt(inputIndex) < 1 || parseInt(inputIndex) > maxIndex}
                   className="px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 text-white rounded"
                 >
                   Go to
@@ -1137,7 +1139,7 @@ function App() {
                       await fetchData(nextIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex + 1 >= settingsCurrentIndex + 1}
+                    disabled={currentIndex + 1 >= maxIndex}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Next annotation"
                   >
@@ -1147,11 +1149,15 @@ function App() {
                     onClick={async () => {
                       // Timer resetten bei Navigation
                       resetTimer();
-                      setCurrentIndex(settingsCurrentIndex);
-                      await fetchData(settingsCurrentIndex);
+                      // If settingsCurrentIndex equals maxIndex, go to maxIndex - 1
+                      const targetIndex = settingsCurrentIndex >= maxIndex && maxIndex > 0 
+                        ? settingsCurrentIndex - 1 
+                        : settingsCurrentIndex;
+                      setCurrentIndex(targetIndex);
+                      await fetchData(targetIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex === settingsCurrentIndex}
+                    disabled={currentIndex === settingsCurrentIndex || (settingsCurrentIndex >= maxIndex && currentIndex === settingsCurrentIndex - 1)}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Jump to current working position"
                   >
@@ -1405,7 +1411,7 @@ function App() {
                 disabled={false}
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                {currentIndex + 1 >= maxIndex ? "Save & Finish" : "Save & Next annotation →"}
+                {currentIndex + 1 === maxIndex ? "Save & Finish" : "Save & Next annotation →"}
               </button>
             ) : (
               <button
@@ -1413,7 +1419,7 @@ function App() {
                 disabled={false}
                 className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                {currentIndex + 1 >= maxIndex ? "Save empty list & Finish" : "Save & Annotate empty list"}
+                {currentIndex + 1 === maxIndex ? "Save empty list & Finish" : "Save & Annotate empty list"}
               </button>
             )}
           </div>
