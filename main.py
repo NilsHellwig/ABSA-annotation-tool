@@ -520,7 +520,7 @@ def predict_llm(text, considered_sentiment_elements, examples, aspect_categories
     prompt += f"Text: {text}\nSentiment elements: "
     
     from enum import Enum
-    allowed_phrases = find_valid_phrases_list(text, max_tokens_in_phrase=5)
+    allowed_phrases = find_valid_phrases_list(text)
     allowed_aspect_terms = allowed_phrases + ["NULL"] if allow_implicit_aspect_terms else allowed_phrases
     allowed_opinion_terms = allowed_phrases + ["NULL"] if allow_implicit_opinion_terms else allowed_phrases
 
@@ -607,12 +607,16 @@ def get_most_similar_examples(input_text, examples, n):
 
     return [examples[i] for i in similar_indices]
 
-def find_valid_phrases_list(text, max_tokens_in_phrase):
+def find_valid_phrases_list(text, max_tokens_in_phrase=None):
     phrases = []
     # identify split positions based on punctuation and spaces
     split_positions = [0]
     for match in re.finditer(r'(?<=\w)(?=[,\.\!\?\;\:])|[\s]+', text):
         split_positions.append(match.end())
+        
+    n_splits = len(split_positions)
+    if max_tokens_in_phrase is None:
+        max_tokens_in_phrase = n_splits
     
     # print all phrases between split positions 
     for i in range(len(split_positions)):
