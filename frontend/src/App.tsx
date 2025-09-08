@@ -1090,7 +1090,7 @@ function App() {
                       await fetchSettings(); // Update settings after navigation
                     }}
                     disabled={currentIndex <= 0}
-                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
+                    className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Previous annotation"
                   >
                     ←
@@ -1108,7 +1108,7 @@ function App() {
                       await fetchSettings(); // Update settings after navigation
                     }}
                     disabled={currentIndex + 1 >= settingsCurrentIndex + 1}
-                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
+                    className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Next annotation"
                   >
                     →
@@ -1122,7 +1122,7 @@ function App() {
                       await fetchSettings(); // Update settings after navigation
                     }}
                     disabled={currentIndex === settingsCurrentIndex}
-                    className="p-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
+                    className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Jump to current working position"
                   >
                     ⇒
