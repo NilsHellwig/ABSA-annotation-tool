@@ -59,7 +59,7 @@ function App() {
 
   // Get backend URL from environment or use default
   const backendUrl = (import.meta as any).env?.VITE_BACKEND_URL || 'http://localhost:8000';
-  
+
   // Function to mix colors mathematically
   // Helper functions
 
@@ -1139,7 +1139,7 @@ function App() {
                       await fetchData(nextIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex + 1 >= maxIndex}
+                    disabled={currentIndex >= settingsCurrentIndex || currentIndex + 1 === maxIndex}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Next annotation"
                   >
