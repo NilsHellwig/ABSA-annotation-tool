@@ -567,9 +567,60 @@ import numpy as np
 import json, re
 
 def get_most_similar_examples(input_text, examples, n):
-    from sklearn.feature_extraction.text import TfidfVectorizer
+    """Return up to n most similar example annotations based on input_text using sentence transformers"""
+    
+    # Try to get cached sentence model
+    model = _get_sentence_model()
+    
+    if model is None:
+        # Fallback to TF-IDF if sentence-transformers is not available
+        from sklearn.feature_extraction.text import TfidfVectorizer
+        from sklearn.metrics.pairwise import cosine_similarity
+        return get_most_similar_examples_tfidf(input_text, examples, n, TfidfVectorizer, cosine_similarity)
+    
+    # If no examples available, return empty list
+    if not examples:
+        return []
+    
+    # Limit n to available examples
+    n = min(n, len(examples))
+    
+    # Convert input_text to string if it's a tuple
+    if isinstance(input_text, tuple):
+        input_text_str = input_text[0]  # Assume first element is the text
+    else:
+        input_text_str = str(input_text)
+    
+    # Extract text from examples and convert to strings
+    texts = []
+    for ex in examples:
+        if isinstance(ex, dict) and 'text' in ex:
+            texts.append(str(ex['text']))
+        elif isinstance(ex, tuple):
+            texts.append(str(ex[0]))  # Assume first element is the text
+        else:
+            texts.append(str(ex))
+    
+    # Use the cached sentence transformer model
     from sklearn.metrics.pairwise import cosine_similarity
-    """Return up to n most similar example annotations based on input_text"""
+    
+    # Encode all texts including input text
+    all_texts = texts + [input_text_str]
+    embeddings = model.encode(all_texts)
+    
+    # Calculate cosine similarities between input text and examples
+    input_embedding = embeddings[-1].reshape(1, -1)
+    example_embeddings = embeddings[:-1]
+    
+    cosine_similarities = cosine_similarity(input_embedding, example_embeddings)[0]
+    
+    # Get indices of n most similar examples (sorted by similarity descending)
+    similar_indices = np.argsort(cosine_similarities)[-n:][::-1]
+    
+    return [examples[i] for i in similar_indices]
+
+def get_most_similar_examples_tfidf(input_text, examples, n, TfidfVectorizer, cosine_similarity):
+    """Fallback TF-IDF implementation"""
     
     # If no examples available, return empty list
     if not examples:
@@ -602,9 +653,6 @@ def get_most_similar_examples(input_text, examples, n):
     cosine_similarities = cosine_similarity(tfidf_matrix[-1], tfidf_matrix[:-1])  # compare input text with all examples
     similar_indices = np.argsort(cosine_similarities[0])[-n:][::-1]  # get indices of n most similar examples
     
-    # reverse the order of similar_indices to have most similar first
-    similar_indices = similar_indices[::-1]
-
     return [examples[i] for i in similar_indices]
 
 def find_valid_phrases_list(text, max_tokens_in_phrase=None):
@@ -761,3 +809,26 @@ async def startup_event():
         print("ℹ️  Auto-positions feature disabled (use --auto-positions to enable)")
     
     print("✨ Backend ready!")
+
+# Global variable to cache the sentence transformer model
+_sentence_model = None
+_sentence_model_available = None
+
+def _get_sentence_model():
+    """Get or load the sentence transformer model (cached)"""
+    global _sentence_model, _sentence_model_available
+    
+    # Return cached result if already determined
+    if _sentence_model_available is False:
+        return None
+    if _sentence_model is not None:
+        return _sentence_model
+    
+    try:
+        from sentence_transformers import SentenceTransformer
+        _sentence_model = SentenceTransformer('all-MiniLM-L6-v2')
+        _sentence_model_available = True
+        return _sentence_model
+    except ImportError:
+        _sentence_model_available = False
+        return None
