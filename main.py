@@ -584,46 +584,56 @@ def get_most_similar_examples(input_text, examples, n):
     # Limit n to available examples
     n = min(n, len(examples))
     
+    # Early exit if only need 1 example and we have examples
+    if n == 1 and len(examples) == 1:
+        return examples
+    
     # Convert input_text to string if it's a tuple
     if isinstance(input_text, tuple):
         input_text_str = input_text[0]  # Assume first element is the text
     else:
         input_text_str = str(input_text)
     
-    # Extract text from examples and convert to strings
-    texts = []
-    for ex in examples:
-        if isinstance(ex, dict) and 'text' in ex:
-            texts.append(str(ex['text']))
-        elif isinstance(ex, tuple):
-            texts.append(str(ex[0]))  # Assume first element is the text
-        else:
-            texts.append(str(ex))
-    
-    # Get embeddings for all texts (use cache when possible)
-    text_embeddings = []
-    for text in texts:
-        embedding = _get_cached_embedding(text, model)
-        text_embeddings.append(embedding)
-    
-    # Get embedding for input text
+    # Get embedding for input text first (early cache lookup)
     input_embedding = _get_cached_embedding(input_text_str, model)
     
-    # Convert to numpy arrays for cosine similarity calculation
-    example_embeddings = np.array(text_embeddings)
+    # Pre-allocate arrays for better memory performance
+    num_examples = len(examples)
+    text_embeddings = np.empty((num_examples, input_embedding.shape[0]), dtype=np.float32)
+    
+    # Extract text from examples and get embeddings in one pass
+    for i, ex in enumerate(examples):
+        if isinstance(ex, dict) and 'text' in ex:
+            text = str(ex['text'])
+        elif isinstance(ex, tuple):
+            text = str(ex[0])  # Assume first element is the text
+        else:
+            text = str(ex)
+        
+        text_embeddings[i] = _get_cached_embedding(text, model)
+    
+    # Optimized cosine similarity calculation
     input_embedding = input_embedding.reshape(1, -1)
     
-    # Calculate cosine similarities using numpy (no sklearn needed)
-    # Compute dot product and norms
-    dot_product = np.dot(input_embedding, example_embeddings.T)
-    norms_input = np.linalg.norm(input_embedding, axis=1, keepdims=True)
-    norms_examples = np.linalg.norm(example_embeddings, axis=1, keepdims=True)
-    cosine_similarities = (dot_product / (norms_input * norms_examples.T))[0]
+    # Normalize embeddings once (more efficient than computing norms separately)
+    input_norm = np.linalg.norm(input_embedding, axis=1, keepdims=True)
+    example_norms = np.linalg.norm(text_embeddings, axis=1, keepdims=True)
     
-    # Get indices of n most similar examples (sorted by similarity descending)
-    similar_indices = np.argsort(cosine_similarities)[-n:][::-1]
+    # Compute cosine similarities
+    dot_product = np.dot(input_embedding, text_embeddings.T)
+    cosine_similarities = (dot_product / (input_norm * example_norms.T))[0]
     
-    return [examples[i] for i in similar_indices]
+    # Use argpartition for faster top-n selection (O(n) instead of O(n log n))
+    if n < len(examples):
+        # Get indices of top n similarities
+        top_indices = np.argpartition(cosine_similarities, -n)[-n:]
+        # Sort only the top n indices by similarity (descending)
+        top_indices = top_indices[np.argsort(cosine_similarities[top_indices])[::-1]]
+    else:
+        # If we need all examples, just sort everything
+        top_indices = np.argsort(cosine_similarities)[::-1]
+    
+    return [examples[i] for i in top_indices]
 
 def find_valid_phrases_list(text, max_tokens_in_phrase=None):
     phrases = []
