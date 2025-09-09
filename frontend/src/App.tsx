@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getAnnotationColorClasses, createTextHighlights, renderHighlightedText } from "./phraseColoring";
+import { getAnnotationColorClasses, createTextHighlights, renderHighlightedText, getUsedColorIndices, getColorByIndex } from "./phraseColoring";
 import { AspectItem, NewAspect, FieldType, TextPosition, Settings } from "./types";
 import { useDarkMode } from "./hooks/useDarkMode";
 import { DarkModeToggle } from "./components/DarkModeToggle";
@@ -716,6 +716,11 @@ function App() {
         }
       }
 
+      // Assign a smart random color to the new annotation
+      const usedColors = getUsedColorIndices(aspectList);
+      const { colorEntry, colorIndex } = getAnnotationColorClasses(aspectList.length, usedColors);
+      newAnnotation.colorIndex = colorIndex;
+
       setAspectList([...aspectList, newAnnotation]);
 
       // Reset the form
@@ -801,6 +806,19 @@ function App() {
           existingAnnotations = [];
         }
       }
+      
+      // Assign colors to existing annotations that don't have them
+      const usedColors = new Set<number>();
+      existingAnnotations.forEach((annotation, index) => {
+        if (annotation.colorIndex === undefined) {
+          const { colorEntry, colorIndex } = getAnnotationColorClasses(index, usedColors);
+          annotation.colorIndex = colorIndex;
+          usedColors.add(colorIndex);
+        } else {
+          usedColors.add(annotation.colorIndex);
+        }
+      });
+      
       setAspectList(existingAnnotations);
       setLastLoadedAnnotations(existingAnnotations);
 
@@ -860,6 +878,14 @@ function App() {
           return annotation;
         });
 
+        // Assign colors to AI predictions
+        const usedColors = new Set<number>();
+        aiAnnotations.forEach((annotation, index) => {
+          const { colorEntry, colorIndex } = getAnnotationColorClasses(index, usedColors);
+          annotation.colorIndex = colorIndex;
+          usedColors.add(colorIndex);
+        });
+
         // Add AI predictions to existing annotations
         setAspectList(aiAnnotations);
       }
@@ -898,6 +924,12 @@ function App() {
     }
 
     try {
+      // Remove colorIndex from annotations before sending to backend
+      const annotationsForBackend = annotations.map(annotation => {
+        const { colorIndex, ...annotationWithoutColor } = annotation;
+        return annotationWithoutColor;
+      });
+      
       const response = await fetch(`${backendUrl}/annotations/${currentIndex}`, {
         method: 'POST',
         headers: {
@@ -905,7 +937,7 @@ function App() {
         },
         body: JSON.stringify({
           name: "annotations",
-          value: annotations
+          value: annotationsForBackend
         }),
       });
 
@@ -1066,6 +1098,20 @@ function App() {
     }
   };
 
+  const duplicateAspectItem = (index: number): void => {
+    const aspectToDuplicate = aspectList[index];
+    const duplicatedAspect = { ...aspectToDuplicate };
+    
+    // Assign a new random color to the duplicate
+    const usedColors = getUsedColorIndices(aspectList);
+    const { colorEntry, colorIndex } = getAnnotationColorClasses(aspectList.length, usedColors);
+    duplicatedAspect.colorIndex = colorIndex;
+    
+    const updatedList = [...aspectList];
+    updatedList.splice(index + 1, 0, duplicatedAspect);
+    setAspectList(updatedList);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       {/* Header */}
@@ -1203,7 +1249,7 @@ function App() {
               onClick={handleTextClick}
               title="Click to add annotation"
             >
-              {renderHighlightedText(displayedText, createTextHighlights(displayedText, aspectList, getAnnotationColorClasses))}
+              {renderHighlightedText(displayedText, createTextHighlights(displayedText, aspectList, getColorByIndex))}
             </div>
 
             {/* Translation section */}
@@ -1340,7 +1386,8 @@ function App() {
             ) : (
               <div className="space-y-3">
                 {aspectList.map((aspect, index) => {
-                  const colorClasses = getAnnotationColorClasses(index);
+                  const colorIndex = aspect.colorIndex !== undefined ? aspect.colorIndex : index % 20;
+                  const colorClasses = getColorByIndex(colorIndex);
                   return (
                     <div key={index} className="border border-gray-200 dark:border-gray-600 rounded-lg p-3 bg-gray-50 dark:bg-gray-700 flex items-center gap-3">
                       {/* Color indicator */}
@@ -1389,6 +1436,14 @@ function App() {
                           ))}
                         </select>
                       )}
+
+                      <button
+                        onClick={() => duplicateAspectItem(index)}
+                        className="w-8 h-8 bg-blue-50 dark:bg-blue-900/30 hover:bg-blue-100 dark:hover:bg-blue-900/50 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 rounded flex-shrink-0 border border-blue-200 dark:border-blue-800"
+                        title="Duplicate"
+                      >
+                        ⊕
+                      </button>
 
                       <button
                         onClick={() => deleteAspectItem(index)}

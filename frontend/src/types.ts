@@ -9,6 +9,7 @@ export interface AspectItem {
   at_end?: number;
   ot_start?: number;
   ot_end?: number;
+  colorIndex?: number; // Store the assigned color index
 }
 
 export interface NewAspect {

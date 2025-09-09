@@ -5,6 +5,7 @@ import pandas as pd
 import json
 import os
 from fastapi import HTTPException
+import atexit
 
 app = FastAPI()
 
@@ -573,10 +574,8 @@ def get_most_similar_examples(input_text, examples, n):
     model = _get_sentence_model()
     
     if model is None:
-        # Fallback to TF-IDF if sentence-transformers is not available
-        from sklearn.feature_extraction.text import TfidfVectorizer
-        from sklearn.metrics.pairwise import cosine_similarity
-        return get_most_similar_examples_tfidf(input_text, examples, n, TfidfVectorizer, cosine_similarity)
+        print("Warning: sentence-transformers not available. Install with: pip install sentence-transformers")
+        return []  # Return empty list if sentence transformers not available
     
     # If no examples available, return empty list
     if not examples:
@@ -601,57 +600,28 @@ def get_most_similar_examples(input_text, examples, n):
         else:
             texts.append(str(ex))
     
-    # Use the cached sentence transformer model
-    from sklearn.metrics.pairwise import cosine_similarity
+    # Get embeddings for all texts (use cache when possible)
+    text_embeddings = []
+    for text in texts:
+        embedding = _get_cached_embedding(text, model)
+        text_embeddings.append(embedding)
     
-    # Encode all texts including input text
-    all_texts = texts + [input_text_str]
-    embeddings = model.encode(all_texts)
+    # Get embedding for input text
+    input_embedding = _get_cached_embedding(input_text_str, model)
     
-    # Calculate cosine similarities between input text and examples
-    input_embedding = embeddings[-1].reshape(1, -1)
-    example_embeddings = embeddings[:-1]
+    # Convert to numpy arrays for cosine similarity calculation
+    example_embeddings = np.array(text_embeddings)
+    input_embedding = input_embedding.reshape(1, -1)
     
-    cosine_similarities = cosine_similarity(input_embedding, example_embeddings)[0]
+    # Calculate cosine similarities using numpy (no sklearn needed)
+    # Compute dot product and norms
+    dot_product = np.dot(input_embedding, example_embeddings.T)
+    norms_input = np.linalg.norm(input_embedding, axis=1, keepdims=True)
+    norms_examples = np.linalg.norm(example_embeddings, axis=1, keepdims=True)
+    cosine_similarities = (dot_product / (norms_input * norms_examples.T))[0]
     
     # Get indices of n most similar examples (sorted by similarity descending)
     similar_indices = np.argsort(cosine_similarities)[-n:][::-1]
-    
-    return [examples[i] for i in similar_indices]
-
-def get_most_similar_examples_tfidf(input_text, examples, n, TfidfVectorizer, cosine_similarity):
-    """Fallback TF-IDF implementation"""
-    
-    # If no examples available, return empty list
-    if not examples:
-        return []
-    
-    # Limit n to available examples
-    n = min(n, len(examples))
-    
-    # Convert input_text to string if it's a tuple
-    if isinstance(input_text, tuple):
-        input_text_str = input_text[0]  # Assume first element is the text
-    else:
-        input_text_str = str(input_text)
-    
-    # Extract text from examples and convert to strings
-    texts = []
-    for ex in examples:
-        if isinstance(ex, dict) and 'text' in ex:
-            texts.append(str(ex['text']))
-        elif isinstance(ex, tuple):
-            texts.append(str(ex[0]))  # Assume first element is the text
-        else:
-            texts.append(str(ex))
-    
-    texts.append(input_text_str)  # add the input text to the list
-
-    vectorizer = TfidfVectorizer()
-    tfidf_matrix = vectorizer.fit_transform(texts)
-
-    cosine_similarities = cosine_similarity(tfidf_matrix[-1], tfidf_matrix[:-1])  # compare input text with all examples
-    similar_indices = np.argsort(cosine_similarities[0])[-n:][::-1]  # get indices of n most similar examples
     
     return [examples[i] for i in similar_indices]
 
@@ -813,6 +783,40 @@ async def startup_event():
 # Global variable to cache the sentence transformer model
 _sentence_model = None
 _sentence_model_available = None
+_embedding_cache = {}  # In-memory cache
+_cache_file = "embedding_cache.json"  # Persistent cache file
+
+def _load_embedding_cache():
+    """Load embedding cache from file"""
+    global _embedding_cache
+    try:
+        import os
+        if os.path.exists(_cache_file):
+            with open(_cache_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                # Convert list back to numpy array
+                for key, value in data.items():
+                    _embedding_cache[key] = np.array(value)
+    except Exception as e:
+        print(f"Warning: Could not load embedding cache: {e}")
+        _embedding_cache = {}
+
+def _save_embedding_cache():
+    """Save embedding cache to file"""
+    global _embedding_cache
+    try:
+        # Convert numpy arrays to lists for JSON serialization
+        cache_data = {}
+        for key, value in _embedding_cache.items():
+            if isinstance(value, np.ndarray):
+                cache_data[key] = value.tolist()
+            else:
+                cache_data[key] = value
+        
+        with open(_cache_file, 'w', encoding='utf-8') as f:
+            json.dump(cache_data, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Warning: Could not save embedding cache: {e}")
 
 def _get_sentence_model():
     """Get or load the sentence transformer model (cached)"""
@@ -828,7 +832,37 @@ def _get_sentence_model():
         from sentence_transformers import SentenceTransformer
         _sentence_model = SentenceTransformer('all-MiniLM-L6-v2')
         _sentence_model_available = True
+        # Load cache when model is first loaded
+        _load_embedding_cache()
         return _sentence_model
     except ImportError:
         _sentence_model_available = False
         return None
+
+def _get_cached_embedding(text, model):
+    """Get embedding from cache or compute and cache it"""
+    global _embedding_cache
+    
+    # Use text as cache key
+    cache_key = text
+    
+    if cache_key in _embedding_cache:
+        return _embedding_cache[cache_key]
+    
+    # Compute embedding and cache it
+    embedding = model.encode([text])[0]
+    _embedding_cache[cache_key] = embedding
+    
+    # Save cache to file periodically (every 10 new embeddings)
+    if len(_embedding_cache) % 10 == 0:
+        _save_embedding_cache()
+    
+    return embedding
+
+# Register cleanup function to save cache on program exit
+def _cleanup_embedding_cache():
+    """Save embedding cache before program exits"""
+    if _embedding_cache:
+        _save_embedding_cache()
+
+atexit.register(_cleanup_embedding_cache)

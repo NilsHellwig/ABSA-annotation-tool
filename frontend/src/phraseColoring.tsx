@@ -78,9 +78,48 @@ export const tailwindColorClasses: ColorEntry[] = [
     aspectRgb: [16, 185, 129], opinionRgb: [110, 231, 183], name: 'emerald-dark' }
 ];
 
-// Get color classes for annotation by index
-export const getAnnotationColorClasses = (index: number): ColorEntry => {
-  return tailwindColorClasses[index % tailwindColorClasses.length];
+// Get color classes for annotation by index, with smart random selection
+export const getAnnotationColorClasses = (index: number, usedColors: Set<number> = new Set()): { colorEntry: ColorEntry, colorIndex: number } => {
+  // Get available colors (not used yet)
+  const availableIndices = [];
+  for (let i = 0; i < tailwindColorClasses.length; i++) {
+    if (!usedColors.has(i)) {
+      availableIndices.push(i);
+    }
+  }
+  
+  let selectedIndex: number;
+  
+  // If we have available colors, pick a random one
+  if (availableIndices.length > 0) {
+    selectedIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+  } else {
+    // If all colors are used, pick a completely random one
+    selectedIndex = Math.floor(Math.random() * tailwindColorClasses.length);
+  }
+  
+  return {
+    colorEntry: tailwindColorClasses[selectedIndex],
+    colorIndex: selectedIndex
+  };
+};
+
+// Helper function to get used color indices from aspect list
+export const getUsedColorIndices = (aspectList: AspectItem[]): Set<number> => {
+  const usedColors = new Set<number>();
+  
+  aspectList.forEach((aspect) => {
+    if (aspect.colorIndex !== undefined) {
+      usedColors.add(aspect.colorIndex);
+    }
+  });
+  
+  return usedColors;
+};
+
+// Helper function to get color by index
+export const getColorByIndex = (colorIndex: number): ColorEntry => {
+  return tailwindColorClasses[colorIndex % tailwindColorClasses.length];
 };
 
 // Function to mix colors mathematically
@@ -98,13 +137,15 @@ export const mixColors = (aspectRgb: [number, number, number], opinionRgb: [numb
 };
 
 // Create highlighting information for the displayed text
-export const createTextHighlights = (displayedText: string, aspectList: AspectItem[], getAnnotationColorClasses: (index: number) => ColorEntry): TextHighlight[] => {
+export const createTextHighlights = (displayedText: string, aspectList: AspectItem[], getColorByIndex: (colorIndex: number) => ColorEntry): TextHighlight[] => {
   if (!displayedText || aspectList.length === 0) return [];
 
   const highlights: TextHighlight[] = [];
   
   aspectList.forEach((annotation, index) => {
-    const colorClasses = getAnnotationColorClasses(index);
+    // Use stored colorIndex or fallback to sequential assignment
+    const colorIndex = annotation.colorIndex !== undefined ? annotation.colorIndex : index % tailwindColorClasses.length;
+    const colorClasses = getColorByIndex(colorIndex);
     
     // Process aspect term
     if (annotation.aspect_term && annotation.aspect_term !== "NULL" && 

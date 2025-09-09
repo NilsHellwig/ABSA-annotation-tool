@@ -38,7 +38,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Per-example aspect categories** — support for `aspect_category_list` in `/data/{index}` to render sample-specific categories (falls back to defaults).
 - **AI-Powered Predictions** - Optional AI assistance with `--enable-preprediction` flag for automated annotation suggestions based on your previous annotations
 - **LLM Integration** - Uses Gemma 3:4B model (default) for intelligent aspect and sentiment prediction
-- **Smart Similarity Matching** - Leverages sentence transformers (if available) or sklearn TF-IDF for finding relevant examples
+- **Smart Similarity Matching** - Uses sentence transformers for finding relevant examples with semantic understanding
 
 ## 📊 Analytics Features
 
@@ -55,14 +55,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). All processing happens locally on your machine via the Ollama API, ensuring data privacy. You can enable this feature with the `--enable-preprediction` CLI flag. The only prerequisite is having [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
 
 ### Similarity Matching
-For finding relevant examples to provide context to the LLM, the tool uses:
-- **Sentence Transformers** (preferred) - Semantic similarity using the lightweight `all-MiniLM-L6-v2` model (~23MB)
-- **Sklearn TF-IDF** (fallback) - Lexical similarity if sentence-transformers is not available
-
-Install sentence-transformers for improved similarity matching:
-```bash
-pip install sentence-transformers
-```
+For finding relevant examples to provide context to the LLM, the tool uses **Sentence Transformers** for semantic similarity using the lightweight `all-MiniLM-L6-v2` model (~23MB). This provides much better context matching than traditional lexical approaches.
 
 ### How It Works
 3. **UI Integration** - Click the ✨ AI button next to "Text to annotate" to get suggestions
@@ -76,7 +69,7 @@ pip install sentence-transformers
 
 ```bash
 # Install Python dependencies
-pip install fastapi uvicorn pandas
+pip install fastapi uvicorn pandas sentence-transformers
 
 # Install frontend dependencies  
 cd frontend && npm install && cd ..
@@ -97,7 +90,7 @@ cd frontend && npm install && cd ..
 #### Backend Setup
 ```bash
 # Install dependencies
-pip install fastapi uvicorn pandas
+pip install fastapi uvicorn pandas sentence-transformers
 
 # Start the server
 uvicorn main:app --reload --port 8000
