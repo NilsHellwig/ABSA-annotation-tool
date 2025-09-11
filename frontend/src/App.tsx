@@ -1258,8 +1258,8 @@ function App() {
                       <span className="text-sm">AI thinking...</span>
                     </div>
                   ) : (
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm">✨ AI</span>
+                    <div className="flex items-center flex-row gap-2">
+                      <span className="flex items-center gap-1 text-sm"><SparkleIcon size={16} weight="fill" /> AI</span>
                     </div>
                   )}
                 </button>
@@ -1414,7 +1414,7 @@ function App() {
                   return (
                     <div key={index} className={`border rounded-lg p-3 flex items-center gap-3 ${baseClasses}`}>
                       {/* Color indicator */}
-                      {aspect.isLLMGenerated ? <SparkleIcon size={16} weight="fill" /> : <SparkleIcon size={16} weight="fill" color="#00000000" />}
+                      {aspect.isLLMGenerated ? <SparkleIcon size={16} weight="fill" color="black" /> : <SparkleIcon size={16} weight="fill" color="#00000000" />}
                       <div className={`flex justify-center items-center w-6 h-6 rounded-full ${colorClasses.bg300} flex-shrink-0`}>
                         
                       </div>
