@@ -1414,7 +1414,7 @@ function App() {
                   return (
                     <div key={index} className={`border rounded-lg p-3 flex items-center gap-3 ${baseClasses}`}>
                       {/* Color indicator */}
-                      {aspect.isLLMGenerated ? <SparkleIcon size={16} weight="fill" color="black" /> : <SparkleIcon size={16} weight="fill" color="#00000000" />}
+                      {aspect.isLLMGenerated ? <SparkleIcon size={16} weight="fill" color={isDark ? "white" : "black"} /> : <SparkleIcon size={16} weight="fill" color="#00000000" />}
                       <div className={`flex justify-center items-center w-6 h-6 rounded-full ${colorClasses.bg300} flex-shrink-0`}>
                         
                       </div>
