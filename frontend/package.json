@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

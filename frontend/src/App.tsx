@@ -4,6 +4,7 @@ import { AspectItem, NewAspect, FieldType, TextPosition, Settings } from "./type
 import { useDarkMode } from "./hooks/useDarkMode";
 import { DarkModeToggle } from "./components/DarkModeToggle";
 import { CustomCheckbox } from "./components/CustomCheckbox";
+import { CopyIcon, SparkleIcon } from "@phosphor-icons/react";
 
 function App() {
   const { theme, toggleTheme, isDark } = useDarkMode();
@@ -785,7 +786,7 @@ function App() {
   const fetchData = async (index: number): Promise<void> => {
     // Abort any ongoing AI prediction when changing index
     abortAIPrediction();
-    
+
     try {
       const response = await fetch(`${backendUrl}/data/${index}`);
       const data = await response.json();
@@ -806,7 +807,7 @@ function App() {
           existingAnnotations = [];
         }
       }
-      
+
       // Assign colors to existing annotations that don't have them
       const usedColors = new Set<number>();
       existingAnnotations.forEach((annotation, index) => {
@@ -818,7 +819,7 @@ function App() {
           usedColors.add(annotation.colorIndex);
         }
       });
-      
+
       setAspectList(existingAnnotations);
       setLastLoadedAnnotations(existingAnnotations);
 
@@ -841,10 +842,10 @@ function App() {
   const fetchAIPrediction = async (): Promise<void> => {
     // Abort any existing AI prediction
     abortAIPrediction();
-    
+
     const controller = new AbortController();
     setAiAbortController(controller);
-    
+
     try {
       setIsAIPredicting(true);
       const response = await fetch(`${backendUrl}/ai_prediction/${currentIndex}`, {
@@ -859,9 +860,10 @@ function App() {
             aspect_term: aspect.aspect_term || "",
             aspect_category: aspect.aspect_category || "",
             sentiment_polarity: aspect.sentiment_polarity || "",
-            opinion_term: aspect.opinion_term || ""
+            opinion_term: aspect.opinion_term || "",
+            isLLMGenerated: true // Mark as LLM-generated
           };
-          
+
           if (aspect.at_start !== undefined && aspect.at_start !== null) {
             annotation.at_start = aspect.at_start;
           }
@@ -874,20 +876,26 @@ function App() {
           if (aspect.ot_end !== undefined && aspect.ot_end !== null) {
             annotation.ot_end = aspect.ot_end;
           }
-          
+
           return annotation;
         });
 
-        // Assign colors to AI predictions
-        const usedColors = new Set<number>();
-        aiAnnotations.forEach((annotation, index) => {
-          const { colorEntry, colorIndex } = getAnnotationColorClasses(index, usedColors);
-          annotation.colorIndex = colorIndex;
-          usedColors.add(colorIndex);
+        // Filter out duplicates and assign colors to non-duplicate AI predictions
+        const nonDuplicateAIAnnotations: AspectItem[] = [];
+        const usedColors = getUsedColorIndices(aspectList);
+        aiAnnotations.forEach((annotation) => {
+          if (!isDuplicateAnnotation(annotation, aspectList)) {
+            const { colorEntry, colorIndex } = getAnnotationColorClasses(aspectList.length + nonDuplicateAIAnnotations.length, usedColors);
+            annotation.colorIndex = colorIndex;
+            usedColors.add(colorIndex);
+            nonDuplicateAIAnnotations.push(annotation);
+          }
         });
 
-        // Add AI predictions to existing annotations
-        setAspectList(aiAnnotations);
+        // Append non-duplicate AI predictions to existing annotations
+        if (nonDuplicateAIAnnotations.length > 0) {
+          setAspectList([...aspectList, ...nonDuplicateAIAnnotations]);
+        }
       }
     } catch (error) {
       if (error instanceof Error && error.name === 'AbortError') {
@@ -915,7 +923,7 @@ function App() {
   const saveAnnotations = async (annotations: AspectItem[], skipTiming: boolean = false): Promise<boolean> => {
     // Abort any ongoing AI prediction when saving
     abortAIPrediction();
-    
+
     // Timing: Duration berechnen und Änderung prüfen (nur wenn nicht übersprungen)
     if (!skipTiming) {
       const duration = getCurrentDuration();
@@ -929,7 +937,7 @@ function App() {
         const { colorIndex, ...annotationWithoutColor } = annotation;
         return annotationWithoutColor;
       });
-      
+
       const response = await fetch(`${backendUrl}/annotations/${currentIndex}`, {
         method: 'POST',
         headers: {
@@ -1035,10 +1043,10 @@ function App() {
 
   // Auto-trigger AI prediction when navigating to next item
   useEffect(() => {
-    const shouldTriggerAIPrediction = 
-      enablePrePrediction && 
-      currentIndex === settingsCurrentIndex && 
-      !isAIPredicting && 
+    const shouldTriggerAIPrediction =
+      enablePrePrediction &&
+      currentIndex === settingsCurrentIndex &&
+      !isAIPredicting &&
       aspectList.length === 0; // Only if no annotations exist yet
 
     if (shouldTriggerAIPrediction) {
@@ -1100,16 +1108,28 @@ function App() {
 
   const duplicateAspectItem = (index: number): void => {
     const aspectToDuplicate = aspectList[index];
-    const duplicatedAspect = { ...aspectToDuplicate };
-    
+    const duplicatedAspect = { ...aspectToDuplicate, isLLMGenerated: false }; // Reset LLM flag for manual duplicates
+
     // Assign a new random color to the duplicate
     const usedColors = getUsedColorIndices(aspectList);
     const { colorEntry, colorIndex } = getAnnotationColorClasses(aspectList.length, usedColors);
     duplicatedAspect.colorIndex = colorIndex;
-    
+
     const updatedList = [...aspectList];
     updatedList.splice(index + 1, 0, duplicatedAspect);
     setAspectList(updatedList);
+  };
+
+  const isDuplicateAnnotation = (newAnnotation: AspectItem, existingAnnotations: AspectItem[]): boolean => {
+    return existingAnnotations.some(existing => {
+      // Compare all considered sentiment elements
+      const elementsToCompare = consideredSentimentElements;
+      return elementsToCompare.every(element => {
+        const newValue = (newAnnotation as any)[element];
+        const existingValue = (existing as any)[element];
+        return newValue === existingValue;
+      });
+    });
   };
 
   return (
@@ -1196,8 +1216,8 @@ function App() {
                       // Timer resetten bei Navigation
                       resetTimer();
                       // If settingsCurrentIndex equals maxIndex, go to maxIndex - 1
-                      const targetIndex = settingsCurrentIndex >= maxIndex && maxIndex > 0 
-                        ? settingsCurrentIndex - 1 
+                      const targetIndex = settingsCurrentIndex >= maxIndex && maxIndex > 0
+                        ? settingsCurrentIndex - 1
                         : settingsCurrentIndex;
                       setCurrentIndex(targetIndex);
                       await fetchData(targetIndex);
@@ -1388,10 +1408,16 @@ function App() {
                 {aspectList.map((aspect, index) => {
                   const colorIndex = aspect.colorIndex !== undefined ? aspect.colorIndex : index % 20;
                   const colorClasses = getColorByIndex(colorIndex);
+                  const baseClasses = aspect.isLLMGenerated
+                    ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-700'
+                    : 'bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600';
                   return (
-                    <div key={index} className="border border-gray-200 dark:border-gray-600 rounded-lg p-3 bg-gray-50 dark:bg-gray-700 flex items-center gap-3">
+                    <div key={index} className={`border rounded-lg p-3 flex items-center gap-3 ${baseClasses}`}>
                       {/* Color indicator */}
-                      <div className={`w-4 h-4 rounded-full ${colorClasses.bg300} flex-shrink-0`}></div>
+                      {aspect.isLLMGenerated ? <SparkleIcon size={16} weight="fill" /> : <SparkleIcon size={16} weight="fill" color="#00000000" />}
+                      <div className={`flex justify-center items-center w-6 h-6 rounded-full ${colorClasses.bg300} flex-shrink-0`}>
+                        
+                      </div>
 
                       {consideredSentimentElements.includes("aspect_term") && (
                         <div
@@ -1439,10 +1465,10 @@ function App() {
 
                       <button
                         onClick={() => duplicateAspectItem(index)}
-                        className="w-8 h-8 bg-blue-50 dark:bg-blue-900/30 hover:bg-blue-100 dark:hover:bg-blue-900/50 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 rounded flex-shrink-0 border border-blue-200 dark:border-blue-800"
+                        className="flex justify-center items-center w-8 h-8 bg-blue-50 dark:bg-blue-900/30 hover:bg-blue-100 dark:hover:bg-blue-900/50 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 rounded flex-shrink-0 border border-blue-200 dark:border-blue-800"
                         title="Duplicate"
                       >
-                        ⊕
+                        <CopyIcon size={16} />
                       </button>
 
                       <button
