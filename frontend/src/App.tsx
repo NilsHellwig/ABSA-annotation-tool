@@ -752,7 +752,7 @@ function App() {
       setSavePhrasePositions(settings["save_phrase_positions"] !== false); // Default to true
       setClickOnToken(settings["click_on_token"] !== false); // Default to true
       setStoreTime(settings["store_time"] === true); // Default to false
-      setShowAvgAnnotationTime(settings["show_avg_annotation_time"] === true); // Default to false
+      setShowAvgAnnotationTime(settings["display_avg_annotation_time"] === true); // Default to false
       setEnablePrePrediction(settings["enable_pre_prediction"] === true); // Default to false
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
@@ -760,7 +760,7 @@ function App() {
       setSessionId(settings["session_id"] || null);
 
       // Load average annotation time if enabled
-      if (settings["show_avg_annotation_time"] === true) {
+      if (settings["display_avg_annotation_time"] === true) {
         await fetchAvgAnnotationTime();
       }
 

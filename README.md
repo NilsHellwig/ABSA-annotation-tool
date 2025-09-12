@@ -176,8 +176,8 @@ You can save and reuse configurations with JSON files:
 | `--implicit-aspect` | Allow implicit aspect terms | `True` |
 | `--no-implicit-aspect` | Disable implicit aspect terms | - |
 | `--implicit-opinion` | Allow implicit opinion terms | `False` |
-| `--disable-implicit-opinion` | Disable implicit opinion terms | `True` (default) |
-| `--disable-clean-phrases` | Disable automatic punctuation cleaning from phrase start/end | Enabled by default |
+| `--disable_implicit_opinion` | Disable implicit opinion terms | `True` (default) |
+| `--disable_clean_phrases` | Disable automatic punctuation cleaning from phrase start/end | Enabled by default |
 | `--disable-save-positions` | Disable saving phrase positions (at_start, at_end, ot_start, ot_end) for faster processing | Enabled by default |
 | `--disable-click-on-token` | Disable click-on-token feature (precise character clicking instead of token snapping) | Enabled by default |
 | `--auto-positions` | Enable automatic position filling** on startup for existing phrases without positions | Disabled by default |
@@ -402,7 +402,7 @@ By default, the tool automatically cleans selected phrases by:
 - ` , great,  ` → `great` (whitespace and commas removed)
 - `(excellent)` → `excellent` (parentheses removed)
 
-This ensures consistent annotation quality and removes common annotation errors. To disable phrase cleaning, use the `--disable-clean-phrases` CLI option.
+This ensures consistent annotation quality and removes common annotation errors. To disable phrase cleaning, use the `--disable_clean_phrases` CLI option.
 
 **Important**: Both CSV and JSON files must be saved with UTF-8 encoding to support international characters and emojis.
 

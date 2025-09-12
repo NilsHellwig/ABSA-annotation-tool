@@ -67,7 +67,7 @@ class ABSAAnnotatorConfig:
             "click_on_token": True,
             "auto_positions": False,
             "store_time": False,
-            "show_avg_annotation_time": False,
+            "display_avg_annotation_time": False,
             "enable_pre_prediction": False
         }
     
@@ -115,9 +115,9 @@ class ABSAAnnotatorConfig:
         """Set whether timing data should be stored (duration and change status for each annotation session)."""
         self.config["store_time"] = enabled
     
-    def set_show_avg_annotation_time(self, enabled: bool) -> None:
+    def set_display_avg_annotation_time(self, enabled: bool) -> None:
         """Set whether average annotation time should be displayed."""
-        self.config["show_avg_annotation_time"] = enabled
+        self.config["display_avg_annotation_time"] = enabled
     
     def set_enable_pre_prediction(self, enabled: bool) -> None:
         """Set whether AI pre-prediction is enabled."""
@@ -387,14 +387,14 @@ Examples:
     )
     
     parser.add_argument(
-        "--disable-implicit-opinion",
+        "--disable_implicit_opinion",
         action="store_true",
         default=True,
         help="Disable implicit opinion terms (default)"
     )
     
     parser.add_argument(
-        "--disable-clean-phrases",
+        "--disable_clean_phrases",
         action="store_true",
         help="Disable automatic cleaning of punctuation from selected phrases"
     )
@@ -530,16 +530,16 @@ Examples:
     
     if args.implicit_opinion:
         config.set_implicit_opinion_allowed(True)
-    elif args.no_implicit_opinion:
+    elif args.disable_implicit_opinion:
         config.set_implicit_opinion_allowed(False)
     
-    if args.no_clean_phrases:
+    if args.disable_clean_phrases:
         config.set_auto_clean_phrases(False)
     
-    if args.no_save_positions:
+    if args.disable_save_positions:
         config.set_save_phrase_positions(False)
     
-    if args.no_click_on_token:
+    if args.disable_click_on_token:
         config.set_click_on_token(False)
     
     if args.auto_positions:
@@ -548,8 +548,8 @@ Examples:
     if args.store_time:
         config.set_store_time(True)
     
-    if args.show_avg_annotation_time:
-        config.set_show_avg_annotation_time(True)
+    if args.display_avg_annotation_time:
+        config.set_display_avg_annotation_time(True)
     
     if args.enable_pre_prediction:
         config.set_enable_pre_prediction(True)
