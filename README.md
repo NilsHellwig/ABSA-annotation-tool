@@ -36,7 +36,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Timing Analytics** - Optional timing data collection for annotation behavior analysis
 - **CLI Tool** - Command-line configuration for different domains
 - **Per-example aspect categories** — support for `aspect_category_list` in `/data/{index}` to render sample-specific categories (falls back to defaults).
-- **AI-Powered Predictions** - Optional AI assistance with `--enable-preprediction` flag for automated annotation suggestions based on your previous annotations
+- **AI-Powered Predictions** - Optional AI assistance with `--enable-ai-suggestions` flag for automated annotation suggestions based on your previous annotations
 - **LLM Integration** - Uses Gemma 3:4B model (default) for intelligent aspect and sentiment prediction
 - **Smart Similarity Matching** - Uses sentence transformers for finding relevant examples with semantic understanding
 
@@ -52,7 +52,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 
 ## 🤖 AI-Powered Predictions with Ollama
 
-The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). All processing happens locally on your machine via the Ollama API, ensuring data privacy. You can enable this feature with the `--enable-preprediction` CLI flag. The only prerequisite is having [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
+The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). All processing happens locally on your machine via the Ollama API, ensuring data privacy. You can enable this feature with the `--enable-ai-suggestions` CLI flag. The only prerequisite is having [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
 
 ### Similarity Matching
 For finding relevant examples to provide context to the LLM, the tool uses **Sentence Transformers** for semantic similarity using the lightweight `all-MiniLM-L6-v2` model (~23MB). This provides much better context matching than traditional lexical approaches.
@@ -164,27 +164,27 @@ You can save and reuse configurations with JSON files:
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `--backend` | **Start only backend server** | - |
+| `--backend` | Start only backend server | - |
 | `--backend-port` | Backend server port | `8000` |
 | `--frontend-port` | Frontend server port | `3000` |  
 | `--backend-ip` | Backend server IP address | `127.0.0.1` |
 | `--frontend-ip` | Frontend server IP address | `127.0.0.1` |
-| `--session-id` | **Session identifier** for annotation tracking | `None` |
+| `--session-id` | Session identifier for annotation tracking | `None` |
 | `--elements` | Sentiment elements to annotate | `aspect_term, aspect_category, sentiment_polarity, opinion_term` |
 | `--polarities` | Available sentiment polarities | `positive, negative, neutral` |
 | `--categories` | Available aspect categories | Restaurant domain (18 categories) |
 | `--implicit-aspect` | Allow implicit aspect terms | `True` |
 | `--no-implicit-aspect` | Disable implicit aspect terms | - |
 | `--implicit-opinion` | Allow implicit opinion terms | `False` |
-| `--no-implicit-opinion` | Disable implicit opinion terms | `True` (default) |
-| `--no-clean-phrases` | **Disable automatic punctuation cleaning** from phrase start/end | Enabled by default |
-| `--no-save-positions` | **Disable saving phrase positions** (at_start, at_end, ot_start, ot_end) for faster processing | Enabled by default |
-| `--no-click-on-token` | **Disable click-on-token feature** (precise character clicking instead of token snapping) | Enabled by default |
-| `--auto-positions` | **Enable automatic position filling** on startup for existing phrases without positions | Disabled by default |
-| `--store-time` | **Store timing data** for annotation sessions (duration and change detection) | Disabled by default |
-| `--show-avg-annotation-time` | **Display average annotation time** in the interface (requires timing data) | Disabled by default |
-| `--enable-preprediction` | **Enable AI-powered prediction** for automated annotation suggestions using LLM | Disabled by default |
-| `--llm-model` | **Language model for predictions** (e.g., Gemma 3:4B) | `gemma-3:4b` |
+| `--disable-implicit-opinion` | Disable implicit opinion terms | `True` (default) |
+| `--disable-clean-phrases` | Disable automatic punctuation cleaning from phrase start/end | Enabled by default |
+| `--disable-save-positions` | Disable saving phrase positions (at_start, at_end, ot_start, ot_end) for faster processing | Enabled by default |
+| `--disable-click-on-token` | Disable click-on-token feature (precise character clicking instead of token snapping) | Enabled by default |
+| `--auto-positions` | Enable automatic position filling** on startup for existing phrases without positions | Disabled by default |
+| `--store-time` | Store timing data for annotation sessions (duration and change detection) | Disabled by default |
+| `--display-avg-annotation-time` | Display average annotation time in the interface (requires timing data) | Disabled by default |
+| `--enable-ai-suggestions` | Enable AI-powered prediction for automated annotation suggestions using LLM | Disabled by default |
+| `--llm-model` | Language model for predictions (e.g., Gemma 3:4B) | `gemma-3:4b` |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 
@@ -320,7 +320,7 @@ When both timing data collection and average time display are enabled, the inter
 
 ```bash
 # Enable timing collection and average time display
-./absa-annotator examples/restaurant_reviews.csv --store-time --show-avg-annotation-time
+./absa-annotator examples/restaurant_reviews.csv --store-time --display-avg-annotation-time
 ```
 
 This displays the average annotation time between the dark mode toggle and index input field. The statistic is calculated by:
@@ -388,7 +388,7 @@ The tool will automatically add position data on startup:
 
 **Important**: Position data is only saved when the corresponding term has an actual value (not NULL or empty). This ensures data consistency and prevents storing meaningless position information for implicit aspects/opinions.
 
-To disable position saving entirely, use the `--no-save-positions` CLI option.
+To disable position saving entirely, use the `--disable-save-positions` CLI option.
 
 ### Automatic Phrase Cleaning
 
@@ -402,7 +402,7 @@ By default, the tool automatically cleans selected phrases by:
 - ` , great,  ` → `great` (whitespace and commas removed)
 - `(excellent)` → `excellent` (parentheses removed)
 
-This ensures consistent annotation quality and removes common annotation errors. To disable phrase cleaning, use the `--no-clean-phrases` CLI option.
+This ensures consistent annotation quality and removes common annotation errors. To disable phrase cleaning, use the `--disable-clean-phrases` CLI option.
 
 **Important**: Both CSV and JSON files must be saved with UTF-8 encoding to support international characters and emojis.
 

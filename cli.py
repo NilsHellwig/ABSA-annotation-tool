@@ -387,26 +387,26 @@ Examples:
     )
     
     parser.add_argument(
-        "--no-implicit-opinion",
+        "--disable-implicit-opinion",
         action="store_true",
         default=True,
         help="Disable implicit opinion terms (default)"
     )
     
     parser.add_argument(
-        "--no-clean-phrases",
+        "--disable-clean-phrases",
         action="store_true",
         help="Disable automatic cleaning of punctuation from selected phrases"
     )
     
     parser.add_argument(
-        "--no-save-positions",
+        "--disable-save-positions",
         action="store_true",
         help="Disable saving of phrase start/end positions (at_start, at_end, ot_start, ot_end)"
     )
     
     parser.add_argument(
-        "--no-click-on-token",
+        "--disable-click-on-token",
         action="store_true", 
         help="Disable click-on-token feature (precise character clicking instead of token snapping)"
     )
@@ -424,13 +424,13 @@ Examples:
     )
     
     parser.add_argument(
-        "--show-avg-annotation-time",
+        "--display-avg-annotation-time",
         action="store_true",
         help="Zeige die durchschnittliche Zeit pro Annotation an (in Sekunden)"
     )
     
     parser.add_argument(
-        "--enable-preprediction",
+        "--enable-ai-suggestions",
         dest="enable_pre_prediction",
         action="store_true",
         help="Enable AI pre-prediction feature (default: disabled)"

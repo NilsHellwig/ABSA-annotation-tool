@@ -720,7 +720,7 @@ def get_ai_prediction(data_idx: int):
         predictions = predictions["aspects"]
         
         # if position saving is enabled, add positions to predictions
-        if config.get('save_phrase_positions', True) and not config.get("no-save-positions", False):
+        if config.get('save_phrase_positions', True) and not config.get("disable-save-positions", False):
             for aspect in predictions:
                 if 'aspect_term' in aspect and aspect['aspect_term'] != 'NULL':
                     start, end = find_phrase_positions(text, aspect['aspect_term'])
