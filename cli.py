@@ -375,7 +375,7 @@ Examples:
     )
     
     parser.add_argument(
-        "--no-implicit-aspect",
+        "--disable-implicit-aspect",
         action="store_true",
         help="Disable implicit aspect terms"
     )
@@ -430,7 +430,7 @@ Examples:
     )
     
     parser.add_argument(
-        "--enable-ai-suggestions",
+        "--ai-suggestions",
         dest="enable_pre_prediction",
         action="store_true",
         help="Enable AI pre-prediction feature (default: disabled)"
@@ -523,7 +523,7 @@ Examples:
     if args.categories:
         config.set_aspect_categories(args.categories)
     
-    if args.no_implicit_aspect:
+    if args.disable_implicit_aspect:
         config.set_implicit_aspect_allowed(False)
     elif args.implicit_aspect:
         config.set_implicit_aspect_allowed(True)

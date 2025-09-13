@@ -34,13 +34,27 @@
         ]
     },
     {
-        "text": "The pizza was decent and the wine selection was good.",
-        "label": []
+        "text": "The pizza was decent and the wine selection was good."
     },
     {
         "text": "We waited over an hour for our table despite having a reservation."
     },
     {
         "text": "The staff was incredibly rude and the music was way too loud."
+    },
+    {
+        "text": "The dessert menu was extensive but the prices were reasonable."
+    },
+    {
+        "text": "I loved the cozy ambiance and the friendly waitstaff."
+    },
+    {
+        "text": "The restaurant was clean and well-maintained throughout."
+    },
+    {
+        "text": "Parking was convenient and the location was perfect."
+    },
+    {
+        "text": "The menu offered great variety for different dietary needs."
     }
 ]

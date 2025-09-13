@@ -36,7 +36,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Timing Analytics** - Optional timing data collection for annotation behavior analysis
 - **CLI Tool** - Command-line configuration for different domains
 - **Per-example aspect categories** — support for `aspect_category_list` in `/data/{index}` to render sample-specific categories (falls back to defaults).
-- **AI-Powered Predictions** - Optional AI assistance with `--enable-ai-suggestions` flag for automated annotation suggestions based on your previous annotations
+- **AI-Powered Predictions** - Optional AI assistance with `--ai-suggestions` flag for automated annotation suggestions based on your previous annotations
 - **LLM Integration** - Uses Gemma 3:4B model (default) for intelligent aspect and sentiment prediction
 - **Smart Similarity Matching** - Uses sentence transformers for finding relevant examples with semantic understanding
 
@@ -52,7 +52,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 
 ## 🤖 AI-Powered Predictions with Ollama
 
-The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). All processing happens locally on your machine via the Ollama API, ensuring data privacy. You can enable this feature with the `--enable-ai-suggestions` CLI flag. The only prerequisite is having [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
+The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). All processing happens locally on your machine via the Ollama API, ensuring data privacy. You can enable this feature with the `--ai-suggestions` CLI flag. The only prerequisite is having [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
 
 ### Similarity Matching
 For finding relevant examples to provide context to the LLM, the tool uses **Sentence Transformers** for semantic similarity using the lightweight `all-MiniLM-L6-v2` model (~23MB). This provides much better context matching than traditional lexical approaches.
@@ -119,7 +119,7 @@ The `examples/` folder contains sample data to get you started:
 | File | Format | Description |
 |------|--------|-------------|
 | `restaurant_reviews.csv` | CSV | 10 restaurant reviews in CSV format with English text and German translations |
-| `restaurant_reviews.json` | JSON | Same reviews in JSON format with additional metadata (restaurant names, dates) |
+| `restaurant_reviews.json` | JSON | Same reviews in JSON format with additional metadata |
 | `example_config.json` | JSON | Example configuration file with restaurant domain settings |
 
 ---
@@ -174,7 +174,7 @@ You can save and reuse configurations with JSON files:
 | `--polarities` | Available sentiment polarities | `positive, negative, neutral` |
 | `--categories` | Available aspect categories | Restaurant domain (18 categories) |
 | `--implicit-aspect` | Allow implicit aspect terms | `True` |
-| `--no-implicit-aspect` | Disable implicit aspect terms | - |
+| `--disable-implicit-aspect` | Disable implicit aspect terms | - |
 | `--implicit-opinion` | Allow implicit opinion terms | `False` |
 | `--disable_implicit_opinion` | Disable implicit opinion terms | `True` (default) |
 | `--disable_clean_phrases` | Disable automatic punctuation cleaning from phrase start/end | Enabled by default |
@@ -183,7 +183,7 @@ You can save and reuse configurations with JSON files:
 | `--auto-positions` | Enable automatic position filling** on startup for existing phrases without positions | Disabled by default |
 | `--store-time` | Store timing data for annotation sessions (duration and change detection) | Disabled by default |
 | `--display-avg-annotation-time` | Display average annotation time in the interface (requires timing data) | Disabled by default |
-| `--enable-ai-suggestions` | Enable AI-powered prediction for automated annotation suggestions using LLM | Disabled by default |
+| `--ai-suggestions` | Enable AI-powered prediction for automated annotation suggestions using LLM | Disabled by default |
 | `--llm-model` | Language model for predictions (e.g., Gemma 3:4B) | `gemma-3:4b` |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
