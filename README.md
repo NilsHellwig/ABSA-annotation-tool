@@ -1,4 +1,4 @@
-# 🎯 ABSA Annotation Tool
+# 🎯 AnnoABSA: Annotation Tool for Aspect-based Sentiment Analysis
 
 > *A modern, intuitive web interface for Aspect-Based Sentiment Analysis annotation*
 
@@ -13,7 +13,7 @@
 
 This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (ABSA)** through a modern web interface built with **React**, **TypeScript**, and **Vite**. You can select text phrases by clicking, assign sentiment labels (positive, negative, neutral) to specific aspects, and categorize them into predefined or custom categories. The tool supports configuring any number of sentiment elements - choose from the standard aspect_term, aspect_category, sentiment_polarity, and opinion_term, or define your own elements. It handles both **CSV files** (UTF-8 encoded with `text,label,translation` structure) and **JSON files** (flexible object structure), supports multilingual data with optional translation display, and provides progress tracking through navigation, session IDs, and real-time annotation status.
 
-![ABSA Annotation Tool Interface](docs/user-interface.png)
+![AnnoABSA Interface](docs/user-interface.png)
 
 ## ✨ Features
 

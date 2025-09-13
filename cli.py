@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ABSA Annotation Tool CLI
-A command-line interface for configuring and running the ABSA annotation tool.
+A command-line interface for configuring and running AnnoABSA.
 """
 
 import argparse
@@ -43,7 +43,7 @@ signal.signal(signal.SIGINT, signal_handler)
 signal.signal(signal.SIGTERM, signal_handler)
 
 class ABSAAnnotatorConfig:
-    """Configuration manager for ABSA annotation tool."""
+    """Configuration manager for AnnoABSA."""
     
     def __init__(self, csv_path: str):
         self.csv_path = csv_path
@@ -247,7 +247,7 @@ def start_frontend(port: int = 3000, host: str = "localhost", backend_host: str 
 
 def start_full_app(backend_port: int = 8000, backend_host: str = "localhost", frontend_port: int = 3000, frontend_host: str = "localhost", data_path: str = None, config: ABSAAnnotatorConfig = None):
     """Start both backend and frontend servers."""
-    print("🚀 Starting ABSA Annotation Tool...")
+    print("🚀 Starting AnnoABSA...")
     print("=" * 50)
     
     # Start backend in a separate thread
@@ -263,7 +263,7 @@ def start_full_app(backend_port: int = 8000, backend_host: str = "localhost", fr
     try:
         start_frontend(frontend_port, frontend_host, backend_host, backend_port)
     except KeyboardInterrupt:
-        print("\n🛑 Shutting down ABSA Annotation Tool...")
+        print("\n🛑 Shutting down AnnoABSA...")
         shutdown_flag.set()
         cleanup_backend()
         # Wait for backend thread to finish
@@ -314,7 +314,7 @@ def main():
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
         prog="absa-annotator",
-        description="🎯 ABSA Annotation Tool - Configure and run your annotation environment",
+        description="🎯 AnnoABSA - Configure and run your annotation environment",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

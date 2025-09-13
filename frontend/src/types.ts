@@ -1,4 +1,4 @@
-// Type definitions for ABSA Annotation Tool
+// Type definitions for AnnoABSA
 
 export interface AspectItem {
   aspect_term: string;

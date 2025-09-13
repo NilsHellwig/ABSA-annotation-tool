@@ -776,7 +776,7 @@ def get_avg_annotation_time():
 @app.on_event("startup")
 async def startup_event():
     """Run startup tasks including auto-adding missing position data."""
-    print(f"🚀 Starting ABSA Annotation Tool Backend...")
+    print(f"🚀 Starting AnnoABSA Backend...")
     print(f"📄 Data file: {DATA_FILE_PATH} (type: {DATA_FILE_TYPE})")
     if CONFIG_PATH:
         print(f"⚙️  Config file: {CONFIG_PATH}")
