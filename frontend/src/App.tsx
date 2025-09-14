@@ -57,6 +57,9 @@ function App() {
   const [storeTime, setStoreTime] = useState<boolean>(false);
   const [showAvgAnnotationTime, setShowAvgAnnotationTime] = useState<boolean>(false);
   const [avgAnnotationTime, setAvgAnnotationTime] = useState<number>(0);
+  
+  // AI Prediction
+  const [currentAIPredictionIndex, setCurrentAIPredictionIndex] = useState<number | null>(null);
 
   // Get backend URL from environment or use default
   const backendUrl = (import.meta as any).env?.VITE_BACKEND_URL || 'http://localhost:8000';
@@ -846,12 +849,19 @@ function App() {
     const controller = new AbortController();
     setAiAbortController(controller);
 
+    setCurrentAIPredictionIndex(currentIndex);
+
     try {
       setIsAIPredicting(true);
       const response = await fetch(`${backendUrl}/ai_prediction/${currentIndex}`, {
         signal: controller.signal
       });
       const predictions = await response.json();
+
+      if (currentAIPredictionIndex !== currentIndex) {
+        // Current index has changed since the request was made, discard these predictions
+        return;
+      }
 
       if (predictions && predictions.length > 0) {
         // Convert predictions to aspectList format
@@ -966,7 +976,8 @@ function App() {
       // Fetch updated settings to get new current_index
       await fetchSettings();
       const nextIndex = currentIndex + 1;
-      if (nextIndex <= maxIndex) {
+      // Allow navigation to next index as long as it's not beyond the total count
+      if (nextIndex < totalCount) {
         setCurrentIndex(nextIndex);
         await fetchData(nextIndex);
       }
@@ -984,7 +995,8 @@ function App() {
     if (success) {
       await fetchSettings();
       const nextIndex = currentIndex + 1;
-      if (nextIndex <= maxIndex) {
+      // Allow navigation to next index as long as it's not beyond the total count
+      if (nextIndex < totalCount) {
         setCurrentIndex(nextIndex);
         await fetchData(nextIndex);
       }
@@ -1004,8 +1016,8 @@ function App() {
     // Can navigate up to settingsCurrentIndex + 1 (1-based)
     const maxAllowedUI = settingsCurrentIndex + 1; // settingsCurrentIndex is 0-based, so +1 for 1-based UI
 
-    if (isNaN(targetIndexUI) || targetIndexUI < 1 || targetIndexUI > maxAllowedUI) {
-      alert(`Index must be between 1 and ${maxAllowedUI}`);
+    if (targetIndexUI > totalCount) {
+      alert(`Index must be between 1 and ${totalCount}`);
       return;
     }
 
@@ -1019,8 +1031,8 @@ function App() {
     const loadInitialData = async () => {
       const currentIdx = await fetchSettings();
       if (currentIdx !== undefined) {
-        // If currentIndex equals maxIndex, go back one step
-        const adjustedIdx = currentIdx >= maxIndex && maxIndex > 0 ? currentIdx - 1 : currentIdx;
+        // If currentIndex equals totalCount, go back one step
+        const adjustedIdx = currentIdx >= totalCount && totalCount > 0 ? currentIdx - 1 : currentIdx;
         setCurrentIndex(adjustedIdx);
         await fetchData(adjustedIdx);
       }
@@ -1028,7 +1040,7 @@ function App() {
 
     loadInitialData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [maxIndex]);
+  }, [totalCount]);
 
   // Initialize form when consideredSentimentElements changes
   useEffect(() => {
@@ -1045,7 +1057,7 @@ function App() {
   useEffect(() => {
     const shouldTriggerAIPrediction =
       enablePrePrediction &&
-      currentIndex === settingsCurrentIndex &&
+      currentIndex >= settingsCurrentIndex &&
       !isAIPredicting &&
       aspectList.length === 0; // Only if no annotations exist yet
 
@@ -1053,7 +1065,7 @@ function App() {
       console.log('Auto-triggering AI prediction for last item');
       fetchAIPrediction();
     }
-  }, [currentIndex, maxIndex, enablePrePrediction, isAIPredicting, aspectList.length]);
+  }, [currentIndex, totalCount, enablePrePrediction, isAIPredicting, aspectList.length]);
 
   // Click-Handler für Text: Öffnet Popup je nach konfigurierten Elementen
   const handleTextClick = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -1163,11 +1175,11 @@ function App() {
                   placeholder="Index..."
                   className="w-20 px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   min="1"
-                  max={maxIndex}
+                  max={totalCount}
                 />
                 <button
                   onClick={goToIndex}
-                  disabled={!inputIndex || parseInt(inputIndex) < 1 || parseInt(inputIndex) > maxIndex}
+                  disabled={parseInt(inputIndex) > totalCount || parseInt(inputIndex) < 1 || isNaN(parseInt(inputIndex)) === true}
                   className="px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 text-white rounded"
                 >
                   Go to
@@ -1205,7 +1217,7 @@ function App() {
                       await fetchData(nextIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex >= settingsCurrentIndex || currentIndex + 1 === maxIndex}
+                    disabled={currentIndex + 1 >= totalCount}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Next annotation"
                   >
@@ -1215,15 +1227,15 @@ function App() {
                     onClick={async () => {
                       // Timer resetten bei Navigation
                       resetTimer();
-                      // If settingsCurrentIndex equals maxIndex, go to maxIndex - 1
-                      const targetIndex = settingsCurrentIndex >= maxIndex && maxIndex > 0
+                      // If settingsCurrentIndex equals totalCount, go to totalCount - 1
+                      const targetIndex = settingsCurrentIndex >= totalCount && totalCount > 0
                         ? settingsCurrentIndex - 1
                         : settingsCurrentIndex;
                       setCurrentIndex(targetIndex);
                       await fetchData(targetIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex === settingsCurrentIndex || (settingsCurrentIndex >= maxIndex && currentIndex === settingsCurrentIndex - 1)}
+                    disabled={currentIndex + 1 > settingsCurrentIndex}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Jump to current working position"
                   >
@@ -1492,7 +1504,7 @@ function App() {
                 disabled={false}
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                {currentIndex + 1 === maxIndex ? "Save & finish" : "Save & next annotation →"}
+                {currentIndex + 1 === totalCount ? "Save & finish" : "Save & next annotation →"}
               </button>
             ) : (
               <button
@@ -1500,7 +1512,7 @@ function App() {
                 disabled={false}
                 className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                {currentIndex + 1 === maxIndex ? "Save empty list & finish" : "Save & annotate empty list"}
+                {currentIndex + 1 === totalCount ? "Save empty list & finish" : "Save & annotate empty list"}
               </button>
             )}
           </div>
