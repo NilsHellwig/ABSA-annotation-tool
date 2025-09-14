@@ -37,6 +37,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **CLI Tool** - Command-line configuration for different domains
 - **Per-example aspect categories** — support for `aspect_category_list` in `/data/{index}` to render sample-specific categories (falls back to defaults).
 - **AI-Powered Predictions** - Optional AI assistance with `--ai-suggestions` flag for automated annotation suggestions based on your previous annotations
+- **Manual AI Control** - Use `--disable-ai-automatic-prediction` flag to disable automatic AI triggering while keeping manual AI button functionality
 - **LLM Integration** - Uses Gemma 3:4B model (default) for intelligent aspect and sentiment prediction
 - **Smart Similarity Matching** - Uses sentence transformers for finding relevant examples with semantic understanding
 
@@ -53,6 +54,14 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 ## 🤖 AI-Powered Predictions with Ollama
 
 The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). All processing happens locally on your machine via the Ollama API, ensuring data privacy. You can enable this feature with the `--ai-suggestions` CLI flag. The only prerequisite is having [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
+
+### Manual vs Automatic AI Prediction
+
+By default, when `--ai-suggestions` is enabled, the AI automatically triggers predictions when:
+- Navigating to a new annotation that hasn't been annotated yet
+- The current item has no existing annotations
+
+If you prefer manual control, use the `--disable-ai-automatic-prediction` flag in combination with `--ai-suggestions`. This keeps the AI button functional for manual triggering while disabling automatic predictions.
 
 ### Similarity Matching
 For finding relevant examples to provide context to the LLM, the tool uses **Sentence Transformers** for semantic similarity using the lightweight `all-MiniLM-L6-v2` model (~23MB). This provides much better context matching than traditional lexical approaches.
@@ -77,6 +86,12 @@ cd frontend && npm install && cd ..
 # Start with example data
 ./annoabsa examples/restaurant_reviews.csv
 ./annoabsa examples/restaurant_reviews.json
+
+# Enable AI suggestions with automatic triggering
+./annoabsa examples/restaurant_reviews.json --ai-suggestions
+
+# Enable AI suggestions but disable automatic triggering (manual control only)
+./annoabsa examples/restaurant_reviews.json --ai-suggestions --disable-ai-automatic-prediction
 
 # Or use the example configuration
 ./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json
@@ -184,6 +199,7 @@ You can save and reuse configurations with JSON files:
 | `--store-time` | Store timing data for annotation sessions (duration and change detection) | Disabled by default |
 | `--display-avg-annotation-time` | Display average annotation time in the interface (requires timing data) | Disabled by default |
 | `--ai-suggestions` | Enable AI-powered prediction for automated annotation suggestions using LLM | Disabled by default |
+| `--disable-ai-automatic-prediction` | Disable automatic AI prediction triggering (AI button still works manually) | Disabled by default |
 | `--llm-model` | Language model for predictions (e.g., Gemma 3:4B) | `gemma-3:4b` |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |

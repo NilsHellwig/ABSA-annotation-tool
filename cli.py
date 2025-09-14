@@ -68,7 +68,8 @@ class ABSAAnnotatorConfig:
             "auto_positions": False,
             "store_time": False,
             "display_avg_annotation_time": False,
-            "enable_pre_prediction": False
+            "enable_pre_prediction": False,
+            "disable_ai_automatic_prediction": False
         }
     
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -122,6 +123,10 @@ class ABSAAnnotatorConfig:
     def set_enable_pre_prediction(self, enabled: bool) -> None:
         """Set whether AI pre-prediction is enabled."""
         self.config["enable_pre_prediction"] = enabled
+    
+    def set_disable_ai_automatic_prediction(self, disabled: bool) -> None:
+        """Set whether automatic AI prediction triggering is disabled."""
+        self.config["disable_ai_automatic_prediction"] = disabled
     
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
@@ -437,6 +442,13 @@ Examples:
     )
     
     parser.add_argument(
+        "--disable-ai-automatic-prediction",
+        dest="disable_ai_automatic_prediction",
+        action="store_true",
+        help="Disable automatic AI prediction triggering (AI button still works manually)"
+    )
+    
+    parser.add_argument(
         "--save-config",
         metavar="PATH",
         nargs="?",
@@ -553,6 +565,9 @@ Examples:
     
     if args.enable_pre_prediction:
         config.set_enable_pre_prediction(True)
+    
+    if args.disable_ai_automatic_prediction:
+        config.set_disable_ai_automatic_prediction(True)
     
     # Show configuration if requested
     if args.show_config:

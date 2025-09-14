@@ -4,7 +4,7 @@ import { AspectItem, NewAspect, FieldType, TextPosition, Settings } from "./type
 import { useDarkMode } from "./hooks/useDarkMode";
 import { DarkModeToggle } from "./components/DarkModeToggle";
 import { CustomCheckbox } from "./components/CustomCheckbox";
-import { CopyIcon, SparkleIcon } from "@phosphor-icons/react";
+import { ArrowLineRightIcon, BackspaceIcon, CopyIcon, SparkleIcon } from "@phosphor-icons/react";
 
 function App() {
   const { theme, toggleTheme, isDark } = useDarkMode();
@@ -41,6 +41,7 @@ function App() {
   const [savePhrasePositions, setSavePhrasePositions] = useState<boolean>(true);
   const [clickOnToken, setClickOnToken] = useState<boolean>(true);
   const [enablePrePrediction, setEnablePrePrediction] = useState<boolean>(false);
+  const [disableAiAutomaticPrediction, setDisableAiAutomaticPrediction] = useState<boolean>(false);
   const [isAIPredicting, setIsAIPredicting] = useState<boolean>(false);
 
   // Backend states
@@ -757,6 +758,7 @@ function App() {
       setStoreTime(settings["store_time"] === true); // Default to false
       setShowAvgAnnotationTime(settings["display_avg_annotation_time"] === true); // Default to false
       setEnablePrePrediction(settings["enable_pre_prediction"] === true); // Default to false
+      setDisableAiAutomaticPrediction(settings["disable_ai_automatic_prediction"] === true); // Default to false
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);
@@ -857,11 +859,6 @@ function App() {
         signal: controller.signal
       });
       const predictions = await response.json();
-
-      if (currentAIPredictionIndex !== currentIndex) {
-        // Current index has changed since the request was made, discard these predictions
-        return;
-      }
 
       if (predictions && predictions.length > 0) {
         // Convert predictions to aspectList format
@@ -1057,15 +1054,15 @@ function App() {
   useEffect(() => {
     const shouldTriggerAIPrediction =
       enablePrePrediction &&
+      !disableAiAutomaticPrediction && // Only if automatic prediction is not disabled
       currentIndex >= settingsCurrentIndex &&
-      !isAIPredicting &&
-      aspectList.length === 0; // Only if no annotations exist yet
+      !isAIPredicting && aspectList.length === 0;
 
     if (shouldTriggerAIPrediction) {
-      console.log('Auto-triggering AI prediction for last item');
+      console.log("Triggering AI prediction for index", currentIndex);
       fetchAIPrediction();
     }
-  }, [currentIndex, totalCount, enablePrePrediction, isAIPredicting, aspectList.length]);
+  }, [currentIndex, aspectList]);
 
   // Click-Handler für Text: Öffnet Popup je nach konfigurierten Elementen
   const handleTextClick = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -1159,7 +1156,6 @@ function App() {
               )}
             </div>
             <div className="flex items-center space-x-4">
-              <DarkModeToggle isDark={isDark} onToggle={toggleTheme} />
               {showAvgAnnotationTime && avgAnnotationTime > 0 && (
                 <div className="flex items-center space-x-2">
                   <span className="text-sm text-gray-600 dark:text-gray-400">
@@ -1217,7 +1213,7 @@ function App() {
                       await fetchData(nextIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex + 1 >= totalCount}
+                    disabled={currentIndex >= settingsCurrentIndex}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Next annotation"
                   >
@@ -1239,10 +1235,11 @@ function App() {
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Jump to current working position"
                   >
-                    ⇒
+                    <ArrowLineRightIcon size={22} weight="fill" />
                   </button>
                 </div>
               </div>
+              <DarkModeToggle isDark={isDark} onToggle={toggleTheme} />
             </div>
           </div>
         </div>
@@ -1406,9 +1403,9 @@ function App() {
               {aspectList.length > 0 && (
                 <button
                   onClick={clearAllAnnotations}
-                  className="px-3 py-1 text-sm bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors"
+                  className="px-3 py-2 text-sm bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors flex items-center gap-2"
                 >
-                  Delete all annotations ({aspectList.length}) 🗑️
+                  Delete all annotations ({aspectList.length}) <div className="bg-red-50 px-2 py-1 rounded-lg bg-opacity-30 border text-center"><BackspaceIcon size={20} /></div>
                 </button>
               )}
             </div>
