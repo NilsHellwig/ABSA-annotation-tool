@@ -1098,10 +1098,10 @@ function App() {
       setCurrentEditingField(null);
       setShowPhrasePopup(true);
     } else if (hasAspectTerm) {
-      // Nur aspect_term: Aspect Term Popup öffnen
+      // Nur aspect_term: Aspect term Popup öffnen
       openPhrasePopup("aspect_term");
     } else if (hasOpinionTerm) {
-      // Nur opinion_term: Opinion Term Popup öffnen
+      // Nur opinion_term: Opinion term Popup öffnen
       openPhrasePopup("opinion_term");
     }
   };
@@ -1194,7 +1194,7 @@ function App() {
                     ←
                   </button>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    {currentIndex + 1} / {totalCount} Annotations
+                    {currentIndex + 1} / {totalCount} annotations
                   </span>
                   <button
                     onClick={async () => {
@@ -1290,7 +1290,7 @@ function App() {
               {consideredSentimentElements.includes("aspect_term") && (
                 <div>
                   <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Aspect Term
+                    Aspect term
                     {isFieldValid("aspect_term") && <span className="text-blue-500 bg-blue-50 dark:bg-blue-900/50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
                   </label>
                   <div
@@ -1314,7 +1314,7 @@ function App() {
               {consideredSentimentElements.includes("opinion_term") && (
                 <div>
                   <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Opinion Term
+                    Opinion term
                     {isFieldValid("opinion_term") && <span className="text-blue-500 bg-blue-50 dark:bg-blue-900/50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
                   </label>
                   <div
@@ -1339,7 +1339,7 @@ function App() {
               {consideredSentimentElements.includes("aspect_category") && (
                 <div>
                   <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Aspect Category
+                    Aspect category
                     {isFieldValid("aspect_category") && <span className="text-blue-500 bg-blue-50 dark:bg-blue-900/50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
                   </label>
                   <select
@@ -1358,7 +1358,7 @@ function App() {
               {consideredSentimentElements.includes("sentiment_polarity") && (
                 <div>
                   <label className="flex items-center text-xs font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Sentiment Polarity
+                    Sentiment polarity
                     {isFieldValid("sentiment_polarity") && <span className="text-blue-500 bg-blue-50 dark:bg-blue-900/50 rounded-full w-4 h-4 flex items-center justify-center ml-2 text-xs">✓</span>}
                   </label>
                   <select
@@ -1492,7 +1492,7 @@ function App() {
                 disabled={false}
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                {currentIndex + 1 === maxIndex ? "Save & Finish" : "Save & Next annotation →"}
+                {currentIndex + 1 === maxIndex ? "Save & finish" : "Save & next annotation →"}
               </button>
             ) : (
               <button
@@ -1500,7 +1500,7 @@ function App() {
                 disabled={false}
                 className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
               >
-                {currentIndex + 1 === maxIndex ? "Save empty list & Finish" : "Save & Annotate empty list"}
+                {currentIndex + 1 === maxIndex ? "Save empty list & finish" : "Save & annotate empty list"}
               </button>
             )}
           </div>
@@ -1522,14 +1522,14 @@ function App() {
               {consideredSentimentElements.includes("aspect_term") && consideredSentimentElements.includes("opinion_term") ? (
                 <>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">
-                    Select phrases for Aspect Term and Opinion Term
+                    Select phrases for aspect term and opinion term
                   </h3>
 
                   <div className="space-y-6">
-                    {/* Aspect Term Section */}
+                    {/* Aspect term Section */}
                     <div className="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
                       <div className="flex justify-between items-center mb-4">
-                        <h4 className="font-medium text-gray-700 dark:text-gray-300">Aspect Term</h4>
+                        <h4 className="font-medium text-gray-700 dark:text-gray-300">Aspect term</h4>
                         {allowImplicitAspectTerm && (
                           <CustomCheckbox
                             checked={isImplicitAspect}
@@ -1607,10 +1607,10 @@ function App() {
                       </div>
                     </div>
 
-                    {/* Opinion Term Section */}
+                    {/* Opinion term Section */}
                     <div className="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
                       <div className="flex justify-between items-center mb-4">
-                        <h4 className="font-medium text-gray-700 dark:text-gray-300">Opinion Term</h4>
+                        <h4 className="font-medium text-gray-700 dark:text-gray-300">Opinion term</h4>
                         {allowImplicitOpinionTerm && (
                           <CustomCheckbox
                             checked={isImplicitOpinion}
@@ -1692,7 +1692,7 @@ function App() {
               ) : (
                 <>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                    Select phrase for {currentEditingField === "aspect_term" ? "Aspect Term" : "Opinion Term"}
+                    Select phrase for {currentEditingField === "aspect_term" ? "Aspect term" : "Opinion term"}
                   </h3>
 
                   {((currentEditingField === "aspect_term" && allowImplicitAspectTerm) ||

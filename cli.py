@@ -170,8 +170,8 @@ class ABSAAnnotatorConfig:
         print(f"🏷️  Sentiment Elements: {', '.join(self.config['sentiment_elements'])}")
         print(f"😊 Sentiment Polarities: {', '.join(self.config['sentiment_polarity_options'])}")
         print(f"📝 Aspect Categories: {len(self.config['aspect_categories'])} categories")
-        print(f"🔍 Implicit Aspect Terms: {'✅' if self.config['implicit_aspect_term_allowed'] else '❌'}")
-        print(f"💭 Implicit Opinion Terms: {'✅' if self.config['implicit_opinion_term_allowed'] else '❌'}")
+        print(f"🔍 Implicit Aspect terms: {'✅' if self.config['implicit_aspect_term_allowed'] else '❌'}")
+        print(f"💭 Implicit Opinion terms: {'✅' if self.config['implicit_opinion_term_allowed'] else '❌'}")
         print(f"🔧 Auto-add Positions: {'✅' if self.config['auto_positions'] else '❌'}")
 
 
@@ -313,28 +313,28 @@ def is_port_in_use(host: str, port: int) -> bool:
 def main():
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
-        prog="absa-annotator",
+        prog="annoabsa",
         description="🎯 AnnoABSA - Configure and run your annotation environment",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   # Basic usage with CSV path
-  absa-annotator examples/restaurant_reviews.csv
+  annoabsa examples/restaurant_reviews.csv
   
   # Load configuration from file
-  absa-annotator examples/restaurant_reviews.csv --load-config examples/example_config.json
+  annoabsa examples/restaurant_reviews.csv --load-config examples/example_config.json
   
   # Start with a session ID
-  absa-annotator examples/restaurant_reviews.csv --session-id "user123_session1"
+  annoabsa examples/restaurant_reviews.csv --session-id "user123_session1"
   
   # Start only backend server
-  absa-annotator examples/restaurant_reviews.csv --backend --backend-port 8001
+  annoabsa examples/restaurant_reviews.csv --backend --backend-port 8001
   
   # Configure elements and save to config file with session ID
-  absa-annotator examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --session-id "exp_2024" --save-config examples/quick_config.json
+  annoabsa examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --session-id "exp_2024" --save-config examples/quick_config.json
   
   # Load config and override some settings
-  absa-annotator examples/restaurant_reviews.csv --load-config examples/example_config.json --polarities positive negative
+  annoabsa examples/restaurant_reviews.csv --load-config examples/example_config.json --polarities positive negative
         """
     )
     

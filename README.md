@@ -75,14 +75,14 @@ pip install fastapi uvicorn pandas sentence-transformers
 cd frontend && npm install && cd ..
 
 # Start with example data
-./absa-annotator examples/restaurant_reviews.csv
-./absa-annotator examples/restaurant_reviews.json
+./annoabsa examples/restaurant_reviews.csv
+./annoabsa examples/restaurant_reviews.json
 
 # Or use the example configuration
-./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
+./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json
 
 # Enable automatic position filling for imported data
-./absa-annotator imported_annotations.csv --auto-positions
+./annoabsa imported_annotations.csv --auto-positions
 ```
 
 ### Option 2: Manual Setup
@@ -128,21 +128,21 @@ The `examples/` folder contains sample data to get you started:
 
 ## �️ CLI Configuration
 
-The `absa-annotator` CLI tool configures and runs your annotation environment:
+The `annoabsa` CLI tool configures and runs your annotation environment:
 
 ```bash
 # Basic usage - starts frontend and backend by default
-./absa-annotator examples/restaurant_reviews.csv
-./absa-annotator examples/restaurant_reviews.json
+./annoabsa examples/restaurant_reviews.csv
+./annoabsa examples/restaurant_reviews.json
 
 # Load configuration from file
-./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
+./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json
 
 # Start only backend server
-./absa-annotator examples/restaurant_reviews.csv --backend
+./annoabsa examples/restaurant_reviews.csv --backend
 
 # Custom ports and session
-./absa-annotator examples/restaurant_reviews.json --backend-port 8080 --frontend-port 3001 --session-id "study_2024"
+./annoabsa examples/restaurant_reviews.json --backend-port 8080 --frontend-port 3001 --session-id "study_2024"
 ```
 
 ### Configuration Files
@@ -151,13 +151,13 @@ You can save and reuse configurations with JSON files:
 
 ```bash
 # Save current configuration
-./absa-annotator examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --save-config examples/my_config.json
+./annoabsa examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --save-config examples/my_config.json
 
 # Load and use saved configuration  
-./absa-annotator examples/restaurant_reviews.csv --load-config examples/example_config.json
+./annoabsa examples/restaurant_reviews.csv --load-config examples/example_config.json
 
 # Load config and override specific settings
-./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json --session-id "new_session"
+./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json --session-id "new_session"
 ```
 
 ### CLI Options
@@ -193,7 +193,7 @@ You can save and reuse configurations with JSON files:
 For a restaurant review annotation project with multilingual support and position tracking:
 
 ```bash
-./absa-annotator examples/restaurant_reviews.json \
+./annoabsa examples/restaurant_reviews.json \
   --session-id "restaurant_study_2024" \
   --elements aspect_term aspect_category sentiment_polarity opinion_term \
   --categories "food quality" "service speed" "price level" "ambience general" "location access" \
@@ -219,7 +219,7 @@ If you're importing existing annotation data that may have inconsistent or missi
 
 ```bash
 # Enable automatic position filling (slower startup but adds missing positions)
-./absa-annotator imported_annotations.csv --auto-positions
+./annoabsa imported_annotations.csv --auto-positions
 ```
 
 ---
@@ -320,7 +320,7 @@ When both timing data collection and average time display are enabled, the inter
 
 ```bash
 # Enable timing collection and average time display
-./absa-annotator examples/restaurant_reviews.csv --store-time --display-avg-annotation-time
+./annoabsa examples/restaurant_reviews.csv --store-time --display-avg-annotation-time
 ```
 
 This displays the average annotation time between the dark mode toggle and index input field. The statistic is calculated by:
@@ -427,13 +427,13 @@ When available, translations are displayed below the original text in a blue-tin
 
 ### UI Layout
 The annotation interface displays fields in this order for optimal workflow:
-1. **Aspect Term** (phrase selection)
-2. **Opinion Term** (phrase selection) - displayed next to aspect term
-3. **Aspect Category** (dropdown)
-4. **Sentiment Polarity** (dropdown)
+1. **Aspect term** (phrase selection)
+2. **Opinion term** (phrase selection) - displayed next to aspect term
+3. **Aspect category** (dropdown)
+4. **Sentiment polarity** (dropdown)
 
 ### Combined Annotation Mode
-When both **Aspect Term** and **Opinion Term** are configured:
+When both **Aspect term** and **Opinion term** are configured:
 - Clicking "Select phrase" on either field opens a combined popup
 - The popup shows two separate text areas for independent phrase selection
 - Both fields must be completed (either by phrase selection or marking as implicit) before proceeding
@@ -448,23 +448,23 @@ Food, Service, Price, Ambience, Location, Restaurant
 
 1. **One-command start (easiest):**
    ```bash
-   ./absa-annotator examples/restaurant_reviews.csv      # CSV format
-   ./absa-annotator examples/restaurant_reviews.json     # JSON format
+   ./annoabsa examples/restaurant_reviews.csv      # CSV format
+   ./annoabsa examples/restaurant_reviews.json     # JSON format
    ```
 
 2. **Use saved configuration:**
    ```bash
-   ./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json
+   ./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json
    ```
 
 3. **Create and save configuration:**
    ```bash
-   ./absa-annotator examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --save-config examples/my_config.json
+   ./annoabsa examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --save-config examples/my_config.json
    ```
 
 4. **Advanced: Load config and override settings:**
    ```bash
-   ./absa-annotator examples/restaurant_reviews.json --load-config examples/example_config.json --polarities positive negative excited
+   ./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json --polarities positive negative excited
    ```
 
 5. **Open browser** at `http://localhost:3000` and start annotating!
