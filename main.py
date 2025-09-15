@@ -8,7 +8,6 @@ import pandas as pd
 import json
 import os
 from fastapi import HTTPException
-import atexit
 
 app = FastAPI()
 
@@ -748,7 +747,7 @@ def get_ai_prediction(data_idx: int):
         # filter examples that are identical to the requested text
         examples = [ex for ex in examples if ex['text'] != text]
 
-        predictions[0] = predict_llm(
+        predictions = predict_llm(
             text,
             config.get('sentiment_elements', [
                        "aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]),
@@ -762,7 +761,7 @@ def get_ai_prediction(data_idx: int):
                 'implicit_opinion_term_allowed', False),
             n_few_shot=10,
             llm_model=config.get('llm_model', 'gemma3:4b')
-        )
+        )[0]
         predictions = predictions["aspects"]
 
         # if position saving is enabled, add positions to predictions
