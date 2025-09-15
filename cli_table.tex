@@ -19,8 +19,8 @@
 \multicolumn{3}{@{}l}{\textit{Annotation Elements}} \\
 \addlinespace[0.2em]
 \texttt{--elements} & Sentiment elements to annotate & aspect\_term, aspect\_category, sentiment\_polarity, opinion\_term \\
-\texttt{--polarities} & Available sentiment polarities & \texttt{positive}, \texttt{negative}, \texttt{neutral} \\
-\texttt{--categories} & Available aspect categories & Restaurant domain (18 categories) \\
+\texttt{--polarities} & Available sentiment polarities & positive, negative, neutral \\
+\texttt{--categories} & Available aspect categories & Restaurant domain (13 categories) \\
 \texttt{--implicit-aspect} & Allow implicit aspect terms & \texttt{True} \\
 \texttt{--disable-implicit-aspect} & Disable implicit aspect terms & -- \\
 \texttt{--implicit-opinion} & Allow implicit opinion terms & \texttt{False} \\
@@ -29,22 +29,22 @@
 \hline
 \multicolumn{3}{@{}l}{\textit{Interface and Processing}} \\
 \addlinespace[0.2em]
-\texttt{--disable\_clean\_phrases} & Disable automatic punctuation cleaning from phrase start/end & Enabled by default \\
-\texttt{--disable-save-positions} & Disable saving phrase positions (\texttt{at\_start}, \texttt{at\_end}, \texttt{ot\_start}, \texttt{ot\_end}) for faster processing & Enabled by default \\
-\texttt{--disable-click-on-token} & Disable click-on-token feature (precise character clicking instead of token snapping) & Enabled by default \\
-\texttt{--auto-positions} & Enable automatic position filling on startup for existing phrases without positions & Disabled by default \\
+\texttt{--disable\_clean\_phrases} & Disable automatic punctuation cleaning from phrase start/end & Enabled \\
+\texttt{--disable-save-positions} & Disable saving phrase positions (\texttt{at\_start}, \texttt{at\_end}, \texttt{ot\_start}, \texttt{ot\_end}) for faster processing & Enabled \\
+\texttt{--disable-click-on-token} & Disable click-on-token feature (precise character clicking instead of token snapping) & Enabled \\
+\texttt{--auto-positions} & Enable automatic position filling on startup for existing phrases without positions & Disabled \\
 \addlinespace[0.3em]
 \hline
 \multicolumn{3}{@{}l}{\textit{Analytics and Timing}} \\
 \addlinespace[0.2em]
-\texttt{--store-time} & Store timing data for annotation sessions (duration and change detection) & Disabled by default \\
-\texttt{--display-avg-annotation-time} & Display average annotation time in the interface (requires timing data) & Disabled by default \\
+\texttt{--store-time} & Store timing data for annotation sessions (duration and change detection) & Disabled \\
+\texttt{--display-avg-annotation-time} & Display average annotation time in the interface (requires timing data) & Disabled \\
 \addlinespace[0.3em]
 \hline
 \multicolumn{3}{@{}l}{\textit{AI Integration}} \\
 \addlinespace[0.2em]
-\texttt{--ai-suggestions} & Enable AI-powered prediction for automated annotation suggestions using LLM & Disabled by default \\
-\texttt{--disable-ai-automatic-prediction} & Disable automatic AI prediction triggering (AI button still works manually) & Disabled by default \\
+\texttt{--ai-suggestions} & Enable AI-powered prediction for automated annotation suggestions using LLM & Disabled \\
+\texttt{--disable-ai-automatic-prediction} & Disable automatic AI prediction triggering (AI button still works manually) & Disabled \\
 \texttt{--llm-model} & Large Language model for predictions (e.g., Gemma 3:4B) & \texttt{gemma-3:4b} \\
 \addlinespace[0.3em]
 \hline

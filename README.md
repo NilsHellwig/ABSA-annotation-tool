@@ -211,7 +211,7 @@ You can save and reuse configurations with JSON files:
 | `--session-id` | Session identifier for annotation tracking | `None` |
 | `--elements` | Sentiment elements to annotate | `aspect_term, aspect_category, sentiment_polarity, opinion_term` |
 | `--polarities` | Available sentiment polarities | `positive, negative, neutral` |
-| `--categories` | Available aspect categories | Restaurant domain (18 categories) |
+| `--categories` | Available aspect categories | Restaurant domain (13 categories) |
 | `--implicit-aspect` | Allow implicit aspect terms | `True` |
 | `--disable-implicit-aspect` | Disable implicit aspect terms | - |
 | `--implicit-opinion` | Allow implicit opinion terms | `False` |
