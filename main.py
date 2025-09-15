@@ -128,6 +128,7 @@ def get_settings():
         "display_avg_annotation_time": CONFIG_DATA.get("display_avg_annotation_time", False),
         "enable_pre_prediction": CONFIG_DATA.get("enable_pre_prediction", CONFIG_DATA.get("enable_preprediction", False)),
         "disable_ai_automatic_prediction": CONFIG_DATA.get("disable_ai_automatic_prediction", False),
+        "annotation_guideline": CONFIG_DATA.get("annotation_guideline", None),
         "current_index": get_current_index(),
         "max_number_of_idxs": max_number_of_idxs()
     }

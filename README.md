@@ -38,6 +38,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **Per-example aspect categories** — support for `aspect_category_list` in `/data/{index}` to render sample-specific categories (falls back to defaults).
 - **AI-Powered Predictions** - Optional AI assistance with `--ai-suggestions` flag for automated annotation suggestions based on your previous annotations
 - **Manual AI Control** - Use `--disable-ai-automatic-prediction` flag to disable automatic AI triggering while keeping manual AI button functionality
+- **Annotation Guidelines** - Display PDF guidelines with `--annotation-guideline <file.pdf>` for consistent annotation standards
 - **LLM Integration** - Uses Gemma 3:4B model (default) for intelligent aspect and sentiment prediction
 - **Smart Similarity Matching** - Uses BM25 for finding relevant examples with keyword-based retrieval
 
@@ -72,6 +73,23 @@ For finding relevant examples to provide context to the LLM, the tool uses **BM2
 
 ---
 
+## 📋 Annotation Guidelines
+
+You can display PDF guidelines directly in the annotation interface to ensure consistent annotation standards across annotators. Use the `--annotation-guideline <path/to/guidelines.pdf>` flag to specify a PDF file containing annotation instructions, examples, or coding guidelines.
+
+### Features
+- **Collapsible Card** - Guidelines are displayed in a collapsible card between the text and annotation form
+- **Embedded PDF Viewer** - PDF is displayed directly in the interface using an iframe
+- **Always Available** - Guidelines remain accessible throughout the annotation session
+- **Standard Compliance** - Helps maintain consistent annotation quality and standards
+
+### Usage
+```bash
+./annoabsa examples/restaurant_reviews.json --annotation-guideline docs/annotation_guidelines.pdf
+```
+
+---
+
 ## 🚀 Quick Start
 
 ### Option 1: One-Command Launch (Recommended)
@@ -94,6 +112,9 @@ cd frontend && npm install && cd ..
 
 # Enable AI suggestions but disable automatic triggering (manual control only)
 ./annoabsa examples/restaurant_reviews.json --ai-suggestions --disable-ai-automatic-prediction
+
+# Display annotation guidelines from PDF
+./annoabsa examples/restaurant_reviews.json --annotation-guideline guidelines/annotation_manual.pdf
 
 # Or use the example configuration
 ./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json
@@ -203,6 +224,7 @@ You can save and reuse configurations with JSON files:
 | `--display-avg-annotation-time` | Display average annotation time in the interface (requires timing data) | Disabled by default |
 | `--ai-suggestions` | Enable AI-powered prediction for automated annotation suggestions using LLM | Disabled by default |
 | `--disable-ai-automatic-prediction` | Disable automatic AI prediction triggering (AI button still works manually) | Disabled by default |
+| `--annotation-guideline` | Path to PDF file containing annotation guidelines to display in the UI | Disabled by default |
 | `--llm-model` | Language model for predictions (e.g., Gemma 3:4B) | `gemma-3:4b` |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |

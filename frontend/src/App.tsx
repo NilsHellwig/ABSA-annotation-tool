@@ -42,6 +42,7 @@ function App() {
   const [clickOnToken, setClickOnToken] = useState<boolean>(true);
   const [enablePrePrediction, setEnablePrePrediction] = useState<boolean>(false);
   const [disableAiAutomaticPrediction, setDisableAiAutomaticPrediction] = useState<boolean>(false);
+  const [annotationGuideline, setAnnotationGuideline] = useState<string | null>(null);
   const [isAIPredicting, setIsAIPredicting] = useState<boolean>(false);
 
   // Backend states
@@ -58,7 +59,7 @@ function App() {
   const [storeTime, setStoreTime] = useState<boolean>(false);
   const [showAvgAnnotationTime, setShowAvgAnnotationTime] = useState<boolean>(false);
   const [avgAnnotationTime, setAvgAnnotationTime] = useState<number>(0);
-  
+
   // AI Prediction
   const [currentAIPredictionIndex, setCurrentAIPredictionIndex] = useState<number | null>(null);
 
@@ -759,6 +760,7 @@ function App() {
       setShowAvgAnnotationTime(settings["display_avg_annotation_time"] === true); // Default to false
       setEnablePrePrediction(settings["enable_pre_prediction"] === true); // Default to false
       setDisableAiAutomaticPrediction(settings["disable_ai_automatic_prediction"] === true); // Default to false
+      setAnnotationGuideline(settings["annotation_guideline"]);
       setSettingsCurrentIndex(settings["current_index"]);
       setMaxIndex(settings["max_number_of_idxs"]);
       setTotalCount(settings["total_count"]);
@@ -1251,6 +1253,27 @@ function App() {
         <div className="lg:col-span-2 space-y-6">
 
 
+          {/* Guidelines Card */}
+          {annotationGuideline && (
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border dark:border-gray-700 p-6">
+              <details className="group">
+                <summary className="flex justify-between items-center cursor-pointer list-none">
+                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Guidelines</h2>
+                  <svg className="w-5 h-5 text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="mt-4">
+                  <iframe
+                    src={annotationGuideline}
+                    className="w-full h-[1200px] border border-gray-200 dark:border-gray-600 rounded-lg"
+                    title="Annotation Guidelines"
+                  />
+                </div>
+              </details>
+            </div>
+          )}
+
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border dark:border-gray-700 p-6">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Text to annotate</h2>
@@ -1291,6 +1314,7 @@ function App() {
               </div>
             )}
           </div>
+
 
           {/* Annotation Form */}
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border dark:border-gray-700 p-6">
@@ -1425,7 +1449,7 @@ function App() {
                       {/* Color indicator */}
                       {aspect.isLLMGenerated ? <SparkleIcon size={16} weight="fill" color={isDark ? "white" : "black"} /> : <SparkleIcon size={16} weight="fill" color="#00000000" />}
                       <div className={`flex justify-center items-center w-6 h-6 rounded-full ${colorClasses.bg300} flex-shrink-0`}>
-                        
+
                       </div>
 
                       {consideredSentimentElements.includes("aspect_term") && (

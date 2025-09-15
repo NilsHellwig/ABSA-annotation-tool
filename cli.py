@@ -14,6 +14,7 @@ import time
 import socket
 import signal
 import atexit
+from typing import Dict, Any, List
 from typing import List, Dict, Any
 
 # Global variable to track backend process
@@ -69,7 +70,8 @@ class ABSAAnnotatorConfig:
             "store_time": False,
             "display_avg_annotation_time": False,
             "enable_pre_prediction": False,
-            "disable_ai_automatic_prediction": False
+            "disable_ai_automatic_prediction": False,
+            "annotation_guideline": None
         }
     
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -127,6 +129,21 @@ class ABSAAnnotatorConfig:
     def set_disable_ai_automatic_prediction(self, disabled: bool) -> None:
         """Set whether automatic AI prediction triggering is disabled."""
         self.config["disable_ai_automatic_prediction"] = disabled
+    
+    def set_annotation_guideline(self, guideline_path: str) -> None:
+        """Set the path to the annotation guideline PDF file and encode it as base64."""
+        if guideline_path and not os.path.exists(guideline_path):
+            raise ValueError(f"Annotation guideline file not found: {guideline_path}")
+        
+        if guideline_path:
+            # Read and encode PDF as base64
+            import base64
+            with open(guideline_path, 'rb') as pdf_file:
+                pdf_data = pdf_file.read()
+                encoded_pdf = base64.b64encode(pdf_data).decode('utf-8')
+                self.config["annotation_guideline"] = f"data:application/pdf;base64,{encoded_pdf}"
+        else:
+            self.config["annotation_guideline"] = None
     
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
@@ -468,6 +485,12 @@ Examples:
         help="Display the current configuration"
     )
     
+    parser.add_argument(
+        "--annotation-guidelines",
+        metavar="PDF_PATH",
+        help="Path to PDF file containing annotation guidelines to display in the UI"
+    )
+    
     # Server control arguments
     parser.add_argument(
         "--backend",
@@ -568,6 +591,9 @@ Examples:
     
     if args.disable_ai_automatic_prediction:
         config.set_disable_ai_automatic_prediction(True)
+    
+    if args.annotation_guidelines:
+        config.set_annotation_guideline(args.annotation_guidelines)
     
     # Show configuration if requested
     if args.show_config:
