@@ -609,9 +609,9 @@ def predict_llm(text, considered_sentiment_elements, examples, aspect_categories
     aspects = Aspects.model_validate_json(response.response)
 
     if not aspects.aspects:
-        return []
+        return [], few_shot_examples
     else:
-        return json.loads(response.response)
+        return json.loads(response.response), few_shot_examples
 
 
 # ermittel die n Beispiele die am ähnlichsten zum input text sind
@@ -748,7 +748,7 @@ def get_ai_prediction(data_idx: int):
         # filter examples that are identical to the requested text
         examples = [ex for ex in examples if ex['text'] != text]
 
-        predictions = predict_llm(
+        predictions[0] = predict_llm(
             text,
             config.get('sentiment_elements', [
                        "aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]),
