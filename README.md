@@ -39,7 +39,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **AI-Powered Predictions** - Optional AI assistance with `--ai-suggestions` flag for automated annotation suggestions based on your previous annotations
 - **Manual AI Control** - Use `--disable-ai-automatic-prediction` flag to disable automatic AI triggering while keeping manual AI button functionality
 - **LLM Integration** - Uses Gemma 3:4B model (default) for intelligent aspect and sentiment prediction
-- **Smart Similarity Matching** - Uses sentence transformers for finding relevant examples with semantic understanding
+- **Smart Similarity Matching** - Uses BM25 for finding relevant examples with keyword-based retrieval
 
 ## 📊 Analytics Features
 
@@ -64,7 +64,7 @@ By default, when `--ai-suggestions` is enabled, the AI automatically triggers pr
 If you prefer manual control, use the `--disable-ai-automatic-prediction` flag in combination with `--ai-suggestions`. This keeps the AI button functional for manual triggering while disabling automatic predictions.
 
 ### Similarity Matching
-For finding relevant examples to provide context to the LLM, the tool uses **Sentence Transformers** for semantic similarity using the lightweight `all-MiniLM-L6-v2` model (~23MB). This provides much better context matching than traditional lexical approaches.
+For finding relevant examples to provide context to the LLM, the tool uses **BM25** (Robertson and Zaragoza 2009), a sparse retrieval function that calculates relevance scores between sentences based on term frequency (TF), inverse document frequency (IDF), and sentence length. This provides efficient keyword-based retrieval that identifies sentences sharing common keywords.
 
 ### How It Works
 3. **UI Integration** - Click the ✨ AI button next to "Text to annotate" to get suggestions
@@ -77,8 +77,10 @@ For finding relevant examples to provide context to the LLM, the tool uses **Sen
 ### Option 1: One-Command Launch (Recommended)
 
 ```bash
+```bash
 # Install Python dependencies
-pip install fastapi uvicorn pandas sentence-transformers
+pip install fastapi uvicorn pandas rank-bm25
+```
 
 # Install frontend dependencies  
 cd frontend && npm install && cd ..
@@ -104,8 +106,9 @@ cd frontend && npm install && cd ..
 
 #### Backend Setup
 ```bash
-# Install dependencies
-pip install fastapi uvicorn pandas sentence-transformers
+```bash
+pip install fastapi uvicorn pandas rank-bm25
+```
 
 # Start the server
 uvicorn main:app --reload --port 8000

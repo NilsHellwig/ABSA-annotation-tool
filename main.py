@@ -565,18 +565,12 @@ def predict_llm(text, considered_sentiment_elements, examples, aspect_categories
         return json.loads(response.response)
         
 # ermittel die n Beispiele die am ähnlichsten zum input text sind
-import numpy as np
 import json, re
+from rank_bm25 import BM25Okapi
+import numpy as np
 
 def get_most_similar_examples(input_text, examples, n):
-    """Return up to n most similar example annotations based on input_text using sentence transformers"""
-    
-    # Try to get cached sentence model
-    model = _get_sentence_model()
-    
-    if model is None:
-        print("Warning: sentence-transformers not available. Install with: pip install sentence-transformers")
-        return []  # Return empty list if sentence transformers not available
+    """Return up to n most similar example annotations based on input_text using BM25"""
     
     # If no examples available, return empty list
     if not examples:
@@ -595,44 +589,36 @@ def get_most_similar_examples(input_text, examples, n):
     else:
         input_text_str = str(input_text)
     
-    # Get embedding for input text first (early cache lookup)
-    input_embedding = _get_cached_embedding(input_text_str, model)
-    
-    # Pre-allocate arrays for better memory performance
-    num_examples = len(examples)
-    text_embeddings = np.empty((num_examples, input_embedding.shape[0]), dtype=np.float32)
-    
-    # Extract text from examples and get embeddings in one pass
-    for i, ex in enumerate(examples):
+    # Extract text from examples
+    example_texts = []
+    for ex in examples:
         if isinstance(ex, dict) and 'text' in ex:
             text = str(ex['text'])
         elif isinstance(ex, tuple):
             text = str(ex[0])  # Assume first element is the text
         else:
             text = str(ex)
-        
-        text_embeddings[i] = _get_cached_embedding(text, model)
+        example_texts.append(text)
     
-    # Optimized cosine similarity calculation
-    input_embedding = input_embedding.reshape(1, -1)
+    # Tokenize texts for BM25
+    def tokenize(text):
+        # Simple tokenization: lowercase and split on whitespace/punctuation
+        return re.findall(r'\b\w+\b', text.lower())
     
-    # Normalize embeddings once (more efficient than computing norms separately)
-    input_norm = np.linalg.norm(input_embedding, axis=1, keepdims=True)
-    example_norms = np.linalg.norm(text_embeddings, axis=1, keepdims=True)
+    tokenized_examples = [tokenize(text) for text in example_texts]
+    tokenized_query = tokenize(input_text_str)
     
-    # Compute cosine similarities
-    dot_product = np.dot(input_embedding, text_embeddings.T)
-    cosine_similarities = (dot_product / (input_norm * example_norms.T))[0]
+    # Create BM25 model and get scores
+    bm25 = BM25Okapi(tokenized_examples)
+    scores = bm25.get_scores(tokenized_query)
     
-    # Use argpartition for faster top-n selection (O(n) instead of O(n log n))
+    # Get top n indices
     if n < len(examples):
-        # Get indices of top n similarities
-        top_indices = np.argpartition(cosine_similarities, -n)[-n:]
-        # Sort only the top n indices by similarity (descending)
-        top_indices = top_indices[np.argsort(cosine_similarities[top_indices])[::-1]]
+        # Get indices of top n scores
+        top_indices = np.argsort(scores)[-n:][::-1]  # Sort descending
     else:
         # If we need all examples, just sort everything
-        top_indices = np.argsort(cosine_similarities)[::-1]
+        top_indices = np.argsort(scores)[::-1]
     
     return [examples[i] for i in top_indices]
 
@@ -791,89 +777,14 @@ async def startup_event():
     
     print("✨ Backend ready!")
 
-# Global variable to cache the sentence transformer model
-_sentence_model = None
-_sentence_model_available = None
-_embedding_cache = {}  # In-memory cache
-_cache_file = "embedding_cache.json"  # Persistent cache file
+# BM25-based similarity matching (no caching needed)
 
-def _load_embedding_cache():
-    """Load embedding cache from file"""
-    global _embedding_cache
-    try:
-        import os
-        if os.path.exists(_cache_file):
-            with open(_cache_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                # Convert list back to numpy array
-                for key, value in data.items():
-                    _embedding_cache[key] = np.array(value)
-    except Exception as e:
-        print(f"Warning: Could not load embedding cache: {e}")
-        _embedding_cache = {}
+# Removed _load_embedding_cache function - BM25 doesn't need caching
 
-def _save_embedding_cache():
-    """Save embedding cache to file"""
-    global _embedding_cache
-    try:
-        # Convert numpy arrays to lists for JSON serialization
-        cache_data = {}
-        for key, value in _embedding_cache.items():
-            if isinstance(value, np.ndarray):
-                cache_data[key] = value.tolist()
-            else:
-                cache_data[key] = value
-        
-        with open(_cache_file, 'w', encoding='utf-8') as f:
-            json.dump(cache_data, f, ensure_ascii=False, indent=2)
-    except Exception as e:
-        print(f"Warning: Could not save embedding cache: {e}")
+# Removed _save_embedding_cache function - BM25 doesn't need caching
 
-def _get_sentence_model():
-    """Get or load the sentence transformer model (cached)"""
-    global _sentence_model, _sentence_model_available
-    
-    # Return cached result if already determined
-    if _sentence_model_available is False:
-        return None
-    if _sentence_model is not None:
-        return _sentence_model
-    
-    try:
-        from sentence_transformers import SentenceTransformer
-        _sentence_model = SentenceTransformer('all-MiniLM-L6-v2')
-        _sentence_model_available = True
-        # Load cache when model is first loaded
-        _load_embedding_cache()
-        return _sentence_model
-    except ImportError:
-        _sentence_model_available = False
-        return None
+# Removed _get_sentence_model function - BM25 doesn't need sentence transformers
 
-def _get_cached_embedding(text, model):
-    """Get embedding from cache or compute and cache it"""
-    global _embedding_cache
-    
-    # Use text as cache key
-    cache_key = text
-    
-    if cache_key in _embedding_cache:
-        return _embedding_cache[cache_key]
-    
-    # Compute embedding and cache it
-    embedding = model.encode([text])[0]
-    _embedding_cache[cache_key] = embedding
-    
-    # Save cache to file periodically (every 10 new embeddings)
-    if len(_embedding_cache) % 10 == 0:
-        _save_embedding_cache()
-    
-    return embedding
+# Removed _get_cached_embedding function - BM25 doesn't need caching
 
-# Register cleanup function to save cache on program exit
-def _cleanup_embedding_cache():
-    """Save embedding cache before program exits"""
-    if _embedding_cache:
-        _save_embedding_cache()
-
-atexit.register(_cleanup_embedding_cache)
+# Removed _cleanup_embedding_cache function - BM25 doesn't need caching

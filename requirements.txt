@@ -1,4 +1,4 @@
 fastapi
 uvicorn
 pandas
-sentence-transformers
+rank-bm25
