@@ -21,6 +21,13 @@ if __name__ == "__main__":
 
 task = args.task  # "asqp", "acd", "tasd"
 
+print("Pool size (type):", type(args.pool_size))
+print("Pool size:", args.pool_size)
+print("LLM (type):", type(args.llm))
+print("LLM:", args.llm)
+print("Task (type):", type(args.task))
+print("Task:", args.task)
+
 if task == "asqp":
    considered_sentiment_elements=["aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]
 elif task == "acd":
@@ -85,7 +92,7 @@ llm = args.llm
 n_few_shot = 10
 pool_size = args.pool_size  # 0.2 means 20% of training data as pool
 train_data = load_data("rest16", "train", task)
-test_data = load_data("rest16", "test", task)[:10]
+test_data = load_data("rest16", "test", task)
 pool = train_data[:int(len(train_data)*pool_size)]
 
 # see list of unique aspect categories. ac is in example["label"][tuple_idx][1]
@@ -132,10 +139,13 @@ for idx, example in enumerate(test_data):
     
     print(f"Evaluating example {idx+1}/{len(test_data)}: {text}", llm_output, f"took {time.time()-duration:.2f}s", "Gold standard:", example['label'])
     
-    
-    
-    predictions.append({"text": text, "predicted": llm_output["aspects"], "time": time.time()-duration, "gold": example['label']})
-    
+    try:
+      aspects_out = llm_output["aspects"]
+    except:
+      aspects_out = []
+
+    predictions.append({"text": text, "predicted": aspects_out, "time": time.time()-duration, "gold": example['label']})
+
 # store predictions in /evaluation/predictions/{task}/{llm}/{pool_size}/predictions.json
 
 # create directory if it does not exist
