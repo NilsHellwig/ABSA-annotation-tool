@@ -703,7 +703,7 @@ def get_ai_prediction(data_idx: int):
             allow_implicit_aspect_terms=config.get('implicit_aspect_term_allowed', True),
             allow_implicit_opinion_terms=config.get('implicit_opinion_term_allowed', False),
             n_few_shot=10,
-            llm_model="gemma3:4b"
+            llm_model=config.get('llm_model', 'gemma3:4b')
         )
         predictions = predictions["aspects"]
         

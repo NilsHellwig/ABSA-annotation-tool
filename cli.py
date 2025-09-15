@@ -491,6 +491,13 @@ Examples:
         help="Path to PDF file containing annotation guidelines to display in the UI"
     )
     
+    parser.add_argument(
+        "--llm-model",
+        metavar="MODEL",
+        default="gemma3:4b",
+        help="Language model for AI predictions (e.g., gemma3:4b, llama2:7b)"
+    )
+    
     # Server control arguments
     parser.add_argument(
         "--backend",

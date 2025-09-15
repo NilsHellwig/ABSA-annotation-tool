@@ -1,0 +1,56 @@
+\begin{tabular}{@{}l p{5.5cm} p{6.5cm}@{}}
+\toprule
+\textbf{Option} & \textbf{Description} & \textbf{Default} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Server Configuration}} \\
+\addlinespace[0.2em]
+\texttt{--backend} & Start only backend server & -- \\
+\texttt{--backend-port} & Backend server port & \texttt{8000} \\
+\texttt{--frontend-port} & Frontend server port & \texttt{3000} \\
+\texttt{--backend-ip} & Backend server IP address & \texttt{127.0.0.1} \\
+\texttt{--frontend-ip} & Frontend server IP address & \texttt{127.0.0.1} \\
+\addlinespace[0.3em]
+\hline
+\multicolumn{3}{@{}l}{\textit{Session Management}} \\
+\addlinespace[0.2em]
+\texttt{--session-id} & Session identifier for annotation tracking & \texttt{None} \\
+\addlinespace[0.3em]
+\hline
+\multicolumn{3}{@{}l}{\textit{Annotation Elements}} \\
+\addlinespace[0.2em]
+\texttt{--elements} & Sentiment elements to annotate & aspect\_term, aspect\_category, sentiment\_polarity, opinion\_term \\
+\texttt{--polarities} & Available sentiment polarities & \texttt{positive}, \texttt{negative}, \texttt{neutral} \\
+\texttt{--categories} & Available aspect categories & Restaurant domain (18 categories) \\
+\texttt{--implicit-aspect} & Allow implicit aspect terms & \texttt{True} \\
+\texttt{--disable-implicit-aspect} & Disable implicit aspect terms & -- \\
+\texttt{--implicit-opinion} & Allow implicit opinion terms & \texttt{False} \\
+\texttt{--disable\_implicit\_opinion} & Disable implicit opinion terms & \texttt{True} (default) \\
+\addlinespace[0.3em]
+\hline
+\multicolumn{3}{@{}l}{\textit{Interface and Processing}} \\
+\addlinespace[0.2em]
+\texttt{--disable\_clean\_phrases} & Disable automatic punctuation cleaning from phrase start/end & Enabled by default \\
+\texttt{--disable-save-positions} & Disable saving phrase positions (\texttt{at\_start}, \texttt{at\_end}, \texttt{ot\_start}, \texttt{ot\_end}) for faster processing & Enabled by default \\
+\texttt{--disable-click-on-token} & Disable click-on-token feature (precise character clicking instead of token snapping) & Enabled by default \\
+\texttt{--auto-positions} & Enable automatic position filling on startup for existing phrases without positions & Disabled by default \\
+\addlinespace[0.3em]
+\hline
+\multicolumn{3}{@{}l}{\textit{Analytics and Timing}} \\
+\addlinespace[0.2em]
+\texttt{--store-time} & Store timing data for annotation sessions (duration and change detection) & Disabled by default \\
+\texttt{--display-avg-annotation-time} & Display average annotation time in the interface (requires timing data) & Disabled by default \\
+\addlinespace[0.3em]
+\hline
+\multicolumn{3}{@{}l}{\textit{AI Integration}} \\
+\addlinespace[0.2em]
+\texttt{--ai-suggestions} & Enable AI-powered prediction for automated annotation suggestions using LLM & Disabled by default \\
+\texttt{--disable-ai-automatic-prediction} & Disable automatic AI prediction triggering (AI button still works manually) & Disabled by default \\
+\texttt{--llm-model} & Large Language model for predictions (e.g., Gemma 3:4B) & \texttt{gemma-3:4b} \\
+\addlinespace[0.3em]
+\hline
+\multicolumn{3}{@{}l}{\textit{Configuration Management}} \\
+\addlinespace[0.2em]
+\texttt{--save-config} & Save config to JSON file & -- \\
+\texttt{--show-config} & Display current configuration & -- \\
+\bottomrule
+\end{tabular}
