@@ -566,8 +566,7 @@ def predict_llm(text, considered_sentiment_elements, examples, aspect_categories
         prompt = prompt[:-2]  # remove last comma and space
         prompt += "]\n"
     prompt += f"Text: {text}\nSentiment elements: "
-    
-    print(prompt)
+
 
     from enum import Enum
     allowed_phrases = find_valid_phrases_list(text)
