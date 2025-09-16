@@ -1,0 +1,19 @@
+import subprocess
+
+tasks = ["tasd", "asqp", "acd"]
+pool_sizes = ["0.0", "0.1", "0.5", "1.0", "0.2", "0.3", "0.4", "0.6", "0.7", "0.8", "0.9"]
+dataset_names = ["rest16", "flightabsa", "coursera", "hotels"]
+
+for dataset_name in dataset_names:
+    for task in tasks:
+        for pool_size in pool_sizes:
+            cmd = [
+                "python",
+                "eval.py",
+                "--task", task,
+                "--pool_size", pool_size,
+                "--llm", "gemma3:4b",
+                "--dataset_name", dataset_name
+            ]
+            print("Running:", " ".join(cmd))
+            subprocess.run(cmd, check=True)
