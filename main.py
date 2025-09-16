@@ -545,11 +545,11 @@ def predict_llm(text, considered_sentiment_elements, examples, aspect_categories
     for element in considered_sentiment_elements:
         prompt_head += element.replace("_", " ") + "s, "
     prompt_head = prompt_head[:-2]  # remove last comma and space
-    prompt_head += " in the following text with the format of [("
+    prompt_head += " in the following text in the form of a list of objects, each object having key(s) "
     for element in considered_sentiment_elements:
         prompt_head += f"'{element.replace('_', ' ')}', "
     prompt_head = prompt_head[:-2]  # remove last comma and space
-    prompt_head += "), ...].\n\n"
+    prompt_head += ".\n\n"
 
     few_shot_examples = get_most_similar_examples(text, examples, n=n_few_shot)
 
@@ -566,6 +566,8 @@ def predict_llm(text, considered_sentiment_elements, examples, aspect_categories
         prompt = prompt[:-2]  # remove last comma and space
         prompt += "]\n"
     prompt += f"Text: {text}\nSentiment elements: "
+    
+    print(prompt)
 
     from enum import Enum
     allowed_phrases = find_valid_phrases_list(text)
