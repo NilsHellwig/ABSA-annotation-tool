@@ -877,7 +877,7 @@ def get_ai_prediction(data_idx: int):
                     'implicit_aspect_term_allowed', True),
                 allow_implicit_opinion_terms=config.get(
                     'implicit_opinion_term_allowed', False),
-                n_few_shot=10,
+                n_few_shot=config.get('n_few_shot', 10),
                 llm_model=config.get('llm_model', 'gpt-4o-2024-08-06'),
                 openai_key=openai_key
             )[0]
@@ -894,7 +894,7 @@ def get_ai_prediction(data_idx: int):
                     'implicit_aspect_term_allowed', True),
                 allow_implicit_opinion_terms=config.get(
                     'implicit_opinion_term_allowed', False),
-                n_few_shot=10,
+                n_few_shot=config.get('n_few_shot', 10),
                 llm_model=config.get('llm_model', 'gemma3:4b')
             )[0]
         predictions = predictions["aspects"]

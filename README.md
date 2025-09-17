@@ -242,6 +242,7 @@ You can save and reuse configurations with JSON files:
 | `--annotation-guideline` | Path to PDF file containing annotation guidelines to display in the UI | Disabled by default |
 | `--llm-model` | Language model for predictions (e.g., gemma3:4b for Ollama, gpt-4o-2024-08-06 for OpenAI) | `gemma-3:4b` |
 | `--openai-key` | OpenAI API key for using OpenAI models instead of local LLM | None |
+| `--n-few-shot` | Maximum number of few-shot examples to include in LLM prompts | `10` |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 

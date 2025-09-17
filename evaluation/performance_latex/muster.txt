@@ -17,6 +17,6 @@
 \rowcolor{gray!5}
 \textbf{1,000} & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
 \midrule
+\textit{p} & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
 \textit{p}\textsubscript{\textit{adj}} & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
-\textit{p}\textsubscript{\textit{adj}} < .05 & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx & xxxx \\
 \bottomrule

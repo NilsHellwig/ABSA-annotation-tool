@@ -74,6 +74,7 @@ class ABSAAnnotatorConfig:
             "enable_pre_prediction": False,
             "disable_ai_automatic_prediction": False,
             "annotation_guideline": None,
+            "n_few_shot": 10,
             "openai_key": None
         }
 
@@ -155,6 +156,12 @@ class ABSAAnnotatorConfig:
         """Set the OpenAI API key for using OpenAI models."""
         self.config["openai_key"] = openai_key
 
+    def set_n_few_shot(self, n_few_shot: int) -> None:
+        """Set the maximum number of few-shot examples to include in LLM prompts."""
+        if n_few_shot < 0:
+            raise ValueError("Number of few-shot examples must be non-negative")
+        self.config["n_few_shot"] = n_few_shot
+
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
         self.config["session_id"] = session_id
@@ -211,6 +218,7 @@ class ABSAAnnotatorConfig:
             f"💭 Implicit Opinion terms: {'✅' if self.config['implicit_opinion_term_allowed'] else '❌'}")
         print(
             f"🔧 Auto-add Positions: {'✅' if self.config['auto_positions'] else '❌'}")
+        print(f"🎯 Few-shot Examples: {self.config['n_few_shot']}")
         if self.config.get('openai_key'):
             print(f"🤖 AI Provider: OpenAI (API Key configured)")
         else:
@@ -528,6 +536,14 @@ Examples:
         help="OpenAI API key for using OpenAI models instead of local LLM"
     )
 
+    parser.add_argument(
+        "--n-few-shot",
+        type=int,
+        default=10,
+        metavar="N",
+        help="Maximum number of few-shot examples to include in LLM prompts (default: 10)"
+    )
+
     # Server control arguments
     parser.add_argument(
         "--backend",
@@ -635,6 +651,9 @@ Examples:
 
     if args.openai_key:
         config.set_openai_key(args.openai_key)
+
+    if args.n_few_shot:
+        config.set_n_few_shot(args.n_few_shot)
 
     # Show configuration if requested
     if args.show_config:
