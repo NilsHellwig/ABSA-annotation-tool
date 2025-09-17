@@ -39,7 +39,7 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **AI-Powered Predictions** - Optional AI assistance with `--ai-suggestions` flag for automated annotation suggestions based on your previous annotations
 - **Manual AI Control** - Use `--disable-ai-automatic-prediction` flag to disable automatic AI triggering while keeping manual AI button functionality
 - **Annotation Guidelines** - Display PDF guidelines with `--annotation-guideline <file.pdf>` for consistent annotation standards
-- **LLM Integration** - Uses Gemma 3:4B model (default) for intelligent aspect and sentiment prediction
+- **LLM Integration** - Uses Gemma 3:4B model (local) or OpenAI GPT-4o (cloud) for intelligent aspect and sentiment prediction
 - **Smart Similarity Matching** - Uses BM25 for finding relevant examples with keyword-based retrieval
 
 ## 📊 Analytics Features
@@ -52,9 +52,24 @@ This tool helps you **annotate text data for Aspect-Based Sentiment Analysis (AB
 - **JSON storage** - Timing data saved as `[{"duration": <seconds>, "change": true/false}, ...]` per example
 - **Privacy-focused** - Timing collection is disabled by default and must be explicitly enabled
 
-## 🤖 AI-Powered Predictions with Ollama
+## 🤖 AI-Powered Predictions
 
-The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). All processing happens locally on your machine via the Ollama API, ensuring data privacy. You can enable this feature with the `--ai-suggestions` CLI flag. The only prerequisite is having [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
+The tool includes optional AI assistance for automated annotation suggestions using Large Language Models (LLMs). You can choose between **local processing** with Ollama or **cloud-based** processing with OpenAI:
+
+### Local AI with Ollama (Privacy-Focused)
+All processing happens locally on your machine via the Ollama API, ensuring complete data privacy. Enable with the `--ai-suggestions` CLI flag. Requires [Ollama](https://ollama.com/) installed and a compatible model (e.g., Gemma 3:4B) downloaded.
+
+### Cloud AI with OpenAI (Advanced Models)  
+Use OpenAI's advanced language models (like GPT-4o) by providing your API key with `--openai-key your-api-key`. This option provides more sophisticated predictions but sends data to OpenAI's servers.
+
+**Example usage:**
+```bash
+# Local AI with Ollama
+annoabsa data.csv --ai-suggestions --llm-model gemma3:4b
+
+# Cloud AI with OpenAI  
+annoabsa data.csv --ai-suggestions --openai-key sk-your-api-key --llm-model gpt-4o-2024-08-06
+```
 
 ### Manual vs Automatic AI Prediction
 
@@ -225,7 +240,8 @@ You can save and reuse configurations with JSON files:
 | `--ai-suggestions` | Enable AI-powered prediction for automated annotation suggestions using LLM | Disabled by default |
 | `--disable-ai-automatic-prediction` | Disable automatic AI prediction triggering (AI button still works manually) | Disabled by default |
 | `--annotation-guideline` | Path to PDF file containing annotation guidelines to display in the UI | Disabled by default |
-| `--llm-model` | Language model for predictions (e.g., Gemma 3:4B) | `gemma-3:4b` |
+| `--llm-model` | Language model for predictions (e.g., gemma3:4b for Ollama, gpt-4o-2024-08-06 for OpenAI) | `gemma-3:4b` |
+| `--openai-key` | OpenAI API key for using OpenAI models instead of local LLM | None |
 | `--save-config` | Save config to JSON file | - |
 | `--show-config` | Display current configuration | - |
 
@@ -246,7 +262,22 @@ For a restaurant review annotation project with multilingual support and positio
   --save-config restaurant_config.json
 ```
 
+### AI-Enhanced Annotation with OpenAI
+
+For projects requiring advanced AI assistance with GPT-4o:
+
+```bash
+./annoabsa examples/restaurant_reviews.csv \
+  --ai-suggestions \
+  --openai-key sk-your-openai-api-key \
+  --llm-model gpt-4o-2024-08-06 \
+  --session-id "ai_assisted_annotation" \
+  --save-config ai_config.json
+```
+
 This configuration:
+- Enables AI-powered predictions using OpenAI's GPT-4o model
+- Uses cloud-based processing for sophisticated language understanding
 - Tracks all annotation sessions with ID `restaurant_study_2024`
 - Enables position saving for phrase analysis (default)
 - Allows implicit aspects (useful for general sentiment)

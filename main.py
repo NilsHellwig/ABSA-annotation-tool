@@ -614,6 +614,120 @@ def predict_llm(text, considered_sentiment_elements, examples, aspect_categories
         return json.loads(response.response), few_shot_examples
 
 
+def predict_openai(text, considered_sentiment_elements, examples, aspect_categories, polarities, allow_implicit_aspect_terms=False, allow_implicit_opinion_terms=False, n_few_shot=10, llm_model="gpt-4o-2024-08-06", openai_key=None):
+    """Predict sentiment elements using OpenAI's structured output."""
+    from openai import OpenAI
+    from pydantic import BaseModel, create_model
+    from enum import Enum
+    
+    if not openai_key:
+        raise ValueError("OpenAI API key is required for OpenAI predictions")
+    
+    client = OpenAI(api_key=openai_key)
+    
+    # Build dynamic pydantic model based on considered sentiment elements
+    allowed_phrases = find_valid_phrases_list(text)
+    allowed_aspect_terms = allowed_phrases + ["NULL"] if allow_implicit_aspect_terms else allowed_phrases
+    allowed_opinion_terms = allowed_phrases + ["NULL"] if allow_implicit_opinion_terms else allowed_phrases
+
+    AspectEnum = Enum("AspectEnum", {p: p for p in allowed_aspect_terms})
+    OpinionEnum = Enum("OpinionEnum", {p: p for p in allowed_opinion_terms})
+    PolarityEnum = Enum("PolarityEnum", {p: p for p in polarities})
+    CategoryEnum = Enum("CategoryEnum", {c: c for c in aspect_categories})
+
+    # Mapping von Namen -> Typen
+    field_types = {
+        "aspect_term": (AspectEnum, ...),
+        "aspect_category": (CategoryEnum, ...),
+        "opinion_term": (OpinionEnum, ...),
+        "sentiment_polarity": (PolarityEnum, ...)
+    }
+
+    # dynamisch Modell bauen
+    SentimentElement = create_model(
+        "SentimentElement",
+        **{name: field_types[name] for name in considered_sentiment_elements}
+    )
+
+    class Aspects(BaseModel):
+        aspects: list[SentimentElement]
+
+    # Build prompt similar to Ollama version
+    prompt_head = "According to the following sentiment elements definition: \n\n"
+
+    if "aspect_term" in considered_sentiment_elements:
+        prompt_head += "- The 'aspect term' is the exact word or phrase in the text that represents a specific feature, attribute, or aspect of a product or service that a user may express an opinion about. "
+        if allow_implicit_aspect_terms:
+            prompt_head += "The aspect term might be 'NULL' for implicit aspect."
+        prompt_head += "\n"
+    if "aspect_category" in considered_sentiment_elements:
+        prompt_head += f"- The 'aspect category' refers to the category that aspect belongs to, and the available categories includes: {', '.join(aspect_categories)}.\n"
+    if "sentiment_polarity" in considered_sentiment_elements:
+        prompt_head += f"- The 'sentiment polarity' refers to the degree of positivity, negativity or neutrality expressed in the opinion towards a particular aspect or feature of a product or service, and the available polarities include: {', '.join(polarities)}.\n"
+    if "opinion_term" in considered_sentiment_elements:
+        prompt_head += "- The 'opinion term' is the exact word or phrase in the text that refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service. "
+        if allow_implicit_opinion_terms:
+            prompt_head += "The opinion term might be 'NULL' for implicit opinion."
+        prompt_head += "\n"
+
+    prompt_head += "\nRecognize all sentiment elements with their corresponding "
+    for element in considered_sentiment_elements:
+        prompt_head += element.replace("_", " ") + "s, "
+    prompt_head = prompt_head[:-2]  # remove last comma and space
+    prompt_head += " in the following text in the form of a list of objects, each object having key(s) "
+    for element in considered_sentiment_elements:
+        prompt_head += f"'{element.replace('_', ' ')}', "
+    prompt_head = prompt_head[:-2]  # remove last comma and space
+    prompt_head += ".\n\n"
+
+    few_shot_examples = get_most_similar_examples(text, examples, n=n_few_shot)
+
+    prompt = prompt_head + "Here are some examples:\n"
+    for ex in few_shot_examples:
+        prompt += f"Text: {ex['text']}\n"
+        prompt += "Sentiment elements: ["
+        for label in ex['label']:
+            prompt += "("
+            for element in considered_sentiment_elements:
+                prompt += f"'{element.replace('_', ' ')}': '{label[element]}', "
+            prompt = prompt[:-2]  # remove last comma and space
+            prompt += "), "
+        prompt = prompt[:-2]  # remove last comma and space
+        prompt += "]\n"
+    prompt += f"Text: {text}\nSentiment elements: "
+
+    try:
+        print("🔍 Sending request to OpenAI...")
+        completion = client.beta.chat.completions.parse(
+            model=llm_model,
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant for aspect-based sentiment analysis. Extract the sentiment elements from the given text according to the provided instructions."},
+                {"role": "user", "content": prompt},
+            ],
+            response_format=Aspects,
+            temperature=0.0
+        )
+
+        message = completion.choices[0].message
+        if message.parsed:
+            # Convert to same format as Ollama response
+            aspects_data = {"aspects": []}
+            for aspect in message.parsed.aspects:
+                aspect_dict = {}
+                for element in considered_sentiment_elements:
+                    aspect_dict[element] = getattr(aspect, element).value
+                aspects_data["aspects"].append(aspect_dict)
+            
+            return aspects_data, few_shot_examples
+        else:
+            print(f"OpenAI refused the request: {message.refusal}")
+            return {"aspects": []}, few_shot_examples
+            
+    except Exception as e:
+        print(f"Error in OpenAI prediction: {e}")
+        return {"aspects": []}, few_shot_examples
+
+
 # ermittel die n Beispiele die am ähnlichsten zum input text sind
 
 
@@ -748,21 +862,41 @@ def get_ai_prediction(data_idx: int):
         # filter examples that are identical to the requested text
         examples = [ex for ex in examples if ex['text'] != text]
 
-        predictions = predict_llm(
-            text,
-            config.get('sentiment_elements', [
-                       "aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]),
-            examples,
-            aspect_categories,
-            config.get('sentiment_polarity_options', [
-                       "positive", "negative", "neutral"]),
-            allow_implicit_aspect_terms=config.get(
-                'implicit_aspect_term_allowed', True),
-            allow_implicit_opinion_terms=config.get(
-                'implicit_opinion_term_allowed', False),
-            n_few_shot=10,
-            llm_model=config.get('llm_model', 'gemma3:4b')
-        )[0]
+        # Check if OpenAI key is available, use OpenAI if yes, otherwise use Ollama
+        openai_key = config.get('openai_key')
+        if openai_key:
+            predictions = predict_openai(
+                text,
+                config.get('sentiment_elements', [
+                           "aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]),
+                examples,
+                aspect_categories,
+                config.get('sentiment_polarity_options', [
+                           "positive", "negative", "neutral"]),
+                allow_implicit_aspect_terms=config.get(
+                    'implicit_aspect_term_allowed', True),
+                allow_implicit_opinion_terms=config.get(
+                    'implicit_opinion_term_allowed', False),
+                n_few_shot=10,
+                llm_model=config.get('llm_model', 'gpt-4o-2024-08-06'),
+                openai_key=openai_key
+            )[0]
+        else:
+            predictions = predict_llm(
+                text,
+                config.get('sentiment_elements', [
+                           "aspect_term", "aspect_category", "sentiment_polarity", "opinion_term"]),
+                examples,
+                aspect_categories,
+                config.get('sentiment_polarity_options', [
+                           "positive", "negative", "neutral"]),
+                allow_implicit_aspect_terms=config.get(
+                    'implicit_aspect_term_allowed', True),
+                allow_implicit_opinion_terms=config.get(
+                    'implicit_opinion_term_allowed', False),
+                n_few_shot=10,
+                llm_model=config.get('llm_model', 'gemma3:4b')
+            )[0]
         predictions = predictions["aspects"]
 
         # if position saving is enabled, add positions to predictions

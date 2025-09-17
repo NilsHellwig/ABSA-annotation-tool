@@ -73,7 +73,8 @@ class ABSAAnnotatorConfig:
             "display_avg_annotation_time": False,
             "enable_pre_prediction": False,
             "disable_ai_automatic_prediction": False,
-            "annotation_guideline": None
+            "annotation_guideline": None,
+            "openai_key": None
         }
 
     def set_sentiment_elements(self, elements: List[str]) -> None:
@@ -150,6 +151,10 @@ class ABSAAnnotatorConfig:
         else:
             self.config["annotation_guideline"] = None
 
+    def set_openai_key(self, openai_key: str) -> None:
+        """Set the OpenAI API key for using OpenAI models."""
+        self.config["openai_key"] = openai_key
+
     def set_session_id(self, session_id: str) -> None:
         """Set the session ID for this annotation session."""
         self.config["session_id"] = session_id
@@ -206,6 +211,10 @@ class ABSAAnnotatorConfig:
             f"💭 Implicit Opinion terms: {'✅' if self.config['implicit_opinion_term_allowed'] else '❌'}")
         print(
             f"🔧 Auto-add Positions: {'✅' if self.config['auto_positions'] else '❌'}")
+        if self.config.get('openai_key'):
+            print(f"🤖 AI Provider: OpenAI (API Key configured)")
+        else:
+            print(f"🤖 AI Provider: Local LLM (Ollama)")
 
 
 def start_backend(port: int = 8000, host: str = "localhost", data_path: str = None, config: ABSAAnnotatorConfig = None):
@@ -510,7 +519,13 @@ Examples:
         "--llm-model",
         metavar="MODEL",
         default="gemma3:4b",
-        help="Language model for AI predictions (e.g., gemma3:4b, llama2:7b)"
+        help="Language model for AI predictions (e.g., gemma3:4b for Ollama, gpt-4o-2024-08-06 for OpenAI)"
+    )
+
+    parser.add_argument(
+        "--openai-key",
+        metavar="API_KEY",
+        help="OpenAI API key for using OpenAI models instead of local LLM"
     )
 
     # Server control arguments
@@ -617,6 +632,9 @@ Examples:
 
     if args.annotation_guidelines:
         config.set_annotation_guideline(args.annotation_guidelines)
+
+    if args.openai_key:
+        config.set_openai_key(args.openai_key)
 
     # Show configuration if requested
     if args.show_config:

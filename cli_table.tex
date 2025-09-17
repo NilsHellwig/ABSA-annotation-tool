@@ -1,9 +1,3 @@
-\begin{table}[ht]
-\centering
-\vspace{0.5em}
-\resizebox{0.95\textwidth}{!}{
-\renewcommand{\arraystretch}{1.2}
-\Large
 \begin{tabular}{@{}l p{9cm} p{8cm}@{}}
 \toprule
 \textbf{Option} & \textbf{Description} & \textbf{Default} \\
@@ -63,7 +57,8 @@
 \texttt{--ai-suggestions} & Enable AI-powered prediction for automated annotation suggestions using LLM & Disabled \\
 \texttt{--disable-ai-automatic-prediction} & Disable automatic AI prediction triggering (AI button still works manually) & Disabled \\
 \rowcolor{gray!5}
-\texttt{--llm-model} & Large Language model for predictions (e.g., Gemma 3:4B) & \texttt{gemma-3:4b} \\
+\texttt{--llm-model} & Large Language model for predictions (e.g., Gemma 3:4B for Ollama, GPT-4o for OpenAI) & \texttt{gemma-3:4b} \\
+\texttt{--openai-key} & OpenAI API key for using OpenAI models instead of local LLM & -- \\
 \addlinespace[0.3em]
 \hline
 \multicolumn{3}{@{}l}{\textit{Configuration Management}} \\
@@ -73,8 +68,3 @@
 \texttt{--show-config} & Display current configuration & -- \\
 \bottomrule
 \end{tabular}
-}
-\vspace{0.3em}
-\caption{AnnoABSA: Command Line Interface Options}
-\label{tab:cli-options}
-\end{table}
