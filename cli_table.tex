@@ -1,13 +1,22 @@
-\begin{tabular}{@{}l p{5.5cm} p{6.5cm}@{}}
+\begin{table}[ht]
+\centering
+\vspace{0.5em}
+\resizebox{0.95\textwidth}{!}{
+\renewcommand{\arraystretch}{1.2}
+\Large
+\begin{tabular}{@{}l p{9cm} p{8cm}@{}}
 \toprule
 \textbf{Option} & \textbf{Description} & \textbf{Default} \\
 \midrule
 \multicolumn{3}{@{}l}{\textit{Server Configuration}} \\
 \addlinespace[0.2em]
+\rowcolor{gray!5}
 \texttt{--backend} & Start only backend server & -- \\
 \texttt{--backend-port} & Backend server port & \texttt{8000} \\
+\rowcolor{gray!5}
 \texttt{--frontend-port} & Frontend server port & \texttt{3000} \\
 \texttt{--backend-ip} & Backend server IP address & \texttt{127.0.0.1} \\
+\rowcolor{gray!5}
 \texttt{--frontend-ip} & Frontend server IP address & \texttt{127.0.0.1} \\
 \addlinespace[0.3em]
 \hline
@@ -18,39 +27,54 @@
 \hline
 \multicolumn{3}{@{}l}{\textit{Annotation Elements}} \\
 \addlinespace[0.2em]
+\rowcolor{gray!5}
 \texttt{--elements} & Sentiment elements to annotate & aspect\_term, aspect\_category, sentiment\_polarity, opinion\_term \\
 \texttt{--polarities} & Available sentiment polarities & positive, negative, neutral \\
+\rowcolor{gray!5}
 \texttt{--categories} & Available aspect categories & Restaurant domain (13 categories) \\
-\texttt{--implicit-aspect} & Allow implicit aspect terms & \texttt{True} \\
-\texttt{--disable-implicit-aspect} & Disable implicit aspect terms & -- \\
-\texttt{--implicit-opinion} & Allow implicit opinion terms & \texttt{False} \\
-\texttt{--disable\_implicit\_opinion} & Disable implicit opinion terms & \texttt{True} (default) \\
+\texttt{--implicit-aspect} & Allow implicit aspect terms & Disabled \\
+\rowcolor{gray!5}
+\texttt{--disable-implicit-aspect} & Disable implicit aspect terms & Enabled \\
+\texttt{--implicit-opinion} & Allow implicit opinion terms & Disabled \\
+\rowcolor{gray!5}
+\texttt{--disable\_implicit\_opinion} & Disable implicit opinion terms & Enabled \\
 \addlinespace[0.3em]
 \hline
 \multicolumn{3}{@{}l}{\textit{Interface and Processing}} \\
 \addlinespace[0.2em]
 \texttt{--disable\_clean\_phrases} & Disable automatic punctuation cleaning from phrase start/end & Enabled \\
+\rowcolor{gray!5}
 \texttt{--disable-save-positions} & Disable saving phrase positions (\texttt{at\_start}, \texttt{at\_end}, \texttt{ot\_start}, \texttt{ot\_end}) for faster processing & Enabled \\
 \texttt{--disable-click-on-token} & Disable click-on-token feature (precise character clicking instead of token snapping) & Enabled \\
+\rowcolor{gray!5}
 \texttt{--auto-positions} & Enable automatic position filling on startup for existing phrases without positions & Disabled \\
 \addlinespace[0.3em]
 \hline
 \multicolumn{3}{@{}l}{\textit{Analytics and Timing}} \\
 \addlinespace[0.2em]
 \texttt{--store-time} & Store timing data for annotation sessions (duration and change detection) & Disabled \\
+\rowcolor{gray!5}
 \texttt{--display-avg-annotation-time} & Display average annotation time in the interface (requires timing data) & Disabled \\
 \addlinespace[0.3em]
 \hline
 \multicolumn{3}{@{}l}{\textit{AI Integration}} \\
 \addlinespace[0.2em]
+\rowcolor{gray!5}
 \texttt{--ai-suggestions} & Enable AI-powered prediction for automated annotation suggestions using LLM & Disabled \\
 \texttt{--disable-ai-automatic-prediction} & Disable automatic AI prediction triggering (AI button still works manually) & Disabled \\
+\rowcolor{gray!5}
 \texttt{--llm-model} & Large Language model for predictions (e.g., Gemma 3:4B) & \texttt{gemma-3:4b} \\
 \addlinespace[0.3em]
 \hline
 \multicolumn{3}{@{}l}{\textit{Configuration Management}} \\
 \addlinespace[0.2em]
 \texttt{--save-config} & Save config to JSON file & -- \\
+\rowcolor{gray!5}
 \texttt{--show-config} & Display current configuration & -- \\
 \bottomrule
 \end{tabular}
+}
+\vspace{0.3em}
+\caption{AnnoABSA: Command Line Interface Options}
+\label{tab:cli-options}
+\end{table}
