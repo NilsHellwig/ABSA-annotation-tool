@@ -1,0 +1,6469 @@
+[
+    {
+        "text": "The food was very good though.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.348545789718628,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Great to PERSON someone there to help x",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.178920030593872,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Everything on time, without issues and a very correct customer treatment.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3324439525604248,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The plane was great, clean... compared to the s*** that I flew before that flight this was amazing.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3386359214782715,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Very disappointed with the quantity of food, we had one sausage, small amount of egg, small amount of bacon, small amount of mushrooms but a huge tomato to make the plate look full, dessert was an awful cherry mousse (why would anyone want that?).",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.3270289897918701,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "When I boarded the plane I just stayed tk the cabin crew 'hello how are you' and she didn't answer while she looked at me angry.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3539600372314453,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "One paying so much for ticket would expect minimum service.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.1982338428497314,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "They take zero responsibility for their mistakes.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.4100418090820312,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Bad hospitality felt rushed.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 1.2731940746307373,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I found this fee to be unreasonably high and quite unexpected.",
+        "predicted": [
+            {
+                "aspect_category": "onboard price"
+            }
+        ],
+        "time": 1.4922339916229248,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "And generally underperfomed",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2250699996948242,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Pretty Good, although super hard landing and I tried to push on the seat  as hard as I could, but it was so stiff it would not budge.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.7480199337005615,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Cabin crew were good and helpful.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1600041389465332,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Excellent Service.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1671142578125,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The worse airline ever.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.137129783630371,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Very impressed with the flight crew.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2062242031097412,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Everything went smoothly on the flight and staff were attentive.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.30324387550354,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The flight was delayed for one hour.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.2275149822235107,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "The worst airline!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1616640090942383,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "We flew business class with Aegean Airlines from Napoli to Athens, which was amazing!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3104419708251953,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Horrible flight.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2164521217346191,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Horridly unpleasant attendant at the gate- was singling out people of color and making them pay extra for their otherwise suitable and standard carry on.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.3361790180206299,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "It was my first time travelling with Air France, and I must say, the experience wasn't great.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.216958999633789,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Everything went well and fast checking and boarding.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ],
+        "time": 1.1595790386199951,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Our only problem was trying to book our luggage all the way through to Vienna.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.2571277618408203,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "Flight was delayed 2 hours ..  okay fine… boarding started before ‘our plane’ had even landed … speedy check in is a joke … speedy check in to stand around crammed in a small area … got on the transfer",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.5243780612945557,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "I was surprised that the movie selection was first rate.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.3770062923431396,
+        "gold": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ]
+    },
+    {
+        "text": "Upon reaching departure gate A7, I was welcomed with smiles and a friendly atmosphere.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3475782871246338,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Very easy check in, flight was on time and attendants were all very well organised.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4769980907440186,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Not a fan of tui flights it was very tight and uncomfortable wouldn’t travel with them again  Staff on board were lovely..",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4245219230651855,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The service for selecting another flight that the one they automatically attribute was 'unavailable'",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2215311527252197,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Check in was a breeze at Dublin .",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.3690409660339355,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "2h30 delay!!!",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.1745500564575195,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Both flights were great.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1067678928375244,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Flight delayed by 70 minutes with no explanation or apology.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.2946808338165283,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "I had flight from Isfahan to London and I'm happy to chose Turkish airline .",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.327937126159668,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Most took off about half an hour late.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.307633876800537,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "PERSON at check in was superb and sorted everything out for us - absolute",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.0905091762542725,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I would like to highly compliment one of your flight attendants PERSON.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3926169872283936,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "My husband and I enjoyed a flight from London Gatwick to Oslo and, DATE, a return flight home from Bergen.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.3263659477233887,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Check in was simple and only waited a max of 20 mins there and back.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.2707180976867676,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "Lounge/Fast track/priority boarding all made this a smooth ride at a reasonable cost.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.3405978679656982,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ]
+    },
+    {
+        "text": "Easy jet flight good.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1857528686523438,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Both flights left on time (return landed half an hour early) , friendly staff, no problems with baggage drop or collection and fair prices on board the flight - we",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "onboard price"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3360679149627686,
+        "gold": [
+            {
+                "aspect_category": "onboard price"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Superb customer service.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1215498447418213,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Everything is an up charge that’s typical of an airline trying to squeeze every penny out of you.",
+        "predicted": [
+            {
+                "aspect_category": "onboard price"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3299758434295654,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "According to my last experience on KLM, I can imagine the seats will not be comfortable for such a long ride.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.233881950378418,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "Travelled to Paphos with Jet2 in DATE, have used lots of times and would recommend for low cost flights and holidays ,but had a few issues this time ,firstly we had booked a private transfer to our hotel, unfortunately the organisation for this was total chaos, we collected our",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.6792938709259033,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The flight was full and leg room tight.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.2323710918426514,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ]
+    },
+    {
+        "text": "Gatwick North to PERSON - delayed by 1 hour.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.2100942134857178,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "What I didn't like: 1) There was more enforcement of baggage rule flying out of Lisbon than there was",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.2514619827270508,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "Having long legs became an uncomfortable cramping 2 hour period.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.3981273174285889,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ]
+    },
+    {
+        "text": "The seats were narrow and positioned so that you were staring into the face of the adjacent passenger, which - whilst there was a sliding privacy partion - was nonetheless uncomfortable.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.3103392124176025,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "Food was in general ok with dinner and a hot breakfast.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.3328359127044678,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Pay a bit more to fly with another carrier",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.41886305809021,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "its okay for a short flight  reg seat has approx 42cm leg room; extra leg room has approx 60cm",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.4505400657653809,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "It was my worst experience with and airline  my flight got delayed and I missed my connecting flight the customer service was so poor and their every one on the team is a liar .",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 2.113805055618286,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The flight from Larnaca to Heathrow lasted around 4 hours and 45 ,minutes ( very good flight and the crew was very polite  ) and after passing the security",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3614940643310547,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "After reading a lot of negative reviews, my wife and I were pleasantly surprised by how easy it was to fly with Easyjet.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1427462100982666,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "After having very bad experiences with Ryanair before, I took a chance booking them one more time.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2442371845245361,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I feel conned.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3048059940338135,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Customer service was helpful and refunded me within DATE.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.170706033706665,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "After all the trips I have took with Jet 2 this latest trip of DATE was the worst.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 1.3390352725982666,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Slightly late taking off because although 5 TUI staff were standing at the gate only 1 person was struggling to check everyone through.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3858180046081543,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Joke of a company.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.4101290702819824,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Staff was friendly.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1473240852355957,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Everything was impressive, punctuality,",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3522157669067383,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Oh what joy compared with the incompetence of the awful Ryanair.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2137539386749268,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Service on board was fine (if you speak French on AF, it is in general the case, but only if you speak French), and food, all right.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.6646728515625,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "We flew at night and the cabin crew on DATE led by PERSON were incredibly friendly and helpful (probably some of the best cabin crew I have had on a plane before!).",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.845768928527832,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The poor quality of meals",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.1833148002624512,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "I was nervous travelling with Ryanair because of some of things I've heard about them but I have just come back from holiday with my 2 teenage children and we received great service!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4157030582427979,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "the food was a roll with one piece of turkey and it was awful.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.2177009582519531,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "PERSON is the best flight attendant ever!",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2170796394348145,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Seats very cramped and",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 0.9719760417938232,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "SAS is blessed to have this young lady on their team!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2015330791473389,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "BUYER BEWARE !",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.200969934463501,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Flight was delayed so we were worried about our connection in Athens but a very reassuring cabin crew made sure that we knew that we would make it which we did.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard price"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 2.078968048095703,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I got denied boarding on a flight, and let me tell you, dealing with their customer service has been a total letdown.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.5772790908813477,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "We have travelled with Jet2 numerous times, and they are quite efficient.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ],
+        "time": 1.3085241317749023,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Extremely professional, knowledgeable and kind.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3516411781311035,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Always had okay experience in flying with them.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.158277988433838,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The flight Aalborg-Copehagen was OK.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.19041109085083,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The flight crew and staff were fantastic and dealt with the situation very professionally and with care.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3327791690826416,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Our in flight experience was wonderful.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.3511581420898438,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "My bag got lost and was first delivered to me DATE after I got home from the vacation.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.4086658954620361,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "Very disappointed with a international airline I traveled with family for holidays from Luton to Malta on DATE we been checked in and been waited by the door to abort the flight by plane was not there I am heart patient so maybe someone else could be suffering with",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ],
+        "time": 1.7542972564697266,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "First, less than 12 hours before the trip, I get informed that my flight was cancelled and rescheduled for 7 hours later, and",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.3778800964355469,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "We departed an hour and half late, however once on board the crew were excellent, friendly and helpful.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3372080326080322,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "No compensation  no coffee, no lunch.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.2569620609283447,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "The check in and inflight teams work very hard to provide a great service and are greatly appreciated.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.6704630851745605,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Bad way to speak to a customer.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2150661945343018,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "My recent roundtrip flights from Boston to Kilimanjaro International Airport, and from Zanzibar to Boston, both with a stop in Istanbul, were outstanding!",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4928820133209229,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The food was horrible!",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.1579279899597168,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Pro: Comfortable seating, clean and quiet, very good entertainment movie selection, excellent blanket, comfortable lounge seating.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.8111510276794434,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ]
+    },
+    {
+        "text": "Check in was superb, flight excellent, food excellent, everyone was super friendly and very efficient.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4926283359527588,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The baggage drop off took a long time, even though I had checked in online ahead of time.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 0.775986909866333,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "Flight was fine, but the problem began when we arrived at Leeds Bradford .",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.4623539447784424,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Arrived Orly at 7pm from Lisbon with 1 missing luggage and another broken.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.3481271266937256,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "no stewards came to assist us or the other couple with the seat mixed up.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2797698974609375,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "But the last flight to bangkok a cabin crew member told us to out it away as it was unlegal.. I told him the to earlier flights with Lufthansa was no problem, then he startet yelling og was",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4617018699645996,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "They included fresh fruit and pastries.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.1771209239959717,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "At the prices BA charge I would expect friendlier service.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.5271689891815186,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The entertainment system needed to be updated, and the selection of movies was very old/limited.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.373157024383545,
+        "gold": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ]
+    },
+    {
+        "text": "A pleasant flight with a good captain, I think his name is PERSON..",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3136610984802246,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Worst Airline.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1236138343811035,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Discrimination against tall people or anyone who can’t be pressed into the small seats.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.3544199466705322,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I had a connecting flight with Lufthansa for New Year’s Eve and I arrived on time for the celebration.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.465029001235962,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Well folks, Lufthansa will NEVER have the pleasure of my company again.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1643970012664795,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The premium economy seats although larger were not comfortable.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.350503921508789,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "Only issue is they ran out of water as it was contaminated on return flight, so they provided hand sanitiser for toilets.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.4269938468933105,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Very good flight on time and cabin crew were very helpful and attentive.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2829630374908447,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The extra cost for the priority is a joke… It is chaos to board the aircraft.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ],
+        "time": 1.070410966873169,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "Seats slightly wider than other airlines I used.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.1543729305267334,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "They new Business Class is amazing and there was nothing to complain about.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1993238925933838,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "While waiting, a staff member walked round giving information about our flight I have flown with them on several occasions and can’t fault their customer service",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3508260250091553,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The food is bad, the staff can't speak English, and it's owned by a corrupt government, so nothing has improved in DATE.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.4701590538024902,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Aegean flight from Mykonos to Athens was delayed and missed my connecting flight on another airline.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.3247499465942383,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Staff on board flight were polite and helpful and the airport staff on the ground, were just as helpful.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.3001840114593506,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Staff are rude, taking money out of my account and not giving us the seats we paid for.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.3488128185272217,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I have headed AirEuropa to my blacklist.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.250168800354004,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Long lines as the three check in desks made everybody put their bags in a sizer, then spent considerable time extorting money for",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.3686459064483643,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "Disgraceful.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1910691261291504,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Never get any refund, seems like there is nobody to talk to.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.2475512027740479,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Helpful staff, but passenger baggage behaviour was terrible.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.2839069366455078,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The seats are uncomfortable and it wasn’t cleaned that well but the flight was fine and all the staff were really pleasant and friendly.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 1.395963191986084,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Meals were top notch with tasty and abundant",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.1676909923553467,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Just over a 3 hour delay out bound so they are compensating.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.28187894821167,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "The seats were actually very comfortable and the leg room was good.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.0570039749145508,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "We had a very pleasant short flight over to Amsterdam at DATE.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 1.6110148429870605,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I understand that this can happen due to a delay but all I am asking is refund the",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.1221740245819092,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "After reading the reviews ı was worried about this airline but ı decided to take risk because Pegasus was really more affordable than its competitors.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.6212410926818848,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "TUI were amazing!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1732831001281738,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Service of food was fine.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2914698123931885,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "As i do understand that flights get delayed and stuff happens, the lack of genuine concern for your client is unacceptable (your flight was late from LOC, therefore we could not make it to our next",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.1233768463134766,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The flight left on time and the staff were all welcoming, helpful and friendly.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2864387035369873,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Not worth it!",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.1901512145996094,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "Food/Snacks were good.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.3403780460357666,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Our flight was delayed several times.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.1690528392791748,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "We are regular BA travellers and are generally happy with our travels.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2027108669281006,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "My carry on was too large for their type of plane so they checked it in at no additional cost at boarding.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.4635250568389893,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "Check in at the airport you also have to pay extra.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.3317692279815674,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "No drink with meal.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.1556751728057861,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "After a long wait to board, when we finally got to our seats and set of it was absolutely freezing on the plane.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.7209632396697998,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ]
+    },
+    {
+        "text": "While the flight was cheaper than others, we got what we paid for.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.3809549808502197,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "Great service",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.199578046798706,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Super super super incompetent.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1986470222473145,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "To be honest, it was actually really decent.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.145704984664917,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "First time we used them as part of ski holiday booked with crystal ski , they have no customer care , just money money money .",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.4496309757232666,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "My issue is in how they dealt with the delay.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2205159664154053,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "On board service friendly and efficient and nothing to complain about from PERSON.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2963001728057861,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Everything went well in both flights, the crew was very polite and friendly, flight was on time, I really appreciated, it was my first time flying with Wizz air, I definitely will fly with this company again in the future.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.3295700550079346,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "DATE, Delayed Bag, without any notification to me.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.4429681301116943,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "5* service.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2459158897399902,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Generally vey good.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1358251571655273,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "One of the worst flights to travel.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.145819902420044,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Avoid avoid avoid.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 0.7976438999176025,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I would definitely fly Lufthansa again and would recommend them to everyone!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2464728355407715,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I think EasyJet has a lot to improve.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2041678428649902,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "A shout out for BA on a short haul Club Europe trip.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.264502763748169,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Service was ok, when trying to get to the toilet, they had the trolleys out and no one could get",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.2922191619873047,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Staff were welcoming and helping",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1583139896392822,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "It was a good experience.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1446328163146973,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "There should be a zero-star rating, especially for SAS.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3499958515167236,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "All crew members were very friendly.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1309471130371094,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I would like to thank them again So much for what they did x they were not just doing",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2189021110534668,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Outbound MAN-IST leg OK.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.5834109783172607,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The space in the new aircraft is too limited and ll",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.2087938785552979,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Fantastic airline.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1533658504486084,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Dreadful!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2217001914978027,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Food was not good, and the check in process is a joke because they charge everyone for seat selection (even at online check in time).",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.331739902496338,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard price"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "All Jet 2 staff at Stansted Airport were friendly and helpful..check in was smooth with minimal time queued.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4584159851074219,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Fight was pretty much on time both ways.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.2043721675872803,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "I did everything they asked me even sent them some photo of my broken luggage but they never emailed me back or refund me at all.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.6468579769134521,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "We have become so indoctrinated with the budget airlines Turkish Airlines made a refreshing change and loads better than BA.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.298569917678833,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Very good pricing even with the extras.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 0.9659068584442139,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "The World traveller cabin on this Boeing 777 was clean & appeared modern but cabin crew interaction  was definitely sub par  compared to other carriers we use on mid & long haul travel.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.500978946685791,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The experience was very good.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.0998609066009521,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Also inside the airplane it was supposed to be wifi for free but it was not working",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.2825472354888916,
+        "gold": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ]
+    },
+    {
+        "text": "Plane was clean and the seats/leg room better than pretty much all other",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.3645000457763672,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "It was charter flight and everything went smooth.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3338871002197266,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "For a transatlantic flight, the space was really small (this I get",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard price"
+            }
+        ],
+        "time": 1.3819191455841064,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ]
+    },
+    {
+        "text": "Poor leg room in economy from Toronto to Istanbul.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard price"
+            }
+        ],
+        "time": 1.3846149444580078,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ]
+    },
+    {
+        "text": "This felt cramped, more akin to sardines with seats facing fore and",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.0550620555877686,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "I personally have a flight anxiety and the stuff on the plane were very very friendly with me.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2946250438690186,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Never travel with BA again if there is an alternative.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2839910984039307,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "If you are in Krakow, Poland AVOID THIS AIRLINE!!!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1697378158569336,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The return flight was even better.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.209017038345337,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "It's a budget airline you get what you pay for, both ways the flight was delayed, but on boarding it was clean, you have to take your own entertainment, you can take snacks on board if you don't want yo pay there prices, if you want better pay for a premium airline, seats are",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard price"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.8209471702575684,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Jet2 seem to be constantly departing late , late arriving at Kefalonia & then late departing by over 2 hours .",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.3316731452941895,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Despite this, the cabin crew kept serving him more alcohol exacerbating the issue",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.370007038116455,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "massive thankyou to PERSON for finding 2 spare seats so myself and my sister could sit together on our 9 hour flight.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.2889652252197266,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Plane good.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 0.9778139591217041,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Just want to thanks TAP for their flexibility !",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.159656047821045,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I will never fly Air France again",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1346182823181152,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I was one of the last to board due to an extremely long wait at security and found my seat was already occupied.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.6642298698425293,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "Promises new flight 12h later, guess what DELAYED!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.30305814743042,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Fabulous flights bang on time, excellent staff and planes have really comfortable seats even in economy",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4800660610198975,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "They do not refund even if they done mistake.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1748790740966797,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The legroom is decent though.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.2240641117095947,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ]
+    },
+    {
+        "text": "Turkish airlines is probably the worst airlines and customer service in the world.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3322758674621582,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The price was favorable.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.2011330127716064,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "I  will not and I will advise others not to use this service.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1677391529083252,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The booking in process was easy and staff were excellent.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.352323055267334,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Having done the on-line check-in, the baggage drop was pretty easy.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.3755240440368652,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "Some reviews looked a bit 'sketchy', but in my experience flights were on time, seats were decent and clean, and the staff very helpful and polite.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4635491371154785,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Overall the service was brilliant.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.131004810333252,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Flight was on time and the plane was reasonably comfortable.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.360502004623413,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "The worst experience in my life.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1466560363769531,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The flight itself was unexceptional but no strong source of complaints (other than distributing food, drinks, snacks",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.3238821029663086,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "As I understand these things can happen but I cant understand why they have refused to reimburse me the difference in the cost of the flight.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.6332480907440186,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Goods and bads,  Good price, good leg room, staff polite and helpfull, Now the bads,  Really poor communication,  infact no communication at all,  room types offered were double twins or singles,this trip was my honeymoon and I sent request 3 times for a double ,  when we got",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3939151763916016,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I've flown with them in the past and have never been disappointed with the service.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1589818000793457,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Possibly a food mess from a previous flight.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.4485039710998535,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "The staff are friendly and helpful at every stage of the journey.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1593220233917236,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "It was a wonderful flight from check-in till the landing.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3511958122253418,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Flight from antalya had special assistance for my wife to be told that the easyjet  assistant was too busy to help the hotel was terrible ended up with bed bugs asked for a drink  of hot chocolate for my disabled wife to be told to go away try to complain  we're staff just lay",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.632037878036499,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Flight on time.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.1506109237670898,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "After hearing poor things from friends and also the reviews, I was expecting the worst but Pegasus were a very good airline for me, both my flights were on time, crew were good, seats were comfortable and easy transit in SAW, not top quality but for the price, they do a very",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.793468713760376,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I was willing to accept the watery terrible food and the headphone jack not working, as I bought an economy class ticket and even though that too is expensive you never really get your money worth on what is offered.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.047475814819336,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ]
+    },
+    {
+        "text": "Pushed back early and arrived at JFK ahead of schedule.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ],
+        "time": 1.3452260494232178,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "We asked on take off for a chilled bottle of Prosecco and it arrived 30 mins later.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard price"
+            }
+        ],
+        "time": 1.386247158050537,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "At Manchester Airport Terminal 1, check in was extremely efficient (there was no wait at all) and the wait for security was minimal.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ],
+        "time": 1.3712890148162842,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "Just about the worst airline for delays and then refusing to pay compensation by claiming the delay was not their fault.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3155419826507568,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Booking: easily done, online, with LOC.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.1910667419433594,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Very good service once again from Jet2 for my flights to Spain recently.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.5522730350494385,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Toilets very dirty.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 1.3587749004364014,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Service was fine, albeit only veggie meals and not the best food.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.309250831604004,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Check in and boarding efficient with helpful staff.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.505666971206665,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The baggage restrictions are so rubbish.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.1560232639312744,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "Service barely polite, no more.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1515240669250488,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "He tried to get extra help but nothing happened.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1724960803985596,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Airline doesn't take responsibility for poor baggage handling that resulted in missing item from the inside of the rucksack.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.237529993057251,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "** Return Flight from Spain through Heathrow and what a nightmare!",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.0051541328430176,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "But I am giving 1 star due to the luggage being delayed at the final destination and because we had to travel further, we couldn't wait DATE) for the luggage to arrive on the next flight, because",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.0459399223327637,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "Planes were clean.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 1.2059059143066406,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "The bowl wasn't much better.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.177704095840454,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Horrible airline legroom everting is horrible they need to change unsafe planes like 737 max family.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3381288051605225,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Flights were on time and the cabin crew were Okay.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3256258964538574,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I cannot praise Jet2 staff enough for the discrete and",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2301249504089355,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I was sent to their costumer service which made me miss this flight and didn’t give me a reason why the",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2860510349273682,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The first leg from Capetown to Doha was with QATAR who were superb and only proved how poor BA are in comparison.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.6090140342712402,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "My wife and I had two superb flights with Jet2 as always, LS143 out and LS144 back which both landed early!",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.47261381149292,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Staff are so rude and the legroom in the plane is so bad and seats are so uncomfortable wouldn’t ever travel again with them.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4873161315917969,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "All our flights arrived on time and while the seats weren’t overly comfortable, it’s only a 2.5 hour",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.3657729625701904,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "I have terrible experience with Turkish Airlines when I travelled last X-mass, they lost one my luggage and I have been chasing them for compensation for DATE and until now they have not even started the compensation process.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.3436880111694336,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "The food quality was below par, with bland and unappealing options.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.2220721244812012,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Only minus was about 1:30 delay on the first leg on my",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.2517588138580322,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "This was a horrible experience.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.279320240020752,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "There was 1 hour delay due to late arrival of the airplane.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1975040435791016,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Such a huge disappointment.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3726098537445068,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The customer care representative was incredibly rude and unhelpful regarding our rights in this",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2001621723175049,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The staff on the plane were all VERY, VERY professional and if rating just them it would be a 5 star experience.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.5821270942687988,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The seats are more comfortable than other airlines and they even have a fun",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.3677217960357666,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "Awful seats.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.1653046607971191,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "I would like to caution others against booking with this company.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1518611907958984,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "We arrived late.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.4028489589691162,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "At Vancouver airport, at the Air France check-in counter, my experience wasn't great as the staff wasn't that helpful and co operative.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.4042770862579346,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "No air bridge from our gate so across the tarmac and up the stairs for boarding!",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 1.408289909362793,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ]
+    },
+    {
+        "text": "I was delighted with my recent flight.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2243049144744873,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "However, the airline shines in other",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1601390838623047,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Nice service, a little light on the beverages, maybe.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.2968029975891113,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "We flew to Bangkok recently & our experience with Lufthansa was not great at all.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.233170986175537,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "This was our first time travelling with EasyJet and we were worried about our flights but to be quite honest we didn’t have any issues whatsoever.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2485640048980713,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Pleasant flight attendants",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1824660301208496,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Delayed too much time wasted on waiting the plane.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.1851251125335693,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Cancellations always, worst value for money, they rip off passengers, don't pay their employees enough, terrible customer service.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.4869132041931152,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Staff are definitely not helpful.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1321160793304443,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Below par compared with similar airlines.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.27681303024292,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I believe that no one who pays €3.5 for a coffee should get the one I got DATE.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.22865891456604,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "Good service on board with Fair selection of",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.3278489112854004,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "It was our first time flying with Jet2 & we thought it was fantastic.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.236543893814087,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Turbo service to Lufthansa I’m trying to get my luggage back.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2844769954681396,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The flight was delayed a total of 45 minutes due to understaffing in Ground Crew Operations at Munich.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.2488291263580322,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "PROS *  Good flight *  Great crew *  Decent boarding procedures  CONS *  No in-flight entertainment *  Not a lot of leg room  'I VISTED THIS PLACE:... ... because it was the least expensive airfare on my route.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.6336040496826172,
+        "gold": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Keep your good staff.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 0.8249180316925049,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Unfortunately I have to agree that it wasn’t great.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.275390863418579,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Turkish business class is solid.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.385990858078003,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Big shout out to PERSON and PERSON for fabulous, friendly and professional service.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.196131706237793,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The low-sodium meal was good, but the kosher",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.2233610153198242,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "I was excited that I got business class, but I found out that the pod seat was old, hard and overused.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.4106402397155762,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "The Good - quick efficient check in, flight took off on time.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.3737120628356934,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "But apart from better space for the legs, we didn’t get many advantages.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.4085099697113037,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ]
+    },
+    {
+        "text": "Coach class jaunt back to Gatwick from Marrakesh was a little late leaving but did make the time up in the air.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.4024908542633057,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "This is a budget airline and we definitely got what we paid for - the planes appeared modern and were clean, comfortable and cabin crew friendly.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.468858003616333,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Flight on time and arrived at destination early.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.3113138675689697,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "PERSON, friendly staff, amazing, with",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2587699890136719,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "What a total pleasure to travel with Jet2.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1807007789611816,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "No words to describe how bad this company is!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.4367461204528809,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Frankly, for the prices now charged ( extra for this extra for that) the customer service and amenities are... lousy.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.328070878982544,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Premium check in was good, though the main queue for check in overall was small.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3518519401550293,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "This airline can’t do anything on time.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.1824872493743896,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Staff is friendly, but seat is not that good, it is kind of small, pretty old.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.3553550243377686,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Airplane was good, staff were friendly and professional.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2787680625915527,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Nice selection of movies though!",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.1741728782653809,
+        "gold": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ]
+    },
+    {
+        "text": "Within 3 minutes I was directly linked with the inquiry service and it ran all smoothly.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2158820629119873,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I, PERSON, find myself compelled to address the public and the leadership of Turkish Airlines through this letter, detailing the deeply disappointing and unacceptable ordeal my family and I endured during our recent interaction with your airline.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3428070545196533,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Flight was cancelled.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.18294095993042,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "It hard to understand it with TAP being the biggest local operator.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.369441032409668,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "We have travelled mostly three times a year with Jet 2 Always happy before.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.447713851928711,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Airplane was new and comfortable, food was very good, both connections were on time, baggage was delivered promptly.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.6610748767852783,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "Absolutely disgusting service!",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 1.329197883605957,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "While on-board service is good, their after-sales service is not customer friendly and helpful.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2951769828796387,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Firstly, kudos to Jet2.com for offering a service that is unique in a very crowded travel marketplace with several touch points through DATE.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2475159168243408,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": ": 'I had a terrible experience at this flight The staff was rude and unhelpful, and the services was very poor I would not recommend this plan to anyone.'",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3771581649780273,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I already travelled two times but they penalty  me more than £150 on each travel.",
+        "predicted": [
+            {
+                "aspect_category": "onboard price"
+            }
+        ],
+        "time": 1.1599092483520508,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "Smooth flight and landing.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.312950849533081,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Five Star.",
+        "predicted": [],
+        "time": 1.5932998657226562,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The airline itself is not reliable, i.e.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.167943000793457,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Thank you for you All",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1597766876220703,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "There was no major issue faced during our flight.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3495349884033203,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I've had such a terrible experience with Scandinavian Airlines.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1728739738464355,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Inflight service all provided.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.5352990627288818,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Am in turunc and find it impossible to contact a person from tui in regards to adding extra baggage for my return home.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard price"
+            }
+        ],
+        "time": 1.3606908321380615,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Great expereince every time.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2476341724395752,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The cabin crew were very attentive.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1520299911499023,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "As Air France’s business class seemed to have received a lot of praise recently on various forum that I read,  I thought it was time to give them a chance to St Maarten on our latest trip to St Barths, especially after a poor experience on BA via Antigua DATE.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.430109977722168,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "After being delayed leaving Vienna with no reason given the flight eventually departed over 40 minutes late.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.3693840503692627,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Service was zero",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 0.789679765701294,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "No sense of urgency or customer service.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1273548603057861,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "As a repeat customer of BA, we had a great experience going from Dubai airport to arriving at Terminal 5 in London Heathrow.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.402385950088501,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Jet 2 put everyone else in the shade .",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2058680057525635,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Huge plane, and very new.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.5337390899658203,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Actually it's zero stars, would think about travelling again.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1499981880187988,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "We had plenty of access to drinks, which was great.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard price"
+            }
+        ],
+        "time": 1.348552942276001,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "The crew were not very friendly, but polite.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1438958644866943,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "I was having a hard time finding a return flight at a good price, and TAP was offering BCN to SFO for roughly $220 per person (prices have since increased.)",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.4564948081970215,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "I would definitely book with BA flying to Orlando again as they fly into the new Terminal C which is much nicer, it is less busy and quicker to get",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.58723783493042,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "They take your carry on away claiming that your flight is full when it isn’t, and they don’t communicate if the flight will be delayed and/or what to expect.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.7540380954742432,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Thank you,  Great service & experience",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2083930969238281,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Food was good.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.2047460079193115,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "But sadly it was anything but good it was total chaos when it came",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.0470449924468994,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Ok Lufthansa",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1503629684448242,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Excellent service!",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.180974006652832,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Your staff are extremely lovely people and very good at their jobs!",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.1418507099151611,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Picked up a couple of delays on this flight but only an hour or so.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.214897871017456,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "The lounge was impeccably comfortable, the staff were polite, and the flight was spacious.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.4945662021636963,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "A shock !",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1790621280670166,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Food was good and high",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.1963660717010498,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Shameful Ryanair  Another awful practice by Ryanair.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2709541320800781,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I know Turkish airlines with good quality what I experienced this time flying was a shock.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.172137975692749,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "But they cancelled our flight home leaving us stranded with no hotel and no answers.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.3769500255584717,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "We chose to book a package holiday to Orlando with Tui instead of Virgin because at the time Virgin were much more expensive even if you got an indirect flight.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "onboard price"
+            }
+        ],
+        "time": 1.4568800926208496,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "Outgoing flight we were quite cramped.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.2081270217895508,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "I had to pay extra £48 at Birmingham Airport.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            }
+        ],
+        "time": 1.4087460041046143,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "The flight was delayed 3 hours and 33 minutes.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.2163612842559814,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Surely, a glass of water could be free!",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.152601718902588,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "Thank you jet 2 for the excellent support you gave to myself and my family.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.2400031089782715,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Could not fit in the seat as my knees were touching the front one.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.277458906173706,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    },
+    {
+        "text": "Downsides: couldn't see out of any windows, food was a bit 'too posh' (i.e.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.407047986984253,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "But food, cleanliness are of acceptable quality.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            }
+        ],
+        "time": 0.9925658702850342,
+        "gold": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "There were no delays and issues raised by passengers on both flights were purely due to seating and them not being happy with their allocated seats.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.386540174484253,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "Compared to the flight and services with united airlines (DATE back) everything is worse/tragic... cabin staff, food, limited selection of drinks and an older plane…",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.7052209377288818,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "We were in A because we paid more for seats at the front - but there was no room for our luggage.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.3914577960968018,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "The Air France staff at CdG Airport were terrible",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.3431789875030518,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Very unhappy with customer service delayed cases we were told be DATE nothing we can do very rude lady on report desk.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.494333028793335,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Until now Air France was my preferred airline to travel to Chile, I loved the treatment of the staff and the food.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.5536940097808838,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "airline general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "DO NOT FLY RYANAIR.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1509239673614502,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "The hot food is always hot and enjoyable especially the lasagna.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.21986985206604,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "DATE SAS has delayed flights.",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.1785938739776611,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "They are a cheap and cheerful airline and fly to many destinations.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3639109134674072,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "On top some of the rudest flight attendants I had",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.3863418102264404,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "The seats are okay 3 stars, the service is complicated so 2 and the food is 3 not of a big food service.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.4124207496643066,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "Good leg room on the flight.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ],
+        "time": 1.2880969047546387,
+        "gold": [
+            {
+                "aspect_category": "onboard seat legroom"
+            }
+        ]
+    },
+    {
+        "text": "y experience with Wizz Air was absolutely horrendous.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1694650650024414,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Took an age at Malaga before we could disembark.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.4104928970336914,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            }
+        ]
+    },
+    {
+        "text": "Customer service in Cairo is generally terrible, I was surprised that British Airways there is no exception.",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.3044908046722412,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "What a beautiful flight.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.1709320545196533,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Even the teens in front of us felt comfortable with him and the rest of the crew on board.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3933699131011963,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "You get the amount of legroom you expect on this type of flight and the crew was superb.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.3796606063842773,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "While my flight to Toronto was overbooked and I couldn't board, the compensation they provided was more than fair.",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2289619445800781,
+        "gold": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "They have the worst check bag process.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.3348150253295898,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "About a 15 minute delay outbound and",
+        "predicted": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.193099021911621,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            }
+        ]
+    },
+    {
+        "text": "But this is nothing in comparison to their awful customer service",
+        "predicted": [
+            {
+                "aspect_category": "airline service"
+            }
+        ],
+        "time": 1.193742036819458,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "No snacks.",
+        "predicted": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.1474699974060059,
+        "gold": [
+            {
+                "aspect_category": "onboard food"
+            }
+        ]
+    },
+    {
+        "text": "We were in Group 1 boarding, but something must've gotten messed up in their system during our check in as the automated ticket scan at the gate wouldn't let either myself or my wife through.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation boarding"
+            },
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ],
+        "time": 1.423314094543457,
+        "gold": [
+            {
+                "aspect_category": "airport operation check_in"
+            }
+        ]
+    },
+    {
+        "text": "I bought a very expensive Turkish Airlines flight from São Paulo to London.",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.2972321510314941,
+        "gold": [
+            {
+                "aspect_category": "airline price"
+            }
+        ]
+    },
+    {
+        "text": "I aren't a film person but enjoyed the selection.",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.2579290866851807,
+        "gold": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ]
+    },
+    {
+        "text": "We weren’t happy about this, but we’d already booked our hotel and the alternative flights departing from Edi on the dates needed were much",
+        "predicted": [
+            {
+                "aspect_category": "airline price"
+            },
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.339066982269287,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "Two kids got sick on the plane, there were no sick bags  for them and the crew was absolutely no help.",
+        "predicted": [
+            {
+                "aspect_category": "onboard cleanliness"
+            },
+            {
+                "aspect_category": "onboard food"
+            }
+        ],
+        "time": 1.6031639575958252,
+        "gold": [
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "We had paid £17 extra per person ( 3 ) each way to have leg room and the front seats due to partner having back issues and having a toddler for more space.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat legroom"
+            },
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.4068219661712646,
+        "gold": [
+            {
+                "aspect_category": "onboard price"
+            }
+        ]
+    },
+    {
+        "text": "NEGATIVE EXPERIENCES: -The baggage handling is done by a third party agency, not Air France.",
+        "predicted": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ],
+        "time": 1.1665048599243164,
+        "gold": [
+            {
+                "aspect_category": "airport operation baggage"
+            }
+        ]
+    },
+    {
+        "text": "We flew to Turkey DATE and got caught up in the IT outage at Gatwick causing our flight to be cancelled on the runway and delayed to the following day...granted this is not the airlines fault...however the treatment of the passengers between flights was utterly shocking!",
+        "predicted": [
+            {
+                "aspect_category": "airport operation check_in"
+            },
+            {
+                "aspect_category": "punctuality general"
+            }
+        ],
+        "time": 1.694610834121704,
+        "gold": [
+            {
+                "aspect_category": "punctuality general"
+            },
+            {
+                "aspect_category": "airline service"
+            }
+        ]
+    },
+    {
+        "text": "My entertainment console speakers weren’t working, but it was ok",
+        "predicted": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ],
+        "time": 1.245039939880371,
+        "gold": [
+            {
+                "aspect_category": "onboard entertainment"
+            }
+        ]
+    },
+    {
+        "text": "Was way better than I expected though .",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1998610496520996,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "This is by far the worst in the UK history!",
+        "predicted": [
+            {
+                "aspect_category": "airline general"
+            }
+        ],
+        "time": 1.1328749656677246,
+        "gold": [
+            {
+                "aspect_category": "airline general"
+            }
+        ]
+    },
+    {
+        "text": "I have flown economy many times and this has definitely been the worst seat I have been in.",
+        "predicted": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ],
+        "time": 1.417863368988037,
+        "gold": [
+            {
+                "aspect_category": "onboard seat comfort"
+            }
+        ]
+    }
+]

@@ -12,6 +12,7 @@ def main():
     parser.add_argument("--llm", type=str, required=True, help="LLM model to use, z.B. gemma3:4b, gemma3:7b, gpt-3.5-turbo, gpt-4")
     parser.add_argument("--pool_size", type=float, default=0.2, help="Proportion of training data to use as pool, e.g., 0.2 for 20%")
     parser.add_argument("--dataset_name", type=str, default="rest16", help="Name of the dataset, z.B. rest16")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
     global args
     args = parser.parse_args()
 
@@ -32,7 +33,7 @@ print("Task:", args.task)
 
 
 ### Check if file evaluation/predictions/{task}/{llm}/{pool_size}/predictions.json exists
-if os.path.exists(f"evaluation/predictions/{task}/{args.llm.replace(':', '_')}/{args.pool_size}/{args.dataset_name}/predictions.json"):
+if os.path.exists(f"evaluation/predictions/seed_{args.seed}/{task}/{args.llm.replace(':', '_')}/{args.pool_size}/{args.dataset_name}/predictions.json"):
     print(f"Predictions for task {task}, llm {args.llm}, pool size {args.pool_size}, dataset {args.dataset_name} already exist. Exiting.")
     exit(0)
 else:
@@ -103,7 +104,7 @@ n_few_shot = 10
 pool_size = args.pool_size  # 0.2 means 20% of training data as pool
 
 train_data = load_data(args.dataset_name, "train", task)
-random.seed(42)
+random.seed(args.seed)
 random.shuffle(train_data)
 test_data = load_data(args.dataset_name, "test", task)
 pool = train_data[:int(1000*pool_size)]
@@ -177,8 +178,8 @@ for idx, example in enumerate(test_data):
 # store predictions in /evaluation/predictions/{task}/{llm}/{pool_size}/predictions.json
 
 # create directory if it does not exist
-os.makedirs(f"evaluation/predictions/{task}/{llm.replace(':', '_')}/{pool_size}/{args.dataset_name}", exist_ok=True)
+os.makedirs(f"evaluation/predictions/seed_{args.seed}/{task}/{llm.replace(':', '_')}/{pool_size}/{args.dataset_name}", exist_ok=True)
 
 # save predictions
-with open(f"evaluation/predictions/{task}/{llm.replace(':', '_')}/{pool_size}/{args.dataset_name}/predictions.json", "w", encoding="utf-8") as f:
+with open(f"evaluation/predictions/seed_{args.seed}/{task}/{llm.replace(':', '_')}/{pool_size}/{args.dataset_name}/predictions.json", "w", encoding="utf-8") as f:
     json.dump(predictions, f, ensure_ascii=False, indent=4)
