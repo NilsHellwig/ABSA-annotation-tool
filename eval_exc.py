@@ -14,7 +14,7 @@ for seed in seeds:
                 "eval.py",
                 "--task", task,
                 "--pool_size", pool_size,
-                "--llm", "gemma3:4b",
+                "--llm", "gemma3:27b",
                 "--dataset_name", dataset_name,
                 "--seed", str(seed),
             ]
