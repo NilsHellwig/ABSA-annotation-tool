@@ -13,6 +13,7 @@ def main():
     parser.add_argument("--pool_size", type=float, default=0.2, help="Proportion of training data to use as pool, e.g., 0.2 for 20%")
     parser.add_argument("--dataset_name", type=str, default="rest16", help="Name of the dataset, z.B. rest16")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
+    parser.add_argument("--mode", type=str, default="random", help="Type of example retrieval mechanism")
     global args
     args = parser.parse_args()
 
@@ -24,16 +25,22 @@ if __name__ == "__main__":
 
 task = args.task  # "asqp", "acd", "tasd"
 
+if args.mode == "random":
+   predictions_str = "predictions_random"
+else:
+   predictions_str = "predictions"
+
 print("Pool size (type):", type(args.pool_size))
 print("Pool size:", args.pool_size)
 print("LLM (type):", type(args.llm))
 print("LLM:", args.llm)
 print("Task (type):", type(args.task))
 print("Task:", args.task)
+print("Mode:", args.mode)
 
 
 ### Check if file evaluation/predictions/{task}/{llm}/{pool_size}/predictions.json exists
-if os.path.exists(f"evaluation/predictions/seed_{args.seed}/{task}/{args.llm.replace(':', '_')}/{args.pool_size}/{args.dataset_name}/predictions.json"):
+if os.path.exists(f"evaluation/{predictions_str}/seed_{args.seed}/{task}/{args.llm.replace(':', '_')}/{args.pool_size}/{args.dataset_name}/predictions.json"):
     print(f"Predictions for task {task}, llm {args.llm}, pool size {args.pool_size}, dataset {args.dataset_name} already exist. Exiting.")
     exit(0)
 else:
@@ -147,11 +154,17 @@ for idx, example in enumerate(test_data):
     signal.signal(signal.SIGALRM, timeout_handler)
     signal.alarm(10)
     
+    if args.mode == "rag":
+        few_shot_pool = pool
+    else:
+        few_shot_pool = random.sample(pool, 10)
+        print("took ", len(few_shot_pool), "examples from pool.")
+    
     try:
       llm_output= predict_llm(
         text,
         considered_sentiment_elements=considered_sentiment_elements,
-        examples=pool,
+        examples=few_shot_pool,
         aspect_categories=unique_aspect_categories,
         polarities=unique_polarities,
         allow_implicit_aspect_terms=allow_implicit_aspect_terms,
@@ -178,8 +191,8 @@ for idx, example in enumerate(test_data):
 # store predictions in /evaluation/predictions/{task}/{llm}/{pool_size}/predictions.json
 
 # create directory if it does not exist
-os.makedirs(f"evaluation/predictions/seed_{args.seed}/{task}/{llm.replace(':', '_')}/{pool_size}/{args.dataset_name}", exist_ok=True)
+os.makedirs(f"evaluation/{predictions_str}/seed_{args.seed}/{task}/{llm.replace(':', '_')}/{pool_size}/{args.dataset_name}", exist_ok=True)
 
 # save predictions
-with open(f"evaluation/predictions/seed_{args.seed}/{task}/{llm.replace(':', '_')}/{pool_size}/{args.dataset_name}/predictions.json", "w", encoding="utf-8") as f:
+with open(f"evaluation/{predictions_str}/seed_{args.seed}/{task}/{llm.replace(':', '_')}/{pool_size}/{args.dataset_name}/predictions.json", "w", encoding="utf-8") as f:
     json.dump(predictions, f, ensure_ascii=False, indent=4)
