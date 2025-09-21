@@ -157,6 +157,7 @@ for idx, example in enumerate(test_data):
     if args.mode == "rag":
         few_shot_pool = pool
     else:
+        random.seed(args.seed)  # different seed for each example
         few_shot_pool = random.sample(pool, 10)
         print("took ", len(few_shot_pool), "examples from pool.")
     
