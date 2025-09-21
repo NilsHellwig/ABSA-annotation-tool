@@ -1,0 +1,7086 @@
+[
+    {
+        "text": "The rooms are a generous size and decor leans toward minimalist and modern clean lines .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.5281989574432373,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "room_amenities design_features"
+            },
+            {
+                "aspect_category": "room_amenities cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Brilliant location , loads of nice restuarants near to the Lodge and close enough to mid and downtown to make it easy to get everywhere else .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3570642471313477,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The staff is wonderful , friendly and will help you as much as possible .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.2927379608154297,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Excellent hotel",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 0.8125209808349609,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Great Rooms , Noisy Location We spent 4 nights at this hotel in Madrid .",
+        "predicted": [
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3267488479614258,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "The rooms are great , cheaper than some of the well known names and frankly far better .",
+        "predicted": [
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.5614259243011475,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms prices"
+            }
+        ]
+    },
+    {
+        "text": "It ' s in a great location for the night - life ( ramblas ) and was within easy walking distance of good bars , resturants , and other attractions .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.619081974029541,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "This is a great new hotel in San Francisco close to the Convention Centre and the main shopping area .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3170790672302246,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The best part of the hotel is the easy reach of all the places in Singapore and their Bar with good cocktails and amazing view of the skyline of Singapore .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.559021234512329,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Very new bathroom .",
+        "predicted": [
+            {
+                "aspect_category": "room_amenities design_features"
+            }
+        ],
+        "time": 0.8681139945983887,
+        "gold": [
+            {
+                "aspect_category": "rooms quality"
+            }
+        ]
+    },
+    {
+        "text": "Some signs of wear and tear but if you can get a good rate it has everything you need and you won ' t be like you overpaid .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.6224758625030518,
+        "gold": [
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ]
+    },
+    {
+        "text": "Great location , great room , great lounge , fantastic breakfast .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.6103718280792236,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Good value for New York Stayed for 6 nights from the 9th January .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.288809061050415,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "We did not use the restaurant , but found many places within walking distance for all meals .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks miscellaneous"
+            }
+        ],
+        "time": 1.2101540565490723,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "I am going back a third time this year because this hotel is so attractive .",
+        "predicted": [
+            {
+                "aspect_category": "hotel quality"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.5111198425292969,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "There is no way this is a 4 . 5 star hotel , more like a 1 star .",
+        "predicted": [
+            {
+                "aspect_category": "hotel quality"
+            }
+        ],
+        "time": 1.245177984237671,
+        "gold": [
+            {
+                "aspect_category": "hotel quality"
+            }
+        ]
+    },
+    {
+        "text": "Fantastic !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1125330924987793,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "All the people at the hotel were very accommodating .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel comfort"
+            }
+        ],
+        "time": 1.3159728050231934,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The service stands out as some of the best I have experience - the staff was very outgoing and knowledgeable with recommendations for meals .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.4049439430236816,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "A Superb Hotel Stayed on the way to the QM2 .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3679790496826172,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Overall , those over age 26 may want to look elsewhere .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2292590141296387,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The location of this hotel is second to none .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2198631763458252,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Otherwise , it was a nice night for me .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.205557107925415,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Good location and nice hotel",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 0.948138952255249,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "My husband whisked me away to New York City for my Christmas present , needless to say I was blown away by the city and the hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3776061534881592,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Other family members had spectacular river views through 2 huge windows in their rooms .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.3641870021820068,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "both nights of our stay from helpful concierge , Nick .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.2976861000061035,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Don ' t miss the breakfast .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.2336878776550293,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Close to Macy ' s for shopping .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2057209014892578,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Room with a view Lovely reception staff and lovely room we stayed in with a view of a Duomo ( not the main one )  .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.6441380977630615,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "we had an amazing time .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3359591960906982,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "All in all , I have no hesitation in reccomending this wonderful hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1701109409332275,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The staff was kind and curtious , made us feel truly welcome .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.2605109214782715,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Amazing hospitality !",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.226194143295288,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The price includes parking and breakfast , and there is free winetasting every evening .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.3884532451629639,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ]
+    },
+    {
+        "text": "A Beautiful Place in a Very Good Location Stayed here for three nights in June 2008 , 2 adults and 2 teenagers in the annex rooms , second ( third ) floor .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.4504022598266602,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Great style , comfortable rooms , lovely bathrooms ( with real showers -  - not so easy to find in Europe )",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.459059238433838,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "appointed I frequently have to stay in LA for one or two nights at a time - and the OMNI is excellent .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2656738758087158,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The room was small but clean and comfortable with a good range of toiletries etc .",
+        "predicted": [
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.5363311767578125,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "The LCD tv ' s really make a difference and the room design and the ' wet room ' style bathrooms are great .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "room_amenities design_features"
+            }
+        ],
+        "time": 1.3620281219482422,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "Although it is not especially plush the Moore Hotel is spotlessly clean and the staff were very helpful .",
+        "predicted": [
+            {
+                "aspect_category": "hotel cleanliness"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.4378092288970947,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "was very comfortable .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 0.7953710556030273,
+        "gold": [
+            {
+                "aspect_category": "hotel comfort"
+            }
+        ]
+    },
+    {
+        "text": "The location being next to Central Railway Station is an asset and make it very easy to get to all locations whilst on holidays .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 0.9891500473022461,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The good - Pet Friendly - Organic coffee and tea available in the lobby every morning - Aveda Toiletries - Soft bathrobes - Great wine reception - soft  wonderful linensThe bad - Room size -",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "food_drinks prices"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "room_amenities quality"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 2.2248427867889404,
+        "gold": [
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "room_amenities quality"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is in a quiet zone in the centre of Berlin , 15 min .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2751960754394531,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The rooms were lovely and the breakfast great .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.0466370582580566,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Watertown Hotel -  - Amazing !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1397550106048584,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Would definately stay there again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1515886783599854,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Price for room was pretty good and they were able to extend our stay by a day ( you will need time to explore LA )  .",
+        "predicted": [
+            {
+                "aspect_category": "room_amenities prices"
+            },
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.4742090702056885,
+        "gold": [
+            {
+                "aspect_category": "rooms prices"
+            }
+        ]
+    },
+    {
+        "text": "The Triton is in a great location right next to the gates of Chinatown .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.197110891342163,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Our room was clean , spacious , and we enjoyed a magnificent view which was perfect at sunset .",
+        "predicted": [
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.355973243713379,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "it is also quiet - especially if you ask for a room at the rear of the property .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.2138149738311768,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ]
+    },
+    {
+        "text": "loved the hotel a truly grand dame in boston .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 0.9643459320068359,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "This place has pseudo - hip styling flourishes that serve no purpose and dance music is piped into every conceivable public area ( gym , elevators , lobby , restrooms , etc .  )  .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "facilities design_features"
+            }
+        ],
+        "time": 1.5632529258728027,
+        "gold": [
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ]
+    },
+    {
+        "text": "great location , design hotel",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ],
+        "time": 1.300072193145752,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ]
+    },
+    {
+        "text": "It is in a good location and close to alot of shops and restaurants .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.300523042678833,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The location was great - down the street from the Duomo , street markets , and within walking distance of the train station .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.3348441123962402,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "If you want to be in the heart of things , I ' d highly recommend the Hilton Times Square .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.337479829788208,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Highly recommend the Berchielli We spent 2 nights at the Berchielli last week , and the experience was completely delightful :",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.21742582321167,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Langham Place is my new business hotel from now onwards in Hongkong . Did not had the time to explore suroundings but the better i can conclude on the hotel and his facilities .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "facilities general"
+            }
+        ],
+        "time": 1.09950590133667,
+        "gold": [
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is used by lots of airline staff and the information desk was very helpfull for maps and sightseeing info .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3487088680267334,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The museum next door was also nice .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2589666843414307,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Preferred Business Address  Nice amenities , but since I came here on business , I needed an internet connection in my room .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.264739990234375,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ]
+    },
+    {
+        "text": "Fantastic location We stayed here for one night on the 3rd leg of our Honeymoon and it was fantastic , we had a suite with a little kitchen and a lounge and a large bedroom .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.6085529327392578,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "Location wise , the hotel has plenty of cafes and restuarants nearby as well as some excellent patisseries .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.3823740482330322,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The staff very helpful , they directed us on how to save hundreds on show tickets , where most hotels would only offer you there services , stadd multiple times",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3499341011047363,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "I had no problem with cell phone reception in my room and probaly made 50 calls at the time .",
+        "predicted": [
+            {
+                "aspect_category": "facilities prices"
+            }
+        ],
+        "time": 1.2565639019012451,
+        "gold": [
+            {
+                "aspect_category": "rooms miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "The Grand Hyatt is a beautiful property located close to Tianamen square and the Forbidden City .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.344651222229004,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ]
+    },
+    {
+        "text": "The only downside was , that some of the staff could have been more attentive and friendly .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.207326889038086,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Good location , just opposite central station and tram station and around the corner for everything else .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.5654819011688232,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The beds are comfortable and we like the rooms .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.3463671207427979,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "I would deffinately stay there again , from what l hear most of the hotels need a good overhaul in Hawaii , dont worry about staying there you will have a great time .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.301875114440918,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "the bedrooms let the hotel down - there is obviously a variety of bedrooms .",
+        "predicted": [
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.2695889472961426,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "Great Hotel !  !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1164557933807373,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "I hesitated to book a room in this hotel because of the mixed opinions posted below , but I went on to reserve one mainly because of its location ( undoubtedly the closest hotel from the central station )  .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.406891107559204,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "We would absolutely recommend Hotel Casci to all of our family and friends traveling to Florence , and we hope to come back soon ourselves .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel quality"
+            }
+        ],
+        "time": 1.6007089614868164,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Would definitely return !  !  !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1847138404846191,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Loved the Westin",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.4470081329345703,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "stains everywhere and",
+        "predicted": [
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 0.804689884185791,
+        "gold": [
+            {
+                "aspect_category": "room_amenities cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "The rooms are quite reasonably priced considering the surroundings , although drinks in the bar are very expensive by local standards .",
+        "predicted": [
+            {
+                "aspect_category": "rooms prices"
+            },
+            {
+                "aspect_category": "facilities prices"
+            }
+        ],
+        "time": 1.3695049285888672,
+        "gold": [
+            {
+                "aspect_category": "food_drinks prices"
+            },
+            {
+                "aspect_category": "rooms prices"
+            }
+        ]
+    },
+    {
+        "text": "There is no elevator and we had a room on the 3rd floor , which was a lot of steps .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.3807549476623535,
+        "gold": [
+            {
+                "aspect_category": "facilities general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel has a perfect location to discover the heart of Madrid by foot !",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.224419116973877,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "I would stay there again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.253769874572754,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Bathroom small and disappointing .",
+        "predicted": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.1660497188568115,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "I usually have stayed at the Windsor Court , but for my money the IC is better .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.3769118785858154,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "I have stayed in many a four star hotel in Italy but none compare to this hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.3961460590362549,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is within the expectation of the price we paid .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.3090670108795166,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "Breakfast was a real event and all the staff were extremely friendly and helpful .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3774540424346924,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "square ti was very quiet )  , really helpful staff , breakfast ok , the bathroom was with glass walls so a little bit embarassing if you want your privacy .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ],
+        "time": 1.816514015197754,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Wonderful service , couldn ' t fault anything .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3844192028045654,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "A good room , clean and tidy and attentive staff .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.4875822067260742,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "The Coral Princess is a well kept secret that is tucked away among the larger hotels in the Condado area .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.34470796585083,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "pressure . the towels were very thick and soft . no pool . the only bad thing about this hotel is that it is connected to the plaza of the americas office complex which is closed on the weekends . so all of the shops are not open . there is an ice skating rink that is open for limited skating . pay the $ 20 for valet parking unless you plan to drive to other parts of dallas . the dart train is only about 2 blocks from the front door .",
+        "predicted": [
+            {
+                "aspect_category": "facilities cleanliness"
+            },
+            {
+                "aspect_category": "facilities miscellaneous"
+            },
+            {
+                "aspect_category": "facilities prices"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms prices"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.809603214263916,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "room_amenities quality"
+            }
+        ]
+    },
+    {
+        "text": "Quaint bar .",
+        "predicted": [
+            {
+                "aspect_category": "facilities general"
+            }
+        ],
+        "time": 1.2005729675292969,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "The room that I stayed in was horribly small .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 0.8993639945983887,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "already planning a 2nd trip we stayed at the Royal for a week this March and could not have been more pleased with the service .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3295507431030273,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The staff was helpful and their knowledge of San Francisco was excellent .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.5515720844268799,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Breakfast is well presented  all tastes are catered for .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.3393340110778809,
+        "gold": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Would definitely recommend this hotel to anyone .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3141660690307617,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "so between the quietness and the comfortable bed I had a fantastic night ' s sleep .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 0.9996840953826904,
+        "gold": [
+            {
+                "aspect_category": "room_amenities comfort"
+            }
+        ]
+    },
+    {
+        "text": "Did not love the Chealsea Lodge First of all , I rely on Trip Advisor for my traveling .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3063879013061523,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Very kind the staff of the hotel .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.1926209926605225,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "They don ' t have AC and the are really hot .",
+        "predicted": [
+            {
+                "aspect_category": "facilities cleanliness"
+            }
+        ],
+        "time": 1.4102981090545654,
+        "gold": [
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ]
+    },
+    {
+        "text": "Delightful !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2045559883117676,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Perfect for a short break in Paris",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.155925989151001,
+        "gold": [
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "The concierge was able to recommend great restaurants and trips , and the hotel is right next to lots of the sights , and the cable car turnaround",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3698091506958008,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "A wonderful place , but $  $  $  $",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.1083621978759766,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "the rooftop pool is only really aplunge pool but the rooftop is lovley to sit out and have a few relaxing drinks . breakfast very expensive !",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.1352009773254395,
+        "gold": [
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ]
+    },
+    {
+        "text": "A nice quiet spot with excellent service .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3728179931640625,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "friendly and helpful .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.1718249320983887,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The lounge on the second floor was really convenient and had washers and dryers which was super .",
+        "predicted": [
+            {
+                "aspect_category": "facilities miscellaneous"
+            }
+        ],
+        "time": 1.1904261112213135,
+        "gold": [
+            {
+                "aspect_category": "facilities comfort"
+            },
+            {
+                "aspect_category": "facilities general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel turned out better than I expected and I completely relaxed .",
+        "predicted": [
+            {
+                "aspect_category": "hotel comfort"
+            }
+        ],
+        "time": 1.4032089710235596,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel shuttle provides transport to Ubud centre and back at your convenience .",
+        "predicted": [
+            {
+                "aspect_category": "facilities miscellaneous"
+            }
+        ],
+        "time": 1.4184048175811768,
+        "gold": [
+            {
+                "aspect_category": "facilities general"
+            }
+        ]
+    },
+    {
+        "text": "Pleasantly surprised Very close to airport , staff kindly checked me in very early and after I freshened up pointed me in the right direction to the main centre .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3961076736450195,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Breakfast included in price -",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ],
+        "time": 0.790614128112793,
+        "gold": [
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ]
+    },
+    {
+        "text": "The rooms are small but cleanBreakfast is adequateFree Porn channel for those interested .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.044658899307251,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Staff at the hotel are polite .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.4178838729858398,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The rooms were clean and our triple room was extremely large by European stds .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.4732239246368408,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Best location Location was absolutely superb !",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 0.7993738651275635,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Every single employee seemed to go above  beyond .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.5145988464355469,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "This is definately th茅 place to stay in Amsterdam for a short city break !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1750967502593994,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "firmed reservation , but no room available when we arrived I reserved two rooms several months in advance and confirmed them via email one week before arrival .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.2932240962982178,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Elegant serene",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.3524353504180908,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "and I stayed here for 4 nights before going to Cape Cod . this hotel is a great base for seeing all the sights in boston .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3451650142669678,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "We were very happy to stay at the Aalders Hotel and will return for sure to this hotel when we are back in Amsterdam .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2656757831573486,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "All in all we had a great stay and recommend this hotel to anyone .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.4302570819854736,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The room and bathroom faces pretty rice fields and the volcano .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.3657028675079346,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "There are plenty of good restuarants within walking distance .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.1447911262512207,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Breezes Was Brilliant",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 0.8363137245178223,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "ustomer Service is amazing !",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 0.8754258155822754,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "On the basis of the reviews on this site we booked the Alicia and were not disappointed in the least .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.4885938167572021,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "We stayed at the South Pacific Hotel from 07 / 03 / 2006 - 16 / 03 / 2006 and found our stay to be most enjoyable .",
+        "predicted": [
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.2253761291503906,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Complained and told that this room did not have air - conditioning - moved to the room previously described with floor level windows and air - conditioning .",
+        "predicted": [
+            {
+                "aspect_category": "room_amenities comfort"
+            },
+            {
+                "aspect_category": "room_amenities quality"
+            }
+        ],
+        "time": 1.1730010509490967,
+        "gold": [
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel also has a wonderful rooftop bar and restaurant , which is great place to catch the evening light and eat excellent local gourmet food .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.417781114578247,
+        "gold": [
+            {
+                "aspect_category": "facilities design_features"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Very helpful staff and great breakfast .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.3893709182739258,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "We stayed here for 3 nights in club and although the rooms are on the small side and showers lack any real power it was Jean and Joyce , the concierge , that made our stay here more than comfortable .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.133918046951294,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The staff were very friendly and helpful .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.1448798179626465,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The room was a little small , but if you are in New Orleans you are not in your room that much .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.3956637382507324,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "The staff were extremely friendly and helpful .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.1557371616363525,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "I also noted that on return at least 3 room doors were opened by housekeeping and the rooms unprotected by employees , thus violating their own policy - to get into this hotel you have to go through a gate into a secured compound .",
+        "predicted": [
+            {
+                "aspect_category": "facilities cleanliness"
+            },
+            {
+                "aspect_category": "facilities design_features"
+            }
+        ],
+        "time": 1.3824419975280762,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "It was a great location in the heart of Amsterdam and the staff was very friendly and accomodating .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3096508979797363,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Great hotel",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1299068927764893,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "noisy rooms Hotel Balmes looks very plush from outside and in the reception area , however we were in room 13 and it was very dark and also very noisy , didn ' t get too much sleep during our stay .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.626521110534668,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ]
+    },
+    {
+        "text": "Very , very pleasant accomodating staff .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.149474859237671,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Cosy and warm atmosphere , nice rooms though small , and close to all tourist sites and the trainstation .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.4661941528320312,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Free access to computer in a lobby .",
+        "predicted": [
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ],
+        "time": 1.2097468376159668,
+        "gold": [
+            {
+                "aspect_category": "facilities prices"
+            }
+        ]
+    },
+    {
+        "text": "and I would definitely stay there again if I visit Paris in the future .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1801769733428955,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "That was the second time we ' ve stayed at the Sheraton and like the first time , we enjoyed our stay very much .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2116639614105225,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Perfect location in center of Old Berlin .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.4150500297546387,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "good location - great hotel",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2795588970184326,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "All sights within easy walking distance - 5 mins walk to the flower market and 15 - 20 mins to Museumplein .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.3697199821472168,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "My ' Go To ' Hotel in SFO Great location near Market Street , Union Square and Theatre District .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2916197776794434,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Great room .",
+        "predicted": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.0980048179626465,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "Airport shuttle was good and left on time ( runs every half hour ) only a few mins from airport .",
+        "predicted": [
+            {
+                "aspect_category": "facilities miscellaneous"
+            }
+        ],
+        "time": 1.2681031227111816,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "I ' ve stayed in a number of well known central London hotels but this is the one I will return to .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3082821369171143,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Location was the most critical thing to me in picking out an NYC hotel and this one would be hard to beat .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.4045050144195557,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Would definately stay there again but am in no hurry to go back to Madrid .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.273082971572876,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "It has a free mini bar with coke and beer .",
+        "predicted": [
+            {
+                "aspect_category": "facilities prices"
+            }
+        ],
+        "time": 0.8386149406433105,
+        "gold": [
+            {
+                "aspect_category": "facilities prices"
+            }
+        ]
+    },
+    {
+        "text": "We will definitely stay at the Benjamin again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.355095624923706,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "We shall probably stay elsewhere next time but still in the same location .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3040721416473389,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Good deal I stayed at this hotel with my husband as part of a Bristish Airways package .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.369779348373413,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "The Castle Inn was perfect -  - very clean , quiet , great location .",
+        "predicted": [
+            {
+                "aspect_category": "hotel cleanliness"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3294551372528076,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Hotel is uber cool and beautifully decorated in a contemporary style . 5 minutes walk from Sol square and tube and also the centre point of Spain ! Bar is lovely for a drink and the restaurant looked equally nice",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.5665431022644043,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "facilities design_features"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The only downfall of our trip was that we found most of the staff to be extremely rude and not very attentive and courteous .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3397259712219238,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "My single room , which I referred to as the princess room , since you went up 2 flights of stairs to enter the sleeping / bath area after you came in the door , had no view , but was so delightfully quiet that I happily accepted the trade - off .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.5084590911865234,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ]
+    },
+    {
+        "text": "Location is more than perfect , walking distance to the main attractions ( red light d , shopping , dam , bejighoff , central station , flower market , rembrandt , picasso )  . Don ' t expect the nice treats of a 180eur / night hotel .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ],
+        "time": 1.3673410415649414,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The rooms were elegant ant everthing clean .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.010404109954834,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Would stay again only if stuck .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1512610912322998,
+        "gold": [
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "It is a good , clean , high end hotel in Beijing .",
+        "predicted": [
+            {
+                "aspect_category": "hotel quality"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ],
+        "time": 1.6276342868804932,
+        "gold": [
+            {
+                "aspect_category": "hotel quality"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "A wonderful property in an historic 15th century building and a very accomodating and friendly staff .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.4465880393981934,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel lobby was in a chaotic state and the staff were not particularly helpful or courteous .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3666911125183105,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "But as a show Hotel for Boston , I think it could do with some updating .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.392221212387085,
+        "gold": [
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "The staff were ever so helpful and the suite had everything you could think of .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.3465678691864014,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Tradeoffs",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1749823093414307,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Also about 30 seconds from the ( underground ) train station to the airport ( 25 mins )  . Apart from the usual complaints about working the lights / blinds , and flooding the bathroom with the shower , we really enjoyed the room and our stay .",
+        "predicted": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 2.0115339756011963,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "room_amenities quality"
+            },
+            {
+                "aspect_category": "rooms miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "Great Location",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.1585299968719482,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The black out blinds were fantastic for sleeping !",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.2922418117523193,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is in a nice location in Barcelona , near the center .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2172389030456543,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "This hotel is standard business hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.329063892364502,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The excuse was that some guests had spoiled some rooms , but I think they had overbooking and sent us to the Villa Capri ( 5 star officially , but really 3 star quality ) that is just in front of Riu , but not right on the beach .",
+        "predicted": [
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "hotel quality"
+            }
+        ],
+        "time": 1.3394529819488525,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Fantastic mojitos in the lounge bar !",
+        "predicted": [
+            {
+                "aspect_category": "facilities design_features"
+            },
+            {
+                "aspect_category": "facilities comfort"
+            }
+        ],
+        "time": 1.3378639221191406,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "We do not recommend the dinner cruises , they are over rated and over priced , do a luai instead .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks prices"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.4142589569091797,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ]
+    },
+    {
+        "text": "the service was wonderful !",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3936359882354736,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The rooms were clean , comfortable and lovely to look at .",
+        "predicted": [
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.1331892013549805,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "The staff are very false , behind their smile is a very miserable person .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.2912697792053223,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Average .  .  !  !  !  !",
+        "predicted": [],
+        "time": 1.074146032333374,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The staff are friendly and helpful .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.165884256362915,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Would certainly stay in this hotel again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3034210205078125,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The room , although small ( but not smaller than normal European hotel rooms )  , was very comfortable .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.0910699367523193,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "Can ' t imagine a better place from which to explore all of Berlin .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3380608558654785,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Everyone was very friendly and courtious .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.343489170074463,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Arrived to find a depressingly hot , dank , tiny , shabby UNACCEPTABLE room for the $ 175 + taxes .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms miscellaneous"
+            }
+        ],
+        "time": 1.502640962600708,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms prices"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "Staff are friendly and helpful .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.122697114944458,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Rude people at the QT Bartender in the hotel was a jerk and used strong language towards my wife and I . After complaining to the manager , she made us feel like it was our fault for requesting a drink around midnight .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3421812057495117,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Be sure to get the sunrise package - The House Without a Key  Orchids both serve an excellent breakfast .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.1614711284637451,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Rydges World Square Hotel in downtown Sydney was a wonderful , classy , comfortable hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ],
+        "time": 1.4192278385162354,
+        "gold": [
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Good Hotel Must have stayed in a different hotel from the last review .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3884568214416504,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The staff were excellent , the room well - appointed",
+        "predicted": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.0199460983276367,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Four Season Mexico City Perfect way to end our week in Mexico .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3777129650115967,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Highly recommended .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3619391918182373,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The staff were all so friendly and helpful and really did their very best to make our stay as comfortable as possible .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.6358520984649658,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "The location is outstanding , smack between the Duomo and Piazza Signoria .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2079699039459229,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "After reading previous reviews on Trip Advisor we didnt know what to expect but the Hotel couldnt have been better .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2422640323638916,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is magnificent and the staff provides excellent sevice .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.569216012954712,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "fabulous location .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 0.7860240936279297,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "It only took about 15 mins to walk from central station .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.21875,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "I will surely stay again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3016297817230225,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "A honest budget Hotel that will almost certainly exceed your expectations .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3763680458068848,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "We had a room facing the back , from which we could open our windows to overlook the picturesque Florentine rooftops and an overwhelming view of the Duomo itself !",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.4750981330871582,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "but all in all a luxurious place to stayin a great location .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3175511360168457,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Recommended .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2065868377685547,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Benchmark in Hospitality",
+        "predicted": [
+            {
+                "aspect_category": "hotel quality"
+            }
+        ],
+        "time": 1.3212881088256836,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "You will return to this hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3454179763793945,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Love the white linens - very clean .",
+        "predicted": [
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 0.8723700046539307,
+        "gold": [
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "room_amenities cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "The king - size bed was fantastic and I always enjoy a place that gives you a robe with the towels .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ],
+        "time": 1.4841670989990234,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "We would stay here again in a heartbeat !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.5406150817871094,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Free parking ( great bonus )  , nice neighboorhood with good restaurants and stores , if you need them walking distance , and very friendly service .",
+        "predicted": [
+            {
+                "aspect_category": "facilities prices"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "food_drinks miscellaneous"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.7000858783721924,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "facilities prices"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "very nice very nice hotel , and very clean !  !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ],
+        "time": 0.9464731216430664,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "I will stay nowhere else when staying downtown SF than the Palomar .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.415785789489746,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "We stayed on the club level which meant check in was in our room ( nice touch )  , we had a separate concierge ( albeit not speaking english as well as those in the lobby ) and a delicious free breakfast and afternoon drinks .",
+        "predicted": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "facilities general"
+            }
+        ],
+        "time": 1.5818068981170654,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ]
+    },
+    {
+        "text": "Okay for the money .  .  . Stayed at the Hotel Accademia for 3 nights in mid November 2004 .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ],
+        "time": 0.9796407222747803,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "The glasses and cups we used in the room were not changed by the cleaning lady , just wiped off .",
+        "predicted": [
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.2786798477172852,
+        "gold": [
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Would recommend .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2688190937042236,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Would highly reccommend , but only in club .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3143696784973145,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "and it will be rectified , the breakfast was wonderful with lots of choice .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 0.905336856842041,
+        "gold": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Very nice hotel in great location I have just come back from a long weekend in Paris where I stayed in the Agora .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.354198932647705,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "This hotel is NOT situated in a run - down area of Barcelona as a previous reviewer has stated .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3001139163970947,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Very modern decor which was refreshing .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.2613508701324463,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "very nice , perfect location !  !  !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3053321838378906,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "This hotel is highly recommended .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1596169471740723,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "When I got there I was given a very small room with just ONE single bed , so I expected a single room rate as well .",
+        "predicted": [
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.4692292213439941,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms prices"
+            }
+        ]
+    },
+    {
+        "text": "All in all we would definitely stay here again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1178052425384521,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Great location",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.0884029865264893,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Thought overall the hotel was excellent value for money in a good location and would return to this hotel if I visited Barcelona again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.7549288272857666,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Stay here and give yourself a treat with staff who really do genuinely care .",
+        "predicted": [
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.6043767929077148,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "the staff are extremely helpfull .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.1899442672729492,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Price was good considering the location ( I paid about $ 200 a night )  .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.2309150695800781,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "Good price / service / location .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.0243940353393555,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Great views of the harbour / city , great service , great hotel , great room , great food , great bar , great facilities , great location , clean , comfortable , modern and the staff were always as helpful as they could be .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "facilities quality"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.9249470233917236,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Very nice breakfast too !",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.1744120121002197,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "the beach is lovely the pool is a perfect temperature and the swim up bar is great !",
+        "predicted": [
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "facilities design_features"
+            },
+            {
+                "aspect_category": "facilities miscellaneous"
+            }
+        ],
+        "time": 1.4579529762268066,
+        "gold": [
+            {
+                "aspect_category": "facilities general"
+            }
+        ]
+    },
+    {
+        "text": "Recommend Bernini Palace I stayed in the Bernini Palace Hotel at Easter 2005 .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2076549530029297,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "It had a very convenient central location on the beautiful tree - lined Paseo de la Reforma .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ],
+        "time": 1.3277180194854736,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The breakfast was not good .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 0.848809003829956,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "There are a ton of hotels and I say , look elsewher",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2185742855072021,
+        "gold": [
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "They had just recently undergone a massive renovation and the rooms were modern and comfortable and included any amenity we could have asked for -  - minus complimentary towels at the rooftop pool which was slightly annoying since we called down to housekeeping 3 times and were clearly ignored .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.517730712890625,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Felt as though I was the most important person there .",
+        "predicted": [
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.5150017738342285,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Would stay there again in a heart beat !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1284360885620117,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Overall a wonderful experience .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3705463409423828,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The staff was very friendly and even brought our son a gold fish to take care of during his stay .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ],
+        "time": 1.3856048583984375,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Loved It After reading the reviews on this site , I was terrified of my choice , but had already paid in full through Expedia .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3360059261322021,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Lobby is inviting , personnel helpful , lovely ambience , cannot say enough about the accomodations .  .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.7983827590942383,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ]
+    },
+    {
+        "text": "Breakfast was great .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 0.8415939807891846,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Perfect Location , Perfect Hotel , beautifull rooms , we stayed at the front hotel rooms , no noise from the gran via street .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.205136775970459,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "But in spite of that I would come back to the same room",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3138182163238525,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Friendly attendant in the swimming pool / gym , although lots of kids in the pool .",
+        "predicted": [
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "facilities cleanliness"
+            }
+        ],
+        "time": 1.376894235610962,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Sorry we got a port hole window and the staff lied about the other rooms .",
+        "predicted": [
+            {
+                "aspect_category": "room_amenities prices"
+            }
+        ],
+        "time": 1.525820016860962,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Beautiful bedrooms with nice bathrooms and a great breakfast .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.1774590015411377,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "If you don ' t expect 5 star service in this 4 star hotel you won ' t be disappointed !",
+        "predicted": [
+            {
+                "aspect_category": "hotel quality"
+            }
+        ],
+        "time": 1.206118106842041,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "A superb first class hotel with nice views from the top of the hill .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3209319114685059,
+        "gold": [
+            {
+                "aspect_category": "hotel quality"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "What sets this hotel apart is the location and the extra amenities - the bar is one of the best in NY and the concierge can ' t help enough",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.4779536724090576,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "We stayed at apt 2A and I could not belive how all I had to do to beat to the beach was walk down a flight of steps .",
+        "predicted": [
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.3677120208740234,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "a warm and intimate hotel in a big city We recently spent a long weekend at The Benjamin .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2960047721862793,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The location is fantastic as well .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2073311805725098,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The wine we were served is good quality .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 0.88338303565979,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Good hotel , good location Stayed here for 3 nights in July 2004 .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.310762882232666,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "A Great Time",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3241639137268066,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Victoria 4 is a good choic",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.6219470500946045,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "I was charged more for an international call that lasted barely 1 minute to Australia by the HOWARD JOHNSON organisation than I paid for the room !  !  !  !  !  !  !",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.339980125427246,
+        "gold": [
+            {
+                "aspect_category": "facilities prices"
+            }
+        ]
+    },
+    {
+        "text": "Great location Stayed here for a weekend in mid - November .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2305901050567627,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "the hotel is convenient to area highways and very accessible to long beach .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.319998025894165,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Superb !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3293919563293457,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "I would definitely stay there again now that I know about it .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3445758819580078,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is very good , rooms are sized right and breakfast is superb .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.0794589519500732,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "My major concern was the way in which the hotel handled this , the first question they asked was should we call the police ?",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 0.8809049129486084,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Loved the Halekulani Spent over a week at the Halekulani in February , what a wonderful hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3669309616088867,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The best around for the budget traveler",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.3563461303710938,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "For around $ 70USD per night you get a clean ( albiet small ) room , with basic but nice appointments ( Cable TV , A / C , DVD , free wireless internet , etc )  , a good location in vibrant Little India , and basic but tasty buffet breakfast .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.609856128692627,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Since then the hotel has been given a face - lift .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ],
+        "time": 0.9525003433227539,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "No regret at all contrarely the best price / quality / service i had since i travel to HK ( 12 years for business )  . Make sure you upgrade for the Executive club lounge saving early evening drinks and starters for dinner ( if you want )",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.7398550510406494,
+        "gold": [
+            {
+                "aspect_category": "hotel quality"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "The room was clean and large , nice bathroom / dressing room set up .",
+        "predicted": [
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.1711759567260742,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "We had very good service all around .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3616578578948975,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Location is just one feature here",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2247059345245361,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The rooms are fabulous .",
+        "predicted": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.2412397861480713,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "We traveled with our teenage daughter who enjoyed being close to the hip boutiques such as HM , Urban Ourfitter and Forever 21 .",
+        "predicted": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.3610560894012451,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is located very close to the airport , but not so easy to find as there are no road signs indicating proper direction and the hotel name is not visible from main roads .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 0.9896647930145264,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "xcellent resort March 27 , 2005We returned from Punta Cana yesterday and still are amazed at how wonderful the resort was .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2778379917144775,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The rooms were very comfortable and quite large , and we were very impressed with the service - staff at the hotel",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.2882061004638672,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "was a heavenly shower with very good water",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.28656005859375,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "Pretty good location .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.1784932613372803,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "single room double price I had booked a double room through a website , then I called to check if there was a single available as I was going to be on my own .",
+        "predicted": [
+            {
+                "aspect_category": "rooms prices"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.3871138095855713,
+        "gold": [
+            {
+                "aspect_category": "rooms prices"
+            }
+        ]
+    },
+    {
+        "text": "Slap bang in the middle of everything",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 0.8712561130523682,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "I received an internet rate of $ 64 a night , but the bill indicated $ 127 and we were charged for a valet service that we did not have for one room .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.378077745437622,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "Staff were friendly and helpful and some good info from the tourist desk .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ],
+        "time": 1.3036389350891113,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Great hotel , shame about the price increase !",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.321080207824707,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Wonderful hotel",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3517889976501465,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "We would definitely stay here again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.137826681137085,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "will not stay anywhere else when in London .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3772709369659424,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Good for a Stop over",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 0.960521936416626,
+        "gold": [
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "My husband and I loved this hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3556740283966064,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The airport shuttle bus drops you off and picks you up right outside the hotel .",
+        "predicted": [
+            {
+                "aspect_category": "facilities miscellaneous"
+            }
+        ],
+        "time": 1.2443602085113525,
+        "gold": [
+            {
+                "aspect_category": "facilities general"
+            }
+        ]
+    },
+    {
+        "text": "Probably fine for tourist travel , but be warned that for business travel this is the worst Starwood property we ' ve ever stayed in .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3268039226531982,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "It is more expenseive than we would usually pay - but it was worth every penny .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ],
+        "time": 1.2902710437774658,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            }
+        ]
+    },
+    {
+        "text": "It is walking distance to many attractions and a short driving disntance to the ala Mona shopping center .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ],
+        "time": 1.3072059154510498,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "They treated our children like royalty for our short stay , and we really appreciate that .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.4628491401672363,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "fast lifts",
+        "predicted": [
+            {
+                "aspect_category": "facilities miscellaneous"
+            }
+        ],
+        "time": 1.2232298851013184,
+        "gold": [
+            {
+                "aspect_category": "facilities general"
+            }
+        ]
+    },
+    {
+        "text": "Extremely comfortable beds , very clean with a very helpful , friendly staff .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.0647988319396973,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Great Hotel !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1299161911010742,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "This is a wonderful hotel , probably the best we ' ve ever stayed in , lovely spacious room and bathroom , and the friendliest and most helpful staff , with no exceptions .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.6293518543243408,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Beautiful View from Room",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.230705738067627,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "Great Holiday Great Hotel",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2763919830322266,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Aparthotel Silver is a good , clean , tourist class hotel in a quiet neighbourhood just north of the city centre .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.5005090236663818,
+        "gold": [
+            {
+                "aspect_category": "hotel quality"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Not only were the breakfasts good with lots of choice to suit all tastes , but we also would recommend that you do not miss the the afternoon tea in the bar - something we did not expect in down - town Madrid .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "food_drinks miscellaneous"
+            }
+        ],
+        "time": 1.4286928176879883,
+        "gold": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "food_drinks miscellaneous"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "It was wonderful !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3465089797973633,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Great service , very friendly staff and they serve an excellant complementary full American style breakfast .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.8104591369628906,
+        "gold": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ]
+    },
+    {
+        "text": "I would recommend it over most of the airport area hotels .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3719568252563477,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Even the heavy rain couldn ' t dampen our enjoyment as the hotel provided huge umbrellas free of charge for the duration of our stay .",
+        "predicted": [
+            {
+                "aspect_category": "facilities miscellaneous"
+            }
+        ],
+        "time": 1.3987488746643066,
+        "gold": [
+            {
+                "aspect_category": "facilities prices"
+            }
+        ]
+    },
+    {
+        "text": "I am planning to go back to Florence in September and would definately stay in the same hotel and with a bit of luck the same room .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.341360092163086,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Granted , we are there on business , but it is a such a delight to find a great priced hotel with all the nice amenities and European service .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ],
+        "time": 1.5940971374511719,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ]
+    },
+    {
+        "text": "The rooms are beautifully restored with historical furniture .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.372018814086914,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "I would definitely stay here again , but word to the wise : make sure you get your car out of the garage within a 24 hour time period or they will charge you for an extra day , even if you ' re only a minute or two late !",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3660187721252441,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "It has beautiful rooms with floors in marble and each bath has a jacuzzi bathtubs !  !",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "room_amenities comfort"
+            }
+        ],
+        "time": 1.7295880317687988,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ]
+    },
+    {
+        "text": "The mattress was very firm .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.1989338397979736,
+        "gold": [
+            {
+                "aspect_category": "room_amenities quality"
+            }
+        ]
+    },
+    {
+        "text": "Security is excellent .",
+        "predicted": [
+            {
+                "aspect_category": "facilities cleanliness"
+            }
+        ],
+        "time": 1.1761879920959473,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Very good choice Excellent location : close to every touristic spot and surrounded by restaurants and bars .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.568389892578125,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "We requested a quiet room and enjoyed a restful sleep every night which we thought amazing because of the close proximity to Time Square .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.3843302726745605,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is in a good location , the rooms , at least the low priced one i got , are really small although you can survive for a week if you just sleep in there .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms prices"
+            }
+        ],
+        "time": 1.6562509536743164,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms prices"
+            }
+        ]
+    },
+    {
+        "text": "It surprised me with the great service and kindness of the staff .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.2407219409942627,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Great Location",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.1570510864257812,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "A lovely modern hotel in a great location , on a wide , very smart shopping boulevard in the centre .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3717260360717773,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "We will definitely stay here when we come back .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2676761150360107,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Hotel is classy with a beautiful lobby and front desk area .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3295929431915283,
+        "gold": [
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ]
+    },
+    {
+        "text": "It also has a nice breakfas",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.0332200527191162,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Would recommend this Hotel for its location",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.188326120376587,
+        "gold": [
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "Breakfast was nice and reasonably priced ( extra to cost of room )",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ],
+        "time": 1.3824512958526611,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "food_drinks prices"
+            },
+            {
+                "aspect_category": "rooms prices"
+            }
+        ]
+    },
+    {
+        "text": "Room was large and very clean .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.3307530879974365,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "The only problem was that our refrigerator did not work properly and they were not able to fix it during our stay .",
+        "predicted": [
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.2946479320526123,
+        "gold": [
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ]
+    },
+    {
+        "text": "Excellent location close to airport , walking distance to Van Gogh Museum and lots of nice restaurants and Terraces around the hotel .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 1.5277059078216553,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "It has an amazing restaurant nearby , seafood , and very famous .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.2629578113555908,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Friendly , Comfortable and welcoming Recently had an excellent stay in this friendly and comfortable hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel comfort"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3481647968292236,
+        "gold": [
+            {
+                "aspect_category": "hotel quality"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel comfort"
+            }
+        ]
+    },
+    {
+        "text": "Based on previous reviews I wasn ' t quite sure what to expect but I was pleasantly suprised .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.4276211261749268,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Bad",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2043569087982178,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Great Customer Service at the Ramada",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.2577118873596191,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "My friends and I spent a week at the Marriott in San Juan and we loved it !  !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.360793113708496,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The staff was always , always , ready to help me out .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3347358703613281,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Great Hotel Hotel was in excellent location , right around the corner from the Eiffel Tower , close to metros , restaurants , supermarket , shops .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.9424729347229004,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "would definatly stay here again and would recommend it to everyone ( and",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.280418872833252,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Lovely Hotel Excellent stay , hotel is in a great location and the rooms are good , well sized , bathroom was good size .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.7823240756988525,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Old and Small",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 0.9851231575012207,
+        "gold": [
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ]
+    },
+    {
+        "text": "Great location  Clean rooms and convenient location .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.3115131855010986,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "I highly recommend the Hotel Saint Marie for buisness or pleasure .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.299487829208374,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "I would definitely recommend this hotel to our friends !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.357234001159668,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Overall , we had a wonderful time staying at the Sunroute Plaza .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.250420331954956,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "and it was located right downtown with many services nearby including a number of internet cafes so that you can catch up with happenings a world away .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3812618255615234,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Overall , a great hotel with excellant service , presentation and modern amenities , would stay there again without doubt .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.372061014175415,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "room_amenities quality"
+            }
+        ]
+    },
+    {
+        "text": "The location lends itself to exploring Old San Juan in comfort and to enjoy the history of the area .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.3958830833435059,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The location was superb with lots of local caf茅s and restaurants .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3410108089447021,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Great location , great security , great FRIENDLY service from everyone !",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.2821669578552246,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "hotel miscellaneous"
+            }
+        ]
+    },
+    {
+        "text": "The lobby and sitting area are comfortable , and the rooms are simply furnished and looked retro .",
+        "predicted": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.3723018169403076,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "hotel comfort"
+            }
+        ]
+    },
+    {
+        "text": "The hotel was within walking distance of Alexanderplatz where there is a very efficient metro system serving most areas of Berlin .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "facilities miscellaneous"
+            }
+        ],
+        "time": 1.6204187870025635,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Rooms were clean .",
+        "predicted": [
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 0.8463959693908691,
+        "gold": [
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Our room was huge ; comfortable and modern furniture , a very clean and beautiful bathroom ( maybe a tad on the small side ) but a separate sitting room with a sofa / twin bed and separate TV with its own amazing view .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 1.5411818027496338,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ]
+    },
+    {
+        "text": "Great place !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3709089756011963,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Nice hotel , no elevator We stayed at this hotel for three nights .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3610718250274658,
+        "gold": [
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Location , location , location",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.430790901184082,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "You can ` t find anything better .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2039718627929688,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Very nice hotel",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1603877544403076,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Only complain is the free wifi is on the slow side of things .",
+        "predicted": [
+            {
+                "aspect_category": "facilities prices"
+            }
+        ],
+        "time": 1.180163860321045,
+        "gold": [
+            {
+                "aspect_category": "facilities quality"
+            }
+        ]
+    },
+    {
+        "text": "It ' s not to clean and rooms are small , typical down town European .",
+        "predicted": [
+            {
+                "aspect_category": "hotel cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ],
+        "time": 1.0286250114440918,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "Great Value and location Have stayed here several times and always try to book if possible .",
+        "predicted": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.3185758590698242,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "The saving grace of this hotel ( aside from the great location ) would be front desk / management team .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.3377599716186523,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "As good as ever .  . the best !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.228365182876587,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "This hotel offers customer service at its ' best .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1847000122070312,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Loved the Hotel !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3597900867462158,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "but this a great place in every way .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2990660667419434,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The basic rooms are small , but adequate for a five - night stay that I had .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.4115509986877441,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "The hotel was amazing .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2954957485198975,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Fantastic Kapok - loved it !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3824450969696045,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The Borgmann Villa backs on to Amsterdams beautiful Vondel Park and a room with a view is great , Its a 10 min walk to the Museum ' s and Leidseplein , the tram is 3 min ' s away , breakfast at Cafe Vertigo in Voldel park is worth the trouble .",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "rooms comfort"
+            }
+        ],
+        "time": 1.5206561088562012,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ]
+    },
+    {
+        "text": "We will definitely be back soon !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1484789848327637,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Booked through the hotel website which gave us a free breakfast .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.1362929344177246,
+        "gold": [
+            {
+                "aspect_category": "food_drinks prices"
+            }
+        ]
+    },
+    {
+        "text": "I was in room 3905 which had a great view of the golden gate bridge in the background .",
+        "predicted": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            }
+        ],
+        "time": 1.3740448951721191,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "Loved it !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.2775530815124512,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The room service meals were just incredible - the best steaks we have ever had .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.2715580463409424,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "Excellent Staff Excellent hotel for the price .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.323533058166504,
+        "gold": [
+            {
+                "aspect_category": "hotel prices"
+            },
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "great hotel !",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1197738647460938,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "24hr buffet was a great .",
+        "predicted": [
+            {
+                "aspect_category": "food_drinks style_options"
+            }
+        ],
+        "time": 0.8340919017791748,
+        "gold": [
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ]
+    },
+    {
+        "text": "rooms very basic",
+        "predicted": [
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 0.8546149730682373,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            }
+        ]
+    },
+    {
+        "text": "The rooms were clean and comfortable , the pool area was great and the food in the restaurant was excellent .",
+        "predicted": [
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            }
+        ],
+        "time": 1.107550859451294,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "facilities general"
+            },
+            {
+                "aspect_category": "food_drinks quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "The hotel is small but looked brand new to us .",
+        "predicted": [
+            {
+                "aspect_category": "hotel quality"
+            },
+            {
+                "aspect_category": "hotel design_features"
+            }
+        ],
+        "time": 1.562371015548706,
+        "gold": [
+            {
+                "aspect_category": "hotel design_features"
+            },
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "The staff and rooms were great .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "rooms general"
+            }
+        ],
+        "time": 0.9727799892425537,
+        "gold": [
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "i would stay here again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1745719909667969,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "Do wish they had coffeepots in room but did have coffee in the lobby .",
+        "predicted": [
+            {
+                "aspect_category": "room_amenities prices"
+            },
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ],
+        "time": 1.4273090362548828,
+        "gold": [
+            {
+                "aspect_category": "room_amenities general"
+            }
+        ]
+    },
+    {
+        "text": "The location is excellent right next to Centraal Station .",
+        "predicted": [
+            {
+                "aspect_category": "location general"
+            }
+        ],
+        "time": 1.2278549671173096,
+        "gold": [
+            {
+                "aspect_category": "location general"
+            }
+        ]
+    },
+    {
+        "text": "Personell was nice and service - minded , though .",
+        "predicted": [
+            {
+                "aspect_category": "service general"
+            }
+        ],
+        "time": 1.1780130863189697,
+        "gold": [
+            {
+                "aspect_category": "service general"
+            }
+        ]
+    },
+    {
+        "text": "Would recommend this hotel .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.3452351093292236,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "I ' d have this down as a 3 star rather than 2 . 5 . Received a warm welcome on arrival , and we were able to check - in despite arriving early , lots of information offered by the reception staff and secure underground parking ( for $ 16 per day )  . Room was clean but not huge .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms quality"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 4.164952039718628,
+        "gold": [
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "service general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    },
+    {
+        "text": "venient , helpful  I stayed here as a single female and it was a great place to be .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.234726905822754,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "But anyway I would stay here again .",
+        "predicted": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ],
+        "time": 1.1106081008911133,
+        "gold": [
+            {
+                "aspect_category": "hotel general"
+            }
+        ]
+    },
+    {
+        "text": "We stayed on the 5th floor in a lovely clean room with the most comfortable bed and pillows ever !",
+        "predicted": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms design_features"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ],
+        "time": 1.5410876274108887,
+        "gold": [
+            {
+                "aspect_category": "rooms comfort"
+            },
+            {
+                "aspect_category": "rooms general"
+            },
+            {
+                "aspect_category": "rooms cleanliness"
+            }
+        ]
+    }
+]
