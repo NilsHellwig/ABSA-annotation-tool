@@ -62,6 +62,8 @@ function App() {
 
   // AI Prediction
   const [currentAIPredictionIndex, setCurrentAIPredictionIndex] = useState<number | null>(null);
+  const [aiTriggeredForIndex, setAiTriggeredForIndex] = useState<boolean>(false);
+
 
   // Get backend URL from environment or use default
   const backendUrl = (import.meta as any).env?.VITE_BACKEND_URL || 'http://localhost:8000';
@@ -1052,19 +1054,26 @@ function App() {
     }
   }, [consideredSentimentElements]);
 
+  // Reset AI trigger flag when index changes
+  useEffect(() => {
+    setAiTriggeredForIndex(false);
+  }, [currentIndex]);
+
   // Auto-trigger AI prediction when navigating to next item
   useEffect(() => {
     const shouldTriggerAIPrediction =
       enablePrePrediction &&
       !disableAiAutomaticPrediction && // Only if automatic prediction is not disabled
       currentIndex >= settingsCurrentIndex &&
-      !isAIPredicting && aspectList.length === 0;
+      !isAIPredicting && aspectList.length === 0 &&
+      !aiTriggeredForIndex; // Only trigger if AI hasn't been triggered for this index yet
 
     if (shouldTriggerAIPrediction) {
       console.log("Triggering AI prediction for index", currentIndex);
       fetchAIPrediction();
+      setAiTriggeredForIndex(true); // Mark as triggered
     }
-  }, [currentIndex, aspectList]);
+  }, [currentIndex, aspectList, aiTriggeredForIndex]);
 
   // Click-Handler für Text: Öffnet Popup je nach konfigurierten Elementen
   const handleTextClick = (event: React.MouseEvent<HTMLDivElement>) => {

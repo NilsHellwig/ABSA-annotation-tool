@@ -13,24 +13,19 @@
     "neutral"
   ],
   "aspect_categories": [
-    "food general",
-    "food quality",
-    "food style options",
-    "food healthy",
-    "service general",
-    "service attitude",
-    "service speed",
-    "price general",
-    "price level",
-    "ambience general",
-    "ambience decor",
-    "ambience style",
     "location general",
-    "location parking",
-    "location access",
+    "food prices",
+    "food quality",
+    "food general",
+    "ambience general",
+    "service general",
+    "restaurant prices",
+    "drinks prices",
+    "restaurant miscellaneous",
+    "drinks quality",
+    "drinks style_options",
     "restaurant general",
-    "restaurant variety",
-    "restaurant specialty"
+    "food style_options"
   ],
   "implicit_aspect_term_allowed": true,
   "implicit_opinion_term_allowed": false,
@@ -39,6 +34,10 @@
   "click_on_token": true,
   "auto_positions": false,
   "store_time": true,
-  "display_avg_annotation_time": true,
-  "enable_pre_prediction": true
+  "display_avg_annotation_time": false,
+  "enable_pre_prediction": true,
+  "disable_ai_automatic_prediction": false,
+  "annotation_guideline": null,
+  "n_few_shot": 10,
+  "openai_key": null
 }
