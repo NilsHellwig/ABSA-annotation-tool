@@ -15,7 +15,7 @@
                 "opinion_term": "minimalist and modern clean lines"
             }
         ],
-        "time": 2.559521198272705,
+        "time": 5.392892122268677,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -59,7 +59,7 @@
                 "opinion_term": "loads of nice"
             }
         ],
-        "time": 2.46181058883667,
+        "time": 5.279952526092529,
         "gold": [
             {
                 "aspect_term": "Lodge",
@@ -97,7 +97,7 @@
                 "opinion_term": "friendly"
             }
         ],
-        "time": 2.2902395725250244,
+        "time": 4.944106817245483,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -129,7 +129,7 @@
                 "opinion_term": "Excellent"
             }
         ],
-        "time": 1.575352430343628,
+        "time": 3.6993162631988525,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -155,7 +155,7 @@
                 "opinion_term": "Noisy"
             }
         ],
-        "time": 2.3140201568603516,
+        "time": 5.011253356933594,
         "gold": [
             {
                 "aspect_term": "Rooms",
@@ -182,7 +182,7 @@
             },
             {
                 "aspect_term": "rooms",
-                "aspect_category": "rooms prices",
+                "aspect_category": "hotel prices",
                 "sentiment_polarity": "positive",
                 "opinion_term": "cheaper"
             },
@@ -193,7 +193,7 @@
                 "opinion_term": "far better"
             }
         ],
-        "time": 3.0856714248657227,
+        "time": 6.351608753204346,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -213,10 +213,10 @@
         "text": "It ' s in a great location for the night - life ( ramblas ) and was within easy walking distance of good bars , resturants , and other attractions .",
         "predicted": [
             {
-                "aspect_term": "NULL",
+                "aspect_term": "location",
                 "aspect_category": "location general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "great location"
+                "opinion_term": "great"
             },
             {
                 "aspect_term": "NULL",
@@ -225,7 +225,7 @@
                 "opinion_term": "easy walking distance"
             }
         ],
-        "time": 2.337510108947754,
+        "time": 5.047540187835693,
         "gold": [
             {
                 "aspect_term": "location",
@@ -263,7 +263,7 @@
                 "opinion_term": "close"
             }
         ],
-        "time": 3.0534794330596924,
+        "time": 6.394402265548706,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -295,7 +295,7 @@
                 "opinion_term": "amazing"
             }
         ],
-        "time": 3.1452033519744873,
+        "time": 6.569334506988525,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -327,7 +327,7 @@
                 "opinion_term": "Very new"
             }
         ],
-        "time": 1.6060664653778076,
+        "time": 3.8965554237365723,
         "gold": [
             {
                 "aspect_term": "bathroom",
@@ -341,7 +341,7 @@
         "text": "Some signs of wear and tear but if you can get a good rate it has everything you need and you won ' t be like you overpaid .",
         "predicted": [
             {
-                "aspect_term": "wear and tear",
+                "aspect_term": "signs of wear and tear",
                 "aspect_category": "rooms cleanliness",
                 "sentiment_polarity": "negative",
                 "opinion_term": "signs of wear and tear"
@@ -353,7 +353,7 @@
                 "opinion_term": "good rate"
             }
         ],
-        "time": 2.489640712738037,
+        "time": 5.3373496532440186,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -380,18 +380,18 @@
             },
             {
                 "aspect_term": "lounge",
-                "aspect_category": "facilities general",
+                "aspect_category": "facilities design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "great"
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "fantastic"
             }
         ],
-        "time": 3.806807279586792,
+        "time": 7.9101502895355225,
         "gold": [
             {
                 "aspect_term": "location",
@@ -423,13 +423,13 @@
         "text": "Good value for New York Stayed for 6 nights from the 9th January .",
         "predicted": [
             {
-                "aspect_term": "NULL",
+                "aspect_term": "value",
                 "aspect_category": "hotel prices",
                 "sentiment_polarity": "positive",
-                "opinion_term": "Good value"
+                "opinion_term": "Good"
             }
         ],
-        "time": 1.5880126953125,
+        "time": 3.7264773845672607,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -444,12 +444,12 @@
         "predicted": [
             {
                 "aspect_term": "restaurant",
-                "aspect_category": "food_drinks miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "neutral",
                 "opinion_term": "did not use"
             }
         ],
-        "time": 1.6274049282073975,
+        "time": 3.993954658508301,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -469,7 +469,7 @@
                 "opinion_term": "so attractive"
             }
         ],
-        "time": 1.5819213390350342,
+        "time": 3.894146203994751,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -489,7 +489,7 @@
                 "opinion_term": "no way this is a 4 . 5 star"
             }
         ],
-        "time": 1.785557746887207,
+        "time": 4.192441463470459,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -515,7 +515,7 @@
                 "opinion_term": "Fantastic"
             }
         ],
-        "time": 2.0996451377868652,
+        "time": 3.7321746349334717,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -535,7 +535,7 @@
                 "opinion_term": "very accommodating"
             }
         ],
-        "time": 1.580254316329956,
+        "time": 3.716259717941284,
         "gold": [
             {
                 "aspect_term": "people",
@@ -567,7 +567,7 @@
                 "opinion_term": "knowledgeable with recommendations for meals"
             }
         ],
-        "time": 3.2965574264526367,
+        "time": 6.869354963302612,
         "gold": [
             {
                 "aspect_term": "service",
@@ -599,7 +599,7 @@
                 "opinion_term": "Superb"
             }
         ],
-        "time": 1.5811834335327148,
+        "time": 3.7663307189941406,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -619,7 +619,7 @@
                 "opinion_term": "look elsewhere"
             }
         ],
-        "time": 1.5588088035583496,
+        "time": 3.752502918243408,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -639,7 +639,7 @@
                 "opinion_term": "second to none"
             }
         ],
-        "time": 1.6024117469787598,
+        "time": 3.902056932449341,
         "gold": [
             {
                 "aspect_term": "location",
@@ -659,7 +659,7 @@
                 "opinion_term": "nice night"
             }
         ],
-        "time": 1.5722756385803223,
+        "time": 3.7438230514526367,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -685,7 +685,7 @@
                 "opinion_term": "nice"
             }
         ],
-        "time": 2.3028786182403564,
+        "time": 5.038778781890869,
         "gold": [
             {
                 "aspect_term": "location",
@@ -711,7 +711,7 @@
                 "opinion_term": "blown away"
             }
         ],
-        "time": 1.594757080078125,
+        "time": 3.869239568710327,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -731,7 +731,7 @@
                 "opinion_term": "spectacular"
             }
         ],
-        "time": 2.1613073348999023,
+        "time": 4.847104549407959,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -751,7 +751,7 @@
                 "opinion_term": "helpful"
             }
         ],
-        "time": 1.5816078186035156,
+        "time": 3.836153984069824,
         "gold": [
             {
                 "aspect_term": "concierge",
@@ -766,12 +766,12 @@
         "predicted": [
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Don ' t miss"
             }
         ],
-        "time": 2.1942923069000244,
+        "time": 4.095422267913818,
         "gold": [
             {
                 "aspect_term": "breakfast",
@@ -791,7 +791,7 @@
                 "opinion_term": "Close to Macy ' s for shopping"
             }
         ],
-        "time": 1.6636497974395752,
+        "time": 3.9899632930755615,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -817,7 +817,7 @@
                 "opinion_term": "Lovely"
             }
         ],
-        "time": 2.365622043609619,
+        "time": 5.1128973960876465,
         "gold": [
             {
                 "aspect_term": "Room",
@@ -849,7 +849,7 @@
                 "opinion_term": "amazing time"
             }
         ],
-        "time": 1.5620343685150146,
+        "time": 3.769803047180176,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -869,7 +869,7 @@
                 "opinion_term": "wonderful"
             }
         ],
-        "time": 1.6037986278533936,
+        "time": 3.784179449081421,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -901,7 +901,7 @@
                 "opinion_term": "truly welcome"
             }
         ],
-        "time": 3.1138756275177,
+        "time": 6.4637391567230225,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -933,7 +933,7 @@
                 "opinion_term": "Amazing hospitality"
             }
         ],
-        "time": 1.5810127258300781,
+        "time": 3.808032512664795,
         "gold": [
             {
                 "aspect_term": "hospitality",
@@ -948,7 +948,7 @@
         "predicted": [
             {
                 "aspect_term": "parking",
-                "aspect_category": "room_amenities general",
+                "aspect_category": "hotel prices",
                 "sentiment_polarity": "positive",
                 "opinion_term": "includes"
             },
@@ -960,12 +960,12 @@
             },
             {
                 "aspect_term": "winetasting",
-                "aspect_category": "facilities miscellaneous",
+                "aspect_category": "food_drinks miscellaneous",
                 "sentiment_polarity": "positive",
                 "opinion_term": "free"
             }
         ],
-        "time": 3.199354887008667,
+        "time": 6.769033670425415,
         "gold": [
             {
                 "aspect_term": "price",
@@ -997,7 +997,7 @@
                 "opinion_term": "Very Good"
             }
         ],
-        "time": 2.308253049850464,
+        "time": 5.074363708496094,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1030,12 +1030,12 @@
             },
             {
                 "aspect_term": "bathrooms",
-                "aspect_category": "room_amenities comfort",
+                "aspect_category": "rooms design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "lovely"
             }
         ],
-        "time": 3.1203529834747314,
+        "time": 6.545428991317749,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -1067,7 +1067,7 @@
                 "opinion_term": "excellent"
             }
         ],
-        "time": 1.5880496501922607,
+        "time": 3.8497538566589355,
         "gold": [
             {
                 "aspect_term": "OMNI",
@@ -1105,7 +1105,7 @@
                 "opinion_term": "good"
             }
         ],
-        "time": 3.866295576095581,
+        "time": 7.784364700317383,
         "gold": [
             {
                 "aspect_term": "room",
@@ -1138,7 +1138,7 @@
         "predicted": [
             {
                 "aspect_term": "LCD tv",
-                "aspect_category": "room_amenities quality",
+                "aspect_category": "room_amenities general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "really make a difference"
             },
@@ -1150,12 +1150,12 @@
             },
             {
                 "aspect_term": "wet room",
-                "aspect_category": "room_amenities design_features",
+                "aspect_category": "rooms design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "great"
             }
         ],
-        "time": 3.3960940837860107,
+        "time": 6.849864482879639,
         "gold": [
             {
                 "aspect_term": "bathrooms",
@@ -1187,7 +1187,7 @@
                 "opinion_term": "very helpful"
             }
         ],
-        "time": 3.1822433471679688,
+        "time": 6.605955123901367,
         "gold": [
             {
                 "aspect_term": "Moore Hotel",
@@ -1213,7 +1213,7 @@
                 "opinion_term": "very comfortable"
             }
         ],
-        "time": 1.57338547706604,
+        "time": 3.7694296836853027,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1239,7 +1239,7 @@
                 "opinion_term": "make it very easy to get to all locations"
             }
         ],
-        "time": 2.5885050296783447,
+        "time": 5.599308967590332,
         "gold": [
             {
                 "aspect_term": "location",
@@ -1257,45 +1257,8 @@
     },
     {
         "text": "The good - Pet Friendly - Organic coffee and tea available in the lobby every morning - Aveda Toiletries - Soft bathrobes - Great wine reception - soft  wonderful linensThe bad - Room size -",
-        "predicted": [
-            {
-                "aspect_term": "Pet Friendly",
-                "aspect_category": "hotel general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "Pet Friendly"
-            },
-            {
-                "aspect_term": "coffee and tea",
-                "aspect_category": "food_drinks quality",
-                "sentiment_polarity": "positive",
-                "opinion_term": "Organic"
-            },
-            {
-                "aspect_term": "Toiletries",
-                "aspect_category": "room_amenities quality",
-                "sentiment_polarity": "positive",
-                "opinion_term": "Aveda"
-            },
-            {
-                "aspect_term": "bathrobes",
-                "aspect_category": "room_amenities comfort",
-                "sentiment_polarity": "positive",
-                "opinion_term": "Soft"
-            },
-            {
-                "aspect_term": "wine reception",
-                "aspect_category": "facilities miscellaneous",
-                "sentiment_polarity": "positive",
-                "opinion_term": "Great"
-            },
-            {
-                "aspect_term": "linensThe",
-                "aspect_category": "room_amenities comfort",
-                "sentiment_polarity": "positive",
-                "opinion_term": "soft  wonderful"
-            }
-        ],
-        "time": 6.167836904525757,
+        "predicted": [],
+        "time": 10.000592231750488,
         "gold": [
             {
                 "aspect_term": "bathrobes",
@@ -1330,10 +1293,10 @@
                 "aspect_term": "hotel",
                 "aspect_category": "location general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "quiet zone"
+                "opinion_term": "in a quiet zone"
             }
         ],
-        "time": 1.589400053024292,
+        "time": 3.9686410427093506,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -1354,12 +1317,12 @@
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks miscellaneous",
                 "sentiment_polarity": "positive",
                 "opinion_term": "great"
             }
         ],
-        "time": 2.3340063095092773,
+        "time": 5.1038713455200195,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -1385,7 +1348,7 @@
                 "opinion_term": "Amazing"
             }
         ],
-        "time": 1.597724437713623,
+        "time": 3.890235662460327,
         "gold": [
             {
                 "aspect_term": "Watertown Hotel",
@@ -1405,7 +1368,7 @@
                 "opinion_term": "Would definately stay there again"
             }
         ],
-        "time": 1.6699459552764893,
+        "time": 3.959430456161499,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1419,19 +1382,19 @@
         "text": "Price for room was pretty good and they were able to extend our stay by a day ( you will need time to explore LA )  .",
         "predicted": [
             {
-                "aspect_term": "Price for room",
-                "aspect_category": "rooms prices",
+                "aspect_term": "Price",
+                "aspect_category": "hotel prices",
                 "sentiment_polarity": "positive",
                 "opinion_term": "pretty good"
             },
             {
                 "aspect_term": "stay",
-                "aspect_category": "hotel general",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "extend our stay by a day"
             }
         ],
-        "time": 2.477109909057617,
+        "time": 5.314182281494141,
         "gold": [
             {
                 "aspect_term": "Price for room",
@@ -1451,7 +1414,7 @@
                 "opinion_term": "great location"
             }
         ],
-        "time": 1.6302545070648193,
+        "time": 3.893207550048828,
         "gold": [
             {
                 "aspect_term": "The Triton",
@@ -1489,7 +1452,7 @@
                 "opinion_term": "perfect at sunset"
             }
         ],
-        "time": 3.998957395553589,
+        "time": 7.916108131408691,
         "gold": [
             {
                 "aspect_term": "room",
@@ -1521,7 +1484,7 @@
                 "opinion_term": "quiet"
             }
         ],
-        "time": 1.5657474994659424,
+        "time": 3.814655303955078,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1541,7 +1504,7 @@
                 "opinion_term": "loved"
             }
         ],
-        "time": 1.545264482498169,
+        "time": 3.8552474975585938,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -1562,12 +1525,12 @@
             },
             {
                 "aspect_term": "dance music",
-                "aspect_category": "facilities miscellaneous",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "piped into every conceivable public area"
             }
         ],
-        "time": 2.585939884185791,
+        "time": 5.5277299880981445,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1593,7 +1556,7 @@
                 "opinion_term": "design"
             }
         ],
-        "time": 2.365466833114624,
+        "time": 5.128101825714111,
         "gold": [
             {
                 "aspect_term": "location",
@@ -1631,7 +1594,7 @@
                 "opinion_term": "close"
             }
         ],
-        "time": 3.0164918899536133,
+        "time": 6.352364778518677,
         "gold": [
             {
                 "aspect_term": "location",
@@ -1657,7 +1620,7 @@
                 "opinion_term": "great"
             }
         ],
-        "time": 1.561941385269165,
+        "time": 3.812333583831787,
         "gold": [
             {
                 "aspect_term": "location",
@@ -1683,7 +1646,7 @@
                 "opinion_term": "highly recommend"
             }
         ],
-        "time": 1.6241986751556396,
+        "time": 3.9470584392547607,
         "gold": [
             {
                 "aspect_term": "Hilton Times Square",
@@ -1697,13 +1660,13 @@
         "text": "Highly recommend the Berchielli We spent 2 nights at the Berchielli last week , and the experience was completely delightful :",
         "predicted": [
             {
-                "aspect_term": "experience",
+                "aspect_term": "NULL",
                 "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "completely delightful"
             }
         ],
-        "time": 1.5925135612487793,
+        "time": 4.166820049285889,
         "gold": [
             {
                 "aspect_term": "Berchielli",
@@ -1735,7 +1698,7 @@
                 "opinion_term": "better"
             }
         ],
-        "time": 2.3041577339172363,
+        "time": 5.129563331604004,
         "gold": [
             {
                 "aspect_term": "Langham Place",
@@ -1773,7 +1736,7 @@
                 "opinion_term": "very helpfull"
             }
         ],
-        "time": 2.471538782119751,
+        "time": 5.360393524169922,
         "gold": [
             {
                 "aspect_term": "information desk",
@@ -1793,7 +1756,7 @@
                 "opinion_term": "nice"
             }
         ],
-        "time": 1.5535833835601807,
+        "time": 3.832193374633789,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1813,7 +1776,7 @@
                 "opinion_term": "Nice"
             }
         ],
-        "time": 1.6573846340179443,
+        "time": 3.90332293510437,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1845,7 +1808,7 @@
                 "opinion_term": "had"
             }
         ],
-        "time": 3.14324688911438,
+        "time": 6.665102243423462,
         "gold": [
             {
                 "aspect_term": "location",
@@ -1889,7 +1852,7 @@
                 "opinion_term": "excellent"
             }
         ],
-        "time": 2.6895501613616943,
+        "time": 5.807447671890259,
         "gold": [
             {
                 "aspect_term": "Location",
@@ -1909,7 +1872,7 @@
                 "opinion_term": "very helpful"
             }
         ],
-        "time": 1.6070902347564697,
+        "time": 3.8198275566101074,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -1929,7 +1892,7 @@
                 "opinion_term": "no problem"
             }
         ],
-        "time": 1.7132248878479004,
+        "time": 4.049945116043091,
         "gold": [
             {
                 "aspect_term": "room",
@@ -1949,7 +1912,7 @@
                 "opinion_term": "beautiful"
             }
         ],
-        "time": 1.5596821308135986,
+        "time": 3.735698699951172,
         "gold": [
             {
                 "aspect_term": "Grand Hyatt",
@@ -1981,7 +1944,7 @@
                 "opinion_term": "friendly"
             }
         ],
-        "time": 2.3557846546173096,
+        "time": 5.121123552322388,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -2007,7 +1970,7 @@
                 "opinion_term": "Good"
             }
         ],
-        "time": 1.5756888389587402,
+        "time": 3.8179616928100586,
         "gold": [
             {
                 "aspect_term": "location",
@@ -2045,7 +2008,7 @@
                 "opinion_term": "like"
             }
         ],
-        "time": 2.302811861038208,
+        "time": 5.072044372558594,
         "gold": [
             {
                 "aspect_term": "beds",
@@ -2077,7 +2040,7 @@
                 "opinion_term": "great time"
             }
         ],
-        "time": 2.403629779815674,
+        "time": 5.311103105545044,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2103,7 +2066,7 @@
                 "opinion_term": "let the hotel down"
             }
         ],
-        "time": 1.6394891738891602,
+        "time": 3.904850959777832,
         "gold": [
             {
                 "aspect_term": "bedrooms",
@@ -2123,7 +2086,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5464894771575928,
+        "time": 3.7431745529174805,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -2143,7 +2106,7 @@
                 "opinion_term": "undoubtedly the closest hotel from the central station"
             }
         ],
-        "time": 1.7546844482421875,
+        "time": 4.238901853561401,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -2169,7 +2132,7 @@
                 "opinion_term": "absolutely recommend"
             }
         ],
-        "time": 1.5981853008270264,
+        "time": 3.876971960067749,
         "gold": [
             {
                 "aspect_term": "Hotel Casci",
@@ -2189,7 +2152,7 @@
                 "opinion_term": "definitely return"
             }
         ],
-        "time": 1.603672742843628,
+        "time": 3.8092432022094727,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2209,7 +2172,7 @@
                 "opinion_term": "Loved"
             }
         ],
-        "time": 1.559056043624878,
+        "time": 3.8278865814208984,
         "gold": [
             {
                 "aspect_term": "the Westin",
@@ -2229,7 +2192,7 @@
                 "opinion_term": "everywhere"
             }
         ],
-        "time": 1.5983819961547852,
+        "time": 3.8842546939849854,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2255,7 +2218,7 @@
                 "opinion_term": "very expensive"
             }
         ],
-        "time": 2.405863046646118,
+        "time": 5.44025444984436,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -2287,7 +2250,7 @@
                 "opinion_term": "a lot of"
             }
         ],
-        "time": 2.334437608718872,
+        "time": 5.177658796310425,
         "gold": [
             {
                 "aspect_term": "elevator",
@@ -2313,7 +2276,7 @@
                 "opinion_term": "discover the heart of Madrid by foot"
             }
         ],
-        "time": 2.463921546936035,
+        "time": 5.262686729431152,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -2339,7 +2302,7 @@
                 "opinion_term": "would stay there again"
             }
         ],
-        "time": 1.6166534423828125,
+        "time": 3.8403356075286865,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2359,7 +2322,7 @@
                 "opinion_term": "small and disappointing"
             }
         ],
-        "time": 1.5995194911956787,
+        "time": 3.9162709712982178,
         "gold": [
             {
                 "aspect_term": "Bathroom",
@@ -2385,7 +2348,7 @@
                 "opinion_term": "better"
             }
         ],
-        "time": 1.559633731842041,
+        "time": 3.7504398822784424,
         "gold": [
             {
                 "aspect_term": "IC",
@@ -2405,7 +2368,7 @@
                 "opinion_term": "none compare to this hotel"
             }
         ],
-        "time": 1.659944772720337,
+        "time": 3.952866554260254,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -2425,7 +2388,7 @@
                 "opinion_term": "within the expectation of the price we paid"
             }
         ],
-        "time": 1.7183701992034912,
+        "time": 4.060227155685425,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -2440,7 +2403,7 @@
         "predicted": [
             {
                 "aspect_term": "Breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "real event"
             },
@@ -2457,7 +2420,7 @@
                 "opinion_term": "helpful"
             }
         ],
-        "time": 3.1060738563537598,
+        "time": 6.564229249954224,
         "gold": [
             {
                 "aspect_term": "Breakfast",
@@ -2484,7 +2447,7 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "rooms miscellaneous",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "very quiet"
             },
@@ -2496,18 +2459,18 @@
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks miscellaneous",
                 "sentiment_polarity": "neutral",
                 "opinion_term": "ok"
             },
             {
                 "aspect_term": "bathroom",
-                "aspect_category": "rooms miscellaneous",
+                "aspect_category": "rooms design_features",
                 "sentiment_polarity": "negative",
                 "opinion_term": "a little bit embarassing"
             }
         ],
-        "time": 3.930417060852051,
+        "time": 7.960496425628662,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -2545,7 +2508,7 @@
                 "opinion_term": "Wonderful"
             }
         ],
-        "time": 1.5779595375061035,
+        "time": 3.7278172969818115,
         "gold": [
             {
                 "aspect_term": "service",
@@ -2583,7 +2546,7 @@
                 "opinion_term": "attentive"
             }
         ],
-        "time": 3.0407495498657227,
+        "time": 6.3155107498168945,
         "gold": [
             {
                 "aspect_term": "room",
@@ -2618,10 +2581,10 @@
                 "aspect_term": "Coral Princess",
                 "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "well kept secret"
+                "opinion_term": "well kept"
             }
         ],
-        "time": 1.624549388885498,
+        "time": 3.8874354362487793,
         "gold": [
             {
                 "aspect_term": "The Coral Princess",
@@ -2634,7 +2597,7 @@
     {
         "text": "pressure . the towels were very thick and soft . no pool . the only bad thing about this hotel is that it is connected to the plaza of the americas office complex which is closed on the weekends . so all of the shops are not open . there is an ice skating rink that is open for limited skating . pay the $ 20 for valet parking unless you plan to drive to other parts of dallas . the dart train is only about 2 blocks from the front door .",
         "predicted": [],
-        "time": 0.25811243057250977,
+        "time": 1.4264013767242432,
         "gold": [
             {
                 "aspect_term": "towels",
@@ -2661,12 +2624,12 @@
         "predicted": [
             {
                 "aspect_term": "bar",
-                "aspect_category": "facilities miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Quaint"
             }
         ],
-        "time": 1.5713777542114258,
+        "time": 3.962784767150879,
         "gold": [
             {
                 "aspect_term": "bar",
@@ -2686,7 +2649,7 @@
                 "opinion_term": "horribly small"
             }
         ],
-        "time": 1.5991406440734863,
+        "time": 3.8144893646240234,
         "gold": [
             {
                 "aspect_term": "room",
@@ -2706,7 +2669,7 @@
                 "opinion_term": "could not have been more pleased"
             }
         ],
-        "time": 2.1896207332611084,
+        "time": 4.871203422546387,
         "gold": [
             {
                 "aspect_term": "service",
@@ -2732,7 +2695,7 @@
                 "opinion_term": "excellent"
             }
         ],
-        "time": 2.2863073348999023,
+        "time": 5.09107232093811,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -2753,18 +2716,18 @@
         "predicted": [
             {
                 "aspect_term": "Breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "well presented"
             },
             {
-                "aspect_term": "Breakfast",
-                "aspect_category": "food_drinks style_options",
+                "aspect_term": "NULL",
+                "aspect_category": "food_drinks miscellaneous",
                 "sentiment_polarity": "positive",
                 "opinion_term": "all tastes are catered for"
             }
         ],
-        "time": 2.5447444915771484,
+        "time": 5.4029014110565186,
         "gold": [
             {
                 "aspect_term": "Breakfast",
@@ -2790,7 +2753,7 @@
                 "opinion_term": "definitely recommend"
             }
         ],
-        "time": 1.5939271450042725,
+        "time": 3.8369228839874268,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -2805,7 +2768,7 @@
         "predicted": [
             {
                 "aspect_term": "quietness",
-                "aspect_category": "hotel comfort",
+                "aspect_category": "rooms comfort",
                 "sentiment_polarity": "positive",
                 "opinion_term": "fantastic"
             },
@@ -2816,7 +2779,7 @@
                 "opinion_term": "comfortable"
             }
         ],
-        "time": 2.3249876499176025,
+        "time": 5.082221269607544,
         "gold": [
             {
                 "aspect_term": "bed",
@@ -2836,7 +2799,7 @@
                 "opinion_term": "Did not love"
             }
         ],
-        "time": 1.6456971168518066,
+        "time": 4.2692461013793945,
         "gold": [
             {
                 "aspect_term": "Chealsea Lodge",
@@ -2856,7 +2819,7 @@
                 "opinion_term": "Very kind"
             }
         ],
-        "time": 1.586125373840332,
+        "time": 3.7457542419433594,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -2877,12 +2840,12 @@
             },
             {
                 "aspect_term": "are",
-                "aspect_category": "rooms comfort",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "really hot"
             }
         ],
-        "time": 2.492847442626953,
+        "time": 5.362799644470215,
         "gold": [
             {
                 "aspect_term": "AC",
@@ -2902,7 +2865,7 @@
                 "opinion_term": "Delightful"
             }
         ],
-        "time": 1.6173973083496094,
+        "time": 3.8888039588928223,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2922,7 +2885,7 @@
                 "opinion_term": "Perfect"
             }
         ],
-        "time": 1.5461490154266357,
+        "time": 3.7765052318573,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2948,7 +2911,7 @@
                 "opinion_term": "right next to lots of the sights"
             }
         ],
-        "time": 2.563868522644043,
+        "time": 5.442986488342285,
         "gold": [
             {
                 "aspect_term": "concierge",
@@ -2974,7 +2937,7 @@
                 "opinion_term": "wonderful"
             }
         ],
-        "time": 1.5658936500549316,
+        "time": 3.7194533348083496,
         "gold": [
             {
                 "aspect_term": "place",
@@ -2989,7 +2952,7 @@
         "predicted": [
             {
                 "aspect_term": "rooftop pool",
-                "aspect_category": "facilities general",
+                "aspect_category": "facilities design_features",
                 "sentiment_polarity": "negative",
                 "opinion_term": "only really aplunge pool"
             },
@@ -2997,7 +2960,13 @@
                 "aspect_term": "rooftop",
                 "aspect_category": "facilities design_features",
                 "sentiment_polarity": "positive",
-                "opinion_term": "lovley"
+                "opinion_term": "lovley to sit out"
+            },
+            {
+                "aspect_term": "drinks",
+                "aspect_category": "food_drinks miscellaneous",
+                "sentiment_polarity": "positive",
+                "opinion_term": "relaxing"
             },
             {
                 "aspect_term": "breakfast",
@@ -3006,7 +2975,7 @@
                 "opinion_term": "very expensive"
             }
         ],
-        "time": 3.4613401889801025,
+        "time": 8.628188371658325,
         "gold": [
             {
                 "aspect_term": "rooftop pool",
@@ -3038,7 +3007,7 @@
                 "opinion_term": "excellent"
             }
         ],
-        "time": 3.103435754776001,
+        "time": 5.082906723022461,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3070,7 +3039,7 @@
                 "opinion_term": "helpful"
             }
         ],
-        "time": 2.2428295612335205,
+        "time": 4.944773435592651,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3091,7 +3060,7 @@
         "predicted": [
             {
                 "aspect_term": "lounge",
-                "aspect_category": "facilities general",
+                "aspect_category": "facilities design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "really convenient"
             },
@@ -3102,7 +3071,7 @@
                 "opinion_term": "super"
             }
         ],
-        "time": 2.484849214553833,
+        "time": 5.4130494594573975,
         "gold": [
             {
                 "aspect_term": "lounge",
@@ -3129,12 +3098,12 @@
             },
             {
                 "aspect_term": "NULL",
-                "aspect_category": "hotel general",
+                "aspect_category": "hotel comfort",
                 "sentiment_polarity": "positive",
                 "opinion_term": "completely relaxed"
             }
         ],
-        "time": 2.3172683715820312,
+        "time": 5.068098783493042,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -3149,12 +3118,12 @@
         "predicted": [
             {
                 "aspect_term": "hotel shuttle",
-                "aspect_category": "facilities general",
+                "aspect_category": "service general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "provides transport to Ubud centre and back at your convenience"
             }
         ],
-        "time": 1.8068890571594238,
+        "time": 4.24646258354187,
         "gold": [
             {
                 "aspect_term": "shuttle",
@@ -3180,7 +3149,7 @@
                 "opinion_term": "Very close to airport"
             }
         ],
-        "time": 2.6590487957000732,
+        "time": 5.710223913192749,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -3213,12 +3182,12 @@
         "predicted": [
             {
                 "aspect_term": "Breakfast",
-                "aspect_category": "food_drinks miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "included in price"
             }
         ],
-        "time": 1.6067466735839844,
+        "time": 3.897430896759033,
         "gold": [
             {
                 "aspect_term": "Breakfast",
@@ -3250,7 +3219,7 @@
                 "opinion_term": "adequateFree Porn channel"
             }
         ],
-        "time": 3.2935516834259033,
+        "time": 6.815975904464722,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -3282,7 +3251,7 @@
                 "opinion_term": "polite"
             }
         ],
-        "time": 1.590040683746338,
+        "time": 3.799731731414795,
         "gold": [
             {
                 "aspect_term": "Staff",
@@ -3308,7 +3277,7 @@
                 "opinion_term": "extremely large"
             }
         ],
-        "time": 2.3378992080688477,
+        "time": 5.053600311279297,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -3334,7 +3303,7 @@
                 "opinion_term": "absolutely superb"
             }
         ],
-        "time": 1.584381103515625,
+        "time": 3.920077085494995,
         "gold": [
             {
                 "aspect_term": "location",
@@ -3360,7 +3329,7 @@
                 "opinion_term": "go above  beyond"
             }
         ],
-        "time": 1.6538329124450684,
+        "time": 3.9553048610687256,
         "gold": [
             {
                 "aspect_term": "Every single employee",
@@ -3374,13 +3343,13 @@
         "text": "This is definately th茅 place to stay in Amsterdam for a short city break !",
         "predicted": [
             {
-                "aspect_term": "place",
+                "aspect_term": "NULL",
                 "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "definately"
+                "opinion_term": "definately th茅 place to stay"
             }
         ],
-        "time": 1.5613679885864258,
+        "time": 3.9748306274414062,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3406,7 +3375,7 @@
                 "opinion_term": "reserved"
             }
         ],
-        "time": 2.355808973312378,
+        "time": 5.151285409927368,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3438,7 +3407,7 @@
                 "opinion_term": "Elegant"
             }
         ],
-        "time": 4.210301637649536,
+        "time": 8.319636106491089,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3458,7 +3427,7 @@
                 "opinion_term": "great base"
             }
         ],
-        "time": 1.5866544246673584,
+        "time": 3.8834190368652344,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -3484,7 +3453,7 @@
                 "opinion_term": "return for sure"
             }
         ],
-        "time": 2.449326992034912,
+        "time": 5.32147479057312,
         "gold": [
             {
                 "aspect_term": "Aalders Hotel",
@@ -3516,7 +3485,7 @@
                 "opinion_term": "recommend"
             }
         ],
-        "time": 2.30289363861084,
+        "time": 5.005685567855835,
         "gold": [
             {
                 "aspect_term": "stay",
@@ -3548,7 +3517,7 @@
                 "opinion_term": "faces pretty rice fields"
             }
         ],
-        "time": 2.5125203132629395,
+        "time": 5.432858228683472,
         "gold": [
             {
                 "aspect_term": "room",
@@ -3574,7 +3543,7 @@
                 "opinion_term": "plenty of good"
             }
         ],
-        "time": 1.7156100273132324,
+        "time": 4.0172882080078125,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3594,7 +3563,7 @@
                 "opinion_term": "Breezes Was"
             }
         ],
-        "time": 1.7785556316375732,
+        "time": 4.171076536178589,
         "gold": [
             {
                 "aspect_term": "Breezes",
@@ -3614,7 +3583,7 @@
                 "opinion_term": "amazing"
             }
         ],
-        "time": 1.5262646675109863,
+        "time": 3.765958309173584,
         "gold": [
             {
                 "aspect_term": "Service",
@@ -3634,7 +3603,7 @@
                 "opinion_term": "not disappointed"
             }
         ],
-        "time": 1.5739691257476807,
+        "time": 3.793626308441162,
         "gold": [
             {
                 "aspect_term": "Alicia",
@@ -3654,7 +3623,7 @@
                 "opinion_term": "most enjoyable"
             }
         ],
-        "time": 1.5682590007781982,
+        "time": 3.784665107727051,
         "gold": [
             {
                 "aspect_term": "South Pacific Hotel",
@@ -3680,7 +3649,7 @@
                 "opinion_term": "with floor level windows and air - conditioning"
             }
         ],
-        "time": 2.561292886734009,
+        "time": 5.569593191146851,
         "gold": [
             {
                 "aspect_term": "room",
@@ -3712,7 +3681,7 @@
                 "opinion_term": "excellent local gourmet"
             }
         ],
-        "time": 3.384371042251587,
+        "time": 6.8249101638793945,
         "gold": [
             {
                 "aspect_term": "rooftop bar",
@@ -3745,12 +3714,12 @@
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "great"
             }
         ],
-        "time": 2.3039515018463135,
+        "time": 5.172275543212891,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -3788,7 +3757,7 @@
                 "opinion_term": "made our stay here more than comfortable"
             }
         ],
-        "time": 3.4631130695343018,
+        "time": 7.078282833099365,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -3826,7 +3795,7 @@
                 "opinion_term": "helpful"
             }
         ],
-        "time": 2.3165953159332275,
+        "time": 5.013528347015381,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -3852,7 +3821,7 @@
                 "opinion_term": "a little small"
             }
         ],
-        "time": 1.619692325592041,
+        "time": 3.8733131885528564,
         "gold": [
             {
                 "aspect_term": "room",
@@ -3878,7 +3847,7 @@
                 "opinion_term": "helpful"
             }
         ],
-        "time": 2.3168928623199463,
+        "time": 5.0875465869903564,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -3910,7 +3879,7 @@
                 "opinion_term": "unprotected"
             }
         ],
-        "time": 2.3699777126312256,
+        "time": 5.244000196456909,
         "gold": [
             {
                 "aspect_term": "employees",
@@ -3948,7 +3917,7 @@
                 "opinion_term": "accomodating"
             }
         ],
-        "time": 3.0972743034362793,
+        "time": 6.4141175746917725,
         "gold": [
             {
                 "aspect_term": "location",
@@ -3980,7 +3949,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5810904502868652,
+        "time": 3.740940570831299,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -3995,18 +3964,18 @@
         "predicted": [
             {
                 "aspect_term": "rooms",
-                "aspect_category": "rooms comfort",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "very dark"
             },
             {
                 "aspect_term": "rooms",
-                "aspect_category": "rooms comfort",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "very noisy"
             }
         ],
-        "time": 3.2052996158599854,
+        "time": 5.517016649246216,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -4038,7 +4007,7 @@
                 "opinion_term": "Very , very pleasant accomodating"
             }
         ],
-        "time": 1.6701111793518066,
+        "time": 4.006354570388794,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -4088,7 +4057,7 @@
                 "opinion_term": "close to"
             }
         ],
-        "time": 4.849286794662476,
+        "time": 9.326708316802979,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4127,12 +4096,12 @@
         "predicted": [
             {
                 "aspect_term": "computer",
-                "aspect_category": "facilities miscellaneous",
+                "aspect_category": "facilities design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Free access"
             }
         ],
-        "time": 1.5767848491668701,
+        "time": 3.8481876850128174,
         "gold": [
             {
                 "aspect_term": "computer",
@@ -4146,13 +4115,13 @@
         "text": "and I would definitely stay there again if I visit Paris in the future .",
         "predicted": [
             {
-                "aspect_term": "there",
+                "aspect_term": "NULL",
                 "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "definitely stay"
+                "opinion_term": "definitely stay there again"
             }
         ],
-        "time": 1.5802509784698486,
+        "time": 3.8944647312164307,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4172,7 +4141,7 @@
                 "opinion_term": "enjoyed"
             }
         ],
-        "time": 1.637317419052124,
+        "time": 3.909039258956909,
         "gold": [
             {
                 "aspect_term": "Sheraton",
@@ -4192,7 +4161,7 @@
                 "opinion_term": "Perfect"
             }
         ],
-        "time": 1.5617763996124268,
+        "time": 3.7526841163635254,
         "gold": [
             {
                 "aspect_term": "location",
@@ -4218,7 +4187,7 @@
                 "opinion_term": "great"
             }
         ],
-        "time": 2.3323748111724854,
+        "time": 5.13239049911499,
         "gold": [
             {
                 "aspect_term": "location",
@@ -4241,7 +4210,7 @@
                 "aspect_term": "sights",
                 "aspect_category": "location general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "easy walking distance"
+                "opinion_term": "within easy walking distance"
             },
             {
                 "aspect_term": "flower market",
@@ -4256,7 +4225,7 @@
                 "opinion_term": "15 - 20 mins"
             }
         ],
-        "time": 3.3557162284851074,
+        "time": 6.898540019989014,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4288,7 +4257,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5553951263427734,
+        "time": 3.8290748596191406,
         "gold": [
             {
                 "aspect_term": "location",
@@ -4314,7 +4283,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5665311813354492,
+        "time": 3.740095853805542,
         "gold": [
             {
                 "aspect_term": "room",
@@ -4329,18 +4298,18 @@
         "predicted": [
             {
                 "aspect_term": "Airport shuttle",
-                "aspect_category": "facilities general",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "good"
             },
             {
                 "aspect_term": "Airport shuttle",
-                "aspect_category": "facilities general",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "left on time"
             }
         ],
-        "time": 2.4246556758880615,
+        "time": 5.319066524505615,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4360,7 +4329,7 @@
                 "opinion_term": "one I will return to"
             }
         ],
-        "time": 1.6558599472045898,
+        "time": 3.9948458671569824,
         "gold": [
             {
                 "aspect_term": "hotels",
@@ -4380,7 +4349,7 @@
                 "opinion_term": "hard to beat"
             }
         ],
-        "time": 1.8908216953277588,
+        "time": 4.3600993156433105,
         "gold": [
             {
                 "aspect_term": "Location",
@@ -4400,7 +4369,7 @@
                 "opinion_term": "Would definately stay there again"
             }
         ],
-        "time": 1.6544010639190674,
+        "time": 4.107969760894775,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4420,7 +4389,7 @@
                 "opinion_term": "free"
             }
         ],
-        "time": 1.63702392578125,
+        "time": 3.9178318977355957,
         "gold": [
             {
                 "aspect_term": "free",
@@ -4440,7 +4409,7 @@
                 "opinion_term": "definitely stay"
             }
         ],
-        "time": 1.6016228199005127,
+        "time": 3.8299458026885986,
         "gold": [
             {
                 "aspect_term": "Benjamin",
@@ -4456,17 +4425,11 @@
             {
                 "aspect_term": "NULL",
                 "aspect_category": "hotel general",
-                "sentiment_polarity": "neutral",
-                "opinion_term": "stay elsewhere"
-            },
-            {
-                "aspect_term": "location",
-                "aspect_category": "location general",
-                "sentiment_polarity": "neutral",
-                "opinion_term": "same location"
+                "sentiment_polarity": "negative",
+                "opinion_term": "shall probably stay elsewhere"
             }
         ],
-        "time": 2.340177536010742,
+        "time": 3.9279963970184326,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4480,13 +4443,13 @@
         "text": "Good deal I stayed at this hotel with my husband as part of a Bristish Airways package .",
         "predicted": [
             {
-                "aspect_term": "deal",
-                "aspect_category": "hotel prices",
+                "aspect_term": "hotel",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "Good"
+                "opinion_term": "Good deal"
             }
         ],
-        "time": 1.5503737926483154,
+        "time": 3.8947067260742188,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -4499,6 +4462,12 @@
     {
         "text": "The Castle Inn was perfect -  - very clean , quiet , great location .",
         "predicted": [
+            {
+                "aspect_term": "Castle Inn",
+                "aspect_category": "hotel general",
+                "sentiment_polarity": "positive",
+                "opinion_term": "perfect"
+            },
             {
                 "aspect_term": "NULL",
                 "aspect_category": "hotel cleanliness",
@@ -4518,7 +4487,7 @@
                 "opinion_term": "great location"
             }
         ],
-        "time": 3.0749759674072266,
+        "time": 7.71358847618103,
         "gold": [
             {
                 "aspect_term": "Castle Inn",
@@ -4548,39 +4517,8 @@
     },
     {
         "text": "Hotel is uber cool and beautifully decorated in a contemporary style . 5 minutes walk from Sol square and tube and also the centre point of Spain ! Bar is lovely for a drink and the restaurant looked equally nice",
-        "predicted": [
-            {
-                "aspect_term": "Hotel",
-                "aspect_category": "hotel design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "uber cool"
-            },
-            {
-                "aspect_term": "Hotel",
-                "aspect_category": "hotel design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "beautifully decorated"
-            },
-            {
-                "aspect_term": "Bar",
-                "aspect_category": "facilities design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "lovely"
-            },
-            {
-                "aspect_term": "restaurant",
-                "aspect_category": "facilities design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "looked equally"
-            },
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "location general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "5 minutes walk from Sol square and tube and also the centre point of Spain"
-            }
-        ],
-        "time": 5.232544898986816,
+        "predicted": [],
+        "time": 10.000714540481567,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -4627,16 +4565,10 @@
                 "aspect_term": "staff",
                 "aspect_category": "service general",
                 "sentiment_polarity": "negative",
-                "opinion_term": "not very attentive"
-            },
-            {
-                "aspect_term": "staff",
-                "aspect_category": "service general",
-                "sentiment_polarity": "negative",
-                "opinion_term": "courteous"
+                "opinion_term": "not very attentive and courteous"
             }
         ],
-        "time": 3.1178767681121826,
+        "time": 5.248133420944214,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -4668,7 +4600,7 @@
                 "opinion_term": "delightfully quiet"
             }
         ],
-        "time": 2.4691896438598633,
+        "time": 5.496807098388672,
         "gold": [
             {
                 "aspect_term": "room",
@@ -4689,12 +4621,12 @@
             },
             {
                 "aspect_term": "treats",
-                "aspect_category": "hotel miscellaneous",
+                "aspect_category": "food_drinks miscellaneous",
                 "sentiment_polarity": "negative",
                 "opinion_term": "Don ' t expect the nice"
             }
         ],
-        "time": 3.3230080604553223,
+        "time": 7.951517343521118,
         "gold": [
             {
                 "aspect_term": "Location",
@@ -4726,7 +4658,7 @@
                 "opinion_term": "clean"
             }
         ],
-        "time": 2.2990057468414307,
+        "time": 5.029035806655884,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -4752,7 +4684,7 @@
                 "opinion_term": "Would stay again only if stuck"
             }
         ],
-        "time": 1.654862403869629,
+        "time": 3.9180009365081787,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4779,12 +4711,12 @@
             },
             {
                 "aspect_term": "hotel",
-                "aspect_category": "hotel general",
+                "aspect_category": "hotel quality",
                 "sentiment_polarity": "positive",
                 "opinion_term": "high end"
             }
         ],
-        "time": 3.020195960998535,
+        "time": 6.3464014530181885,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -4828,7 +4760,7 @@
                 "opinion_term": "friendly"
             }
         ],
-        "time": 4.23844838142395,
+        "time": 6.477403402328491,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4872,7 +4804,7 @@
                 "opinion_term": "not particularly helpful or courteous"
             }
         ],
-        "time": 3.299515962600708,
+        "time": 6.7402098178863525,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -4898,7 +4830,7 @@
                 "opinion_term": "could do with some updating"
             }
         ],
-        "time": 1.648789882659912,
+        "time": 3.9628047943115234,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -4919,12 +4851,12 @@
             },
             {
                 "aspect_term": "suite",
-                "aspect_category": "room_amenities general",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "had everything you could think of"
             }
         ],
-        "time": 2.515782594680786,
+        "time": 5.2750208377838135,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -4943,7 +4875,7 @@
     {
         "text": "Tradeoffs",
         "predicted": [],
-        "time": 1.6129481792449951,
+        "time": 2.4517691135406494,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4955,45 +4887,8 @@
     },
     {
         "text": "Also about 30 seconds from the ( underground ) train station to the airport ( 25 mins )  . Apart from the usual complaints about working the lights / blinds , and flooding the bathroom with the shower , we really enjoyed the room and our stay .",
-        "predicted": [
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "location general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "about 30 seconds from the ( underground ) train station to the airport"
-            },
-            {
-                "aspect_term": "lights",
-                "aspect_category": "room_amenities general",
-                "sentiment_polarity": "negative",
-                "opinion_term": "complaints about working"
-            },
-            {
-                "aspect_term": "blinds",
-                "aspect_category": "room_amenities general",
-                "sentiment_polarity": "negative",
-                "opinion_term": "complaints about working"
-            },
-            {
-                "aspect_term": "shower",
-                "aspect_category": "room_amenities general",
-                "sentiment_polarity": "negative",
-                "opinion_term": "flooding the bathroom with"
-            },
-            {
-                "aspect_term": "room",
-                "aspect_category": "rooms general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "really enjoyed"
-            },
-            {
-                "aspect_term": "stay",
-                "aspect_category": "hotel general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "really enjoyed"
-            }
-        ],
-        "time": 6.211721420288086,
+        "predicted": [],
+        "time": 10.000600814819336,
         "gold": [
             {
                 "aspect_term": "lights/blinds",
@@ -5025,7 +4920,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5689239501953125,
+        "time": 3.8221824169158936,
         "gold": [
             {
                 "aspect_term": "Location",
@@ -5040,12 +4935,12 @@
         "predicted": [
             {
                 "aspect_term": "black out blinds",
-                "aspect_category": "room_amenities quality",
+                "aspect_category": "room_amenities design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "fantastic"
             }
         ],
-        "time": 1.6795485019683838,
+        "time": 4.037898063659668,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5063,15 +4958,9 @@
                 "aspect_category": "location general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "nice"
-            },
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "location general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "near the center"
             }
         ],
-        "time": 2.338791847229004,
+        "time": 3.7778713703155518,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -5097,7 +4986,7 @@
                 "opinion_term": "standard business hotel"
             }
         ],
-        "time": 1.5986928939819336,
+        "time": 3.8378844261169434,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -5121,9 +5010,15 @@
                 "aspect_category": "hotel quality",
                 "sentiment_polarity": "negative",
                 "opinion_term": "3 star quality"
+            },
+            {
+                "aspect_term": "beach",
+                "aspect_category": "location general",
+                "sentiment_polarity": "negative",
+                "opinion_term": "not right on the beach"
             }
         ],
-        "time": 2.445805549621582,
+        "time": 8.718791723251343,
         "gold": [
             {
                 "aspect_term": "Villa Capri",
@@ -5143,7 +5038,7 @@
                 "opinion_term": "Fantastic"
             }
         ],
-        "time": 1.688403844833374,
+        "time": 3.999122381210327,
         "gold": [
             {
                 "aspect_term": "mojitos",
@@ -5169,7 +5064,7 @@
                 "opinion_term": "over priced"
             }
         ],
-        "time": 2.4507596492767334,
+        "time": 5.341908931732178,
         "gold": [
             {
                 "aspect_term": "dinner cruises",
@@ -5201,7 +5096,7 @@
                 "opinion_term": "wonderful"
             }
         ],
-        "time": 1.5530853271484375,
+        "time": 3.8232882022857666,
         "gold": [
             {
                 "aspect_term": "service",
@@ -5233,7 +5128,7 @@
                 "opinion_term": "lovely to look at"
             }
         ],
-        "time": 3.145311117172241,
+        "time": 6.498734712600708,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -5271,7 +5166,7 @@
                 "opinion_term": "very miserable"
             }
         ],
-        "time": 2.338592052459717,
+        "time": 5.108122110366821,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -5289,8 +5184,15 @@
     },
     {
         "text": "Average .  .  !  !  !  !",
-        "predicted": [],
-        "time": 0.8205444812774658,
+        "predicted": [
+            {
+                "aspect_term": "NULL",
+                "aspect_category": "hotel general",
+                "sentiment_polarity": "neutral",
+                "opinion_term": "Average"
+            }
+        ],
+        "time": 3.7599384784698486,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5316,7 +5218,7 @@
                 "opinion_term": "helpful"
             }
         ],
-        "time": 2.3015213012695312,
+        "time": 5.029326438903809,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -5342,7 +5244,7 @@
                 "opinion_term": "certainly stay"
             }
         ],
-        "time": 1.605130672454834,
+        "time": 3.853557825088501,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -5362,7 +5264,7 @@
                 "opinion_term": "very comfortable"
             }
         ],
-        "time": 1.588806390762329,
+        "time": 3.778890371322632,
         "gold": [
             {
                 "aspect_term": "room",
@@ -5388,7 +5290,7 @@
                 "opinion_term": "Can ' t imagine a better"
             }
         ],
-        "time": 1.6866450309753418,
+        "time": 4.035883188247681,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5414,7 +5316,7 @@
                 "opinion_term": "courtious"
             }
         ],
-        "time": 2.3292553424835205,
+        "time": 5.083240270614624,
         "gold": [
             {
                 "aspect_term": "Everyone",
@@ -5435,12 +5337,12 @@
         "predicted": [
             {
                 "aspect_term": "room",
-                "aspect_category": "rooms general",
+                "aspect_category": "rooms quality",
                 "sentiment_polarity": "negative",
                 "opinion_term": "depressingly hot , dank , tiny , shabby UNACCEPTABLE"
             }
         ],
-        "time": 1.8920774459838867,
+        "time": 4.331267356872559,
         "gold": [
             {
                 "aspect_term": "room",
@@ -5496,7 +5398,7 @@
                 "opinion_term": "helpful"
             }
         ],
-        "time": 2.271920680999756,
+        "time": 5.012988805770874,
         "gold": [
             {
                 "aspect_term": "Staff",
@@ -5540,7 +5442,7 @@
                 "opinion_term": "made us feel like it was our fault"
             }
         ],
-        "time": 4.185252666473389,
+        "time": 8.318366050720215,
         "gold": [
             {
                 "aspect_term": "people",
@@ -5567,12 +5469,12 @@
         "predicted": [
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "excellent"
             }
         ],
-        "time": 1.5959899425506592,
+        "time": 3.9702391624450684,
         "gold": [
             {
                 "aspect_term": "breakfast",
@@ -5604,7 +5506,7 @@
                 "opinion_term": "comfortable"
             }
         ],
-        "time": 3.1703410148620605,
+        "time": 6.526731014251709,
         "gold": [
             {
                 "aspect_term": "Rydges World Square Hotel",
@@ -5636,7 +5538,7 @@
                 "opinion_term": "Good"
             }
         ],
-        "time": 1.536923885345459,
+        "time": 3.7439463138580322,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -5657,12 +5559,12 @@
             },
             {
                 "aspect_term": "room",
-                "aspect_category": "rooms design_features",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "well"
             }
         ],
-        "time": 3.192079782485962,
+        "time": 5.082911491394043,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -5688,7 +5590,7 @@
                 "opinion_term": "Perfect way to end our week"
             }
         ],
-        "time": 1.6383559703826904,
+        "time": 3.9846179485321045,
         "gold": [
             {
                 "aspect_term": "Four Season Mexico City",
@@ -5708,7 +5610,7 @@
                 "opinion_term": "Highly recommended"
             }
         ],
-        "time": 1.5771808624267578,
+        "time": 3.7807183265686035,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5740,7 +5642,7 @@
                 "opinion_term": "did their very best to make our stay as comfortable"
             }
         ],
-        "time": 3.2536745071411133,
+        "time": 6.725541830062866,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -5778,7 +5680,7 @@
                 "opinion_term": "outstanding"
             }
         ],
-        "time": 1.546234130859375,
+        "time": 3.8062081336975098,
         "gold": [
             {
                 "aspect_term": "location",
@@ -5798,7 +5700,7 @@
                 "opinion_term": "couldnt have been better"
             }
         ],
-        "time": 1.632049322128296,
+        "time": 3.8732519149780273,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -5824,7 +5726,7 @@
                 "opinion_term": "provides excellent"
             }
         ],
-        "time": 2.347491979598999,
+        "time": 5.153284788131714,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -5850,7 +5752,7 @@
                 "opinion_term": "fabulous"
             }
         ],
-        "time": 1.5691235065460205,
+        "time": 3.7867021560668945,
         "gold": [
             {
                 "aspect_term": "location",
@@ -5870,7 +5772,7 @@
                 "opinion_term": "only took about 15 mins to walk from central station"
             }
         ],
-        "time": 2.317592144012451,
+        "time": 4.239804744720459,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5883,7 +5785,7 @@
     {
         "text": "I will surely stay again .",
         "predicted": [],
-        "time": 0.8211987018585205,
+        "time": 2.460085391998291,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5904,12 +5806,12 @@
             },
             {
                 "aspect_term": "expectations",
-                "aspect_category": "hotel general",
+                "aspect_category": "hotel quality",
                 "sentiment_polarity": "positive",
                 "opinion_term": "exceed"
             }
         ],
-        "time": 2.3572957515716553,
+        "time": 5.180878639221191,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -5936,7 +5838,7 @@
             },
             {
                 "aspect_term": "windows",
-                "aspect_category": "rooms general",
+                "aspect_category": "rooms design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "could open"
             },
@@ -5953,7 +5855,7 @@
                 "opinion_term": "overwhelming"
             }
         ],
-        "time": 3.9592409133911133,
+        "time": 8.087569236755371,
         "gold": [
             {
                 "aspect_term": "room",
@@ -5985,7 +5887,7 @@
                 "opinion_term": "great"
             }
         ],
-        "time": 2.287790536880493,
+        "time": 5.024015665054321,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6011,7 +5913,7 @@
                 "opinion_term": "Recommended"
             }
         ],
-        "time": 2.0631656646728516,
+        "time": 4.601212501525879,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6031,7 +5933,7 @@
                 "opinion_term": "Benchmark"
             }
         ],
-        "time": 1.523643970489502,
+        "time": 3.7504897117614746,
         "gold": [
             {
                 "aspect_term": "Hospitality",
@@ -6051,7 +5953,7 @@
                 "opinion_term": "return"
             }
         ],
-        "time": 1.5865113735198975,
+        "time": 3.756364583969116,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -6071,7 +5973,7 @@
                 "opinion_term": "very clean"
             }
         ],
-        "time": 1.665600299835205,
+        "time": 4.006854772567749,
         "gold": [
             {
                 "aspect_term": "white linens",
@@ -6098,12 +6000,12 @@
             },
             {
                 "aspect_term": "robe",
-                "aspect_category": "room_amenities general",
+                "aspect_category": "room_amenities comfort",
                 "sentiment_polarity": "positive",
                 "opinion_term": "enjoy"
             }
         ],
-        "time": 2.3932111263275146,
+        "time": 5.173455715179443,
         "gold": [
             {
                 "aspect_term": "bed",
@@ -6123,7 +6025,7 @@
                 "opinion_term": "would stay here again in a heartbeat"
             }
         ],
-        "time": 1.6993110179901123,
+        "time": 3.8951919078826904,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6138,7 +6040,7 @@
         "predicted": [
             {
                 "aspect_term": "parking",
-                "aspect_category": "facilities miscellaneous",
+                "aspect_category": "facilities general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Free"
             },
@@ -6156,7 +6058,7 @@
             },
             {
                 "aspect_term": "stores",
-                "aspect_category": "facilities miscellaneous",
+                "aspect_category": "food_drinks miscellaneous",
                 "sentiment_polarity": "positive",
                 "opinion_term": "good"
             },
@@ -6167,7 +6069,7 @@
                 "opinion_term": "very friendly"
             }
         ],
-        "time": 4.647900819778442,
+        "time": 9.752595663070679,
         "gold": [
             {
                 "aspect_term": "parking",
@@ -6205,7 +6107,7 @@
                 "opinion_term": "very clean"
             }
         ],
-        "time": 2.316329002380371,
+        "time": 5.125013589859009,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -6231,7 +6133,7 @@
                 "opinion_term": "nowhere else"
             }
         ],
-        "time": 1.6387131214141846,
+        "time": 3.957183837890625,
         "gold": [
             {
                 "aspect_term": "Palomar",
@@ -6245,25 +6147,25 @@
         "text": "We stayed on the club level which meant check in was in our room ( nice touch )  , we had a separate concierge ( albeit not speaking english as well as those in the lobby ) and a delicious free breakfast and afternoon drinks .",
         "predicted": [
             {
-                "aspect_term": "check in",
-                "aspect_category": "service general",
+                "aspect_term": "club level",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "nice touch"
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "delicious"
             },
             {
                 "aspect_term": "drinks",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "delicious"
             }
         ],
-        "time": 3.238100290298462,
+        "time": 6.942973613739014,
         "gold": [
             {
                 "aspect_term": "concierge",
@@ -6305,15 +6207,9 @@
                 "aspect_category": "hotel general",
                 "sentiment_polarity": "neutral",
                 "opinion_term": "Okay"
-            },
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "hotel general",
-                "sentiment_polarity": "neutral",
-                "opinion_term": "money"
             }
         ],
-        "time": 2.2910919189453125,
+        "time": 3.7102835178375244,
         "gold": [
             {
                 "aspect_term": "Hotel Accademia",
@@ -6339,7 +6235,7 @@
                 "opinion_term": "just wiped off"
             }
         ],
-        "time": 2.5131311416625977,
+        "time": 5.437864542007446,
         "gold": [
             {
                 "aspect_term": "room",
@@ -6359,7 +6255,7 @@
                 "opinion_term": "recommend"
             }
         ],
-        "time": 1.5446579456329346,
+        "time": 3.7280735969543457,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6379,7 +6275,7 @@
                 "opinion_term": "highly reccommend"
             }
         ],
-        "time": 1.6293468475341797,
+        "time": 3.8935983180999756,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6394,12 +6290,12 @@
         "predicted": [
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "wonderful with lots of choice"
             }
         ],
-        "time": 1.667290449142456,
+        "time": 4.014671087265015,
         "gold": [
             {
                 "aspect_term": "breakfast",
@@ -6431,7 +6327,7 @@
                 "opinion_term": "great"
             }
         ],
-        "time": 2.313563823699951,
+        "time": 5.116680383682251,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -6457,7 +6353,7 @@
                 "opinion_term": "NOT situated in a run - down area"
             }
         ],
-        "time": 1.7259633541107178,
+        "time": 4.10566258430481,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -6472,18 +6368,18 @@
         "predicted": [
             {
                 "aspect_term": "decor",
-                "aspect_category": "hotel design_features",
+                "aspect_category": "rooms design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Very modern"
             },
             {
                 "aspect_term": "decor",
-                "aspect_category": "hotel design_features",
+                "aspect_category": "rooms design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "refreshing"
             }
         ],
-        "time": 2.44480299949646,
+        "time": 5.2741498947143555,
         "gold": [
             {
                 "aspect_term": "decor",
@@ -6515,7 +6411,7 @@
                 "opinion_term": "perfect"
             }
         ],
-        "time": 2.3133230209350586,
+        "time": 5.091304779052734,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6541,7 +6437,7 @@
                 "opinion_term": "highly recommended"
             }
         ],
-        "time": 1.5532557964324951,
+        "time": 3.7275824546813965,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -6567,7 +6463,7 @@
                 "opinion_term": "ONE single"
             }
         ],
-        "time": 2.3157942295074463,
+        "time": 5.074094295501709,
         "gold": [
             {
                 "aspect_term": "room",
@@ -6593,7 +6489,7 @@
                 "opinion_term": "definitely stay here again"
             }
         ],
-        "time": 1.6217474937438965,
+        "time": 3.9371349811553955,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6613,7 +6509,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5868456363677979,
+        "time": 3.6906845569610596,
         "gold": [
             {
                 "aspect_term": "location",
@@ -6639,7 +6535,7 @@
                 "opinion_term": "good"
             }
         ],
-        "time": 2.34244966506958,
+        "time": 5.23797082901001,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -6671,7 +6567,7 @@
                 "opinion_term": "really do genuinely care"
             }
         ],
-        "time": 1.634272575378418,
+        "time": 3.908573865890503,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -6691,7 +6587,7 @@
                 "opinion_term": "extremely helpfull"
             }
         ],
-        "time": 1.602410078048706,
+        "time": 3.802828311920166,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -6709,15 +6605,9 @@
                 "aspect_category": "hotel prices",
                 "sentiment_polarity": "positive",
                 "opinion_term": "was good"
-            },
-            {
-                "aspect_term": "location",
-                "aspect_category": "location general",
-                "sentiment_polarity": "neutral",
-                "opinion_term": "considering the location"
             }
         ],
-        "time": 2.359090805053711,
+        "time": 3.839841842651367,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6749,7 +6639,7 @@
                 "opinion_term": "Good"
             }
         ],
-        "time": 3.0053586959838867,
+        "time": 6.277332305908203,
         "gold": [
             {
                 "aspect_term": "price",
@@ -6773,75 +6663,8 @@
     },
     {
         "text": "Great views of the harbour / city , great service , great hotel , great room , great food , great bar , great facilities , great location , clean , comfortable , modern and the staff were always as helpful as they could be .",
-        "predicted": [
-            {
-                "aspect_term": "views",
-                "aspect_category": "hotel design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "Great"
-            },
-            {
-                "aspect_term": "service",
-                "aspect_category": "service general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "great"
-            },
-            {
-                "aspect_term": "hotel",
-                "aspect_category": "hotel general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "great"
-            },
-            {
-                "aspect_term": "room",
-                "aspect_category": "rooms general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "great"
-            },
-            {
-                "aspect_term": "food",
-                "aspect_category": "food_drinks miscellaneous",
-                "sentiment_polarity": "positive",
-                "opinion_term": "great"
-            },
-            {
-                "aspect_term": "bar",
-                "aspect_category": "facilities miscellaneous",
-                "sentiment_polarity": "positive",
-                "opinion_term": "great"
-            },
-            {
-                "aspect_term": "facilities",
-                "aspect_category": "facilities general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "great"
-            },
-            {
-                "aspect_term": "location",
-                "aspect_category": "location general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "great"
-            },
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "hotel cleanliness",
-                "sentiment_polarity": "positive",
-                "opinion_term": "clean"
-            },
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "rooms comfort",
-                "sentiment_polarity": "positive",
-                "opinion_term": "comfortable"
-            },
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "rooms design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "modern"
-            }
-        ],
-        "time": 9.081069469451904,
+        "predicted": [],
+        "time": 10.000609636306763,
         "gold": [
             {
                 "aspect_term": "service",
@@ -6922,12 +6745,12 @@
         "predicted": [
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "nice"
             }
         ],
-        "time": 1.6102900505065918,
+        "time": 3.8134963512420654,
         "gold": [
             {
                 "aspect_term": "breakfast",
@@ -6948,18 +6771,18 @@
             },
             {
                 "aspect_term": "pool",
-                "aspect_category": "facilities general",
+                "aspect_category": "facilities design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "perfect temperature"
             },
             {
                 "aspect_term": "swim up bar",
-                "aspect_category": "facilities general",
+                "aspect_category": "facilities design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "great"
             }
         ],
-        "time": 3.0851314067840576,
+        "time": 6.5868353843688965,
         "gold": [
             {
                 "aspect_term": "beach",
@@ -6985,13 +6808,13 @@
         "text": "Recommend Bernini Palace I stayed in the Bernini Palace Hotel at Easter 2005 .",
         "predicted": [
             {
-                "aspect_term": "Bernini Palace",
+                "aspect_term": "Bernini Palace Hotel",
                 "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Recommend"
             }
         ],
-        "time": 1.5766489505767822,
+        "time": 3.836858034133911,
         "gold": [
             {
                 "aspect_term": "Bernini Palace",
@@ -7009,15 +6832,9 @@
                 "aspect_category": "location general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "very convenient"
-            },
-            {
-                "aspect_term": "Paseo de la Reforma",
-                "aspect_category": "location general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "beautiful"
             }
         ],
-        "time": 2.4457733631134033,
+        "time": 3.8441107273101807,
         "gold": [
             {
                 "aspect_term": "location",
@@ -7032,12 +6849,12 @@
         "predicted": [
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "negative",
                 "opinion_term": "not good"
             }
         ],
-        "time": 1.6111860275268555,
+        "time": 3.9257071018218994,
         "gold": [
             {
                 "aspect_term": "breakfast",
@@ -7055,15 +6872,9 @@
                 "aspect_category": "hotel general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "look"
-            },
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "hotel general",
-                "sentiment_polarity": "negative",
-                "opinion_term": "look"
             }
         ],
-        "time": 2.354686737060547,
+        "time": 3.7939071655273438,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7075,27 +6886,8 @@
     },
     {
         "text": "They had just recently undergone a massive renovation and the rooms were modern and comfortable and included any amenity we could have asked for -  - minus complimentary towels at the rooftop pool which was slightly annoying since we called down to housekeeping 3 times and were clearly ignored .",
-        "predicted": [
-            {
-                "aspect_term": "rooms",
-                "aspect_category": "rooms design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "modern and comfortable"
-            },
-            {
-                "aspect_term": "rooms",
-                "aspect_category": "room_amenities general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "included any amenity we could have asked for"
-            },
-            {
-                "aspect_term": "towels",
-                "aspect_category": "room_amenities general",
-                "sentiment_polarity": "negative",
-                "opinion_term": "slightly annoying"
-            }
-        ],
-        "time": 4.634366035461426,
+        "predicted": [],
+        "time": 10.000678062438965,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -7128,12 +6920,12 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "hotel general",
+                "aspect_category": "service general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "most important person"
             }
         ],
-        "time": 1.6073131561279297,
+        "time": 3.9239470958709717,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7153,7 +6945,7 @@
                 "opinion_term": "Would stay there again in a heart beat"
             }
         ],
-        "time": 1.7258388996124268,
+        "time": 3.957716703414917,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7173,7 +6965,7 @@
                 "opinion_term": "wonderful"
             }
         ],
-        "time": 1.5157461166381836,
+        "time": 3.7313597202301025,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7194,12 +6986,12 @@
             },
             {
                 "aspect_term": "NULL",
-                "aspect_category": "hotel miscellaneous",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "brought our son a gold fish to take care of during his stay"
             }
         ],
-        "time": 2.595427989959717,
+        "time": 5.583783388137817,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -7220,12 +7012,12 @@
             },
             {
                 "aspect_term": "reviews",
-                "aspect_category": "hotel miscellaneous",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "terrified"
             }
         ],
-        "time": 2.3070695400238037,
+        "time": 5.080003499984741,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7257,7 +7049,7 @@
                 "opinion_term": "lovely"
             }
         ],
-        "time": 3.2045645713806152,
+        "time": 6.596020698547363,
         "gold": [
             {
                 "aspect_term": "Lobby",
@@ -7290,12 +7082,12 @@
         "predicted": [
             {
                 "aspect_term": "Breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "great"
             }
         ],
-        "time": 1.5840163230895996,
+        "time": 3.937993049621582,
         "gold": [
             {
                 "aspect_term": "Breakfast",
@@ -7327,13 +7119,13 @@
                 "opinion_term": "beautifull"
             },
             {
-                "aspect_term": "rooms",
+                "aspect_term": "hotel rooms",
                 "aspect_category": "rooms general",
-                "sentiment_polarity": "neutral",
+                "sentiment_polarity": "positive",
                 "opinion_term": "no noise"
             }
         ],
-        "time": 4.280311584472656,
+        "time": 7.845132350921631,
         "gold": [
             {
                 "aspect_term": "Location",
@@ -7371,7 +7163,7 @@
                 "opinion_term": "come back"
             }
         ],
-        "time": 1.6641218662261963,
+        "time": 4.025486946105957,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7391,13 +7183,13 @@
                 "opinion_term": "Friendly"
             },
             {
-                "aspect_term": "pool",
+                "aspect_term": "kids",
                 "aspect_category": "facilities general",
                 "sentiment_polarity": "negative",
-                "opinion_term": "lots of kids"
+                "opinion_term": "lots of"
             }
         ],
-        "time": 2.374887228012085,
+        "time": 5.190105676651001,
         "gold": [
             {
                 "aspect_term": "attendant",
@@ -7423,7 +7215,7 @@
                 "opinion_term": "lied"
             }
         ],
-        "time": 2.3552849292755127,
+        "time": 5.216523885726929,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -7438,24 +7230,24 @@
         "predicted": [
             {
                 "aspect_term": "bedrooms",
-                "aspect_category": "rooms design_features",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Beautiful"
             },
             {
                 "aspect_term": "bathrooms",
-                "aspect_category": "rooms design_features",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "nice"
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "great"
             }
         ],
-        "time": 3.205505132675171,
+        "time": 6.45311164855957,
         "gold": [
             {
                 "aspect_term": "bedrooms",
@@ -7481,19 +7273,19 @@
         "text": "If you don ' t expect 5 star service in this 4 star hotel you won ' t be disappointed !",
         "predicted": [
             {
-                "aspect_term": "service",
+                "aspect_term": "5 star service",
                 "aspect_category": "service general",
                 "sentiment_polarity": "negative",
-                "opinion_term": "don ' t expect 5 star"
+                "opinion_term": "don ' t expect"
             },
             {
-                "aspect_term": "hotel",
+                "aspect_term": "4 star hotel",
                 "aspect_category": "hotel general",
-                "sentiment_polarity": "negative",
-                "opinion_term": "disappointed"
+                "sentiment_polarity": "neutral",
+                "opinion_term": "won ' t be disappointed"
             }
         ],
-        "time": 2.4874260425567627,
+        "time": 7.059495687484741,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7519,7 +7311,7 @@
                 "opinion_term": "nice"
             }
         ],
-        "time": 2.400489568710327,
+        "time": 5.201026916503906,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -7551,10 +7343,16 @@
                 "opinion_term": "sets this hotel apart"
             },
             {
-                "aspect_term": "bar",
-                "aspect_category": "facilities miscellaneous",
+                "aspect_term": "extra amenities",
+                "aspect_category": "room_amenities general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "one of the best in NY"
+                "opinion_term": "extra amenities"
+            },
+            {
+                "aspect_term": "bar",
+                "aspect_category": "food_drinks style_options",
+                "sentiment_polarity": "positive",
+                "opinion_term": "one of the best"
             },
             {
                 "aspect_term": "concierge",
@@ -7563,7 +7361,7 @@
                 "opinion_term": "can ' t help"
             }
         ],
-        "time": 3.312746286392212,
+        "time": 8.983376026153564,
         "gold": [
             {
                 "aspect_term": "location",
@@ -7601,7 +7399,7 @@
                 "opinion_term": "walk down a flight of steps"
             }
         ],
-        "time": 1.6565966606140137,
+        "time": 3.991633653640747,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7621,7 +7419,7 @@
                 "opinion_term": "warm and intimate"
             }
         ],
-        "time": 1.636031150817871,
+        "time": 3.869795083999634,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -7647,7 +7445,7 @@
                 "opinion_term": "fantastic"
             }
         ],
-        "time": 1.5537397861480713,
+        "time": 3.7895023822784424,
         "gold": [
             {
                 "aspect_term": "location",
@@ -7667,7 +7465,7 @@
                 "opinion_term": "good quality"
             }
         ],
-        "time": 1.610283374786377,
+        "time": 3.8591854572296143,
         "gold": [
             {
                 "aspect_term": "wine",
@@ -7693,7 +7491,7 @@
                 "opinion_term": "good"
             }
         ],
-        "time": 3.0880093574523926,
+        "time": 6.487403631210327,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -7719,7 +7517,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.520345687866211,
+        "time": 3.7350285053253174,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7739,7 +7537,7 @@
                 "opinion_term": "good"
             }
         ],
-        "time": 2.094226837158203,
+        "time": 4.66180944442749,
         "gold": [
             {
                 "aspect_term": "Victoria 4",
@@ -7760,12 +7558,12 @@
             },
             {
                 "aspect_term": "room",
-                "aspect_category": "rooms prices",
+                "aspect_category": "hotel prices",
                 "sentiment_polarity": "negative",
-                "opinion_term": "paid for the room"
+                "opinion_term": "than I paid for the room"
             }
         ],
-        "time": 2.554394006729126,
+        "time": 5.626950025558472,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7785,7 +7583,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5582983493804932,
+        "time": 3.803596258163452,
         "gold": [
             {
                 "aspect_term": "location",
@@ -7811,7 +7609,7 @@
                 "opinion_term": "very accessible"
             }
         ],
-        "time": 2.349370241165161,
+        "time": 5.064544677734375,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -7837,7 +7635,7 @@
                 "opinion_term": "Superb"
             }
         ],
-        "time": 1.5884144306182861,
+        "time": 3.8067123889923096,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7857,7 +7655,7 @@
                 "opinion_term": "definitely stay there again"
             }
         ],
-        "time": 1.6126251220703125,
+        "time": 3.971555233001709,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7884,12 +7682,12 @@
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "superb"
             }
         ],
-        "time": 3.1264352798461914,
+        "time": 6.5994486808776855,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -7927,7 +7725,7 @@
                 "opinion_term": "should we call the police"
             }
         ],
-        "time": 2.4215903282165527,
+        "time": 5.365724802017212,
         "gold": [
             {
                 "aspect_term": "way in which the hotel handled this",
@@ -7953,7 +7751,7 @@
                 "opinion_term": "wonderful"
             }
         ],
-        "time": 2.404249668121338,
+        "time": 5.356066703796387,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -7968,12 +7766,12 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "hotel prices",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "best"
             }
         ],
-        "time": 1.554757833480835,
+        "time": 3.8347833156585693,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7988,21 +7786,15 @@
         "predicted": [
             {
                 "aspect_term": "room",
-                "aspect_category": "rooms cleanliness",
+                "aspect_category": "rooms general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "clean"
             },
             {
                 "aspect_term": "room",
                 "aspect_category": "rooms general",
-                "sentiment_polarity": "neutral",
-                "opinion_term": "small"
-            },
-            {
-                "aspect_term": "appointments",
-                "aspect_category": "room_amenities general",
                 "sentiment_polarity": "positive",
-                "opinion_term": "nice"
+                "opinion_term": "basic but nice appointments"
             },
             {
                 "aspect_term": "location",
@@ -8012,12 +7804,12 @@
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "tasty"
             }
         ],
-        "time": 4.686261177062988,
+        "time": 8.160086631774902,
         "gold": [
             {
                 "aspect_term": "room",
@@ -8066,7 +7858,7 @@
     {
         "text": "Since then the hotel has been given a face - lift .",
         "predicted": [],
-        "time": 0.8218023777008057,
+        "time": 2.500476598739624,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -8086,12 +7878,6 @@
                 "opinion_term": "best"
             },
             {
-                "aspect_term": "quality",
-                "aspect_category": "hotel quality",
-                "sentiment_polarity": "positive",
-                "opinion_term": "best"
-            },
-            {
                 "aspect_term": "service",
                 "aspect_category": "service general",
                 "sentiment_polarity": "positive",
@@ -8099,12 +7885,12 @@
             },
             {
                 "aspect_term": "Executive club lounge",
-                "aspect_category": "facilities general",
+                "aspect_category": "facilities design_features",
                 "sentiment_polarity": "positive",
-                "opinion_term": "saving early evening drinks and starters for dinner"
+                "opinion_term": "saving early evening drinks and starters"
             }
         ],
-        "time": 4.3409788608551025,
+        "time": 8.731868743896484,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8143,12 +7929,12 @@
             },
             {
                 "aspect_term": "bathroom",
-                "aspect_category": "room_amenities general",
+                "aspect_category": "rooms design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "nice"
             }
         ],
-        "time": 3.131373643875122,
+        "time": 6.353125333786011,
         "gold": [
             {
                 "aspect_term": "room",
@@ -8180,7 +7966,7 @@
                 "opinion_term": "very good"
             }
         ],
-        "time": 1.5800247192382812,
+        "time": 3.7741825580596924,
         "gold": [
             {
                 "aspect_term": "service",
@@ -8200,7 +7986,7 @@
                 "opinion_term": "is just one feature"
             }
         ],
-        "time": 1.6237092018127441,
+        "time": 3.834989309310913,
         "gold": [
             {
                 "aspect_term": "Location",
@@ -8215,12 +8001,12 @@
         "predicted": [
             {
                 "aspect_term": "rooms",
-                "aspect_category": "rooms general",
+                "aspect_category": "rooms quality",
                 "sentiment_polarity": "positive",
                 "opinion_term": "fabulous"
             }
         ],
-        "time": 1.5666775703430176,
+        "time": 3.8087430000305176,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -8240,7 +8026,7 @@
                 "opinion_term": "enjoyed being close to the hip boutiques"
             }
         ],
-        "time": 1.7405142784118652,
+        "time": 4.100024700164795,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8261,18 +8047,18 @@
             },
             {
                 "aspect_term": "road signs",
-                "aspect_category": "facilities general",
+                "aspect_category": "location general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "not so easy to find"
             },
             {
                 "aspect_term": "hotel name",
-                "aspect_category": "hotel general",
+                "aspect_category": "location general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "not visible from main roads"
             }
         ],
-        "time": 3.4339611530303955,
+        "time": 7.337240934371948,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -8298,7 +8084,7 @@
                 "opinion_term": "wonderful"
             }
         ],
-        "time": 2.101513147354126,
+        "time": 4.751046895980835,
         "gold": [
             {
                 "aspect_term": "resort",
@@ -8336,7 +8122,7 @@
                 "opinion_term": "very impressed"
             }
         ],
-        "time": 3.0910701751708984,
+        "time": 6.404218673706055,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -8374,7 +8160,7 @@
                 "opinion_term": "very good"
             }
         ],
-        "time": 2.5552423000335693,
+        "time": 5.480646848678589,
         "gold": [
             {
                 "aspect_term": "shower",
@@ -8394,7 +8180,7 @@
                 "opinion_term": "Pretty good"
             }
         ],
-        "time": 1.5600225925445557,
+        "time": 3.739537000656128,
         "gold": [
             {
                 "aspect_term": "location",
@@ -8408,13 +8194,13 @@
         "text": "single room double price I had booked a double room through a website , then I called to check if there was a single available as I was going to be on my own .",
         "predicted": [
             {
-                "aspect_term": "room",
+                "aspect_term": "single room",
                 "aspect_category": "rooms prices",
                 "sentiment_polarity": "negative",
                 "opinion_term": "double price"
             }
         ],
-        "time": 1.6176533699035645,
+        "time": 3.8486227989196777,
         "gold": [
             {
                 "aspect_term": "room",
@@ -8434,7 +8220,7 @@
                 "opinion_term": "Slap bang in the middle of"
             }
         ],
-        "time": 1.708937406539917,
+        "time": 4.053348779678345,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8466,7 +8252,7 @@
                 "opinion_term": "did not have"
             }
         ],
-        "time": 4.322287082672119,
+        "time": 6.658009767532349,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8496,9 +8282,15 @@
                 "aspect_category": "service general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "helpful"
+            },
+            {
+                "aspect_term": "tourist desk",
+                "aspect_category": "facilities general",
+                "sentiment_polarity": "positive",
+                "opinion_term": "good info"
             }
         ],
-        "time": 2.265432119369507,
+        "time": 6.4449074268341064,
         "gold": [
             {
                 "aspect_term": "Staff",
@@ -8536,7 +8328,7 @@
                 "opinion_term": "shame about the price increase"
             }
         ],
-        "time": 2.4022960662841797,
+        "time": 5.334501266479492,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -8562,7 +8354,7 @@
                 "opinion_term": "Wonderful"
             }
         ],
-        "time": 1.5701367855072021,
+        "time": 3.8476037979125977,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -8582,7 +8374,7 @@
                 "opinion_term": "definitely stay here again"
             }
         ],
-        "time": 1.6390926837921143,
+        "time": 3.952834367752075,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8602,7 +8394,7 @@
                 "opinion_term": "will not stay anywhere else"
             }
         ],
-        "time": 1.6298789978027344,
+        "time": 3.9032373428344727,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8622,7 +8414,7 @@
                 "opinion_term": "Good"
             }
         ],
-        "time": 1.5397932529449463,
+        "time": 3.7165403366088867,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8642,7 +8434,7 @@
                 "opinion_term": "loved"
             }
         ],
-        "time": 1.5565826892852783,
+        "time": 3.678089141845703,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -8657,12 +8449,12 @@
         "predicted": [
             {
                 "aspect_term": "airport shuttle bus",
-                "aspect_category": "facilities general",
-                "sentiment_polarity": "positive",
+                "aspect_category": "hotel general",
+                "sentiment_polarity": "neutral",
                 "opinion_term": "drops you off and picks you up right outside the hotel"
             }
         ],
-        "time": 1.8295953273773193,
+        "time": 4.223649263381958,
         "gold": [
             {
                 "aspect_term": "airport shuttle bus",
@@ -8688,7 +8480,7 @@
                 "opinion_term": "warned"
             }
         ],
-        "time": 2.320868492126465,
+        "time": 5.165894985198975,
         "gold": [
             {
                 "aspect_term": "Starwood",
@@ -8714,7 +8506,7 @@
                 "opinion_term": "worth every penny"
             }
         ],
-        "time": 2.396087884902954,
+        "time": 5.25621485710144,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8746,7 +8538,7 @@
                 "opinion_term": "short driving disntance"
             }
         ],
-        "time": 2.4988741874694824,
+        "time": 5.362083196640015,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8778,7 +8570,7 @@
                 "opinion_term": "appreciate"
             }
         ],
-        "time": 2.4469919204711914,
+        "time": 5.348323345184326,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8798,7 +8590,7 @@
                 "opinion_term": "fast"
             }
         ],
-        "time": 2.0690128803253174,
+        "time": 3.7947511672973633,
         "gold": [
             {
                 "aspect_term": "lifts",
@@ -8819,7 +8611,7 @@
             },
             {
                 "aspect_term": "NULL",
-                "aspect_category": "rooms cleanliness",
+                "aspect_category": "hotel cleanliness",
                 "sentiment_polarity": "positive",
                 "opinion_term": "very clean"
             },
@@ -8836,7 +8628,7 @@
                 "opinion_term": "friendly"
             }
         ],
-        "time": 3.835742235183716,
+        "time": 7.804677248001099,
         "gold": [
             {
                 "aspect_term": "beds",
@@ -8874,7 +8666,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.550981044769287,
+        "time": 3.7490639686584473,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -8918,7 +8710,7 @@
                 "opinion_term": "most helpful"
             }
         ],
-        "time": 4.9482316970825195,
+        "time": 9.643055438995361,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -8980,7 +8772,7 @@
                 "opinion_term": "Beautiful"
             }
         ],
-        "time": 1.5879154205322266,
+        "time": 3.8230020999908447,
         "gold": [
             {
                 "aspect_term": "Room",
@@ -8998,9 +8790,15 @@
                 "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Great"
+            },
+            {
+                "aspect_term": "NULL",
+                "aspect_category": "hotel general",
+                "sentiment_polarity": "positive",
+                "opinion_term": "Great"
             }
         ],
-        "time": 1.5327255725860596,
+        "time": 5.041516065597534,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -9026,7 +8824,7 @@
                 "opinion_term": "clean"
             }
         ],
-        "time": 2.4726622104644775,
+        "time": 5.346240997314453,
         "gold": [
             {
                 "aspect_term": "Aparthotel Silver",
@@ -9065,7 +8863,7 @@
         "predicted": [
             {
                 "aspect_term": "breakfasts",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "good"
             },
@@ -9077,12 +8875,12 @@
             },
             {
                 "aspect_term": "afternoon tea",
-                "aspect_category": "food_drinks miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "do not miss"
             }
         ],
-        "time": 3.423762559890747,
+        "time": 7.56275200843811,
         "gold": [
             {
                 "aspect_term": "breakfasts",
@@ -9114,7 +8912,7 @@
                 "opinion_term": "wonderful"
             }
         ],
-        "time": 1.621140480041504,
+        "time": 3.7840139865875244,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -9143,10 +8941,10 @@
                 "aspect_term": "breakfast",
                 "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
-                "opinion_term": "excellant complementary full American style"
+                "opinion_term": "excellant"
             }
         ],
-        "time": 3.3136062622070312,
+        "time": 6.589674472808838,
         "gold": [
             {
                 "aspect_term": "service",
@@ -9184,7 +8982,7 @@
                 "opinion_term": "recommend"
             }
         ],
-        "time": 1.5549402236938477,
+        "time": 3.736811876296997,
         "gold": [
             {
                 "aspect_term": "hotels",
@@ -9199,12 +8997,12 @@
         "predicted": [
             {
                 "aspect_term": "hotel",
-                "aspect_category": "service general",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "provided huge umbrellas free of charge"
             }
         ],
-        "time": 1.7778730392456055,
+        "time": 4.010645151138306,
         "gold": [
             {
                 "aspect_term": "huge umbrellas",
@@ -9230,7 +9028,7 @@
                 "opinion_term": "same"
             }
         ],
-        "time": 2.3120267391204834,
+        "time": 5.105285167694092,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -9256,7 +9054,7 @@
                 "opinion_term": "nice"
             }
         ],
-        "time": 2.4243757724761963,
+        "time": 5.238286018371582,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -9280,15 +9078,9 @@
                 "aspect_category": "rooms design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "beautifully restored"
-            },
-            {
-                "aspect_term": "furniture",
-                "aspect_category": "room_amenities design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "historical"
             }
         ],
-        "time": 2.48154354095459,
+        "time": 3.9217119216918945,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -9314,7 +9106,7 @@
                 "opinion_term": "charge you for an extra day"
             }
         ],
-        "time": 2.6955411434173584,
+        "time": 5.819627285003662,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -9341,12 +9133,12 @@
             },
             {
                 "aspect_term": "bath",
-                "aspect_category": "room_amenities comfort",
+                "aspect_category": "room_amenities design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "has a jacuzzi bathtubs"
             }
         ],
-        "time": 3.334859609603882,
+        "time": 6.985967397689819,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -9378,7 +9170,7 @@
                 "opinion_term": "very firm"
             }
         ],
-        "time": 1.591747760772705,
+        "time": 3.78700590133667,
         "gold": [
             {
                 "aspect_term": "mattress",
@@ -9398,7 +9190,7 @@
                 "opinion_term": "excellent"
             }
         ],
-        "time": 1.5584993362426758,
+        "time": 3.742950439453125,
         "gold": [
             {
                 "aspect_term": "Security",
@@ -9419,18 +9211,18 @@
             },
             {
                 "aspect_term": "NULL",
-                "aspect_category": "hotel general",
+                "aspect_category": "location general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "close to every touristic spot"
             },
             {
                 "aspect_term": "NULL",
-                "aspect_category": "hotel general",
+                "aspect_category": "location general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "surrounded by restaurants and bars"
             }
         ],
-        "time": 3.2469184398651123,
+        "time": 6.7125678062438965,
         "gold": [
             {
                 "aspect_term": "location",
@@ -9480,7 +9272,7 @@
                 "opinion_term": "amazing"
             }
         ],
-        "time": 3.1172971725463867,
+        "time": 6.448421001434326,
         "gold": [
             {
                 "aspect_term": "room",
@@ -9512,7 +9304,7 @@
                 "opinion_term": "really small"
             }
         ],
-        "time": 2.3542275428771973,
+        "time": 5.249882936477661,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -9544,13 +9336,13 @@
                 "opinion_term": "great"
             },
             {
-                "aspect_term": "kindness",
+                "aspect_term": "staff",
                 "aspect_category": "service general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "kindness"
             }
         ],
-        "time": 2.343555450439453,
+        "time": 5.1195149421691895,
         "gold": [
             {
                 "aspect_term": "service",
@@ -9576,7 +9368,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5629849433898926,
+        "time": 3.812736988067627,
         "gold": [
             {
                 "aspect_term": "Location",
@@ -9591,7 +9383,7 @@
         "predicted": [
             {
                 "aspect_term": "hotel",
-                "aspect_category": "hotel design_features",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "lovely modern"
             },
@@ -9602,7 +9394,7 @@
                 "opinion_term": "great"
             }
         ],
-        "time": 2.355757713317871,
+        "time": 5.049592971801758,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -9634,7 +9426,7 @@
                 "opinion_term": "definitely stay here"
             }
         ],
-        "time": 1.6385188102722168,
+        "time": 3.8472392559051514,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -9649,7 +9441,7 @@
         "predicted": [
             {
                 "aspect_term": "Hotel",
-                "aspect_category": "hotel design_features",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "classy"
             },
@@ -9666,7 +9458,7 @@
                 "opinion_term": "beautiful"
             }
         ],
-        "time": 3.3118462562561035,
+        "time": 6.756719350814819,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -9681,12 +9473,12 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "food_drinks miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "nice"
             }
         ],
-        "time": 1.6540555953979492,
+        "time": 3.9983372688293457,
         "gold": [
             {
                 "aspect_term": "breakfas",
@@ -9712,7 +9504,7 @@
                 "opinion_term": "for its"
             }
         ],
-        "time": 2.373523712158203,
+        "time": 5.234651327133179,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -9727,7 +9519,7 @@
         "predicted": [
             {
                 "aspect_term": "Breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "nice"
             },
@@ -9738,7 +9530,7 @@
                 "opinion_term": "reasonably priced"
             }
         ],
-        "time": 2.407294750213623,
+        "time": 5.304527044296265,
         "gold": [
             {
                 "aspect_term": "Breakfast",
@@ -9776,7 +9568,7 @@
                 "opinion_term": "very clean"
             }
         ],
-        "time": 2.3158273696899414,
+        "time": 5.044747829437256,
         "gold": [
             {
                 "aspect_term": "Room",
@@ -9797,12 +9589,12 @@
         "predicted": [
             {
                 "aspect_term": "refrigerator",
-                "aspect_category": "room_amenities quality",
+                "aspect_category": "room_amenities general",
                 "sentiment_polarity": "negative",
                 "opinion_term": "did not work properly"
             }
         ],
-        "time": 1.7128007411956787,
+        "time": 4.1140077114105225,
         "gold": [
             {
                 "aspect_term": "refrigerator",
@@ -9828,7 +9620,7 @@
                 "opinion_term": "close to airport"
             }
         ],
-        "time": 2.341021776199341,
+        "time": 5.137319087982178,
         "gold": [
             {
                 "aspect_term": "location",
@@ -9861,12 +9653,12 @@
         "predicted": [
             {
                 "aspect_term": "restaurant",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "amazing"
             }
         ],
-        "time": 1.606813669204712,
+        "time": 3.913984537124634,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -9887,7 +9679,7 @@
             },
             {
                 "aspect_term": "hotel",
-                "aspect_category": "rooms comfort",
+                "aspect_category": "hotel comfort",
                 "sentiment_polarity": "positive",
                 "opinion_term": "comfortable"
             },
@@ -9904,7 +9696,7 @@
                 "opinion_term": "excellent"
             }
         ],
-        "time": 3.7535829544067383,
+        "time": 7.583348751068115,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -9954,7 +9746,7 @@
                 "opinion_term": "pleasantly suprised"
             }
         ],
-        "time": 1.6487529277801514,
+        "time": 3.866215705871582,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -9967,7 +9759,7 @@
     {
         "text": "Bad",
         "predicted": [],
-        "time": 2.053072929382324,
+        "time": 4.526438236236572,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -9987,7 +9779,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5797014236450195,
+        "time": 3.840055227279663,
         "gold": [
             {
                 "aspect_term": "Customer Service",
@@ -10007,7 +9799,7 @@
                 "opinion_term": "loved"
             }
         ],
-        "time": 1.5572659969329834,
+        "time": 3.729102611541748,
         "gold": [
             {
                 "aspect_term": "Marriott in San Juan",
@@ -10027,7 +9819,7 @@
                 "opinion_term": "always , always , ready to help me out"
             }
         ],
-        "time": 1.7372496128082275,
+        "time": 4.065176486968994,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -10069,21 +9861,9 @@
                 "aspect_category": "location general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "close to"
-            },
-            {
-                "aspect_term": "Hotel",
-                "aspect_category": "location general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "close to"
-            },
-            {
-                "aspect_term": "Hotel",
-                "aspect_category": "location general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "close to"
             }
         ],
-        "time": 6.390331745147705,
+        "time": 9.482364416122437,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -10114,7 +9894,7 @@
     {
         "text": "would definatly stay here again and would recommend it to everyone ( and",
         "predicted": [],
-        "time": 0.8306994438171387,
+        "time": 2.4821574687957764,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -10132,45 +9912,8 @@
     },
     {
         "text": "Lovely Hotel Excellent stay , hotel is in a great location and the rooms are good , well sized , bathroom was good size .",
-        "predicted": [
-            {
-                "aspect_term": "Hotel",
-                "aspect_category": "hotel general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "Lovely"
-            },
-            {
-                "aspect_term": "stay",
-                "aspect_category": "hotel general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "Excellent"
-            },
-            {
-                "aspect_term": "hotel",
-                "aspect_category": "location general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "great location"
-            },
-            {
-                "aspect_term": "rooms",
-                "aspect_category": "rooms general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "good"
-            },
-            {
-                "aspect_term": "rooms",
-                "aspect_category": "rooms general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "well sized"
-            },
-            {
-                "aspect_term": "bathroom",
-                "aspect_category": "rooms general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "good size"
-            }
-        ],
-        "time": 5.320420265197754,
+        "predicted": [],
+        "time": 10.000698328018188,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -10232,7 +9975,7 @@
                 "opinion_term": "and"
             }
         ],
-        "time": 3.120121955871582,
+        "time": 6.445485591888428,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -10270,7 +10013,7 @@
                 "opinion_term": "convenient"
             }
         ],
-        "time": 3.0707411766052246,
+        "time": 6.287692070007324,
         "gold": [
             {
                 "aspect_term": "location",
@@ -10302,7 +10045,7 @@
                 "opinion_term": "highly recommend"
             }
         ],
-        "time": 1.6316070556640625,
+        "time": 3.8215363025665283,
         "gold": [
             {
                 "aspect_term": "Hotel Saint Marie",
@@ -10322,7 +10065,7 @@
                 "opinion_term": "definitely recommend"
             }
         ],
-        "time": 2.1248860359191895,
+        "time": 3.8837828636169434,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -10342,7 +10085,7 @@
                 "opinion_term": "wonderful time"
             }
         ],
-        "time": 1.6052396297454834,
+        "time": 3.833880662918091,
         "gold": [
             {
                 "aspect_term": "Sunroute Plaza",
@@ -10363,12 +10106,12 @@
             },
             {
                 "aspect_term": "internet cafes",
-                "aspect_category": "facilities general",
+                "aspect_category": "facilities miscellaneous",
                 "sentiment_polarity": "positive",
                 "opinion_term": "many services"
             }
         ],
-        "time": 2.395350933074951,
+        "time": 5.250897169113159,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -10406,7 +10149,7 @@
                 "opinion_term": "modern"
             }
         ],
-        "time": 3.90812349319458,
+        "time": 7.86832857131958,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -10450,7 +10193,7 @@
                 "opinion_term": "enjoy the history"
             }
         ],
-        "time": 2.5307974815368652,
+        "time": 5.448135614395142,
         "gold": [
             {
                 "aspect_term": "location",
@@ -10476,7 +10219,7 @@
                 "opinion_term": "superb"
             }
         ],
-        "time": 1.55918550491333,
+        "time": 3.833822727203369,
         "gold": [
             {
                 "aspect_term": "location",
@@ -10514,7 +10257,7 @@
                 "opinion_term": "FRIENDLY"
             }
         ],
-        "time": 3.0554120540618896,
+        "time": 8.347330570220947,
         "gold": [
             {
                 "aspect_term": "location",
@@ -10547,13 +10290,13 @@
         "predicted": [
             {
                 "aspect_term": "lobby",
-                "aspect_category": "hotel comfort",
+                "aspect_category": "hotel design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "comfortable"
             },
             {
                 "aspect_term": "sitting area",
-                "aspect_category": "hotel comfort",
+                "aspect_category": "hotel design_features",
                 "sentiment_polarity": "positive",
                 "opinion_term": "comfortable"
             },
@@ -10570,7 +10313,7 @@
                 "opinion_term": "looked retro"
             }
         ],
-        "time": 3.9582974910736084,
+        "time": 7.994933605194092,
         "gold": [
             {
                 "aspect_term": "lobby",
@@ -10614,7 +10357,7 @@
                 "opinion_term": "very efficient"
             }
         ],
-        "time": 2.390439033508301,
+        "time": 5.268282890319824,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -10634,7 +10377,7 @@
                 "opinion_term": "clean"
             }
         ],
-        "time": 1.545975685119629,
+        "time": 3.677156448364258,
         "gold": [
             {
                 "aspect_term": "Rooms",
@@ -10646,39 +10389,8 @@
     },
     {
         "text": "Our room was huge ; comfortable and modern furniture , a very clean and beautiful bathroom ( maybe a tad on the small side ) but a separate sitting room with a sofa / twin bed and separate TV with its own amazing view .",
-        "predicted": [
-            {
-                "aspect_term": "room",
-                "aspect_category": "rooms general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "huge"
-            },
-            {
-                "aspect_term": "furniture",
-                "aspect_category": "room_amenities comfort",
-                "sentiment_polarity": "positive",
-                "opinion_term": "comfortable"
-            },
-            {
-                "aspect_term": "furniture",
-                "aspect_category": "room_amenities design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "modern"
-            },
-            {
-                "aspect_term": "bathroom",
-                "aspect_category": "rooms cleanliness",
-                "sentiment_polarity": "positive",
-                "opinion_term": "very clean"
-            },
-            {
-                "aspect_term": "bathroom",
-                "aspect_category": "rooms design_features",
-                "sentiment_polarity": "positive",
-                "opinion_term": "beautiful"
-            }
-        ],
-        "time": 4.909257411956787,
+        "predicted": [],
+        "time": 10.00059199333191,
         "gold": [
             {
                 "aspect_term": "room",
@@ -10740,7 +10452,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 1.5548555850982666,
+        "time": 3.7532706260681152,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -10766,7 +10478,7 @@
                 "opinion_term": "no elevator"
             }
         ],
-        "time": 2.3286960124969482,
+        "time": 5.0492517948150635,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -10792,7 +10504,7 @@
                 "opinion_term": "location"
             }
         ],
-        "time": 1.5377447605133057,
+        "time": 3.666530132293701,
         "gold": [
             {
                 "aspect_term": "location",
@@ -10812,7 +10524,7 @@
                 "opinion_term": "can ` t find anything better"
             }
         ],
-        "time": 2.236088514328003,
+        "time": 4.817550420761108,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -10832,7 +10544,7 @@
                 "opinion_term": "Very nice"
             }
         ],
-        "time": 1.6121940612792969,
+        "time": 3.846137046813965,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -10852,7 +10564,7 @@
                 "opinion_term": "on the slow side of things"
             }
         ],
-        "time": 1.7826120853424072,
+        "time": 4.112452507019043,
         "gold": [
             {
                 "aspect_term": "free wifi",
@@ -10878,7 +10590,7 @@
                 "opinion_term": "small"
             }
         ],
-        "time": 2.2971818447113037,
+        "time": 5.079508543014526,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -10899,7 +10611,7 @@
         "predicted": [
             {
                 "aspect_term": "Value",
-                "aspect_category": "hotel prices",
+                "aspect_category": "hotel general",
                 "sentiment_polarity": "positive",
                 "opinion_term": "Great"
             },
@@ -10910,7 +10622,7 @@
                 "opinion_term": "Great"
             }
         ],
-        "time": 2.276628255844116,
+        "time": 5.061873435974121,
         "gold": [
             {
                 "aspect_term": "Value",
@@ -10942,7 +10654,7 @@
                 "opinion_term": "saving grace"
             }
         ],
-        "time": 2.4048309326171875,
+        "time": 5.210532903671265,
         "gold": [
             {
                 "aspect_term": "location",
@@ -10980,7 +10692,7 @@
                 "opinion_term": "best"
             }
         ],
-        "time": 2.2760770320892334,
+        "time": 5.085758209228516,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -11006,7 +10718,7 @@
                 "opinion_term": "best"
             }
         ],
-        "time": 1.5751407146453857,
+        "time": 3.7614898681640625,
         "gold": [
             {
                 "aspect_term": "customer service",
@@ -11026,7 +10738,7 @@
                 "opinion_term": "Loved"
             }
         ],
-        "time": 1.5376825332641602,
+        "time": 3.7600579261779785,
         "gold": [
             {
                 "aspect_term": "Hotel",
@@ -11046,7 +10758,7 @@
                 "opinion_term": "great"
             }
         ],
-        "time": 1.5624454021453857,
+        "time": 3.737922191619873,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -11072,7 +10784,7 @@
                 "opinion_term": "adequate"
             }
         ],
-        "time": 2.3042919635772705,
+        "time": 5.148470878601074,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -11098,7 +10810,7 @@
                 "opinion_term": "amazing"
             }
         ],
-        "time": 1.5558326244354248,
+        "time": 3.7049970626831055,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -11118,7 +10830,7 @@
                 "opinion_term": "loved"
             }
         ],
-        "time": 1.6561849117279053,
+        "time": 3.845747470855713,
         "gold": [
             {
                 "aspect_term": "Kapok",
@@ -11139,12 +10851,12 @@
             },
             {
                 "aspect_term": "breakfast",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "worth the trouble"
             }
         ],
-        "time": 2.5628554821014404,
+        "time": 5.737802982330322,
         "gold": [
             {
                 "aspect_term": "room",
@@ -11176,7 +10888,7 @@
                 "opinion_term": "definitely be back soon"
             }
         ],
-        "time": 1.646402359008789,
+        "time": 3.9493839740753174,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -11191,12 +10903,12 @@
         "predicted": [
             {
                 "aspect_term": "free breakfast",
-                "aspect_category": "food_drinks miscellaneous",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "gave us a free breakfast"
             }
         ],
-        "time": 1.7309532165527344,
+        "time": 4.147022247314453,
         "gold": [
             {
                 "aspect_term": "breakfast",
@@ -11216,7 +10928,7 @@
                 "opinion_term": "great view"
             }
         ],
-        "time": 1.58406400680542,
+        "time": 3.9060873985290527,
         "gold": [
             {
                 "aspect_term": "room",
@@ -11236,7 +10948,7 @@
                 "opinion_term": "Loved"
             }
         ],
-        "time": 1.5223987102508545,
+        "time": 3.7901618480682373,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -11251,18 +10963,18 @@
         "predicted": [
             {
                 "aspect_term": "room service meals",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "just incredible"
             },
             {
                 "aspect_term": "steaks",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "best"
             }
         ],
-        "time": 2.4831933975219727,
+        "time": 5.594590663909912,
         "gold": [
             {
                 "aspect_term": "room service meals",
@@ -11294,7 +11006,7 @@
                 "opinion_term": "Excellent"
             }
         ],
-        "time": 2.28556489944458,
+        "time": 5.069751501083374,
         "gold": [
             {
                 "aspect_term": "Staff",
@@ -11326,7 +11038,7 @@
                 "opinion_term": "great"
             }
         ],
-        "time": 1.5451161861419678,
+        "time": 3.7654287815093994,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -11341,12 +11053,12 @@
         "predicted": [
             {
                 "aspect_term": "24hr buffet",
-                "aspect_category": "food_drinks quality",
+                "aspect_category": "food_drinks style_options",
                 "sentiment_polarity": "positive",
                 "opinion_term": "great"
             }
         ],
-        "time": 1.675931453704834,
+        "time": 4.046632289886475,
         "gold": [
             {
                 "aspect_term": "buffet",
@@ -11366,7 +11078,7 @@
                 "opinion_term": "very"
             }
         ],
-        "time": 1.5598163604736328,
+        "time": 3.7615010738372803,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -11404,7 +11116,7 @@
                 "opinion_term": "excellent"
             }
         ],
-        "time": 3.850332021713257,
+        "time": 7.783093452453613,
         "gold": [
             {
                 "aspect_term": "rooms",
@@ -11442,7 +11154,7 @@
                 "opinion_term": "looked brand new"
             }
         ],
-        "time": 1.5984537601470947,
+        "time": 3.8824708461761475,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -11474,7 +11186,7 @@
                 "opinion_term": "great"
             }
         ],
-        "time": 2.2872061729431152,
+        "time": 5.002100229263306,
         "gold": [
             {
                 "aspect_term": "staff",
@@ -11500,7 +11212,7 @@
                 "opinion_term": "would stay here again"
             }
         ],
-        "time": 1.6257710456848145,
+        "time": 3.896585464477539,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -11517,7 +11229,7 @@
                 "aspect_term": "coffeepots",
                 "aspect_category": "room_amenities general",
                 "sentiment_polarity": "negative",
-                "opinion_term": "wish"
+                "opinion_term": "wish they had"
             },
             {
                 "aspect_term": "coffee",
@@ -11526,7 +11238,7 @@
                 "opinion_term": "did have"
             }
         ],
-        "time": 2.470438241958618,
+        "time": 5.438835859298706,
         "gold": [
             {
                 "aspect_term": "room",
@@ -11546,7 +11258,7 @@
                 "opinion_term": "excellent"
             }
         ],
-        "time": 1.5663936138153076,
+        "time": 3.6961894035339355,
         "gold": [
             {
                 "aspect_term": "location",
@@ -11578,7 +11290,7 @@
                 "opinion_term": "service - minded"
             }
         ],
-        "time": 2.372755527496338,
+        "time": 5.218400955200195,
         "gold": [
             {
                 "aspect_term": "Personell",
@@ -11604,7 +11316,7 @@
                 "opinion_term": "recommend"
             }
         ],
-        "time": 1.54653000831604,
+        "time": 3.7447726726531982,
         "gold": [
             {
                 "aspect_term": "hotel",
@@ -11616,45 +11328,8 @@
     },
     {
         "text": "I ' d have this down as a 3 star rather than 2 . 5 . Received a warm welcome on arrival , and we were able to check - in despite arriving early , lots of information offered by the reception staff and secure underground parking ( for $ 16 per day )  . Room was clean but not huge .",
-        "predicted": [
-            {
-                "aspect_term": "NULL",
-                "aspect_category": "hotel general",
-                "sentiment_polarity": "neutral",
-                "opinion_term": "down as a 3 star rather than 2 . 5"
-            },
-            {
-                "aspect_term": "welcome",
-                "aspect_category": "service general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "warm"
-            },
-            {
-                "aspect_term": "reception staff",
-                "aspect_category": "service general",
-                "sentiment_polarity": "positive",
-                "opinion_term": "lots of information"
-            },
-            {
-                "aspect_term": "parking",
-                "aspect_category": "facilities general",
-                "sentiment_polarity": "neutral",
-                "opinion_term": "secure underground parking ( for $ 16 per day )  . Room"
-            },
-            {
-                "aspect_term": "Room",
-                "aspect_category": "rooms cleanliness",
-                "sentiment_polarity": "positive",
-                "opinion_term": "clean"
-            },
-            {
-                "aspect_term": "Room",
-                "aspect_category": "rooms general",
-                "sentiment_polarity": "negative",
-                "opinion_term": "not huge"
-            }
-        ],
-        "time": 7.185158729553223,
+        "predicted": [],
+        "time": 10.0006742477417,
         "gold": [
             {
                 "aspect_term": "reception staff",
@@ -11704,7 +11379,7 @@
                 "opinion_term": "helpful"
             }
         ],
-        "time": 2.3979616165161133,
+        "time": 6.50661563873291,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -11717,7 +11392,7 @@
     {
         "text": "But anyway I would stay here again .",
         "predicted": [],
-        "time": 0.8248577117919922,
+        "time": 2.4731993675231934,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -11749,7 +11424,7 @@
                 "opinion_term": "most comfortable"
             }
         ],
-        "time": 3.145982027053833,
+        "time": 6.489388704299927,
         "gold": [
             {
                 "aspect_term": "room",

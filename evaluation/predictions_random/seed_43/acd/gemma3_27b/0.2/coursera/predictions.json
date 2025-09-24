@@ -2,7 +2,7 @@
     {
         "text": "In the future you have not got anything to show in your CV .",
         "predicted": [],
-        "time": 0.6871335506439209,
+        "time": 1.7570533752441406,
         "gold": [
             {
                 "aspect_category": "course value"
@@ -16,7 +16,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3003923892974854,
+        "time": 1.853255271911621,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -28,15 +28,18 @@
         "predicted": [
             {
                 "aspect_category": "faculty value"
-            }
-        ],
-        "time": 0.7621262073516846,
-        "gold": [
-            {
-                "aspect_category": "course general"
             },
             {
+                "aspect_category": "course value"
+            }
+        ],
+        "time": 2.0985302925109863,
+        "gold": [
+            {
                 "aspect_category": "faculty general"
+            },
+            {
+                "aspect_category": "course general"
             }
         ]
     },
@@ -47,7 +50,7 @@
                 "aspect_category": "faculty response"
             }
         ],
-        "time": 0.7487664222717285,
+        "time": 1.761021375656128,
         "gold": [
             {
                 "aspect_category": "faculty response"
@@ -64,7 +67,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.9595680236816406,
+        "time": 2.1174211502075195,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -78,7 +81,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7969698905944824,
+        "time": 1.6855895519256592,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -92,7 +95,7 @@
                 "aspect_category": "course workload"
             }
         ],
-        "time": 1.2732930183410645,
+        "time": 2.6613028049468994,
         "gold": [
             {
                 "aspect_category": "course workload"
@@ -106,7 +109,7 @@
                 "aspect_category": "faculty comprehensiveness"
             }
         ],
-        "time": 0.7759237289428711,
+        "time": 1.7560155391693115,
         "gold": [
             {
                 "aspect_category": "presentation comprehensiveness"
@@ -117,10 +120,10 @@
         "text": "I am so glad to have found this course ! !",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ],
-        "time": 0.7637858390808105,
+        "time": 1.7509760856628418,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -134,7 +137,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.9164388179779053,
+        "time": 2.043165445327759,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -148,7 +151,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8109345436096191,
+        "time": 2.4253907203674316,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -160,12 +163,9 @@
         "predicted": [
             {
                 "aspect_category": "presentation quality"
-            },
-            {
-                "aspect_category": "material quality"
             }
         ],
-        "time": 0.954033613204956,
+        "time": 1.7808773517608643,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -179,7 +179,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7657520771026611,
+        "time": 1.7416553497314453,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -190,10 +190,10 @@
         "text": "Thanks to this course , I feel like i am overcoming this situation .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course value"
             }
         ],
-        "time": 0.7702670097351074,
+        "time": 1.8061251640319824,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -210,7 +210,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.9108595848083496,
+        "time": 2.2301688194274902,
         "gold": [
             {
                 "aspect_category": "material quantity"
@@ -227,7 +227,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.9022815227508545,
+        "time": 1.6014149188995361,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -241,7 +241,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.2703156471252441,
+        "time": 2.0680553913116455,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -255,7 +255,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.306946039199829,
+        "time": 3.0221643447875977,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -269,7 +269,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.314699411392212,
+        "time": 2.836775779724121,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -280,10 +280,10 @@
         "text": "The final assignment gives you a largely complete project and just asks you to make a few changes .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "assignments quantity"
             }
         ],
-        "time": 0.758246898651123,
+        "time": 1.9790012836456299,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -294,13 +294,13 @@
         "text": "Very poorly constructed with links in the final exam that didn ' t work so I couldn ' t finish the exam .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.957897424697876,
+        "time": 2.2083423137664795,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -317,7 +317,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.759885311126709,
+        "time": 2.363776683807373,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -328,10 +328,13 @@
         "text": "There was plenty of time to finish the project and some extra time to make it even better than a simple submission that meets the basic requirements of the course .",
         "predicted": [
             {
-                "aspect_category": "assignments workload"
+                "aspect_category": "assignments quantity"
+            },
+            {
+                "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.7541930675506592,
+        "time": 2.1631968021392822,
         "gold": [
             {
                 "aspect_category": "assignments workload"
@@ -348,7 +351,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.1451258659362793,
+        "time": 2.4437434673309326,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -362,7 +365,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3158900737762451,
+        "time": 2.7059261798858643,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -376,7 +379,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7327263355255127,
+        "time": 1.738243818283081,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -393,7 +396,7 @@
                 "aspect_category": "assignments workload"
             }
         ],
-        "time": 1.4953525066375732,
+        "time": 2.993885040283203,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -407,7 +410,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7636804580688477,
+        "time": 1.7817208766937256,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -421,7 +424,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.301915168762207,
+        "time": 2.7341434955596924,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -435,10 +438,10 @@
                 "aspect_category": "material comprehensiveness"
             },
             {
-                "aspect_category": "faculty comprehensiveness"
+                "aspect_category": "material quality"
             }
         ],
-        "time": 0.9990665912628174,
+        "time": 2.241833209991455,
         "gold": [
             {
                 "aspect_category": "material quantity"
@@ -447,12 +450,8 @@
     },
     {
         "text": "Great job !",
-        "predicted": [
-            {
-                "aspect_category": "course general"
-            }
-        ],
-        "time": 0.7548336982727051,
+        "predicted": [],
+        "time": 1.5181381702423096,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -466,7 +465,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9489543437957764,
+        "time": 2.7132763862609863,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -483,7 +482,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.1479828357696533,
+        "time": 2.4811627864837646,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -497,7 +496,7 @@
                 "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.7523610591888428,
+        "time": 1.73646879196167,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -514,7 +513,7 @@
                 "aspect_category": "assignments comprehensiveness"
             }
         ],
-        "time": 1.5951871871948242,
+        "time": 3.194885015487671,
         "gold": [
             {
                 "aspect_category": "faculty response"
@@ -528,7 +527,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7588222026824951,
+        "time": 1.813828468322754,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -542,7 +541,7 @@
                 "aspect_category": "assignments workload"
             }
         ],
-        "time": 0.7552528381347656,
+        "time": 1.8238589763641357,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -556,7 +555,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2918527126312256,
+        "time": 2.675773859024048,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -570,7 +569,7 @@
                 "aspect_category": "course workload"
             }
         ],
-        "time": 1.2702009677886963,
+        "time": 2.508812189102173,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -581,13 +580,13 @@
         "text": "Ng speaks clearly and the flow of the class is easy to follow .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
             },
             {
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9476792812347412,
+        "time": 2.0760269165039062,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -601,7 +600,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8071508407592773,
+        "time": 1.7958216667175293,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -615,16 +614,16 @@
                 "aspect_category": "course quality"
             },
             {
-                "aspect_category": "material quantity"
+                "aspect_category": "course general"
             }
         ],
-        "time": 0.9621927738189697,
+        "time": 2.235548257827759,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -635,10 +634,10 @@
                 "aspect_category": "course quality"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.9853801727294922,
+        "time": 2.159362316131592,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -652,10 +651,10 @@
         "text": "Professor really knows his job , and he is doing great .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.2810897827148438,
+        "time": 2.6969411373138428,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -667,12 +666,9 @@
         "predicted": [
             {
                 "aspect_category": "course quality"
-            },
-            {
-                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 1.4941182136535645,
+        "time": 2.653128147125244,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -686,7 +682,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.3086817264556885,
+        "time": 1.8117661476135254,
         "gold": [
             {
                 "aspect_category": "course value"
@@ -698,18 +694,15 @@
         "predicted": [
             {
                 "aspect_category": "course quality"
-            },
-            {
-                "aspect_category": "faculty general"
             }
         ],
-        "time": 1.2735142707824707,
+        "time": 2.2674596309661865,
         "gold": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course value"
             },
             {
-                "aspect_category": "course value"
+                "aspect_category": "course quality"
             }
         ]
     },
@@ -717,10 +710,10 @@
         "text": "When stuff worked it was rewarding , but other than that , expect to read documentation if you get stuck .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7844035625457764,
+        "time": 1.9303185939788818,
         "gold": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -734,7 +727,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.8869004249572754,
+        "time": 1.9232730865478516,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -748,7 +741,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7920455932617188,
+        "time": 1.8918356895446777,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -759,10 +752,10 @@
         "text": "This course has two great projects .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "assignments quantity"
             }
         ],
-        "time": 0.7515604496002197,
+        "time": 1.789613962173462,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -776,7 +769,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8055522441864014,
+        "time": 1.9134118556976318,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -790,13 +783,13 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2852442264556885,
+        "time": 2.703949213027954,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -807,7 +800,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.752643346786499,
+        "time": 2.9967093467712402,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -821,7 +814,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8212337493896484,
+        "time": 1.9407145977020264,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -835,7 +828,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.322619915008545,
+        "time": 2.7428088188171387,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -846,22 +839,22 @@
         "text": "The way Dr . BArbara Oakley and Dr . Sejnowsky developed this important course for us students also applies many interesting ways of understanding in a more natural way as well as clear explanation of the methods on how to get a better approach when we are trying to learn something .",
         "predicted": [
             {
-                "aspect_category": "faculty comprehensiveness"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "faculty comprehensiveness"
             }
         ],
-        "time": 1.0026211738586426,
+        "time": 2.302366256713867,
         "gold": [
-            {
-                "aspect_category": "course general"
-            },
             {
                 "aspect_category": "course comprehensiveness"
             },
             {
                 "aspect_category": "faculty general"
+            },
+            {
+                "aspect_category": "course general"
             }
         ]
     },
@@ -869,10 +862,10 @@
         "text": "I enjoyed the course very much .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ],
-        "time": 1.509690523147583,
+        "time": 2.959737539291382,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -883,10 +876,10 @@
         "text": "Narration has been wonderful and straight from the heart .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
             }
         ],
-        "time": 0.803274393081665,
+        "time": 1.803528070449829,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -900,7 +893,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.8022503852844238,
+        "time": 1.9197964668273926,
         "gold": [
             {
                 "aspect_category": "presentation quantity"
@@ -914,7 +907,7 @@
                 "aspect_category": "faculty comprehensiveness"
             }
         ],
-        "time": 0.7716279029846191,
+        "time": 1.8288915157318115,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -928,7 +921,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7523884773254395,
+        "time": 1.748575210571289,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -938,7 +931,7 @@
     {
         "text": "Thank you",
         "predicted": [],
-        "time": 0.5438311100006104,
+        "time": 1.4807207584381104,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -952,7 +945,7 @@
                 "aspect_category": "faculty response"
             }
         ],
-        "time": 0.7555985450744629,
+        "time": 1.806922435760498,
         "gold": [
             {
                 "aspect_category": "faculty response"
@@ -966,7 +959,7 @@
                 "aspect_category": "course workload"
             }
         ],
-        "time": 1.05977201461792,
+        "time": 2.331573724746704,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -983,7 +976,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2018866539001465,
+        "time": 1.8929479122161865,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -997,7 +990,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.9697539806365967,
+        "time": 1.8029296398162842,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1011,7 +1004,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.8099379539489746,
+        "time": 1.7869453430175781,
         "gold": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -1022,13 +1015,10 @@
         "text": "The information he gives you beside the course itself it ' s really useful in making your own games ! and practicing by your own .",
         "predicted": [
             {
-                "aspect_category": "material quality"
-            },
-            {
-                "aspect_category": "material comprehensiveness"
+                "aspect_category": "course general"
             }
         ],
-        "time": 0.971466064453125,
+        "time": 2.071807861328125,
         "gold": [
             {
                 "aspect_category": "faculty relatability"
@@ -1042,7 +1032,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7509019374847412,
+        "time": 1.709082841873169,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1053,10 +1043,13 @@
         "text": "The professor describe all courses with clam and very kindly .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
+            },
+            {
+                "aspect_category": "faculty comprehensiveness"
             }
         ],
-        "time": 0.7469525337219238,
+        "time": 2.1637117862701416,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -1067,16 +1060,16 @@
         "text": "Incredible , easy to understand lessons .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7617533206939697,
+        "time": 2.720155715942383,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course comprehensiveness"
             },
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -1087,7 +1080,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3022944927215576,
+        "time": 2.757812023162842,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1101,7 +1094,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.278867244720459,
+        "time": 2.6900720596313477,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1112,13 +1105,13 @@
         "text": "I also appreciated the passion is the delivery of the course by the lecturer , her enthusiasm made watching all the videos worthwhile .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
             },
             {
-                "aspect_category": "faculty relatability"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.360285997390747,
+        "time": 2.2068727016448975,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -1135,7 +1128,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7571704387664795,
+        "time": 1.8173353672027588,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1147,9 +1140,12 @@
         "predicted": [
             {
                 "aspect_category": "material quality"
+            },
+            {
+                "aspect_category": "course general"
             }
         ],
-        "time": 1.2809619903564453,
+        "time": 3.1159262657165527,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -1163,10 +1159,10 @@
                 "aspect_category": "material quantity"
             },
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.513566017150879,
+        "time": 2.348951816558838,
         "gold": [
             {
                 "aspect_category": "material quantity"
@@ -1183,7 +1179,7 @@
                 "aspect_category": "faculty general"
             }
         ],
-        "time": 0.7624540328979492,
+        "time": 1.8621456623077393,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -1197,7 +1193,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.738478422164917,
+        "time": 1.7229762077331543,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1211,7 +1207,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.9338719844818115,
+        "time": 2.1152093410491943,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1225,7 +1221,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.751039981842041,
+        "time": 1.8064000606536865,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -1239,7 +1235,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3039500713348389,
+        "time": 1.739600658416748,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1250,10 +1246,10 @@
         "text": "Very in - depth introductory learning of python .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7773048877716064,
+        "time": 1.7808325290679932,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1267,7 +1263,7 @@
                 "aspect_category": "course value"
             }
         ],
-        "time": 0.7479355335235596,
+        "time": 1.800623893737793,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1281,7 +1277,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.900331974029541,
+        "time": 1.7501275539398193,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -1295,7 +1291,7 @@
                 "aspect_category": "assignments workload"
             }
         ],
-        "time": 0.7504448890686035,
+        "time": 1.879631519317627,
         "gold": [
             {
                 "aspect_category": "assignments workload"
@@ -1309,7 +1305,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.7671360969543457,
+        "time": 1.8872888088226318,
         "gold": [
             {
                 "aspect_category": "course relatability"
@@ -1320,19 +1316,19 @@
         "text": "This change is not due to the professor or the course material ; both are excellent .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             },
             {
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.9560801982879639,
+        "time": 2.201392412185669,
         "gold": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "faculty general"
             }
         ]
     },
@@ -1346,7 +1342,7 @@
                 "aspect_category": "faculty relatability"
             }
         ],
-        "time": 1.1640958786010742,
+        "time": 2.161137819290161,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -1363,7 +1359,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.7552344799041748,
+        "time": 1.8463680744171143,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -1377,16 +1373,16 @@
                 "aspect_category": "faculty general"
             },
             {
-                "aspect_category": "faculty comprehensiveness"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.0117876529693604,
+        "time": 2.2393579483032227,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "faculty general"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -1397,16 +1393,16 @@
                 "aspect_category": "course quality"
             },
             {
-                "aspect_category": "assignments relatability"
+                "aspect_category": "material relatability"
             }
         ],
-        "time": 1.1451282501220703,
+        "time": 2.4230103492736816,
         "gold": [
             {
-                "aspect_category": "course relatability"
+                "aspect_category": "presentation comprehensiveness"
             },
             {
-                "aspect_category": "presentation comprehensiveness"
+                "aspect_category": "course relatability"
             }
         ]
     },
@@ -1417,7 +1413,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 1.3343815803527832,
+        "time": 1.9301891326904297,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1431,7 +1427,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.7564036846160889,
+        "time": 1.7687101364135742,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -1445,7 +1441,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7945308685302734,
+        "time": 1.7533488273620605,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1459,7 +1455,7 @@
                 "aspect_category": "faculty relatability"
             }
         ],
-        "time": 0.7830343246459961,
+        "time": 1.9063549041748047,
         "gold": [
             {
                 "aspect_category": "faculty response"
@@ -1470,22 +1466,22 @@
         "text": "This is an excellent course for two reasons : first the video lectures are very good , introducing complex concepts in a relatively accessible manner , and second the automated submission system is good at marking your ( well designed ) assignments .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "assignments quality"
             }
         ],
-        "time": 1.484804630279541,
+        "time": 2.218221664428711,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "assignments quality"
             },
             {
                 "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -1499,13 +1495,13 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.9516265392303467,
+        "time": 2.2446558475494385,
         "gold": [
             {
-                "aspect_category": "presentation relatability"
+                "aspect_category": "assignments relatability"
             },
             {
-                "aspect_category": "assignments relatability"
+                "aspect_category": "presentation relatability"
             }
         ]
     },
@@ -1516,7 +1512,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2895479202270508,
+        "time": 2.98114275932312,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1530,16 +1526,16 @@
                 "aspect_category": "faculty comprehensiveness"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.0129539966583252,
+        "time": 2.2357077598571777,
         "gold": [
             {
-                "aspect_category": "presentation comprehensiveness"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "presentation comprehensiveness"
             }
         ]
     },
@@ -1547,10 +1543,10 @@
         "text": "The course provides a suite of tools and techniques for data analysis that ' s a great starting point to build from .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.3066275119781494,
+        "time": 2.7445645332336426,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -1567,7 +1563,7 @@
                 "aspect_category": "assignments comprehensiveness"
             }
         ],
-        "time": 0.980893611907959,
+        "time": 2.4829256534576416,
         "gold": [
             {
                 "aspect_category": "assignments workload"
@@ -1581,10 +1577,10 @@
         "text": "It´s good to know how to clean the data but it´s confusing when Q1 is apparently correct but actually it´s not .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 1.2607800960540771,
+        "time": 2.670884847640991,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -1598,7 +1594,7 @@
                 "aspect_category": "course value"
             }
         ],
-        "time": 0.7632617950439453,
+        "time": 2.8235135078430176,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -1608,7 +1604,7 @@
     {
         "text": "thanks again",
         "predicted": [],
-        "time": 0.5544369220733643,
+        "time": 1.4679362773895264,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1622,7 +1618,7 @@
                 "aspect_category": "faculty general"
             }
         ],
-        "time": 0.8180828094482422,
+        "time": 1.695570945739746,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -1636,7 +1632,7 @@
                 "aspect_category": "assignments workload"
             }
         ],
-        "time": 0.7495851516723633,
+        "time": 1.7233631610870361,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1650,7 +1646,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7553327083587646,
+        "time": 1.8302557468414307,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1661,10 +1657,10 @@
         "text": "They assume everyone knows how to code in html , javascript and css .",
         "predicted": [
             {
-                "aspect_category": "assignments comprehensiveness"
+                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.774571418762207,
+        "time": 2.7292187213897705,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1678,7 +1674,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.448256015777588,
+        "time": 2.922558307647705,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1692,7 +1688,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7579643726348877,
+        "time": 1.7371647357940674,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1703,10 +1699,10 @@
         "text": "Each section is clear and flows to the next section .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 1.2817935943603516,
+        "time": 1.8492844104766846,
         "gold": [
             {
                 "aspect_category": "presentation comprehensiveness"
@@ -1726,7 +1722,7 @@
                 "aspect_category": "faculty comprehensiveness"
             }
         ],
-        "time": 1.5755069255828857,
+        "time": 3.2404723167419434,
         "gold": [
             {
                 "aspect_category": "faculty relatability"
@@ -1740,10 +1736,10 @@
                 "aspect_category": "material comprehensiveness"
             },
             {
-                "aspect_category": "assignments comprehensiveness"
+                "aspect_category": "grades general"
             }
         ],
-        "time": 1.0587835311889648,
+        "time": 2.4374890327453613,
         "gold": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -1763,7 +1759,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.1698615550994873,
+        "time": 2.870143175125122,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -1774,10 +1770,10 @@
         "text": "Only shows a bit of javascript , css , and html snippets .",
         "predicted": [
             {
-                "aspect_category": "material comprehensiveness"
+                "aspect_category": "material quantity"
             }
         ],
-        "time": 0.7782289981842041,
+        "time": 1.872162103652954,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -1791,7 +1787,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.303715705871582,
+        "time": 2.745163679122925,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1805,7 +1801,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2995126247406006,
+        "time": 2.6837987899780273,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -1817,12 +1813,9 @@
         "predicted": [
             {
                 "aspect_category": "assignments quality"
-            },
-            {
-                "aspect_category": "assignments comprehensiveness"
             }
         ],
-        "time": 0.9758334159851074,
+        "time": 1.7453744411468506,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -1836,7 +1829,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.4409904479980469,
+        "time": 1.790407419204712,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -1850,7 +1843,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.751042366027832,
+        "time": 1.7308745384216309,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -1862,21 +1855,18 @@
         "predicted": [
             {
                 "aspect_category": "course quality"
-            },
-            {
-                "aspect_category": "material quality"
             }
         ],
-        "time": 0.9523670673370361,
+        "time": 1.8581361770629883,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             },
             {
                 "aspect_category": "course relatability"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -1884,10 +1874,10 @@
         "text": "I have learned a lot .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.3218297958374023,
+        "time": 2.789232015609741,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1901,7 +1891,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9502942562103271,
+        "time": 1.8212330341339111,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1915,7 +1905,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7570796012878418,
+        "time": 2.0968644618988037,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1929,7 +1919,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8037192821502686,
+        "time": 1.821885108947754,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1946,7 +1936,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2835166454315186,
+        "time": 1.827836513519287,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -1960,7 +1950,7 @@
                 "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.8399441242218018,
+        "time": 2.7584218978881836,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1974,7 +1964,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.4632809162139893,
+        "time": 2.182760238647461,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -1988,7 +1978,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7254765033721924,
+        "time": 1.6705093383789062,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2002,7 +1992,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.268885850906372,
+        "time": 2.719862937927246,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -2019,7 +2009,7 @@
                 "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.9721741676330566,
+        "time": 2.2451553344726562,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -2032,7 +2022,7 @@
     {
         "text": "Thank you very much !",
         "predicted": [],
-        "time": 0.5722212791442871,
+        "time": 1.4103047847747803,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2046,7 +2036,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.1686522960662842,
+        "time": 1.8592555522918701,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -2060,20 +2050,20 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7988052368164062,
+        "time": 1.7767109870910645,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course comprehensiveness"
             },
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course general"
             }
         ]
     },
     {
         "text": "Thanks Yaakov !",
         "predicted": [],
-        "time": 0.5553348064422607,
+        "time": 1.490295171737671,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -2087,7 +2077,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7537362575531006,
+        "time": 1.7471857070922852,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2098,10 +2088,10 @@
         "text": "A great teaching method that makes you think and try out the changes .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
             }
         ],
-        "time": 0.7552387714385986,
+        "time": 1.8550879955291748,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -2113,15 +2103,18 @@
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
-            }
-        ],
-        "time": 0.8905913829803467,
-        "gold": [
-            {
-                "aspect_category": "course relatability"
             },
             {
+                "aspect_category": "material comprehensiveness"
+            }
+        ],
+        "time": 2.495842695236206,
+        "gold": [
+            {
                 "aspect_category": "course quality"
+            },
+            {
+                "aspect_category": "course relatability"
             }
         ]
     },
@@ -2132,7 +2125,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.7558684349060059,
+        "time": 1.8061785697937012,
         "gold": [
             {
                 "aspect_category": "grades general"
@@ -2146,7 +2139,7 @@
                 "aspect_category": "faculty response"
             }
         ],
-        "time": 1.311598300933838,
+        "time": 2.0412073135375977,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2160,7 +2153,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9553937911987305,
+        "time": 1.7726914882659912,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2174,7 +2167,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.282639503479004,
+        "time": 1.900519609451294,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -2188,7 +2181,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.803807258605957,
+        "time": 1.766000509262085,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -2199,10 +2192,10 @@
         "text": "He teaches even worse then me .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.8023126125335693,
+        "time": 1.9042935371398926,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -2216,7 +2209,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7430500984191895,
+        "time": 1.6600103378295898,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -2227,10 +2220,10 @@
         "text": "Information is so packed and concentrated it is amazing !",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "material quantity"
             }
         ],
-        "time": 1.3369779586791992,
+        "time": 1.8389785289764404,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -2244,7 +2237,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7718889713287354,
+        "time": 1.8291974067687988,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2255,16 +2248,13 @@
         "text": "Instead of dreading class I found myself excited about attending everyday and was able to progress faster than the course outline due to his extremely clear and supportive teaching method .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
             },
             {
                 "aspect_category": "faculty comprehensiveness"
-            },
-            {
-                "aspect_category": "faculty relatability"
             }
         ],
-        "time": 1.4011552333831787,
+        "time": 2.521355628967285,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2275,13 +2265,13 @@
         "text": "I found the reading material sources particularly relevant without exceeding unnecessary in quantity and issues .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "material relatability"
             },
             {
                 "aspect_category": "material quantity"
             }
         ],
-        "time": 0.9529826641082764,
+        "time": 2.1636674404144287,
         "gold": [
             {
                 "aspect_category": "material relatability"
@@ -2298,7 +2288,7 @@
                 "aspect_category": "assignments workload"
             }
         ],
-        "time": 0.9282419681549072,
+        "time": 2.34145450592041,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -2312,10 +2302,10 @@
                 "aspect_category": "assignments quality"
             },
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "assignments comprehensiveness"
             }
         ],
-        "time": 1.5166938304901123,
+        "time": 2.255347967147827,
         "gold": [
             {
                 "aspect_category": "grades general"
@@ -2329,13 +2319,10 @@
         "text": "Additionally , the written instructions for the final exam did not even cover some of the questions that needed to be answered i . e . repeats or questions about particular reading frames when analyzing the ORFs .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
-            },
-            {
                 "aspect_category": "assignments comprehensiveness"
             }
         ],
-        "time": 0.9772145748138428,
+        "time": 1.837702751159668,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -2349,7 +2336,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7581603527069092,
+        "time": 1.8343088626861572,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2360,10 +2347,10 @@
         "text": "The automated grader gives very concise and sometimes helpful feedback .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "grades general"
             }
         ],
-        "time": 0.7616300582885742,
+        "time": 1.7124831676483154,
         "gold": [
             {
                 "aspect_category": "grades general"
@@ -2377,7 +2364,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9231367111206055,
+        "time": 2.44987416267395,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2391,7 +2378,7 @@
                 "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.7826359272003174,
+        "time": 1.8198144435882568,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2405,7 +2392,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9132804870605469,
+        "time": 2.0109238624572754,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -2419,7 +2406,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7491214275360107,
+        "time": 2.752802848815918,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2433,7 +2420,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.7629988193511963,
+        "time": 2.8134870529174805,
         "gold": [
             {
                 "aspect_category": "assignments relatability"
@@ -2447,16 +2434,16 @@
                 "aspect_category": "course quality"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.9437594413757324,
+        "time": 2.123110771179199,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "faculty general"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -2464,10 +2451,10 @@
         "text": "For me who has programming experience for more than 10 years and just want to catch up with the mainstream of programming in Python , it ' s a bit too simple .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7842063903808594,
+        "time": 1.8792853355407715,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -2481,7 +2468,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 1.2866852283477783,
+        "time": 1.635932207107544,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -2495,7 +2482,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9230115413665771,
+        "time": 2.0231263637542725,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2509,7 +2496,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7633097171783447,
+        "time": 2.074847459793091,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2523,7 +2510,7 @@
                 "aspect_category": "material quantity"
             }
         ],
-        "time": 0.7501928806304932,
+        "time": 1.7945771217346191,
         "gold": [
             {
                 "aspect_category": "presentation comprehensiveness"
@@ -2537,7 +2524,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7522585391998291,
+        "time": 2.7912986278533936,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2551,7 +2538,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7576544284820557,
+        "time": 1.75174880027771,
         "gold": [
             {
                 "aspect_category": "faculty response"
@@ -2565,7 +2552,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.6437017917633057,
+        "time": 1.2843742370605469,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2582,7 +2569,7 @@
                 "aspect_category": "assignments comprehensiveness"
             }
         ],
-        "time": 0.989177942276001,
+        "time": 2.264599561691284,
         "gold": [
             {
                 "aspect_category": "assignments workload"
@@ -2592,7 +2579,7 @@
     {
         "text": "It has really helped me to think more like my husband .",
         "predicted": [],
-        "time": 0.5621654987335205,
+        "time": 1.4337761402130127,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2603,10 +2590,13 @@
         "text": "Thank you for your warmhearted and incredible instructions !",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
+            },
+            {
+                "aspect_category": "faculty comprehensiveness"
             }
         ],
-        "time": 0.7606372833251953,
+        "time": 2.2241103649139404,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -2617,19 +2607,19 @@
         "text": "Simple and practical guidelines which can be followed easily .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.809229850769043,
+        "time": 3.093564510345459,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course comprehensiveness"
             },
             {
                 "aspect_category": "course relatability"
             },
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -2637,10 +2627,10 @@
         "text": "It is not easy , but with tons of fun .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course workload"
             }
         ],
-        "time": 1.341421127319336,
+        "time": 2.747091054916382,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -2654,10 +2644,10 @@
                 "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "faculty comprehensiveness"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.9705057144165039,
+        "time": 2.14377760887146,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -2674,7 +2664,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9600670337677002,
+        "time": 2.1391735076904297,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -2688,7 +2678,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7546658515930176,
+        "time": 1.7929344177246094,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2700,18 +2690,15 @@
         "predicted": [
             {
                 "aspect_category": "presentation quality"
-            },
-            {
-                "aspect_category": "presentation comprehensiveness"
             }
         ],
-        "time": 0.9644031524658203,
+        "time": 1.784332275390625,
         "gold": [
             {
-                "aspect_category": "presentation comprehensiveness"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "presentation comprehensiveness"
             }
         ]
     },
@@ -2722,7 +2709,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.7319605350494385,
+        "time": 1.6472630500793457,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -2733,10 +2720,10 @@
         "text": "Excellent teaching methodology !",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.6377573013305664,
+        "time": 2.1251847743988037,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -2746,7 +2733,7 @@
     {
         "text": "I ' m Spaniard , so most of the things are basic for me such as the use of onion and garlic in meals , and the use of street market for shopping vegetables .",
         "predicted": [],
-        "time": 0.5544707775115967,
+        "time": 1.4514570236206055,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2757,10 +2744,10 @@
         "text": "After you finish the course you are not an expert but you have the right concepts and knowledge for developing your projects .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7806746959686279,
+        "time": 1.7711172103881836,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2771,10 +2758,10 @@
         "text": "I loved it !",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ],
-        "time": 0.7972331047058105,
+        "time": 2.0809364318847656,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2785,19 +2772,19 @@
         "text": "The professor goes slow , the visual aides are great and there are several impressive videos of drones doing impressive cool stuff .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
-            },
-            {
-                "aspect_category": "material quality"
-            }
-        ],
-        "time": 0.9507746696472168,
-        "gold": [
-            {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
             },
             {
                 "aspect_category": "presentation quality"
+            }
+        ],
+        "time": 2.188845634460449,
+        "gold": [
+            {
+                "aspect_category": "presentation quality"
+            },
+            {
+                "aspect_category": "faculty general"
             }
         ]
     },
@@ -2805,10 +2792,10 @@
         "text": "The tests in particular are tough .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "grades general"
             }
         ],
-        "time": 0.7444303035736084,
+        "time": 1.7828521728515625,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -2819,10 +2806,10 @@
         "text": "Fantastic teaching methodology .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.7582278251647949,
+        "time": 2.7024240493774414,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -2833,10 +2820,10 @@
         "text": "In fact , i never have experienced that awsome lecture !",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.7824687957763672,
+        "time": 1.845106840133667,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -2850,13 +2837,13 @@
                 "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.781099796295166,
+        "time": 1.8161044120788574,
         "gold": [
             {
-                "aspect_category": "course relatability"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "course relatability"
             }
         ]
     },
@@ -2864,13 +2851,13 @@
         "text": "Smart , casual and yet precise lessons will help you to go through the initial necessary steps in the language , building a fundamental base where you will construct your python coding skills ! .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "material comprehensiveness"
+                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.9679207801818848,
+        "time": 2.2690799236297607,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -2884,7 +2871,7 @@
                 "aspect_category": "assignments workload"
             }
         ],
-        "time": 0.7409169673919678,
+        "time": 1.7699265480041504,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -2901,7 +2888,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.9689822196960449,
+        "time": 2.2006239891052246,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -2918,16 +2905,16 @@
                 "aspect_category": "course quality"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.566291332244873,
+        "time": 3.124129295349121,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "faculty general"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -2938,16 +2925,16 @@
                 "aspect_category": "material quality"
             },
             {
-                "aspect_category": "material quality"
+                "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 1.1057395935058594,
+        "time": 2.4627370834350586,
         "gold": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "course quality"
             }
         ]
     },
@@ -2958,7 +2945,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.313619613647461,
+        "time": 2.784945487976074,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2972,7 +2959,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7683916091918945,
+        "time": 1.725208044052124,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -2986,7 +2973,7 @@
                 "aspect_category": "faculty response"
             }
         ],
-        "time": 0.7480993270874023,
+        "time": 1.8152434825897217,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -2998,12 +2985,9 @@
         "predicted": [
             {
                 "aspect_category": "presentation quality"
-            },
-            {
-                "aspect_category": "faculty general"
             }
         ],
-        "time": 0.962327241897583,
+        "time": 1.8575387001037598,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -3020,7 +3004,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.81304931640625,
+        "time": 1.882690191268921,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3031,10 +3015,10 @@
         "text": "I learned a lot .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.3105676174163818,
+        "time": 2.6266844272613525,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3048,10 +3032,10 @@
                 "aspect_category": "assignments quality"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
             }
         ],
-        "time": 0.9511384963989258,
+        "time": 2.452603816986084,
         "gold": [
             {
                 "aspect_category": "faculty response"
@@ -3068,7 +3052,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.762946605682373,
+        "time": 1.816439151763916,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3079,10 +3063,10 @@
         "text": "Really Useful . .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.1306016445159912,
+        "time": 1.7826716899871826,
         "gold": [
             {
                 "aspect_category": "course relatability"
@@ -3096,7 +3080,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7639439105987549,
+        "time": 2.9563372135162354,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3110,7 +3094,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.7516899108886719,
+        "time": 1.8048689365386963,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -3127,7 +3111,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.9716024398803711,
+        "time": 2.144657611846924,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3141,7 +3125,7 @@
                 "aspect_category": "presentation quality"
             }
         ],
-        "time": 1.3181147575378418,
+        "time": 1.8210337162017822,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -3152,10 +3136,10 @@
         "text": "This course changed my life .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ],
-        "time": 0.9303431510925293,
+        "time": 1.8364410400390625,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3165,7 +3149,7 @@
     {
         "text": "Thank you very much !",
         "predicted": [],
-        "time": 0.6126301288604736,
+        "time": 1.5841050148010254,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3179,7 +3163,7 @@
                 "aspect_category": "faculty general"
             }
         ],
-        "time": 0.755681037902832,
+        "time": 1.7539796829223633,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -3193,7 +3177,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7670979499816895,
+        "time": 1.7600204944610596,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3204,22 +3188,22 @@
         "text": "It is very well made with a balance of theory in robotics motion control with practical assignments using the popular language Matlab .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "material quality"
+                "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.9669840335845947,
+        "time": 2.239377975463867,
         "gold": [
             {
                 "aspect_category": "assignments relatability"
             },
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -3230,19 +3214,19 @@
                 "aspect_category": "material quality"
             },
             {
-                "aspect_category": "material quality"
+                "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.9639313220977783,
+        "time": 2.721750259399414,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
             },
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "assignments quality"
             }
         ]
     },
@@ -3253,7 +3237,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.754279375076294,
+        "time": 1.8142883777618408,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3264,10 +3248,10 @@
         "text": "An entire week spent on precision / recall seems a little bit too much , without touching other metrics like F - score .",
         "predicted": [
             {
-                "aspect_category": "assignments workload"
+                "aspect_category": "assignments quantity"
             }
         ],
-        "time": 1.3287665843963623,
+        "time": 2.753535747528076,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3281,7 +3265,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.784404993057251,
+        "time": 1.7303316593170166,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3295,7 +3279,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7860770225524902,
+        "time": 1.8517811298370361,
         "gold": [
             {
                 "aspect_category": "presentation comprehensiveness"
@@ -3306,19 +3290,19 @@
         "text": "The content is clearly presented and the effort in teaching shows .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "faculty comprehensiveness"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.5580065250396729,
+        "time": 2.085411787033081,
         "gold": [
             {
-                "aspect_category": "presentation comprehensiveness"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "presentation comprehensiveness"
             }
         ]
     },
@@ -3332,16 +3316,16 @@
                 "aspect_category": "faculty relatability"
             }
         ],
-        "time": 1.1697912216186523,
+        "time": 2.46209454536438,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty response"
             },
             {
-                "aspect_category": "faculty response"
+                "aspect_category": "faculty general"
             }
         ]
     },
@@ -3349,10 +3333,10 @@
         "text": "If I did not have a working knowledge of academic French , I would have been lost .",
         "predicted": [
             {
-                "aspect_category": "material comprehensiveness"
+                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.8185029029846191,
+        "time": 1.8625171184539795,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -3363,16 +3347,16 @@
         "text": "There is a certain style of teaching that you need to get accustomed too in the beginning but when it is done , lessons become very clear and easy to follow .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.2802331447601318,
+        "time": 2.686521053314209,
         "gold": [
             {
-                "aspect_category": "presentation comprehensiveness"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "presentation comprehensiveness"
             }
         ]
     },
@@ -3380,10 +3364,10 @@
         "text": "Loved most all of it .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ],
-        "time": 1.1383192539215088,
+        "time": 2.4679689407348633,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3397,7 +3381,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3062386512756348,
+        "time": 2.773296594619751,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3411,7 +3395,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.8069157600402832,
+        "time": 1.7876687049865723,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -3420,8 +3404,12 @@
     },
     {
         "text": "Formats and personal adaptations became more mutually understood and accepted .",
-        "predicted": [],
-        "time": 0.521965742111206,
+        "predicted": [
+            {
+                "aspect_category": "course general"
+            }
+        ],
+        "time": 1.6865034103393555,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3435,7 +3423,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7645542621612549,
+        "time": 1.7579269409179688,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -3452,7 +3440,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.9764492511749268,
+        "time": 2.2534728050231934,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3466,7 +3454,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7585024833679199,
+        "time": 1.7882704734802246,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3477,13 +3465,13 @@
         "text": "What I miss : the study material should provide more and better organized ( theoretical ) information ( e . g . on topcis like database design , data structures , etc . )",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "material comprehensiveness"
             },
             {
-                "aspect_category": "material comprehensiveness"
+                "aspect_category": "material quality"
             }
         ],
-        "time": 0.9634616374969482,
+        "time": 2.060253858566284,
         "gold": [
             {
                 "aspect_category": "material quantity"
@@ -3497,10 +3485,10 @@
         "text": "I ' ve really learned a lot !",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.301912784576416,
+        "time": 2.747600555419922,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3517,7 +3505,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.5508143901824951,
+        "time": 2.1599605083465576,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3531,10 +3519,10 @@
         "text": "Course ended in strong accordance .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ],
-        "time": 0.7548336982727051,
+        "time": 1.7812974452972412,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3545,13 +3533,13 @@
         "text": "And every word have become concrete when I progress in this course under Prof . Silverman ' s instruction and tour in the Penn museum .",
         "predicted": [
             {
-                "aspect_category": "faculty comprehensiveness"
+                "aspect_category": "faculty value"
             },
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.134922742843628,
+        "time": 2.3280460834503174,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -3562,10 +3550,10 @@
         "text": "Jeff Leek , he is such a great professor .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.7597510814666748,
+        "time": 2.7293715476989746,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -3579,7 +3567,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.4865813255310059,
+        "time": 2.1209003925323486,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3593,7 +3581,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.72414231300354,
+        "time": 1.6546709537506104,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3603,7 +3591,7 @@
     {
         "text": "Thank you .",
         "predicted": [],
-        "time": 0.5583269596099854,
+        "time": 1.4850571155548096,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3617,7 +3605,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.7624738216400146,
+        "time": 2.0861623287200928,
         "gold": [
             {
                 "aspect_category": "presentation comprehensiveness"
@@ -3631,7 +3619,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7500019073486328,
+        "time": 1.8260009288787842,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3645,7 +3633,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7621321678161621,
+        "time": 1.825183391571045,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -3662,7 +3650,7 @@
                 "aspect_category": "assignments relatability"
             }
         ],
-        "time": 1.1322762966156006,
+        "time": 3.5056424140930176,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -3682,7 +3670,7 @@
                 "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.9766130447387695,
+        "time": 2.7679195404052734,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -3696,7 +3684,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7272830009460449,
+        "time": 1.8140203952789307,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3707,13 +3695,10 @@
         "text": "The course structure seems to have been really thought through as at no point did I feel as though I had a gap in knowledge .",
         "predicted": [
             {
-                "aspect_category": "course quality"
-            },
-            {
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.9725112915039062,
+        "time": 2.767854928970337,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3724,10 +3709,10 @@
         "text": "I plan on applying what I learned from this course at work .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course value"
             }
         ],
-        "time": 0.7531800270080566,
+        "time": 1.8058326244354248,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3738,10 +3723,13 @@
         "text": "Andrew Ng is not only a great researcher , he also has outstanding teaching skills .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
+            },
+            {
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.3167414665222168,
+        "time": 3.1092329025268555,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -3761,13 +3749,13 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 1.1475238800048828,
+        "time": 2.492060422897339,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "presentation comprehensiveness"
             },
             {
-                "aspect_category": "presentation comprehensiveness"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -3778,7 +3766,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7613925933837891,
+        "time": 1.782679796218872,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3790,12 +3778,9 @@
         "predicted": [
             {
                 "aspect_category": "course value"
-            },
-            {
-                "aspect_category": "course quality"
             }
         ],
-        "time": 1.2676377296447754,
+        "time": 2.030517101287842,
         "gold": [
             {
                 "aspect_category": "course value"
@@ -3809,7 +3794,7 @@
                 "aspect_category": "grades general"
             }
         ],
-        "time": 0.7592401504516602,
+        "time": 1.8216650485992432,
         "gold": [
             {
                 "aspect_category": "grades general"
@@ -3823,7 +3808,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.297818660736084,
+        "time": 2.7701797485351562,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3837,7 +3822,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8119359016418457,
+        "time": 1.843214750289917,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3851,7 +3836,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7639203071594238,
+        "time": 1.8056206703186035,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -3865,7 +3850,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7708675861358643,
+        "time": 1.7650671005249023,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -3879,7 +3864,7 @@
                 "aspect_category": "course workload"
             }
         ],
-        "time": 1.3082921504974365,
+        "time": 2.6847221851348877,
         "gold": [
             {
                 "aspect_category": "course workload"
@@ -3893,10 +3878,10 @@
                 "aspect_category": "course quality"
             },
             {
-                "aspect_category": "assignments workload"
+                "aspect_category": "course workload"
             }
         ],
-        "time": 0.9696230888366699,
+        "time": 2.6794228553771973,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -3910,7 +3895,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7802460193634033,
+        "time": 1.8217883110046387,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3924,7 +3909,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7573802471160889,
+        "time": 1.7985949516296387,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -3941,7 +3926,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.9542896747589111,
+        "time": 2.352576971054077,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -3952,10 +3937,10 @@
         "text": "JavaScript has a bad reputation , and sloppy teaching with respect to best practices is very bad .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7353916168212891,
+        "time": 2.7016420364379883,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -3967,9 +3952,12 @@
         "predicted": [
             {
                 "aspect_category": "presentation quality"
+            },
+            {
+                "aspect_category": "faculty relatability"
             }
         ],
-        "time": 1.150071144104004,
+        "time": 2.7640743255615234,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -3981,12 +3969,9 @@
         "predicted": [
             {
                 "aspect_category": "assignments quality"
-            },
-            {
-                "aspect_category": "assignments comprehensiveness"
             }
         ],
-        "time": 0.9766044616699219,
+        "time": 2.7256228923797607,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -4006,19 +3991,19 @@
                 "aspect_category": "presentation comprehensiveness"
             }
         ],
-        "time": 1.1708407402038574,
+        "time": 2.840744972229004,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
-            },
-            {
-                "aspect_category": "course general"
             },
             {
                 "aspect_category": "course quality"
             },
             {
                 "aspect_category": "course relatability"
+            },
+            {
+                "aspect_category": "course general"
             }
         ]
     },
@@ -4029,7 +4014,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7633421421051025,
+        "time": 2.1299307346343994,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4043,10 +4028,10 @@
                 "aspect_category": "course comprehensiveness"
             },
             {
-                "aspect_category": "assignments comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.9996833801269531,
+        "time": 2.267324447631836,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -4060,7 +4045,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.3194401264190674,
+        "time": 2.795642375946045,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4074,7 +4059,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.1722888946533203,
+        "time": 1.8983745574951172,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4088,7 +4073,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.9232118129730225,
+        "time": 2.0757853984832764,
         "gold": [
             {
                 "aspect_category": "course relatability"
@@ -4102,7 +4087,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.301103115081787,
+        "time": 2.783982038497925,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4116,7 +4101,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.272109031677246,
+        "time": 2.696873188018799,
         "gold": [
             {
                 "aspect_category": "course relatability"
@@ -4127,10 +4112,10 @@
         "text": "No step - by - step examples of developed cases are shown .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.755157470703125,
+        "time": 2.7126407623291016,
         "gold": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -4144,7 +4129,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7520279884338379,
+        "time": 1.8125734329223633,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4158,13 +4143,13 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.293907642364502,
+        "time": 1.7638366222381592,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course relatability"
             },
             {
-                "aspect_category": "course relatability"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -4173,12 +4158,9 @@
         "predicted": [
             {
                 "aspect_category": "faculty comprehensiveness"
-            },
-            {
-                "aspect_category": "faculty relatability"
             }
         ],
-        "time": 0.986790657043457,
+        "time": 1.8033599853515625,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -4189,13 +4171,13 @@
         "text": "Thank you Dr . Charles Severance for hard work to make this course such interesting to watch .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.1588397026062012,
+        "time": 2.196861743927002,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -4212,7 +4194,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9534499645233154,
+        "time": 2.180328130722046,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -4223,10 +4205,10 @@
         "text": "Great Teacher",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.7600522041320801,
+        "time": 1.7696819305419922,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -4236,7 +4218,7 @@
     {
         "text": "Rather than everything is fine .",
         "predicted": [],
-        "time": 1.1596603393554688,
+        "time": 2.4665439128875732,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4250,7 +4232,7 @@
                 "aspect_category": "grades general"
             }
         ],
-        "time": 0.7508013248443604,
+        "time": 2.8244049549102783,
         "gold": [
             {
                 "aspect_category": "grades general"
@@ -4264,7 +4246,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7268810272216797,
+        "time": 2.580547332763672,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4278,16 +4260,16 @@
                 "aspect_category": "grades general"
             },
             {
-                "aspect_category": "material quality"
+                "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.940983772277832,
+        "time": 2.144307851791382,
         "gold": [
             {
-                "aspect_category": "grades general"
+                "aspect_category": "course value"
             },
             {
-                "aspect_category": "course value"
+                "aspect_category": "grades general"
             }
         ]
     },
@@ -4298,7 +4280,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.1406891345977783,
+        "time": 1.8075292110443115,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4309,10 +4291,10 @@
         "text": "In my opinion , Andrew Ng excels in teaching this course .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.7618556022644043,
+        "time": 1.7726500034332275,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -4323,13 +4305,10 @@
         "text": "This course has provided me with the tools and methodology that I need to be more strategic and focused in my career management .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
-            },
-            {
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9241466522216797,
+        "time": 1.5477371215820312,
         "gold": [
             {
                 "aspect_category": "course relatability"
@@ -4340,10 +4319,10 @@
         "text": "Awesome course !",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7583882808685303,
+        "time": 1.8879194259643555,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4357,13 +4336,13 @@
                 "aspect_category": "presentation quality"
             }
         ],
-        "time": 0.7285614013671875,
+        "time": 1.722428321838379,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -4374,7 +4353,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7671880722045898,
+        "time": 1.7964110374450684,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4385,19 +4364,19 @@
         "text": "Exceptionally good Lecturer and the course .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             },
             {
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.5403759479522705,
+        "time": 3.238494873046875,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "faculty general"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -4411,7 +4390,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.0270400047302246,
+        "time": 2.1802399158477783,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4425,10 +4404,10 @@
         "text": "Totally worth the time you spent following this course .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course value"
             }
         ],
-        "time": 0.9345195293426514,
+        "time": 1.7930622100830078,
         "gold": [
             {
                 "aspect_category": "course value"
@@ -4442,7 +4421,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 1.3151772022247314,
+        "time": 2.684764862060547,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4453,13 +4432,13 @@
         "text": "Great , actual and interesting content .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "material quality"
             }
         ],
-        "time": 1.4704790115356445,
+        "time": 3.1037991046905518,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4471,12 +4450,9 @@
         "predicted": [
             {
                 "aspect_category": "course quality"
-            },
-            {
-                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.9725775718688965,
+        "time": 1.8041102886199951,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4493,13 +4469,13 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2613189220428467,
+        "time": 2.6738007068634033,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course comprehensiveness"
             },
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -4507,10 +4483,10 @@
         "text": "I ' m on week 3 and I ' m still not sure of how to make my assignments in a proper way .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
+                "aspect_category": "assignments comprehensiveness"
             }
         ],
-        "time": 1.3088669776916504,
+        "time": 1.8364074230194092,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -4521,10 +4497,10 @@
         "text": "I loved the course .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.2977931499481201,
+        "time": 2.9162192344665527,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4538,7 +4514,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.75531005859375,
+        "time": 1.8286888599395752,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -4552,7 +4528,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2906365394592285,
+        "time": 2.706943988800049,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -4563,10 +4539,10 @@
         "text": "The lectures were not very interesting or instructive .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "presentation quality"
             }
         ],
-        "time": 0.8052816390991211,
+        "time": 1.8438763618469238,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4578,18 +4554,15 @@
         "predicted": [
             {
                 "aspect_category": "course quality"
-            },
-            {
-                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.9824671745300293,
+        "time": 1.8449304103851318,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -4603,7 +4576,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.5829682350158691,
+        "time": 3.208371877670288,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -4614,10 +4587,10 @@
         "text": "It is obvious that it was carefully planned and laid out .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 1.2480907440185547,
+        "time": 2.6236579418182373,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -4628,13 +4601,13 @@
         "text": "Even though the last part was somewhat challenging to me , I learned a lot from this course and more than anything else , I could have some sort of vision in machine learning .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             },
             {
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.980816125869751,
+        "time": 2.1371524333953857,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4651,7 +4624,7 @@
                 "aspect_category": "faculty general"
             }
         ],
-        "time": 0.7686665058135986,
+        "time": 1.851897954940796,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -4665,10 +4638,10 @@
                 "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 1.5083305835723877,
+        "time": 3.128278970718384,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -4685,7 +4658,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8024110794067383,
+        "time": 1.8283209800720215,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4699,7 +4672,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7783493995666504,
+        "time": 1.7800266742706299,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -4713,10 +4686,10 @@
                 "aspect_category": "faculty relatability"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "presentation quality"
             }
         ],
-        "time": 0.9822256565093994,
+        "time": 2.1667747497558594,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -4730,7 +4703,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7537081241607666,
+        "time": 1.7505176067352295,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4747,16 +4720,16 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 1.1476263999938965,
+        "time": 2.4249424934387207,
         "gold": [
-            {
-                "aspect_category": "course general"
-            },
             {
                 "aspect_category": "course comprehensiveness"
             },
             {
                 "aspect_category": "course quality"
+            },
+            {
+                "aspect_category": "course general"
             }
         ]
     },
@@ -4767,7 +4740,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8021650314331055,
+        "time": 1.8393869400024414,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4778,10 +4751,10 @@
         "text": "This course changed my life !",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ],
-        "time": 0.9125382900238037,
+        "time": 1.8121860027313232,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4795,7 +4768,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.2839891910552979,
+        "time": 1.8599162101745605,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4806,10 +4779,10 @@
         "text": "My previous knowledge of multiple regression has been enriched by my exposure to the cost function .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7725112438201904,
+        "time": 1.828822135925293,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4823,7 +4796,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.4068191051483154,
+        "time": 2.8101999759674072,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4834,13 +4807,13 @@
         "text": "Some content material is missing , including the link to a text that is needed to answer a quizz which will influence your final grade .",
         "predicted": [
             {
-                "aspect_category": "material quantity"
+                "aspect_category": "material comprehensiveness"
             },
             {
                 "aspect_category": "grades general"
             }
         ],
-        "time": 0.9612717628479004,
+        "time": 2.2877938747406006,
         "gold": [
             {
                 "aspect_category": "material quantity"
@@ -4854,13 +4827,13 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7832341194152832,
+        "time": 2.0497570037841797,
         "gold": [
             {
-                "aspect_category": "assignments quantity"
+                "aspect_category": "presentation quality"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "assignments quantity"
             }
         ]
     },
@@ -4868,10 +4841,10 @@
         "text": "I ' ve learned a lot already and I ' m only halfway through the course .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.1753578186035156,
+        "time": 2.492197036743164,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4885,7 +4858,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.7917206287384033,
+        "time": 1.9226710796356201,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -4896,10 +4869,10 @@
         "text": "Very challenging course .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course workload"
             }
         ],
-        "time": 1.4231059551239014,
+        "time": 1.9614009857177734,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4913,7 +4886,7 @@
                 "aspect_category": "material quantity"
             }
         ],
-        "time": 0.7746169567108154,
+        "time": 1.8215172290802002,
         "gold": [
             {
                 "aspect_category": "material quantity"
@@ -4927,7 +4900,7 @@
                 "aspect_category": "faculty response"
             }
         ],
-        "time": 1.3158159255981445,
+        "time": 2.7777419090270996,
         "gold": [
             {
                 "aspect_category": "faculty response"
@@ -4944,16 +4917,16 @@
                 "aspect_category": "grades general"
             }
         ],
-        "time": 0.9781291484832764,
+        "time": 2.182628631591797,
         "gold": [
             {
-                "aspect_category": "grades general"
+                "aspect_category": "presentation quality"
             },
             {
                 "aspect_category": "faculty general"
             },
             {
-                "aspect_category": "presentation quality"
+                "aspect_category": "grades general"
             }
         ]
     },
@@ -4961,10 +4934,10 @@
         "text": "Dr . Chuck for your amazing job and enjoy - fulness : )",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.7872202396392822,
+        "time": 1.7626030445098877,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -4978,7 +4951,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7642238140106201,
+        "time": 1.8175222873687744,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -4989,22 +4962,22 @@
         "text": "The case studies were relevant and interesting , and the guest speakers were good as well .",
         "predicted": [
             {
-                "aspect_category": "assignments relatability"
+                "aspect_category": "material relatability"
             },
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.9797227382659912,
+        "time": 2.4638445377349854,
         "gold": [
             {
                 "aspect_category": "faculty general"
             },
             {
-                "aspect_category": "course relatability"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course relatability"
             }
         ]
     },
@@ -5015,7 +4988,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7685084342956543,
+        "time": 2.7928364276885986,
         "gold": [
             {
                 "aspect_category": "course relatability"
@@ -5029,7 +5002,7 @@
                 "aspect_category": "grades general"
             }
         ],
-        "time": 0.9251823425292969,
+        "time": 2.0995965003967285,
         "gold": [
             {
                 "aspect_category": "assignments relatability"
@@ -5040,10 +5013,10 @@
         "text": "Ok , the platform offered makes things easier , but if you really want to learn machine learning , you can not be limited to a platform , acting as a robot just using pre - written functions in a black box .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.2899885177612305,
+        "time": 2.7420601844787598,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5057,7 +5030,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7910289764404297,
+        "time": 1.8719561100006104,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5071,7 +5044,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7795684337615967,
+        "time": 1.8413825035095215,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5085,13 +5058,13 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7604491710662842,
+        "time": 1.852609395980835,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -5099,10 +5072,13 @@
         "text": "While this course was a timed release ( implying someone at the U of Copenhagen is involved with it week to week , it feels as if it is an archived course with no live administration ; the only interaction you seem to have is with other students .",
         "predicted": [
             {
+                "aspect_category": "course general"
+            },
+            {
                 "aspect_category": "faculty response"
             }
         ],
-        "time": 0.8896410465240479,
+        "time": 2.487907886505127,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5116,7 +5092,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3046748638153076,
+        "time": 2.091752290725708,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -5133,7 +5109,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.9572885036468506,
+        "time": 2.7001190185546875,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -5148,12 +5124,9 @@
         "predicted": [
             {
                 "aspect_category": "material quality"
-            },
-            {
-                "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 1.200666904449463,
+        "time": 2.412597894668579,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -5164,10 +5137,10 @@
         "text": "I am thinking of being a vet , so this course is really helping me .",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course value"
             }
         ],
-        "time": 0.7610921859741211,
+        "time": 1.758737325668335,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5179,12 +5152,9 @@
         "predicted": [
             {
                 "aspect_category": "course quality"
-            },
-            {
-                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 1.5594244003295898,
+        "time": 2.4691641330718994,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5195,10 +5165,10 @@
         "text": "Dr . Odersky and your colleagues that make learning process to be a breeze .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty relatability"
             }
         ],
-        "time": 0.7604720592498779,
+        "time": 1.8386485576629639,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -5212,7 +5182,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7466425895690918,
+        "time": 1.7897655963897705,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5226,13 +5196,13 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3117964267730713,
+        "time": 2.798776149749756,
         "gold": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             },
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course general"
             }
         ]
     },
@@ -5246,7 +5216,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.9619898796081543,
+        "time": 2.261864185333252,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5257,13 +5227,13 @@
         "text": "Professor Andrew Ng is excellent and all the exercises are very well explained .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             },
             {
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.9790561199188232,
+        "time": 2.1085431575775146,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -5280,7 +5250,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3080012798309326,
+        "time": 2.683579206466675,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5292,12 +5262,9 @@
         "predicted": [
             {
                 "aspect_category": "course quality"
-            },
-            {
-                "aspect_category": "material quality"
             }
         ],
-        "time": 0.9522206783294678,
+        "time": 1.7320590019226074,
         "gold": [
             {
                 "aspect_category": "material quality"
@@ -5309,12 +5276,9 @@
         "predicted": [
             {
                 "aspect_category": "presentation quality"
-            },
-            {
-                "aspect_category": "faculty general"
             }
         ],
-        "time": 0.958827018737793,
+        "time": 1.8772211074829102,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -5331,7 +5295,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.930854320526123,
+        "time": 1.8293917179107666,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5345,7 +5309,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7615320682525635,
+        "time": 1.7216923236846924,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5359,7 +5323,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.7564079761505127,
+        "time": 1.8099234104156494,
         "gold": [
             {
                 "aspect_category": "material relatability"
@@ -5370,10 +5334,10 @@
         "text": "I entered with no knowledge about the History of the Middle East and now have a solid base of understanding to further delve into the subject .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7966747283935547,
+        "time": 1.8289763927459717,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5383,7 +5347,7 @@
     {
         "text": "If you use Haskell , you ' ll be forced to work with arrays or sequences , which are not as nice .",
         "predicted": [],
-        "time": 0.556340217590332,
+        "time": 1.4234898090362549,
         "gold": [
             {
                 "aspect_category": "course workload"
@@ -5397,7 +5361,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7592833042144775,
+        "time": 1.889415979385376,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5411,7 +5375,7 @@
                 "aspect_category": "presentation quality"
             }
         ],
-        "time": 0.7475781440734863,
+        "time": 1.7577636241912842,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -5422,10 +5386,10 @@
         "text": "Im taking away a lot of useful information .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.5086712837219238,
+        "time": 3.089442253112793,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5439,7 +5403,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.8154733180999756,
+        "time": 2.7595949172973633,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5450,10 +5414,10 @@
         "text": "If you are not familiar with Python , this will ease you into the language and enable you to follow .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7603468894958496,
+        "time": 1.917140007019043,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5467,7 +5431,7 @@
                 "aspect_category": "material comprehensiveness"
             }
         ],
-        "time": 0.9075958728790283,
+        "time": 2.825357437133789,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5478,13 +5442,13 @@
         "text": "In the conclusion , Iyengar states that no textbooks are available for the field because it is ' new ' , but an Amazon search shows several seem to exist , and many of the studies referenced in this course are years old , even more than a decade in some cases .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "material comprehensiveness"
             },
             {
-                "aspect_category": "material comprehensiveness"
+                "aspect_category": "material quality"
             }
         ],
-        "time": 1.15374755859375,
+        "time": 2.5776171684265137,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -5498,7 +5462,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.3161485195159912,
+        "time": 2.7531957626342773,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5512,7 +5476,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2998664379119873,
+        "time": 2.657400369644165,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5526,7 +5490,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.9357316493988037,
+        "time": 2.1103830337524414,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5540,7 +5504,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3306748867034912,
+        "time": 2.8029119968414307,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5554,7 +5518,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7575430870056152,
+        "time": 1.8648414611816406,
         "gold": [
             {
                 "aspect_category": "course workload"
@@ -5568,7 +5532,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.7652449607849121,
+        "time": 1.7925469875335693,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -5582,7 +5546,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2964880466461182,
+        "time": 3.011043071746826,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5596,7 +5560,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.743929386138916,
+        "time": 1.807067632675171,
         "gold": [
             {
                 "aspect_category": "course relatability"
@@ -5606,7 +5570,7 @@
     {
         "text": "It is not free .",
         "predicted": [],
-        "time": 1.1369681358337402,
+        "time": 2.4006187915802,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5617,10 +5581,10 @@
         "text": "I found it is extremely useful to understand Buddhism . especially selflessness with psychology knowledge .",
         "predicted": [
             {
-                "aspect_category": "course comprehensiveness"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 0.7809352874755859,
+        "time": 1.8215208053588867,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5634,7 +5598,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7618536949157715,
+        "time": 2.0622947216033936,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5648,7 +5612,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.8350777626037598,
+        "time": 2.737126588821411,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5662,7 +5626,7 @@
                 "aspect_category": "assignments quality"
             }
         ],
-        "time": 0.7406802177429199,
+        "time": 1.6933515071868896,
         "gold": [
             {
                 "aspect_category": "assignments quality"
@@ -5679,7 +5643,7 @@
                 "aspect_category": "presentation quality"
             }
         ],
-        "time": 0.9771621227264404,
+        "time": 2.5466842651367188,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -5699,7 +5663,7 @@
                 "aspect_category": "course value"
             }
         ],
-        "time": 1.369652271270752,
+        "time": 1.806354284286499,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5710,13 +5674,10 @@
         "text": "I audit the course but I did all the homework , you must do the homework to really understand the topics .",
         "predicted": [
             {
-                "aspect_category": "assignments quality"
-            },
-            {
-                "aspect_category": "assignments workload"
+                "aspect_category": "assignments quantity"
             }
         ],
-        "time": 0.9603922367095947,
+        "time": 1.854321002960205,
         "gold": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -5730,7 +5691,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7830016613006592,
+        "time": 1.8498542308807373,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -5744,7 +5705,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 1.2736237049102783,
+        "time": 2.7271697521209717,
         "gold": [
             {
                 "aspect_category": "presentation relatability"
@@ -5755,10 +5716,10 @@
         "text": "Many thanks to the professor for taking the time to make it .",
         "predicted": [
             {
-                "aspect_category": "faculty general"
+                "aspect_category": "faculty value"
             }
         ],
-        "time": 0.7576169967651367,
+        "time": 1.8540236949920654,
         "gold": [
             {
                 "aspect_category": "faculty general"
@@ -5772,7 +5733,7 @@
                 "aspect_category": "course workload"
             }
         ],
-        "time": 0.7672581672668457,
+        "time": 1.798647165298462,
         "gold": [
             {
                 "aspect_category": "course workload"
@@ -5783,10 +5744,10 @@
         "text": "The only option I had was to watch videos , I could not submit quizzes , which I completed , unless I paid .",
         "predicted": [
             {
-                "aspect_category": "material quality"
+                "aspect_category": "course general"
             }
         ],
-        "time": 0.8137118816375732,
+        "time": 1.7848618030548096,
         "gold": [
             {
                 "aspect_category": "course value"
@@ -5801,12 +5762,9 @@
         "predicted": [
             {
                 "aspect_category": "course quality"
-            },
-            {
-                "aspect_category": "course value"
             }
         ],
-        "time": 0.9585566520690918,
+        "time": 2.683290719985962,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5815,8 +5773,12 @@
     },
     {
         "text": "I did progress in gaming making as a fresh man .",
-        "predicted": [],
-        "time": 1.1682641506195068,
+        "predicted": [
+            {
+                "aspect_category": "course quality"
+            }
+        ],
+        "time": 1.8190200328826904,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5827,10 +5789,10 @@
         "text": "One problem about the course is probably going to be the lectures .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "presentation quality"
             }
         ],
-        "time": 0.7697219848632812,
+        "time": 2.0104780197143555,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -5844,7 +5806,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.4280598163604736,
+        "time": 1.9118866920471191,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5858,7 +5820,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7388544082641602,
+        "time": 1.7206652164459229,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5872,7 +5834,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7501175403594971,
+        "time": 1.7432594299316406,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5883,13 +5845,13 @@
         "text": "The course was great but its taking a bit long to get a grade due to the peer assessments .",
         "predicted": [
             {
-                "aspect_category": "grades general"
+                "aspect_category": "course general"
             },
             {
-                "aspect_category": "course workload"
+                "aspect_category": "grades general"
             }
         ],
-        "time": 1.5425772666931152,
+        "time": 3.2691256999969482,
         "gold": [
             {
                 "aspect_category": "grades general"
@@ -5906,7 +5868,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.452303409576416,
+        "time": 2.789989948272705,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5920,7 +5882,7 @@
                 "aspect_category": "material quality"
             }
         ],
-        "time": 0.7326850891113281,
+        "time": 1.725243330001831,
         "gold": [
             {
                 "aspect_category": "presentation quality"
@@ -5934,7 +5896,7 @@
                 "aspect_category": "course comprehensiveness"
             }
         ],
-        "time": 0.7829668521881104,
+        "time": 1.883347988128662,
         "gold": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5945,10 +5907,10 @@
         "text": "I find myself applying what I have learned to my everyday writing as well as things I read and watch .",
         "predicted": [
             {
-                "aspect_category": "course quality"
+                "aspect_category": "course value"
             }
         ],
-        "time": 0.7924983501434326,
+        "time": 2.872570753097534,
         "gold": [
             {
                 "aspect_category": "course relatability"
@@ -5959,10 +5921,10 @@
         "text": "I have learned a lot : ) !",
         "predicted": [
             {
-                "aspect_category": "course general"
+                "aspect_category": "course quality"
             }
         ],
-        "time": 1.2636055946350098,
+        "time": 2.774956226348877,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5976,7 +5938,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7561478614807129,
+        "time": 1.764875888824463,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -5990,7 +5952,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.2920751571655273,
+        "time": 2.658856153488159,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -6004,7 +5966,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7540602684020996,
+        "time": 1.8566253185272217,
         "gold": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -6018,7 +5980,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 1.3269951343536377,
+        "time": 2.8143696784973145,
         "gold": [
             {
                 "aspect_category": "course quality"
@@ -6032,7 +5994,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.7646377086639404,
+        "time": 2.719024896621704,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -6046,7 +6008,7 @@
                 "aspect_category": "course quality"
             }
         ],
-        "time": 0.799013614654541,
+        "time": 1.901122808456421,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -6060,7 +6022,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 1.346940040588379,
+        "time": 2.779911994934082,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -6074,7 +6036,7 @@
                 "aspect_category": "course general"
             }
         ],
-        "time": 0.7610938549041748,
+        "time": 1.7596909999847412,
         "gold": [
             {
                 "aspect_category": "course general"
@@ -6088,7 +6050,7 @@
                 "aspect_category": "faculty general"
             }
         ],
-        "time": 1.2837128639221191,
+        "time": 1.8994767665863037,
         "gold": [
             {
                 "aspect_category": "faculty general"

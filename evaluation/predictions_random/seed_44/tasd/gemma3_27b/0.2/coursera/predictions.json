@@ -8,7 +8,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.075500011444092,
+        "time": 3.108363628387451,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -27,11 +27,11 @@
             },
             {
                 "aspect_term": "Machine Learning",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.361415863037109,
+        "time": 3.5097506046295166,
         "gold": [
             {
                 "aspect_term": "course",
@@ -44,12 +44,17 @@
         "text": "Thank you Coursera for the opportunity and thank the Professors Emily and Carlos for such a valuable gift of sharing knowledge for free .",
         "predicted": [
             {
+                "aspect_term": "opportunity",
+                "aspect_category": "course general",
+                "sentiment_polarity": "positive"
+            },
+            {
                 "aspect_term": "Professors Emily and Carlos",
                 "aspect_category": "faculty general",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.454914093017578,
+        "time": 4.967259407043457,
         "gold": [
             {
                 "aspect_term": "Professors Emily and Carlos",
@@ -69,10 +74,10 @@
             {
                 "aspect_term": "staffs",
                 "aspect_category": "faculty response",
-                "sentiment_polarity": "neutral"
+                "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.258025884628296,
+        "time": 2.638707399368286,
         "gold": [
             {
                 "aspect_term": "staffs",
@@ -86,7 +91,7 @@
         "predicted": [
             {
                 "aspect_term": "content",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             },
             {
@@ -95,7 +100,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.829492092132568,
+        "time": 4.830300569534302,
         "gold": [
             {
                 "aspect_term": "content and the exercises",
@@ -113,7 +118,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.260144948959351,
+        "time": 2.7331409454345703,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -127,11 +132,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course workload",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.20770788192749,
+        "time": 3.366157293319702,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -149,7 +154,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.2752909660339355,
+        "time": 3.482144832611084,
         "gold": [
             {
                 "aspect_term": "lectures",
@@ -167,7 +172,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.196439743041992,
+        "time": 2.874040365219116,
         "gold": [
             {
                 "aspect_term": "course",
@@ -181,11 +186,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.162509918212891,
+        "time": 3.4870831966400146,
         "gold": [
             {
                 "aspect_term": "course",
@@ -203,7 +208,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.108367204666138,
+        "time": 3.4446983337402344,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -222,16 +227,16 @@
             },
             {
                 "aspect_term": "tips and tricks",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "information",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 8.730438947677612,
+        "time": 6.242294788360596,
         "gold": [
             {
                 "aspect_term": "short lectures",
@@ -245,11 +250,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.15776801109314,
+        "time": 3.4539012908935547,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -267,7 +272,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.196738958358765,
+        "time": 3.4713399410247803,
         "gold": [
             {
                 "aspect_term": "course",
@@ -280,17 +285,12 @@
         "text": "Other than the amount of material on last week , it is a good course and highly recommended !",
         "predicted": [
             {
-                "aspect_term": "material",
-                "aspect_category": "material quantity",
-                "sentiment_polarity": "negative"
-            },
-            {
                 "aspect_term": "course",
                 "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.88224983215332,
+        "time": 2.637680768966675,
         "gold": [
             {
                 "aspect_term": "course",
@@ -313,7 +313,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.201789855957031,
+        "time": 2.689051628112793,
         "gold": [
             {
                 "aspect_term": "material",
@@ -331,7 +331,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.127529859542847,
+        "time": 3.454005718231201,
         "gold": [
             {
                 "aspect_term": "courses",
@@ -349,7 +349,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.132091999053955,
+        "time": 3.4791905879974365,
         "gold": [
             {
                 "aspect_term": "course",
@@ -367,7 +367,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.945344924926758,
+        "time": 2.5921847820281982,
         "gold": [
             {
                 "aspect_term": "course",
@@ -381,11 +381,11 @@
         "predicted": [
             {
                 "aspect_term": "assignment",
-                "aspect_category": "assignments workload",
-                "sentiment_polarity": "neutral"
+                "aspect_category": "assignments quality",
+                "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.221123695373535,
+        "time": 2.5921108722686768,
         "gold": [
             {
                 "aspect_term": "final assignment",
@@ -408,7 +408,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.34568190574646,
+        "time": 3.6213932037353516,
         "gold": [
             {
                 "aspect_term": "final exam",
@@ -431,7 +431,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.111325025558472,
+        "time": 3.5073986053466797,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -444,12 +444,12 @@
         "text": "There was plenty of time to finish the project and some extra time to make it even better than a simple submission that meets the basic requirements of the course .",
         "predicted": [
             {
-                "aspect_term": "project",
-                "aspect_category": "assignments quality",
+                "aspect_term": "time",
+                "aspect_category": "course workload",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.6759979724884033,
+        "time": 2.5642566680908203,
         "gold": [
             {
                 "aspect_term": "project",
@@ -463,11 +463,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.224241256713867,
+        "time": 2.7265872955322266,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -485,7 +485,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.950751066207886,
+        "time": 3.425518751144409,
         "gold": [
             {
                 "aspect_term": "course",
@@ -503,7 +503,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.652590751647949,
+        "time": 2.6101365089416504,
         "gold": [
             {
                 "aspect_term": "MOOC",
@@ -521,7 +521,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.226316928863525,
+        "time": 2.678997278213501,
         "gold": [
             {
                 "aspect_term": "assignment",
@@ -535,16 +535,11 @@
         "predicted": [
             {
                 "aspect_term": "IHTS course",
-                "aspect_category": "course general",
-                "sentiment_polarity": "positive"
-            },
-            {
-                "aspect_term": "learning",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.461179256439209,
+        "time": 2.7389755249023438,
         "gold": [
             {
                 "aspect_term": "course",
@@ -562,7 +557,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.1946680545806885,
+        "time": 3.478273868560791,
         "gold": [
             {
                 "aspect_term": "course",
@@ -585,7 +580,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.888715982437134,
+        "time": 4.0590901374816895,
         "gold": [
             {
                 "aspect_term": "supplemental document",
@@ -603,7 +598,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.131245136260986,
+        "time": 2.6276090145111084,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -621,7 +616,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.167686223983765,
+        "time": 3.552361249923706,
         "gold": [
             {
                 "aspect_term": "class",
@@ -639,7 +634,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.243350982666016,
+        "time": 2.6926751136779785,
         "gold": [
             {
                 "aspect_term": "course into multiple separate",
@@ -657,7 +652,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.271553039550781,
+        "time": 2.7417750358581543,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -675,12 +670,12 @@
                 "sentiment_polarity": "negative"
             },
             {
-                "aspect_term": "quiz questions",
+                "aspect_term": "assignment",
                 "aspect_category": "assignments quality",
-                "sentiment_polarity": "neutral"
+                "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.447615146636963,
+        "time": 4.936893939971924,
         "gold": [
             {
                 "aspect_term": "quiz questions",
@@ -694,11 +689,11 @@
         "predicted": [
             {
                 "aspect_term": "visiting scholars",
-                "aspect_category": "faculty general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.34184193611145,
+        "time": 2.7924041748046875,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -711,12 +706,12 @@
         "text": "Week 3 assignment was the hardest I ever took .",
         "predicted": [
             {
-                "aspect_term": "assignment",
-                "aspect_category": "assignments quality",
+                "aspect_term": "Week 3 assignment",
+                "aspect_category": "assignments workload",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.1992247104644775,
+        "time": 3.515676975250244,
         "gold": [
             {
                 "aspect_term": "Week 3 assignment",
@@ -730,11 +725,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course quality",
+                "aspect_category": "course general",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.8398029804229736,
+        "time": 3.5112464427948,
         "gold": [
             {
                 "aspect_term": "course",
@@ -752,7 +747,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 4.124553918838501,
+        "time": 2.5790207386016846,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -775,7 +770,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.372719049453735,
+        "time": 3.6382203102111816,
         "gold": [
             {
                 "aspect_term": "Ng",
@@ -793,7 +788,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.136120080947876,
+        "time": 2.6257500648498535,
         "gold": [
             {
                 "aspect_term": "course",
@@ -816,7 +811,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.881699085235596,
+        "time": 4.878930568695068,
         "gold": [
             {
                 "aspect_term": "course",
@@ -844,7 +839,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.840665102005005,
+        "time": 4.961414575576782,
         "gold": [
             {
                 "aspect_term": "Professor",
@@ -867,7 +862,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.210659027099609,
+        "time": 2.6196556091308594,
         "gold": [
             {
                 "aspect_term": "Professor",
@@ -883,14 +878,9 @@
                 "aspect_term": "course content",
                 "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
-            },
-            {
-                "aspect_term": "course content",
-                "aspect_category": "course comprehensiveness",
-                "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.458990812301636,
+        "time": 2.665731430053711,
         "gold": [
             {
                 "aspect_term": "content",
@@ -908,7 +898,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.264364004135132,
+        "time": 2.767707586288452,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -926,7 +916,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.50195574760437,
+        "time": 2.9141979217529297,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -945,16 +935,11 @@
         "predicted": [
             {
                 "aspect_term": "stuff",
-                "aspect_category": "assignments quality",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
-            },
-            {
-                "aspect_term": "documentation",
-                "aspect_category": "assignments quality",
-                "sentiment_polarity": "neutral"
             }
         ],
-        "time": 6.863505840301514,
+        "time": 3.5245418548583984,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -972,7 +957,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.240462779998779,
+        "time": 2.7455475330352783,
         "gold": [
             {
                 "aspect_term": "course",
@@ -990,7 +975,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.139610767364502,
+        "time": 2.6261558532714844,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1008,7 +993,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.137679815292358,
+        "time": 2.6647891998291016,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1026,7 +1011,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.117247819900513,
+        "time": 3.5266427993774414,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1044,7 +1029,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.174214124679565,
+        "time": 3.471968412399292,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1067,7 +1052,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.211832761764526,
+        "time": 2.6218371391296387,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1085,7 +1070,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.205847978591919,
+        "time": 3.4946656227111816,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1103,7 +1088,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 3.6513400077819824,
+        "time": 2.54227614402771,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1131,7 +1116,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 7.193758010864258,
+        "time": 5.222657680511475,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1159,7 +1144,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.089509010314941,
+        "time": 2.61572003364563,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1177,7 +1162,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.8423240184783936,
+        "time": 2.5494775772094727,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1193,14 +1178,9 @@
                 "aspect_term": "course",
                 "aspect_category": "course comprehensiveness",
                 "sentiment_polarity": "neutral"
-            },
-            {
-                "aspect_term": "variables",
-                "aspect_category": "course comprehensiveness",
-                "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.606666088104248,
+        "time": 2.878016233444214,
         "gold": [
             {
                 "aspect_term": "video",
@@ -1218,7 +1198,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.250205755233765,
+        "time": 2.7130942344665527,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1231,12 +1211,12 @@
         "text": "Thanks very much for introducing me to this exciting field !",
         "predicted": [
             {
-                "aspect_term": "field",
+                "aspect_term": "NULL",
                 "aspect_category": "course general",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.132416009902954,
+        "time": 2.8607311248779297,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1248,7 +1228,7 @@
     {
         "text": "Thank you",
         "predicted": [],
-        "time": 3.0214781761169434,
+        "time": 1.6714754104614258,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1262,11 +1242,11 @@
         "predicted": [
             {
                 "aspect_term": "instructors",
-                "aspect_category": "faculty response",
+                "aspect_category": "faculty general",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.265659809112549,
+        "time": 2.753671884536743,
         "gold": [
             {
                 "aspect_term": "instructors",
@@ -1280,7 +1260,7 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             },
             {
@@ -1289,7 +1269,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 6.847692012786865,
+        "time": 5.528844356536865,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1312,7 +1292,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.2113871574401855,
+        "time": 3.500180244445801,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1326,11 +1306,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.127717733383179,
+        "time": 2.6548144817352295,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1348,7 +1328,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.19359278678894,
+        "time": 3.4995076656341553,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1362,11 +1342,11 @@
         "predicted": [
             {
                 "aspect_term": "information",
-                "aspect_category": "course value",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.222167015075684,
+        "time": 2.665553569793701,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1384,7 +1364,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.134454965591431,
+        "time": 3.024975299835205,
         "gold": [
             {
                 "aspect_term": "Courses",
@@ -1402,7 +1382,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.205012798309326,
+        "time": 2.6930997371673584,
         "gold": [
             {
                 "aspect_term": "professor",
@@ -1420,7 +1400,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.191162109375,
+        "time": 3.540325880050659,
         "gold": [
             {
                 "aspect_term": "lessons",
@@ -1443,7 +1423,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.206079006195068,
+        "time": 2.6478264331817627,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1461,7 +1441,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.199270009994507,
+        "time": 2.671381950378418,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1474,17 +1454,22 @@
         "text": "I also appreciated the passion is the delivery of the course by the lecturer , her enthusiasm made watching all the videos worthwhile .",
         "predicted": [
             {
-                "aspect_term": "lecturer",
+                "aspect_term": "passion",
                 "aspect_category": "faculty general",
                 "sentiment_polarity": "positive"
             },
             {
+                "aspect_term": "delivery",
+                "aspect_category": "presentation quality",
+                "sentiment_polarity": "positive"
+            },
+            {
                 "aspect_term": "videos",
-                "aspect_category": "presentation comprehensiveness",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.924854040145874,
+        "time": 6.405433177947998,
         "gold": [
             {
                 "aspect_term": "videos",
@@ -1507,7 +1492,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.465752124786377,
+        "time": 3.0194332599639893,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1525,7 +1510,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.228302001953125,
+        "time": 2.6176276206970215,
         "gold": [
             {
                 "aspect_term": "material",
@@ -1540,7 +1525,7 @@
             {
                 "aspect_term": "course",
                 "aspect_category": "course quality",
-                "sentiment_polarity": "negative"
+                "sentiment_polarity": "neutral"
             },
             {
                 "aspect_term": "material",
@@ -1548,7 +1533,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.141539812088013,
+        "time": 3.561359167098999,
         "gold": [
             {
                 "aspect_term": "material",
@@ -1571,7 +1556,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.284024715423584,
+        "time": 3.576657772064209,
         "gold": [
             {
                 "aspect_term": "George Siedel",
@@ -1589,7 +1574,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.224900007247925,
+        "time": 2.697115182876587,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1607,7 +1592,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.214594841003418,
+        "time": 3.4662744998931885,
         "gold": [
             {
                 "aspect_term": "class",
@@ -1625,12 +1610,12 @@
                 "sentiment_polarity": "neutral"
             },
             {
-                "aspect_term": "ML",
-                "aspect_category": "course general",
+                "aspect_term": "basics",
+                "aspect_category": "course comprehensiveness",
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.357012033462524,
+        "time": 4.914885520935059,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1648,7 +1633,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.098037958145142,
+        "time": 2.6545250415802,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1662,11 +1647,11 @@
         "predicted": [
             {
                 "aspect_term": "python",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.196372032165527,
+        "time": 2.675565004348755,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1684,7 +1669,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.6426548957824707,
+        "time": 2.527191400527954,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1702,7 +1687,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.241459846496582,
+        "time": 2.7134811878204346,
         "gold": [
             {
                 "aspect_term": "video lectures",
@@ -1716,11 +1701,11 @@
         "predicted": [
             {
                 "aspect_term": "assignments",
-                "aspect_category": "assignments workload",
+                "aspect_category": "assignments quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.248024225234985,
+        "time": 2.743776559829712,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -1734,11 +1719,11 @@
         "predicted": [
             {
                 "aspect_term": "content",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.229572057723999,
+        "time": 2.7468249797821045,
         "gold": [
             {
                 "aspect_term": "content",
@@ -1757,11 +1742,11 @@
             },
             {
                 "aspect_term": "course material",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.375201940536499,
+        "time": 3.631037712097168,
         "gold": [
             {
                 "aspect_term": "course material",
@@ -1784,7 +1769,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.224848747253418,
+        "time": 2.678724527359009,
         "gold": [
             {
                 "aspect_term": "teacher",
@@ -1803,11 +1788,11 @@
         "predicted": [
             {
                 "aspect_term": "Videos",
-                "aspect_category": "presentation quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.208477973937988,
+        "time": 3.487584352493286,
         "gold": [
             {
                 "aspect_term": "Videos",
@@ -1830,7 +1815,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 7.049655199050903,
+        "time": 5.126183271408081,
         "gold": [
             {
                 "aspect_term": "Justin - Nicholas Toytama",
@@ -1849,11 +1834,11 @@
         "predicted": [
             {
                 "aspect_term": "examples",
-                "aspect_category": "material relatability",
+                "aspect_category": "course relatability",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.584852933883667,
+        "time": 3.1812119483947754,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1876,7 +1861,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.2724878787994385,
+        "time": 2.7141716480255127,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1894,7 +1879,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.23647403717041,
+        "time": 2.717830181121826,
         "gold": [
             {
                 "aspect_term": "assignment questions",
@@ -1912,7 +1897,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.259244918823242,
+        "time": 2.6880245208740234,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1926,11 +1911,11 @@
         "predicted": [
             {
                 "aspect_term": "He",
-                "aspect_category": "faculty relatability",
+                "aspect_category": "faculty general",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.1979029178619385,
+        "time": 2.633622169494629,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -1958,7 +1943,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 7.4515790939331055,
+        "time": 5.449541807174683,
         "gold": [
             {
                 "aspect_term": "course",
@@ -1982,7 +1967,7 @@
         "predicted": [
             {
                 "aspect_term": "real - life examples",
-                "aspect_category": "course relatability",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             },
             {
@@ -1996,7 +1981,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.709198951721191,
+        "time": 4.692068815231323,
         "gold": [
             {
                 "aspect_term": "videos",
@@ -2015,11 +2000,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.125837087631226,
+        "time": 3.51871657371521,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2033,16 +2018,16 @@
         "predicted": [
             {
                 "aspect_term": "lectures",
-                "aspect_category": "presentation comprehensiveness",
+                "aspect_category": "presentation quality",
                 "sentiment_polarity": "negative"
             },
             {
                 "aspect_term": "explanations",
-                "aspect_category": "presentation comprehensiveness",
+                "aspect_category": "presentation quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.5611560344696045,
+        "time": 3.713177442550659,
         "gold": [
             {
                 "aspect_term": "lectures",
@@ -2070,7 +2055,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.375885009765625,
+        "time": 3.6404120922088623,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2093,7 +2078,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.349323034286499,
+        "time": 3.5583269596099854,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -2121,7 +2106,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.398138761520386,
+        "time": 4.969857931137085,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2139,7 +2124,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.257582664489746,
+        "time": 2.823342800140381,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2151,7 +2136,7 @@
     {
         "text": "thanks again",
         "predicted": [],
-        "time": 3.015618085861206,
+        "time": 1.6986496448516846,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2169,7 +2154,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.534488677978516,
+        "time": 2.926621675491333,
         "gold": [
             {
                 "aspect_term": "Dr . Terrence Sejnowski",
@@ -2183,11 +2168,11 @@
         "predicted": [
             {
                 "aspect_term": "Coursework",
-                "aspect_category": "course workload",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.186618804931641,
+        "time": 2.722820997238159,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2205,7 +2190,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.164087772369385,
+        "time": 3.4636824131011963,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2223,7 +2208,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.261528730392456,
+        "time": 2.6735661029815674,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2241,7 +2226,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.092089891433716,
+        "time": 2.6516053676605225,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2259,7 +2244,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.132358074188232,
+        "time": 2.64544677734375,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2277,7 +2262,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.216404914855957,
+        "time": 3.562924385070801,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2300,7 +2285,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.44638204574585,
+        "time": 3.752521514892578,
         "gold": [
             {
                 "aspect_term": "course professor",
@@ -2318,17 +2303,12 @@
                 "sentiment_polarity": "negative"
             },
             {
-                "aspect_term": "weekly quizzes",
-                "aspect_category": "assignments quality",
-                "sentiment_polarity": "negative"
-            },
-            {
                 "aspect_term": "final exam",
                 "aspect_category": "assignments quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 8.70848798751831,
+        "time": 5.029770851135254,
         "gold": [
             {
                 "aspect_term": "material",
@@ -2361,7 +2341,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 6.866286993026733,
+        "time": 5.3621826171875,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2375,21 +2355,21 @@
         "predicted": [
             {
                 "aspect_term": "javascript",
-                "aspect_category": "material quality",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "neutral"
             },
             {
                 "aspect_term": "css",
-                "aspect_category": "material quality",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "neutral"
             },
             {
                 "aspect_term": "html",
-                "aspect_category": "material quality",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 6.272359132766724,
+        "time": 6.348944664001465,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2403,11 +2383,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.18759298324585,
+        "time": 3.522716522216797,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2421,11 +2401,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course relatability",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.05567479133606,
+        "time": 2.6212451457977295,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2443,7 +2423,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.197850942611694,
+        "time": 2.580493927001953,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -2461,7 +2441,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.134284734725952,
+        "time": 2.6619155406951904,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2479,7 +2459,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.640953779220581,
+        "time": 2.502747058868408,
         "gold": [
             {
                 "aspect_term": "instructors",
@@ -2497,12 +2477,17 @@
                 "sentiment_polarity": "positive"
             },
             {
-                "aspect_term": "course",
-                "aspect_category": "course comprehensiveness",
+                "aspect_term": "foundation",
+                "aspect_category": "material quality",
+                "sentiment_polarity": "positive"
+            },
+            {
+                "aspect_term": "examples",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.799317836761475,
+        "time": 4.404930830001831,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2526,11 +2511,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.133904933929443,
+        "time": 2.615227222442627,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2548,7 +2533,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.086886882781982,
+        "time": 3.4914863109588623,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2566,7 +2551,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.079768896102905,
+        "time": 3.4142472743988037,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2585,11 +2570,11 @@
             },
             {
                 "aspect_term": "web development concepts",
-                "aspect_category": "material comprehensiveness",
+                "aspect_category": "course comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.478718996047974,
+        "time": 3.724493980407715,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2608,11 +2593,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.215780019760132,
+        "time": 2.679795503616333,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2635,7 +2620,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.443203926086426,
+        "time": 3.6839823722839355,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2653,7 +2638,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.122882127761841,
+        "time": 2.643314838409424,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2667,11 +2652,11 @@
         "predicted": [
             {
                 "aspect_term": "Course",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.181654214859009,
+        "time": 2.8625781536102295,
         "gold": [
             {
                 "aspect_term": "Course",
@@ -2689,7 +2674,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.186082124710083,
+        "time": 3.5785770416259766,
         "gold": [
             {
                 "aspect_term": "lab assistants",
@@ -2717,7 +2702,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.411466836929321,
+        "time": 3.66849422454834,
         "gold": [
             {
                 "aspect_term": "quizzes",
@@ -2734,7 +2719,7 @@
     {
         "text": "Thank you very much !",
         "predicted": [],
-        "time": 3.0227229595184326,
+        "time": 1.6408061981201172,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2752,7 +2737,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.20290732383728,
+        "time": 2.6850693225860596,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2770,7 +2755,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.2050511837005615,
+        "time": 2.653923749923706,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2787,7 +2772,7 @@
     {
         "text": "Thanks Yaakov !",
         "predicted": [],
-        "time": 3.0104451179504395,
+        "time": 1.686598777770996,
         "gold": [
             {
                 "aspect_term": "Yaakov",
@@ -2805,7 +2790,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 1.9762301445007324,
+        "time": 1.8279619216918945,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2819,11 +2804,11 @@
         "predicted": [
             {
                 "aspect_term": "teaching method",
-                "aspect_category": "faculty general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.256991863250732,
+        "time": 3.5605931282043457,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2836,12 +2821,17 @@
         "text": "I almost didn ' t give it five stars , because I feel that they could have made room for just a bit more explanation and just a few more examples of the topics covered .",
         "predicted": [
             {
-                "aspect_term": "NULL",
+                "aspect_term": "explanation",
+                "aspect_category": "course comprehensiveness",
+                "sentiment_polarity": "neutral"
+            },
+            {
+                "aspect_term": "examples",
                 "aspect_category": "course comprehensiveness",
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 4.294857025146484,
+        "time": 3.7274672985076904,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2864,7 +2854,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.3375160694122314,
+        "time": 2.7971267700195312,
         "gold": [
             {
                 "aspect_term": "assignment",
@@ -2877,12 +2867,12 @@
         "text": "There is a lot of self - teaching with these courses because there are no professors present to reach out to with questions .",
         "predicted": [
             {
-                "aspect_term": "professors",
-                "aspect_category": "faculty general",
+                "aspect_term": "courses",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.321924209594727,
+        "time": 2.6992897987365723,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2900,7 +2890,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.100625991821289,
+        "time": 3.463582992553711,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2918,7 +2908,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.090624809265137,
+        "time": 3.4305999279022217,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2936,7 +2926,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 3.7830190658569336,
+        "time": 3.311570644378662,
         "gold": [
             {
                 "aspect_term": "exercises",
@@ -2954,7 +2944,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.12674880027771,
+        "time": 2.671609401702881,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -2972,7 +2962,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 4.251929044723511,
+        "time": 2.710545301437378,
         "gold": [
             {
                 "aspect_term": "course",
@@ -2986,11 +2976,11 @@
         "predicted": [
             {
                 "aspect_term": "Information",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.260563135147095,
+        "time": 2.6988461017608643,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3004,11 +2994,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.2142369747161865,
+        "time": 3.5976810455322266,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3022,7 +3012,7 @@
         "predicted": [
             {
                 "aspect_term": "class",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             },
             {
@@ -3031,7 +3021,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.4388298988342285,
+        "time": 3.6890532970428467,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3054,7 +3044,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.441892862319946,
+        "time": 4.903279781341553,
         "gold": [
             {
                 "aspect_term": "reading material sources",
@@ -3070,9 +3060,14 @@
                 "aspect_term": "assignments",
                 "aspect_category": "assignments quality",
                 "sentiment_polarity": "positive"
+            },
+            {
+                "aspect_term": "assignments",
+                "aspect_category": "assignments workload",
+                "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.983812093734741,
+        "time": 4.884893417358398,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -3095,7 +3090,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.436030149459839,
+        "time": 3.6420936584472656,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -3118,7 +3113,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.278573036193848,
+        "time": 2.777090311050415,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3136,7 +3131,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.7803702354431152,
+        "time": 2.5281410217285156,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3154,7 +3149,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.255097150802612,
+        "time": 2.6964528560638428,
         "gold": [
             {
                 "aspect_term": "automated grader",
@@ -3172,7 +3167,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.130057096481323,
+        "time": 3.468682050704956,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3195,7 +3190,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.541453123092651,
+        "time": 3.7212202548980713,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3213,7 +3208,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.207583904266357,
+        "time": 2.6391866207122803,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3227,11 +3222,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.238003969192505,
+        "time": 2.7112722396850586,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3249,7 +3244,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.229451894760132,
+        "time": 2.704310417175293,
         "gold": [
             {
                 "aspect_term": "excersizes",
@@ -3272,7 +3267,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.2521350383758545,
+        "time": 3.5120062828063965,
         "gold": [
             {
                 "aspect_term": "Course",
@@ -3295,7 +3290,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.810019254684448,
+        "time": 3.6047756671905518,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3309,11 +3304,11 @@
         "predicted": [
             {
                 "aspect_term": "power points",
-                "aspect_category": "presentation quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.251260995864868,
+        "time": 2.725729465484619,
         "gold": [
             {
                 "aspect_term": "power points",
@@ -3331,7 +3326,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.098016023635864,
+        "time": 3.490549087524414,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3349,7 +3344,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.140493631362915,
+        "time": 2.660749912261963,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3362,12 +3357,17 @@
         "text": "It required me to do more reading than what was provided via videos and slide decks .",
         "predicted": [
             {
-                "aspect_term": "reading",
-                "aspect_category": "course workload",
-                "sentiment_polarity": "negative"
+                "aspect_term": "videos",
+                "aspect_category": "material comprehensiveness",
+                "sentiment_polarity": "neutral"
+            },
+            {
+                "aspect_term": "slide decks",
+                "aspect_category": "material comprehensiveness",
+                "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.176225662231445,
+        "time": 3.7827234268188477,
         "gold": [
             {
                 "aspect_term": "videos",
@@ -3385,7 +3385,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.135462999343872,
+        "time": 2.672844886779785,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3399,11 +3399,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.652928113937378,
+        "time": 2.4699692726135254,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3421,7 +3421,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.09089994430542,
+        "time": 2.606247663497925,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3444,7 +3444,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.47222900390625,
+        "time": 3.690173387527466,
         "gold": [
             {
                 "aspect_term": "quiz",
@@ -3462,7 +3462,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.921860218048096,
+        "time": 3.3552401065826416,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3476,11 +3476,11 @@
         "predicted": [
             {
                 "aspect_term": "instructions",
-                "aspect_category": "faculty general",
+                "aspect_category": "presentation quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.153530120849609,
+        "time": 2.6113433837890625,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3498,7 +3498,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.264132261276245,
+        "time": 3.5343801975250244,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3522,11 +3522,16 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course workload",
+                "sentiment_polarity": "neutral"
+            },
+            {
+                "aspect_term": "NULL",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.210177183151245,
+        "time": 3.6159117221832275,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3554,7 +3559,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.879156827926636,
+        "time": 4.948280334472656,
         "gold": [
             {
                 "aspect_term": "Professors Emily Fox and Carlos Guestrin",
@@ -3567,17 +3572,12 @@
         "text": "Maybe if I had bought the book that goes along with the course , i would have gained more insight but as a standalone course , it rates just three stars .",
         "predicted": [
             {
-                "aspect_term": "book",
-                "aspect_category": "material quality",
-                "sentiment_polarity": "neutral"
-            },
-            {
                 "aspect_term": "course",
                 "aspect_category": "course quality",
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.3993916511535645,
+        "time": 2.7179582118988037,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3595,7 +3595,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.130658149719238,
+        "time": 2.669349193572998,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3613,7 +3613,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.313139200210571,
+        "time": 2.788226842880249,
         "gold": [
             {
                 "aspect_term": "lectures",
@@ -3641,7 +3641,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.303023815155029,
+        "time": 3.604307174682617,
         "gold": [
             {
                 "aspect_term": "Videos",
@@ -3655,11 +3655,11 @@
         "predicted": [
             {
                 "aspect_term": "teaching methodology",
-                "aspect_category": "faculty general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 2.026298761367798,
+        "time": 1.8871712684631348,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3671,7 +3671,7 @@
     {
         "text": "I ' m Spaniard , so most of the things are basic for me such as the use of onion and garlic in meals , and the use of street market for shopping vegetables .",
         "predicted": [],
-        "time": 3.1404831409454346,
+        "time": 1.7482049465179443,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3689,7 +3689,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.234524726867676,
+        "time": 2.6758439540863037,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3707,7 +3707,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.097552061080933,
+        "time": 2.6438562870025635,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3735,7 +3735,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.5075719356536865,
+        "time": 5.305552005767822,
         "gold": [
             {
                 "aspect_term": "visual aides",
@@ -3758,7 +3758,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.142989873886108,
+        "time": 2.6188430786132812,
         "gold": [
             {
                 "aspect_term": "tests",
@@ -3772,11 +3772,11 @@
         "predicted": [
             {
                 "aspect_term": "teaching methodology",
-                "aspect_category": "faculty general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.180108070373535,
+        "time": 2.72147798538208,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3790,11 +3790,11 @@
         "predicted": [
             {
                 "aspect_term": "lecture",
-                "aspect_category": "presentation quality",
+                "aspect_category": "presentation comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.172940015792847,
+        "time": 3.53521466255188,
         "gold": [
             {
                 "aspect_term": "lecture",
@@ -3808,11 +3808,11 @@
         "predicted": [
             {
                 "aspect_term": "algorithms",
-                "aspect_category": "assignments comprehensiveness",
+                "aspect_category": "course comprehensiveness",
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 4.284473896026611,
+        "time": 2.763888120651245,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3836,11 +3836,11 @@
             },
             {
                 "aspect_term": "python coding skills",
-                "aspect_category": "assignments quality",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.480370998382568,
+        "time": 3.7972707748413086,
         "gold": [
             {
                 "aspect_term": "lessons",
@@ -3854,11 +3854,11 @@
         "predicted": [
             {
                 "aspect_term": "they",
-                "aspect_category": "assignments workload",
+                "aspect_category": "assignments quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.131289005279541,
+        "time": 2.6159110069274902,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3884,9 +3884,14 @@
                 "aspect_term": "course",
                 "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
+            },
+            {
+                "aspect_term": "program",
+                "aspect_category": "course general",
+                "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.523336410522461,
+        "time": 7.858997344970703,
         "gold": [
             {
                 "aspect_term": "Quentin and team",
@@ -3914,7 +3919,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.334903001785278,
+        "time": 5.3506035804748535,
         "gold": [
             {
                 "aspect_term": "course",
@@ -3933,7 +3938,7 @@
         "predicted": [
             {
                 "aspect_term": "lesson",
-                "aspect_category": "presentation quality",
+                "aspect_category": "presentation comprehensiveness",
                 "sentiment_polarity": "positive"
             },
             {
@@ -3942,7 +3947,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.375408887863159,
+        "time": 4.999104261398315,
         "gold": [
             {
                 "aspect_term": "animation",
@@ -3965,7 +3970,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.213346242904663,
+        "time": 3.6081347465515137,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -3983,7 +3988,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.140874147415161,
+        "time": 2.570406675338745,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4001,7 +4006,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.220129728317261,
+        "time": 2.7169458866119385,
         "gold": [
             {
                 "aspect_term": "teachers",
@@ -4020,11 +4025,11 @@
             },
             {
                 "aspect_term": "sonatas",
-                "aspect_category": "presentation quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.450058937072754,
+        "time": 3.739558458328247,
         "gold": [
             {
                 "aspect_term": "Jonathan Biss",
@@ -4045,9 +4050,14 @@
                 "aspect_term": "course",
                 "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
+            },
+            {
+                "aspect_term": "Python",
+                "aspect_category": "course quality",
+                "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.230470895767212,
+        "time": 3.570939064025879,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4065,7 +4075,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.13166880607605,
+        "time": 2.604973554611206,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4088,7 +4098,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.337968826293945,
+        "time": 3.579347848892212,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -4111,7 +4121,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.211773872375488,
+        "time": 3.5442259311676025,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4129,7 +4139,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.126682996749878,
+        "time": 2.667541980743408,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4147,7 +4157,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.984907865524292,
+        "time": 3.4337661266326904,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4165,7 +4175,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.212771892547607,
+        "time": 2.635594606399536,
         "gold": [
             {
                 "aspect_term": "material",
@@ -4183,7 +4193,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.235074043273926,
+        "time": 2.680722713470459,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4201,7 +4211,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.20983099937439,
+        "time": 3.462355375289917,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4219,7 +4229,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.099349021911621,
+        "time": 3.4613888263702393,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4231,7 +4241,7 @@
     {
         "text": "Thank you very much !",
         "predicted": [],
-        "time": 3.037254810333252,
+        "time": 1.6560509204864502,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4242,8 +4252,14 @@
     },
     {
         "text": "Thank you , Dr . Chuck .",
-        "predicted": [],
-        "time": 0.8645401000976562,
+        "predicted": [
+            {
+                "aspect_term": "Dr . Chuck",
+                "aspect_category": "faculty general",
+                "sentiment_polarity": "positive"
+            }
+        ],
+        "time": 2.0138051509857178,
         "gold": [
             {
                 "aspect_term": "Dr . Chuck",
@@ -4261,7 +4277,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.1077728271484375,
+        "time": 3.4337282180786133,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4279,7 +4295,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.233957767486572,
+        "time": 2.6870076656341553,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4303,12 +4319,12 @@
         "predicted": [
             {
                 "aspect_term": "slides",
-                "aspect_category": "presentation quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "negative"
             },
             {
                 "aspect_term": "videos",
-                "aspect_category": "presentation quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "negative"
             },
             {
@@ -4317,7 +4333,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 6.729615926742554,
+        "time": 4.763417482376099,
         "gold": [
             {
                 "aspect_term": "slides , transcription of the videos",
@@ -4345,7 +4361,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.009371995925903,
+        "time": 2.564167022705078,
         "gold": [
             {
                 "aspect_term": "class",
@@ -4363,7 +4379,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.20795202255249,
+        "time": 3.4706292152404785,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4382,11 +4398,11 @@
             },
             {
                 "aspect_term": "Machine Learning",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.373795986175537,
+        "time": 3.6291284561157227,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4399,12 +4415,12 @@
         "text": "But those who are weak in English , may face problem to follow .",
         "predicted": [
             {
-                "aspect_term": "English",
-                "aspect_category": "course general",
+                "aspect_term": "NULL",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.2044007778167725,
+        "time": 3.5111305713653564,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4418,7 +4434,7 @@
         "predicted": [
             {
                 "aspect_term": "content",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             },
             {
@@ -4427,7 +4443,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.340544939041138,
+        "time": 3.5992231369018555,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4450,7 +4466,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.004731178283691,
+        "time": 2.6287262439727783,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4478,7 +4494,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.268111228942871,
+        "time": 2.6775078773498535,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4496,7 +4512,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.268557071685791,
+        "time": 3.6286509037017822,
         "gold": [
             {
                 "aspect_term": "lessons",
@@ -4519,7 +4535,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.103323936462402,
+        "time": 3.479973793029785,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4532,12 +4548,12 @@
         "text": "It was a great experience learning how to learn .",
         "predicted": [
             {
-                "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_term": "experience",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.141239643096924,
+        "time": 3.5977671146392822,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4551,11 +4567,11 @@
         "predicted": [
             {
                 "aspect_term": "Content",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.1513659954071045,
+        "time": 2.6155154705047607,
         "gold": [
             {
                 "aspect_term": "Content",
@@ -4573,7 +4589,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.21011209487915,
+        "time": 2.6623470783233643,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4591,7 +4607,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.206741094589233,
+        "time": 2.6289920806884766,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4610,11 +4626,11 @@
             },
             {
                 "aspect_term": "Servance",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "course value",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.735936880111694,
+        "time": 3.918285369873047,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4632,7 +4648,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.6395368576049805,
+        "time": 2.480870485305786,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4650,7 +4666,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.282903671264648,
+        "time": 3.569709539413452,
         "gold": [
             {
                 "aspect_term": "material",
@@ -4673,7 +4689,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.1832709312438965,
+        "time": 3.5007526874542236,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4687,11 +4703,11 @@
         "predicted": [
             {
                 "aspect_term": "content",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.249796152114868,
+        "time": 3.6446115970611572,
         "gold": [
             {
                 "aspect_term": "content",
@@ -4714,7 +4730,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.122596979141235,
+        "time": 2.643409252166748,
         "gold": [
             {
                 "aspect_term": "Course",
@@ -4732,12 +4748,12 @@
                 "sentiment_polarity": "positive"
             },
             {
-                "aspect_term": "Prof",
+                "aspect_term": "Prof . Silverman",
                 "aspect_category": "faculty general",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.314325571060181,
+        "time": 3.7539377212524414,
         "gold": [
             {
                 "aspect_term": "Prof . Silverman",
@@ -4755,7 +4771,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.297546863555908,
+        "time": 2.7457807064056396,
         "gold": [
             {
                 "aspect_term": "Jeff Leek",
@@ -4769,11 +4785,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.216382741928101,
+        "time": 2.748255729675293,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4791,7 +4807,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.120550155639648,
+        "time": 2.617398977279663,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4803,7 +4819,7 @@
     {
         "text": "Thank you .",
         "predicted": [],
-        "time": 3.0208208560943604,
+        "time": 1.5961534976959229,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4821,7 +4837,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.169352293014526,
+        "time": 2.6165037155151367,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4839,7 +4855,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.138238191604614,
+        "time": 2.6775805950164795,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4857,7 +4873,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 1.9612820148468018,
+        "time": 1.826902151107788,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -4875,7 +4891,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.2353363037109375,
+        "time": 3.52178692817688,
         "gold": [
             {
                 "aspect_term": "Assignments",
@@ -4908,7 +4924,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 6.830662250518799,
+        "time": 4.984856605529785,
         "gold": [
             {
                 "aspect_term": "materials",
@@ -4926,7 +4942,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.136082887649536,
+        "time": 2.6332266330718994,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4944,7 +4960,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.27138090133667,
+        "time": 2.697868824005127,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4962,7 +4978,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.188904285430908,
+        "time": 2.7119393348693848,
         "gold": [
             {
                 "aspect_term": "course",
@@ -4985,7 +5001,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.441234827041626,
+        "time": 3.657740831375122,
         "gold": [
             {
                 "aspect_term": "Andrew Ng",
@@ -5009,16 +5025,16 @@
             },
             {
                 "aspect_term": "videos",
-                "aspect_category": "presentation comprehensiveness",
+                "aspect_category": "presentation quality",
                 "sentiment_polarity": "negative"
             },
             {
                 "aspect_term": "explanations",
-                "aspect_category": "presentation comprehensiveness",
+                "aspect_category": "presentation quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 6.62371301651001,
+        "time": 5.024783372879028,
         "gold": [
             {
                 "aspect_term": "class",
@@ -5037,11 +5053,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course value",
+                "aspect_category": "course general",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.167152166366577,
+        "time": 3.463360071182251,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5060,11 +5076,11 @@
             },
             {
                 "aspect_term": "certificate",
-                "aspect_category": "course general",
+                "aspect_category": "course value",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.34975004196167,
+        "time": 3.6718053817749023,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5082,7 +5098,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.5869140625,
+        "time": 3.1502768993377686,
         "gold": [
             {
                 "aspect_term": "Grading",
@@ -5095,12 +5111,12 @@
         "text": "It teaches you how to learn more efficient and get more concentration , and finally it can change you life if you practice the skills frequently .",
         "predicted": [
             {
-                "aspect_term": "NULL",
+                "aspect_term": "skills",
                 "aspect_category": "course value",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.240310907363892,
+        "time": 3.5831820964813232,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5118,7 +5134,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.134730100631714,
+        "time": 2.5964579582214355,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5136,7 +5152,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.203250885009766,
+        "time": 2.714158058166504,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5148,7 +5164,7 @@
     {
         "text": "Thank you cousera and Berklee for offering the opportunity !",
         "predicted": [],
-        "time": 3.096590042114258,
+        "time": 1.6673007011413574,
         "gold": [
             {
                 "aspect_term": "Berklee",
@@ -5163,10 +5179,10 @@
             {
                 "aspect_term": "course",
                 "aspect_category": "course workload",
-                "sentiment_polarity": "positive"
+                "sentiment_polarity": "neutral"
             }
         ],
-        "time": 4.237199306488037,
+        "time": 2.6680479049682617,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5185,11 +5201,11 @@
             },
             {
                 "aspect_term": "quantity of work",
-                "aspect_category": "assignments workload",
+                "aspect_category": "course workload",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.445434093475342,
+        "time": 3.707813262939453,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5207,7 +5223,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.0945961475372314,
+        "time": 2.633286952972412,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5221,11 +5237,11 @@
         "predicted": [
             {
                 "aspect_term": "lesson",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.1234657764434814,
+        "time": 2.618403196334839,
         "gold": [
             {
                 "aspect_term": "lesson",
@@ -5248,7 +5264,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.854829788208008,
+        "time": 4.904277801513672,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -5276,7 +5292,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 6.841773748397827,
+        "time": 4.864486932754517,
         "gold": [
             {
                 "aspect_term": "teaching",
@@ -5299,7 +5315,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 6.895962953567505,
+        "time": 4.955112934112549,
         "gold": [
             {
                 "aspect_term": "video",
@@ -5317,7 +5333,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.982942819595337,
+        "time": 3.4542181491851807,
         "gold": [
             {
                 "aspect_term": "exercise",
@@ -5345,7 +5361,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.813076972961426,
+        "time": 4.191479444503784,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5378,7 +5394,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.2134928703308105,
+        "time": 3.492478847503662,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5392,12 +5408,12 @@
         "predicted": [
             {
                 "aspect_term": "concepts",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "negative"
             },
             {
                 "aspect_term": "theories",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "negative"
             },
             {
@@ -5406,7 +5422,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 6.641739845275879,
+        "time": 4.712221622467041,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5420,11 +5436,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.221734285354614,
+        "time": 2.9880149364471436,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5442,7 +5458,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.085273265838623,
+        "time": 2.6015703678131104,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5460,7 +5476,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.117462873458862,
+        "time": 2.5730364322662354,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5478,7 +5494,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.2131667137146,
+        "time": 2.634070873260498,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5497,16 +5513,16 @@
             },
             {
                 "aspect_term": "Python",
-                "aspect_category": "assignments relatability",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "code",
-                "aspect_category": "assignments relatability",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.5658581256866455,
+        "time": 6.33332896232605,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5519,12 +5535,12 @@
         "text": "No step - by - step examples of developed cases are shown .",
         "predicted": [
             {
-                "aspect_term": "NULL",
+                "aspect_term": "cases",
                 "aspect_category": "course comprehensiveness",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.172744035720825,
+        "time": 3.5785326957702637,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5542,7 +5558,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.0858519077301025,
+        "time": 3.441140651702881,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5565,7 +5581,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.412342071533203,
+        "time": 3.6165807247161865,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5588,7 +5604,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.1760101318359375,
+        "time": 3.5970115661621094,
         "gold": [
             {
                 "aspect_term": "He",
@@ -5606,7 +5622,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.469411849975586,
+        "time": 2.936666250228882,
         "gold": [
             {
                 "aspect_term": "Dr . Charles Severance",
@@ -5629,7 +5645,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.348721027374268,
+        "time": 3.6062567234039307,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5647,7 +5663,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.165101766586304,
+        "time": 2.739271640777588,
         "gold": [
             {
                 "aspect_term": "Teacher",
@@ -5665,7 +5681,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.141944169998169,
+        "time": 2.6842901706695557,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5683,7 +5699,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.207674741744995,
+        "time": 2.6808650493621826,
         "gold": [
             {
                 "aspect_term": "grades",
@@ -5697,11 +5713,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course value",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.183076858520508,
+        "time": 3.4835891723632812,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5719,12 +5735,12 @@
                 "sentiment_polarity": "negative"
             },
             {
-                "aspect_term": "exams",
-                "aspect_category": "assignments quality",
+                "aspect_term": "slides",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.335859060287476,
+        "time": 5.007380247116089,
         "gold": [
             {
                 "aspect_term": "grading of the exams",
@@ -5747,7 +5763,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.139373064041138,
+        "time": 2.6435885429382324,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5763,9 +5779,14 @@
                 "aspect_term": "Andrew Ng",
                 "aspect_category": "faculty general",
                 "sentiment_polarity": "positive"
+            },
+            {
+                "aspect_term": "course",
+                "aspect_category": "course quality",
+                "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.254889011383057,
+        "time": 3.5891056060791016,
         "gold": [
             {
                 "aspect_term": "Andrew Ng",
@@ -5783,7 +5804,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.076791048049927,
+        "time": 3.40759539604187,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5801,7 +5822,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.104636907577515,
+        "time": 2.669985294342041,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5824,7 +5845,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.406308174133301,
+        "time": 3.6346585750579834,
         "gold": [
             {
                 "aspect_term": "presentation",
@@ -5847,7 +5868,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.209407091140747,
+        "time": 2.8624863624572754,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5870,7 +5891,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.360258102416992,
+        "time": 3.585359811782837,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5889,11 +5910,11 @@
         "predicted": [
             {
                 "aspect_term": "content",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.7725119590759277,
+        "time": 3.4119794368743896,
         "gold": [
             {
                 "aspect_term": "content",
@@ -5916,7 +5937,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.142133951187134,
+        "time": 3.458425760269165,
         "gold": [
             {
                 "aspect_term": "course",
@@ -5930,16 +5951,16 @@
         "predicted": [
             {
                 "aspect_term": "re - enactments",
-                "aspect_category": "presentation quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "vignettes",
-                "aspect_category": "presentation quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.538898944854736,
+        "time": 3.7808146476745605,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -5957,7 +5978,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.136179208755493,
+        "time": 2.7034404277801514,
         "gold": [
             {
                 "aspect_term": "content",
@@ -5976,11 +5997,11 @@
             },
             {
                 "aspect_term": "course",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "presentation comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.3671228885650635,
+        "time": 4.982938766479492,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6003,7 +6024,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.134518146514893,
+        "time": 3.5279531478881836,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6026,7 +6047,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.217329025268555,
+        "time": 3.528451681137085,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -6044,7 +6065,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.125913143157959,
+        "time": 2.6057889461517334,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6058,16 +6079,16 @@
         "predicted": [
             {
                 "aspect_term": "videos",
-                "aspect_category": "material quality",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "interviews",
-                "aspect_category": "material quality",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.357004165649414,
+        "time": 3.7613472938537598,
         "gold": [
             {
                 "aspect_term": "videos",
@@ -6081,16 +6102,11 @@
         "predicted": [
             {
                 "aspect_term": "moments",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "negative"
-            },
-            {
-                "aspect_term": "management",
-                "aspect_category": "course general",
-                "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.922394275665283,
+        "time": 3.522355556488037,
         "gold": [
             {
                 "aspect_term": "management",
@@ -6104,11 +6120,11 @@
         "predicted": [
             {
                 "aspect_term": "lectures",
-                "aspect_category": "presentation quality",
+                "aspect_category": "presentation comprehensiveness",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.242424964904785,
+        "time": 2.7601940631866455,
         "gold": [
             {
                 "aspect_term": "lectures",
@@ -6122,11 +6138,11 @@
         "predicted": [
             {
                 "aspect_term": "overview",
-                "aspect_category": "course quality",
+                "aspect_category": "course comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.207590341567993,
+        "time": 2.71569561958313,
         "gold": [
             {
                 "aspect_term": "courses",
@@ -6154,7 +6170,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.56069803237915,
+        "time": 3.9587903022766113,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6167,12 +6183,12 @@
         "text": "It is obvious that it was carefully planned and laid out .",
         "predicted": [
             {
-                "aspect_term": "NULL",
+                "aspect_term": "it",
                 "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.943570852279663,
+        "time": 3.6592953205108643,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6191,11 +6207,11 @@
             },
             {
                 "aspect_term": "course",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "course value",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.432958126068115,
+        "time": 3.6939034461975098,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6218,7 +6234,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.181447982788086,
+        "time": 2.662670135498047,
         "gold": [
             {
                 "aspect_term": "Proff",
@@ -6241,7 +6257,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.3697638511657715,
+        "time": 3.5928423404693604,
         "gold": [
             {
                 "aspect_term": "videos",
@@ -6264,7 +6280,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.099564075469971,
+        "time": 3.4659650325775146,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6282,7 +6298,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.191130876541138,
+        "time": 3.540954351425171,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6300,7 +6316,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.445052862167358,
+        "time": 2.8428337574005127,
         "gold": [
             {
                 "aspect_term": "Professor Hitoshi Murayama",
@@ -6318,7 +6334,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.238802909851074,
+        "time": 2.7433605194091797,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6336,7 +6352,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.221142053604126,
+        "time": 3.5764808654785156,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6364,7 +6380,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.141862869262695,
+        "time": 2.6404614448547363,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6382,7 +6398,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.1099607944488525,
+        "time": 3.4773192405700684,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6400,7 +6416,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.1958417892456055,
+        "time": 3.6921546459198,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6414,11 +6430,11 @@
         "predicted": [
             {
                 "aspect_term": "cost function",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.314666986465454,
+        "time": 2.682166814804077,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6432,11 +6448,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.058330059051514,
+        "time": 3.590421676635742,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6459,7 +6475,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.355717182159424,
+        "time": 3.6610870361328125,
         "gold": [
             {
                 "aspect_term": "material",
@@ -6473,16 +6489,16 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course comprehensiveness",
-                "sentiment_polarity": "neutral"
+                "aspect_category": "course quality",
+                "sentiment_polarity": "negative"
             },
             {
                 "aspect_term": "lectures",
                 "aspect_category": "presentation comprehensiveness",
-                "sentiment_polarity": "neutral"
+                "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.495378255844116,
+        "time": 3.7263474464416504,
         "gold": [
             {
                 "aspect_term": "quizzes",
@@ -6505,7 +6521,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.216501951217651,
+        "time": 3.4440789222717285,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6523,7 +6539,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.306879997253418,
+        "time": 2.804797410964966,
         "gold": [
             {
                 "aspect_term": "assingments",
@@ -6541,7 +6557,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.125312089920044,
+        "time": 2.5928711891174316,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6559,7 +6575,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 4.199041128158569,
+        "time": 2.703130006790161,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6577,7 +6593,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.424776077270508,
+        "time": 2.876532793045044,
         "gold": [
             {
                 "aspect_term": "mentor",
@@ -6600,7 +6616,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.42784309387207,
+        "time": 3.6804747581481934,
         "gold": [
             {
                 "aspect_term": "grading system",
@@ -6628,7 +6644,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.246600389480591,
+        "time": 2.7531065940856934,
         "gold": [
             {
                 "aspect_term": "Dr . Chuck",
@@ -6642,11 +6658,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.189483880996704,
+        "time": 3.482231855392456,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6660,7 +6676,7 @@
         "predicted": [
             {
                 "aspect_term": "case studies",
-                "aspect_category": "material relatability",
+                "aspect_category": "course relatability",
                 "sentiment_polarity": "positive"
             },
             {
@@ -6669,7 +6685,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.49406623840332,
+        "time": 4.988184928894043,
         "gold": [
             {
                 "aspect_term": "case studies",
@@ -6697,7 +6713,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 4.223984956741333,
+        "time": 2.6143312454223633,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6710,12 +6726,12 @@
         "text": "Following the grading of some peer assignments , I would be concerned if that were still the case .",
         "predicted": [
             {
-                "aspect_term": "peer assignments",
-                "aspect_category": "assignments quality",
+                "aspect_term": "grading",
+                "aspect_category": "grades general",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.263463020324707,
+        "time": 2.6854798793792725,
         "gold": [
             {
                 "aspect_term": "peer assignments",
@@ -6729,7 +6745,7 @@
         "predicted": [
             {
                 "aspect_term": "platform",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             },
             {
@@ -6738,7 +6754,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.570739984512329,
+        "time": 3.770045518875122,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6752,11 +6768,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course value",
+                "aspect_category": "course general",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.098713159561157,
+        "time": 3.448765993118286,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6770,11 +6786,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course general",
-                "sentiment_polarity": "neutral"
+                "aspect_category": "course quality",
+                "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.224505186080933,
+        "time": 2.640188217163086,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6792,7 +6808,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.1204118728637695,
+        "time": 2.7493691444396973,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6811,11 +6827,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.42338490486145,
+        "time": 2.8420302867889404,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6833,7 +6849,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.14078688621521,
+        "time": 2.9060218334198,
         "gold": [
             {
                 "aspect_term": "content",
@@ -6856,7 +6872,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.810634136199951,
+        "time": 4.865476846694946,
         "gold": [
             {
                 "aspect_term": "materials",
@@ -6875,11 +6891,11 @@
         "predicted": [
             {
                 "aspect_term": "discussions",
-                "aspect_category": "presentation quality",
+                "aspect_category": "presentation comprehensiveness",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.656231164932251,
+        "time": 4.133964538574219,
         "gold": [
             {
                 "aspect_term": "discussions in the videos",
@@ -6897,7 +6913,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.193829774856567,
+        "time": 3.578749179840088,
         "gold": [
             {
                 "aspect_term": "course",
@@ -6915,7 +6931,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.446989059448242,
+        "time": 2.8946382999420166,
         "gold": [
             {
                 "aspect_term": "courses",
@@ -6931,14 +6947,9 @@
                 "aspect_term": "Dr . Odersky",
                 "aspect_category": "faculty general",
                 "sentiment_polarity": "positive"
-            },
-            {
-                "aspect_term": "colleagues",
-                "aspect_category": "faculty general",
-                "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.19054913520813,
+        "time": 3.3329226970672607,
         "gold": [
             {
                 "aspect_term": "Dr . Odersky",
@@ -6956,7 +6967,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.181944131851196,
+        "time": 3.488065719604492,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -6970,16 +6981,16 @@
         "predicted": [
             {
                 "aspect_term": "class",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "content",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.3846659660339355,
+        "time": 3.620274066925049,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7007,7 +7018,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.417212009429932,
+        "time": 3.839712619781494,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7030,7 +7041,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.434417009353638,
+        "time": 3.723916530609131,
         "gold": [
             {
                 "aspect_term": "Professor Andrew Ng",
@@ -7053,7 +7064,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.216557025909424,
+        "time": 2.8782312870025635,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7071,7 +7082,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.193177223205566,
+        "time": 3.4842724800109863,
         "gold": [
             {
                 "aspect_term": "content",
@@ -7084,12 +7095,7 @@
         "text": "In addition , he has excellent presentation skills , that make his lectures enjoyable and easy to follow .",
         "predicted": [
             {
-                "aspect_term": "he",
-                "aspect_category": "faculty general",
-                "sentiment_polarity": "positive"
-            },
-            {
-                "aspect_term": "presentation skills",
+                "aspect_term": "lectures",
                 "aspect_category": "presentation quality",
                 "sentiment_polarity": "positive"
             },
@@ -7099,7 +7105,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 8.648672103881836,
+        "time": 3.789238929748535,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7122,7 +7128,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.213171005249023,
+        "time": 2.6248364448547363,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7140,7 +7146,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.130189895629883,
+        "time": 2.644440174102783,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7154,11 +7160,11 @@
         "predicted": [
             {
                 "aspect_term": "course material",
-                "aspect_category": "material quality",
+                "aspect_category": "material comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.247957944869995,
+        "time": 2.7354514598846436,
         "gold": [
             {
                 "aspect_term": "material",
@@ -7172,11 +7178,11 @@
         "predicted": [
             {
                 "aspect_term": "History of the Middle East",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.374302864074707,
+        "time": 2.85588002204895,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7194,7 +7200,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.2810540199279785,
+        "time": 2.7269837856292725,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7212,7 +7218,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.102725982666016,
+        "time": 3.399003267288208,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7230,7 +7236,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.170086860656738,
+        "time": 2.7624025344848633,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7248,7 +7254,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.19596004486084,
+        "time": 2.6151270866394043,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7266,7 +7272,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.108487129211426,
+        "time": 3.4080657958984375,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7280,11 +7286,11 @@
         "predicted": [
             {
                 "aspect_term": "Python",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.177364110946655,
+        "time": 3.542550802230835,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7298,11 +7304,11 @@
         "predicted": [
             {
                 "aspect_term": "Week 2 content",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.381767988204956,
+        "time": 3.625415086746216,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7320,7 +7326,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.424689054489136,
+        "time": 2.7880747318267822,
         "gold": [
             {
                 "aspect_term": "Iyengar",
@@ -7334,11 +7340,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.184170961380005,
+        "time": 3.5142982006073,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7356,7 +7362,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.178990840911865,
+        "time": 3.452519655227661,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7370,16 +7376,16 @@
         "predicted": [
             {
                 "aspect_term": "content",
-                "aspect_category": "course quality",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "the",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.45809006690979,
+        "time": 4.96379542350769,
         "gold": [
             {
                 "aspect_term": "content",
@@ -7402,7 +7408,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.9005720615386963,
+        "time": 2.626019239425659,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7416,11 +7422,11 @@
         "predicted": [
             {
                 "aspect_term": "Modules",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.159234046936035,
+        "time": 3.541607618331909,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7438,7 +7444,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.207957029342651,
+        "time": 2.684455633163452,
         "gold": [
             {
                 "aspect_term": "assignments",
@@ -7456,7 +7462,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.12201189994812,
+        "time": 2.7298941612243652,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7474,7 +7480,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.200655221939087,
+        "time": 2.674586057662964,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7488,11 +7494,11 @@
         "predicted": [
             {
                 "aspect_term": "NULL",
-                "aspect_category": "course general",
+                "aspect_category": "course value",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.137592077255249,
+        "time": 2.62309193611145,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7510,7 +7516,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.242215871810913,
+        "time": 3.610769510269165,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7528,7 +7534,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.16028904914856,
+        "time": 2.6247785091400146,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7542,11 +7548,11 @@
         "predicted": [
             {
                 "aspect_term": "information",
-                "aspect_category": "course comprehensiveness",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.26321005821228,
+        "time": 2.6437876224517822,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7564,7 +7570,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.132978200912476,
+        "time": 2.5985584259033203,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7587,7 +7593,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.956761121749878,
+        "time": 3.7184627056121826,
         "gold": [
             {
                 "aspect_term": "professor",
@@ -7615,7 +7621,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.190289735794067,
+        "time": 3.5584630966186523,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7638,7 +7644,7 @@
                 "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.367783784866333,
+        "time": 3.5726356506347656,
         "gold": [
             {
                 "aspect_term": "homework",
@@ -7656,7 +7662,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.261480093002319,
+        "time": 3.4959278106689453,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7670,11 +7676,11 @@
         "predicted": [
             {
                 "aspect_term": "examples",
-                "aspect_category": "material relatability",
+                "aspect_category": "material quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.26601505279541,
+        "time": 2.7053346633911133,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7692,7 +7698,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.139214992523193,
+        "time": 3.5241007804870605,
         "gold": [
             {
                 "aspect_term": "professor",
@@ -7707,10 +7713,10 @@
             {
                 "aspect_term": "NULL",
                 "aspect_category": "course workload",
-                "sentiment_polarity": "positive"
+                "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.165812969207764,
+        "time": 3.7287216186523438,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7733,7 +7739,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 6.884175777435303,
+        "time": 4.918625116348267,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7761,7 +7767,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 6.889127016067505,
+        "time": 4.90850043296814,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7773,7 +7779,7 @@
     {
         "text": "I did progress in gaming making as a fresh man .",
         "predicted": [],
-        "time": 3.1034817695617676,
+        "time": 1.7287189960479736,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7796,7 +7802,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.419662714004517,
+        "time": 3.68066668510437,
         "gold": [
             {
                 "aspect_term": "lectures",
@@ -7810,11 +7816,11 @@
         "predicted": [
             {
                 "aspect_term": "course",
-                "aspect_category": "course general",
+                "aspect_category": "course quality",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.090601921081543,
+        "time": 2.692328453063965,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7832,7 +7838,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.12463903427124,
+        "time": 2.5977365970611572,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7850,7 +7856,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.230216979980469,
+        "time": 3.5979690551757812,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7873,7 +7879,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 5.31199836730957,
+        "time": 3.5982706546783447,
         "gold": [
             {
                 "aspect_term": "course",
@@ -7892,11 +7898,11 @@
         "predicted": [
             {
                 "aspect_term": "courses",
-                "aspect_category": "course general",
+                "aspect_category": "course value",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.136159181594849,
+        "time": 3.565230131149292,
         "gold": [
             {
                 "aspect_term": "courses",
@@ -7914,7 +7920,7 @@
                 "sentiment_polarity": "negative"
             }
         ],
-        "time": 4.167994260787964,
+        "time": 2.6283352375030518,
         "gold": [
             {
                 "aspect_term": "record videos",
@@ -7932,7 +7938,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.7141098976135254,
+        "time": 2.5711615085601807,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7950,7 +7956,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.249393939971924,
+        "time": 2.689452648162842,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7968,7 +7974,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.15840482711792,
+        "time": 3.510659694671631,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -7986,7 +7992,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.9924979209899902,
+        "time": 2.5397746562957764,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8004,7 +8010,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.982048988342285,
+        "time": 3.4200072288513184,
         "gold": [
             {
                 "aspect_term": "course",
@@ -8019,10 +8025,10 @@
             {
                 "aspect_term": "course",
                 "aspect_category": "course general",
-                "sentiment_polarity": "positive"
+                "sentiment_polarity": "neutral"
             }
         ],
-        "time": 5.1902549266815186,
+        "time": 3.6192286014556885,
         "gold": [
             {
                 "aspect_term": "course",
@@ -8037,10 +8043,10 @@
             {
                 "aspect_term": "course",
                 "aspect_category": "course quality",
-                "sentiment_polarity": "negative"
+                "sentiment_polarity": "neutral"
             }
         ],
-        "time": 4.474170923233032,
+        "time": 3.2867865562438965,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8058,7 +8064,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.232770681381226,
+        "time": 2.653623342514038,
         "gold": [
             {
                 "aspect_term": "course",
@@ -8071,12 +8077,12 @@
         "text": "Provides a great overview .",
         "predicted": [
             {
-                "aspect_term": "NULL",
-                "aspect_category": "course quality",
+                "aspect_term": "overview",
+                "aspect_category": "course comprehensiveness",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 3.6452789306640625,
+        "time": 2.5294270515441895,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8094,7 +8100,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.2205281257629395,
+        "time": 2.675367832183838,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8108,16 +8114,16 @@
         "predicted": [
             {
                 "aspect_term": "Python",
-                "aspect_category": "faculty general",
+                "aspect_category": "course general",
                 "sentiment_polarity": "positive"
             },
             {
                 "aspect_term": "programming",
-                "aspect_category": "faculty general",
+                "aspect_category": "course general",
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 5.329044342041016,
+        "time": 3.6029746532440186,
         "gold": [
             {
                 "aspect_term": "NULL",
@@ -8135,7 +8141,7 @@
                 "sentiment_polarity": "positive"
             }
         ],
-        "time": 4.17164421081543,
+        "time": 2.624112606048584,
         "gold": [
             {
                 "aspect_term": "Dr Chuck",
