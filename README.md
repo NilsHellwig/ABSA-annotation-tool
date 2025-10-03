@@ -107,59 +107,36 @@ You can display PDF guidelines directly in the annotation interface to ensure co
 
 ## 🚀 Quick Start
 
-### Option 1: One-Command Launch (Recommended)
-
-```bash
+### Installation
 ```bash
 # Install Python dependencies
-pip install fastapi uvicorn pandas rank-bm25
+pip install -r requirements.txt
+
+# Install frontend dependencies
+cd frontend && npm install && cd ..
 ```
 
-# Install frontend dependencies  
-cd frontend && npm install && cd ..
-
+### Basic Usage
+```bash
 # Start with example data
 ./annoabsa examples/restaurant_reviews.csv
 ./annoabsa examples/restaurant_reviews.json
 
-# Enable AI suggestions with automatic triggering
-./annoabsa examples/restaurant_reviews.json --ai-suggestions
-
-# Enable AI suggestions but disable automatic triggering (manual control only)
-./annoabsa examples/restaurant_reviews.json --ai-suggestions --disable-ai-automatic-prediction
-
-# Display annotation guidelines from PDF
-./annoabsa examples/restaurant_reviews.json --annotation-guideline guidelines/annotation_manual.pdf
-
-# Or use the example configuration
+# Use configuration file
 ./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json
 
-# Enable automatic position filling for imported data
-./annoabsa imported_annotations.csv --auto-positions
+# Enable AI suggestions
+./annoabsa examples/restaurant_reviews.json --ai-suggestions
 ```
 
-### Option 2: Manual Setup
-
-#### Backend Setup
+### Manual Setup (Alternative)
 ```bash
-```bash
+# Backend
 pip install fastapi uvicorn pandas rank-bm25
-```
-
-# Start the server
 uvicorn main:app --reload --port 8000
-```
 
-#### Frontend Setup
-```bash
-# Navigate to frontend directory
-cd frontend
-
-# Install dependencies
-npm install
-
-# Start development server (Vite)
-npm run dev
+# Frontend (in new terminal)
+cd frontend && npm install && npm run dev
 ```
 
 The app will open at `http://localhost:3000`
@@ -180,20 +157,16 @@ The `examples/` folder contains sample data to get you started:
 
 ---
 
-## �️ CLI Configuration
+## ⚙️ CLI Configuration
 
 The `annoabsa` CLI tool configures and runs your annotation environment:
 
 ```bash
-# Basic usage - starts frontend and backend by default
+# Basic usage
 ./annoabsa examples/restaurant_reviews.csv
-./annoabsa examples/restaurant_reviews.json
 
 # Load configuration from file
 ./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json
-
-# Start only backend server
-./annoabsa examples/restaurant_reviews.csv --backend
 
 # Custom ports and session
 ./annoabsa examples/restaurant_reviews.json --backend-port 8080 --frontend-port 3001 --session-id "study_2024"
@@ -201,17 +174,14 @@ The `annoabsa` CLI tool configures and runs your annotation environment:
 
 ### Configuration Files
 
-You can save and reuse configurations with JSON files:
+Save and reuse configurations with JSON files:
 
 ```bash
 # Save current configuration
 ./annoabsa examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --save-config examples/my_config.json
 
-# Load and use saved configuration  
+# Load and use saved configuration
 ./annoabsa examples/restaurant_reviews.csv --load-config examples/example_config.json
-
-# Load config and override specific settings
-./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json --session-id "new_session"
 ```
 
 ### CLI Options
@@ -244,56 +214,7 @@ You can save and reuse configurations with JSON files:
 | `--openai-key` | OpenAI API key for using OpenAI models instead of local LLM | None |
 | `--n-few-shot` | Maximum number of few-shot examples to include in LLM prompts | `10` |
 | `--save-config` | Save config to JSON file | - |
-| `--show-config` | Display current configuration | - |
-
-### Real-World Example
-
-For a restaurant review annotation project with multilingual support and position tracking:
-
-```bash
-./annoabsa examples/restaurant_reviews.json \
-  --session-id "restaurant_study_2024" \
-  --elements aspect_term aspect_category sentiment_polarity opinion_term \
-  --categories "food quality" "service speed" "price level" "ambience general" "location access" \
-  --polarities positive negative neutral mixed \
-  --implicit-aspect \
-  --backend-ip 0.0.0.0 \
-  --backend-port 8080 \
-  --frontend-port 3001 \
-  --save-config restaurant_config.json
-```
-
-### AI-Enhanced Annotation with OpenAI
-
-For projects requiring advanced AI assistance with GPT-4o:
-
-```bash
-./annoabsa examples/restaurant_reviews.csv \
-  --ai-suggestions \
-  --openai-key sk-your-openai-api-key \
-  --llm-model gpt-4o-2024-08-06 \
-  --session-id "ai_assisted_annotation" \
-  --save-config ai_config.json
-```
-
-This configuration:
-- Enables AI-powered predictions using OpenAI's GPT-4o model
-- Uses cloud-based processing for sophisticated language understanding
-- Tracks all annotation sessions with ID `restaurant_study_2024`
-- Enables position saving for phrase analysis (default)
-- Allows implicit aspects (useful for general sentiment)
-- Uses custom categories relevant to restaurant reviews
-- Saves the configuration for future use
-- Enables network access with custom ports
-
-### Working with Imported Data
-
-If you're importing existing annotation data that may have inconsistent or missing position information, you can enable automatic preprocessing:
-
-```bash
-# Enable automatic position filling (slower startup but adds missing positions)
-./annoabsa imported_annotations.csv --auto-positions
-```
+| `--load-config` | Load config from JSON file | - |
 
 ---
 
@@ -514,35 +435,6 @@ When both **Aspect term** and **Opinion term** are configured:
 
 ### Default Categories (Restaurant Domain)
 Food, Service, Price, Ambience, Location, Restaurant
-
----
-
-## 📝 Example Usage
-
-1. **One-command start (easiest):**
-   ```bash
-   ./annoabsa examples/restaurant_reviews.csv      # CSV format
-   ./annoabsa examples/restaurant_reviews.json     # JSON format
-   ```
-
-2. **Use saved configuration:**
-   ```bash
-   ./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json
-   ```
-
-3. **Create and save configuration:**
-   ```bash
-   ./annoabsa examples/restaurant_reviews.csv --elements aspect_term sentiment_polarity --save-config examples/my_config.json
-   ```
-
-4. **Advanced: Load config and override settings:**
-   ```bash
-   ./annoabsa examples/restaurant_reviews.json --load-config examples/example_config.json --polarities positive negative excited
-   ```
-
-5. **Open browser** at `http://localhost:3000` and start annotating!
-   - **Dark Mode**: Click the 🌙/☀️ toggle in the top-right corner to switch themes
-   - **Theme Persistence**: Your preferred theme is automatically saved and restored
 
 ---
 
