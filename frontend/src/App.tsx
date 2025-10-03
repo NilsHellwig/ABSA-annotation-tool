@@ -48,6 +48,7 @@ function App() {
   // Backend states
   const [currentIndex, setCurrentIndex] = useState<number>(0); // Currently displayed index in UI
   const [settingsCurrentIndex, setSettingsCurrentIndex] = useState<number>(0); // Current index from backend settings
+  const [isLoadingData, setIsLoadingData] = useState<boolean>(false); // Prevents navigation while loading
   const [maxIndex, setMaxIndex] = useState<number>(0);
   const [totalCount, setTotalCount] = useState<number>(0);
   const [inputIndex, setInputIndex] = useState<string>("");
@@ -795,7 +796,8 @@ function App() {
   const fetchData = async (index: number): Promise<void> => {
     // Abort any ongoing AI prediction when changing index
     abortAIPrediction();
-
+    
+    setIsLoadingData(true);
     try {
       const response = await fetch(`${backendUrl}/data/${index}`);
       const data = await response.json();
@@ -845,6 +847,8 @@ function App() {
 
     } catch (error) {
       console.error('Error fetching data:', error);
+    } finally {
+      setIsLoadingData(false);
     }
   };
 
@@ -1180,14 +1184,15 @@ function App() {
                   value={inputIndex}
                   onChange={(e) => setInputIndex(e.target.value)}
                   placeholder="Index..."
-                  className="w-20 px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  disabled={isLoadingData}
+                  className="w-20 px-2 py-1 text-sm border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                   min="1"
                   max={totalCount}
                 />
                 <button
                   onClick={goToIndex}
-                  disabled={parseInt(inputIndex) > totalCount || parseInt(inputIndex) < 1 || isNaN(parseInt(inputIndex)) === true}
-                  className="px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 text-white rounded"
+                  disabled={parseInt(inputIndex) > totalCount || parseInt(inputIndex) < 1 || isNaN(parseInt(inputIndex)) === true || isLoadingData}
+                  className="px-3 py-1 text-sm bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 text-white rounded disabled:cursor-not-allowed"
                 >
                   Go to
                 </button>
@@ -1206,7 +1211,7 @@ function App() {
                       await fetchData(prevIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex <= 0}
+                    disabled={currentIndex <= 0 || isLoadingData}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Previous annotation"
                   >
@@ -1224,7 +1229,7 @@ function App() {
                       await fetchData(nextIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex >= settingsCurrentIndex}
+                    disabled={currentIndex >= settingsCurrentIndex || isLoadingData}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Next annotation"
                   >
@@ -1242,7 +1247,7 @@ function App() {
                       await fetchData(targetIndex);
                       await fetchSettings(); // Update settings after navigation
                     }}
-                    disabled={currentIndex + 1 > settingsCurrentIndex}
+                    disabled={currentIndex + 1 > settingsCurrentIndex || isLoadingData}
                     className="px-4 py-1 rounded bg-gray-100 hover:bg-gray-200 disabled:bg-gray-50 disabled:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:disabled:bg-gray-800 dark:disabled:text-gray-500 text-gray-600 dark:text-gray-300"
                     title="Jump to current working position"
                   >
