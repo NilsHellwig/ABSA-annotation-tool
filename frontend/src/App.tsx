@@ -1874,10 +1874,10 @@ function App() {
           <div className="flex items-center justify-center gap-2">
             <span>Built with ❤️ for the NLP community by</span>
             <a
-              href="mailto:Nils-Constantin.Hellwig@ur.de"
+              href="mailto:xx-xx.xx@xx"
               className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium transition-colors duration-200"
             >
-              Nils-Constantin.Hellwig@ur.de
+              xx-xx.xx@xx
             </a>
           </div>
         </div>

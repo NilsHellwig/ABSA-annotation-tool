@@ -446,8 +446,8 @@ Feel free to open issues or submit pull requests to improve the tool!
 
 For questions, suggestions, or support, please reach out:
 
-**Nils Constantin Hellwig**  
-📧 [Nils-Constantin.Hellwig@ur.de](mailto:Nils-Constantin.Hellwig@ur.de)
+**xx xx xx**  
+📧 [xx-xx.xx@xx](mailto:xx-xx.xx@xx)
 
 ---
 

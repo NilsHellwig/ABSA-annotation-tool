@@ -1,6 +1,5 @@
 [
     {
-        "text": "Yum !",
         "predicted": [],
         "time": 10.00023365020752,
         "gold": [
@@ -12,7 +11,6 @@
         ]
     },
     {
-        "text": "Serves really good sushi .",
         "predicted": [],
         "time": 10.000843524932861,
         "gold": [
@@ -24,7 +22,6 @@
         ]
     },
     {
-        "text": "Not the biggest portions but adequate .",
         "predicted": [
             {
                 "aspect_term": "portions",
@@ -42,7 +39,6 @@
         ]
     },
     {
-        "text": "Green Tea creme brulee is a must !",
         "predicted": [
             {
                 "aspect_term": "Green Tea creme brulee",
@@ -60,7 +56,6 @@
         ]
     },
     {
-        "text": "Don 't leave the restaurant without it .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -78,7 +73,6 @@
         ]
     },
     {
-        "text": "No Comparison",
         "predicted": [],
         "time": 0.5281550884246826,
         "gold": [
@@ -90,7 +84,6 @@
         ]
     },
     {
-        "text": "– I can 't say enough about this place .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -108,7 +101,6 @@
         ]
     },
     {
-        "text": "It has great sushi and even better service .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -136,7 +128,6 @@
         ]
     },
     {
-        "text": "The entire staff was extremely accomodating and tended to my every need .",
         "predicted": [
             {
                 "aspect_term": "staff",
@@ -154,7 +145,6 @@
         ]
     },
     {
-        "text": "I 've been to this restaurant over a dozen times with no complaints to date .",
         "predicted": [
             {
                 "aspect_term": "restaurant",
@@ -172,7 +162,6 @@
         ]
     },
     {
-        "text": "Snotty Attitude",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -190,7 +179,6 @@
         ]
     },
     {
-        "text": "– We were treated very rudely here one time for breakfast .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -208,7 +196,6 @@
         ]
     },
     {
-        "text": "The owner is belligerent to guests that have a complaint .",
         "predicted": [
             {
                 "aspect_term": "owner",
@@ -226,7 +213,6 @@
         ]
     },
     {
-        "text": "Good food !",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -244,7 +230,6 @@
         ]
     },
     {
-        "text": "This is a great place to get a delicious meal .",
         "predicted": [
             {
                 "aspect_term": "meal",
@@ -262,7 +247,6 @@
         ]
     },
     {
-        "text": "We never had to wait more than 5 minutes .",
         "predicted": [
             {
                 "aspect_term": "wait",
@@ -280,7 +264,6 @@
         ]
     },
     {
-        "text": "The staff is pretty friendly .",
         "predicted": [
             {
                 "aspect_term": "staff",
@@ -298,7 +281,6 @@
         ]
     },
     {
-        "text": "The onion rings are great !",
         "predicted": [
             {
                 "aspect_term": "onion rings",
@@ -316,7 +298,6 @@
         ]
     },
     {
-        "text": "They are not greasy or anything .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -334,7 +315,6 @@
         ]
     },
     {
-        "text": "Overrated",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -352,7 +332,6 @@
         ]
     },
     {
-        "text": "– I was highly disappointed in the food at Pagoda .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -370,7 +349,6 @@
         ]
     },
     {
-        "text": "The lemon chicken tasted like sticky sweet donuts and the honey walnut prawns , the few they actually give you . . . . .were not good .",
         "predicted": [
             {
                 "aspect_term": "lemon chicken",
@@ -403,7 +381,6 @@
         ]
     },
     {
-        "text": "Nice ambience , but highly overrated place .",
         "predicted": [
             {
                 "aspect_term": "ambience",
@@ -431,7 +408,6 @@
         ]
     },
     {
-        "text": "I will not go back .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -449,7 +425,6 @@
         ]
     },
     {
-        "text": "Worst Service I Ever Had",
         "predicted": [
             {
                 "aspect_term": "Service",
@@ -467,7 +442,6 @@
         ]
     },
     {
-        "text": "Everyone that sat in the back outside agreed that it was the worst service we had ever received .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -485,7 +459,6 @@
         ]
     },
     {
-        "text": "Our waiter was non-existent and after our food finally arrived over an hour after we ordered , we were not given any water or utensils .",
         "predicted": [
             {
                 "aspect_term": "waiter",
@@ -518,7 +491,6 @@
         ]
     },
     {
-        "text": "I complained to the manager , but he was not even apologetic .",
         "predicted": [
             {
                 "aspect_term": "manager",
@@ -536,7 +508,6 @@
         ]
     },
     {
-        "text": "I will never return again .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -554,7 +525,6 @@
         ]
     },
     {
-        "text": "Fabulous Italian Food !",
         "predicted": [
             {
                 "aspect_term": "Italian Food",
@@ -572,7 +542,6 @@
         ]
     },
     {
-        "text": "– I highly recommend Mioposto .",
         "predicted": [
             {
                 "aspect_term": "Mioposto",
@@ -590,7 +559,6 @@
         ]
     },
     {
-        "text": "I am so happy to have a wonderful Italian restaurant in my neighborhood .",
         "predicted": [
             {
                 "aspect_term": "Italian restaurant",
@@ -608,7 +576,6 @@
         ]
     },
     {
-        "text": "The wine list is wonderful and the food reminds me of my recent trip to Italy .",
         "predicted": [
             {
                 "aspect_term": "wine list",
@@ -636,7 +603,6 @@
         ]
     },
     {
-        "text": "I love this restaurant",
         "predicted": [
             {
                 "aspect_term": "this",
@@ -654,7 +620,6 @@
         ]
     },
     {
-        "text": "– I will never forget the amazing meal , service , and ambiance I experience at this restaurant .",
         "predicted": [
             {
                 "aspect_term": "meal",
@@ -692,7 +657,6 @@
         ]
     },
     {
-        "text": "It was absolutely amazing .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -710,7 +674,6 @@
         ]
     },
     {
-        "text": "The wine list is incredible and extensive and diverse , the food is all incredible and the staff was all very nice , good at their jobs and cultured .",
         "predicted": [
             {
                 "aspect_term": "wine list",
@@ -748,7 +711,6 @@
         ]
     },
     {
-        "text": "I have not a bad thing to say about this place .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -766,7 +728,6 @@
         ]
     },
     {
-        "text": "AMAZING .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -784,7 +745,6 @@
         ]
     },
     {
-        "text": "I cannot wait to go back again this coming weekend !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -802,7 +762,6 @@
         ]
     },
     {
-        "text": "Mmm . . . good !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -820,7 +779,6 @@
         ]
     },
     {
-        "text": "The food was great !",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -838,7 +796,6 @@
         ]
     },
     {
-        "text": "It 's  *very * reasonably priced , esp for the quality of the food .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -861,7 +818,6 @@
         ]
     },
     {
-        "text": "I had the Kafta plate and it was perfect .",
         "predicted": [
             {
                 "aspect_term": "Kafta plate",
@@ -879,7 +835,6 @@
         ]
     },
     {
-        "text": "We 're going back .  :D",
         "predicted": [],
         "time": 0.5165469646453857,
         "gold": [
@@ -891,7 +846,6 @@
         ]
     },
     {
-        "text": "Finally a meal that you will remember for a long time !",
         "predicted": [
             {
                 "aspect_term": "meal",
@@ -909,7 +863,6 @@
         ]
     },
     {
-        "text": "– In a age of incremental cost cutting in restaurants , its nice to see a place that bucks that trend , and just plain delivers high quality food and good service , period .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -937,7 +890,6 @@
         ]
     },
     {
-        "text": "This is the place to relax and enjoy the finest quality food the industry can offer .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -960,7 +912,6 @@
         ]
     },
     {
-        "text": "Caution - its real food for people who love the best .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -978,7 +929,6 @@
         ]
     },
     {
-        "text": "Very Disappointing",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -996,7 +946,6 @@
         ]
     },
     {
-        "text": "– I took my parents here for their anniversary-very very disappointed ! ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1014,7 +963,6 @@
         ]
     },
     {
-        "text": "I liked the atmosphere very much but the food was not worth the price .",
         "predicted": [
             {
                 "aspect_term": "atmosphere",
@@ -1047,7 +995,6 @@
         ]
     },
     {
-        "text": "I may not be a sushi guru but I can tell you that the food here is just okay and that there is not much else to it .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -1065,7 +1012,6 @@
         ]
     },
     {
-        "text": "Rice is too dry , tuna wasn 't so fresh either .",
         "predicted": [
             {
                 "aspect_term": "Rice",
@@ -1093,7 +1039,6 @@
         ]
     },
     {
-        "text": "Nothing really came across as outstanding .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1111,7 +1056,6 @@
         ]
     },
     {
-        "text": "Very disappointed .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1129,7 +1073,6 @@
         ]
     },
     {
-        "text": "I have eaten here three times and have found the quality and variety of the fish to be excellent .",
         "predicted": [
             {
                 "aspect_term": "quality",
@@ -1162,7 +1105,6 @@
         ]
     },
     {
-        "text": "However , the value and service are both severely lacking .",
         "predicted": [
             {
                 "aspect_term": "value",
@@ -1190,7 +1132,6 @@
         ]
     },
     {
-        "text": "Furthermore , while the fish is unquestionably fresh , rolls tend to be inexplicably bland .",
         "predicted": [
             {
                 "aspect_term": "fish",
@@ -1218,7 +1159,6 @@
         ]
     },
     {
-        "text": "The service ranges from mediocre to offensive .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -1236,7 +1176,6 @@
         ]
     },
     {
-        "text": "On a recent trip , our waiter was extremely dismissive , while no less than three staff members waited hand-and-foot on a pair of Japanese girls seated nearby .",
         "predicted": [
             {
                 "aspect_term": "waiter",
@@ -1264,7 +1203,6 @@
         ]
     },
     {
-        "text": "We were then charged for their most expensive sake  ( $20 + per serving ) when we in fact drank a sake of less than half that price .",
         "predicted": [
             {
                 "aspect_term": "sake",
@@ -1287,7 +1225,6 @@
         ]
     },
     {
-        "text": "Freshest sushi  – I love this restaurant .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -1315,7 +1252,6 @@
         ]
     },
     {
-        "text": "They pay such detail to everything from miso soup to complex rolls .",
         "predicted": [
             {
                 "aspect_term": "miso soup",
@@ -1343,7 +1279,6 @@
         ]
     },
     {
-        "text": "The sashimi was the freshest and most tender I have ever tasted .",
         "predicted": [
             {
                 "aspect_term": "sashimi",
@@ -1361,7 +1296,6 @@
         ]
     },
     {
-        "text": "Their apps are all delicious .",
         "predicted": [
             {
                 "aspect_term": "apps",
@@ -1379,7 +1313,6 @@
         ]
     },
     {
-        "text": "The only drawback is that this place is really expensive and the portions are on the small side .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -1407,7 +1340,6 @@
         ]
     },
     {
-        "text": "But the space is small and lovely , and the service is helpful .",
         "predicted": [
             {
                 "aspect_term": "space",
@@ -1435,7 +1367,6 @@
         ]
     },
     {
-        "text": "You are bound to have a very charming time .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1453,7 +1384,6 @@
         ]
     },
     {
-        "text": "Not recommanded ! ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1471,7 +1401,6 @@
         ]
     },
     {
-        "text": "– The food was not great  & the waiters were rude .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -1499,7 +1428,6 @@
         ]
     },
     {
-        "text": "It is not worth going at all and spend your money there ! ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1517,7 +1445,6 @@
         ]
     },
     {
-        "text": "great service",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1535,7 +1462,6 @@
         ]
     },
     {
-        "text": "– Pretty cheap for sit down Mexican AND downtown .",
         "predicted": [
             {
                 "aspect_term": "Mexican",
@@ -1558,7 +1484,6 @@
         ]
     },
     {
-        "text": "my service was stellar !",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -1576,7 +1501,6 @@
         ]
     },
     {
-        "text": "the bus boy even spotted that my table was shaking a stabilized it for me .",
         "predicted": [
             {
                 "aspect_term": "bus boy",
@@ -1594,7 +1518,6 @@
         ]
     },
     {
-        "text": "food was fine , with a some little-tastier-than-normal salsa .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -1622,7 +1545,6 @@
         ]
     },
     {
-        "text": "If you 're in the area you shouldn 't be disappointed .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1640,7 +1562,6 @@
         ]
     },
     {
-        "text": "Ok . . . . – Maybe I went in on someone 's bad day . . . .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1658,7 +1579,6 @@
         ]
     },
     {
-        "text": "the food was great , the margaritas too but the waitress was too busy being nice to her other larger party than to take better care of my friend and me .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -1696,7 +1616,6 @@
         ]
     },
     {
-        "text": "Took forever to get our order taken , water refills were too much to ask for and the only time she was fast was when we asked for our bill when we could get her attention .",
         "predicted": [
             {
                 "aspect_term": "order",
@@ -1724,7 +1643,6 @@
         ]
     },
     {
-        "text": "I don 't know if I 'll be back . . . .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1742,7 +1660,6 @@
         ]
     },
     {
-        "text": "Mama Mia – I live in the neighborhood and feel lucky to live by such a great pizza place .",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -1760,7 +1677,6 @@
         ]
     },
     {
-        "text": "the only problem is you really have to warm up the pizza before it 's edible , even when you order ahead .",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -1778,7 +1694,6 @@
         ]
     },
     {
-        "text": "BUt once done , it 's not too much dough , not too much cheese , not too much sauce .",
         "predicted": [
             {
                 "aspect_term": "dough",
@@ -1806,7 +1721,6 @@
         ]
     },
     {
-        "text": "Best Sushi in town .",
         "predicted": [
             {
                 "aspect_term": "Sushi",
@@ -1824,7 +1738,6 @@
         ]
     },
     {
-        "text": "Everything you want and more , very fresh .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1847,7 +1760,6 @@
         ]
     },
     {
-        "text": "Its worth the wait , especially since they 'll give you a call when the table is ready .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1870,7 +1782,6 @@
         ]
     },
     {
-        "text": "The best calamari in Seattle !",
         "predicted": [
             {
                 "aspect_term": "calamari",
@@ -1888,7 +1799,6 @@
         ]
     },
     {
-        "text": "–  . . .and the best summertime deck experience--they will even bring you a blanket if you get cold in the Seattle evening weather .",
         "predicted": [
             {
                 "aspect_term": "deck",
@@ -1911,7 +1821,6 @@
         ]
     },
     {
-        "text": "A perfect place to take out of town guests any time of the year .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -1929,7 +1838,6 @@
         ]
     },
     {
-        "text": "Endless fun , awesome music , great staff ! ! !",
         "predicted": [
             {
                 "aspect_term": "fun",
@@ -1967,7 +1875,6 @@
         ]
     },
     {
-        "text": "– By far the best bar in the east village . . .",
         "predicted": [
             {
                 "aspect_term": "bar",
@@ -1985,7 +1892,6 @@
         ]
     },
     {
-        "text": "I went there with some friends one night to play bingo and watch the sox game and it was a blast !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2003,7 +1909,6 @@
         ]
     },
     {
-        "text": "Every time  '0-sixtynine ' is called the bartender buys everyone drinks !",
         "predicted": [
             {
                 "aspect_term": "bartender",
@@ -2026,7 +1931,6 @@
         ]
     },
     {
-        "text": "Been there lots since and its always a good time .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2044,7 +1948,6 @@
         ]
     },
     {
-        "text": "Great draft and bottle selection and the pizza rocks .",
         "predicted": [
             {
                 "aspect_term": "draft",
@@ -2077,7 +1980,6 @@
         ]
     },
     {
-        "text": "Definitely has one of the best jukebox 's i 've seen in a long long time .",
         "predicted": [
             {
                 "aspect_term": "jukebox",
@@ -2095,7 +1997,6 @@
         ]
     },
     {
-        "text": "I FOUND A NEW HOME ON SECOND AVENUE ! ! ! ! ! ! ! ! ! ! ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2113,7 +2014,6 @@
         ]
     },
     {
-        "text": "Just go there and see for yourself .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2131,7 +2031,6 @@
         ]
     },
     {
-        "text": "The food is great , the bartenders go that extra mile .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -2159,7 +2058,6 @@
         ]
     },
     {
-        "text": "You need to watch your game , they will have it on for you .",
         "predicted": [
             {
                 "aspect_term": "game",
@@ -2177,7 +2075,6 @@
         ]
     },
     {
-        "text": "The owners are great fun and the beer selection is worth staying for .",
         "predicted": [
             {
                 "aspect_term": "owners",
@@ -2205,7 +2102,6 @@
         ]
     },
     {
-        "text": "And the upstairs is a great place to hang out .",
         "predicted": [
             {
                 "aspect_term": "upstairs",
@@ -2223,7 +2119,6 @@
         ]
     },
     {
-        "text": "Not alot of smoking places left in New York , but I have found my favorite smoking balconey in the city .",
         "predicted": [
             {
                 "aspect_term": "smoking balconey",
@@ -2241,7 +2136,6 @@
         ]
     },
     {
-        "text": "Kudos to these guys .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2259,7 +2153,6 @@
         ]
     },
     {
-        "text": "I found a new home and just moved with a long lease .",
         "predicted": [],
         "time": 0.5796318054199219,
         "gold": [
@@ -2271,7 +2164,6 @@
         ]
     },
     {
-        "text": "The sushi here is delicious !",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -2289,7 +2181,6 @@
         ]
     },
     {
-        "text": "They have a wide variety of fish and they even list which oceans they come from ; Atlantic or Pacific .",
         "predicted": [
             {
                 "aspect_term": "fish",
@@ -2307,7 +2198,6 @@
         ]
     },
     {
-        "text": "I 've had the Jellyfish , Horse Mackerel , Blue Fin Tuna and the Sake Ikura roll among others , and they were all good .",
         "predicted": [
             {
                 "aspect_term": "Jellyfish",
@@ -2355,7 +2245,6 @@
         ]
     },
     {
-        "text": "My only negative comment is that I wish the pieces were a little bigger .",
         "predicted": [
             {
                 "aspect_term": "pieces",
@@ -2373,7 +2262,6 @@
         ]
     },
     {
-        "text": "The decor is rustic , traditional Japanese .",
         "predicted": [
             {
                 "aspect_term": "decor",
@@ -2391,7 +2279,6 @@
         ]
     },
     {
-        "text": "The crowd is mixed yuppies , young and old .",
         "predicted": [
             {
                 "aspect_term": "crowd",
@@ -2409,7 +2296,6 @@
         ]
     },
     {
-        "text": "The service was courteous and attentive .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -2427,7 +2313,6 @@
         ]
     },
     {
-        "text": "Mediocre food",
         "predicted": [
             {
                 "aspect_term": "Mediocre",
@@ -2445,7 +2330,6 @@
         ]
     },
     {
-        "text": "The outside patio area has an abbreviated menu .",
         "predicted": [
             {
                 "aspect_term": "patio area",
@@ -2463,7 +2347,6 @@
         ]
     },
     {
-        "text": "My g /f and I both agreed the food was very mediocre especially considering the price .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -2491,7 +2374,6 @@
         ]
     },
     {
-        "text": "We are locals , and get the feeling the only way this place survives with such average food is because most customers are probably one-time customer tourists .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -2519,7 +2401,6 @@
         ]
     },
     {
-        "text": "Service was decent .",
         "predicted": [
             {
                 "aspect_term": "Service",
@@ -2537,7 +2418,6 @@
         ]
     },
     {
-        "text": "Drinks were good .",
         "predicted": [
             {
                 "aspect_term": "Drinks",
@@ -2555,7 +2435,6 @@
         ]
     },
     {
-        "text": "Unless you are just stopping in for a few drinks I wouldn 't recommend going here .",
         "predicted": [
             {
                 "aspect_term": "drinks",
@@ -2578,7 +2457,6 @@
         ]
     },
     {
-        "text": "You are likely to be disappointed .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2596,7 +2474,6 @@
         ]
     },
     {
-        "text": "Excellent food , nice ambience , fairly expensive",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -2634,7 +2511,6 @@
         ]
     },
     {
-        "text": "– I loved the pumpkin ravioli and the goat cheese gnocchi  (5 big ones to a plate instead of 20 or so little gnocchis ) and my sister loved her filet mignon on top of spinach and mashed potatoes .",
         "predicted": [
             {
                 "aspect_term": "pumpkin ravioli",
@@ -2677,7 +2553,6 @@
         ]
     },
     {
-        "text": "The ambiance was a peaceful and relaxing break amongst all the kids running around in Downtown Disney .",
         "predicted": [
             {
                 "aspect_term": "ambiance",
@@ -2695,7 +2570,6 @@
         ]
     },
     {
-        "text": "It was romantic - and even nice even with my sister , reminded me of Italy , and had artwork and music that kept up the feeling of being in a Mediterrean villa .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2733,7 +2607,6 @@
         ]
     },
     {
-        "text": "I recommend it for a night when you want to splurge !  (it was a bit expensive )",
         "predicted": [
             {
                 "aspect_term": "it",
@@ -2756,7 +2629,6 @@
         ]
     },
     {
-        "text": "Best Indian food in L .A .",
         "predicted": [
             {
                 "aspect_term": "Indian food",
@@ -2774,7 +2646,6 @@
         ]
     },
     {
-        "text": "The best thing is , the prices are also quite reasonable .",
         "predicted": [
             {
                 "aspect_term": "prices",
@@ -2792,7 +2663,6 @@
         ]
     },
     {
-        "text": "The chicken curry and chicken tikka masala are my favorite meat dishes .",
         "predicted": [
             {
                 "aspect_term": "chicken curry",
@@ -2820,7 +2690,6 @@
         ]
     },
     {
-        "text": "The chana masala  (garbanzo beans ) are also excellent .",
         "predicted": [
             {
                 "aspect_term": "chana masala",
@@ -2838,7 +2707,6 @@
         ]
     },
     {
-        "text": "It 's located in a strip mall near the Beverly Center , not the greatest location , but the food keeps me coming back for more .",
         "predicted": [
             {
                 "aspect_term": "location",
@@ -2866,7 +2734,6 @@
         ]
     },
     {
-        "text": "hidden little jem",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2884,7 +2751,6 @@
         ]
     },
     {
-        "text": "– tucked away over by the Beverly Center .",
         "predicted": [],
         "time": 0.5392971038818359,
         "gold": [
@@ -2896,7 +2762,6 @@
         ]
     },
     {
-        "text": "Never too crowded and always great service .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -2919,7 +2784,6 @@
         ]
     },
     {
-        "text": "I think I have probably tried each item on their menu at least once it is all excellent .",
         "predicted": [
             {
                 "aspect_term": "item",
@@ -2937,7 +2801,6 @@
         ]
     },
     {
-        "text": "I can highly recommend their various saag and paneer and korma .",
         "predicted": [
             {
                 "aspect_term": "saag and paneer and korma",
@@ -2965,7 +2828,6 @@
         ]
     },
     {
-        "text": "You routinely see Indian families and friends dining there , which is always a good sign .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -2983,7 +2845,6 @@
         ]
     },
     {
-        "text": "I appreciate their delivery too .",
         "predicted": [
             {
                 "aspect_term": "delivery",
@@ -3001,7 +2862,6 @@
         ]
     },
     {
-        "text": "Nice food but no spice !",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -3029,7 +2889,6 @@
         ]
     },
     {
-        "text": "– I really enjoyed my meal here .",
         "predicted": [
             {
                 "aspect_term": "meal",
@@ -3047,7 +2906,6 @@
         ]
     },
     {
-        "text": "I had yummy lamb korma , saag paneer , samosas , naan , etc .",
         "predicted": [
             {
                 "aspect_term": "lamb korma",
@@ -3095,7 +2953,6 @@
         ]
     },
     {
-        "text": "The food was all good but it was way too mild .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -3123,7 +2980,6 @@
         ]
     },
     {
-        "text": "Normally , places ask how hot you want it , but they didn 't .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -3141,7 +2997,6 @@
         ]
     },
     {
-        "text": "I should have thought to bring it up but never expected the food to be that mild .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -3159,7 +3014,6 @@
         ]
     },
     {
-        "text": "The naan was some of the best I 've had and I really enjoyed the bhartha , not too tomatoey .",
         "predicted": [
             {
                 "aspect_term": "naan",
@@ -3187,7 +3041,6 @@
         ]
     },
     {
-        "text": "Even the chickpeas , which I normally find too dry , were good .",
         "predicted": [
             {
                 "aspect_term": "chickpeas",
@@ -3205,7 +3058,6 @@
         ]
     },
     {
-        "text": "And they packaged everything nicely so it didn 't spill .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -3223,7 +3075,6 @@
         ]
     },
     {
-        "text": "awesome find",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -3241,7 +3092,6 @@
         ]
     },
     {
-        "text": "– I don 't understand how I was a stranger to this place for so long . . . the fajita salad , the colorado , the fajitas - EVERYTHING is delicious .",
         "predicted": [
             {
                 "aspect_term": "fajita salad",
@@ -3289,7 +3139,6 @@
         ]
     },
     {
-        "text": "I love the warm  & cosy environment .",
         "predicted": [
             {
                 "aspect_term": "environment",
@@ -3307,7 +3156,6 @@
         ]
     },
     {
-        "text": "I just found out that you can have the place to yourself on nights and weekends for a private party - can 't wait to celebrate my next birthday there .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -3330,7 +3178,6 @@
         ]
     },
     {
-        "text": "best restaurant in the world , great decor , great customer service , friendly manager",
         "predicted": [
             {
                 "aspect_term": "restaurant",
@@ -3378,7 +3225,6 @@
         ]
     },
     {
-        "text": "i am never disappointed with there food .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -3396,7 +3242,6 @@
         ]
     },
     {
-        "text": "the atmosphere is great .",
         "predicted": [
             {
                 "aspect_term": "atmosphere",
@@ -3414,7 +3259,6 @@
         ]
     },
     {
-        "text": "great lunch spot",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -3432,7 +3276,6 @@
         ]
     },
     {
-        "text": "– Great financial district mexican spot .",
         "predicted": [
             {
                 "aspect_term": "spot",
@@ -3450,7 +3293,6 @@
         ]
     },
     {
-        "text": "Always busy , but they are good at seating you promptly and have quick service .",
         "predicted": [
             {
                 "aspect_term": "seating",
@@ -3478,7 +3320,6 @@
         ]
     },
     {
-        "text": "Everything I 've had here is good , taco salads , burritos , enchiladas i love this place .",
         "predicted": [
             {
                 "aspect_term": "taco salads",
@@ -3531,7 +3372,6 @@
         ]
     },
     {
-        "text": "Also have great margaritas !",
         "predicted": [
             {
                 "aspect_term": "margaritas",
@@ -3549,7 +3389,6 @@
         ]
     },
     {
-        "text": "You can order to go if you have to get back to the office too !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -3567,7 +3406,6 @@
         ]
     },
     {
-        "text": "Lebanese Food !Yum !",
         "predicted": [
             {
                 "aspect_term": "Lebanese Food",
@@ -3585,7 +3423,6 @@
         ]
     },
     {
-        "text": "– I 've been to Open Sesame only once , but I 'm still reeling from the experience ! !",
         "predicted": [
             {
                 "aspect_term": "Open Sesame",
@@ -3603,7 +3440,6 @@
         ]
     },
     {
-        "text": "The food is simply unforgettable !",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -3621,7 +3457,6 @@
         ]
     },
     {
-        "text": "The presentation of the food was an added bonus , it looked just as great as it tasted !",
         "predicted": [
             {
                 "aspect_term": "presentation",
@@ -3649,7 +3484,6 @@
         ]
     },
     {
-        "text": "My best friend had the chicken shawarma and she STILL raves about it being the best anywhere !",
         "predicted": [
             {
                 "aspect_term": "chicken shawarma",
@@ -3667,7 +3501,6 @@
         ]
     },
     {
-        "text": "What a tastly , flaky treat !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -3685,7 +3518,6 @@
         ]
     },
     {
-        "text": "The staff are friendly and the decor was ethic and colorful .",
         "predicted": [
             {
                 "aspect_term": "staff",
@@ -3713,7 +3545,6 @@
         ]
     },
     {
-        "text": "GO TO OPEN SESAME ! ! !",
         "predicted": [],
         "time": 0.5572874546051025,
         "gold": [
@@ -3725,7 +3556,6 @@
         ]
     },
     {
-        "text": "Holy Hummus !",
         "predicted": [
             {
                 "aspect_term": "Holy Hummus",
@@ -3743,7 +3573,6 @@
         ]
     },
     {
-        "text": "– The food is here is incredible , though the quality is inconsistent during lunch .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -3771,7 +3600,6 @@
         ]
     },
     {
-        "text": "Dinners have always been excellent , in terms of food quality .",
         "predicted": [
             {
                 "aspect_term": "Dinners",
@@ -3789,7 +3617,6 @@
         ]
     },
     {
-        "text": "The open sesame combo plate is a bargain for the heap of food given .",
         "predicted": [
             {
                 "aspect_term": "open sesame combo plate",
@@ -3817,7 +3644,6 @@
         ]
     },
     {
-        "text": "The side of potatoes is to die for , as is the labne  (yogurt dip ) .",
         "predicted": [
             {
                 "aspect_term": "potatoes",
@@ -3845,7 +3671,6 @@
         ]
     },
     {
-        "text": "Also , they serve THE best hummus in America , with a drizzle of fragrant olive oil  (which , I believe is the traditional way ) !",
         "predicted": [
             {
                 "aspect_term": "hummus",
@@ -3873,7 +3698,6 @@
         ]
     },
     {
-        "text": "The only drawback is the crowded seating and the slow service .",
         "predicted": [
             {
                 "aspect_term": "seating",
@@ -3901,7 +3725,6 @@
         ]
     },
     {
-        "text": "There have been several occasions when we 've just not gotten some side dishes we 've ordered .",
         "predicted": [
             {
                 "aspect_term": "side dishes",
@@ -3919,7 +3742,6 @@
         ]
     },
     {
-        "text": "However , this place is a gem , and I won 't stop going back .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -3937,7 +3759,6 @@
         ]
     },
     {
-        "text": "great beer",
         "predicted": [
             {
                 "aspect_term": "great",
@@ -3955,7 +3776,6 @@
         ]
     },
     {
-        "text": "– My first time to dine at this restaurant was with my son and it was absolutely horrible !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -3973,7 +3793,6 @@
         ]
     },
     {
-        "text": "We waited over 30 minutes for our drinks and over 1 1 /2 hours for our food .",
         "predicted": [
             {
                 "aspect_term": "drinks",
@@ -3996,7 +3815,6 @@
         ]
     },
     {
-        "text": "I swore never to return for a warm beer and mediocre meal .",
         "predicted": [
             {
                 "aspect_term": "beer",
@@ -4024,7 +3842,6 @@
         ]
     },
     {
-        "text": "HOWEVER , one Sunday afternoon my husband and I did go  (although with my loud protests ) and were pleasantly surprised .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -4042,7 +3859,6 @@
         ]
     },
     {
-        "text": "The band was very good and the service was attentive .",
         "predicted": [
             {
                 "aspect_term": "band",
@@ -4070,7 +3886,6 @@
         ]
     },
     {
-        "text": "We ordered a selection of the small plates , and the shoe string onions , goat cheese pizza , grilled asparagus and fried brie with fruit were all very good .",
         "predicted": [
             {
                 "aspect_term": "small plates",
@@ -4123,7 +3938,6 @@
         ]
     },
     {
-        "text": "It was like dining at a completely different restaurant .",
         "predicted": [
             {
                 "aspect_term": "restaurant",
@@ -4141,7 +3955,6 @@
         ]
     },
     {
-        "text": "We have since returned and also had a great experience , sampling more small plates and a variety of the beer  ( cold and good ) .",
         "predicted": [
             {
                 "aspect_term": "small plates",
@@ -4169,7 +3982,6 @@
         ]
     },
     {
-        "text": "We did have the same waiter the second time , so maybe the service is spotty and our luck is good .",
         "predicted": [
             {
                 "aspect_term": "waiter",
@@ -4192,7 +4004,6 @@
         ]
     },
     {
-        "text": "Sunday afternoons there is a band playing and it is lots of fun .",
         "predicted": [
             {
                 "aspect_term": "band",
@@ -4210,7 +4021,6 @@
         ]
     },
     {
-        "text": "Seattle 's BEST Winelist",
         "predicted": [
             {
                 "aspect_term": "BEST",
@@ -4238,7 +4048,6 @@
         ]
     },
     {
-        "text": "– Ray 's  (suprisingly ) has the city 's BEST  & most diverse wine list .",
         "predicted": [
             {
                 "aspect_term": "wine list",
@@ -4256,7 +4065,6 @@
         ]
     },
     {
-        "text": "The sommelier is fantastic , down-to-earth ,  & extremely knowlegable .",
         "predicted": [
             {
                 "aspect_term": "sommelier",
@@ -4274,7 +4082,6 @@
         ]
     },
     {
-        "text": "I would go back for the wine experience alone .",
         "predicted": [
             {
                 "aspect_term": "wine",
@@ -4292,7 +4099,6 @@
         ]
     },
     {
-        "text": "Nice job !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -4310,7 +4116,6 @@
         ]
     },
     {
-        "text": "NOT THE PLACE IT ONCE WAS",
         "predicted": [
             {
                 "aspect_term": "PLACE",
@@ -4328,7 +4133,6 @@
         ]
     },
     {
-        "text": "– It is sad to see a place that was once  'THE ' place to meet and eat for Bfast or Lunch , now be the place that is a big  'DONT BOTHER . '",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -4346,7 +4150,6 @@
         ]
     },
     {
-        "text": "The food is not what it once was  (potions have seriously seen downsizing ) prices have gone up , and the service is the worst I have experienced anywhere  (including mainland Europe ) .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -4389,7 +4192,6 @@
         ]
     },
     {
-        "text": "What may be interesting to most is the worst sevice /attitude comes from the owners of this establishment .",
         "predicted": [
             {
                 "aspect_term": "sevice",
@@ -4412,7 +4214,6 @@
         ]
     },
     {
-        "text": "This establishment really made a marked decline after  ( and this is recurring story  ) the airing of FOOD TELEVISIONS  'DINERS , DRIVE-INS , AND DIVES ' hosted by Guy Fieri , in which Schooner or Later was subject of .",
         "predicted": [
             {
                 "aspect_term": "establishment",
@@ -4430,7 +4231,6 @@
         ]
     },
     {
-        "text": "Perhaps now , Scooner or Later falls into the  'Dive ' category .",
         "predicted": [
             {
                 "aspect_term": "Scooner or Later",
@@ -4448,7 +4248,6 @@
         ]
     },
     {
-        "text": "This is sad for what once was one of the best places you could ever eat .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -4466,7 +4265,6 @@
         ]
     },
     {
-        "text": "I hope one day Scooner or Later returns to what it once was .",
         "predicted": [
             {
                 "aspect_term": "Scooner or Later",
@@ -4484,7 +4282,6 @@
         ]
     },
     {
-        "text": "Untill this happens , my advice is to STAY AWAY .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -4502,7 +4299,6 @@
         ]
     },
     {
-        "text": "Open  & Cool Place with the Best Pizza and Coffee",
         "predicted": [],
         "time": 10.000726222991943,
         "gold": [
@@ -4524,7 +4320,6 @@
         ]
     },
     {
-        "text": "– Mioposto has a very creative  & delicious pizza menu .",
         "predicted": [
             {
                 "aspect_term": "pizza menu",
@@ -4547,7 +4342,6 @@
         ]
     },
     {
-        "text": "The coffe is very good , too .",
         "predicted": [
             {
                 "aspect_term": "coffe",
@@ -4565,7 +4359,6 @@
         ]
     },
     {
-        "text": "Great open and friendly ambience .",
         "predicted": [
             {
                 "aspect_term": "ambience",
@@ -4583,7 +4376,6 @@
         ]
     },
     {
-        "text": "This place is charming and relaxing .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -4601,7 +4393,6 @@
         ]
     },
     {
-        "text": "The servers behind the counter are always friendly and helpful .",
         "predicted": [
             {
                 "aspect_term": "servers",
@@ -4619,7 +4410,6 @@
         ]
     },
     {
-        "text": "It 's a great place to enjoy food and meet friends .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -4642,7 +4432,6 @@
         ]
     },
     {
-        "text": "Old Reliable",
         "predicted": [
             {
                 "aspect_term": "Old",
@@ -4660,7 +4449,6 @@
         ]
     },
     {
-        "text": "– After 12 years in Seattle Ray 's rates as the place we always go back to .",
         "predicted": [
             {
                 "aspect_term": "Ray 's",
@@ -4678,7 +4466,6 @@
         ]
     },
     {
-        "text": "Great food , spectacular location , and friendly service keep us coming back year after year .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -4716,7 +4503,6 @@
         ]
     },
     {
-        "text": "Enjoyed the food",
         "predicted": [
             {
                 "aspect_term": "the",
@@ -4734,7 +4520,6 @@
         ]
     },
     {
-        "text": "I liked it .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -4752,7 +4537,6 @@
         ]
     },
     {
-        "text": "Food was good and cheap .",
         "predicted": [
             {
                 "aspect_term": "Food",
@@ -4780,7 +4564,6 @@
         ]
     },
     {
-        "text": "I had the kafta plate and I enjoyed it .",
         "predicted": [
             {
                 "aspect_term": "kafta plate",
@@ -4798,7 +4581,6 @@
         ]
     },
     {
-        "text": "It was so much though that I could barely finish but I did , since it was delicious .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -4821,7 +4603,6 @@
         ]
     },
     {
-        "text": "Atmosphere was nice .",
         "predicted": [
             {
                 "aspect_term": "Atmosphere",
@@ -4839,7 +4620,6 @@
         ]
     },
     {
-        "text": "Service was kind of slow , our waitress took forever to give us our check even though it wasn 't that busy .",
         "predicted": [
             {
                 "aspect_term": "Service",
@@ -4862,7 +4642,6 @@
         ]
     },
     {
-        "text": "Still I would recommend this place .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -4880,7 +4659,6 @@
         ]
     },
     {
-        "text": "WOW ! ! ! ! ! ! ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -4898,7 +4676,6 @@
         ]
     },
     {
-        "text": "– IT CANT GET ANY BETTER ! ! ! ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -4916,7 +4693,6 @@
         ]
     },
     {
-        "text": "WHAT ELSE CAN YOU SAY NICE PEOPLE AMAZING FOOD WOW",
         "predicted": [
             {
                 "aspect_term": "PEOPLE",
@@ -4949,7 +4725,6 @@
         ]
     },
     {
-        "text": "Great food with an awesome atmosphere !",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -4977,7 +4752,6 @@
         ]
     },
     {
-        "text": "– Eggs , pancakes , potatoes , fresh fruit and yogurt -- everything they serve is delicious .",
         "predicted": [
             {
                 "aspect_term": "Eggs",
@@ -5040,7 +4814,6 @@
         ]
     },
     {
-        "text": "The best place for a leisure Sunday breakfast amidst yachts , then take a stroll through the nearby Farmer 's Market .",
         "predicted": [
             {
                 "aspect_term": "breakfast",
@@ -5058,7 +4831,6 @@
         ]
     },
     {
-        "text": "great meal – the fish on the omikase platter was absolutely decadent -- there was none of the stringiness that sometimes accompanies fair sushi -- this fish was perfect ! ! ! !",
         "predicted": [
             {
                 "aspect_term": "fish",
@@ -5091,7 +4863,6 @@
         ]
     },
     {
-        "text": "plus , i am allergic to rice , and the waitstaff was unbelievably accomodating -- didn 't even bat an eye !",
         "predicted": [
             {
                 "aspect_term": "waitstaff",
@@ -5109,7 +4880,6 @@
         ]
     },
     {
-        "text": "and the waiter suggested a perfect sake ! !",
         "predicted": [
             {
                 "aspect_term": "waiter",
@@ -5137,7 +4907,6 @@
         ]
     },
     {
-        "text": "absolutely fabulous ! ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5155,7 +4924,6 @@
         ]
     },
     {
-        "text": "Unbeatable sushi !",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -5173,7 +4941,6 @@
         ]
     },
     {
-        "text": "Two thumbs up !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5191,7 +4958,6 @@
         ]
     },
     {
-        "text": "This is right up there with places in Tokyo as far as the freshness is concerned .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5209,7 +4975,6 @@
         ]
     },
     {
-        "text": "Melt in your mouth nigiri and sashmi , and very tasty rolls too .",
         "predicted": [
             {
                 "aspect_term": "nigiri",
@@ -5247,7 +5012,6 @@
         ]
     },
     {
-        "text": "Be sure to try the oyster roll .",
         "predicted": [
             {
                 "aspect_term": "oyster roll",
@@ -5265,7 +5029,6 @@
         ]
     },
     {
-        "text": "splendid",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5283,7 +5046,6 @@
         ]
     },
     {
-        "text": "– How to describe the best sushi in NYC : hmmmm , delicious , amazing , fantastic , suculent , perfect , nah , all of the above .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -5301,7 +5063,6 @@
         ]
     },
     {
-        "text": "I can 't saybenough good things about this restaurant , and I can 't wait for my next several visits .",
         "predicted": [
             {
                 "aspect_term": "restaurant",
@@ -5319,7 +5080,6 @@
         ]
     },
     {
-        "text": "The best Chuwam Mushi I have ever had .",
         "predicted": [
             {
                 "aspect_term": "Chuwam Mushi",
@@ -5337,7 +5097,6 @@
         ]
     },
     {
-        "text": "Perfect on a cold day .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5355,7 +5114,6 @@
         ]
     },
     {
-        "text": "$6 with tip .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5373,7 +5131,6 @@
         ]
     },
     {
-        "text": "Perfection .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5391,7 +5148,6 @@
         ]
     },
     {
-        "text": "Good Sushi , High Price ",
         "predicted": [
             {
                 "aspect_term": "Sushi",
@@ -5419,7 +5175,6 @@
         ]
     },
     {
-        "text": "One of the best Sushi place in town .",
         "predicted": [
             {
                 "aspect_term": "Sushi",
@@ -5437,7 +5192,6 @@
         ]
     },
     {
-        "text": "The house special roll is really good .",
         "predicted": [
             {
                 "aspect_term": "house special roll",
@@ -5455,7 +5209,6 @@
         ]
     },
     {
-        "text": "On weekends , you might have to wait for couple hours .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5473,7 +5226,6 @@
         ]
     },
     {
-        "text": "However , they do take your cellphone numbers so that you can go hang out somewhere else till they call you up on your cellphone .",
         "predicted": [
             {
                 "aspect_term": "cellphone numbers",
@@ -5491,7 +5243,6 @@
         ]
     },
     {
-        "text": "A cozy spot for 2",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5509,7 +5260,6 @@
         ]
     },
     {
-        "text": "– I can 't believe Murphy 's has been around for over 25 years , amazing .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5527,7 +5277,6 @@
         ]
     },
     {
-        "text": "That 's a huge compliment , especially in the fickled restaurant business ,  . . .enough already !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5545,7 +5294,6 @@
         ]
     },
     {
-        "text": "Brunch at Murphy 's is to die for , my specialty . . . egg white omelet , the food is always freshly prepared .",
         "predicted": [
             {
                 "aspect_term": "Brunch",
@@ -5583,7 +5331,6 @@
         ]
     },
     {
-        "text": "It 's the perfect spot for a romantic date for 2 or a secret rendezvous !",
         "predicted": [
             {
                 "aspect_term": "spot",
@@ -5606,7 +5353,6 @@
         ]
     },
     {
-        "text": "Save room for  scrumptious desserts .",
         "predicted": [
             {
                 "aspect_term": "desserts",
@@ -5624,7 +5370,6 @@
         ]
     },
     {
-        "text": "The restaurant offers an extensive wine list and an ambiance you won 't forget !",
         "predicted": [
             {
                 "aspect_term": "wine list",
@@ -5652,7 +5397,6 @@
         ]
     },
     {
-        "text": "I guarantee you won 't be disappointed , there 's also valet parking .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5680,7 +5424,6 @@
         ]
     },
     {
-        "text": "Addicting !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5698,7 +5441,6 @@
         ]
     },
     {
-        "text": "– Best Mexican place for lunch in the financial district .",
         "predicted": [
             {
                 "aspect_term": "Mexican",
@@ -5721,7 +5463,6 @@
         ]
     },
     {
-        "text": "Love the enchiladas and chicken soup - and be sure to check out their specials .",
         "predicted": [
             {
                 "aspect_term": "enchiladas",
@@ -5754,7 +5495,6 @@
         ]
     },
     {
-        "text": "The cooks have been at the restaurant for years and cook family recipes .",
         "predicted": [
             {
                 "aspect_term": "cooks",
@@ -5777,7 +5517,6 @@
         ]
     },
     {
-        "text": "Can get busy on Fridays for a table but once seated , the service is so efficient you can be in and out of there quickly .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -5795,7 +5534,6 @@
         ]
     },
     {
-        "text": "I went there with a friend from out of town . . . and we were both very impressed !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5813,7 +5551,6 @@
         ]
     },
     {
-        "text": "The sushi was excellent and the wait staff was quick .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -5841,7 +5578,6 @@
         ]
     },
     {
-        "text": "The price was right too .",
         "predicted": [
             {
                 "aspect_term": "price",
@@ -5859,7 +5595,6 @@
         ]
     },
     {
-        "text": "The atmosphere was just okay .",
         "predicted": [
             {
                 "aspect_term": "atmosphere",
@@ -5877,7 +5612,6 @@
         ]
     },
     {
-        "text": "Space was limited , but the food made up for it .",
         "predicted": [
             {
                 "aspect_term": "Space",
@@ -5905,7 +5639,6 @@
         ]
     },
     {
-        "text": "I 'd go back there in a heartbeat .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -5923,7 +5656,6 @@
         ]
     },
     {
-        "text": "Well I guess it 's hard to be seated when one is invisible to the staff .",
         "predicted": [
             {
                 "aspect_term": "staff",
@@ -5941,7 +5673,6 @@
         ]
     },
     {
-        "text": "We stood there for 10 minutes while employees walked back and forth ignoring us .",
         "predicted": [
             {
                 "aspect_term": "employees",
@@ -5959,7 +5690,6 @@
         ]
     },
     {
-        "text": "Finally , my wife stood face to face in front of one of the staff and she asked ,  'Are you waiting for a table ? '",
         "predicted": [],
         "time": 0.5588068962097168,
         "gold": [
@@ -5971,7 +5701,6 @@
         ]
     },
     {
-        "text": "Once seated it took about 30 minutes to finally get the meal .",
         "predicted": [
             {
                 "aspect_term": "meal",
@@ -5989,7 +5718,6 @@
         ]
     },
     {
-        "text": "The prior reviews said Kid friendly . . . give me a break with two young children that is light years .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6007,7 +5735,6 @@
         ]
     },
     {
-        "text": "The Caesar salad I ordered had so much lemon I couldn 't eat it .",
         "predicted": [
             {
                 "aspect_term": "Caesar salad",
@@ -6025,7 +5752,6 @@
         ]
     },
     {
-        "text": "It was decent but nothing exceptional .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6043,7 +5769,6 @@
         ]
     },
     {
-        "text": "Great food , better Margaritas !",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -6071,7 +5796,6 @@
         ]
     },
     {
-        "text": "– This is one of my top lunch spots , huge portions , fast service and amazing margaritas ! !",
         "predicted": [
             {
                 "aspect_term": "lunch spots",
@@ -6119,7 +5843,6 @@
         ]
     },
     {
-        "text": "it gets really busy , so get there on the early side so you can grab a seat , if you do have to wait , its not bad because the service is quick !",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -6137,7 +5860,6 @@
         ]
     },
     {
-        "text": "Check out the art on the walls , very colorful !",
         "predicted": [
             {
                 "aspect_term": "art",
@@ -6155,7 +5877,6 @@
         ]
     },
     {
-        "text": "i love this place !",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -6173,7 +5894,6 @@
         ]
     },
     {
-        "text": "– i have been eating at this place for over 8 years now and i have never had one bad meal .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6191,7 +5911,6 @@
         ]
     },
     {
-        "text": "i highly recommend this place to all that want to try indain food for the first time .",
         "predicted": [
             {
                 "aspect_term": "indain food",
@@ -6209,7 +5928,6 @@
         ]
     },
     {
-        "text": "The lunch menu is an awesome deal !",
         "predicted": [
             {
                 "aspect_term": "lunch menu",
@@ -6227,7 +5945,6 @@
         ]
     },
     {
-        "text": "plenty of food ,trust me  .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -6245,7 +5962,6 @@
         ]
     },
     {
-        "text": "Fresh ingrediants and super tasty .",
         "predicted": [
             {
                 "aspect_term": "ingrediants",
@@ -6273,7 +5989,6 @@
         ]
     },
     {
-        "text": "The place is the next best thing to my Moms cooking .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -6291,7 +6006,6 @@
         ]
     },
     {
-        "text": "Best food , phenominal service ",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -6319,7 +6033,6 @@
         ]
     },
     {
-        "text": "For the finicky sushi eater and those who have sampled the best NYC has to offer , the fish is the freshest and the service is superb .",
         "predicted": [
             {
                 "aspect_term": "fish",
@@ -6347,7 +6060,6 @@
         ]
     },
     {
-        "text": "Not only can the selection be innovative , but there 's a nice balance of traditional sushi as well .",
         "predicted": [
             {
                 "aspect_term": "selection",
@@ -6375,7 +6087,6 @@
         ]
     },
     {
-        "text": "The nicest waiters in town .",
         "predicted": [
             {
                 "aspect_term": "waiters",
@@ -6393,7 +6104,6 @@
         ]
     },
     {
-        "text": "WAY OVER-RATED ! ! ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6411,7 +6121,6 @@
         ]
     },
     {
-        "text": "– This place is unbelievably over-rated .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6429,7 +6138,6 @@
         ]
     },
     {
-        "text": "If I want to stand in line on Sunday for an hour to get average brunch food , then I would put Murphy 's at the top of the list .",
         "predicted": [
             {
                 "aspect_term": "brunch food",
@@ -6452,7 +6160,6 @@
         ]
     },
     {
-        "text": "The regular menu here is slightly above average that is not worth the snotty attitude that you receive .",
         "predicted": [
             {
                 "aspect_term": "menu",
@@ -6480,7 +6187,6 @@
         ]
     },
     {
-        "text": "10 !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6498,7 +6204,6 @@
         ]
     },
     {
-        "text": "Your a sushi fan , you love expertly cut fish , great sake , a killer SOHO location , and of course : Salmon , Tuna , Fluke , Yellow Tail , Cod , Mackeral , Jellyfish , Sea Urchin , Shrimp , Lobster , Sea Bream , Trout , Milk Fish , Blue Fin Tuna , Eel , Crab , Sardine , Monk Fish , Roe , Scallop , Oysters , and a varity of Toro .",
         "predicted": [],
         "time": 10.002929449081421,
         "gold": [
@@ -6635,7 +6340,6 @@
         ]
     },
     {
-        "text": "There is only one place on the east coast that has it all , plus a lot more .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6653,7 +6357,6 @@
         ]
     },
     {
-        "text": "Bring your cell phone cause you may have to wait to get into the best sushi restaurant in the world : BLUE RIBBON SUSHI .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -6676,7 +6379,6 @@
         ]
     },
     {
-        "text": "Cut to the chase - this is amazing !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6694,7 +6396,6 @@
         ]
     },
     {
-        "text": "It 's unpretentious and underground .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6712,7 +6413,6 @@
         ]
     },
     {
-        "text": "It 's fresh , welcoming , delicious , and relaxing .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6735,7 +6435,6 @@
         ]
     },
     {
-        "text": "Hands down , the best tuna I have ever had .",
         "predicted": [
             {
                 "aspect_term": "tuna",
@@ -6753,7 +6452,6 @@
         ]
     },
     {
-        "text": "Blue Ribbon lives up to it 's fantastic reputation .",
         "predicted": [
             {
                 "aspect_term": "Blue Ribbon",
@@ -6771,7 +6469,6 @@
         ]
     },
     {
-        "text": "I went here on a recommendation and will surely return time and time again .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6789,7 +6486,6 @@
         ]
     },
     {
-        "text": "What a find !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6807,7 +6503,6 @@
         ]
     },
     {
-        "text": "Well worth it ",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6825,7 +6520,6 @@
         ]
     },
     {
-        "text": "Great value sushi with high quality  & nice setting .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -6858,7 +6552,6 @@
         ]
     },
     {
-        "text": "Good for late night dining  (last minute planning ) without reservations .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -6876,7 +6569,6 @@
         ]
     },
     {
-        "text": "Try the Chef 's Choice for sushi as the smoked yellowtail was incredible and the rolls were also tasty .",
         "predicted": [
             {
                 "aspect_term": "Chef 's Choice",
@@ -6914,7 +6606,6 @@
         ]
     },
     {
-        "text": "Poor customer service /poor pizza .",
         "predicted": [
             {
                 "aspect_term": "customer service",
@@ -6942,7 +6633,6 @@
         ]
     },
     {
-        "text": "– As with most restaurants in Seattle , Mioposto 's service was bad and the food was overpriced .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -6970,7 +6660,6 @@
         ]
     },
     {
-        "text": "I know many people have their favorite types of pizza and pizza places , but Mioposto 's pizza lacks quality and good taste .",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -6988,7 +6677,6 @@
         ]
     },
     {
-        "text": "To be honest , I 've had better frozen pizza .",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -7006,7 +6694,6 @@
         ]
     },
     {
-        "text": "The only positive thing about Mioposto is the nice location .",
         "predicted": [
             {
                 "aspect_term": "location",
@@ -7029,7 +6716,6 @@
         ]
     },
     {
-        "text": "Love it every time ",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7047,7 +6733,6 @@
         ]
     },
     {
-        "text": "I was frankly shocked when I read the bad reviews - this place is fantastic ; it has not let us down in any way , and we 've eaten here more than 10 times .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -7065,7 +6750,6 @@
         ]
     },
     {
-        "text": "The food is fantastic , and the waiting staff has been perfect every single time we 've been there .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -7093,7 +6777,6 @@
         ]
     },
     {
-        "text": "The only problem would be the wait , but we usually just have a drink in the front while waiting .",
         "predicted": [
             {
                 "aspect_term": "wait",
@@ -7116,7 +6799,6 @@
         ]
     },
     {
-        "text": "Never had one single problem there .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7134,7 +6816,6 @@
         ]
     },
     {
-        "text": "Seafood Plus",
         "predicted": [
             {
                 "aspect_term": "Seafood",
@@ -7152,7 +6833,6 @@
         ]
     },
     {
-        "text": "– This was  great dining experience .",
         "predicted": [
             {
                 "aspect_term": "dining experience",
@@ -7170,7 +6850,6 @@
         ]
     },
     {
-        "text": "If you 're going to see Danny Gans or just staying at the Mirage , don 't miss this one .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7188,7 +6867,6 @@
         ]
     },
     {
-        "text": "The appetizer of oysters , lobster , crab  (small size ) made a perfect entre for my wife .",
         "predicted": [
             {
                 "aspect_term": "appetizer",
@@ -7206,7 +6884,6 @@
         ]
     },
     {
-        "text": "Seabass on lobster risotto was the best .",
         "predicted": [
             {
                 "aspect_term": "Seabass",
@@ -7229,7 +6906,6 @@
         ]
     },
     {
-        "text": "Caesar salad was superb .",
         "predicted": [
             {
                 "aspect_term": "Caesar salad",
@@ -7247,7 +6923,6 @@
         ]
     },
     {
-        "text": "Great bottle of wine .",
         "predicted": [
             {
                 "aspect_term": "bottle of wine",
@@ -7265,7 +6940,6 @@
         ]
     },
     {
-        "text": "Leave room for dessert .",
         "predicted": [
             {
                 "aspect_term": "dessert",
@@ -7283,7 +6957,6 @@
         ]
     },
     {
-        "text": "COMPLETELY OVER RATED !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7301,7 +6974,6 @@
         ]
     },
     {
-        "text": "The food was ok , but the service was so poor that the food was cold buy the time everyone in my party was served .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -7329,7 +7001,6 @@
         ]
     },
     {
-        "text": "Even then , the order was not correct and we were still waiting for a couple items .",
         "predicted": [
             {
                 "aspect_term": "order",
@@ -7352,7 +7023,6 @@
         ]
     },
     {
-        "text": "We had a very hard time getting the waitress ' attention and finally had to get up and go inside to speak to a manager .",
         "predicted": [
             {
                 "aspect_term": "waitress",
@@ -7375,7 +7045,6 @@
         ]
     },
     {
-        "text": "As it turns out the owner was seated right next to us and when he came over to check on our problems was very dismissive and offered a token 20 % discount on our bill .",
         "predicted": [
             {
                 "aspect_term": "owner",
@@ -7398,7 +7067,6 @@
         ]
     },
     {
-        "text": "When the bill came , he only took the discount off the food and not the drinks .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -7421,7 +7089,6 @@
         ]
     },
     {
-        "text": "It was clear he didn’t really care .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7439,7 +7106,6 @@
         ]
     },
     {
-        "text": "AVOID THE PLACE",
         "predicted": [
             {
                 "aspect_term": "THE",
@@ -7457,7 +7123,6 @@
         ]
     },
     {
-        "text": "– Save yourself the waste of time  & DO NOT visit .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7475,7 +7140,6 @@
         ]
     },
     {
-        "text": "When I got there I sat up stairs where the atmosphere was cozy  & the service was horrible !",
         "predicted": [
             {
                 "aspect_term": "atmosphere",
@@ -7503,7 +7167,6 @@
         ]
     },
     {
-        "text": "I waited for 10-15 minutes for service ordered a beer  & was never served again .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -7526,7 +7189,6 @@
         ]
     },
     {
-        "text": "After sitting there with my empty glass for over 20 minutes I left .",
         "predicted": [
             {
                 "aspect_term": "glass",
@@ -7544,7 +7206,6 @@
         ]
     },
     {
-        "text": "I went home  & looked them up online again where I discovered there is a link for a give away that doesn 't work so emailed the restaurant about the non existent service  & deceptive link .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -7567,7 +7228,6 @@
         ]
     },
     {
-        "text": "I never heard back from anyone more than a month ago .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7585,7 +7245,6 @@
         ]
     },
     {
-        "text": "After sitting at the bar for over 20 minutes the bar keep had made only 2 drinks  & kept telling us she 'd be right with us .",
         "predicted": [
             {
                 "aspect_term": "drinks",
@@ -7608,7 +7267,6 @@
         ]
     },
     {
-        "text": "We left without ever getting service .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -7626,7 +7284,6 @@
         ]
     },
     {
-        "text": "As of writing this I just tried their give away a link again  & it still doesn 't work .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7644,7 +7301,6 @@
         ]
     },
     {
-        "text": "Best Crab Cakes in Town",
         "predicted": [
             {
                 "aspect_term": "Crab Cakes",
@@ -7662,7 +7318,6 @@
         ]
     },
     {
-        "text": "– Thats a big statement considering I 've been pulling crab traps and making the cakes myself since I was about seven - but something about these little devils gets better every time .",
         "predicted": [
             {
                 "aspect_term": "cakes",
@@ -7680,7 +7335,6 @@
         ]
     },
     {
-        "text": "If you can , come to this place by boat and make it a whole evening .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -7698,7 +7352,6 @@
         ]
     },
     {
-        "text": "Great seasonal fish and seafood , with a classy waterfront setting .",
         "predicted": [
             {
                 "aspect_term": "fish",
@@ -7736,7 +7389,6 @@
         ]
     },
     {
-        "text": "Always a winner .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7754,7 +7406,6 @@
         ]
     },
     {
-        "text": "Great Pizza , Poor Service",
         "predicted": [
             {
                 "aspect_term": "Pizza",
@@ -7782,7 +7433,6 @@
         ]
     },
     {
-        "text": "– Love their pizza , especially the mushroom pizza .",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -7810,7 +7460,6 @@
         ]
     },
     {
-        "text": "Also love their caeser salad .",
         "predicted": [
             {
                 "aspect_term": "caeser salad",
@@ -7828,7 +7477,6 @@
         ]
     },
     {
-        "text": "Prefer to order it and pick it up though because I don 't like the servers , one young woman in particular .",
         "predicted": [
             {
                 "aspect_term": "servers",
@@ -7856,7 +7504,6 @@
         ]
     },
     {
-        "text": "She doesn 't make you feel welcome and treats you like an annoyance .",
         "predicted": [
             {
                 "aspect_term": "She",
@@ -7874,7 +7521,6 @@
         ]
     },
     {
-        "text": "But she is very friendly with certain people , making it even more annoying .",
         "predicted": [
             {
                 "aspect_term": "she",
@@ -7892,7 +7538,6 @@
         ]
     },
     {
-        "text": "Management should really take notice and train their waitstaff and teach them some proper manners .",
         "predicted": [
             {
                 "aspect_term": "waitstaff",
@@ -7915,7 +7560,6 @@
         ]
     },
     {
-        "text": "Many people talk about the great pizza and poor service , so it can 't just be the rantings of a few dissatisfied customers .",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -7943,7 +7587,6 @@
         ]
     },
     {
-        "text": "It 's a great little place with tons of potential to be a neighborhood joint if the service weren 't so impersonal and corporate-like .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -7971,7 +7614,6 @@
         ]
     },
     {
-        "text": "Great Breakfast",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -7989,7 +7631,6 @@
         ]
     },
     {
-        "text": "– This place is famous for their breakfast .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -8012,7 +7653,6 @@
         ]
     },
     {
-        "text": "They have been featured on the food network and they deserve it .",
         "predicted": [
             {
                 "aspect_term": "food network",
@@ -8030,7 +7670,6 @@
         ]
     },
     {
-        "text": "The food is great and they make a mean bloody mary .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -8058,7 +7697,6 @@
         ]
     },
     {
-        "text": "I love breakfast here .",
         "predicted": [
             {
                 "aspect_term": "breakfast",
@@ -8076,7 +7714,6 @@
         ]
     },
     {
-        "text": "Their crab eggs benedict is addicting .",
         "predicted": [
             {
                 "aspect_term": "crab eggs benedict",
@@ -8094,7 +7731,6 @@
         ]
     },
     {
-        "text": "All their menu items are a hit , and they serve mimosas .",
         "predicted": [
             {
                 "aspect_term": "menu items",
@@ -8122,7 +7758,6 @@
         ]
     },
     {
-        "text": "Doesn 't get any better than that .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8140,7 +7775,6 @@
         ]
     },
     {
-        "text": "best chinese food i have tasted in a long time",
         "predicted": [
             {
                 "aspect_term": "chinese food",
@@ -8158,7 +7792,6 @@
         ]
     },
     {
-        "text": "You can easily hear him though so it was a pleasant sound and not overbearing .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8176,7 +7809,6 @@
         ]
     },
     {
-        "text": "the ambiance of the restaurant was nice and good for fine dinning .",
         "predicted": [
             {
                 "aspect_term": "ambiance",
@@ -8194,7 +7826,6 @@
         ]
     },
     {
-        "text": "not too fine thought that you feel uncomfortable and have to dress up .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8212,7 +7843,6 @@
         ]
     },
     {
-        "text": "the staff was very nice and courteous and obviously chinese .",
         "predicted": [
             {
                 "aspect_term": "staff",
@@ -8230,7 +7860,6 @@
         ]
     },
     {
-        "text": "First off , the food came fast and all together  : ) i like that . . . i hate the pretentiousness of things coming in one after the other .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -8253,7 +7882,6 @@
         ]
     },
     {
-        "text": "so about the prawns , they were fresh and had a slight crispiness about the batter . . . soooo good . . . the walnuts were cut in smaller pieces and very crunchy and tasty .",
         "predicted": [
             {
                 "aspect_term": "prawns",
@@ -8286,7 +7914,6 @@
         ]
     },
     {
-        "text": "yummy .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8304,7 +7931,6 @@
         ]
     },
     {
-        "text": "best honey walnyt prawns that we have every tasted .",
         "predicted": [
             {
                 "aspect_term": "honey walnyt prawns",
@@ -8322,7 +7948,6 @@
         ]
     },
     {
-        "text": "the brocollis were so fresh and tasty .",
         "predicted": [
             {
                 "aspect_term": "brocollis",
@@ -8340,7 +7965,6 @@
         ]
     },
     {
-        "text": "i would normally not finish the brocolli when i order these kinds of food but for the first time , every piece was as eventful as the first one . . . the scallops and prawns was so fresh and nicely cooked .",
         "predicted": [
             {
                 "aspect_term": "brocolli",
@@ -8378,7 +8002,6 @@
         ]
     },
     {
-        "text": "not chewy at all .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8396,7 +8019,6 @@
         ]
     },
     {
-        "text": "for desert we had the mango ginger creme brulee . . . oh la la yummy ! ! !",
         "predicted": [
             {
                 "aspect_term": "mango ginger creme brulee",
@@ -8414,7 +8036,6 @@
         ]
     },
     {
-        "text": "melt in your mouth .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8432,7 +8053,6 @@
         ]
     },
     {
-        "text": "we are for sure coming back to this restaurant .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8450,7 +8070,6 @@
         ]
     },
     {
-        "text": "it is sad there is not many people who frequent eating at places like these that look pricey because they are at the hotel . . . but they are definitely one you dont want to miss , esp if your in downtown san jose .",
         "predicted": [
             {
                 "aspect_term": "places",
@@ -8478,7 +8097,6 @@
         ]
     },
     {
-        "text": "Chintzy portions",
         "predicted": [
             {
                 "aspect_term": "Chintzy",
@@ -8496,7 +8114,6 @@
         ]
     },
     {
-        "text": "– The sushi here is perfectly good , but for  $5 a piece , either the slices of fish should be larger , or there should be no pretense that this is a moderately priced restaurant  (even for NYC ) .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -8539,7 +8156,6 @@
         ]
     },
     {
-        "text": "We easily spent more than  $40 per person  (not including alcohol ) and were still hungry .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8562,7 +8178,6 @@
         ]
     },
     {
-        "text": "I 'm astonished that this restaurant is categorized as  $ $ $ rather than  $ $ $ $ .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8580,7 +8195,6 @@
         ]
     },
     {
-        "text": "Terrible service , food ok , pricey",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -8618,7 +8232,6 @@
         ]
     },
     {
-        "text": "We put out name down and although there were open tables we were told that it 'd be a 30 minute wait .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8636,7 +8249,6 @@
         ]
     },
     {
-        "text": "We went back to the restaurant and low and behold , we were seated at one of the tables that was available 30 minutes ago ! !",
         "predicted": [
             {
                 "aspect_term": "tables",
@@ -8654,7 +8266,6 @@
         ]
     },
     {
-        "text": "None that I can think of .",
         "predicted": [],
         "time": 0.5065319538116455,
         "gold": [
@@ -8666,7 +8277,6 @@
         ]
     },
     {
-        "text": "We put in our order and although we ordered 4 appetizers , the food didn 't arrive until 45 minutes later . . .WITH OUR MAIN COURSE .",
         "predicted": [
             {
                 "aspect_term": "appetizers",
@@ -8689,7 +8299,6 @@
         ]
     },
     {
-        "text": "Um so now what are appetizers for ? ? ?",
         "predicted": [
             {
                 "aspect_term": "appetizers",
@@ -8707,7 +8316,6 @@
         ]
     },
     {
-        "text": "Oh I forgot to mention that they don 't have bread service .",
         "predicted": [
             {
                 "aspect_term": "bread service",
@@ -8725,7 +8333,6 @@
         ]
     },
     {
-        "text": "My wife also ordered a teapot of hot water  (she had a sore throat ) and I guess that since it was only water , it wasn 't a priority for them to actually bring it .",
         "predicted": [
             {
                 "aspect_term": "hot water",
@@ -8743,7 +8350,6 @@
         ]
     },
     {
-        "text": "In other words , if they aren 't making  $ $ off of you then you don 't rate high on their  'service scale ' .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8761,7 +8367,6 @@
         ]
     },
     {
-        "text": "Food wise , its ok but a bit pricey for what you get considering the restaurant isn 't a fancy place .",
         "predicted": [
             {
                 "aspect_term": "Food",
@@ -8794,7 +8399,6 @@
         ]
     },
     {
-        "text": "If I needed to name some they would include the location to the beach or Golden Gate park .",
         "predicted": [
             {
                 "aspect_term": "location",
@@ -8812,7 +8416,6 @@
         ]
     },
     {
-        "text": "Its great if you spent the day there and didn 't want to drive to eat .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8830,7 +8433,6 @@
         ]
     },
     {
-        "text": "Parking is reasonably good , they have their own lot and you can park in the park nearby .",
         "predicted": [
             {
                 "aspect_term": "Parking",
@@ -8848,7 +8450,6 @@
         ]
     },
     {
-        "text": "Another plus is the open feel of the restaurant with glass walls on all sides .",
         "predicted": [
             {
                 "aspect_term": "restaurant",
@@ -8876,7 +8477,6 @@
         ]
     },
     {
-        "text": "Always good .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8894,7 +8494,6 @@
         ]
     },
     {
-        "text": "6pm on a Sat before a Broadway play and we were quickly seated and served .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -8912,7 +8511,6 @@
         ]
     },
     {
-        "text": "Amazing Spanish Mackeral special appetizer and perfect box sushi  (that eel with avodcao -- um um um ) .",
         "predicted": [
             {
                 "aspect_term": "Spanish Mackeral",
@@ -8945,7 +8543,6 @@
         ]
     },
     {
-        "text": "As usual the omikase didn 't disappoint in freshness , although it scored low on creativity and selection .",
         "predicted": [
             {
                 "aspect_term": "omikase",
@@ -8973,7 +8570,6 @@
         ]
     },
     {
-        "text": "Their specialty rolls are impressive , though I can 't remember what we had .",
         "predicted": [
             {
                 "aspect_term": "specialty rolls",
@@ -8991,7 +8587,6 @@
         ]
     },
     {
-        "text": "Great selection of sakes .",
         "predicted": [
             {
                 "aspect_term": "selection",
@@ -9009,7 +8604,6 @@
         ]
     },
     {
-        "text": "Green tea creme brulee gets better each time I have it .",
         "predicted": [
             {
                 "aspect_term": "Green tea creme brulee",
@@ -9027,7 +8621,6 @@
         ]
     },
     {
-        "text": "It isn 't the cheapest sushi but has been worth it every time .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -9055,7 +8648,6 @@
         ]
     },
     {
-        "text": "Very poor customer service .",
         "predicted": [
             {
                 "aspect_term": "customer service",
@@ -9073,7 +8665,6 @@
         ]
     },
     {
-        "text": "– Schooner or Later 's charming location along the marina in Long Beach and average food does not , unfortunately , compensate for its very poor customer service .",
         "predicted": [
             {
                 "aspect_term": "location",
@@ -9111,7 +8702,6 @@
         ]
     },
     {
-        "text": "While this diner had reasonably good food , the restaurant staff seemed completely indifferent to our presence , and this attitude was reflected in the lack of service .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -9144,7 +8734,6 @@
         ]
     },
     {
-        "text": "As part of a small party of four , our food was dropped off without comment ;",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -9162,7 +8751,6 @@
         ]
     },
     {
-        "text": "any further needs we may have had could not have been met since no one stopped by the table .",
         "predicted": [
             {
                 "aspect_term": "table",
@@ -9180,7 +8768,6 @@
         ]
     },
     {
-        "text": "When we finally were able to flag someone down , it was someone entirely different from the person who had dropped off the food , who was also not the same person who had taken our order .",
         "predicted": [
             {
                 "aspect_term": "someone",
@@ -9198,7 +8785,6 @@
         ]
     },
     {
-        "text": "After one member of our party had been bumped repeatedly by a waitress , a polite request that he not be bumped sent the waitress into an abusive rant .",
         "predicted": [
             {
                 "aspect_term": "waitress",
@@ -9216,7 +8802,6 @@
         ]
     },
     {
-        "text": "A brief conversation with the manager at the end of the meal was the greatest disappointment--to say we had been  'blown off ' would be an understatement .",
         "predicted": [
             {
                 "aspect_term": "manager",
@@ -9234,7 +8819,6 @@
         ]
     },
     {
-        "text": "The manager continually interrupted with  'Is there anything else I can do for you ? ' , a strange comment because she had hardly listened , let alone responded to our expression of disappointment at our experience .",
         "predicted": [
             {
                 "aspect_term": "manager",
@@ -9252,7 +8836,6 @@
         ]
     },
     {
-        "text": "She promised to speak to the waitress who had flown off in a rage , but we could hardly take her promise seriously , seeing as she hadn 't bothered to get the waitresses name .",
         "predicted": [
             {
                 "aspect_term": "waitress",
@@ -9270,7 +8853,6 @@
         ]
     },
     {
-        "text": "In short , Schooner or Later couldn 't have cared less about our being at their establishment .",
         "predicted": [
             {
                 "aspect_term": "Schooner or Later",
@@ -9288,7 +8870,6 @@
         ]
     },
     {
-        "text": "you are with a hot date and he /she has an urge for sushi . . .then this might be the place .",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -9311,7 +8892,6 @@
         ]
     },
     {
-        "text": "the fish was fresh , though it was cut very thin .",
         "predicted": [
             {
                 "aspect_term": "fish",
@@ -9334,7 +8914,6 @@
         ]
     },
     {
-        "text": "great service .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -9352,7 +8931,6 @@
         ]
     },
     {
-        "text": "good sake selection .",
         "predicted": [
             {
                 "aspect_term": "sake",
@@ -9370,7 +8948,6 @@
         ]
     },
     {
-        "text": "Dungeness crabs here !",
         "predicted": [
             {
                 "aspect_term": "Dungeness crabs",
@@ -9388,7 +8965,6 @@
         ]
     },
     {
-        "text": "– Ray 's is THE place to go for high quality seafood dinners .",
         "predicted": [
             {
                 "aspect_term": "seafood dinners",
@@ -9406,7 +8982,6 @@
         ]
     },
     {
-        "text": "And they give good quantity for the price .",
         "predicted": [
             {
                 "aspect_term": "quantity",
@@ -9434,7 +9009,6 @@
         ]
     },
     {
-        "text": "We were only in Seattle for one night and I 'm so glad we picked Rays for dinner !",
         "predicted": [
             {
                 "aspect_term": "Rays",
@@ -9452,7 +9026,6 @@
         ]
     },
     {
-        "text": "I love Dungeness crabs and at Ray 's you can get them served in about 6 different ways !",
         "predicted": [
             {
                 "aspect_term": "Dungeness crabs",
@@ -9470,7 +9043,6 @@
         ]
     },
     {
-        "text": "We shared the family platter and I especially enjoyed the black cod in sake kasu .",
         "predicted": [
             {
                 "aspect_term": "family platter",
@@ -9493,7 +9065,6 @@
         ]
     },
     {
-        "text": "I ended the meal with the unusual dessert of a port and chocolate tasting . . . .yummy !",
         "predicted": [
             {
                 "aspect_term": "dessert",
@@ -9511,7 +9082,6 @@
         ]
     },
     {
-        "text": "And the service was simply spendid - quite a delight .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -9529,7 +9099,6 @@
         ]
     },
     {
-        "text": "Great Breakfast",
         "predicted": [
             {
                 "aspect_term": "Great",
@@ -9547,7 +9116,6 @@
         ]
     },
     {
-        "text": "– Great drinks  , corn beef hash , coffee , B Fast burritos , Gluten Free menu .",
         "predicted": [
             {
                 "aspect_term": "drinks",
@@ -9605,7 +9173,6 @@
         ]
     },
     {
-        "text": "The service is fantastic at this fun place .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -9633,7 +9200,6 @@
         ]
     },
     {
-        "text": "If there is a line very day of the week for the entire time a place is open , you know it is great .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -9651,7 +9217,6 @@
         ]
     },
     {
-        "text": "This is the case at this gem .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -9669,7 +9234,6 @@
         ]
     },
     {
-        "text": "Best Neighborhood Standby .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -9687,7 +9251,6 @@
         ]
     },
     {
-        "text": "You Can 't Go Wrong Here .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -9705,7 +9268,6 @@
         ]
     },
     {
-        "text": "In Grammercy /Union Square /East Village this is my neighbors and my favorite spot .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -9723,7 +9285,6 @@
         ]
     },
     {
-        "text": "The music is great , no night better or worse , the bar tenders are generous with the pouring , and the lighthearted atmosphere will lifts you spirits .",
         "predicted": [
             {
                 "aspect_term": "music",
@@ -9761,7 +9322,6 @@
         ]
     },
     {
-        "text": "Seriously , you can 't go wrong , if it is unpretentious local fun you seek .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -9779,7 +9339,6 @@
         ]
     },
     {
-        "text": "Oh , and the cheese fries are awesome !",
         "predicted": [
             {
                 "aspect_term": "cheese fries",
@@ -9797,7 +9356,6 @@
         ]
     },
     {
-        "text": "Good Food , Great Service , Average Prices  (For the Strip )",
         "predicted": [
             {
                 "aspect_term": "Food",
@@ -9835,7 +9393,6 @@
         ]
     },
     {
-        "text": "– I decided to eat at Stack because of their price fixed pre-show dinner .",
         "predicted": [
             {
                 "aspect_term": "price fixed pre-show dinner",
@@ -9853,7 +9410,6 @@
         ]
     },
     {
-        "text": "When I walked in , I was taken aback by their incredible wood decor .",
         "predicted": [
             {
                 "aspect_term": "decor",
@@ -9871,7 +9427,6 @@
         ]
     },
     {
-        "text": "The music playing was very hip , 20-30 something pop music , but the subwoofer to the sound system was located under my seat , which became annoying midway through dinner .",
         "predicted": [
             {
                 "aspect_term": "music",
@@ -9899,7 +9454,6 @@
         ]
     },
     {
-        "text": "I got the shellfish and shrimp appetizer and it was alright .",
         "predicted": [
             {
                 "aspect_term": "shellfish",
@@ -9922,7 +9476,6 @@
         ]
     },
     {
-        "text": "It wasn 't the freshest seafood ever , but the taste and presentation was OK .",
         "predicted": [
             {
                 "aspect_term": "seafood",
@@ -9955,7 +9508,6 @@
         ]
     },
     {
-        "text": "I picked the asparagus , which turned out to be incredible and perfectly prepared .",
         "predicted": [
             {
                 "aspect_term": "asparagus",
@@ -9973,7 +9525,6 @@
         ]
     },
     {
-        "text": "The 9 oz steak came next and it tasted great , at least initially .",
         "predicted": [
             {
                 "aspect_term": "9 oz steak",
@@ -9991,7 +9542,6 @@
         ]
     },
     {
-        "text": "The steak was done to my exact liking  (medium rare ) and was nice and juicy .",
         "predicted": [
             {
                 "aspect_term": "steak",
@@ -10009,7 +9559,6 @@
         ]
     },
     {
-        "text": "It ?s served with either a peppercorn sauce or red wine reduction , though both were indistinguishable in taste .",
         "predicted": [
             {
                 "aspect_term": "peppercorn sauce",
@@ -10037,7 +9586,6 @@
         ]
     },
     {
-        "text": "Though , one thing I realized later on was that the restaurant either used MSG or a meat tenderizer on the steak .",
         "predicted": [
             {
                 "aspect_term": "steak",
@@ -10055,7 +9603,6 @@
         ]
     },
     {
-        "text": "My mouth felt very dry afterwards and I had that signature  ?MSG ? taste lingering in my throat after I left the restaurant .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10073,7 +9620,6 @@
         ]
     },
     {
-        "text": "They came in their own nifty take out box and with some homemade frosting ; very light and not-too-sweet .",
         "predicted": [
             {
                 "aspect_term": "take out box",
@@ -10096,7 +9642,6 @@
         ]
     },
     {
-        "text": "The desert was the perfect ending to an almost perfect dinner .",
         "predicted": [
             {
                 "aspect_term": "desert",
@@ -10119,7 +9664,6 @@
         ]
     },
     {
-        "text": "The dinner only took us about an hour and the prices were alright for the strip , almost  $50 /pp after tax and tip  (about average ) .",
         "predicted": [
             {
                 "aspect_term": "dinner",
@@ -10147,7 +9691,6 @@
         ]
     },
     {
-        "text": "But the servers were extremely attentive and very friendly .",
         "predicted": [
             {
                 "aspect_term": "servers",
@@ -10165,7 +9708,6 @@
         ]
     },
     {
-        "text": "Overall , I would go back and eat at the restaurant again .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10183,7 +9725,6 @@
         ]
     },
     {
-        "text": "Just remember to dress a little urban-chic so you don ?t look too far out of place .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10201,7 +9742,6 @@
         ]
     },
     {
-        "text": "good sake , good food – i honestly don 't know much about japanese food at all .",
         "predicted": [
             {
                 "aspect_term": "sake",
@@ -10229,7 +9769,6 @@
         ]
     },
     {
-        "text": "Server made several sake suggestions which were very good .",
         "predicted": [
             {
                 "aspect_term": "sake",
@@ -10252,7 +9791,6 @@
         ]
     },
     {
-        "text": "had many dishes but the BEST was the lobster 3 ways .",
         "predicted": [
             {
                 "aspect_term": "lobster",
@@ -10270,7 +9808,6 @@
         ]
     },
     {
-        "text": "VERY GOOD !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10288,7 +9825,6 @@
         ]
     },
     {
-        "text": "Overpriced",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10306,7 +9842,6 @@
         ]
     },
     {
-        "text": "Waited 35 minutes for a table for 8 which was ok for such a big crowd .",
         "predicted": [
             {
                 "aspect_term": "table",
@@ -10324,7 +9859,6 @@
         ]
     },
     {
-        "text": "The waiter was a bit unfriendly and the feel of the restaurant was crowded .",
         "predicted": [
             {
                 "aspect_term": "waiter",
@@ -10352,7 +9886,6 @@
         ]
     },
     {
-        "text": "Also , there was only one bathroom stall- probably need more for such big crowds .",
         "predicted": [
             {
                 "aspect_term": "bathroom stall- probably need more",
@@ -10370,7 +9903,6 @@
         ]
     },
     {
-        "text": "Most importantly , we were so excited about the food after seeing the very creative menu .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -10393,7 +9925,6 @@
         ]
     },
     {
-        "text": "At best , the food was good and definately overpriced .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -10421,7 +9952,6 @@
         ]
     },
     {
-        "text": "For the amount of food we got the prices should have been lower .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -10449,7 +9979,6 @@
         ]
     },
     {
-        "text": "Not sure if I would go back .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10467,7 +9996,6 @@
         ]
     },
     {
-        "text": "My favortie pizza joint in Seattle",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -10485,7 +10013,6 @@
         ]
     },
     {
-        "text": "– This is my  'must bring out of town guests to ' restaurant and they always enjoy and rave about it .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10503,7 +10030,6 @@
         ]
     },
     {
-        "text": "In fact , many want to return a second time during their visit .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10521,7 +10047,6 @@
         ]
     },
     {
-        "text": "The pizza is delicious and the salads are fantastic .",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -10549,7 +10074,6 @@
         ]
     },
     {
-        "text": "I 've always found the wait staff and , if you sit at the bar , the cooks very friendly .",
         "predicted": [
             {
                 "aspect_term": "wait staff",
@@ -10577,7 +10101,6 @@
         ]
     },
     {
-        "text": "They aren 't the most talkative , but everytime I 've been there they have been very busy , which probably accounts for the lack of conversation .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10595,7 +10118,6 @@
         ]
     },
     {
-        "text": "I also really enjoy the simplicity of the decor and intimate feeling of a small restaurant .",
         "predicted": [
             {
                 "aspect_term": "decor",
@@ -10623,7 +10145,6 @@
         ]
     },
     {
-        "text": "It 's just the right size for the menu .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10641,7 +10162,6 @@
         ]
     },
     {
-        "text": "Excellent",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10659,7 +10179,6 @@
         ]
     },
     {
-        "text": "– My husband and I love eating at Mioposto Café .",
         "predicted": [
             {
                 "aspect_term": "Mioposto Café",
@@ -10677,7 +10196,6 @@
         ]
     },
     {
-        "text": "We’re can’t say enough about their delicious gourmet pizza’s !",
         "predicted": [
             {
                 "aspect_term": "pizza’s",
@@ -10695,7 +10213,6 @@
         ]
     },
     {
-        "text": "You won’t be disappointed by their menu .",
         "predicted": [
             {
                 "aspect_term": "menu",
@@ -10713,7 +10230,6 @@
         ]
     },
     {
-        "text": "The pizza’s are thin crust and the menu offers very creative combinations and toppings .",
         "predicted": [
             {
                 "aspect_term": "pizza’s",
@@ -10741,7 +10257,6 @@
         ]
     },
     {
-        "text": "You never feel icky and stuffed after you eat there .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10759,7 +10274,6 @@
         ]
     },
     {
-        "text": "The pizza’s are light and scrumptious .",
         "predicted": [
             {
                 "aspect_term": "pizza’s",
@@ -10777,7 +10291,6 @@
         ]
     },
     {
-        "text": "Try the Pizza Ensalata !",
         "predicted": [
             {
                 "aspect_term": "Pizza Ensalata",
@@ -10795,7 +10308,6 @@
         ]
     },
     {
-        "text": "Absolutely delicious .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10813,7 +10325,6 @@
         ]
     },
     {
-        "text": "The pizza’s are not huge and the crust is thin…keep that in mind when you’re ordering .",
         "predicted": [
             {
                 "aspect_term": "pizza’s",
@@ -10841,7 +10352,6 @@
         ]
     },
     {
-        "text": "Worth the wait",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10859,7 +10369,6 @@
         ]
     },
     {
-        "text": "– Had to wait thirty minutes to get in the door on a tuesday morning , but it was so worth it .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10887,7 +10396,6 @@
         ]
     },
     {
-        "text": "The food is sinful .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -10905,7 +10413,6 @@
         ]
     },
     {
-        "text": "The staff was really friendly .",
         "predicted": [
             {
                 "aspect_term": "staff",
@@ -10923,7 +10430,6 @@
         ]
     },
     {
-        "text": "The atmosphere was great .",
         "predicted": [
             {
                 "aspect_term": "atmosphere",
@@ -10941,7 +10447,6 @@
         ]
     },
     {
-        "text": "The specialty here is decadent pancakes , but I 've been back now four times , and I 've been wowed every time .",
         "predicted": [
             {
                 "aspect_term": "pancakes",
@@ -10959,7 +10464,6 @@
         ]
     },
     {
-        "text": "Nothing on the menu is less than amazing .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -10977,7 +10481,6 @@
         ]
     },
     {
-        "text": "Go with some friends , wait the half hour or so with a cup of joe , and enjoy more than your average breakfast .",
         "predicted": [
             {
                 "aspect_term": "cup of joe",
@@ -11005,7 +10508,6 @@
         ]
     },
     {
-        "text": "Good eats .",
         "predicted": [
             {
                 "aspect_term": "eats",
@@ -11023,7 +10525,6 @@
         ]
     },
     {
-        "text": "I don 't know why anyone would want to write a great review about this place .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -11041,7 +10542,6 @@
         ]
     },
     {
-        "text": "I have been to this place , folks and it is BAD .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -11059,7 +10559,6 @@
         ]
     },
     {
-        "text": "Maybe it is good for that one night once in a blue moon when the chefs decide to use fish that 's half-way decent .",
         "predicted": [
             {
                 "aspect_term": "fish",
@@ -11077,7 +10576,6 @@
         ]
     },
     {
-        "text": "I have been here , spent tons of money on a chef special dinner and it was a major dissappointment .",
         "predicted": [
             {
                 "aspect_term": "chef special dinner",
@@ -11100,7 +10598,6 @@
         ]
     },
     {
-        "text": "Fancy pieces of exotic fish on a  $100 dollar plate and NOT ONE was eatable .",
         "predicted": [
             {
                 "aspect_term": "fish",
@@ -11133,7 +10630,6 @@
         ]
     },
     {
-        "text": "DONOT GO !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11151,7 +10647,6 @@
         ]
     },
     {
-        "text": "Delicious",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11169,7 +10664,6 @@
         ]
     },
     {
-        "text": "– The atmosphere is great for any special occasion you might want to celebrate .",
         "predicted": [
             {
                 "aspect_term": "atmosphere",
@@ -11187,7 +10681,6 @@
         ]
     },
     {
-        "text": "The best dish are the honwy walnut prawns- just outstanding .",
         "predicted": [
             {
                 "aspect_term": "honwy walnut prawns- just outstanding",
@@ -11205,7 +10698,6 @@
         ]
     },
     {
-        "text": "The service is really attentive and charming .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -11223,7 +10715,6 @@
         ]
     },
     {
-        "text": "We waited for an hour to be seated .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11241,7 +10732,6 @@
         ]
     },
     {
-        "text": "The service was excellent , the coffee was good even by starbucks standards and the food was outstanding .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -11279,7 +10769,6 @@
         ]
     },
     {
-        "text": "It was worth the wait .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11297,7 +10786,6 @@
         ]
     },
     {
-        "text": "Plan on waiting 30-70 minutes .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11315,7 +10803,6 @@
         ]
     },
     {
-        "text": "Will definitely be back .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11333,7 +10820,6 @@
         ]
     },
     {
-        "text": "Delicious . . . !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11351,7 +10837,6 @@
         ]
     },
     {
-        "text": "– I recently had the pleasure of dining as this delightful restaurant on 2nd street and wow what a great evening we had .",
         "predicted": [
             {
                 "aspect_term": "restaurant",
@@ -11374,7 +10859,6 @@
         ]
     },
     {
-        "text": "The food is fantastic , authentic , delicious and very , very affordable .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -11397,7 +10881,6 @@
         ]
     },
     {
-        "text": "The decor was beautiful and unique .",
         "predicted": [
             {
                 "aspect_term": "decor",
@@ -11415,7 +10898,6 @@
         ]
     },
     {
-        "text": "There was a really nice vibe about the place . . .good music , atmosphere and happy looking people .",
         "predicted": [
             {
                 "aspect_term": "music",
@@ -11458,7 +10940,6 @@
         ]
     },
     {
-        "text": "Our server was very professional and friendly .",
         "predicted": [
             {
                 "aspect_term": "server",
@@ -11476,7 +10957,6 @@
         ]
     },
     {
-        "text": "To the owners of Open Sesame . . .Bravo . . .I can 't wait to come back to dine at your restaurant !",
         "predicted": [
             {
                 "aspect_term": "restaurant",
@@ -11494,7 +10974,6 @@
         ]
     },
     {
-        "text": "Delectable ",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11512,7 +10991,6 @@
         ]
     },
     {
-        "text": "It 's a tiny place so if you get there before 8pm on a weekend  (Thurs ?Sun ) you will find it easier to get a table or a seat at the sushi bar .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -11540,7 +11018,6 @@
         ]
     },
     {
-        "text": "Once you 're inside , the real experience begins .",
         "predicted": [
             {
                 "aspect_term": "experience",
@@ -11558,7 +11035,6 @@
         ]
     },
     {
-        "text": "Everything , and I mean everything on the menu is delectable .",
         "predicted": [
             {
                 "aspect_term": "everything",
@@ -11576,7 +11052,6 @@
         ]
     },
     {
-        "text": "The waiters are very experienced and helpful with pairing your drink choice to your food tastes or vice versa .",
         "predicted": [
             {
                 "aspect_term": "waiters",
@@ -11594,7 +11069,6 @@
         ]
     },
     {
-        "text": "The sushi is as fresh as it comes ?you 'd think ocean was in their backyard , no joke !",
         "predicted": [
             {
                 "aspect_term": "sushi",
@@ -11612,7 +11086,6 @@
         ]
     },
     {
-        "text": "If you 're interested in good tasting  (without the fish taste or smell ) , large portions and creative sushi dishes this is your place . . .",
         "predicted": [
             {
                 "aspect_term": "sushi dishes",
@@ -11645,7 +11118,6 @@
         ]
     },
     {
-        "text": "big thick pepperoni",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11663,7 +11135,6 @@
         ]
     },
     {
-        "text": "– The pepperoni 's cut real thick--Yum .",
         "predicted": [
             {
                 "aspect_term": "pepperoni",
@@ -11681,7 +11152,6 @@
         ]
     },
     {
-        "text": "The pizza itself is not exactly the best I 've had EVER , but still pretty good .",
         "predicted": [
             {
                 "aspect_term": "pizza",
@@ -11699,7 +11169,6 @@
         ]
     },
     {
-        "text": "I probably wouldn 't go back though  'cuz I don 't know if it 's worth it .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11717,7 +11186,6 @@
         ]
     },
     {
-        "text": "Maybe I 'll go back once more many years from now when I 've forgotten I went there already .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11735,7 +11203,6 @@
         ]
     },
     {
-        "text": "Sit in the Balcony",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11753,7 +11220,6 @@
         ]
     },
     {
-        "text": "– Not bad .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11771,7 +11237,6 @@
         ]
     },
     {
-        "text": "Food was good and appetizing .",
         "predicted": [
             {
                 "aspect_term": "Food",
@@ -11789,7 +11254,6 @@
         ]
     },
     {
-        "text": "Portions was just enough for me , but may not be for a big eater .",
         "predicted": [
             {
                 "aspect_term": "Portions",
@@ -11807,7 +11271,6 @@
         ]
     },
     {
-        "text": "Fair menu selection .",
         "predicted": [
             {
                 "aspect_term": "menu",
@@ -11825,7 +11288,6 @@
         ]
     },
     {
-        "text": "The appetizer was interesting , but the Creme Brulee was very savory and delicious .",
         "predicted": [
             {
                 "aspect_term": "appetizer",
@@ -11853,7 +11315,6 @@
         ]
     },
     {
-        "text": "Indoor ambience was modern .",
         "predicted": [
             {
                 "aspect_term": "Indoor ambience",
@@ -11871,7 +11332,6 @@
         ]
     },
     {
-        "text": "If it 's nice outside , request for a table in the balcony .",
         "predicted": [
             {
                 "aspect_term": "balcony",
@@ -11889,7 +11349,6 @@
         ]
     },
     {
-        "text": "It 's a great place to people watch .",
         "predicted": [
             {
                 "aspect_term": "place",
@@ -11907,7 +11366,6 @@
         ]
     },
     {
-        "text": "Although the service could be improved considering the money you put in .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -11930,7 +11388,6 @@
         ]
     },
     {
-        "text": "Our drinks kept coming but our server came by a couple times .",
         "predicted": [
             {
                 "aspect_term": "drinks",
@@ -11958,7 +11415,6 @@
         ]
     },
     {
-        "text": "Should check-up on us more frequently , don 't you think ?",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -11976,7 +11432,6 @@
         ]
     },
     {
-        "text": "Late night dinning with exeptional food .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -11994,7 +11449,6 @@
         ]
     },
     {
-        "text": "We were seated right away , the table was private and nice .",
         "predicted": [
             {
                 "aspect_term": "seated",
@@ -12022,7 +11476,6 @@
         ]
     },
     {
-        "text": "The service was exceptional - sometime there was a feeling that we were served by the army of friendly waiters .",
         "predicted": [
             {
                 "aspect_term": "service",
@@ -12045,7 +11498,6 @@
         ]
     },
     {
-        "text": "The food was very good , filet mignon was probably the best I 've ever try .",
         "predicted": [
             {
                 "aspect_term": "food",
@@ -12073,7 +11525,6 @@
         ]
     },
     {
-        "text": "The portions are big though , so do not order too much .",
         "predicted": [
             {
                 "aspect_term": "portions",
@@ -12091,7 +11542,6 @@
         ]
     },
     {
-        "text": "Groovy music made the dinner casual .",
         "predicted": [
             {
                 "aspect_term": "music",
@@ -12109,7 +11559,6 @@
         ]
     },
     {
-        "text": "The most pleasant surprise was the check that did not exceed my expectations as it always happens in most of the places .",
         "predicted": [
             {
                 "aspect_term": "check",
@@ -12127,7 +11576,6 @@
         ]
     },
     {
-        "text": "I have a but here - there was a bathroom attendant in the restroom which was odd .",
         "predicted": [
             {
                 "aspect_term": "bathroom attendant",
@@ -12145,7 +11593,6 @@
         ]
     },
     {
-        "text": "The bathroom itself is very small with two toilets and only one sink , the girl was staying totally on the way hanging out paper towels from the dispenser .",
         "predicted": [
             {
                 "aspect_term": "bathroom",
@@ -12168,7 +11615,6 @@
         ]
     },
     {
-        "text": "I felt ackward and next time went to the casino bathroom .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -12186,7 +11632,6 @@
         ]
     },
     {
-        "text": "This place rocks ! !",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -12204,7 +11649,6 @@
         ]
     },
     {
-        "text": "– Mercedes restaurant is so tasty , the service is undeniably awesome !",
         "predicted": [
             {
                 "aspect_term": "Mercedes restaurant",
@@ -12232,7 +11676,6 @@
         ]
     },
     {
-        "text": "The chips and salsa are so yummy , and the prices are fabulous .",
         "predicted": [
             {
                 "aspect_term": "chips",
@@ -12265,7 +11708,6 @@
         ]
     },
     {
-        "text": "The atmosphere is aspiring , and  the decor is festive and amazing . .",
         "predicted": [
             {
                 "aspect_term": "atmosphere",
@@ -12293,7 +11735,6 @@
         ]
     },
     {
-        "text": "The catering is out of this world , and Raouls chicken vegetable soup rocks my world ! ! !",
         "predicted": [
             {
                 "aspect_term": "catering",
@@ -12321,7 +11762,6 @@
         ]
     },
     {
-        "text": "Drinks are suberb , and I feel like I am in a Third World country when I walk in the door .",
         "predicted": [
             {
                 "aspect_term": "Drinks",
@@ -12349,7 +11789,6 @@
         ]
     },
     {
-        "text": "Insultingly Overpriced",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -12367,7 +11806,6 @@
         ]
     },
     {
-        "text": "- Mediocre Service /Quality",
         "predicted": [
             {
                 "aspect_term": "Service",
@@ -12390,7 +11828,6 @@
         ]
     },
     {
-        "text": "The presentation of Snooze is excellent and it is one of those places that you feel more sophisticated just for being there ; but peel back the layers and you have an overpriced IHOP with a high brow menu .",
         "predicted": [
             {
                 "aspect_term": "presentation",
@@ -12428,7 +11865,6 @@
         ]
     },
     {
-        "text": "To start off , approximately 8-10 oz of orange juice will cost you  $3 .",
         "predicted": [
             {
                 "aspect_term": "orange juice",
@@ -12451,7 +11887,6 @@
         ]
     },
     {
-        "text": "They serve it in a tall , skinny hour-glass shaped glass to disguise the fact that you a getting a small juice at the price of a half gallon in a supermarket .",
         "predicted": [
             {
                 "aspect_term": "juice",
@@ -12479,7 +11914,6 @@
         ]
     },
     {
-        "text": "I should have just asked for the check when I saw that ; but their menu was so unique that I continued .",
         "predicted": [
             {
                 "aspect_term": "check",
@@ -12502,7 +11936,6 @@
         ]
     },
     {
-        "text": "The pancakes were certainly inventive but  $8 .50 for 3 - 6 ' pancakes  (one of them was more like 5 ' ) in the pancake flight  (sample of 3 different pancakes ) is well over-priced .",
         "predicted": [
             {
                 "aspect_term": "pancakes",
@@ -12535,7 +11968,6 @@
         ]
     },
     {
-        "text": "The pancakes should be larger  (at least 8 ' ) to justify the expense even with the unique offerings .",
         "predicted": [
             {
                 "aspect_term": "pancakes",
@@ -12558,7 +11990,6 @@
         ]
     },
     {
-        "text": "On my meal I had to send back my eggs for a simple request of breaking the yokes before cooking , and would have had to send them back again if I hadn 't rejected the meal all together .",
         "predicted": [
             {
                 "aspect_term": "eggs",
@@ -12581,7 +12012,6 @@
         ]
     },
     {
-        "text": "I rejected it because in the process of attempting to fix the eggs they broke something else in the dish and I was too frustrated to continue .",
         "predicted": [
             {
                 "aspect_term": "eggs",
@@ -12604,7 +12034,6 @@
         ]
     },
     {
-        "text": "To their credit they removed the dish from the check ; but no manager stopped by to ask what the problem was .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -12627,7 +12056,6 @@
         ]
     },
     {
-        "text": "In the end our check came to  $27 for 4 small pancakes , a breakfast burrito , an orange juice and an iced tea  (I had water ) .",
         "predicted": [
             {
                 "aspect_term": "check",
@@ -12685,7 +12113,6 @@
         ]
     },
     {
-        "text": "Much more than just a great view !",
         "predicted": [
             {
                 "aspect_term": "view",
@@ -12708,7 +12135,6 @@
         ]
     },
     {
-        "text": "– I am exceedingly pleased to report that my dinner at Ray 's Boathouse last Friday completely exceeded my expectations .",
         "predicted": [
             {
                 "aspect_term": "dinner",
@@ -12731,7 +12157,6 @@
         ]
     },
     {
-        "text": "Ray 's is something of a Seattle institution , but given its gorgeous Sound views , I had suspected that the accolades were more due to the scenery than to the food and service .",
         "predicted": [
             {
                 "aspect_term": "views",
@@ -12759,7 +12184,6 @@
         ]
     },
     {
-        "text": "Imagine my happy surprise upon finding that the views are only the third-best thing about Ray 's !",
         "predicted": [
             {
                 "aspect_term": "views",
@@ -12782,7 +12206,6 @@
         ]
     },
     {
-        "text": "To start things off , our lovely server Brooke was quickly on hand to take my drink order .",
         "predicted": [
             {
                 "aspect_term": "server Brooke",
@@ -12805,7 +12228,6 @@
         ]
     },
     {
-        "text": "My party of two was feeling particularly ambitious , and we splurged on the Shilshole Sampler . . .a beautiful assortment of enormous white gulf prawns , smoked albacore tuna , Ray 's fantastic manila clams seasoned with dill , scallops in a tasty soy dressing , and a tiny pile of Dungeness crab atop a sublime butter sauce .",
         "predicted": [
             {
                 "aspect_term": "Shilshole Sampler",
@@ -12873,7 +12295,6 @@
         ]
     },
     {
-        "text": "For my entr &eacute ;e , I completely enjoyed the seared Alaskan sea scallops complemented by chard , artichoke hearts , fennel , and pecorino toscano .",
         "predicted": [
             {
                 "aspect_term": "sea scallops",
@@ -12896,7 +12317,6 @@
         ]
     },
     {
-        "text": "The scallops are apparently cooked in a black olive butter which really makes them unique  (not to mention tasty ) .",
         "predicted": [
             {
                 "aspect_term": "scallops",
@@ -12919,7 +12339,6 @@
         ]
     },
     {
-        "text": "My friend enjoyed the grilled Alaskan King Salmon with delectable creamed Washington russet potatoes and crisp green beans .",
         "predicted": [
             {
                 "aspect_term": "Alaskan King Salmon",
@@ -12957,7 +12376,6 @@
         ]
     },
     {
-        "text": "I had a taste of all three items on her plate , and they were superb .",
         "predicted": [
             {
                 "aspect_term": "items",
@@ -12975,7 +12393,6 @@
         ]
     },
     {
-        "text": "Our server continued to be attentive throughout the night , but I did remain puzzled by one issue :  Who thinks that Ray 's is an appropriate place to take young children for dinner ?",
         "predicted": [
             {
                 "aspect_term": "server",
@@ -13003,7 +12420,6 @@
         ]
     },
     {
-        "text": "Two rascally kids were seated near us for the first part of our dinner . . .they were replaced by a delightful preteen who pretended to gag every time seafood was mentioned at her table .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -13021,7 +12437,6 @@
         ]
     },
     {
-        "text": "All considered , I have to say that Ray 's Boathouse is deserving of its title as a Seattle institution .",
         "predicted": [
             {
                 "aspect_term": "NULL",
@@ -13039,7 +12454,6 @@
         ]
     },
     {
-        "text": "While I could have done without the youth who shared the evening with us , our wonderful server and food made the experience a very positive one .",
         "predicted": [
             {
                 "aspect_term": "server",
@@ -13072,7 +12486,6 @@
         ]
     },
     {
-        "text": "Oh yeah . . .the view was good , too .",
         "predicted": [
             {
                 "aspect_term": "view",

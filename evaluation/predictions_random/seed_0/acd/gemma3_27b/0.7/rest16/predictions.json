@@ -1,6 +1,5 @@
 [
     {
-        "text": "Yum !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -14,7 +13,6 @@
         ]
     },
     {
-        "text": "Serves really good sushi .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -28,7 +26,6 @@
         ]
     },
     {
-        "text": "Not the biggest portions but adequate .",
         "predicted": [
             {
                 "aspect_category": "food prices"
@@ -42,7 +39,6 @@
         ]
     },
     {
-        "text": "Green Tea creme brulee is a must !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -56,7 +52,6 @@
         ]
     },
     {
-        "text": "Don 't leave the restaurant without it .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -70,7 +65,6 @@
         ]
     },
     {
-        "text": "No Comparison",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -84,7 +78,6 @@
         ]
     },
     {
-        "text": "– I can 't say enough about this place .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -98,7 +91,6 @@
         ]
     },
     {
-        "text": "It has great sushi and even better service .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -118,7 +110,6 @@
         ]
     },
     {
-        "text": "The entire staff was extremely accomodating and tended to my every need .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -132,7 +123,6 @@
         ]
     },
     {
-        "text": "I 've been to this restaurant over a dozen times with no complaints to date .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -146,7 +136,6 @@
         ]
     },
     {
-        "text": "Snotty Attitude",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -160,7 +149,6 @@
         ]
     },
     {
-        "text": "– We were treated very rudely here one time for breakfast .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -174,7 +162,6 @@
         ]
     },
     {
-        "text": "The owner is belligerent to guests that have a complaint .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -188,7 +175,6 @@
         ]
     },
     {
-        "text": "Good food !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -202,7 +188,6 @@
         ]
     },
     {
-        "text": "This is a great place to get a delicious meal .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -216,7 +201,6 @@
         ]
     },
     {
-        "text": "We never had to wait more than 5 minutes .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -230,7 +214,6 @@
         ]
     },
     {
-        "text": "The staff is pretty friendly .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -244,7 +227,6 @@
         ]
     },
     {
-        "text": "The onion rings are great !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -258,7 +240,6 @@
         ]
     },
     {
-        "text": "They are not greasy or anything .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -272,7 +253,6 @@
         ]
     },
     {
-        "text": "Overrated",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -286,7 +266,6 @@
         ]
     },
     {
-        "text": "– I was highly disappointed in the food at Pagoda .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -300,7 +279,6 @@
         ]
     },
     {
-        "text": "The lemon chicken tasted like sticky sweet donuts and the honey walnut prawns , the few they actually give you . . . . .were not good .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -317,7 +295,6 @@
         ]
     },
     {
-        "text": "Nice ambience , but highly overrated place .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -337,7 +314,6 @@
         ]
     },
     {
-        "text": "I will not go back .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -351,7 +327,6 @@
         ]
     },
     {
-        "text": "Worst Service I Ever Had",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -365,7 +340,6 @@
         ]
     },
     {
-        "text": "Everyone that sat in the back outside agreed that it was the worst service we had ever received .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -379,7 +353,6 @@
         ]
     },
     {
-        "text": "Our waiter was non-existent and after our food finally arrived over an hour after we ordered , we were not given any water or utensils .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -396,7 +369,6 @@
         ]
     },
     {
-        "text": "I complained to the manager , but he was not even apologetic .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -410,7 +382,6 @@
         ]
     },
     {
-        "text": "I will never return again .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -424,7 +395,6 @@
         ]
     },
     {
-        "text": "Fabulous Italian Food !",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -441,7 +411,6 @@
         ]
     },
     {
-        "text": "– I highly recommend Mioposto .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -455,7 +424,6 @@
         ]
     },
     {
-        "text": "I am so happy to have a wonderful Italian restaurant in my neighborhood .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -469,7 +437,6 @@
         ]
     },
     {
-        "text": "The wine list is wonderful and the food reminds me of my recent trip to Italy .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -489,7 +456,6 @@
         ]
     },
     {
-        "text": "I love this restaurant",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -503,7 +469,6 @@
         ]
     },
     {
-        "text": "– I will never forget the amazing meal , service , and ambiance I experience at this restaurant .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -529,7 +494,6 @@
         ]
     },
     {
-        "text": "It was absolutely amazing .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -543,7 +507,6 @@
         ]
     },
     {
-        "text": "The wine list is incredible and extensive and diverse , the food is all incredible and the staff was all very nice , good at their jobs and cultured .",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -569,7 +532,6 @@
         ]
     },
     {
-        "text": "I have not a bad thing to say about this place .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -583,7 +545,6 @@
         ]
     },
     {
-        "text": "AMAZING .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -597,7 +558,6 @@
         ]
     },
     {
-        "text": "I cannot wait to go back again this coming weekend !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -611,7 +571,6 @@
         ]
     },
     {
-        "text": "Mmm . . . good !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -625,7 +584,6 @@
         ]
     },
     {
-        "text": "The food was great !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -639,7 +597,6 @@
         ]
     },
     {
-        "text": "It 's  *very * reasonably priced , esp for the quality of the food .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -659,7 +616,6 @@
         ]
     },
     {
-        "text": "I had the Kafta plate and it was perfect .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -673,7 +629,6 @@
         ]
     },
     {
-        "text": "We 're going back .  :D",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -687,7 +642,6 @@
         ]
     },
     {
-        "text": "Finally a meal that you will remember for a long time !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -701,7 +655,6 @@
         ]
     },
     {
-        "text": "– In a age of incremental cost cutting in restaurants , its nice to see a place that bucks that trend , and just plain delivers high quality food and good service , period .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -724,7 +677,6 @@
         ]
     },
     {
-        "text": "This is the place to relax and enjoy the finest quality food the industry can offer .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -741,7 +693,6 @@
         ]
     },
     {
-        "text": "Caution - its real food for people who love the best .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -755,7 +706,6 @@
         ]
     },
     {
-        "text": "Very Disappointing",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -769,7 +719,6 @@
         ]
     },
     {
-        "text": "– I took my parents here for their anniversary-very very disappointed ! ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -783,7 +732,6 @@
         ]
     },
     {
-        "text": "I liked the atmosphere very much but the food was not worth the price .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -806,7 +754,6 @@
         ]
     },
     {
-        "text": "I may not be a sushi guru but I can tell you that the food here is just okay and that there is not much else to it .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -820,7 +767,6 @@
         ]
     },
     {
-        "text": "Rice is too dry , tuna wasn 't so fresh either .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -834,7 +780,6 @@
         ]
     },
     {
-        "text": "Nothing really came across as outstanding .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -851,7 +796,6 @@
         ]
     },
     {
-        "text": "Very disappointed .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -865,7 +809,6 @@
         ]
     },
     {
-        "text": "I have eaten here three times and have found the quality and variety of the fish to be excellent .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -885,7 +828,6 @@
         ]
     },
     {
-        "text": "However , the value and service are both severely lacking .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -905,7 +847,6 @@
         ]
     },
     {
-        "text": "Furthermore , while the fish is unquestionably fresh , rolls tend to be inexplicably bland .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -919,7 +860,6 @@
         ]
     },
     {
-        "text": "The service ranges from mediocre to offensive .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -933,7 +873,6 @@
         ]
     },
     {
-        "text": "On a recent trip , our waiter was extremely dismissive , while no less than three staff members waited hand-and-foot on a pair of Japanese girls seated nearby .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -947,7 +886,6 @@
         ]
     },
     {
-        "text": "We were then charged for their most expensive sake  ( $20 + per serving ) when we in fact drank a sake of less than half that price .",
         "predicted": [
             {
                 "aspect_category": "drinks prices"
@@ -961,7 +899,6 @@
         ]
     },
     {
-        "text": "Freshest sushi  – I love this restaurant .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -981,7 +918,6 @@
         ]
     },
     {
-        "text": "They pay such detail to everything from miso soup to complex rolls .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -995,7 +931,6 @@
         ]
     },
     {
-        "text": "The sashimi was the freshest and most tender I have ever tasted .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1009,7 +944,6 @@
         ]
     },
     {
-        "text": "Their apps are all delicious .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1023,7 +957,6 @@
         ]
     },
     {
-        "text": "The only drawback is that this place is really expensive and the portions are on the small side .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -1043,7 +976,6 @@
         ]
     },
     {
-        "text": "But the space is small and lovely , and the service is helpful .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -1063,7 +995,6 @@
         ]
     },
     {
-        "text": "You are bound to have a very charming time .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -1077,7 +1008,6 @@
         ]
     },
     {
-        "text": "Not recommanded ! ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1091,7 +1021,6 @@
         ]
     },
     {
-        "text": "– The food was not great  & the waiters were rude .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1111,7 +1040,6 @@
         ]
     },
     {
-        "text": "It is not worth going at all and spend your money there ! ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1125,7 +1053,6 @@
         ]
     },
     {
-        "text": "great service",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1139,7 +1066,6 @@
         ]
     },
     {
-        "text": "– Pretty cheap for sit down Mexican AND downtown .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -1162,7 +1088,6 @@
         ]
     },
     {
-        "text": "my service was stellar !",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1176,7 +1101,6 @@
         ]
     },
     {
-        "text": "the bus boy even spotted that my table was shaking a stabilized it for me .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1190,7 +1114,6 @@
         ]
     },
     {
-        "text": "food was fine , with a some little-tastier-than-normal salsa .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1204,7 +1127,6 @@
         ]
     },
     {
-        "text": "If you 're in the area you shouldn 't be disappointed .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1218,7 +1140,6 @@
         ]
     },
     {
-        "text": "Ok . . . . – Maybe I went in on someone 's bad day . . . .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1232,7 +1153,6 @@
         ]
     },
     {
-        "text": "the food was great , the margaritas too but the waitress was too busy being nice to her other larger party than to take better care of my friend and me .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1258,7 +1178,6 @@
         ]
     },
     {
-        "text": "Took forever to get our order taken , water refills were too much to ask for and the only time she was fast was when we asked for our bill when we could get her attention .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1272,7 +1191,6 @@
         ]
     },
     {
-        "text": "I don 't know if I 'll be back . . . .",
         "predicted": [],
         "time": 0.8848037719726562,
         "gold": [
@@ -1282,7 +1200,6 @@
         ]
     },
     {
-        "text": "Mama Mia – I live in the neighborhood and feel lucky to live by such a great pizza place .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1299,7 +1216,6 @@
         ]
     },
     {
-        "text": "the only problem is you really have to warm up the pizza before it 's edible , even when you order ahead .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1313,7 +1229,6 @@
         ]
     },
     {
-        "text": "BUt once done , it 's not too much dough , not too much cheese , not too much sauce .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1327,7 +1242,6 @@
         ]
     },
     {
-        "text": "Best Sushi in town .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -1344,7 +1258,6 @@
         ]
     },
     {
-        "text": "Everything you want and more , very fresh .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1361,7 +1274,6 @@
         ]
     },
     {
-        "text": "Its worth the wait , especially since they 'll give you a call when the table is ready .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1378,7 +1290,6 @@
         ]
     },
     {
-        "text": "The best calamari in Seattle !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1392,7 +1303,6 @@
         ]
     },
     {
-        "text": "–  . . .and the best summertime deck experience--they will even bring you a blanket if you get cold in the Seattle evening weather .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -1409,7 +1319,6 @@
         ]
     },
     {
-        "text": "A perfect place to take out of town guests any time of the year .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1423,7 +1332,6 @@
         ]
     },
     {
-        "text": "Endless fun , awesome music , great staff ! ! !",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1446,7 +1354,6 @@
         ]
     },
     {
-        "text": "– By far the best bar in the east village . . .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1460,7 +1367,6 @@
         ]
     },
     {
-        "text": "I went there with some friends one night to play bingo and watch the sox game and it was a blast !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1474,7 +1380,6 @@
         ]
     },
     {
-        "text": "Every time  '0-sixtynine ' is called the bartender buys everyone drinks !",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -1491,7 +1396,6 @@
         ]
     },
     {
-        "text": "Been there lots since and its always a good time .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1505,7 +1409,6 @@
         ]
     },
     {
-        "text": "Great draft and bottle selection and the pizza rocks .",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -1525,7 +1428,6 @@
         ]
     },
     {
-        "text": "Definitely has one of the best jukebox 's i 've seen in a long long time .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -1539,7 +1441,6 @@
         ]
     },
     {
-        "text": "I FOUND A NEW HOME ON SECOND AVENUE ! ! ! ! ! ! ! ! ! ! ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1553,7 +1454,6 @@
         ]
     },
     {
-        "text": "Just go there and see for yourself .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1567,7 +1467,6 @@
         ]
     },
     {
-        "text": "The food is great , the bartenders go that extra mile .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1587,7 +1486,6 @@
         ]
     },
     {
-        "text": "You need to watch your game , they will have it on for you .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1601,7 +1499,6 @@
         ]
     },
     {
-        "text": "The owners are great fun and the beer selection is worth staying for .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1621,7 +1518,6 @@
         ]
     },
     {
-        "text": "And the upstairs is a great place to hang out .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -1635,7 +1531,6 @@
         ]
     },
     {
-        "text": "Not alot of smoking places left in New York , but I have found my favorite smoking balconey in the city .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -1649,7 +1544,6 @@
         ]
     },
     {
-        "text": "Kudos to these guys .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1663,7 +1557,6 @@
         ]
     },
     {
-        "text": "I found a new home and just moved with a long lease .",
         "predicted": [],
         "time": 0.9344000816345215,
         "gold": [
@@ -1673,7 +1566,6 @@
         ]
     },
     {
-        "text": "The sushi here is delicious !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1687,7 +1579,6 @@
         ]
     },
     {
-        "text": "They have a wide variety of fish and they even list which oceans they come from ; Atlantic or Pacific .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -1701,7 +1592,6 @@
         ]
     },
     {
-        "text": "I 've had the Jellyfish , Horse Mackerel , Blue Fin Tuna and the Sake Ikura roll among others , and they were all good .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1715,7 +1605,6 @@
         ]
     },
     {
-        "text": "My only negative comment is that I wish the pieces were a little bigger .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1729,7 +1618,6 @@
         ]
     },
     {
-        "text": "The decor is rustic , traditional Japanese .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -1743,7 +1631,6 @@
         ]
     },
     {
-        "text": "The crowd is mixed yuppies , young and old .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -1757,7 +1644,6 @@
         ]
     },
     {
-        "text": "The service was courteous and attentive .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1771,7 +1657,6 @@
         ]
     },
     {
-        "text": "Mediocre food",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1785,7 +1670,6 @@
         ]
     },
     {
-        "text": "The outside patio area has an abbreviated menu .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -1799,7 +1683,6 @@
         ]
     },
     {
-        "text": "My g /f and I both agreed the food was very mediocre especially considering the price .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1819,7 +1702,6 @@
         ]
     },
     {
-        "text": "We are locals , and get the feeling the only way this place survives with such average food is because most customers are probably one-time customer tourists .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1836,7 +1718,6 @@
         ]
     },
     {
-        "text": "Service was decent .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -1850,7 +1731,6 @@
         ]
     },
     {
-        "text": "Drinks were good .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -1864,7 +1744,6 @@
         ]
     },
     {
-        "text": "Unless you are just stopping in for a few drinks I wouldn 't recommend going here .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -1881,7 +1760,6 @@
         ]
     },
     {
-        "text": "You are likely to be disappointed .",
         "predicted": [],
         "time": 0.9683208465576172,
         "gold": [
@@ -1891,7 +1769,6 @@
         ]
     },
     {
-        "text": "Excellent food , nice ambience , fairly expensive",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1917,7 +1794,6 @@
         ]
     },
     {
-        "text": "– I loved the pumpkin ravioli and the goat cheese gnocchi  (5 big ones to a plate instead of 20 or so little gnocchis ) and my sister loved her filet mignon on top of spinach and mashed potatoes .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -1937,7 +1813,6 @@
         ]
     },
     {
-        "text": "The ambiance was a peaceful and relaxing break amongst all the kids running around in Downtown Disney .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -1951,7 +1826,6 @@
         ]
     },
     {
-        "text": "It was romantic - and even nice even with my sister , reminded me of Italy , and had artwork and music that kept up the feeling of being in a Mediterrean villa .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -1965,7 +1839,6 @@
         ]
     },
     {
-        "text": "I recommend it for a night when you want to splurge !  (it was a bit expensive )",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -1982,7 +1855,6 @@
         ]
     },
     {
-        "text": "Best Indian food in L .A .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -1996,7 +1868,6 @@
         ]
     },
     {
-        "text": "The best thing is , the prices are also quite reasonable .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -2010,7 +1881,6 @@
         ]
     },
     {
-        "text": "The chicken curry and chicken tikka masala are my favorite meat dishes .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2024,7 +1894,6 @@
         ]
     },
     {
-        "text": "The chana masala  (garbanzo beans ) are also excellent .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2038,7 +1907,6 @@
         ]
     },
     {
-        "text": "It 's located in a strip mall near the Beverly Center , not the greatest location , but the food keeps me coming back for more .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -2058,7 +1926,6 @@
         ]
     },
     {
-        "text": "hidden little jem",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2072,7 +1939,6 @@
         ]
     },
     {
-        "text": "– tucked away over by the Beverly Center .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -2086,7 +1952,6 @@
         ]
     },
     {
-        "text": "Never too crowded and always great service .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -2106,7 +1971,6 @@
         ]
     },
     {
-        "text": "I think I have probably tried each item on their menu at least once it is all excellent .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2120,7 +1984,6 @@
         ]
     },
     {
-        "text": "I can highly recommend their various saag and paneer and korma .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2134,7 +1997,6 @@
         ]
     },
     {
-        "text": "You routinely see Indian families and friends dining there , which is always a good sign .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2148,7 +2010,6 @@
         ]
     },
     {
-        "text": "I appreciate their delivery too .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -2162,7 +2023,6 @@
         ]
     },
     {
-        "text": "Nice food but no spice !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2179,7 +2039,6 @@
         ]
     },
     {
-        "text": "– I really enjoyed my meal here .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2193,7 +2052,6 @@
         ]
     },
     {
-        "text": "I had yummy lamb korma , saag paneer , samosas , naan , etc .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2207,7 +2065,6 @@
         ]
     },
     {
-        "text": "The food was all good but it was way too mild .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2221,7 +2078,6 @@
         ]
     },
     {
-        "text": "Normally , places ask how hot you want it , but they didn 't .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -2235,7 +2091,6 @@
         ]
     },
     {
-        "text": "I should have thought to bring it up but never expected the food to be that mild .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2249,7 +2104,6 @@
         ]
     },
     {
-        "text": "The naan was some of the best I 've had and I really enjoyed the bhartha , not too tomatoey .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2263,7 +2117,6 @@
         ]
     },
     {
-        "text": "Even the chickpeas , which I normally find too dry , were good .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2277,7 +2130,6 @@
         ]
     },
     {
-        "text": "And they packaged everything nicely so it didn 't spill .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -2291,7 +2143,6 @@
         ]
     },
     {
-        "text": "awesome find",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2305,7 +2156,6 @@
         ]
     },
     {
-        "text": "– I don 't understand how I was a stranger to this place for so long . . . the fajita salad , the colorado , the fajitas - EVERYTHING is delicious .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2328,7 +2178,6 @@
         ]
     },
     {
-        "text": "I love the warm  & cosy environment .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -2342,7 +2191,6 @@
         ]
     },
     {
-        "text": "I just found out that you can have the place to yourself on nights and weekends for a private party - can 't wait to celebrate my next birthday there .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2356,7 +2204,6 @@
         ]
     },
     {
-        "text": "best restaurant in the world , great decor , great customer service , friendly manager",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2382,7 +2229,6 @@
         ]
     },
     {
-        "text": "i am never disappointed with there food .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2396,7 +2242,6 @@
         ]
     },
     {
-        "text": "the atmosphere is great .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -2410,7 +2255,6 @@
         ]
     },
     {
-        "text": "great lunch spot",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -2424,7 +2268,6 @@
         ]
     },
     {
-        "text": "– Great financial district mexican spot .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -2441,7 +2284,6 @@
         ]
     },
     {
-        "text": "Always busy , but they are good at seating you promptly and have quick service .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -2455,7 +2297,6 @@
         ]
     },
     {
-        "text": "Everything I 've had here is good , taco salads , burritos , enchiladas i love this place .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2475,7 +2316,6 @@
         ]
     },
     {
-        "text": "Also have great margaritas !",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -2489,7 +2329,6 @@
         ]
     },
     {
-        "text": "You can order to go if you have to get back to the office too !",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -2503,7 +2342,6 @@
         ]
     },
     {
-        "text": "Lebanese Food !Yum !",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -2517,7 +2355,6 @@
         ]
     },
     {
-        "text": "– I 've been to Open Sesame only once , but I 'm still reeling from the experience ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2531,7 +2368,6 @@
         ]
     },
     {
-        "text": "The food is simply unforgettable !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2545,7 +2381,6 @@
         ]
     },
     {
-        "text": "The presentation of the food was an added bonus , it looked just as great as it tasted !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2562,7 +2397,6 @@
         ]
     },
     {
-        "text": "My best friend had the chicken shawarma and she STILL raves about it being the best anywhere !",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -2579,7 +2413,6 @@
         ]
     },
     {
-        "text": "What a tastly , flaky treat !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2593,7 +2426,6 @@
         ]
     },
     {
-        "text": "The staff are friendly and the decor was ethic and colorful .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -2613,7 +2445,6 @@
         ]
     },
     {
-        "text": "GO TO OPEN SESAME ! ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2627,7 +2458,6 @@
         ]
     },
     {
-        "text": "Holy Hummus !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2641,7 +2471,6 @@
         ]
     },
     {
-        "text": "– The food is here is incredible , though the quality is inconsistent during lunch .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2655,7 +2484,6 @@
         ]
     },
     {
-        "text": "Dinners have always been excellent , in terms of food quality .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2669,7 +2497,6 @@
         ]
     },
     {
-        "text": "The open sesame combo plate is a bargain for the heap of food given .",
         "predicted": [
             {
                 "aspect_category": "food prices"
@@ -2689,7 +2516,6 @@
         ]
     },
     {
-        "text": "The side of potatoes is to die for , as is the labne  (yogurt dip ) .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -2706,7 +2532,6 @@
         ]
     },
     {
-        "text": "Also , they serve THE best hummus in America , with a drizzle of fragrant olive oil  (which , I believe is the traditional way ) !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2726,7 +2551,6 @@
         ]
     },
     {
-        "text": "The only drawback is the crowded seating and the slow service .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -2746,7 +2570,6 @@
         ]
     },
     {
-        "text": "There have been several occasions when we 've just not gotten some side dishes we 've ordered .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -2760,7 +2583,6 @@
         ]
     },
     {
-        "text": "However , this place is a gem , and I won 't stop going back .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2774,7 +2596,6 @@
         ]
     },
     {
-        "text": "great beer",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -2788,7 +2609,6 @@
         ]
     },
     {
-        "text": "– My first time to dine at this restaurant was with my son and it was absolutely horrible !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2802,7 +2622,6 @@
         ]
     },
     {
-        "text": "We waited over 30 minutes for our drinks and over 1 1 /2 hours for our food .",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -2819,7 +2638,6 @@
         ]
     },
     {
-        "text": "I swore never to return for a warm beer and mediocre meal .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -2839,7 +2657,6 @@
         ]
     },
     {
-        "text": "HOWEVER , one Sunday afternoon my husband and I did go  (although with my loud protests ) and were pleasantly surprised .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2853,7 +2670,6 @@
         ]
     },
     {
-        "text": "The band was very good and the service was attentive .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -2870,7 +2686,6 @@
         ]
     },
     {
-        "text": "We ordered a selection of the small plates , and the shoe string onions , goat cheese pizza , grilled asparagus and fried brie with fruit were all very good .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -2893,7 +2708,6 @@
         ]
     },
     {
-        "text": "It was like dining at a completely different restaurant .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -2907,7 +2721,6 @@
         ]
     },
     {
-        "text": "We have since returned and also had a great experience , sampling more small plates and a variety of the beer  ( cold and good ) .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -2927,7 +2740,6 @@
         ]
     },
     {
-        "text": "We did have the same waiter the second time , so maybe the service is spotty and our luck is good .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -2941,7 +2753,6 @@
         ]
     },
     {
-        "text": "Sunday afternoons there is a band playing and it is lots of fun .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -2955,7 +2766,6 @@
         ]
     },
     {
-        "text": "Seattle 's BEST Winelist",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -2969,7 +2779,6 @@
         ]
     },
     {
-        "text": "– Ray 's  (suprisingly ) has the city 's BEST  & most diverse wine list .",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -2986,7 +2795,6 @@
         ]
     },
     {
-        "text": "The sommelier is fantastic , down-to-earth ,  & extremely knowlegable .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3000,7 +2808,6 @@
         ]
     },
     {
-        "text": "I would go back for the wine experience alone .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -3014,7 +2821,6 @@
         ]
     },
     {
-        "text": "Nice job !",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3028,7 +2834,6 @@
         ]
     },
     {
-        "text": "NOT THE PLACE IT ONCE WAS",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3042,7 +2847,6 @@
         ]
     },
     {
-        "text": "– It is sad to see a place that was once  'THE ' place to meet and eat for Bfast or Lunch , now be the place that is a big  'DONT BOTHER . '",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3056,7 +2860,6 @@
         ]
     },
     {
-        "text": "The food is not what it once was  (potions have seriously seen downsizing ) prices have gone up , and the service is the worst I have experienced anywhere  (including mainland Europe ) .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3085,7 +2888,6 @@
         ]
     },
     {
-        "text": "What may be interesting to most is the worst sevice /attitude comes from the owners of this establishment .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3099,7 +2901,6 @@
         ]
     },
     {
-        "text": "This establishment really made a marked decline after  ( and this is recurring story  ) the airing of FOOD TELEVISIONS  'DINERS , DRIVE-INS , AND DIVES ' hosted by Guy Fieri , in which Schooner or Later was subject of .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3113,7 +2914,6 @@
         ]
     },
     {
-        "text": "Perhaps now , Scooner or Later falls into the  'Dive ' category .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3127,7 +2927,6 @@
         ]
     },
     {
-        "text": "This is sad for what once was one of the best places you could ever eat .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3144,7 +2943,6 @@
         ]
     },
     {
-        "text": "I hope one day Scooner or Later returns to what it once was .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3158,7 +2956,6 @@
         ]
     },
     {
-        "text": "Untill this happens , my advice is to STAY AWAY .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3172,7 +2969,6 @@
         ]
     },
     {
-        "text": "Open  & Cool Place with the Best Pizza and Coffee",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3195,7 +2991,6 @@
         ]
     },
     {
-        "text": "– Mioposto has a very creative  & delicious pizza menu .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -3215,7 +3010,6 @@
         ]
     },
     {
-        "text": "The coffe is very good , too .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -3229,7 +3023,6 @@
         ]
     },
     {
-        "text": "Great open and friendly ambience .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -3243,7 +3036,6 @@
         ]
     },
     {
-        "text": "This place is charming and relaxing .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -3257,7 +3049,6 @@
         ]
     },
     {
-        "text": "The servers behind the counter are always friendly and helpful .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3271,7 +3062,6 @@
         ]
     },
     {
-        "text": "It 's a great place to enjoy food and meet friends .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3291,7 +3081,6 @@
         ]
     },
     {
-        "text": "Old Reliable",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3305,7 +3094,6 @@
         ]
     },
     {
-        "text": "– After 12 years in Seattle Ray 's rates as the place we always go back to .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3319,7 +3107,6 @@
         ]
     },
     {
-        "text": "Great food , spectacular location , and friendly service keep us coming back year after year .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3345,7 +3132,6 @@
         ]
     },
     {
-        "text": "Enjoyed the food",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3359,7 +3145,6 @@
         ]
     },
     {
-        "text": "I liked it .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3373,7 +3158,6 @@
         ]
     },
     {
-        "text": "Food was good and cheap .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3393,7 +3177,6 @@
         ]
     },
     {
-        "text": "I had the kafta plate and I enjoyed it .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3407,7 +3190,6 @@
         ]
     },
     {
-        "text": "It was so much though that I could barely finish but I did , since it was delicious .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3424,7 +3206,6 @@
         ]
     },
     {
-        "text": "Atmosphere was nice .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -3438,7 +3219,6 @@
         ]
     },
     {
-        "text": "Service was kind of slow , our waitress took forever to give us our check even though it wasn 't that busy .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3452,7 +3232,6 @@
         ]
     },
     {
-        "text": "Still I would recommend this place .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3466,7 +3245,6 @@
         ]
     },
     {
-        "text": "WOW ! ! ! ! ! ! ! !",
         "predicted": [],
         "time": 0.8943183422088623,
         "gold": [
@@ -3476,7 +3254,6 @@
         ]
     },
     {
-        "text": "– IT CANT GET ANY BETTER ! ! ! ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3490,7 +3267,6 @@
         ]
     },
     {
-        "text": "WHAT ELSE CAN YOU SAY NICE PEOPLE AMAZING FOOD WOW",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3513,7 +3289,6 @@
         ]
     },
     {
-        "text": "Great food with an awesome atmosphere !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3533,7 +3308,6 @@
         ]
     },
     {
-        "text": "– Eggs , pancakes , potatoes , fresh fruit and yogurt -- everything they serve is delicious .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3550,7 +3324,6 @@
         ]
     },
     {
-        "text": "The best place for a leisure Sunday breakfast amidst yachts , then take a stroll through the nearby Farmer 's Market .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3567,7 +3340,6 @@
         ]
     },
     {
-        "text": "great meal – the fish on the omikase platter was absolutely decadent -- there was none of the stringiness that sometimes accompanies fair sushi -- this fish was perfect ! ! ! !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3581,7 +3353,6 @@
         ]
     },
     {
-        "text": "plus , i am allergic to rice , and the waitstaff was unbelievably accomodating -- didn 't even bat an eye !",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3595,7 +3366,6 @@
         ]
     },
     {
-        "text": "and the waiter suggested a perfect sake ! !",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3612,7 +3382,6 @@
         ]
     },
     {
-        "text": "absolutely fabulous ! ! !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3626,7 +3395,6 @@
         ]
     },
     {
-        "text": "Unbeatable sushi !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3640,7 +3408,6 @@
         ]
     },
     {
-        "text": "Two thumbs up !",
         "predicted": [],
         "time": 0.9191360473632812,
         "gold": [
@@ -3650,7 +3417,6 @@
         ]
     },
     {
-        "text": "This is right up there with places in Tokyo as far as the freshness is concerned .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3664,7 +3430,6 @@
         ]
     },
     {
-        "text": "Melt in your mouth nigiri and sashmi , and very tasty rolls too .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3678,7 +3443,6 @@
         ]
     },
     {
-        "text": "Be sure to try the oyster roll .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -3692,7 +3456,6 @@
         ]
     },
     {
-        "text": "splendid",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3706,7 +3469,6 @@
         ]
     },
     {
-        "text": "– How to describe the best sushi in NYC : hmmmm , delicious , amazing , fantastic , suculent , perfect , nah , all of the above .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3720,7 +3482,6 @@
         ]
     },
     {
-        "text": "I can 't saybenough good things about this restaurant , and I can 't wait for my next several visits .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3734,7 +3495,6 @@
         ]
     },
     {
-        "text": "The best Chuwam Mushi I have ever had .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3748,7 +3508,6 @@
         ]
     },
     {
-        "text": "Perfect on a cold day .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3762,7 +3521,6 @@
         ]
     },
     {
-        "text": "$6 with tip .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -3776,7 +3534,6 @@
         ]
     },
     {
-        "text": "Perfection .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3790,7 +3547,6 @@
         ]
     },
     {
-        "text": "Good Sushi , High Price ",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3810,7 +3566,6 @@
         ]
     },
     {
-        "text": "One of the best Sushi place in town .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -3827,7 +3582,6 @@
         ]
     },
     {
-        "text": "The house special roll is really good .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3841,7 +3595,6 @@
         ]
     },
     {
-        "text": "On weekends , you might have to wait for couple hours .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3855,7 +3608,6 @@
         ]
     },
     {
-        "text": "However , they do take your cellphone numbers so that you can go hang out somewhere else till they call you up on your cellphone .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -3869,7 +3621,6 @@
         ]
     },
     {
-        "text": "A cozy spot for 2",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -3883,7 +3634,6 @@
         ]
     },
     {
-        "text": "– I can 't believe Murphy 's has been around for over 25 years , amazing .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3897,7 +3647,6 @@
         ]
     },
     {
-        "text": "That 's a huge compliment , especially in the fickled restaurant business ,  . . .enough already !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3911,7 +3660,6 @@
         ]
     },
     {
-        "text": "Brunch at Murphy 's is to die for , my specialty . . . egg white omelet , the food is always freshly prepared .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3925,7 +3673,6 @@
         ]
     },
     {
-        "text": "It 's the perfect spot for a romantic date for 2 or a secret rendezvous !",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -3942,7 +3689,6 @@
         ]
     },
     {
-        "text": "Save room for  scrumptious desserts .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -3956,7 +3702,6 @@
         ]
     },
     {
-        "text": "The restaurant offers an extensive wine list and an ambiance you won 't forget !",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -3976,7 +3721,6 @@
         ]
     },
     {
-        "text": "I guarantee you won 't be disappointed , there 's also valet parking .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -3993,7 +3737,6 @@
         ]
     },
     {
-        "text": "Addicting !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4007,7 +3750,6 @@
         ]
     },
     {
-        "text": "– Best Mexican place for lunch in the financial district .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -4024,7 +3766,6 @@
         ]
     },
     {
-        "text": "Love the enchiladas and chicken soup - and be sure to check out their specials .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4038,7 +3779,6 @@
         ]
     },
     {
-        "text": "The cooks have been at the restaurant for years and cook family recipes .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4052,7 +3792,6 @@
         ]
     },
     {
-        "text": "Can get busy on Fridays for a table but once seated , the service is so efficient you can be in and out of there quickly .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4066,7 +3805,6 @@
         ]
     },
     {
-        "text": "I went there with a friend from out of town . . . and we were both very impressed !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4080,7 +3818,6 @@
         ]
     },
     {
-        "text": "The sushi was excellent and the wait staff was quick .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4100,7 +3837,6 @@
         ]
     },
     {
-        "text": "The price was right too .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -4114,7 +3850,6 @@
         ]
     },
     {
-        "text": "The atmosphere was just okay .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -4128,7 +3863,6 @@
         ]
     },
     {
-        "text": "Space was limited , but the food made up for it .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -4148,7 +3882,6 @@
         ]
     },
     {
-        "text": "I 'd go back there in a heartbeat .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4162,7 +3895,6 @@
         ]
     },
     {
-        "text": "Well I guess it 's hard to be seated when one is invisible to the staff .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4176,7 +3908,6 @@
         ]
     },
     {
-        "text": "We stood there for 10 minutes while employees walked back and forth ignoring us .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4190,7 +3921,6 @@
         ]
     },
     {
-        "text": "Finally , my wife stood face to face in front of one of the staff and she asked ,  'Are you waiting for a table ? '",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4204,7 +3934,6 @@
         ]
     },
     {
-        "text": "Once seated it took about 30 minutes to finally get the meal .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4218,7 +3947,6 @@
         ]
     },
     {
-        "text": "The prior reviews said Kid friendly . . . give me a break with two young children that is light years .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4232,7 +3960,6 @@
         ]
     },
     {
-        "text": "The Caesar salad I ordered had so much lemon I couldn 't eat it .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4246,7 +3973,6 @@
         ]
     },
     {
-        "text": "It was decent but nothing exceptional .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4260,7 +3986,6 @@
         ]
     },
     {
-        "text": "Great food , better Margaritas !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4280,7 +4005,6 @@
         ]
     },
     {
-        "text": "– This is one of my top lunch spots , huge portions , fast service and amazing margaritas ! !",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -4309,7 +4033,6 @@
         ]
     },
     {
-        "text": "it gets really busy , so get there on the early side so you can grab a seat , if you do have to wait , its not bad because the service is quick !",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4323,7 +4046,6 @@
         ]
     },
     {
-        "text": "Check out the art on the walls , very colorful !",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -4337,7 +4059,6 @@
         ]
     },
     {
-        "text": "i love this place !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4351,7 +4072,6 @@
         ]
     },
     {
-        "text": "– i have been eating at this place for over 8 years now and i have never had one bad meal .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4365,7 +4085,6 @@
         ]
     },
     {
-        "text": "i highly recommend this place to all that want to try indain food for the first time .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -4379,7 +4098,6 @@
         ]
     },
     {
-        "text": "The lunch menu is an awesome deal !",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -4393,7 +4111,6 @@
         ]
     },
     {
-        "text": "plenty of food ,trust me  .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -4407,7 +4124,6 @@
         ]
     },
     {
-        "text": "Fresh ingrediants and super tasty .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4421,7 +4137,6 @@
         ]
     },
     {
-        "text": "The place is the next best thing to my Moms cooking .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4435,7 +4150,6 @@
         ]
     },
     {
-        "text": "Best food , phenominal service ",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4455,7 +4169,6 @@
         ]
     },
     {
-        "text": "For the finicky sushi eater and those who have sampled the best NYC has to offer , the fish is the freshest and the service is superb .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4475,7 +4188,6 @@
         ]
     },
     {
-        "text": "Not only can the selection be innovative , but there 's a nice balance of traditional sushi as well .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -4489,7 +4201,6 @@
         ]
     },
     {
-        "text": "The nicest waiters in town .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4503,7 +4214,6 @@
         ]
     },
     {
-        "text": "WAY OVER-RATED ! ! ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4517,7 +4227,6 @@
         ]
     },
     {
-        "text": "– This place is unbelievably over-rated .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4531,7 +4240,6 @@
         ]
     },
     {
-        "text": "If I want to stand in line on Sunday for an hour to get average brunch food , then I would put Murphy 's at the top of the list .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4551,7 +4259,6 @@
         ]
     },
     {
-        "text": "The regular menu here is slightly above average that is not worth the snotty attitude that you receive .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4571,7 +4278,6 @@
         ]
     },
     {
-        "text": "10 !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4585,7 +4291,6 @@
         ]
     },
     {
-        "text": "Your a sushi fan , you love expertly cut fish , great sake , a killer SOHO location , and of course : Salmon , Tuna , Fluke , Yellow Tail , Cod , Mackeral , Jellyfish , Sea Urchin , Shrimp , Lobster , Sea Bream , Trout , Milk Fish , Blue Fin Tuna , Eel , Crab , Sardine , Monk Fish , Roe , Scallop , Oysters , and a varity of Toro .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -4614,7 +4319,6 @@
         ]
     },
     {
-        "text": "There is only one place on the east coast that has it all , plus a lot more .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4628,7 +4332,6 @@
         ]
     },
     {
-        "text": "Bring your cell phone cause you may have to wait to get into the best sushi restaurant in the world : BLUE RIBBON SUSHI .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4645,7 +4348,6 @@
         ]
     },
     {
-        "text": "Cut to the chase - this is amazing !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4659,7 +4361,6 @@
         ]
     },
     {
-        "text": "It 's unpretentious and underground .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -4673,7 +4374,6 @@
         ]
     },
     {
-        "text": "It 's fresh , welcoming , delicious , and relaxing .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4696,7 +4396,6 @@
         ]
     },
     {
-        "text": "Hands down , the best tuna I have ever had .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4710,7 +4409,6 @@
         ]
     },
     {
-        "text": "Blue Ribbon lives up to it 's fantastic reputation .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4724,7 +4422,6 @@
         ]
     },
     {
-        "text": "I went here on a recommendation and will surely return time and time again .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4738,7 +4435,6 @@
         ]
     },
     {
-        "text": "What a find !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4752,7 +4448,6 @@
         ]
     },
     {
-        "text": "Well worth it ",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4766,7 +4461,6 @@
         ]
     },
     {
-        "text": "Great value sushi with high quality  & nice setting .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -4792,7 +4486,6 @@
         ]
     },
     {
-        "text": "Good for late night dining  (last minute planning ) without reservations .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4806,7 +4499,6 @@
         ]
     },
     {
-        "text": "Try the Chef 's Choice for sushi as the smoked yellowtail was incredible and the rolls were also tasty .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -4823,7 +4515,6 @@
         ]
     },
     {
-        "text": "Poor customer service /poor pizza .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4843,7 +4534,6 @@
         ]
     },
     {
-        "text": "– As with most restaurants in Seattle , Mioposto 's service was bad and the food was overpriced .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4863,7 +4553,6 @@
         ]
     },
     {
-        "text": "I know many people have their favorite types of pizza and pizza places , but Mioposto 's pizza lacks quality and good taste .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4877,7 +4566,6 @@
         ]
     },
     {
-        "text": "To be honest , I 've had better frozen pizza .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4891,7 +4579,6 @@
         ]
     },
     {
-        "text": "The only positive thing about Mioposto is the nice location .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -4908,7 +4595,6 @@
         ]
     },
     {
-        "text": "Love it every time ",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4922,7 +4608,6 @@
         ]
     },
     {
-        "text": "I was frankly shocked when I read the bad reviews - this place is fantastic ; it has not let us down in any way , and we 've eaten here more than 10 times .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4936,7 +4621,6 @@
         ]
     },
     {
-        "text": "The food is fantastic , and the waiting staff has been perfect every single time we 've been there .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -4956,7 +4640,6 @@
         ]
     },
     {
-        "text": "The only problem would be the wait , but we usually just have a drink in the front while waiting .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -4970,7 +4653,6 @@
         ]
     },
     {
-        "text": "Never had one single problem there .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4984,7 +4666,6 @@
         ]
     },
     {
-        "text": "Seafood Plus",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -4998,7 +4679,6 @@
         ]
     },
     {
-        "text": "– This was  great dining experience .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5012,7 +4692,6 @@
         ]
     },
     {
-        "text": "If you 're going to see Danny Gans or just staying at the Mirage , don 't miss this one .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5026,7 +4705,6 @@
         ]
     },
     {
-        "text": "The appetizer of oysters , lobster , crab  (small size ) made a perfect entre for my wife .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -5043,7 +4721,6 @@
         ]
     },
     {
-        "text": "Seabass on lobster risotto was the best .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5057,7 +4734,6 @@
         ]
     },
     {
-        "text": "Caesar salad was superb .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5071,7 +4747,6 @@
         ]
     },
     {
-        "text": "Great bottle of wine .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -5085,7 +4760,6 @@
         ]
     },
     {
-        "text": "Leave room for dessert .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5099,7 +4773,6 @@
         ]
     },
     {
-        "text": "COMPLETELY OVER RATED !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5113,7 +4786,6 @@
         ]
     },
     {
-        "text": "The food was ok , but the service was so poor that the food was cold buy the time everyone in my party was served .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5133,7 +4805,6 @@
         ]
     },
     {
-        "text": "Even then , the order was not correct and we were still waiting for a couple items .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5147,7 +4818,6 @@
         ]
     },
     {
-        "text": "We had a very hard time getting the waitress ' attention and finally had to get up and go inside to speak to a manager .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5161,7 +4831,6 @@
         ]
     },
     {
-        "text": "As it turns out the owner was seated right next to us and when he came over to check on our problems was very dismissive and offered a token 20 % discount on our bill .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5178,7 +4847,6 @@
         ]
     },
     {
-        "text": "When the bill came , he only took the discount off the food and not the drinks .",
         "predicted": [
             {
                 "aspect_category": "drinks prices"
@@ -5195,7 +4863,6 @@
         ]
     },
     {
-        "text": "It was clear he didn’t really care .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5209,7 +4876,6 @@
         ]
     },
     {
-        "text": "AVOID THE PLACE",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5223,7 +4889,6 @@
         ]
     },
     {
-        "text": "– Save yourself the waste of time  & DO NOT visit .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5237,7 +4902,6 @@
         ]
     },
     {
-        "text": "When I got there I sat up stairs where the atmosphere was cozy  & the service was horrible !",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -5257,7 +4921,6 @@
         ]
     },
     {
-        "text": "I waited for 10-15 minutes for service ordered a beer  & was never served again .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5274,7 +4937,6 @@
         ]
     },
     {
-        "text": "After sitting there with my empty glass for over 20 minutes I left .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5288,7 +4950,6 @@
         ]
     },
     {
-        "text": "I went home  & looked them up online again where I discovered there is a link for a give away that doesn 't work so emailed the restaurant about the non existent service  & deceptive link .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5305,7 +4966,6 @@
         ]
     },
     {
-        "text": "I never heard back from anyone more than a month ago .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5319,7 +4979,6 @@
         ]
     },
     {
-        "text": "After sitting at the bar for over 20 minutes the bar keep had made only 2 drinks  & kept telling us she 'd be right with us .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5333,7 +4992,6 @@
         ]
     },
     {
-        "text": "We left without ever getting service .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5347,7 +5005,6 @@
         ]
     },
     {
-        "text": "As of writing this I just tried their give away a link again  & it still doesn 't work .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -5361,7 +5018,6 @@
         ]
     },
     {
-        "text": "Best Crab Cakes in Town",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -5375,7 +5031,6 @@
         ]
     },
     {
-        "text": "– Thats a big statement considering I 've been pulling crab traps and making the cakes myself since I was about seven - but something about these little devils gets better every time .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5389,7 +5044,6 @@
         ]
     },
     {
-        "text": "If you can , come to this place by boat and make it a whole evening .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -5403,7 +5057,6 @@
         ]
     },
     {
-        "text": "Great seasonal fish and seafood , with a classy waterfront setting .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5423,7 +5076,6 @@
         ]
     },
     {
-        "text": "Always a winner .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5437,7 +5089,6 @@
         ]
     },
     {
-        "text": "Great Pizza , Poor Service",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5457,7 +5108,6 @@
         ]
     },
     {
-        "text": "– Love their pizza , especially the mushroom pizza .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5471,7 +5121,6 @@
         ]
     },
     {
-        "text": "Also love their caeser salad .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -5485,7 +5134,6 @@
         ]
     },
     {
-        "text": "Prefer to order it and pick it up though because I don 't like the servers , one young woman in particular .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5499,7 +5147,6 @@
         ]
     },
     {
-        "text": "She doesn 't make you feel welcome and treats you like an annoyance .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5513,7 +5160,6 @@
         ]
     },
     {
-        "text": "But she is very friendly with certain people , making it even more annoying .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5527,7 +5173,6 @@
         ]
     },
     {
-        "text": "Management should really take notice and train their waitstaff and teach them some proper manners .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5541,7 +5186,6 @@
         ]
     },
     {
-        "text": "Many people talk about the great pizza and poor service , so it can 't just be the rantings of a few dissatisfied customers .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5561,7 +5205,6 @@
         ]
     },
     {
-        "text": "It 's a great little place with tons of potential to be a neighborhood joint if the service weren 't so impersonal and corporate-like .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5581,7 +5224,6 @@
         ]
     },
     {
-        "text": "Great Breakfast",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5595,7 +5237,6 @@
         ]
     },
     {
-        "text": "– This place is famous for their breakfast .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -5609,7 +5250,6 @@
         ]
     },
     {
-        "text": "They have been featured on the food network and they deserve it .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5623,7 +5263,6 @@
         ]
     },
     {
-        "text": "The food is great and they make a mean bloody mary .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5643,7 +5282,6 @@
         ]
     },
     {
-        "text": "I love breakfast here .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5657,7 +5295,6 @@
         ]
     },
     {
-        "text": "Their crab eggs benedict is addicting .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -5674,7 +5311,6 @@
         ]
     },
     {
-        "text": "All their menu items are a hit , and they serve mimosas .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5694,7 +5330,6 @@
         ]
     },
     {
-        "text": "Doesn 't get any better than that .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5708,7 +5343,6 @@
         ]
     },
     {
-        "text": "best chinese food i have tasted in a long time",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -5725,7 +5359,6 @@
         ]
     },
     {
-        "text": "You can easily hear him though so it was a pleasant sound and not overbearing .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -5739,7 +5372,6 @@
         ]
     },
     {
-        "text": "the ambiance of the restaurant was nice and good for fine dinning .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -5753,7 +5385,6 @@
         ]
     },
     {
-        "text": "not too fine thought that you feel uncomfortable and have to dress up .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -5767,7 +5398,6 @@
         ]
     },
     {
-        "text": "the staff was very nice and courteous and obviously chinese .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5781,7 +5411,6 @@
         ]
     },
     {
-        "text": "First off , the food came fast and all together  : ) i like that . . . i hate the pretentiousness of things coming in one after the other .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -5798,7 +5427,6 @@
         ]
     },
     {
-        "text": "so about the prawns , they were fresh and had a slight crispiness about the batter . . . soooo good . . . the walnuts were cut in smaller pieces and very crunchy and tasty .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5815,7 +5443,6 @@
         ]
     },
     {
-        "text": "yummy .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5829,7 +5456,6 @@
         ]
     },
     {
-        "text": "best honey walnyt prawns that we have every tasted .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5843,7 +5469,6 @@
         ]
     },
     {
-        "text": "the brocollis were so fresh and tasty .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5857,7 +5482,6 @@
         ]
     },
     {
-        "text": "i would normally not finish the brocolli when i order these kinds of food but for the first time , every piece was as eventful as the first one . . . the scallops and prawns was so fresh and nicely cooked .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5874,7 +5498,6 @@
         ]
     },
     {
-        "text": "not chewy at all .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5888,7 +5511,6 @@
         ]
     },
     {
-        "text": "for desert we had the mango ginger creme brulee . . . oh la la yummy ! ! !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5902,7 +5524,6 @@
         ]
     },
     {
-        "text": "melt in your mouth .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5916,7 +5537,6 @@
         ]
     },
     {
-        "text": "we are for sure coming back to this restaurant .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -5930,7 +5550,6 @@
         ]
     },
     {
-        "text": "it is sad there is not many people who frequent eating at places like these that look pricey because they are at the hotel . . . but they are definitely one you dont want to miss , esp if your in downtown san jose .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -5950,7 +5569,6 @@
         ]
     },
     {
-        "text": "Chintzy portions",
         "predicted": [
             {
                 "aspect_category": "food prices"
@@ -5964,7 +5582,6 @@
         ]
     },
     {
-        "text": "– The sushi here is perfectly good , but for  $5 a piece , either the slices of fish should be larger , or there should be no pretense that this is a moderately priced restaurant  (even for NYC ) .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -5990,7 +5607,6 @@
         ]
     },
     {
-        "text": "We easily spent more than  $40 per person  (not including alcohol ) and were still hungry .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -6007,7 +5623,6 @@
         ]
     },
     {
-        "text": "I 'm astonished that this restaurant is categorized as  $ $ $ rather than  $ $ $ $ .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -6021,7 +5636,6 @@
         ]
     },
     {
-        "text": "Terrible service , food ok , pricey",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6047,7 +5661,6 @@
         ]
     },
     {
-        "text": "We put out name down and although there were open tables we were told that it 'd be a 30 minute wait .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6061,7 +5674,6 @@
         ]
     },
     {
-        "text": "We went back to the restaurant and low and behold , we were seated at one of the tables that was available 30 minutes ago ! !",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6075,7 +5687,6 @@
         ]
     },
     {
-        "text": "None that I can think of .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -6089,7 +5700,6 @@
         ]
     },
     {
-        "text": "We put in our order and although we ordered 4 appetizers , the food didn 't arrive until 45 minutes later . . .WITH OUR MAIN COURSE .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6103,7 +5713,6 @@
         ]
     },
     {
-        "text": "Um so now what are appetizers for ? ? ?",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -6117,7 +5726,6 @@
         ]
     },
     {
-        "text": "Oh I forgot to mention that they don 't have bread service .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -6131,7 +5739,6 @@
         ]
     },
     {
-        "text": "My wife also ordered a teapot of hot water  (she had a sore throat ) and I guess that since it was only water , it wasn 't a priority for them to actually bring it .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6145,7 +5752,6 @@
         ]
     },
     {
-        "text": "In other words , if they aren 't making  $ $ off of you then you don 't rate high on their  'service scale ' .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6159,7 +5765,6 @@
         ]
     },
     {
-        "text": "Food wise , its ok but a bit pricey for what you get considering the restaurant isn 't a fancy place .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6182,7 +5787,6 @@
         ]
     },
     {
-        "text": "If I needed to name some they would include the location to the beach or Golden Gate park .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -6196,7 +5800,6 @@
         ]
     },
     {
-        "text": "Its great if you spent the day there and didn 't want to drive to eat .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -6210,7 +5813,6 @@
         ]
     },
     {
-        "text": "Parking is reasonably good , they have their own lot and you can park in the park nearby .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -6224,7 +5826,6 @@
         ]
     },
     {
-        "text": "Another plus is the open feel of the restaurant with glass walls on all sides .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -6238,7 +5839,6 @@
         ]
     },
     {
-        "text": "Always good .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -6252,7 +5852,6 @@
         ]
     },
     {
-        "text": "6pm on a Sat before a Broadway play and we were quickly seated and served .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6266,7 +5865,6 @@
         ]
     },
     {
-        "text": "Amazing Spanish Mackeral special appetizer and perfect box sushi  (that eel with avodcao -- um um um ) .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6283,7 +5881,6 @@
         ]
     },
     {
-        "text": "As usual the omikase didn 't disappoint in freshness , although it scored low on creativity and selection .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6303,7 +5900,6 @@
         ]
     },
     {
-        "text": "Their specialty rolls are impressive , though I can 't remember what we had .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -6320,7 +5916,6 @@
         ]
     },
     {
-        "text": "Great selection of sakes .",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -6334,7 +5929,6 @@
         ]
     },
     {
-        "text": "Green tea creme brulee gets better each time I have it .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6348,7 +5942,6 @@
         ]
     },
     {
-        "text": "It isn 't the cheapest sushi but has been worth it every time .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -6365,7 +5958,6 @@
         ]
     },
     {
-        "text": "Very poor customer service .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6379,7 +5971,6 @@
         ]
     },
     {
-        "text": "– Schooner or Later 's charming location along the marina in Long Beach and average food does not , unfortunately , compensate for its very poor customer service .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -6405,7 +5996,6 @@
         ]
     },
     {
-        "text": "While this diner had reasonably good food , the restaurant staff seemed completely indifferent to our presence , and this attitude was reflected in the lack of service .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6425,7 +6015,6 @@
         ]
     },
     {
-        "text": "As part of a small party of four , our food was dropped off without comment ;",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6439,7 +6028,6 @@
         ]
     },
     {
-        "text": "any further needs we may have had could not have been met since no one stopped by the table .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6453,7 +6041,6 @@
         ]
     },
     {
-        "text": "When we finally were able to flag someone down , it was someone entirely different from the person who had dropped off the food , who was also not the same person who had taken our order .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6467,7 +6054,6 @@
         ]
     },
     {
-        "text": "After one member of our party had been bumped repeatedly by a waitress , a polite request that he not be bumped sent the waitress into an abusive rant .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6481,7 +6067,6 @@
         ]
     },
     {
-        "text": "A brief conversation with the manager at the end of the meal was the greatest disappointment--to say we had been  'blown off ' would be an understatement .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6495,7 +6080,6 @@
         ]
     },
     {
-        "text": "The manager continually interrupted with  'Is there anything else I can do for you ? ' , a strange comment because she had hardly listened , let alone responded to our expression of disappointment at our experience .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6509,7 +6093,6 @@
         ]
     },
     {
-        "text": "She promised to speak to the waitress who had flown off in a rage , but we could hardly take her promise seriously , seeing as she hadn 't bothered to get the waitresses name .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6523,7 +6106,6 @@
         ]
     },
     {
-        "text": "In short , Schooner or Later couldn 't have cared less about our being at their establishment .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6537,7 +6119,6 @@
         ]
     },
     {
-        "text": "you are with a hot date and he /she has an urge for sushi . . .then this might be the place .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -6551,7 +6132,6 @@
         ]
     },
     {
-        "text": "the fish was fresh , though it was cut very thin .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6568,7 +6148,6 @@
         ]
     },
     {
-        "text": "great service .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6582,7 +6161,6 @@
         ]
     },
     {
-        "text": "good sake selection .",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -6596,7 +6174,6 @@
         ]
     },
     {
-        "text": "Dungeness crabs here !",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -6610,7 +6187,6 @@
         ]
     },
     {
-        "text": "– Ray 's is THE place to go for high quality seafood dinners .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6624,7 +6200,6 @@
         ]
     },
     {
-        "text": "And they give good quantity for the price .",
         "predicted": [
             {
                 "aspect_category": "food prices"
@@ -6641,7 +6216,6 @@
         ]
     },
     {
-        "text": "We were only in Seattle for one night and I 'm so glad we picked Rays for dinner !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -6655,7 +6229,6 @@
         ]
     },
     {
-        "text": "I love Dungeness crabs and at Ray 's you can get them served in about 6 different ways !",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -6672,7 +6245,6 @@
         ]
     },
     {
-        "text": "We shared the family platter and I especially enjoyed the black cod in sake kasu .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6686,7 +6258,6 @@
         ]
     },
     {
-        "text": "I ended the meal with the unusual dessert of a port and chocolate tasting . . . .yummy !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6700,7 +6271,6 @@
         ]
     },
     {
-        "text": "And the service was simply spendid - quite a delight .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6714,7 +6284,6 @@
         ]
     },
     {
-        "text": "Great Breakfast",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -6728,7 +6297,6 @@
         ]
     },
     {
-        "text": "– Great drinks  , corn beef hash , coffee , B Fast burritos , Gluten Free menu .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -6751,7 +6319,6 @@
         ]
     },
     {
-        "text": "The service is fantastic at this fun place .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -6771,7 +6338,6 @@
         ]
     },
     {
-        "text": "If there is a line very day of the week for the entire time a place is open , you know it is great .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -6785,7 +6351,6 @@
         ]
     },
     {
-        "text": "This is the case at this gem .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -6799,7 +6364,6 @@
         ]
     },
     {
-        "text": "Best Neighborhood Standby .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -6813,7 +6377,6 @@
         ]
     },
     {
-        "text": "You Can 't Go Wrong Here .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -6827,7 +6390,6 @@
         ]
     },
     {
-        "text": "In Grammercy /Union Square /East Village this is my neighbors and my favorite spot .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -6841,7 +6403,6 @@
         ]
     },
     {
-        "text": "The music is great , no night better or worse , the bar tenders are generous with the pouring , and the lighthearted atmosphere will lifts you spirits .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -6861,7 +6422,6 @@
         ]
     },
     {
-        "text": "Seriously , you can 't go wrong , if it is unpretentious local fun you seek .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -6875,7 +6435,6 @@
         ]
     },
     {
-        "text": "Oh , and the cheese fries are awesome !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6889,7 +6448,6 @@
         ]
     },
     {
-        "text": "Good Food , Great Service , Average Prices  (For the Strip )",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6915,7 +6473,6 @@
         ]
     },
     {
-        "text": "– I decided to eat at Stack because of their price fixed pre-show dinner .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -6929,7 +6486,6 @@
         ]
     },
     {
-        "text": "When I walked in , I was taken aback by their incredible wood decor .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -6943,7 +6499,6 @@
         ]
     },
     {
-        "text": "The music playing was very hip , 20-30 something pop music , but the subwoofer to the sound system was located under my seat , which became annoying midway through dinner .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -6960,7 +6515,6 @@
         ]
     },
     {
-        "text": "I got the shellfish and shrimp appetizer and it was alright .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6974,7 +6528,6 @@
         ]
     },
     {
-        "text": "It wasn 't the freshest seafood ever , but the taste and presentation was OK .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -6991,7 +6544,6 @@
         ]
     },
     {
-        "text": "I picked the asparagus , which turned out to be incredible and perfectly prepared .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7005,7 +6557,6 @@
         ]
     },
     {
-        "text": "The 9 oz steak came next and it tasted great , at least initially .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7019,7 +6570,6 @@
         ]
     },
     {
-        "text": "The steak was done to my exact liking  (medium rare ) and was nice and juicy .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7033,7 +6583,6 @@
         ]
     },
     {
-        "text": "It ?s served with either a peppercorn sauce or red wine reduction , though both were indistinguishable in taste .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7047,7 +6596,6 @@
         ]
     },
     {
-        "text": "Though , one thing I realized later on was that the restaurant either used MSG or a meat tenderizer on the steak .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7061,7 +6609,6 @@
         ]
     },
     {
-        "text": "My mouth felt very dry afterwards and I had that signature  ?MSG ? taste lingering in my throat after I left the restaurant .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7075,7 +6622,6 @@
         ]
     },
     {
-        "text": "They came in their own nifty take out box and with some homemade frosting ; very light and not-too-sweet .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7089,7 +6635,6 @@
         ]
     },
     {
-        "text": "The desert was the perfect ending to an almost perfect dinner .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7103,7 +6648,6 @@
         ]
     },
     {
-        "text": "The dinner only took us about an hour and the prices were alright for the strip , almost  $50 /pp after tax and tip  (about average ) .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -7123,7 +6667,6 @@
         ]
     },
     {
-        "text": "But the servers were extremely attentive and very friendly .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7137,7 +6680,6 @@
         ]
     },
     {
-        "text": "Overall , I would go back and eat at the restaurant again .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7151,7 +6693,6 @@
         ]
     },
     {
-        "text": "Just remember to dress a little urban-chic so you don ?t look too far out of place .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -7165,7 +6706,6 @@
         ]
     },
     {
-        "text": "good sake , good food – i honestly don 't know much about japanese food at all .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7185,7 +6725,6 @@
         ]
     },
     {
-        "text": "Server made several sake suggestions which were very good .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7205,7 +6744,6 @@
         ]
     },
     {
-        "text": "had many dishes but the BEST was the lobster 3 ways .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7219,7 +6757,6 @@
         ]
     },
     {
-        "text": "VERY GOOD !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7233,7 +6770,6 @@
         ]
     },
     {
-        "text": "Overpriced",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -7247,7 +6783,6 @@
         ]
     },
     {
-        "text": "Waited 35 minutes for a table for 8 which was ok for such a big crowd .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -7261,7 +6796,6 @@
         ]
     },
     {
-        "text": "The waiter was a bit unfriendly and the feel of the restaurant was crowded .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7281,7 +6815,6 @@
         ]
     },
     {
-        "text": "Also , there was only one bathroom stall- probably need more for such big crowds .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -7295,7 +6828,6 @@
         ]
     },
     {
-        "text": "Most importantly , we were so excited about the food after seeing the very creative menu .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7309,7 +6841,6 @@
         ]
     },
     {
-        "text": "At best , the food was good and definately overpriced .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7329,7 +6860,6 @@
         ]
     },
     {
-        "text": "For the amount of food we got the prices should have been lower .",
         "predicted": [
             {
                 "aspect_category": "food prices"
@@ -7346,7 +6876,6 @@
         ]
     },
     {
-        "text": "Not sure if I would go back .",
         "predicted": [],
         "time": 0.4879152774810791,
         "gold": [
@@ -7356,7 +6885,6 @@
         ]
     },
     {
-        "text": "My favortie pizza joint in Seattle",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7370,7 +6898,6 @@
         ]
     },
     {
-        "text": "– This is my  'must bring out of town guests to ' restaurant and they always enjoy and rave about it .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7384,7 +6911,6 @@
         ]
     },
     {
-        "text": "In fact , many want to return a second time during their visit .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7398,7 +6924,6 @@
         ]
     },
     {
-        "text": "The pizza is delicious and the salads are fantastic .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7415,7 +6940,6 @@
         ]
     },
     {
-        "text": "I 've always found the wait staff and , if you sit at the bar , the cooks very friendly .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7432,7 +6956,6 @@
         ]
     },
     {
-        "text": "They aren 't the most talkative , but everytime I 've been there they have been very busy , which probably accounts for the lack of conversation .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7446,7 +6969,6 @@
         ]
     },
     {
-        "text": "I also really enjoy the simplicity of the decor and intimate feeling of a small restaurant .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -7460,7 +6982,6 @@
         ]
     },
     {
-        "text": "It 's just the right size for the menu .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -7474,7 +6995,6 @@
         ]
     },
     {
-        "text": "Excellent",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7488,7 +7008,6 @@
         ]
     },
     {
-        "text": "– My husband and I love eating at Mioposto Café .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7502,7 +7021,6 @@
         ]
     },
     {
-        "text": "We’re can’t say enough about their delicious gourmet pizza’s !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7516,7 +7034,6 @@
         ]
     },
     {
-        "text": "You won’t be disappointed by their menu .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -7530,7 +7047,6 @@
         ]
     },
     {
-        "text": "The pizza’s are thin crust and the menu offers very creative combinations and toppings .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -7547,7 +7063,6 @@
         ]
     },
     {
-        "text": "You never feel icky and stuffed after you eat there .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7561,7 +7076,6 @@
         ]
     },
     {
-        "text": "The pizza’s are light and scrumptious .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7575,7 +7089,6 @@
         ]
     },
     {
-        "text": "Try the Pizza Ensalata !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7589,7 +7102,6 @@
         ]
     },
     {
-        "text": "Absolutely delicious .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7603,7 +7115,6 @@
         ]
     },
     {
-        "text": "The pizza’s are not huge and the crust is thin…keep that in mind when you’re ordering .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7617,7 +7128,6 @@
         ]
     },
     {
-        "text": "Worth the wait",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7631,7 +7141,6 @@
         ]
     },
     {
-        "text": "– Had to wait thirty minutes to get in the door on a tuesday morning , but it was so worth it .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -7648,7 +7157,6 @@
         ]
     },
     {
-        "text": "The food is sinful .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7662,7 +7170,6 @@
         ]
     },
     {
-        "text": "The staff was really friendly .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7676,7 +7183,6 @@
         ]
     },
     {
-        "text": "The atmosphere was great .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -7690,7 +7196,6 @@
         ]
     },
     {
-        "text": "The specialty here is decadent pancakes , but I 've been back now four times , and I 've been wowed every time .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7707,7 +7212,6 @@
         ]
     },
     {
-        "text": "Nothing on the menu is less than amazing .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7721,7 +7225,6 @@
         ]
     },
     {
-        "text": "Go with some friends , wait the half hour or so with a cup of joe , and enjoy more than your average breakfast .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -7741,7 +7244,6 @@
         ]
     },
     {
-        "text": "Good eats .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7755,7 +7257,6 @@
         ]
     },
     {
-        "text": "I don 't know why anyone would want to write a great review about this place .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7769,7 +7270,6 @@
         ]
     },
     {
-        "text": "I have been to this place , folks and it is BAD .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7783,7 +7283,6 @@
         ]
     },
     {
-        "text": "Maybe it is good for that one night once in a blue moon when the chefs decide to use fish that 's half-way decent .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7797,7 +7296,6 @@
         ]
     },
     {
-        "text": "I have been here , spent tons of money on a chef special dinner and it was a major dissappointment .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7817,7 +7315,6 @@
         ]
     },
     {
-        "text": "Fancy pieces of exotic fish on a  $100 dollar plate and NOT ONE was eatable .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7840,7 +7337,6 @@
         ]
     },
     {
-        "text": "DONOT GO !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -7854,7 +7350,6 @@
         ]
     },
     {
-        "text": "Delicious",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7868,7 +7363,6 @@
         ]
     },
     {
-        "text": "– The atmosphere is great for any special occasion you might want to celebrate .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -7882,7 +7376,6 @@
         ]
     },
     {
-        "text": "The best dish are the honwy walnut prawns- just outstanding .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -7896,7 +7389,6 @@
         ]
     },
     {
-        "text": "The service is really attentive and charming .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7910,7 +7402,6 @@
         ]
     },
     {
-        "text": "We waited for an hour to be seated .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7924,7 +7415,6 @@
         ]
     },
     {
-        "text": "The service was excellent , the coffee was good even by starbucks standards and the food was outstanding .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7950,7 +7440,6 @@
         ]
     },
     {
-        "text": "It was worth the wait .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7964,7 +7453,6 @@
         ]
     },
     {
-        "text": "Plan on waiting 30-70 minutes .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -7978,7 +7466,6 @@
         ]
     },
     {
-        "text": "Will definitely be back .",
         "predicted": [],
         "time": 0.4831967353820801,
         "gold": [
@@ -7988,7 +7475,6 @@
         ]
     },
     {
-        "text": "Delicious . . . !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8002,7 +7488,6 @@
         ]
     },
     {
-        "text": "– I recently had the pleasure of dining as this delightful restaurant on 2nd street and wow what a great evening we had .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8016,7 +7501,6 @@
         ]
     },
     {
-        "text": "The food is fantastic , authentic , delicious and very , very affordable .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8036,7 +7520,6 @@
         ]
     },
     {
-        "text": "The decor was beautiful and unique .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -8050,7 +7533,6 @@
         ]
     },
     {
-        "text": "There was a really nice vibe about the place . . .good music , atmosphere and happy looking people .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -8067,7 +7549,6 @@
         ]
     },
     {
-        "text": "Our server was very professional and friendly .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8081,7 +7562,6 @@
         ]
     },
     {
-        "text": "To the owners of Open Sesame . . .Bravo . . .I can 't wait to come back to dine at your restaurant !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8095,7 +7575,6 @@
         ]
     },
     {
-        "text": "Delectable ",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8109,7 +7588,6 @@
         ]
     },
     {
-        "text": "It 's a tiny place so if you get there before 8pm on a weekend  (Thurs ?Sun ) you will find it easier to get a table or a seat at the sushi bar .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8123,7 +7601,6 @@
         ]
     },
     {
-        "text": "Once you 're inside , the real experience begins .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8137,7 +7614,6 @@
         ]
     },
     {
-        "text": "Everything , and I mean everything on the menu is delectable .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8154,7 +7630,6 @@
         ]
     },
     {
-        "text": "The waiters are very experienced and helpful with pairing your drink choice to your food tastes or vice versa .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8174,7 +7649,6 @@
         ]
     },
     {
-        "text": "The sushi is as fresh as it comes ?you 'd think ocean was in their backyard , no joke !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8188,7 +7662,6 @@
         ]
     },
     {
-        "text": "If you 're interested in good tasting  (without the fish taste or smell ) , large portions and creative sushi dishes this is your place . . .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8208,7 +7681,6 @@
         ]
     },
     {
-        "text": "big thick pepperoni",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -8222,7 +7694,6 @@
         ]
     },
     {
-        "text": "– The pepperoni 's cut real thick--Yum .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8236,7 +7707,6 @@
         ]
     },
     {
-        "text": "The pizza itself is not exactly the best I 've had EVER , but still pretty good .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8250,7 +7720,6 @@
         ]
     },
     {
-        "text": "I probably wouldn 't go back though  'cuz I don 't know if it 's worth it .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8264,7 +7733,6 @@
         ]
     },
     {
-        "text": "Maybe I 'll go back once more many years from now when I 've forgotten I went there already .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8278,7 +7746,6 @@
         ]
     },
     {
-        "text": "Sit in the Balcony",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -8292,7 +7759,6 @@
         ]
     },
     {
-        "text": "– Not bad .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8306,7 +7772,6 @@
         ]
     },
     {
-        "text": "Food was good and appetizing .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8320,7 +7785,6 @@
         ]
     },
     {
-        "text": "Portions was just enough for me , but may not be for a big eater .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -8334,7 +7798,6 @@
         ]
     },
     {
-        "text": "Fair menu selection .",
         "predicted": [
             {
                 "aspect_category": "food style_options"
@@ -8348,7 +7811,6 @@
         ]
     },
     {
-        "text": "The appetizer was interesting , but the Creme Brulee was very savory and delicious .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8362,7 +7824,6 @@
         ]
     },
     {
-        "text": "Indoor ambience was modern .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -8376,7 +7837,6 @@
         ]
     },
     {
-        "text": "If it 's nice outside , request for a table in the balcony .",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -8390,7 +7850,6 @@
         ]
     },
     {
-        "text": "It 's a great place to people watch .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -8404,7 +7863,6 @@
         ]
     },
     {
-        "text": "Although the service could be improved considering the money you put in .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8424,7 +7882,6 @@
         ]
     },
     {
-        "text": "Our drinks kept coming but our server came by a couple times .",
         "predicted": [
             {
                 "aspect_category": "drinks style_options"
@@ -8441,7 +7898,6 @@
         ]
     },
     {
-        "text": "Should check-up on us more frequently , don 't you think ?",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8455,7 +7911,6 @@
         ]
     },
     {
-        "text": "Late night dinning with exeptional food .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8469,7 +7924,6 @@
         ]
     },
     {
-        "text": "We were seated right away , the table was private and nice .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8489,7 +7943,6 @@
         ]
     },
     {
-        "text": "The service was exceptional - sometime there was a feeling that we were served by the army of friendly waiters .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8503,7 +7956,6 @@
         ]
     },
     {
-        "text": "The food was very good , filet mignon was probably the best I 've ever try .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8517,7 +7969,6 @@
         ]
     },
     {
-        "text": "The portions are big though , so do not order too much .",
         "predicted": [
             {
                 "aspect_category": "food prices"
@@ -8531,7 +7982,6 @@
         ]
     },
     {
-        "text": "Groovy music made the dinner casual .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -8545,7 +7995,6 @@
         ]
     },
     {
-        "text": "The most pleasant surprise was the check that did not exceed my expectations as it always happens in most of the places .",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -8559,7 +8008,6 @@
         ]
     },
     {
-        "text": "I have a but here - there was a bathroom attendant in the restroom which was odd .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -8573,7 +8021,6 @@
         ]
     },
     {
-        "text": "The bathroom itself is very small with two toilets and only one sink , the girl was staying totally on the way hanging out paper towels from the dispenser .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -8587,7 +8034,6 @@
         ]
     },
     {
-        "text": "I felt ackward and next time went to the casino bathroom .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -8601,7 +8047,6 @@
         ]
     },
     {
-        "text": "This place rocks ! !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8615,7 +8060,6 @@
         ]
     },
     {
-        "text": "– Mercedes restaurant is so tasty , the service is undeniably awesome !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8635,7 +8079,6 @@
         ]
     },
     {
-        "text": "The chips and salsa are so yummy , and the prices are fabulous .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8655,7 +8098,6 @@
         ]
     },
     {
-        "text": "The atmosphere is aspiring , and  the decor is festive and amazing . .",
         "predicted": [
             {
                 "aspect_category": "ambience general"
@@ -8669,7 +8111,6 @@
         ]
     },
     {
-        "text": "The catering is out of this world , and Raouls chicken vegetable soup rocks my world ! ! !",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8683,7 +8124,6 @@
         ]
     },
     {
-        "text": "Drinks are suberb , and I feel like I am in a Third World country when I walk in the door .",
         "predicted": [
             {
                 "aspect_category": "drinks quality"
@@ -8703,7 +8143,6 @@
         ]
     },
     {
-        "text": "Insultingly Overpriced",
         "predicted": [
             {
                 "aspect_category": "restaurant prices"
@@ -8717,7 +8156,6 @@
         ]
     },
     {
-        "text": "- Mediocre Service /Quality",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8734,7 +8172,6 @@
         ]
     },
     {
-        "text": "The presentation of Snooze is excellent and it is one of those places that you feel more sophisticated just for being there ; but peel back the layers and you have an overpriced IHOP with a high brow menu .",
         "predicted": [
             {
                 "aspect_category": "restaurant miscellaneous"
@@ -8757,7 +8194,6 @@
         ]
     },
     {
-        "text": "To start off , approximately 8-10 oz of orange juice will cost you  $3 .",
         "predicted": [
             {
                 "aspect_category": "drinks prices"
@@ -8771,7 +8207,6 @@
         ]
     },
     {
-        "text": "They serve it in a tall , skinny hour-glass shaped glass to disguise the fact that you a getting a small juice at the price of a half gallon in a supermarket .",
         "predicted": [
             {
                 "aspect_category": "drinks prices"
@@ -8788,7 +8223,6 @@
         ]
     },
     {
-        "text": "I should have just asked for the check when I saw that ; but their menu was so unique that I continued .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8802,7 +8236,6 @@
         ]
     },
     {
-        "text": "The pancakes were certainly inventive but  $8 .50 for 3 - 6 ' pancakes  (one of them was more like 5 ' ) in the pancake flight  (sample of 3 different pancakes ) is well over-priced .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8822,7 +8255,6 @@
         ]
     },
     {
-        "text": "The pancakes should be larger  (at least 8 ' ) to justify the expense even with the unique offerings .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8842,7 +8274,6 @@
         ]
     },
     {
-        "text": "On my meal I had to send back my eggs for a simple request of breaking the yokes before cooking , and would have had to send them back again if I hadn 't rejected the meal all together .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8856,7 +8287,6 @@
         ]
     },
     {
-        "text": "I rejected it because in the process of attempting to fix the eggs they broke something else in the dish and I was too frustrated to continue .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -8870,7 +8300,6 @@
         ]
     },
     {
-        "text": "To their credit they removed the dish from the check ; but no manager stopped by to ask what the problem was .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8884,7 +8313,6 @@
         ]
     },
     {
-        "text": "In the end our check came to  $27 for 4 small pancakes , a breakfast burrito , an orange juice and an iced tea  (I had water ) .",
         "predicted": [
             {
                 "aspect_category": "food prices"
@@ -8907,7 +8335,6 @@
         ]
     },
     {
-        "text": "Much more than just a great view !",
         "predicted": [
             {
                 "aspect_category": "location general"
@@ -8924,7 +8351,6 @@
         ]
     },
     {
-        "text": "– I am exceedingly pleased to report that my dinner at Ray 's Boathouse last Friday completely exceeded my expectations .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8938,7 +8364,6 @@
         ]
     },
     {
-        "text": "Ray 's is something of a Seattle institution , but given its gorgeous Sound views , I had suspected that the accolades were more due to the scenery than to the food and service .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8958,7 +8383,6 @@
         ]
     },
     {
-        "text": "Imagine my happy surprise upon finding that the views are only the third-best thing about Ray 's !",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -8975,7 +8399,6 @@
         ]
     },
     {
-        "text": "To start things off , our lovely server Brooke was quickly on hand to take my drink order .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -8989,7 +8412,6 @@
         ]
     },
     {
-        "text": "My party of two was feeling particularly ambitious , and we splurged on the Shilshole Sampler . . .a beautiful assortment of enormous white gulf prawns , smoked albacore tuna , Ray 's fantastic manila clams seasoned with dill , scallops in a tasty soy dressing , and a tiny pile of Dungeness crab atop a sublime butter sauce .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -9006,7 +8428,6 @@
         ]
     },
     {
-        "text": "For my entr &eacute ;e , I completely enjoyed the seared Alaskan sea scallops complemented by chard , artichoke hearts , fennel , and pecorino toscano .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -9023,7 +8444,6 @@
         ]
     },
     {
-        "text": "The scallops are apparently cooked in a black olive butter which really makes them unique  (not to mention tasty ) .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -9040,7 +8460,6 @@
         ]
     },
     {
-        "text": "My friend enjoyed the grilled Alaskan King Salmon with delectable creamed Washington russet potatoes and crisp green beans .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -9054,7 +8473,6 @@
         ]
     },
     {
-        "text": "I had a taste of all three items on her plate , and they were superb .",
         "predicted": [
             {
                 "aspect_category": "food quality"
@@ -9068,7 +8486,6 @@
         ]
     },
     {
-        "text": "Our server continued to be attentive throughout the night , but I did remain puzzled by one issue :  Who thinks that Ray 's is an appropriate place to take young children for dinner ?",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -9088,7 +8505,6 @@
         ]
     },
     {
-        "text": "Two rascally kids were seated near us for the first part of our dinner . . .they were replaced by a delightful preteen who pretended to gag every time seafood was mentioned at her table .",
         "predicted": [],
         "time": 0.4926433563232422,
         "gold": [
@@ -9098,7 +8514,6 @@
         ]
     },
     {
-        "text": "All considered , I have to say that Ray 's Boathouse is deserving of its title as a Seattle institution .",
         "predicted": [
             {
                 "aspect_category": "restaurant general"
@@ -9112,7 +8527,6 @@
         ]
     },
     {
-        "text": "While I could have done without the youth who shared the evening with us , our wonderful server and food made the experience a very positive one .",
         "predicted": [
             {
                 "aspect_category": "service general"
@@ -9135,7 +8549,6 @@
         ]
     },
     {
-        "text": "Oh yeah . . .the view was good , too .",
         "predicted": [
             {
                 "aspect_category": "location general"

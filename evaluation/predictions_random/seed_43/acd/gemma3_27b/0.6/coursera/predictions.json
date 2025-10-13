@@ -1,6 +1,5 @@
 [
     {
-        "text": "In the future you have not got anything to show in your CV .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -14,7 +13,6 @@
         ]
     },
     {
-        "text": "Great course as an introductory to Machine Learning .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -28,7 +26,6 @@
         ]
     },
     {
-        "text": "Thank you Coursera for the opportunity and thank the Professors Emily and Carlos for such a valuable gift of sharing knowledge for free .",
         "predicted": [
             {
                 "aspect_category": "faculty value"
@@ -45,7 +42,6 @@
         ]
     },
     {
-        "text": "The staffs reply on Discussion forum as well .",
         "predicted": [
             {
                 "aspect_category": "faculty response"
@@ -59,7 +55,6 @@
         ]
     },
     {
-        "text": "But the content and the exercises proposed are great , one of the best and no nonsense approach to bebop improvisation",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -76,7 +71,6 @@
         ]
     },
     {
-        "text": "Yes it was challenging because it is good .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -90,7 +84,6 @@
         ]
     },
     {
-        "text": ". . I felt absolutely crushed trying to learn and understand all this .",
         "predicted": [
             {
                 "aspect_category": "course workload"
@@ -104,7 +97,6 @@
         ]
     },
     {
-        "text": "The lectures are easy to follow and explain all points very clearly .",
         "predicted": [
             {
                 "aspect_category": "presentation comprehensiveness"
@@ -118,7 +110,6 @@
         ]
     },
     {
-        "text": "I am so glad to have found this course ! !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -132,7 +123,6 @@
         ]
     },
     {
-        "text": "I would recommend this course to others .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -146,7 +136,6 @@
         ]
     },
     {
-        "text": "Really liked it .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -160,7 +149,6 @@
         ]
     },
     {
-        "text": "I loved the short lectures , tips and tricks and the information how our brain works !",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -174,7 +162,6 @@
         ]
     },
     {
-        "text": "It all seems rushed and not rewarding .",
         "predicted": [
             {
                 "aspect_category": "course workload"
@@ -191,7 +178,6 @@
         ]
     },
     {
-        "text": "Thanks to this course , I feel like i am overcoming this situation .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -205,7 +191,6 @@
         ]
     },
     {
-        "text": "Other than the amount of material on last week , it is a good course and highly recommended !",
         "predicted": [
             {
                 "aspect_category": "material quantity"
@@ -225,7 +210,6 @@
         ]
     },
     {
-        "text": "More like that would liven the material up a bit .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -239,7 +223,6 @@
         ]
     },
     {
-        "text": "Maybe you would consider adding those to future courses .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -253,7 +236,6 @@
         ]
     },
     {
-        "text": "This course is awesome .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -267,7 +249,6 @@
         ]
     },
     {
-        "text": "This course is exceptionally well put together .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -281,7 +262,6 @@
         ]
     },
     {
-        "text": "The final assignment gives you a largely complete project and just asks you to make a few changes .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -295,7 +275,6 @@
         ]
     },
     {
-        "text": "Very poorly constructed with links in the final exam that didn ' t work so I couldn ' t finish the exam .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -315,7 +294,6 @@
         ]
     },
     {
-        "text": "Just what I was looking for .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -329,7 +307,6 @@
         ]
     },
     {
-        "text": "There was plenty of time to finish the project and some extra time to make it even better than a simple submission that meets the basic requirements of the course .",
         "predicted": [
             {
                 "aspect_category": "assignments workload"
@@ -343,7 +320,6 @@
         ]
     },
     {
-        "text": "It enables those who take it without knowing anything about the subject , approach , and those who have some knowledge , refreshes and updates them .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -357,7 +333,6 @@
         ]
     },
     {
-        "text": "I am almost at the end of this course and I think it is excellent .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -371,7 +346,6 @@
         ]
     },
     {
-        "text": "It is undoubtedly on of the best ever MOOC ever commissioned by Coursera .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -385,7 +359,6 @@
         ]
     },
     {
-        "text": "It ' s a badly designed assignment that wastes students ' time and creates a lot of frustration .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -402,7 +375,6 @@
         ]
     },
     {
-        "text": "The IHTS course was so much fun with learning .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -416,7 +388,6 @@
         ]
     },
     {
-        "text": "It was a very interesting course and I highly recommend it .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -430,7 +401,6 @@
         ]
     },
     {
-        "text": "The only thing I might change in the course is having the professor incorporate definitions to some of the terms ( i . e . nutrient dense , , metabolic abnormalities ) in the videos , or as a supplemental document .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -447,7 +417,6 @@
         ]
     },
     {
-        "text": "Great job !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -461,7 +430,6 @@
         ]
     },
     {
-        "text": "Overall , the class was just the right amount of challenge and fun .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -475,7 +443,6 @@
         ]
     },
     {
-        "text": "This being said , I recommend breaking the course into multiple separate courses and including more depth ( with further practice ) to guarantee that the student has truly achieved mastery .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -492,7 +459,6 @@
         ]
     },
     {
-        "text": "Would have preferred more flesh ( both implementational and mathematical ) on the bones .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -506,7 +472,6 @@
         ]
     },
     {
-        "text": "No peer review , just quiz questions that can only be answered if the assignment is completed correctly .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -520,7 +485,6 @@
         ]
     },
     {
-        "text": "The visiting scholars were a great opportunity to not only learn about historical fiction and what kind of research is done , it ' s also was a great way to learn the process of writing .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -537,7 +501,6 @@
         ]
     },
     {
-        "text": "Week 3 assignment was the hardest I ever took .",
         "predicted": [
             {
                 "aspect_category": "assignments workload"
@@ -551,7 +514,6 @@
         ]
     },
     {
-        "text": "Overall it was a good course",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -565,7 +527,6 @@
         ]
     },
     {
-        "text": "The difficulty is also very flexible .",
         "predicted": [
             {
                 "aspect_category": "course workload"
@@ -579,7 +540,6 @@
         ]
     },
     {
-        "text": "Ng speaks clearly and the flow of the class is easy to follow .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -593,7 +553,6 @@
         ]
     },
     {
-        "text": "Very good course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -607,7 +566,6 @@
         ]
     },
     {
-        "text": "The course is very interesting and plentiful , I even can ' t stop listening to the lessons ob by one .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -627,7 +585,6 @@
         ]
     },
     {
-        "text": "The quality of the course and the Professor is a Top Quality .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -647,7 +604,6 @@
         ]
     },
     {
-        "text": "Professor really knows his job , and he is doing great .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -661,7 +617,6 @@
         ]
     },
     {
-        "text": "The course content is well designed both is content and structure .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -678,7 +633,6 @@
         ]
     },
     {
-        "text": "Although I would prefer for some quizzes not to be locked unless paid .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -692,7 +646,6 @@
         ]
     },
     {
-        "text": "Thanks to Coursera , Leiden University and all the people who makes this miracle of quality online teaching for free ever possible .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -709,7 +662,6 @@
         ]
     },
     {
-        "text": "When stuff worked it was rewarding , but other than that , expect to read documentation if you get stuck .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -723,7 +675,6 @@
         ]
     },
     {
-        "text": "However , I wish the course could be arranged in a more logical and coherent way , such as geographical or chronological , which will help to understand and memorize .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -737,7 +688,6 @@
         ]
     },
     {
-        "text": "Loved it throughout !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -751,7 +701,6 @@
         ]
     },
     {
-        "text": "This course has two great projects .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -765,7 +714,6 @@
         ]
     },
     {
-        "text": "What a superb course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -779,7 +727,6 @@
         ]
     },
     {
-        "text": "This course is not just highly interesting , but extremely practical .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -799,7 +746,6 @@
         ]
     },
     {
-        "text": "Personally I consider this course a great and thrilling ride .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -813,7 +759,6 @@
         ]
     },
     {
-        "text": "As I began , a super course , and available at just the right time !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -827,7 +772,6 @@
         ]
     },
     {
-        "text": "Aside from week 4 , I found this course to be little more than a commercial for various social analytics programs .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -841,7 +785,6 @@
         ]
     },
     {
-        "text": "The way Dr . BArbara Oakley and Dr . Sejnowsky developed this important course for us students also applies many interesting ways of understanding in a more natural way as well as clear explanation of the methods on how to get a better approach when we are trying to learn something .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -864,7 +807,6 @@
         ]
     },
     {
-        "text": "I enjoyed the course very much .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -878,7 +820,6 @@
         ]
     },
     {
-        "text": "Narration has been wonderful and straight from the heart .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -892,7 +833,6 @@
         ]
     },
     {
-        "text": "I think the course should add a video to explain more in details some concept as variables . many of my issues were coming from deep doubts i had about this . maybe explain variables on hardware and variables as pointers .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -906,7 +846,6 @@
         ]
     },
     {
-        "text": "Each point is explained in terms students of all backgrounds can understand and grasp .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -920,7 +859,6 @@
         ]
     },
     {
-        "text": "Thanks very much for introducing me to this exciting field !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -934,7 +872,6 @@
         ]
     },
     {
-        "text": "Thank you",
         "predicted": [],
         "time": 1.329880952835083,
         "gold": [
@@ -944,7 +881,6 @@
         ]
     },
     {
-        "text": "After the first week , the instructors never showed up to answer a single question in the forums .",
         "predicted": [
             {
                 "aspect_category": "faculty response"
@@ -958,7 +894,6 @@
         ]
     },
     {
-        "text": "It is fun and yet , it is very detailed and , yes , it takes a bit more than 2 - 3 hours per week .",
         "predicted": [
             {
                 "aspect_category": "course workload"
@@ -975,7 +910,6 @@
         ]
     },
     {
-        "text": "Again this course was very very interesting .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -989,7 +923,6 @@
         ]
     },
     {
-        "text": "Learned something new almost everyday .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1003,7 +936,6 @@
         ]
     },
     {
-        "text": "It was completely literal , and often translated in ways that did not make sense .",
         "predicted": [
             {
                 "aspect_category": "presentation comprehensiveness"
@@ -1017,7 +949,6 @@
         ]
     },
     {
-        "text": "The information he gives you beside the course itself it ' s really useful in making your own games ! and practicing by your own .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1031,7 +962,6 @@
         ]
     },
     {
-        "text": "One of the Best Courses",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1045,7 +975,6 @@
         ]
     },
     {
-        "text": "The professor describe all courses with clam and very kindly .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -1059,7 +988,6 @@
         ]
     },
     {
-        "text": "Incredible , easy to understand lessons .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -1076,7 +1004,6 @@
         ]
     },
     {
-        "text": "The course is a very practical approach to the language .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1090,7 +1017,6 @@
         ]
     },
     {
-        "text": "The course is really great and I ' m learning a lot from it .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1104,7 +1030,6 @@
         ]
     },
     {
-        "text": "I also appreciated the passion is the delivery of the course by the lecturer , her enthusiasm made watching all the videos worthwhile .",
         "predicted": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -1124,7 +1049,6 @@
         ]
     },
     {
-        "text": "This changes the way you study about a subject regardless of the field that you want to specialise in .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1138,7 +1062,6 @@
         ]
     },
     {
-        "text": "It is not for pros because in course you didn ' t find interesting material .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -1152,7 +1075,6 @@
         ]
     },
     {
-        "text": "It ' s a very basic course , could have included more material .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1172,7 +1094,6 @@
         ]
     },
     {
-        "text": "George Siedel , You are one of the best teacher of my life .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -1186,7 +1107,6 @@
         ]
     },
     {
-        "text": "I have taken several classes here and I have to say this is one of the best .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1200,7 +1120,6 @@
         ]
     },
     {
-        "text": "I ' m so glad I took this class !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1214,7 +1133,6 @@
         ]
     },
     {
-        "text": "This is merely a starter course that gets you acquainted with the basics of ML using Python .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1231,7 +1149,6 @@
         ]
     },
     {
-        "text": "I really enjoyed this course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1245,7 +1162,6 @@
         ]
     },
     {
-        "text": "Very in - depth introductory learning of python .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1259,7 +1175,6 @@
         ]
     },
     {
-        "text": "Feel program could be much more valuable by using1 )",
         "predicted": [
             {
                 "aspect_category": "course value"
@@ -1273,7 +1188,6 @@
         ]
     },
     {
-        "text": "This course ' s video lectures are carefully created .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -1287,7 +1201,6 @@
         ]
     },
     {
-        "text": "I used Python do all the assignments but I didn ' t bother submitting my answers to get credit for the course because I would have had to reimplement it again in Octave .",
         "predicted": [
             {
                 "aspect_category": "assignments workload"
@@ -1304,7 +1217,6 @@
         ]
     },
     {
-        "text": "The content is intuitive enough to apreciate the ' fertility ' of these models and apply them in various contexts .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -1318,7 +1230,6 @@
         ]
     },
     {
-        "text": "This change is not due to the professor or the course material ; both are excellent .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -1338,7 +1249,6 @@
         ]
     },
     {
-        "text": "The teacher is absolute wonderful because I knows how to explain the complex concepts and theory in an easy way .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -1358,7 +1268,6 @@
         ]
     },
     {
-        "text": ") 4 ) Videos of Experts to share their findings / research",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -1372,7 +1281,6 @@
         ]
     },
     {
-        "text": "DO NOT TAKE THIS COURSE - THE guy who reads ( not teaches ) the course , Justin - Nicholas Toytama is horrendous .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -1389,7 +1297,6 @@
         ]
     },
     {
-        "text": "I liked the fact that it was both theoretically robust and practically inclined , the examples utilised where relatable and easy to follow .",
         "predicted": [
             {
                 "aspect_category": "material relatability"
@@ -1409,7 +1316,6 @@
         ]
     },
     {
-        "text": "It allows to understand the peculiarities of the clinical picture of depression , as well as risks .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -1423,7 +1329,6 @@
         ]
     },
     {
-        "text": "The assignment questions were often nebulous .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -1437,7 +1342,6 @@
         ]
     },
     {
-        "text": "Good coverage in a very fast intro to the subject .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1451,7 +1355,6 @@
         ]
     },
     {
-        "text": "He was also very sensitive to his audience .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -1465,7 +1368,6 @@
         ]
     },
     {
-        "text": "This is an excellent course for two reasons : first the video lectures are very good , introducing complex concepts in a relatively accessible manner , and second the automated submission system is good at marking your ( well designed ) assignments .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -1488,7 +1390,6 @@
         ]
     },
     {
-        "text": "The use of real - life examples is a fantastic learning aid , in the videos and in the programming exercises .",
         "predicted": [
             {
                 "aspect_category": "material relatability"
@@ -1508,7 +1409,6 @@
         ]
     },
     {
-        "text": "This course is great !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1522,7 +1422,6 @@
         ]
     },
     {
-        "text": "The lectures and explanations need more clarity and better instruction quality .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -1542,7 +1441,6 @@
         ]
     },
     {
-        "text": "The course provides a suite of tools and techniques for data analysis that ' s a great starting point to build from .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1556,7 +1454,6 @@
         ]
     },
     {
-        "text": "The assignments feel like tedious filler an a lot of the questions in them are very poorly worded .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -1576,7 +1473,6 @@
         ]
     },
     {
-        "text": "It´s good to know how to clean the data but it´s confusing when Q1 is apparently correct but actually it´s not .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -1590,7 +1486,6 @@
         ]
     },
     {
-        "text": "With student debt , this was a lifesaver and career builder .",
         "predicted": [
             {
                 "aspect_category": "course value"
@@ -1604,7 +1499,6 @@
         ]
     },
     {
-        "text": "thanks again",
         "predicted": [],
         "time": 2.3435146808624268,
         "gold": [
@@ -1614,7 +1508,6 @@
         ]
     },
     {
-        "text": "Dr . Terrence Sejnowski , however , was incredibly difficult to listen to .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -1628,7 +1521,6 @@
         ]
     },
     {
-        "text": "Coursework was quite easy .",
         "predicted": [
             {
                 "aspect_category": "assignments workload"
@@ -1642,7 +1534,6 @@
         ]
     },
     {
-        "text": "Thank you again for the opportunity to learn",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1656,7 +1547,6 @@
         ]
     },
     {
-        "text": "They assume everyone knows how to code in html , javascript and css .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -1670,7 +1560,6 @@
         ]
     },
     {
-        "text": "The course was really interesting .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1684,7 +1573,6 @@
         ]
     },
     {
-        "text": "Thanks everyone in this course !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1698,7 +1586,6 @@
         ]
     },
     {
-        "text": "Each section is clear and flows to the next section .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -1712,7 +1599,6 @@
         ]
     },
     {
-        "text": "The course professor has used real life cases to link up with the course material which helps students to connect well with the concepts being used .",
         "predicted": [
             {
                 "aspect_category": "material relatability"
@@ -1729,7 +1615,6 @@
         ]
     },
     {
-        "text": "The course material did not cover what we needed for the weekly quizzes ( particularly in Week 3 & 4 ) and the final exam was immensely difficult .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -1749,7 +1634,6 @@
         ]
     },
     {
-        "text": "I would have liked this class to have gone more in depth in terms of the actual science and research involved ( the studies Dr . Fredrickson refers to are for the most part only touched on briefly ) , and to have spent less time listening to the on - site students discussing their personal opinions ( though I appreciated their insights , I would have liked to have learned more actual information ) .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1766,7 +1650,6 @@
         ]
     },
     {
-        "text": "Only shows a bit of javascript , css , and html snippets .",
         "predicted": [
             {
                 "aspect_category": "material quantity"
@@ -1780,7 +1663,6 @@
         ]
     },
     {
-        "text": "Anyone that is eager to delve into the world of modern microelectronic devices and systems will benefit a lot from taking this course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1794,7 +1676,6 @@
         ]
     },
     {
-        "text": "As I progressed through the weeks , I found myself becoming less and less interested since I already know the basics of memory and psychology .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1808,7 +1689,6 @@
         ]
     },
     {
-        "text": "Some assignments were more oriented to solving marginal problems then using Spark and distributed and parallel computing .",
         "predicted": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -1822,7 +1702,6 @@
         ]
     },
     {
-        "text": "Very informative .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1836,7 +1715,6 @@
         ]
     },
     {
-        "text": "Hope that instructors can change course to better .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1850,7 +1728,6 @@
         ]
     },
     {
-        "text": "Very nice course with solid foundation and great examples .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1873,7 +1750,6 @@
         ]
     },
     {
-        "text": "I have learned a lot .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1887,7 +1763,6 @@
         ]
     },
     {
-        "text": "Excellent course !",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1901,7 +1776,6 @@
         ]
     },
     {
-        "text": "One of the best .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1915,7 +1789,6 @@
         ]
     },
     {
-        "text": "A well - designed course that allows me to understand the web development concepts .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1935,7 +1808,6 @@
         ]
     },
     {
-        "text": "It gave me the confidence in programming which I lacked before entering this course .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1949,7 +1821,6 @@
         ]
     },
     {
-        "text": "Starting withe simplest elements as resistors and LEDs and ending in the most complex and advanced interfaces i . e . ethernet and wireless interfaces .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -1963,7 +1834,6 @@
         ]
     },
     {
-        "text": "The course really needs some improving !",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -1977,7 +1847,6 @@
         ]
     },
     {
-        "text": "I have found this Course to be the right place so far .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -1991,7 +1860,6 @@
         ]
     },
     {
-        "text": "Thanks also to his staff and lab assistants for helping to create such a well - designed program .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -2005,7 +1873,6 @@
         ]
     },
     {
-        "text": "The material is presented in a very accessible manner and the quizzes help you master the key elements acquired within each session .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -2025,7 +1892,6 @@
         ]
     },
     {
-        "text": "Thank you very much !",
         "predicted": [],
         "time": 2.4227144718170166,
         "gold": [
@@ -2035,7 +1901,6 @@
         ]
     },
     {
-        "text": "It is an excellent introduction to R .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -2049,7 +1914,6 @@
         ]
     },
     {
-        "text": "I would suggest this course to anyone , and though it may seem easy .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2066,7 +1930,6 @@
         ]
     },
     {
-        "text": "Thanks Yaakov !",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -2080,7 +1943,6 @@
         ]
     },
     {
-        "text": "So far just great !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2094,7 +1956,6 @@
         ]
     },
     {
-        "text": "A great teaching method that makes you think and try out the changes .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -2108,7 +1969,6 @@
         ]
     },
     {
-        "text": "I almost didn ' t give it five stars , because I feel that they could have made room for just a bit more explanation and just a few more examples of the topics covered .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -2128,7 +1988,6 @@
         ]
     },
     {
-        "text": "Where it falls down though is the assignment auto - grader .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -2142,7 +2001,6 @@
         ]
     },
     {
-        "text": "There is a lot of self - teaching with these courses because there are no professors present to reach out to with questions .",
         "predicted": [
             {
                 "aspect_category": "faculty response"
@@ -2156,7 +2014,6 @@
         ]
     },
     {
-        "text": "Excellent course !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2170,7 +2027,6 @@
         ]
     },
     {
-        "text": "A very easy yet enlightening course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2184,7 +2040,6 @@
         ]
     },
     {
-        "text": "The exercises are too easy and boring .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -2198,7 +2053,6 @@
         ]
     },
     {
-        "text": "He teaches even worse then me .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -2212,7 +2066,6 @@
         ]
     },
     {
-        "text": "The course takes a broad approach to the subject .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2226,7 +2079,6 @@
         ]
     },
     {
-        "text": "Information is so packed and concentrated it is amazing !",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -2240,7 +2092,6 @@
         ]
     },
     {
-        "text": "Never keep questioning , is one ( in many ) of the most important lessons that you can take from this course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2254,7 +2105,6 @@
         ]
     },
     {
-        "text": "Instead of dreading class I found myself excited about attending everyday and was able to progress faster than the course outline due to his extremely clear and supportive teaching method .",
         "predicted": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -2271,7 +2121,6 @@
         ]
     },
     {
-        "text": "I found the reading material sources particularly relevant without exceeding unnecessary in quantity and issues .",
         "predicted": [
             {
                 "aspect_category": "material relatability"
@@ -2288,7 +2137,6 @@
         ]
     },
     {
-        "text": "The assignments are challenging but enjoyable and well paced .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -2305,7 +2153,6 @@
         ]
     },
     {
-        "text": "The assignments are not well described and the autograder is very finicky .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -2325,7 +2172,6 @@
         ]
     },
     {
-        "text": "Additionally , the written instructions for the final exam did not even cover some of the questions that needed to be answered i . e . repeats or questions about particular reading frames when analyzing the ORFs .",
         "predicted": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -2339,7 +2185,6 @@
         ]
     },
     {
-        "text": "I am exactly looking for this course since",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -2353,7 +2198,6 @@
         ]
     },
     {
-        "text": "The automated grader gives very concise and sometimes helpful feedback .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -2367,7 +2211,6 @@
         ]
     },
     {
-        "text": "I like it very much",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2381,7 +2224,6 @@
         ]
     },
     {
-        "text": "I was a little surprised that there were no discussion / examples of tree classifiers or Naive Bayes .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -2395,7 +2237,6 @@
         ]
     },
     {
-        "text": "The class It ' s really clear and simple .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -2409,7 +2250,6 @@
         ]
     },
     {
-        "text": "I would be gladly doing this course again if i were in the position to want to learn gaming development !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2423,7 +2263,6 @@
         ]
     },
     {
-        "text": "I still do these excersizes and try to notice good and bad design solutions in everything what surrounds me .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -2437,7 +2276,6 @@
         ]
     },
     {
-        "text": "Wonderful Course and Wonderful Professor .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2457,7 +2295,6 @@
         ]
     },
     {
-        "text": "For me who has programming experience for more than 10 years and just want to catch up with the mainstream of programming in Python , it ' s a bit too simple .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -2471,7 +2308,6 @@
         ]
     },
     {
-        "text": "The power points are informative and to the point .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -2485,7 +2321,6 @@
         ]
     },
     {
-        "text": "This course was awesome ! !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2499,7 +2334,6 @@
         ]
     },
     {
-        "text": "I highly recommend it !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2513,7 +2347,6 @@
         ]
     },
     {
-        "text": "It required me to do more reading than what was provided via videos and slide decks .",
         "predicted": [
             {
                 "aspect_category": "material quantity"
@@ -2527,7 +2360,6 @@
         ]
     },
     {
-        "text": "This a really good course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2541,7 +2373,6 @@
         ]
     },
     {
-        "text": "Interactive .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2555,7 +2386,6 @@
         ]
     },
     {
-        "text": "Excellent course .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -2569,7 +2399,6 @@
         ]
     },
     {
-        "text": "The weekly multiple choice quiz which could be repeated ( varying the questions ) until the subject is fully undertood and minimum score met also contributed to a good understanding of the subject .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -2586,7 +2415,6 @@
         ]
     },
     {
-        "text": "It has really helped me to think more like my husband .",
         "predicted": [
             {
                 "aspect_category": "course relatability"
@@ -2600,7 +2428,6 @@
         ]
     },
     {
-        "text": "Thank you for your warmhearted and incredible instructions !",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -2614,7 +2441,6 @@
         ]
     },
     {
-        "text": "Simple and practical guidelines which can be followed easily .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -2634,7 +2460,6 @@
         ]
     },
     {
-        "text": "It is not easy , but with tons of fun .",
         "predicted": [
             {
                 "aspect_category": "course workload"
@@ -2648,7 +2473,6 @@
         ]
     },
     {
-        "text": "Professors Emily Fox and Carlos Guestrin did an excellent job of presenting the course in an engaging way and with enough hands - on exercises to better understand the lessons .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -2668,7 +2492,6 @@
         ]
     },
     {
-        "text": "Maybe if I had bought the book that goes along with the course , i would have gained more insight but as a standalone course , it rates just three stars .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -2685,7 +2508,6 @@
         ]
     },
     {
-        "text": "A very useful course that teaches techniques",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -2699,7 +2521,6 @@
         ]
     },
     {
-        "text": "The lectures were a good length , they were interesting and very easy to understand .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -2716,7 +2537,6 @@
         ]
     },
     {
-        "text": "Perfect Videos , sessions .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -2730,7 +2550,6 @@
         ]
     },
     {
-        "text": "Excellent teaching methodology !",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -2744,7 +2563,6 @@
         ]
     },
     {
-        "text": "I ' m Spaniard , so most of the things are basic for me such as the use of onion and garlic in meals , and the use of street market for shopping vegetables .",
         "predicted": [
             {
                 "aspect_category": "material relatability"
@@ -2758,7 +2576,6 @@
         ]
     },
     {
-        "text": "After you finish the course you are not an expert but you have the right concepts and knowledge for developing your projects .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -2772,7 +2589,6 @@
         ]
     },
     {
-        "text": "I loved it !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2786,7 +2602,6 @@
         ]
     },
     {
-        "text": "The professor goes slow , the visual aides are great and there are several impressive videos of drones doing impressive cool stuff .",
         "predicted": [
             {
                 "aspect_category": "faculty response"
@@ -2806,7 +2621,6 @@
         ]
     },
     {
-        "text": "The tests in particular are tough .",
         "predicted": [
             {
                 "aspect_category": "grades general"
@@ -2820,7 +2634,6 @@
         ]
     },
     {
-        "text": "Fantastic teaching methodology .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -2834,7 +2647,6 @@
         ]
     },
     {
-        "text": "In fact , i never have experienced that awsome lecture !",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -2848,7 +2660,6 @@
         ]
     },
     {
-        "text": "Mentioning the many different algorithms for learning decision trees would have been nice , without necessarily focusing on each of them in depth .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -2865,7 +2676,6 @@
         ]
     },
     {
-        "text": "Smart , casual and yet precise lessons will help you to go through the initial necessary steps in the language , building a fundamental base where you will construct your python coding skills ! .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -2882,7 +2692,6 @@
         ]
     },
     {
-        "text": "However , they are not hard .",
         "predicted": [
             {
                 "aspect_category": "assignments workload"
@@ -2896,7 +2705,6 @@
         ]
     },
     {
-        "text": "Kudos to Quentin and team . i congratulate everyone for putting effort and designing such a beautiful course . i thoroughly enjoyed attending this program .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -2916,7 +2724,6 @@
         ]
     },
     {
-        "text": "It is a very useful course , with two very good teachers .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2936,7 +2743,6 @@
         ]
     },
     {
-        "text": "I appreciate the care taken to script each lesson and I also like the animation that kept me engaged .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -2956,7 +2762,6 @@
         ]
     },
     {
-        "text": "Week 4 is better .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2970,7 +2775,6 @@
         ]
     },
     {
-        "text": "This course was excellent .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -2984,7 +2788,6 @@
         ]
     },
     {
-        "text": "You can figure out how responsible the teachers are ( include every individuals who participate in this lecture ' s making ) ! thank you all again ! !",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -2998,7 +2801,6 @@
         ]
     },
     {
-        "text": "Jonathan Biss is a great musician and did a great job of highlighting the key points of the sonatas presented .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -3018,7 +2820,6 @@
         ]
     },
     {
-        "text": "This course highlights how easy Python is more than anything and that ' s a good thing .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3032,7 +2833,6 @@
         ]
     },
     {
-        "text": "I learned a lot .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -3046,7 +2846,6 @@
         ]
     },
     {
-        "text": "He is upbeat and energetic and the assignments are fun !",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -3066,7 +2865,6 @@
         ]
     },
     {
-        "text": "I appreciate a lot the amount of effort behind this course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3080,7 +2878,6 @@
         ]
     },
     {
-        "text": "Really Useful . .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3094,7 +2891,6 @@
         ]
     },
     {
-        "text": "Excellent course !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3108,7 +2904,6 @@
         ]
     },
     {
-        "text": "Thank you so much for creating and providing this material .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -3122,7 +2917,6 @@
         ]
     },
     {
-        "text": "This highly pedagogical course offers all the necessary knowledge and tools to deal with it , while leaving behind the linear abstractive way of thinking .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -3139,7 +2933,6 @@
         ]
     },
     {
-        "text": "And his little smile throughout the presentations added more enthusiasm .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -3153,7 +2946,6 @@
         ]
     },
     {
-        "text": "This course changed my life .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3167,7 +2959,6 @@
         ]
     },
     {
-        "text": "Thank you very much !",
         "predicted": [],
         "time": 1.382965087890625,
         "gold": [
@@ -3177,7 +2968,6 @@
         ]
     },
     {
-        "text": "Thank you , Dr . Chuck .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -3191,7 +2981,6 @@
         ]
     },
     {
-        "text": "This was a great course !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3205,7 +2994,6 @@
         ]
     },
     {
-        "text": "It is very well made with a balance of theory in robotics motion control with practical assignments using the popular language Matlab .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3228,7 +3016,6 @@
         ]
     },
     {
-        "text": "I would have liked to see the English in the slides , transcription of the videos , and most importantly , in the quizzes , proofread - at times , the seemingly small errors made it hard to understand what the quiz questions were about .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -3251,7 +3038,6 @@
         ]
     },
     {
-        "text": "I enjoyed this class .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3265,7 +3051,6 @@
         ]
     },
     {
-        "text": "An entire week spent on precision / recall seems a little bit too much , without touching other metrics like F - score .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3279,7 +3064,6 @@
         ]
     },
     {
-        "text": "Excellent introduction for the basic understanding of the Machine Learning .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3293,7 +3077,6 @@
         ]
     },
     {
-        "text": "But those who are weak in English , may face problem to follow .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3307,7 +3090,6 @@
         ]
     },
     {
-        "text": "The content is clearly presented and the effort in teaching shows .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -3327,7 +3109,6 @@
         ]
     },
     {
-        "text": "She simplifies everything , is clear , consistent , and reviews what she ' s said .",
         "predicted": [
             {
                 "aspect_category": "faculty value"
@@ -3350,7 +3131,6 @@
         ]
     },
     {
-        "text": "If I did not have a working knowledge of academic French , I would have been lost .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -3364,7 +3144,6 @@
         ]
     },
     {
-        "text": "There is a certain style of teaching that you need to get accustomed too in the beginning but when it is done , lessons become very clear and easy to follow .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3384,7 +3163,6 @@
         ]
     },
     {
-        "text": "Loved most all of it .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3398,7 +3176,6 @@
         ]
     },
     {
-        "text": "It was a great experience learning how to learn .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3412,7 +3189,6 @@
         ]
     },
     {
-        "text": "Content is good .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -3426,7 +3202,6 @@
         ]
     },
     {
-        "text": "Formats and personal adaptations became more mutually understood and accepted .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3440,7 +3215,6 @@
         ]
     },
     {
-        "text": "But it gives me a ' sloppy ' impression ! ! !",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -3454,7 +3228,6 @@
         ]
     },
     {
-        "text": "Servance , is a great developing of the foundations in programming ( first two courses ) that will serve you well for the rest of your life , as well as a course that will give you a sort of try to understanding of what great things python can do for you .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -3471,7 +3244,6 @@
         ]
     },
     {
-        "text": "Great course ! ! !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3485,7 +3257,6 @@
         ]
     },
     {
-        "text": "What I miss : the study material should provide more and better organized ( theoretical ) information ( e . g . on topcis like database design , data structures , etc . )",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -3505,7 +3276,6 @@
         ]
     },
     {
-        "text": "I ' ve really learned a lot !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3519,7 +3289,6 @@
         ]
     },
     {
-        "text": "The content was very insightful , it provided me with some lenses ( as promised ) to analyse different organizational issues and have deeper understanding of possible strategies for me as a change agent .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -3536,7 +3305,6 @@
         ]
     },
     {
-        "text": "Course ended in strong accordance .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3550,7 +3318,6 @@
         ]
     },
     {
-        "text": "And every word have become concrete when I progress in this course under Prof . Silverman ' s instruction and tour in the Penn museum .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -3567,7 +3334,6 @@
         ]
     },
     {
-        "text": "Jeff Leek , he is such a great professor .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -3581,7 +3347,6 @@
         ]
     },
     {
-        "text": "I can only say that I am glad I made the decision to take the course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3595,7 +3360,6 @@
         ]
     },
     {
-        "text": "This course was fantastic .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -3609,7 +3373,6 @@
         ]
     },
     {
-        "text": "Thank you .",
         "predicted": [],
         "time": 2.358949661254883,
         "gold": [
@@ -3619,7 +3382,6 @@
         ]
     },
     {
-        "text": "Easy to understand , remember and practise .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3633,7 +3395,6 @@
         ]
     },
     {
-        "text": "Wonderful !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3647,7 +3408,6 @@
         ]
     },
     {
-        "text": "Nice and elaborative .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3661,7 +3421,6 @@
         ]
     },
     {
-        "text": "Assignments were individual and it was very difficult to use them at full power , because they were quite boring .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -3681,7 +3440,6 @@
         ]
     },
     {
-        "text": "Most of the materials are more theoretical ( some of the graphs are not necessary and does not help understanding the discussing topic and increases confusion .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -3695,7 +3453,6 @@
         ]
     },
     {
-        "text": "Don ' t miss this course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3709,7 +3466,6 @@
         ]
     },
     {
-        "text": "The course structure seems to have been really thought through as at no point did I feel as though I had a gap in knowledge .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3723,7 +3479,6 @@
         ]
     },
     {
-        "text": "I plan on applying what I learned from this course at work .",
         "predicted": [
             {
                 "aspect_category": "course value"
@@ -3737,7 +3492,6 @@
         ]
     },
     {
-        "text": "Andrew Ng is not only a great researcher , he also has outstanding teaching skills .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -3757,7 +3511,6 @@
         ]
     },
     {
-        "text": "The class is a pretty nice overview of metrics in general . it is more broad than it is deep , and sometimes the videos and explanations were not the most easily digested .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -3777,7 +3530,6 @@
         ]
     },
     {
-        "text": "I highly recommend this for any teacher of ESL or TEFL or CELTA .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3791,7 +3543,6 @@
         ]
     },
     {
-        "text": "Overall , I am satisfied with having paid for this course in order to get that feedback and the certificate .",
         "predicted": [
             {
                 "aspect_category": "course value"
@@ -3805,7 +3556,6 @@
         ]
     },
     {
-        "text": "Grading is done as peer reviews , which is nice as it allows you to see how your fellow peers approached the problem .",
         "predicted": [
             {
                 "aspect_category": "grades general"
@@ -3819,7 +3569,6 @@
         ]
     },
     {
-        "text": "It teaches you how to learn more efficient and get more concentration , and finally it can change you life if you practice the skills frequently .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -3833,7 +3582,6 @@
         ]
     },
     {
-        "text": "Awesome class .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3847,7 +3595,6 @@
         ]
     },
     {
-        "text": "I found the course to be taught exceptionally well .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3861,7 +3608,6 @@
         ]
     },
     {
-        "text": "Thank you cousera and Berklee for offering the opportunity !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3875,7 +3621,6 @@
         ]
     },
     {
-        "text": "If you have a background in programming in another language , it should be possible to go through this course pretty quickly .",
         "predicted": [
             {
                 "aspect_category": "course workload"
@@ -3889,7 +3634,6 @@
         ]
     },
     {
-        "text": "The course was very well organised , and the quantity of work was reasonable for a working person .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -3906,7 +3650,6 @@
         ]
     },
     {
-        "text": "Marvelous course !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3920,7 +3663,6 @@
         ]
     },
     {
-        "text": "I found this lesson so valuable !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -3934,7 +3676,6 @@
         ]
     },
     {
-        "text": "PS : the questions in between the lectures are very helpful and assignments are very very helpful too .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -3951,7 +3692,6 @@
         ]
     },
     {
-        "text": "JavaScript has a bad reputation , and sloppy teaching with respect to best practices is very bad .",
         "predicted": [
             {
                 "aspect_category": "faculty value"
@@ -3968,7 +3708,6 @@
         ]
     },
     {
-        "text": "Either because of the quality of the video or the very heavy accent of the speaker especially to a non - American viewer .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -3982,7 +3721,6 @@
         ]
     },
     {
-        "text": "I found the exercise nitpicky and confusing , and there ' s no indication nor review of what actually you did wrong .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -4002,7 +3740,6 @@
         ]
     },
     {
-        "text": "The lessons felt very unstructured , unplanned and ad hoc almost like the people presenting didn ' t know they were being recorded , this meant that the examples given were contrived without consideration to the suitability to present the concept succinctly and would require anyone but an existing swift programmer needing to carry out additional reading which rather defeats the purpose of an ' introduction to . . . course .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -4028,7 +3765,6 @@
         ]
     },
     {
-        "text": "I recommend this course to everyone who wants to learn something new .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4042,7 +3778,6 @@
         ]
     },
     {
-        "text": "You will not learn much concepts or theories or practice any R programming here .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4056,7 +3791,6 @@
         ]
     },
     {
-        "text": "As my first MOOC in my freshly changed career tower sustainable development , I couldn ' t get a better start .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4070,7 +3804,6 @@
         ]
     },
     {
-        "text": "This course is wonderful !",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4084,7 +3817,6 @@
         ]
     },
     {
-        "text": "Super useful .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4098,7 +3830,6 @@
         ]
     },
     {
-        "text": "I highly recommend it both for teachers and teacher trainers .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4112,7 +3843,6 @@
         ]
     },
     {
-        "text": "However , after taking this course , I do feel like I have a good foundation for learning Python and code in general .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4126,7 +3856,6 @@
         ]
     },
     {
-        "text": "No step - by - step examples of developed cases are shown .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -4140,7 +3869,6 @@
         ]
     },
     {
-        "text": "Brilliant course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4154,7 +3882,6 @@
         ]
     },
     {
-        "text": "It was very accessible and had some great examples .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4174,7 +3901,6 @@
         ]
     },
     {
-        "text": "He makes everything so simple and easy to understand !",
         "predicted": [
             {
                 "aspect_category": "faculty value"
@@ -4191,7 +3917,6 @@
         ]
     },
     {
-        "text": "Thank you Dr . Charles Severance for hard work to make this course such interesting to watch .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -4205,7 +3930,6 @@
         ]
     },
     {
-        "text": "If I could use the forum and ask questions after the course ended it would be better . generally the course is very good for beginners .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4219,7 +3943,6 @@
         ]
     },
     {
-        "text": "Great Teacher",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -4233,7 +3956,6 @@
         ]
     },
     {
-        "text": "Rather than everything is fine .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4247,7 +3969,6 @@
         ]
     },
     {
-        "text": "People also have different standard which causes a large variation in grades .",
         "predicted": [
             {
                 "aspect_category": "grades general"
@@ -4261,7 +3982,6 @@
         ]
     },
     {
-        "text": "This course is a must for anyone seriously interested in the subject of photography .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4275,7 +3995,6 @@
         ]
     },
     {
-        "text": "One major detracting factor is grading of the exams - a complete waste of time where there are multiple examples of contradictory slides to the quiz questions .",
         "predicted": [
             {
                 "aspect_category": "grades general"
@@ -4295,7 +4014,6 @@
         ]
     },
     {
-        "text": "Really enjoying it all .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4309,7 +4027,6 @@
         ]
     },
     {
-        "text": "In my opinion , Andrew Ng excels in teaching this course .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -4323,7 +4040,6 @@
         ]
     },
     {
-        "text": "This course has provided me with the tools and methodology that I need to be more strategic and focused in my career management .",
         "predicted": [
             {
                 "aspect_category": "course value"
@@ -4337,7 +4053,6 @@
         ]
     },
     {
-        "text": "Awesome course !",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4351,7 +4066,6 @@
         ]
     },
     {
-        "text": "The course outline is very good , however the presentation ( especially the slides ) can be monotonous .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4371,7 +4085,6 @@
         ]
     },
     {
-        "text": "This was the perfect intro course for someone who knows nothing about HTML .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4385,7 +4098,6 @@
         ]
     },
     {
-        "text": "Exceptionally good Lecturer and the course .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -4405,7 +4117,6 @@
         ]
     },
     {
-        "text": "The content was well structured & delivered exceptionally well .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -4425,7 +4136,6 @@
         ]
     },
     {
-        "text": "Totally worth the time you spent following this course .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4439,7 +4149,6 @@
         ]
     },
     {
-        "text": "The re - enactments and vignettes are excellent ! !",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -4453,7 +4162,6 @@
         ]
     },
     {
-        "text": "Great , actual and interesting content .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -4470,7 +4178,6 @@
         ]
     },
     {
-        "text": "The course was very informative and is easy to follow .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4490,7 +4197,6 @@
         ]
     },
     {
-        "text": "A very thorough and interesting course .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4507,7 +4213,6 @@
         ]
     },
     {
-        "text": "I ' m on week 3 and I ' m still not sure of how to make my assignments in a proper way .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -4521,7 +4226,6 @@
         ]
     },
     {
-        "text": "I loved the course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4535,7 +4239,6 @@
         ]
     },
     {
-        "text": "They include videos that discuss concepts and interviews with successful writers .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -4549,7 +4252,6 @@
         ]
     },
     {
-        "text": "There were many many boring moments , while management itself is not a boring discipline , it is very interesting .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4563,7 +4265,6 @@
         ]
     },
     {
-        "text": "The lectures were not very interesting or instructive .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -4577,7 +4278,6 @@
         ]
     },
     {
-        "text": "Good overview and introduction to the more detail content of the following courses .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4594,7 +4294,6 @@
         ]
     },
     {
-        "text": "Since it is intended as an overview of few machine learning techniques used to build computer based rational agents it has completely fulfilled my curiosity about what intelligent applications can be built using machine learning algorithms .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4608,7 +4307,6 @@
         ]
     },
     {
-        "text": "It is obvious that it was carefully planned and laid out .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4622,7 +4320,6 @@
         ]
     },
     {
-        "text": "Even though the last part was somewhat challenging to me , I learned a lot from this course and more than anything else , I could have some sort of vision in machine learning .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4642,7 +4339,6 @@
         ]
     },
     {
-        "text": "Thank you Proff .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -4656,7 +4352,6 @@
         ]
     },
     {
-        "text": "Extremely well done videos , Professor Sachs is articulate and clear .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -4676,7 +4371,6 @@
         ]
     },
     {
-        "text": "Absolutely a great course !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4690,7 +4384,6 @@
         ]
     },
     {
-        "text": "I wished that there was a bit more depth .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4704,7 +4397,6 @@
         ]
     },
     {
-        "text": "Professor Hitoshi Murayama presents the course in a very unassuming and welcoming manner .",
         "predicted": [
             {
                 "aspect_category": "faculty comprehensiveness"
@@ -4721,7 +4413,6 @@
         ]
     },
     {
-        "text": "Thanks for this amazing 4 weeks !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4735,7 +4426,6 @@
         ]
     },
     {
-        "text": "Very good , structured , easy to follow and understand course for anyone whose has previous exposure to linear algebra using MATLAB and Octave .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4758,7 +4448,6 @@
         ]
     },
     {
-        "text": "A very good course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4772,7 +4461,6 @@
         ]
     },
     {
-        "text": "This course changed my life !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4786,7 +4474,6 @@
         ]
     },
     {
-        "text": "It is highly recommended not only to professionals , lawyers , agents and businessmen but also to other average persons .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4800,7 +4487,6 @@
         ]
     },
     {
-        "text": "My previous knowledge of multiple regression has been enriched by my exposure to the cost function .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4814,7 +4500,6 @@
         ]
     },
     {
-        "text": "It was a true learning experience .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4828,7 +4513,6 @@
         ]
     },
     {
-        "text": "Some content material is missing , including the link to a text that is needed to answer a quizz which will influence your final grade .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -4845,7 +4529,6 @@
         ]
     },
     {
-        "text": "The course needs more quizzes to help students learn and remember the knowledge taught in the lectures .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -4862,7 +4545,6 @@
         ]
     },
     {
-        "text": "I ' ve learned a lot already and I ' m only halfway through the course .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -4876,7 +4558,6 @@
         ]
     },
     {
-        "text": "Do something different ' assingments were an interesting idea .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -4890,7 +4571,6 @@
         ]
     },
     {
-        "text": "Very challenging course .",
         "predicted": [
             {
                 "aspect_category": "course workload"
@@ -4904,7 +4584,6 @@
         ]
     },
     {
-        "text": "For the eager student maybe some more resources should have been shared .",
         "predicted": [
             {
                 "aspect_category": "material quantity"
@@ -4918,7 +4597,6 @@
         ]
     },
     {
-        "text": "Would have been a resounding five - star review but some ' mentor ' thought it necessary to hijack a thread by a student asking about the necessity of more than one ' break ' in a while loop to lecture about what constitutes pseudo - code and what does not on a non - assignment question .",
         "predicted": [
             {
                 "aspect_category": "faculty response"
@@ -4932,7 +4610,6 @@
         ]
     },
     {
-        "text": "Teacher ' s great , I wish he ' d loose a little the ' army style ' speech and grading system but you know , diversity is what makes this world great !",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -4955,7 +4632,6 @@
         ]
     },
     {
-        "text": "Dr . Chuck for your amazing job and enjoy - fulness : )",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -4969,7 +4645,6 @@
         ]
     },
     {
-        "text": "I highly recommend to people who are interested in honing their skills .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -4983,7 +4658,6 @@
         ]
     },
     {
-        "text": "The case studies were relevant and interesting , and the guest speakers were good as well .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5006,7 +4680,6 @@
         ]
     },
     {
-        "text": "However , it would appear that the real interaction is reserved for the later weeks of the course .",
         "predicted": [
             {
                 "aspect_category": "faculty response"
@@ -5020,7 +4693,6 @@
         ]
     },
     {
-        "text": "Following the grading of some peer assignments , I would be concerned if that were still the case .",
         "predicted": [
             {
                 "aspect_category": "grades general"
@@ -5034,7 +4706,6 @@
         ]
     },
     {
-        "text": "Ok , the platform offered makes things easier , but if you really want to learn machine learning , you can not be limited to a platform , acting as a robot just using pre - written functions in a black box .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5048,7 +4719,6 @@
         ]
     },
     {
-        "text": "This course inspire me a lot .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5062,7 +4732,6 @@
         ]
     },
     {
-        "text": "In this course you will study the rationale behind mathematical algorithms and learn how to translate it into computation languages such as Octave or MAtlab .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5076,7 +4745,6 @@
         ]
     },
     {
-        "text": "Very interesting and handy .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5093,7 +4761,6 @@
         ]
     },
     {
-        "text": "While this course was a timed release ( implying someone at the U of Copenhagen is involved with it week to week , it feels as if it is an archived course with no live administration ; the only interaction you seem to have is with other students .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5107,7 +4774,6 @@
         ]
     },
     {
-        "text": "The content of this course was awesome !",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -5121,7 +4787,6 @@
         ]
     },
     {
-        "text": "On the other hand , materials in Week 2 is easy to be understood and reflected in the first written assignment .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -5141,7 +4806,6 @@
         ]
     },
     {
-        "text": "While I respect the artistic choices and talents of all artists , I feel that the discussions in the videos for week 6 lack substance : picking up litter , photographing it , and arranging it for installation display strikes me as neither aesthetic nor documentary photography , unless the artist ' s message is in documenting our ' throw - away ' society and highlighting the importance of ' recycling ' for the benefit of the environment .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -5155,7 +4819,6 @@
         ]
     },
     {
-        "text": "I am thinking of being a vet , so this course is really helping me .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5169,7 +4832,6 @@
         ]
     },
     {
-        "text": "Functional Program Design in Scala is one of the best courses for those who want to apply the functional programming style in the design of larger applications using functional programming concepts .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5183,7 +4845,6 @@
         ]
     },
     {
-        "text": "Dr . Odersky and your colleagues that make learning process to be a breeze .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -5197,7 +4858,6 @@
         ]
     },
     {
-        "text": "Very accessible for the non - specialist .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5211,7 +4871,6 @@
         ]
     },
     {
-        "text": "I enjoyed this class , but the content feels amateurish .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5231,7 +4890,6 @@
         ]
     },
     {
-        "text": "its fun and well taught but i was having a little trouble understanding how to go about some of the topics here this course being my first ever programming class i have ever taken . all in all i enjoyed every bit of it and its something i see myself doing in the future .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5248,7 +4906,6 @@
         ]
     },
     {
-        "text": "Professor Andrew Ng is excellent and all the exercises are very well explained .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -5268,7 +4925,6 @@
         ]
     },
     {
-        "text": "Best leadership course that I have taken .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5282,7 +4938,6 @@
         ]
     },
     {
-        "text": "The content of this course , like many other courses in coursera is top - notch !",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -5296,7 +4951,6 @@
         ]
     },
     {
-        "text": "In addition , he has excellent presentation skills , that make his lectures enjoyable and easy to follow .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -5313,7 +4967,6 @@
         ]
     },
     {
-        "text": "The best course about mathematics that I ' ve ever taken .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5327,7 +4980,6 @@
         ]
     },
     {
-        "text": "Best intelectual time",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5341,7 +4993,6 @@
         ]
     },
     {
-        "text": "I enjoyed how the course material included various topics beyond pure programming .",
         "predicted": [
             {
                 "aspect_category": "material comprehensiveness"
@@ -5355,7 +5006,6 @@
         ]
     },
     {
-        "text": "I entered with no knowledge about the History of the Middle East and now have a solid base of understanding to further delve into the subject .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5369,7 +5019,6 @@
         ]
     },
     {
-        "text": "If you use Haskell , you ' ll be forced to work with arrays or sequences , which are not as nice .",
         "predicted": [],
         "time": 2.340266227722168,
         "gold": [
@@ -5379,7 +5028,6 @@
         ]
     },
     {
-        "text": "Absolutely amazing course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5393,7 +5041,6 @@
         ]
     },
     {
-        "text": "Very well presented and constructed .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -5410,7 +5057,6 @@
         ]
     },
     {
-        "text": "Im taking away a lot of useful information .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5424,7 +5070,6 @@
         ]
     },
     {
-        "text": "It was a very nice course .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5438,7 +5083,6 @@
         ]
     },
     {
-        "text": "If you are not familiar with Python , this will ease you into the language and enable you to follow .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5452,7 +5096,6 @@
         ]
     },
     {
-        "text": "For example , I believe nobody would not say that the Week 2 content on confusion matrix is very consistently explained .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5466,7 +5109,6 @@
         ]
     },
     {
-        "text": "In the conclusion , Iyengar states that no textbooks are available for the field because it is ' new ' , but an Amazon search shows several seem to exist , and many of the studies referenced in this course are years old , even more than a decade in some cases .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -5483,7 +5125,6 @@
         ]
     },
     {
-        "text": "I have enjoyed this course a lot .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5497,7 +5138,6 @@
         ]
     },
     {
-        "text": "Put simply , this course is well put together .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5511,7 +5151,6 @@
         ]
     },
     {
-        "text": "Overall i have enjoyed the content and the course",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5528,7 +5167,6 @@
         ]
     },
     {
-        "text": "There was a few technical hitches but it didn ' t take from the course .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5542,7 +5180,6 @@
         ]
     },
     {
-        "text": "Modules with flexibility to choose time and target dates .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5556,7 +5193,6 @@
         ]
     },
     {
-        "text": "The design of assignments are an absolute delight !",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -5570,7 +5206,6 @@
         ]
     },
     {
-        "text": "This course is really great .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5584,7 +5219,6 @@
         ]
     },
     {
-        "text": "taking this course helped me explore my writing more .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5598,7 +5232,6 @@
         ]
     },
     {
-        "text": "It is not free .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5612,7 +5245,6 @@
         ]
     },
     {
-        "text": "I found it is extremely useful to understand Buddhism . especially selflessness with psychology knowledge .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5626,7 +5258,6 @@
         ]
     },
     {
-        "text": "I ' m happy with this course overall .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5640,7 +5271,6 @@
         ]
     },
     {
-        "text": "Only general information about relevant topics that as well read on wikipedia .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5654,7 +5284,6 @@
         ]
     },
     {
-        "text": "I really like the challenges .",
         "predicted": [
             {
                 "aspect_category": "assignments quality"
@@ -5668,7 +5297,6 @@
         ]
     },
     {
-        "text": "Great professor , clearly explains topics with easy to follow lectures , examples , and graphics .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -5691,7 +5319,6 @@
         ]
     },
     {
-        "text": "This course is also an asset for those advising policymakers or policy - makers themselves .",
         "predicted": [
             {
                 "aspect_category": "course relatability"
@@ -5705,7 +5332,6 @@
         ]
     },
     {
-        "text": "I audit the course but I did all the homework , you must do the homework to really understand the topics .",
         "predicted": [
             {
                 "aspect_category": "assignments comprehensiveness"
@@ -5719,7 +5345,6 @@
         ]
     },
     {
-        "text": "The course covers a broad range of software security .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5733,7 +5358,6 @@
         ]
     },
     {
-        "text": "I like the practical examples used as they help to illustrate the concepts well .",
         "predicted": [
             {
                 "aspect_category": "material quality"
@@ -5750,7 +5374,6 @@
         ]
     },
     {
-        "text": "Many thanks to the professor for taking the time to make it .",
         "predicted": [
             {
                 "aspect_category": "faculty general"
@@ -5764,7 +5387,6 @@
         ]
     },
     {
-        "text": "It was challenging but didn ' t take over my life ( I have a full time job ) , and",
         "predicted": [
             {
                 "aspect_category": "course workload"
@@ -5778,7 +5400,6 @@
         ]
     },
     {
-        "text": "The only option I had was to watch videos , I could not submit quizzes , which I completed , unless I paid .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5795,7 +5416,6 @@
         ]
     },
     {
-        "text": "It ' s still a very good course , and it motivates you doing to do something with great values .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5812,7 +5432,6 @@
         ]
     },
     {
-        "text": "I did progress in gaming making as a fresh man .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5826,7 +5445,6 @@
         ]
     },
     {
-        "text": "One problem about the course is probably going to be the lectures .",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -5840,7 +5458,6 @@
         ]
     },
     {
-        "text": "I like this course very much .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5854,7 +5471,6 @@
         ]
     },
     {
-        "text": "Insightful !",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5868,7 +5484,6 @@
         ]
     },
     {
-        "text": "I don ' t recommend this course for those without programming or python scripting experience .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5882,7 +5497,6 @@
         ]
     },
     {
-        "text": "The course was great but its taking a bit long to get a grade due to the peer assessments .",
         "predicted": [
             {
                 "aspect_category": "grades general"
@@ -5899,7 +5513,6 @@
         ]
     },
     {
-        "text": "I would happily pay for more courses like this .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5913,7 +5526,6 @@
         ]
     },
     {
-        "text": "don ' t like record videos",
         "predicted": [
             {
                 "aspect_category": "presentation quality"
@@ -5927,7 +5539,6 @@
         ]
     },
     {
-        "text": "You can understand most of the concept without strong background in math like linear algebra and calculus .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5941,7 +5552,6 @@
         ]
     },
     {
-        "text": "I find myself applying what I have learned to my everyday writing as well as things I read and watch .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5955,7 +5565,6 @@
         ]
     },
     {
-        "text": "I have learned a lot : ) !",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -5969,7 +5578,6 @@
         ]
     },
     {
-        "text": "I loved this class !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -5983,7 +5591,6 @@
         ]
     },
     {
-        "text": "This is one of if not the best course that I have taken .",
         "predicted": [
             {
                 "aspect_category": "course quality"
@@ -5997,7 +5604,6 @@
         ]
     },
     {
-        "text": "I signed up for this course because I had read Martin Seligman ' s Learned Optimism and wanted to learn more about positive psychology .",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -6011,7 +5617,6 @@
         ]
     },
     {
-        "text": "For experienced folks - - probably a good number since this is an Executive Data Science course - - it was pretty basic .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -6025,7 +5630,6 @@
         ]
     },
     {
-        "text": "I really feel this course has given me some valuable new insights with which to see the world around me and myself .",
         "predicted": [
             {
                 "aspect_category": "course value"
@@ -6039,7 +5643,6 @@
         ]
     },
     {
-        "text": "Provides a great overview .",
         "predicted": [
             {
                 "aspect_category": "course comprehensiveness"
@@ -6053,7 +5656,6 @@
         ]
     },
     {
-        "text": "also gave me a lot of tips that will help in learning a new language ( and this is something I need for now ) .",
         "predicted": [
             {
                 "aspect_category": "course value"
@@ -6067,7 +5669,6 @@
         ]
     },
     {
-        "text": "Recommend to everyone who wants to start learning Python or programming in general !",
         "predicted": [
             {
                 "aspect_category": "course general"
@@ -6081,7 +5682,6 @@
         ]
     },
     {
-        "text": "Dr Chuck is amazing : )",
         "predicted": [
             {
                 "aspect_category": "faculty general"
